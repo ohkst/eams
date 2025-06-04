@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="문서 대시보드">
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="col1" name="이름" dataType="text"></w2:column>
+            			<w2:column id="col2" name="작성자" dataType="text"></w2:column>
+            			<w2:column id="col3" name="작성일" dataType="text"></w2:column>
+            			<w2:column id="col4" name="최종 수정일" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<col1><![CDATA[비즈니스 도메인 구성도_2025]]></col1>
+            				<col2><![CDATA[홍길동]]></col2>
+            				<col3><![CDATA[24.03.26]]></col3>
+            				<col4><![CDATA[25.03.26]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[데이터 정의서 작성 가이드]]></col1>
+            				<col2><![CDATA[홍길동]]></col2>
+            				<col3><![CDATA[24.03.26]]></col3>
+            				<col4><![CDATA[25.03.26]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[비즈니스 도메인 목록]]></col1>
+            				<col2><![CDATA[홍길동]]></col2>
+            				<col3><![CDATA[24.03.26]]></col3>
+            				<col4><![CDATA[25.03.26]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[비즈니스 도메인 구성도_2025]]></col1>
+            				<col2><![CDATA[홍길동]]></col2>
+            				<col3><![CDATA[24.03.26]]></col3>
+            				<col4><![CDATA[25.03.26]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[데이터 정의서 작성 가이드]]></col1>
+            				<col2><![CDATA[홍길동]]></col2>
+            				<col3><![CDATA[24.03.26]]></col3>
+            				<col4><![CDATA[25.03.26]]></col4>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[비즈니스 도메인 목록]]></col1>
+            				<col2><![CDATA[홍길동]]></col2>
+            				<col3><![CDATA[24.03.26]]></col3>
+            				<col4><![CDATA[25.03.26]]></col4>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" style=";background-color:;">
+    	<xf:group style="width:100%;height:100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 16px;" id="">
+    		<w2:textbox id="" label="최근 업데이트" style="width: 150px;height: 23px;font-size:20px;font-weight:bold;"></w2:textbox>
+    		<w2:gridView checkAllType="false" defaultCellHeight="20" id="" style="width: 100%;height: 100%;flex: 1;"
+    			dataList="data:dataList1" autoFit="allColumn">
+    			<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
+    			<w2:header style="" id="header2">
+    				<w2:row style="" id="row3">
+    					<w2:column width="70" inputType="text" style="" id="column6" value="이름" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column5" value="작성자" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column4" value="작성일" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column3" value="최종 수정일" displayMode="label"></w2:column>
+    				</w2:row>
+    			</w2:header>
+    			<w2:gBody style="" id="gBody2">
+    				<w2:row style="" id="row4">
+    					<w2:column width="70" inputType="text" style="" id="col1" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="col2" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="col3" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="col4" value="" displayMode="label"></w2:column>
+    				</w2:row>
+    			</w2:gBody>
+    		</w2:gridView>
+    	</xf:group>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="최근 변경 화면">
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" id="dataList2" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="col1" name="이름"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<col1><![CDATA[W8454 - 일일보안 점검]]></col1>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[W8481 - 본사부서내부통제체크리스트관리]]></col1>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[W7900 - 초기 공지화면]]></col1>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[W8451 - 보안업무 현황(총괄)]]></col1>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[W7900 - 초기 공지화면]]></col1>
+            			</w2:row>
+            			<w2:row>
+            				<col1><![CDATA[W8481 - 본사부서내부통제체크리스트관리]]></col1>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<w2:gridView checkAllType="false" defaultCellHeight="20" id="" style="width: 100%;height: 100%;" dataList="data:dataList2"
+    		autoFit="allColumn" hideHeader="true">
+    		<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header2">
+    			<w2:row style="" id="row3">
+    				<w2:column width="70" inputType="text" id="column3" value="이름" displayMode="label"></w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody2">
+    			<w2:row style="" id="row4">
+    				<w2:column width="70" inputType="text" id="col1" displayMode="label"></w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView>
+    </body>
+</html>

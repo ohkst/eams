@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="상단 네비게이션">
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+
+scwin.btnSearch_onclick = function (e) {
+    $p.parent().wfmLayoutContents.setSrc("/page/subpage/SystemSearch.xml");
+};
+
+scwin.btnDocSearch_onclick = function (e) {
+    $p.parent().wfmLayoutContents.setSrc("/page/subpage/DocManagement.xml");
+};
+
+scwin.btnCMDBSearch_onclick = function (e) {
+    $p.parent().wfmLayoutContents.setSrc("/page/subpage/CMDBManagement.xml");
+};
+
+scwin.imgLogo_onclick = function (e) {
+    $p.parent().wfmLayoutContents.setSrc("/page/subpage/HomeDashboard.xml");
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" style=";max-width:100%;min-width:100%;">
+    	<xf:group id="" style="background-color: #0E2147;height:100%;width:100%;">
+    		<xf:group style="position:relative;width:100%;height:100%;direction:ltr;display:flex;" id="">
+    			<xf:group style="width: 24px;height: 100%;" id=""></xf:group>
+    			<xf:image src="/img/logo.svg" style="position:static; top:35px; left:174px; width:132px; height:100%;" id="imgLogo"
+    				ev:onclick="scwin.imgLogo_onclick">
+    			</xf:image>
+    			<xf:group id="" style="left:160px;position:relative;display: flex;align-items: flex-end;gap: 32px;">
+    				<w2:button ev:onclick="scwin.btnSearch_onclick"
+    					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:bold;width:120 px;font-size:20px;border-color: ;border-width:0px;position:static;height:48px;"
+    					id="btnSystemSearch" label="통합검색">
+    				</w2:button>
+    				<w2:button ev:onclick="scwin.btnDocSearch_onclick"
+    					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:bold;width:120 px;font-size:20px;border-width:0px;border-color: ;position:static;height:48px;"
+    					id="btnDocManagement" label="문서관리">
+    				</w2:button>
+    				<w2:button ev:onclick="scwin.btnCMDBSearch_onclick"
+    					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:bold;width:120 px;font-size:20px;border-width:0px;border-color: ;position:static;height:48px;"
+    					id="btnCMDBManagement" label="CMDB관리">
+    				</w2:button>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

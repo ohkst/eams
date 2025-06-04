@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="메인 대시보드">
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	let widgetOptions1 = {};
+
+    widgetOptions1.id = "wg_widget1";
+    widgetOptions1.src = "/page/widget/WidgetLatestSearchKeyword.xml"
+    widgetOptions1.scope = true;
+    widgetOptions1.unitWidth = 4;
+    widgetOptions1.unitHeight = 15;
+    widgetOptions1.title = "부하가 많은 테이블";
+    widgetOptions1.x = 0;
+    widgetOptions1.y = 0;
+    wgcContain.addWidgets(widgetOptions1);
+
+    let widgetOptions2 = {};
+
+    widgetOptions2.id = "wg_widget2";
+    widgetOptions2.src = "/page/widget/WidgetLatestVisited.xml"
+    widgetOptions2.scope = true;
+    widgetOptions2.unitWidth = 4;
+    widgetOptions2.unitHeight = 15;
+    widgetOptions2.title = "배포 화면";
+    widgetOptions2.x = 4;
+    widgetOptions2.y = 0;
+    wgcContain.addWidgets(widgetOptions2);
+
+    let widgetOptions3 = {};
+
+    widgetOptions3.id = "wg_widget3";
+    widgetOptions3.src = "/page/widget/WidgetLatestChangedTR.xml"
+    widgetOptions3.scope = true;
+    widgetOptions3.unitWidth = 4;
+    widgetOptions3.unitHeight = 15;
+    widgetOptions3.title = "배포 예정 TR";
+    widgetOptions3.x = 8;
+    widgetOptions3.y = 0;
+    wgcContain.addWidgets(widgetOptions3);
+
+    let widgetOptions4 = {};
+
+    widgetOptions4.id = "wg_widget4";
+    widgetOptions4.src = "/page/widget/WidgetLatestChangedScreen.xml"
+    widgetOptions4.scope = true;
+    widgetOptions4.unitWidth = 4;
+    widgetOptions4.unitHeight = 15;
+    widgetOptions4.title = "최근 조회";
+    widgetOptions4.x = 0;
+    widgetOptions4.y = 4;
+    wgcContain.addWidgets(widgetOptions4);
+
+    let widgetOptions5 = {};
+
+    widgetOptions5.id = "wg_widget5";
+    widgetOptions5.src = "/page/widget/WidgetLatestChangedScreen.xml"
+    widgetOptions5.scope = true;
+    widgetOptions5.unitWidth = 4;
+    widgetOptions5.unitHeight = 15;
+    widgetOptions5.title = "최근 방문";
+    widgetOptions5.x = 4;
+    widgetOptions5.y = 4;
+    wgcContain.addWidgets(widgetOptions5);
+
+    let widgetOptions6 = {};
+
+    widgetOptions6.id = "wg_widget6";
+    widgetOptions6.src = "/page/widget/WidgetLatestChangedScreen.xml"
+    widgetOptions6.scope = true;
+    widgetOptions6.unitWidth = 4;
+    widgetOptions6.unitHeight = 15;
+    widgetOptions6.title = "최근 조회 TR";
+    widgetOptions6.x = 8;
+    widgetOptions6.y = 4;
+    wgcContain.addWidgets(widgetOptions6);
+};]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" style=";max-width:100%;min-width:100%;">
+    	<xf:group id="" style="width:100%;height:100%;padding-top: 24px;padding-bottom: 24px;padding-left: 128px;padding-right: 128px;box-sizing: border-box;">
+    		<w2:widgetContainer params="false" mode="" style="width: 100%;height: 100%;" id="wgcContain" cols="12" horizontalMargin="12"></w2:widgetContainer>
+    	</xf:group>
+    </body>
+</html>

@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="좌측 통합검색 영역">
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+            		<w2:columnInfo>
+            			<w2:column id="name" name="이름" dataType="text"></w2:column>
+            			<w2:column id="category" name="카테고리" dataType="text"></w2:column>
+            			<w2:column id="value" name="값" dataType="text"></w2:column>
+            			<w2:column id="meta" name="메타" dataType="text"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<name><![CDATA[계좌개설]]></name>
+            				<category><![CDATA[업무]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[자녀 계좌개설]]></name>
+            				<category><![CDATA[업무]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[온라인 추가 계좌개설]]></name>
+            				<category><![CDATA[업무]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[스마트폰 계좌개설]]></name>
+            				<category><![CDATA[업무]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[국내주식계좌 개설하기]]></name>
+            				<category><![CDATA[업무]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[해외선물계좌 개설하기]]></name>
+            				<category><![CDATA[업무]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[CMA계좌 개설하기]]></name>
+            				<category><![CDATA[업무]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[개인연금계좌 개설하기]]></name>
+            				<category><![CDATA[업무]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[퇴직연금(개인IRP)계좌 개설하기]]></name>
+            				<category><![CDATA[업무]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[DC/IR비대면 개설]]></name>
+            				<category><![CDATA[업무]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[계좌 관리]]></name>
+            				<category><![CDATA[업무]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:dataList baseNode="list" id="dataList3" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="name" name="이름"></w2:column>
+            			<w2:column dataType="text" id="category" name="카테고리"></w2:column>
+            			<w2:column dataType="text" id="value" name="값"></w2:column>
+            			<w2:column dataType="text" id="meta" name="메타"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<name><![CDATA[W1234 - 초기공지화면]]></name>
+            				<category><![CDATA[화면]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[W8481 - 본사부서내부통제체크리스트관리]]></name>
+            				<category><![CDATA[화면]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[W7900 - 초기 공지 화면 상세]]></name>
+            				<category><![CDATA[화면]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[W8451 - 보안업무 현황(총괄)]]></name>
+            				<category><![CDATA[화면]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[W1234 - 초기공지화면]]></name>
+            				<category><![CDATA[화면]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[W8481 - 본사부서내부통제체크리스트관리]]></name>
+            				<category><![CDATA[화면]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[W7900 - 초기 공지 화면 상세]]></name>
+            				<category><![CDATA[화면]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[W8451 - 보안업무 현황(총괄)]]></name>
+            				<category><![CDATA[화면]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[W1234 - 초기공지화면]]></name>
+            				<category><![CDATA[화면]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[W8481 - 본사부서내부통제체크리스트관리]]></name>
+            				<category><![CDATA[화면]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[W7900 - 초기 공지 화면 상세]]></name>
+            				<category><![CDATA[화면]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:dataList baseNode="list" id="dataList4" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="name" name="이름"></w2:column>
+            			<w2:column dataType="text" id="category" name="카테고리"></w2:column>
+            			<w2:column dataType="text" id="value" name="값"></w2:column>
+            			<w2:column dataType="text" id="meta" name="메타"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<name><![CDATA[TAC1234 - ASAC 사고유형목록조회]]></name>
+            				<category><![CDATA[TR]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[TAC1111 - ASAC 사고유형목록조회]]></name>
+            				<category><![CDATA[TR]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[TAC2222 - ASAC 사고유형목록조회]]></name>
+            				<category><![CDATA[TR]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[TAC3333 - ASAC 사고유형목록조회]]></name>
+            				<category><![CDATA[TR]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[TAC1234 - ASAC 사고유형목록조회]]></name>
+            				<category><![CDATA[TR]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[TAC1234 - ASAC 사고유형목록조회]]></name>
+            				<category><![CDATA[TR]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[TAC1234 - ASAC 사고유형목록조회]]></name>
+            				<category><![CDATA[TR]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[TAC1234 - ASAC 사고유형목록조회]]></name>
+            				<category><![CDATA[TR]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[TAC1234 - ASAC 사고유형목록조회]]></name>
+            				<category><![CDATA[TR]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[TAC1234 - ASAC 사고유형목록조회]]></name>
+            				<category><![CDATA[TR]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[TAC1234 - ASAC 사고유형목록조회]]></name>
+            				<category><![CDATA[TR]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:dataList baseNode="list" id="dataList5" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="name" name="이름"></w2:column>
+            			<w2:column dataType="text" id="category" name="카테고리"></w2:column>
+            			<w2:column dataType="text" id="value" name="값"></w2:column>
+            			<w2:column dataType="text" id="meta" name="메타"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<name><![CDATA[ACBA001M0]]></name>
+            				<category><![CDATA[DB]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[ACBA001M0]]></name>
+            				<category><![CDATA[DB]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[ACBA001M0]]></name>
+            				<category><![CDATA[DB]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[ACBA001M0]]></name>
+            				<category><![CDATA[DB]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[ACBA001M0]]></name>
+            				<category><![CDATA[DB]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[ACBA001M0]]></name>
+            				<category><![CDATA[DB]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[ACBA001M0]]></name>
+            				<category><![CDATA[DB]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[ACBA001M0]]></name>
+            				<category><![CDATA[DB]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[ACBA001M0]]></name>
+            				<category><![CDATA[DB]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[ACBA001M0]]></name>
+            				<category><![CDATA[DB]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[ACBA001M0]]></name>
+            				<category><![CDATA[DB]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            	<w2:dataList baseNode="list" id="dataList7" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="name" name="이름"></w2:column>
+            			<w2:column dataType="text" id="category" name="카테고리"></w2:column>
+            			<w2:column dataType="text" id="value" name="값"></w2:column>
+            			<w2:column dataType="text" id="meta" name="메타"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<name><![CDATA[홍길동(112251)]]></name>
+            				<category><![CDATA[담당자]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[홍길동(111222)]]></name>
+            				<category><![CDATA[담당자]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[홍길동(112255)]]></name>
+            				<category><![CDATA[담당자]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[고길동(112252)]]></name>
+            				<category><![CDATA[담당자]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[김길동(111222)]]></name>
+            				<category><![CDATA[담당자]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[서길동(112255)]]></name>
+            				<category><![CDATA[담당자]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[최길동(112253)]]></name>
+            				<category><![CDATA[담당자]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[이길동(111222)]]></name>
+            				<category><![CDATA[담당자]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[박길동(112254)]]></name>
+            				<category><![CDATA[담당자]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[성춘향(111222)]]></name>
+            				<category><![CDATA[담당자]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            			<w2:row>
+            				<name><![CDATA[이도령(112255)]]></name>
+            				<category><![CDATA[담당자]]></category>
+            				<value><![CDATA[값]]></value>
+            				<meta><![CDATA[계좌개설]]></meta>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+
+scwin.searchboxOK_onkeypress = function (e) {
+
+    // 엔터치면 코드 적용
+    if((e.charCode || e.keyCode) === 13) {
+        // $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultDetail.xml");
+        dataList1.clearFilter();
+        dataList3.clearFilter();
+        dataList4.clearFilter();
+        dataList5.clearFilter();
+        dataList7.clearFilter();
+
+        let jsonFilterOptions = {};
+
+        jsonFilterOptions.type = "row";
+        jsonFilterOptions.colIndex = "name";
+        jsonFilterOptions.key = searchboxOK.getValue();
+        jsonFilterOptions.exactMatch = false;
+        jsonFilterOptions.condition = "and";
+
+        dataList1.setColumnFilter(jsonFilterOptions);
+        dataList3.setColumnFilter(jsonFilterOptions);
+        dataList4.setColumnFilter(jsonFilterOptions);
+        dataList5.setColumnFilter(jsonFilterOptions);
+        dataList7.setColumnFilter(jsonFilterOptions);
+        
+    } else {
+        // $p.log("SEARCH!!!!");
+
+        // 검색을 구현하면 될듯
+        // dataList1.clearFilter();
+
+        // let jsonFilterOptions = {};
+
+        // jsonFilterOptions.type = "row";
+        // jsonFilterOptions.colIndex = "name";
+        // jsonFilterOptions.key = searchboxOK.getValue();
+        // jsonFilterOptions.exactMatch = false;
+        // jsonFilterOptions.condition = "and";
+
+        // dataList1.setColumnFilter(jsonFilterOptions);        
+    }
+};
+
+scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
+    // $p.log(rowIndex + columnId + columnId);
+
+    var cellData = "";
+    if (type === 0) {
+        cellData = dataList1.getCellData(rowIndex, columnId);
+    } else if (type === 1){
+        cellData = dataList3.getCellData(rowIndex, columnId);
+    } else if (type === 2){
+        cellData = dataList4.getCellData(rowIndex, columnId);
+    } else if (type === 3){
+        cellData = dataList5.getCellData(rowIndex, columnId);
+    } else if (type === 4){
+        cellData = dataList7.getCellData(rowIndex, columnId);
+    }
+
+    $p.log(cellData);
+
+    var rowJSON = { 
+        "Personal Info" : { "Name": "Lee", "Age": 50, "Married" : false},
+        "Region": "Seoul",  
+        "Carrier": true,
+        "name": cellData
+     }; 
+ 
+     // 새로 열릴 화면에 데이터를 전달 (dataObject를 통해 전달 가능)
+     var obj = { 
+        "dataObject": {
+            "type" : "json",
+            "name" : "LeftSearch",  
+            "data" : rowJSON 
+         }
+     };
+
+    scwin.setContentsSrc(type, obj);
+}
+
+scwin.setContentsSrc = async function (type, obj) {
+    if (type === 0) {
+        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultBizDetail.xml", obj);
+    } else if (type === 1){
+        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultScreenDetail.xml", obj);
+    } else if (type === 2){
+        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultTRDetail.xml", obj);
+    } else if (type === 3){
+        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultDBDetail.xml", obj);
+    } else if (type === 4){
+        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultMemberDetail.xml", obj);
+    }
+}
+
+// 업무 검색
+scwin.gridBASearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
+    scwin.searchDetail(rowIndex, columnIndex, columnId, 0);
+};
+
+// 화면 검색
+scwin.gridAAScreenSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
+    scwin.searchDetail(rowIndex, columnIndex, columnId, 1);
+};
+
+// TR 검색
+scwin.gridAATRSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
+    scwin.searchDetail(rowIndex, columnIndex, columnId, 2);
+};
+
+// DB 검색
+scwin.gridDADBSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
+    scwin.searchDetail(rowIndex, columnIndex, columnId, 3);
+};
+
+// 담당자 검색
+scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
+    scwin.searchDetail(rowIndex, columnIndex, columnId, 4);
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" style=";max-width:100%;min-width:100%;">
+    	<xf:group
+    		style="width:100%;height: 100vh;background-color:#EFF0F4;padding: 12px;display: flex;flex-direction: column;overflow-y: auto;scrollbar-width: none;gap: 12px;box-sizing: border-box;"
+    		id="">
+    		<w2:searchbox ev:onchange="scwin.searchboxOK_onchange" style="width: 100%;height: 48px;display: flex;flex-shrink: 0;" id="searchboxOK"
+    			ev:onkeypress="scwin.searchboxOK_onkeypress">
+    		</w2:searchbox>
+    		<xf:group style="width:100%;height:20px;display: flex;flex-shrink: 0;border-bottom-width:1px;border-bottom-color:;border-color:;" id="">
+    			<w2:button style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="" label="전체"></w2:button>
+    			<w2:button style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="" label="업무"></w2:button>
+    			<w2:button style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="" label="화면"></w2:button>
+    			<w2:button style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="" label="TR"></w2:button>
+    			<w2:button style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="" label="DB"></w2:button>
+    			<w2:button style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="" label="담당자"></w2:button>
+    		</xf:group>
+    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="">
+    			<w2:textbox style="width: 100%;height: 23px;" id="" label="업무"></w2:textbox>
+    			<w2:gridView ev:oncellclick="scwin.gridBASearchResult_oncellclick" hideHeader="true" checkAllType="false"
+    				dataList="data:dataList1" style="width:100%;height:100%;flex: 1;" id="gridBASearchResult" autoFit="allColumn"
+    				defaultCellHeight="20">
+    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column width="70" inputType="text" id="column4" value="이름" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column3" value="카테고리" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column2" value="값" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column1" value="메타" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="text" id="name" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="category" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="value" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="meta" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    		</xf:group>
+    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="">
+    			<w2:textbox style="width: 100%;height: 23px;" id="" label="화면"></w2:textbox>
+    			<w2:gridView ev:oncellclick="scwin.gridAAScreenSearchResult_oncellclick" hideHeader="true" checkAllType="false"
+    				dataList="data:dataList3" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridAAScreenSearchResult"
+    				defaultCellHeight="20">
+    				<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column width="70" inputType="text" id="column4" value="이름" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column3" value="카테고리" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column2" value="값" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column1" value="메타" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="text" id="name" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="category" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="value" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="meta" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    		</xf:group>
+    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="">
+    			<w2:textbox style="width: 100%;height: 23px;" id="" label="TR"></w2:textbox>
+    			<w2:gridView ev:oncellclick="scwin.gridAATRSearchResult_oncellclick" hideHeader="true" checkAllType="false"
+    				dataList="data:dataList4" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridAATRSearchResult"
+    				defaultCellHeight="20">
+    				<w2:caption style="" id="caption3" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column width="70" inputType="text" id="column4" value="이름" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column3" value="카테고리" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column2" value="값" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column1" value="메타" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="text" id="name" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="category" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="value" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="meta" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    		</xf:group>
+    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="">
+    			<w2:textbox style="width: 100%;height: 23px;" id="" label="DB"></w2:textbox>
+    			<w2:gridView ev:oncellclick="scwin.gridDADBSearchResult_oncellclick" hideHeader="true" checkAllType="false"
+    				dataList="data:dataList5" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridDADBSearchResult"
+    				defaultCellHeight="20">
+    				<w2:caption style="" id="caption4" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column width="70" inputType="text" id="column4" value="이름" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column3" value="카테고리" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column2" value="값" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column1" value="메타" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="text" id="name" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="category" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="value" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="meta" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    		</xf:group>
+    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="">
+    			<w2:textbox style="width: 100%;height: 23px;" id="" label="담당자"></w2:textbox>
+    			<w2:gridView ev:oncellclick="scwin.gridMemberSearchResult_oncellclick" hideHeader="true" checkAllType="false"
+    				dataList="data:dataList7" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridMemberSearchResult"
+    				defaultCellHeight="20">
+    				<w2:caption style="" id="caption5" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column width="70" inputType="text" id="column4" value="이름" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column3" value="카테고리" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column2" value="값" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" id="column1" value="메타" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="text" id="name" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="category" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="value" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" id="meta" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

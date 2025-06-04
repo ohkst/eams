@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="로그인 페이지">
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map">
+            </w2:dataCollection>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+
+scwin.btnLoginClick_onclick = function (e) {
+    $p.url("/page/layout/TopNavigationBottomContents.xml");
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" style="background-color:#0E2147;display:flex;justify-content: center;align-items: center;">
+    	<xf:group style="width:314px;height:266px;display: flex;flex-direction: column;gap: 12px;" id="">
+    		<xf:group style="position:static;top:242px;left:423px;width:100%;height:100px;display: flex;justify-content: center;align-items: center;" id="">
+    			<xf:image src="/img/loginLogo.svg" style="width: 244px;height: 72px;" id=""></xf:image>
+    		</xf:group>
+    		<xf:group style="top:242px;left:423px;width:100%;display: flex;gap: 8px;flex-direction: column;justify-content: center;align-items: center;" id="">
+    			<xf:input style="position:static;top:152px;left:272px;width:314px;height:40px;" id="" placeholder="패스워드"></xf:input>
+    			<xf:input style="position:static;top:152px;left:272px;width:314px;height:40px;" id="" placeholder="사번"></xf:input>
+    		</xf:group>
+    		<xf:group style="position:static;top:242px;left:423px;width:100%;height:48px;display: flex;justify-content: center;align-items: center;" id="">
+    			<w2:button ev:onclick="scwin.btnLoginClick_onclick" style="position:static;top:318px;left:153px;width:314px;height:48px;background-color:#3761BB;color:#FFFFFF;font-size:18px;font-weight:bold;border-width:0px;border-radius: 8px;"
+    				id="btnLoginClick" label="로그인">
+    			</w2:button>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

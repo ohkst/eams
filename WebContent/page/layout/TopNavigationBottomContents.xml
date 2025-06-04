@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="상단네비게이션 하단컨텐츠" meta_screenId="">
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	wfmLayoutTop.setSrc("/page/component/TopNavigation.xml");
+    wfmLayoutContents.setSrc("/page/subpage/HomeDashboard.xml");
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group style="width:100%;height:68px;" id="">
+    		<w2:wframe style="width:100%;height:68px;background-color:;" id="wfmLayoutTop"></w2:wframe>
+    	</xf:group>
+    	<xf:group style="width:100%;height:100%;display:flex;" id="">
+    		<w2:wframe style="width:100%;height:100%;background-color:;" id="wfmLayoutContents"></w2:wframe>
+    	</xf:group>
+    </body>
+</html>
