@@ -236,6 +236,180 @@
             			</w2:row>
             		</w2:data>
             	</w2:dataList>
+            	<w2:dataList baseNode="list" id="dlTRIO" repeatNode="map" saveRemovedData="true" style="">
+            		<w2:columnInfo>
+            			<w2:column dataType="text" id="depth" name="depth"></w2:column>
+            			<w2:column dataType="text" id="trid" name="id"></w2:column>
+            			<w2:column dataType="text" id="datatype" name="datatype"></w2:column>
+            			<w2:column dataType="number" id="packetlen" name="packetlen"></w2:column>
+            			<w2:column dataType="number" id="metalen" name="metalen"></w2:column>
+            			<w2:column dataType="text" id="trname" name="idname"></w2:column>
+            			<w2:column dataType="number" defaultValue="0" id="fid" name="fid"></w2:column>
+            			<w2:column dataType="number" defaultValue="0" id="gid" name="gid"></w2:column>
+            			<w2:column dataType="text" id="desc" name="desc"></w2:column>
+            			<w2:column dataType="text" id="attryn" name="attr"></w2:column>
+            		</w2:columnInfo>
+            		<w2:data use="true">
+            			<w2:row>
+            				<depth><![CDATA[1]]></depth>
+            				<trid><![CDATA[TOB0031RI1]]></trid>
+            				<datatype><![CDATA[[Single]]]></datatype>
+            				<trname><![CDATA[TOB0031RI1]]></trname>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[TERM_STRT_DT]]></trid>
+            				<datatype><![CDATA[string]]></datatype>
+            				<packetlen><![CDATA[8]]></packetlen>
+            				<metalen><![CDATA[8]]></metalen>
+            				<trname><![CDATA[기간시작일자]]></trname>
+            				<fid><![CDATA[]]></fid>
+            				<gid><![CDATA[]]></gid>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[TERM_END_DT]]></trid>
+            				<datatype><![CDATA[string]]></datatype>
+            				<packetlen><![CDATA[8]]></packetlen>
+            				<metalen><![CDATA[8]]></metalen>
+            				<trname><![CDATA[기간종료일자]]></trname>
+            				<fid><![CDATA[]]></fid>
+            				<gid><![CDATA[]]></gid>
+            				<desc><![CDATA[]]></desc>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[CHRG_STFNO]]></trid>
+            				<datatype><![CDATA[string]]></datatype>
+            				<packetlen><![CDATA[6]]></packetlen>
+            				<metalen><![CDATA[6]]></metalen>
+            				<trname><![CDATA[담당직원번호]]></trname>
+            				<fid><![CDATA[]]></fid>
+            				<gid><![CDATA[]]></gid>
+            				<desc><![CDATA[]]></desc>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[CTX_AREA_NK]]></trid>
+            				<datatype><![CDATA[string]]></datatype>
+            				<packetlen><![CDATA[20]]></packetlen>
+            				<metalen><![CDATA[20]]></metalen>
+            				<trname><![CDATA[연속조회키]]></trname>
+            				<fid><![CDATA[]]></fid>
+            				<gid><![CDATA[]]></gid>
+            				<desc><![CDATA[]]></desc>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[CTX_AREA_FK]]></trid>
+            				<datatype><![CDATA[string]]></datatype>
+            				<packetlen><![CDATA[20]]></packetlen>
+            				<metalen><![CDATA[20]]></metalen>
+            				<trname><![CDATA[연속조회검색조건]]></trname>
+            				<fid><![CDATA[]]></fid>
+            				<gid><![CDATA[]]></gid>
+            				<desc><![CDATA[]]></desc>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[1]]></depth>
+            				<trid><![CDATA[OCCURS_OUT1]]></trid>
+            				<datatype><![CDATA[[Array]]]></datatype>
+            				<trname><![CDATA[OCCURS_OUT1]]></trname>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[SCNO1]]></trid>
+            				<datatype><![CDATA[string]]></datatype>
+            				<packetlen><![CDATA[5]]></packetlen>
+            				<metalen><![CDATA[5]]></metalen>
+            				<trname><![CDATA[화면번호1]]></trname>
+            				<fid><![CDATA[]]></fid>
+            				<gid><![CDATA[]]></gid>
+            				<desc><![CDATA[]]></desc>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[TR_CD1]]></trid>
+            				<datatype><![CDATA[string]]></datatype>
+            				<packetlen><![CDATA[12]]></packetlen>
+            				<metalen><![CDATA[12]]></metalen>
+            				<trname><![CDATA[거래코드1]]></trname>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[CHRG_STFNO]]></trid>
+            				<datatype><![CDATA[string]]></datatype>
+            				<packetlen><![CDATA[6]]></packetlen>
+            				<metalen><![CDATA[6]]></metalen>
+            				<trname><![CDATA[담당직원번호]]></trname>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[STFF_NAME]]></trid>
+            				<datatype><![CDATA[string]]></datatype>
+            				<packetlen><![CDATA[30]]></packetlen>
+            				<metalen><![CDATA[30]]></metalen>
+            				<trname><![CDATA[담당직원명]]></trname>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[ACTN_CNT1]]></trid>
+            				<datatype><![CDATA[long]]></datatype>
+            				<packetlen><![CDATA[4]]></packetlen>
+            				<metalen><![CDATA[11]]></metalen>
+            				<trname><![CDATA[조치건수1]]></trname>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[ACTN_CNT2]]></trid>
+            				<datatype><![CDATA[long]]></datatype>
+            				<packetlen><![CDATA[4]]></packetlen>
+            				<metalen><![CDATA[11]]></metalen>
+            				<trname><![CDATA[조치건수2]]></trname>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            			<w2:row>
+            				<trname><![CDATA[조치건수3]]></trname>
+            				<fid><![CDATA[]]></fid>
+            				<gid><![CDATA[]]></gid>
+            				<desc><![CDATA[]]></desc>
+            				<attryn><![CDATA[Y]]></attryn>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[ACTN_CNT3]]></trid>
+            				<datatype><![CDATA[long]]></datatype>
+            				<packetlen><![CDATA[4]]></packetlen>
+            				<metalen><![CDATA[11]]></metalen>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[ACTN_CNT4]]></trid>
+            				<datatype><![CDATA[long]]></datatype>
+            				<packetlen><![CDATA[4]]></packetlen>
+            				<metalen><![CDATA[11]]></metalen>
+            				<trname><![CDATA[조치건수4]]></trname>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            			<w2:row>
+            				<depth><![CDATA[2]]></depth>
+            				<trid><![CDATA[ACTN_CNT5]]></trid>
+            				<datatype><![CDATA[long]]></datatype>
+            				<packetlen><![CDATA[4]]></packetlen>
+            				<metalen><![CDATA[11]]></metalen>
+            				<trname><![CDATA[조치건수5]]></trname>
+            				<attryn><![CDATA[Y]]></attryn>
+            			</w2:row>
+            		</w2:data>
+            	</w2:dataList>
             </w2:dataCollection>
             <w2:workflowCollection/>
         </xf:model>
@@ -404,27 +578,70 @@ scwin.gridTRIO_oncellclick = function (rowIndex, columnIndex, columnId) {
     				</xf:group>
     			</xf:group>
     		</xf:group>
-    		<xf:group id=""><w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="TR I/O"></w2:textbox>
-    			<w2:gridView checkAllType="false" dataList="data:dataList3" style="width: 100%;height: 400px;" id="gridTRList"
-    				defaultCellHeight="20" autoFit="allColumn" ev:oncellclick="scwin.gridTRIO_oncellclick">
-    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
-    				<w2:header style="" id="header1">
-    					<w2:row style="" id="row1">
-    						<w2:column width="70" inputType="text" style="" id="column4" value="ID" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column3" value="NAME" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column2" value="TYPE" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column1" value="Length" displayMode="label"></w2:column>
+    		<xf:group id="">
+    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="TR I/O"></w2:textbox>
+    			<w2:gridView autoFit="allColumn" checkReadOnlyOnPasteEnable="" class="gridTRList" dataList="data:dlTRIO" focusMode="row" id=""
+    				readOnly="true" scrollByColumn="false" scrollByColumnAdaptive="false" style="width: 100%;height: 400px;">
+    				<w2:caption id="caption2" style="" value="this is a grid caption."></w2:caption>
+    				<w2:header id="header2" style="">
+    					<w2:row id="row3" style="">
+    						<w2:column blockSelect="false" displayMode="label" id="column12" inputType="text" removeBorderStyle="false"
+    							value="코드명" width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="column11" inputType="text" removeBorderStyle="false"
+    							value="데이터유형" width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="column10" inputType="text" removeBorderStyle="false"
+    							value="패킷길이" width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="column9" inputType="text" removeBorderStyle="false"
+    							value="매타길이" width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="column8" inputType="text" removeBorderStyle="false"
+    							value="이름" width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="column7" inputType="text" removeBorderStyle="false"
+    							value="FID" width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="column6" inputType="text" removeBorderStyle="false"
+    							value="GID" width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="column5" inputType="text" removeBorderStyle="false"
+    							value="설명" width="70">
+    						</w2:column>
     					</w2:row>
     				</w2:header>
-    				<w2:gBody style="" id="gBody1">
-    					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="" id="col1" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="col2" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="col3" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="col4" value="" displayMode="label"></w2:column>
+    				<w2:gBody id="gBody2" style="">
+    					<w2:row id="row4" style="">
+    						<w2:column blockSelect="false" depthColumn="depth" depthType="nbsp" displayMode="label" id="trid"
+    							inputType="drilldown" removeBorderStyle="false" showDepth="0" textAlign="left" width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="datatype" inputType="text" removeBorderStyle="false"
+    							width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="packetlen" inputType="text" removeBorderStyle="false"
+    							width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="metalen" inputType="text" removeBorderStyle="false"
+    							width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="trname" inputType="text" removeBorderStyle="false"
+    							width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="fid" inputType="text" removeBorderStyle="false"
+    							width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="gid" inputType="text" removeBorderStyle="false"
+    							width="70">
+    						</w2:column>
+    						<w2:column blockSelect="false" displayMode="label" id="desc" inputType="text" removeBorderStyle="false"
+    							width="70">
+    						</w2:column>
     					</w2:row>
     				</w2:gBody>
-    			</w2:gridView></xf:group><xf:group id="">
+    			</w2:gridView>
+    		</xf:group>
+    		<xf:group id="">
     			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="연관 정보"></w2:textbox>
     			<xf:group id="" style="display: flex;">
     				<w2:textbox style="width: 50%;height: 23px;font-size:16px;font-weight:bold;" id="" label="화면 리스트"></w2:textbox>
