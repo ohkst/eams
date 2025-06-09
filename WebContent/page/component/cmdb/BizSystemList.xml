@@ -17,10 +17,10 @@
             			<w2:column id="date" name="작성일정" dataType="text"></w2:column>
             			<w2:column id="reason" name="사유" dataType="text"></w2:column>
             			<w2:column id="comment" name="기타의견" dataType="text"></w2:column>
-            			<w2:column id="system architecture" name="시스템 구성도" dataType="text"></w2:column>
-            			<w2:column id="dev manual" name="개발 매뉴얼" dataType="text"></w2:column>
-            			<w2:column id="prod manual" name="운영 매뉴얼" dataType="text"></w2:column>
-            			<w2:column id="application architecture" name="어플리케이션 아키텍처 정의서" dataType="text"></w2:column>
+            			<w2:column id="systemArchitecture" name="시스템 구성도" dataType="text"></w2:column>
+            			<w2:column id="devManual" name="개발 매뉴얼" dataType="text"></w2:column>
+            			<w2:column id="prodManual" name="운영 매뉴얼" dataType="text"></w2:column>
+            			<w2:column id="applicationArchitecture" name="어플리케이션 아키텍처 정의서" dataType="text"></w2:column>
             			<w2:column id="rft" name="RFP" dataType="text"></w2:column>
             			<w2:column id="col13" name="요구사항 정의서" dataType="text"></w2:column>
             			<w2:column id="col14" name="착수보고" dataType="text"></w2:column>
@@ -33,8 +33,8 @@
             				<name><![CDATA[AML(자금세탁방지)]]></name>
             				<dep><![CDATA[Biz개발1부]]></dep>
             				<ap><![CDATA[박정선]]></ap>
-            				<date><![CDATA[]]></date>
-            				<reason><![CDATA[]]></reason>
+            				<date><![CDATA[2025/05/25]]></date>
+            				<reason><![CDATA[해당없음]]></reason>
 
 
 
@@ -43,15 +43,24 @@
 
 
 
-            				<comment><![CDATA[]]></comment>
+            				<comment><![CDATA[O]]></comment>
+            				<col16><![CDATA[O]]></col16>
+            				<rft><![CDATA[O]]></rft>
+            				<col13><![CDATA[O]]></col13>
+            				<col14><![CDATA[O]]></col14>
+            				<col15><![CDATA[O]]></col15>
+            				<systemArchitecture><![CDATA[X]]></systemArchitecture>
+            				<devManual><![CDATA[O]]></devManual>
+            				<prodManual><![CDATA[O]]></prodManual>
+            				<applicationArchitecture><![CDATA[O]]></applicationArchitecture>
             			</w2:row>
             			<w2:row>
             				<id><![CDATA[AA-ISSS-0025]]></id>
             				<name><![CDATA[FDS]]></name>
             				<dep><![CDATA[Biz개발1부]]></dep>
             				<ap><![CDATA[민경욱]]></ap>
-            				<date><![CDATA[]]></date>
-            				<reason><![CDATA[]]></reason>
+            				<date><![CDATA[2025/05/25]]></date>
+            				<reason><![CDATA[해당없음]]></reason>
 
 
 
@@ -60,12 +69,34 @@
 
 
 
+            				<comment><![CDATA[O]]></comment>
+            				<systemArchitecture><![CDATA[X]]></systemArchitecture>
+            				<devManual><![CDATA[O]]></devManual>
+            				<prodManual><![CDATA[X]]></prodManual>
+            				<applicationArchitecture><![CDATA[O]]></applicationArchitecture>
+            				<rft><![CDATA[X]]></rft>
+            				<col13><![CDATA[O]]></col13>
+            				<col14><![CDATA[X]]></col14>
+            				<col15><![CDATA[O]]></col15>
+            				<col16><![CDATA[X]]></col16>
             			</w2:row>
             			<w2:row>
             				<id><![CDATA[AA-MMFA-0056]]></id>
             				<name><![CDATA[IFRS9 회계]]></name>
             				<dep><![CDATA[Biz개발1부]]></dep>
             				<ap><![CDATA[김현돈]]></ap>
+            				<date><![CDATA[2025/05/25]]></date>
+            				<reason><![CDATA[해당없음]]></reason>
+            				<comment><![CDATA[O]]></comment>
+            				<systemArchitecture><![CDATA[X]]></systemArchitecture>
+            				<devManual><![CDATA[X]]></devManual>
+            				<prodManual><![CDATA[O]]></prodManual>
+            				<applicationArchitecture><![CDATA[O]]></applicationArchitecture>
+            				<rft><![CDATA[X]]></rft>
+            				<col13><![CDATA[O]]></col13>
+            				<col14><![CDATA[X]]></col14>
+            				<col15><![CDATA[O]]></col15>
+            				<col16><![CDATA[O]]></col16>
             			</w2:row>
             		</w2:data>
             	</w2:dataList>
@@ -84,6 +115,20 @@ scwin.onpageload = function() {
     	<xf:group style="width:100%;height:100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 16px;"
     		id="">
     		<w2:textbox id="" label="업무 시스템" style="width: 150px;height: 43px;font-size:22px;font-weight:bold;"></w2:textbox>
+    		<xf:group style="width: 100%;display: flex;justify-content: flex-end;gap: 14px;" id="">
+    			<w2:button style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;" id="" label="조회"></w2:button>
+    			<w2:button style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;" id="" label="초기화"></w2:button>
+    		</xf:group>
+    		<xf:group id="" style="width: 100%;display: flex;">
+    			<xf:group id="" style="display: flex;">
+    				<w2:textbox style="position:static; top:65px; left:277px; width:150px; height:23px; " id="" label="업무명"></w2:textbox>
+    				<xf:input style="width: 144px;height: 21px;" id=""></xf:input>
+    			</xf:group>
+    			<xf:group id="" style="display: flex;margin-left: auto;">
+    				<w2:textbox id="" label="담당자" style="position:static; top:65px; left:277px; width:150px; height:23px; "></w2:textbox>
+    				<xf:input id="" style="width: 144px;height: 21px;"></xf:input>
+    			</xf:group>
+    		</xf:group>
     		<w2:gridView checkAllType="false" defaultCellHeight="20" id="" style="width: 100%;height: 150px;flex: 1;"
     			dataList="data:dataList1" autoFit="allColumn">
     			<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
@@ -96,10 +141,10 @@ scwin.onpageload = function() {
     					<w2:column width="70" inputType="text" style="" id="column40" value="작성일정" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="" id="column41" value="사유" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="" id="column42" value="기타의견" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column43" value="시스템 구성도" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column44" value="개발 매뉴얼" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column45" value="운영 매뉴얼" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column46" value="어플리케이션 아키텍처 정의서" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column8" value="시스템 구성도" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column9" value="개발 매뉴얼" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column10" value="운영 매뉴얼" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column11" value="어플리케이션 아키텍처 정의서" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="" id="column47" value="RFP" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="" id="column16" value="요구사항 정의서" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="" id="column17" value="착수보고" displayMode="label"></w2:column>
@@ -116,10 +161,10 @@ scwin.onpageload = function() {
     					<w2:column width="70" inputType="text" style="" id="date" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="" id="reason" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="" id="comment" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="system architecture" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="dev manual" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="prod manual" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="application architecture" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="systemArchitecture" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="devManual" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="prodManual" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="applicationArchitecture" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="" id="rft" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="" id="col13" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="" id="col14" value="" displayMode="label"></w2:column>
