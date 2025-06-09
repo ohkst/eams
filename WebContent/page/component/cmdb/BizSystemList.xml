@@ -43,7 +43,7 @@
 
 
 
-            				<comment><![CDATA[O]]></comment>
+            				<comment><![CDATA[빨리 등록하겠습니다.]]></comment>
             				<col16><![CDATA[O]]></col16>
             				<rft><![CDATA[O]]></rft>
             				<col13><![CDATA[O]]></col13>
@@ -69,7 +69,7 @@
 
 
 
-            				<comment><![CDATA[O]]></comment>
+            				<comment><![CDATA[죄송합니다]]></comment>
             				<systemArchitecture><![CDATA[X]]></systemArchitecture>
             				<devManual><![CDATA[O]]></devManual>
             				<prodManual><![CDATA[X]]></prodManual>
@@ -87,7 +87,7 @@
             				<ap><![CDATA[김현돈]]></ap>
             				<date><![CDATA[2025/05/25]]></date>
             				<reason><![CDATA[해당없음]]></reason>
-            				<comment><![CDATA[O]]></comment>
+            				<comment><![CDATA[등록예정입니다.]]></comment>
             				<systemArchitecture><![CDATA[X]]></systemArchitecture>
             				<devManual><![CDATA[X]]></devManual>
             				<prodManual><![CDATA[O]]></prodManual>
@@ -109,6 +109,36 @@
 scwin.onpageload = function() {
    
 };
+
+scwin.btnSearch_onclick = function (e) {
+    dataList1.clearFilter();
+
+    let jsonFilterOptions = {};
+
+    jsonFilterOptions.type = "row";
+    jsonFilterOptions.colIndex = "name";
+    jsonFilterOptions.key = tfBizName.getValue();
+    jsonFilterOptions.exactMatch = false;
+    jsonFilterOptions.condition = "and";
+
+    dataList1.setColumnFilter(jsonFilterOptions);
+
+    let jsonFilterOptions2 = {};
+
+    jsonFilterOptions2.type = "row";
+    jsonFilterOptions2.colIndex = "ap";
+    jsonFilterOptions2.key = tfOwnerName.getValue();
+    jsonFilterOptions2.exactMatch = false;
+    jsonFilterOptions2.condition = "and";
+
+    dataList1.setColumnFilter(jsonFilterOptions2);
+};
+
+scwin.btnReset_onclick = function (e) {
+    tfBizName.setValue("");
+    tfOwnerName.setValue("");
+    dataList1.clearFilter();
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="">
@@ -116,17 +146,17 @@ scwin.onpageload = function() {
     		id="">
     		<w2:textbox id="" label="업무 시스템" style="width: 150px;height: 43px;font-size:22px;font-weight:bold;"></w2:textbox>
     		<xf:group style="width: 100%;display: flex;justify-content: flex-end;gap: 14px;" id="">
-    			<w2:button style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;" id="" label="조회"></w2:button>
-    			<w2:button style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;" id="" label="초기화"></w2:button>
+    			<w2:button style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;" id="btnSearch" label="조회" ev:onclick="scwin.btnSearch_onclick"></w2:button>
+    			<w2:button style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;" id="btnReset" label="초기화" ev:onclick="scwin.btnReset_onclick"></w2:button>
     		</xf:group>
     		<xf:group id="" style="width: 100%;display: flex;">
     			<xf:group id="" style="display: flex;">
     				<w2:textbox style="position:static; top:65px; left:277px; width:150px; height:23px; " id="" label="업무명"></w2:textbox>
-    				<xf:input style="width: 144px;height: 21px;" id=""></xf:input>
+    				<xf:input style="width: 144px;height: 21px;" id="tfBizName"></xf:input>
     			</xf:group>
-    			<xf:group id="" style="display: flex;margin-left: auto;">
+    			<xf:group id="" style="display: flex;margin-left: auto;" ev:onclick="scwin.btnSearch_onclick">
     				<w2:textbox id="" label="담당자" style="position:static; top:65px; left:277px; width:150px; height:23px; "></w2:textbox>
-    				<xf:input id="" style="width: 144px;height: 21px;"></xf:input>
+    				<xf:input id="tfOwnerName" style="width: 144px;height: 21px;"></xf:input>
     			</xf:group>
     		</xf:group>
     		<w2:gridView checkAllType="false" defaultCellHeight="20" id="" style="width: 100%;height: 150px;flex: 1;"

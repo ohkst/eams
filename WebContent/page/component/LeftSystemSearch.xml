@@ -395,13 +395,23 @@
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
-	
+    grpBA.hide();
+    grpAAScreen.hide();
+    grpAATR.hide();
+    grpDA.hide();
+    grpMember.hide();
 };
 
 scwin.searchboxOK_onkeypress = function (e) {
 
     // 엔터치면 코드 적용
-    if((e.charCode || e.keyCode) === 13) {
+    if (searchboxOK.getValue() == "") {
+        grpBA.hide();
+        grpAAScreen.hide();
+        grpAATR.hide();
+        grpDA.hide();
+        grpMember.hide();
+    } else if((e.charCode || e.keyCode) === 13) {
         // $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultDetail.xml");
         dataList1.clearFilter();
         dataList3.clearFilter();
@@ -422,6 +432,36 @@ scwin.searchboxOK_onkeypress = function (e) {
         dataList4.setColumnFilter(jsonFilterOptions);
         dataList5.setColumnFilter(jsonFilterOptions);
         dataList7.setColumnFilter(jsonFilterOptions);
+
+        if (dataList1.getRowCount() <= 0) {
+            grpBA.hide();
+        } else {
+            grpBA.show("");
+        }
+
+        if (dataList3.getRowCount() <= 0) {
+            grpAAScreen.hide();
+        } else {
+            grpAAScreen.show("");
+        }
+
+        if (dataList4.getRowCount() <= 0) {
+            grpAATR.hide();
+        } else {
+            grpAATR.show("");
+        }
+
+        if (dataList5.getRowCount() <= 0) {
+            grpDA.hide();
+        } else {
+            grpDA.show("");
+        }
+
+        if (dataList7.getRowCount() <= 0) {
+            grpMember.hide();
+        } else {
+            grpMember.show("");
+        }
         
     } else {
         // $p.log("SEARCH!!!!");
@@ -516,6 +556,78 @@ scwin.gridDADBSearchResult_oncellclick = function (rowIndex, columnIndex, column
 scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
     scwin.searchDetail(rowIndex, columnIndex, columnId, 4);
 };
+
+scwin.btnFilterALL_onclick = function (e) {
+    if (dataList1.getRowCount() > 0) {
+        grpBA.show("");
+    } else {
+        grpBA.hide();
+    }
+
+    if (dataList3.getRowCount() > 0) {    
+        grpAAScreen.show("");
+    } else {
+        grpAAScreen.hide();
+    }
+
+    if (dataList4.getRowCount() > 0) {    
+        grpAATR.show("");
+    } else {
+        grpAATR.hide();
+    }
+
+    if (dataList5.getRowCount() > 0) {    
+        grpDA.show("");
+    } else {
+        grpDA.hide();
+    }
+
+    if (dataList7.getRowCount() > 0) {    
+        grpMember.show("");
+    } else {
+        grpMember.hide();
+    }
+};
+
+scwin.btnFilterBA_onclick = function (e) {
+    grpBA.show("");
+    grpAAScreen.hide();
+    grpAATR.hide();
+    grpDA.hide();
+    grpMember.hide();
+};
+
+scwin.btnFilterAAScreen_onclick = function (e) {
+	grpBA.hide();
+    grpAAScreen.show("");
+    grpAATR.hide();
+    grpDA.hide();
+    grpMember.hide();    
+};
+
+scwin.btnFilterAATR_onclick = function (e) {
+	grpBA.hide();
+    grpAAScreen.hide();
+    grpAATR.show("");
+    grpDA.hide();
+    grpMember.hide();
+};
+
+scwin.btnFilterDA_onclick = function (e) {
+	grpBA.hide();
+    grpAAScreen.hide();
+    grpAATR.hide();
+    grpDA.show("");
+    grpMember.hide();
+};
+
+scwin.btnFilterMember_onclick = function (e) {
+	grpBA.hide();
+    grpAAScreen.hide();
+    grpAATR.hide();
+    grpDA.hide();
+    grpMember.show("");
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style=";max-width:100%;min-width:100%;">
@@ -526,14 +638,18 @@ scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, colu
     			ev:onkeypress="scwin.searchboxOK_onkeypress">
     		</w2:searchbox>
     		<xf:group style="width:100%;height:20px;display: flex;flex-shrink: 0;border-bottom-width:1px;border-bottom-color:;border-color:;" id="">
-    			<w2:button style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="" label="전체"></w2:button>
-    			<w2:button style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="" label="업무"></w2:button>
-    			<w2:button style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="" label="화면"></w2:button>
-    			<w2:button style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="" label="TR"></w2:button>
-    			<w2:button style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="" label="DB"></w2:button>
-    			<w2:button style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="" label="담당자"></w2:button>
+    			<w2:button ev:onclick="scwin.btnFilterALL_onclick" style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="btnFilterALL" label="전체"></w2:button>
+    			<w2:button ev:onclick="scwin.btnFilterBA_onclick" style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="btnFilterBA" label="업무"></w2:button>
+    			<w2:button ev:onclick="scwin.btnFilterAAScreen_onclick" style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="btnFilterAAScreen" label="화면"></w2:button>
+    			<w2:button ev:onclick="scwin.btnFilterAATR_onclick" style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="btnFilterAATR" label="TR"></w2:button>
+    			<w2:button ev:onclick="scwin.btnFilterDA_onclick" style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="btnFilterDA" label="DB">
+    			</w2:button>
+    			<w2:button ev:onclick="scwin.btnFilterMember_onclick"
+    				style="background-color:#EFF0F4;width: 48px;font-size:10px;border-width:0px;height: 100%;" id="btnFilterMember" label="담당자">
+    			</w2:button>
     		</xf:group>
-    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="">
+    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;"
+    			id="grpBA">
     			<w2:textbox style="width: 100%;height: 23px;" id="" label="업무"></w2:textbox>
     			<w2:gridView ev:oncellclick="scwin.gridBASearchResult_oncellclick" hideHeader="true" checkAllType="false"
     				dataList="data:dataList1" style="width:100%;height:100%;flex: 1;" id="gridBASearchResult" autoFit="allColumn"
@@ -557,7 +673,7 @@ scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, colu
     				</w2:gBody>
     			</w2:gridView>
     		</xf:group>
-    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="">
+    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="grpAAScreen">
     			<w2:textbox style="width: 100%;height: 23px;" id="" label="화면"></w2:textbox>
     			<w2:gridView ev:oncellclick="scwin.gridAAScreenSearchResult_oncellclick" hideHeader="true" checkAllType="false"
     				dataList="data:dataList3" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridAAScreenSearchResult"
@@ -581,7 +697,7 @@ scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, colu
     				</w2:gBody>
     			</w2:gridView>
     		</xf:group>
-    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="">
+    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="grpAATR">
     			<w2:textbox style="width: 100%;height: 23px;" id="" label="TR"></w2:textbox>
     			<w2:gridView ev:oncellclick="scwin.gridAATRSearchResult_oncellclick" hideHeader="true" checkAllType="false"
     				dataList="data:dataList4" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridAATRSearchResult"
@@ -605,7 +721,7 @@ scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, colu
     				</w2:gBody>
     			</w2:gridView>
     		</xf:group>
-    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="">
+    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="grpDA">
     			<w2:textbox style="width: 100%;height: 23px;" id="" label="DB"></w2:textbox>
     			<w2:gridView ev:oncellclick="scwin.gridDADBSearchResult_oncellclick" hideHeader="true" checkAllType="false"
     				dataList="data:dataList5" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridDADBSearchResult"
@@ -629,7 +745,7 @@ scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, colu
     				</w2:gBody>
     			</w2:gridView>
     		</xf:group>
-    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="">
+    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="grpMember">
     			<w2:textbox style="width: 100%;height: 23px;" id="" label="담당자"></w2:textbox>
     			<w2:gridView ev:oncellclick="scwin.gridMemberSearchResult_oncellclick" hideHeader="true" checkAllType="false"
     				dataList="data:dataList7" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridMemberSearchResult"
