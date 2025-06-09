@@ -34,7 +34,7 @@ scwin.imgLogo_onclick = function (e) {
 };
 
 scwin.imgLogout_onclick = function (e) {
-    	$p.url("/page/LoginPage.xml");
+    $p.url("/page/LoginPage.xml");
 };
 ]]></script>
     </head>
