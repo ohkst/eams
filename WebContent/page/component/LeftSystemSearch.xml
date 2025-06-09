@@ -400,6 +400,8 @@ scwin.onpageload = function() {
     grpAATR.hide();
     grpDA.hide();
     grpMember.hide();
+
+    btnFilterALL.setStyle("font-weight", "bold");
 };
 
 scwin.searchboxOK_onkeypress = function (e) {
@@ -557,7 +559,19 @@ scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, colu
     scwin.searchDetail(rowIndex, columnIndex, columnId, 4);
 };
 
+scwin.resetBtnFontWeight = function () {
+	btnFilterALL.setStyle("font-weight", "");
+	btnFilterBA.setStyle("font-weight", "");
+	btnFilterAAScreen.setStyle("font-weight", "");
+	btnFilterAATR.setStyle("font-weight", "");
+	btnFilterDA.setStyle("font-weight", "");
+    btnFilterMember.setStyle("font-weight", "");
+}
+
 scwin.btnFilterALL_onclick = function (e) {
+    scwin.resetBtnFontWeight();
+	btnFilterALL.setStyle("font-weight", "bold");
+
     if (dataList1.getRowCount() > 0) {
         grpBA.show("");
     } else {
@@ -590,6 +604,9 @@ scwin.btnFilterALL_onclick = function (e) {
 };
 
 scwin.btnFilterBA_onclick = function (e) {
+    scwin.resetBtnFontWeight();
+	btnFilterBA.setStyle("font-weight", "bold");
+
     grpBA.show("");
     grpAAScreen.hide();
     grpAATR.hide();
@@ -598,6 +615,9 @@ scwin.btnFilterBA_onclick = function (e) {
 };
 
 scwin.btnFilterAAScreen_onclick = function (e) {
+    scwin.resetBtnFontWeight();
+	btnFilterAAScreen.setStyle("font-weight", "bold");
+
 	grpBA.hide();
     grpAAScreen.show("");
     grpAATR.hide();
@@ -606,6 +626,9 @@ scwin.btnFilterAAScreen_onclick = function (e) {
 };
 
 scwin.btnFilterAATR_onclick = function (e) {
+    scwin.resetBtnFontWeight();
+	btnFilterAATR.setStyle("font-weight", "bold");
+
 	grpBA.hide();
     grpAAScreen.hide();
     grpAATR.show("");
@@ -614,6 +637,9 @@ scwin.btnFilterAATR_onclick = function (e) {
 };
 
 scwin.btnFilterDA_onclick = function (e) {
+    scwin.resetBtnFontWeight();
+	btnFilterDA.setStyle("font-weight", "bold");
+
 	grpBA.hide();
     grpAAScreen.hide();
     grpAATR.hide();
@@ -622,6 +648,9 @@ scwin.btnFilterDA_onclick = function (e) {
 };
 
 scwin.btnFilterMember_onclick = function (e) {
+    scwin.resetBtnFontWeight();
+	btnFilterMember.setStyle("font-weight", "bold");
+
 	grpBA.hide();
     grpAAScreen.hide();
     grpAATR.hide();
