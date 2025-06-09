@@ -43,7 +43,7 @@
 
 
 
-            				<comment><![CDATA[O]]></comment>
+            				<comment><![CDATA[빨리 등록하겠습니다.]]></comment>
             				<col16><![CDATA[O]]></col16>
             				<rft><![CDATA[O]]></rft>
             				<col13><![CDATA[O]]></col13>
@@ -69,7 +69,7 @@
 
 
 
-            				<comment><![CDATA[O]]></comment>
+            				<comment><![CDATA[죄송합니다]]></comment>
             				<systemArchitecture><![CDATA[X]]></systemArchitecture>
             				<devManual><![CDATA[O]]></devManual>
             				<prodManual><![CDATA[X]]></prodManual>
@@ -87,7 +87,7 @@
             				<ap><![CDATA[김현돈]]></ap>
             				<date><![CDATA[2025/05/25]]></date>
             				<reason><![CDATA[해당없음]]></reason>
-            				<comment><![CDATA[O]]></comment>
+            				<comment><![CDATA[등록예정입니다.]]></comment>
             				<systemArchitecture><![CDATA[X]]></systemArchitecture>
             				<devManual><![CDATA[X]]></devManual>
             				<prodManual><![CDATA[O]]></prodManual>
@@ -122,7 +122,6 @@ scwin.btnSearch_onclick = function (e) {
     jsonFilterOptions.condition = "and";
 
     dataList1.setColumnFilter(jsonFilterOptions);
-
 
     let jsonFilterOptions2 = {};
 
