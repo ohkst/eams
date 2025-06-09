@@ -32,16 +32,20 @@ scwin.btnCMDBSearch_onclick = function (e) {
 scwin.imgLogo_onclick = function (e) {
     $p.parent().wfmLayoutContents.setSrc("/page/subpage/HomeDashboard.xml");
 };
+
+scwin.imgLogout_onclick = function (e) {
+    	$p.url("/page/LoginPage.xml");
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style=";max-width:100%;min-width:100%;">
-    	<xf:group id="" style="background-color: #0E2147;height:100%;width:100%;">
-    		<xf:group style="position:relative;width:100%;height:100%;direction:ltr;display:flex;" id="">
+    	<xf:group id="" style="background-color: #0E2147;height:100%;width:100%;display: flex;align-items: center;">
+    		<xf:group style="width:100%;height:100%;direction:ltr;display:flex;" id="">
     			<xf:group style="width: 24px;height: 100%;" id=""></xf:group>
-    			<xf:image src="/img/logo.svg" style="position:static; top:35px; left:174px; width:132px; height:100%;" id="imgLogo"
-    				ev:onclick="scwin.imgLogo_onclick">
+    			<xf:image src="/img/logo.svg" ev:onclick="scwin.imgLogo_onclick" style="position:static;top:35px;width:132px;height:100%;"
+    				id="imgLogo">
     			</xf:image>
-    			<xf:group id="" style="left:160px;position:relative;display: flex;align-items: flex-end;gap: 32px;">
+    			<xf:group style="left:160px;position:relative;display: flex;align-items: flex-end;gap: 32px;" id="">
     				<w2:button ev:onclick="scwin.btnSearch_onclick"
     					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:bold;width:120 px;font-size:20px;border-color: ;border-width:0px;position:static;height:48px;"
     					id="btnSystemSearch" label="통합검색">
@@ -56,6 +60,8 @@ scwin.imgLogo_onclick = function (e) {
     				</w2:button>
     			</xf:group>
     		</xf:group>
+    		<xf:image src="/img/logout.svg" style="width: 24px;height: 24px;" id="imgLogout" ev:onclick="scwin.imgLogout_onclick"></xf:image>
+    		<xf:group style="width: 24px;height: 100%;" id=""></xf:group>
     	</xf:group>
     </body>
 </html>
