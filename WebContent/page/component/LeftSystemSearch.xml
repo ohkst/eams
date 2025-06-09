@@ -580,34 +580,44 @@ scwin.btnFilterALL_onclick = function (e) {
 	btnFilterALL.setStyle("font-weight", "bold");
     btnFilterALL.setStyle("border-bottom-width", "2px");
 
-    if (dataList1.getRowCount() > 0) {
-        grpBA.show("");
-    } else {
+    if (searchboxOK.getValue() == "") {
         grpBA.hide();
-    }
-
-    if (dataList3.getRowCount() > 0) {    
-        grpAAScreen.show("");
-    } else {
         grpAAScreen.hide();
-    }
-
-    if (dataList4.getRowCount() > 0) {    
-        grpAATR.show("");
-    } else {
         grpAATR.hide();
-    }
-
-    if (dataList5.getRowCount() > 0) {    
-        grpDA.show("");
-    } else {
         grpDA.hide();
-    }
-
-    if (dataList7.getRowCount() > 0) {    
-        grpMember.show("");
-    } else {
         grpMember.hide();
+    } else {
+
+        if (dataList1.getRowCount() > 0) {
+            grpBA.show("");
+        } else {
+            grpBA.hide();
+        }
+
+        if (dataList3.getRowCount() > 0) {    
+            grpAAScreen.show("");
+        } else {
+            grpAAScreen.hide();
+        }
+
+        if (dataList4.getRowCount() > 0) {    
+            grpAATR.show("");
+        } else {
+            grpAATR.hide();
+        }
+
+        if (dataList5.getRowCount() > 0) {    
+            grpDA.show("");
+        } else {
+            grpDA.hide();
+        }
+
+        if (dataList7.getRowCount() > 0) {    
+            grpMember.show("");
+        } else {
+            grpMember.hide();
+        }
+
     }
 };
 
