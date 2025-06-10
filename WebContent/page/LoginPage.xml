@@ -7,18 +7,30 @@
         <w2:buildDate/>
         <w2:MSA/>
         <xf:model>
-            <w2:dataCollection baseNode="map">
-            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
-            		<w2:columnInfo></w2:columnInfo>
-            	</w2:dataList>
-            </w2:dataCollection>
-            <w2:workflowCollection/>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+        			<w2:columnInfo></w2:columnInfo>
+        		</w2:dataList>
+        		<w2:dataMap baseNode="map" id="dataMap1">
+        			<w2:keyInfo>
+        				<w2:key id="userId" name="userId" dataType="number"></w2:key>
+        				<w2:key id="id" name="id" dataType="number"></w2:key>
+        				<w2:key id="title" name="title" dataType="text"></w2:key>
+        				<w2:key id="completed" name="completed" dataType="number"></w2:key>
+        			</w2:keyInfo>
+        		</w2:dataMap>
+        	</w2:dataCollection>
+        	<w2:workflowCollection />
+        	<xf:submission id="submission1" action="http://10.50.241.179:8081/org/api/v1/command/emp-login" method="post" mediatype="application/json"
+        		ref="" target="data:json,dataMap1" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg=""
+        		ev:submit="" ev:submitdone="" ev:submiterror="" abortTrigger="">
+        	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
-	
+    $p.executeSubmission("submission1",{"empNo":"113565", "pwd":"cdk200022"});
 };
 
 scwin.btnLoginClick_onclick = function (e) {
