@@ -7,24 +7,51 @@
         <w2:buildDate/>
         <w2:MSA/>
         <xf:model>
-            <w2:dataCollection baseNode="map">
-            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
-            		<w2:columnInfo></w2:columnInfo>
-            	</w2:dataList>
-            </w2:dataCollection>
-            <w2:workflowCollection/>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+        			<w2:columnInfo></w2:columnInfo>
+        		</w2:dataList>
+        		<w2:dataMap baseNode="map" id="dataMap1">
+        			<w2:keyInfo>
+        				<w2:key id="guid" name="guid" dataType="text"></w2:key>
+        				<w2:key id="code" name="code" dataType="text"></w2:key>
+        				<w2:key id="message" name="message" dataType="text"></w2:key>
+        				<w2:key id="detailMessage" name="detailMessage" dataType="text"></w2:key>
+        				<w2:key id="data" name="data" dataType="json"></w2:key>
+        			</w2:keyInfo>
+        		</w2:dataMap>
+        	</w2:dataCollection>
+        	<w2:workflowCollection />
+        	<xf:submission id="submission1" action="http://10.50.241.179:8081/org/api/v1/command/emp-login" method="post" mediatype="application/json"
+        		ref="" target="data:json,dataMap1" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg=""
+        		ev:submit="scwin.submission1_submit" ev:submitdone="scwin.submission1_submitdone" ev:submiterror="scwin.submission1_submiterror" abortTrigger="">
+        	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
-	
+    $p.executeSubmission("submission1",{"empNo":"113565", "pwd":"cdk200022"});
 };
 
 scwin.btnLoginClick_onclick = function (e) {
     $p.url("/page/layout/TopNavigationBottomContents.xml");
 };
-]]></script>
+
+scwin.submission1_submit = function (e) {
+    var jsoninfo = JSON.stringify(dataMap1.getJSON());
+    alert("submit" + jsoninfo);
+};
+
+scwin.submission1_submitdone = function (e) {
+    var jsoninfo = JSON.stringify(dataMap1.getJSON());
+	alert("done" + jsoninfo);
+};
+
+scwin.submission1_submiterror = function (e) {
+    var jsoninfo = JSON.stringify(dataMap1.getJSON());
+	alert("error" + jsoninfo);
+};]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="background-color:#0E2147;display:flex;justify-content: center;align-items: center;">
     	<xf:group style="width:314px;height:266px;display: flex;flex-direction: column;gap: 12px;" id="">
