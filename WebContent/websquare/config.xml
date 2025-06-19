@@ -57,7 +57,7 @@
     <submission>
         <processMsg value=""/>
         <showSubmissionTime value="true"/>
-        <preSubmitFunction value=""/>
+        <preSubmitFunction value="$c.sbm.__preSubmitFunction"/>
         <callbackSubmitFunction value=""/>
         <requestID value=""/>
         <makeGlobalObject value="true"/>

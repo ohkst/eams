@@ -23,25 +23,117 @@
         				<detailMessage><![CDATA[]]></detailMessage>
         			</w2:data>
         		</w2:dataMap>
-        		<w2:dataMap baseNode="map" id="pageInfo">
+        		<w2:dataList id="deps">
+        			<w2:columnInfo>
+        				<w2:column id="depId" name="depId" dataType="text"></w2:column>
+        				<w2:column id="depName" name="depName" dataType="text"></w2:column>
+        				<w2:column id="depNo" name="depNo" dataType="text"></w2:column>
+        				<w2:column id="hgrkDepId" name="hgrkDepId" dataType="text"></w2:column>
+        				<w2:column id="empCnt" name="empCnt" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<depId><![CDATA[2]]></depId>
+        					<depName><![CDATA[인사부]]></depName>
+        					<depNo><![CDATA[00000]]></depNo>
+        					<hgrkDepId><![CDATA[0]]></hgrkDepId>
+        					<empCnt><![CDATA[1]]></empCnt>
+        				</w2:row>
+        				<w2:row>
+        					<depId><![CDATA[4]]></depId>
+        					<depName><![CDATA[총무부]]></depName>
+        					<depNo><![CDATA[00001]]></depNo>
+        					<hgrkDepId><![CDATA[0]]></hgrkDepId>
+        					<empCnt><![CDATA[0]]></empCnt>
+        				</w2:row>
+        				<w2:row>
+        					<depId><![CDATA[6]]></depId>
+        					<depName><![CDATA[인사팀]]></depName>
+        					<depNo><![CDATA[00003]]></depNo>
+        					<hgrkDepId><![CDATA[1]]></hgrkDepId>
+        					<empCnt><![CDATA[1]]></empCnt>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+
+        		<w2:dataMap id="pageInfo">
         			<w2:keyInfo>
         				<w2:key id="offset" name="offset" dataType="text"></w2:key>
+        				<w2:key id="limit" name="limit" dataType="text"></w2:key>
         				<w2:key id="type" name="type" dataType="text"></w2:key>
         				<w2:key id="sortMethod" name="sortMethod" dataType="text"></w2:key>
+        				<w2:key id="total" name="total" dataType="text"></w2:key>
+        				<w2:key id="sortFields" name="sortFields" dataType="json"></w2:key>
         			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<offset><![CDATA[0]]></offset>
+        				<limit><![CDATA[10]]></limit>
+        				<type><![CDATA[PAGE]]></type>
+        				<sortMethod><![CDATA[NO]]></sortMethod>
+        				<total><![CDATA[10]]></total>
+        			</w2:data>
         		</w2:dataMap>
+        		<w2:dataMap id="dep">
+        			<w2:keyInfo>
+        				<w2:key id="depId" name="depId" dataType="text"></w2:key>
+        				<w2:key id="depNo" name="depNo" dataType="text"></w2:key>
+        				<w2:key id="depName" name="depName" dataType="text"></w2:key>
+        				<w2:key id="hgrkDepId" name="hgrkDepId" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<depId><![CDATA[2]]></depId>
+        				<depNo><![CDATA[00000]]></depNo>
+        				<depName><![CDATA[인사부]]></depName>
+        				<hgrkDepId><![CDATA[0]]></hgrkDepId>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataList id="emps">
+        			<w2:columnInfo>
+        				<w2:column id="empId" name="empId" dataType="text"></w2:column>
+        				<w2:column id="empName" name="empName" dataType="text"></w2:column>
+        				<w2:column id="osdtCd" name="osdtCd" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<empId><![CDATA[1]]></empId>
+        					<empName><![CDATA[최동규]]></empName>
+        					<osdtCd><![CDATA[00001]]></osdtCd>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
         	</w2:dataCollection>
         	<w2:workflowCollection />
-        	<xf:submission id="submission3" action="http://10.50.241.179:8081/org/query/api/v1/emp-list" method="get" mediatype="application/json" ref="" target='data:json,["common","pageInfo"]'
-        		encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit="scwin.submission3_submit"
+        	<xf:submission id="submission3" action="http://10.50.241.179:8081/org/query/api/v1/emp-list" method="get"
+        		mediatype="application/json" ref="" target='data:json,["common","pageInfo"]' encoding="UTF-8" instance="" replace=""
+        		errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit="scwin.submission3_submit"
         		ev:submitdone="scwin.submission3_submitdone" ev:submiterror="scwin.submission3_submiterror" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="submission4" action="http://10.50.241.179:8081/org/query/api/v1/dept-list" method="get"
+        		mediatype="application/json" ref="" target='data:json,["deps","common","pageInfo"]' encoding="UTF-8" instance="" replace=""
+        		errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit="scwin.submission4_submit"
+        		ev:submitdone="scwin.submission4_submitdone" ev:submiterror="scwin.submission4_submiterror" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="submission5" action="http://10.50.241.179:8081/org/query/api/v1/dept-info/id/2" method="get"
+        		mediatype="application/json" ref="" target='data:json,["common","dep","emps"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="scwin.submission5_submit" ev:submitdone="scwin.submission5_submitdone"
+        		ev:submiterror="scwin.submission5_submiterror" abortTrigger="">
         	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function () {
-    $p.executeSubmission("submission3", { "type": "PAGE" });
+    //$p.executeSubmission("submission3");
+    //$p.executeSubmission("submission4", {"sortMethod":"ASC"});
+
+    const param = {
+        offset: 0,
+        limit: 11,
+        type: "PAGE",
+        sortMethod : "ASC",
+        sortFields :["depName"]
+    };
+    $c.sbm.execute(submission4, param);
 };
 
 scwin.btnLoginClick_onclick = function (e) {
@@ -62,6 +154,36 @@ scwin.submission3_submitdone = function (e) {
 scwin.submission3_submiterror = function (e) {
     var jsoninfo = JSON.stringify(common.getJSON());
     alert("error" + jsoninfo);
+};
+
+scwin.submission4_submit = function (e) {
+    alert("submit" + e);
+};
+
+scwin.submission4_submitdone = function (e) {
+    var jsoninfo1 = JSON.stringify(common.getJSON());
+    var jsoninfo2 = JSON.stringify(pageInfo.getJSON());
+    var jsoninfo3 = JSON.stringify(deps.getAllFilteredJSON());
+    alert("done" + 	jsoninfo1 + jsoninfo2 + jsoninfo3);
+};
+
+scwin.submission4_submiterror = function (e) {
+    alert("error" + e);
+};
+
+scwin.submission5_submit = function (e) {
+	alert("submit5" + e);
+};
+
+scwin.submission5_submitdone = function (e) {
+	var jsoninfo1 = JSON.stringify(common.getJSON());
+    var jsoninfo2 = JSON.stringify(dep.getJSON());
+    var jsoninfo3 = JSON.stringify(emps.getAllFilteredJSON());
+    alert("done" + 	jsoninfo1 + jsoninfo2 + jsoninfo3);
+};
+
+scwin.submission5_submiterror = function (e) {
+    alert("error5" + e);
 };
 ]]></script>
     </head>

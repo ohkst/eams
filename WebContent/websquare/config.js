@@ -154,7 +154,7 @@ export default {
         "@value": "true"
       },
       "preSubmitFunction": {
-        "@value": ""
+        "@value": "$c.sbm.__preSubmitFunction"
       },
       "callbackSubmitFunction": {
         "@value": ""
