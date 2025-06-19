@@ -15,7 +15,7 @@ xmlns:xf="http://www.w3.org/2002/xforms">
 		<w2:publicInfo method="scwin.getContextPath,scwin.__preSubmitFunction,scwin.__setActionParam,scwin.__callbackSubmitFunction,scwin.__submitErrorHandler,scwin.execute,scwin.executeDynamic,scwin.executeWorkflow,scwin.create,scwin.getResultCode,scwin.getStatusMessage,scwin.resultMsg,scwin.setAction,scwin.getServiceURL,scwin.getMessageCode"/>
 		<script lazy="false" type="text/javascript"><![CDATA[
 // 서버 통신 서비스 호출을 위한 Context Path
-scwin.CONTEXT_PATH = "";
+scwin.CONTEXT_PATH = "http://10.50.241.179:8081/";
 
 // 서버 통신 서비스 호출을 위한 Service Url (Context Path 이하 경로)
 scwin.SERVICE_URL = "";

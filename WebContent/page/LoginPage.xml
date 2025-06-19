@@ -103,17 +103,17 @@
         		</w2:dataList>
         	</w2:dataCollection>
         	<w2:workflowCollection />
-        	<xf:submission id="submission3" action="http://10.50.241.179:8081/org/query/api/v1/emp-list" method="get"
+        	<xf:submission id="submission3" action="org/query/api/v1/emp-list" method="get"
         		mediatype="application/json" ref="" target='data:json,["common","pageInfo"]' encoding="UTF-8" instance="" replace=""
         		errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit="scwin.submission3_submit"
         		ev:submitdone="scwin.submission3_submitdone" ev:submiterror="scwin.submission3_submiterror" abortTrigger="">
         	</xf:submission>
-        	<xf:submission id="submission4" action="http://10.50.241.179:8081/org/query/api/v1/dept-list" method="get"
+        	<xf:submission id="submission4" action="org/query/api/v1/dept-list" method="get"
         		mediatype="application/json" ref="" target='data:json,["deps","common","pageInfo"]' encoding="UTF-8" instance="" replace=""
         		errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit="scwin.submission4_submit"
         		ev:submitdone="scwin.submission4_submitdone" ev:submiterror="scwin.submission4_submiterror" abortTrigger="">
         	</xf:submission>
-        	<xf:submission id="submission5" action="http://10.50.241.179:8081/org/query/api/v1/dept-info/id/2" method="get"
+        	<xf:submission id="submission5" action="org/query/api/v1/dept-info/id/2" method="get"
         		mediatype="application/json" ref="" target='data:json,["common","dep","emps"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
         		mode="asynchronous" processMsg="" ev:submit="scwin.submission5_submit" ev:submitdone="scwin.submission5_submitdone"
         		ev:submiterror="scwin.submission5_submiterror" abortTrigger="">
@@ -133,6 +133,7 @@ scwin.onpageload = function () {
         sortMethod : "ASC",
         sortFields :["depName"]
     };
+
     $c.sbm.execute(submission4, param);
 };
 
