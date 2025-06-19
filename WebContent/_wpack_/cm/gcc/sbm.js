@@ -1,6 +1,6 @@
-/*amd /cm/gcc/sbm.xml 22971 a326f1a3addc27780b49262cd31f8abae4bc050f2475d7864f1a2592331faca0 */
+/*amd /cm/gcc/sbm.xml 22945 91fd3540ec905e3c07d2645d33459282f2ebd901e9fbf540167a582cd410fe11 */
 define({declaration:{A:{version:'1.0',encoding:'UTF-8'}},E:[{T:1,N:'html',A:{xmlns:'http://www.w3.org/1999/xhtml','xmlns:ev':'http://www.w3.org/2001/xml-events','xmlns:w2':'http://www.inswave.com/websquare','xmlns:xf':'http://www.w3.org/2002/xforms'},E:[{T:1,N:'head',A:{},E:[{T:1,N:'w2:type',E:[{T:3,text:'COMMON'}]},{T:1,N:'w2:buildDate'},{T:1,N:'w2:MSA'},{T:1,N:'xf:model',E:[{T:1,N:'w2:dataCollection',A:{baseNode:'map'}},{T:1,N:'w2:workflowCollection'}]},{T:1,N:'w2:layoutInfo'},{T:1,N:'w2:publicInfo',A:{method:'scwin.getContextPath,scwin.__preSubmitFunction,scwin.__setActionParam,scwin.__callbackSubmitFunction,scwin.__submitErrorHandler,scwin.execute,scwin.executeDynamic,scwin.executeWorkflow,scwin.create,scwin.getResultCode,scwin.getStatusMessage,scwin.resultMsg,scwin.setAction,scwin.getServiceURL,scwin.getMessageCode'}},{T:1,N:'script',A:{lazy:'false',type:'text/javascript'},E:[{T:4,cdata:function(scopeObj){with(scopeObj){// 서버 통신 서비스 호출을 위한 Context Path
-scwin.CONTEXT_PATH = "http://10.50.241.179:8081";
+scwin.CONTEXT_PATH = "";
 
 // 서버 통신 서비스 호출을 위한 Service Url (Context Path 이하 경로)
 scwin.SERVICE_URL = "";
@@ -13,7 +13,7 @@ scwin.DEFAULT_OPTIONS_MEDIATYPE = "application/json";
 
 // GET Method에 대해서 RESTFul 방식으로 URL 생성되도록 하는 옵션 (true : 동작, false : 미동작)
 // RESTFul URL 생성 규칙에 관한 자세한 설명은 scwin.setActionParam 함수의 주석 참조
-scwin.IS_RESTFUL_URL = false;
+scwin.IS_RESTFUL_URL = true;
 
 // 통신 상태 코드
 scwin.MESSAGE_CODE = {
