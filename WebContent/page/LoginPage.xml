@@ -8,50 +8,62 @@
         <w2:MSA/>
         <xf:model>
         	<w2:dataCollection baseNode="map">
-        		<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
-        			<w2:columnInfo></w2:columnInfo>
-        		</w2:dataList>
-        		<w2:dataMap baseNode="map" id="dataMap1">
+
+        		<w2:dataMap id="common">
         			<w2:keyInfo>
         				<w2:key id="guid" name="guid" dataType="text"></w2:key>
         				<w2:key id="code" name="code" dataType="text"></w2:key>
         				<w2:key id="message" name="message" dataType="text"></w2:key>
         				<w2:key id="detailMessage" name="detailMessage" dataType="text"></w2:key>
-        				<w2:key id="data" name="data" dataType="json"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<guid><![CDATA[75e872f08a394df2968e555deb2efa63]]></guid>
+        				<code><![CDATA[N000]]></code>
+        				<message><![CDATA[정상처리]]></message>
+        				<detailMessage><![CDATA[]]></detailMessage>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataMap baseNode="map" id="pageInfo">
+        			<w2:keyInfo>
+        				<w2:key id="offset" name="offset" dataType="text"></w2:key>
+        				<w2:key id="type" name="type" dataType="text"></w2:key>
+        				<w2:key id="sortMethod" name="sortMethod" dataType="text"></w2:key>
         			</w2:keyInfo>
         		</w2:dataMap>
         	</w2:dataCollection>
         	<w2:workflowCollection />
-        	<xf:submission id="submission1" action="http://10.50.241.179:8081/org/api/v1/command/emp-login" method="post" mediatype="application/json"
-        		ref="" target="data:json,dataMap1" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg=""
-        		ev:submit="scwin.submission1_submit" ev:submitdone="scwin.submission1_submitdone" ev:submiterror="scwin.submission1_submiterror" abortTrigger="">
+        	<xf:submission id="submission3" action="http://10.50.241.179:8081/org/query/api/v1/emp-list" method="get" mediatype="application/json" ref="" target='data:json,["common","pageInfo"]'
+        		encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit="scwin.submission3_submit"
+        		ev:submitdone="scwin.submission3_submitdone" ev:submiterror="scwin.submission3_submiterror" abortTrigger="">
         	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
-scwin.onpageload = function() {
-    $p.executeSubmission("submission1",{"empNo":"113565", "pwd":"cdk200022"});
+scwin.onpageload = function () {
+    $p.executeSubmission("submission3", { "type": "PAGE" });
 };
 
 scwin.btnLoginClick_onclick = function (e) {
     $p.url("/page/layout/TopNavigationBottomContents.xml");
 };
 
-scwin.submission1_submit = function (e) {
-    var jsoninfo = JSON.stringify(dataMap1.getJSON());
-    alert("submit" + jsoninfo);
+scwin.submission3_submit = function (e) {
+
 };
 
-scwin.submission1_submitdone = function (e) {
-    var jsoninfo = JSON.stringify(dataMap1.getJSON());
-	alert("done" + jsoninfo);
+scwin.submission3_submitdone = function (e) {
+    var jsoninfo1 = JSON.stringify(common.getJSON());
+    var jsoninfo2 = JSON.stringify(pageInfo.getJSON());
+
+    alert("done" + jsoninfo1 + jsoninfo2);
 };
 
-scwin.submission1_submiterror = function (e) {
-    var jsoninfo = JSON.stringify(dataMap1.getJSON());
-	alert("error" + jsoninfo);
-};]]></script>
+scwin.submission3_submiterror = function (e) {
+    var jsoninfo = JSON.stringify(common.getJSON());
+    alert("error" + jsoninfo);
+};
+]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="background-color:#0E2147;display:flex;justify-content: center;align-items: center;">
     	<xf:group style="width:314px;height:266px;display: flex;flex-direction: column;gap: 12px;" id="">

@@ -24,6 +24,7 @@
         				<w2:key id="key27" name="컬럼 총 길이" dataType="text" defaultValue="281"></w2:key>
         				<w2:key id="key28" name="데이터 보관 주기" dataType="text" defaultValue="영구"></w2:key>
         				<w2:key id="key29" name="일련번호" dataType="text" defaultValue="CMDB-SVRIMG-UX-0001"></w2:key>
+        				<w2:key id="key15" name="name15" dataType="text"></w2:key>
         			</w2:keyInfo>
         			<w2:data use="false">
         				<key1><![CDATA[프론트개발부]]></key1>
