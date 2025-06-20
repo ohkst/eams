@@ -1,6 +1,6 @@
-/*amd /cm/gcc/sbm.xml 22945 91fd3540ec905e3c07d2645d33459282f2ebd901e9fbf540167a582cd410fe11 */
+/*amd /cm/gcc/sbm.xml 22971 024e0940a01c58c07ae7831086a5176a539035c46f70f6a2792b1f9c3bd6f0c4 */
 define({declaration:{A:{version:'1.0',encoding:'UTF-8'}},E:[{T:1,N:'html',A:{xmlns:'http://www.w3.org/1999/xhtml','xmlns:ev':'http://www.w3.org/2001/xml-events','xmlns:w2':'http://www.inswave.com/websquare','xmlns:xf':'http://www.w3.org/2002/xforms'},E:[{T:1,N:'head',A:{},E:[{T:1,N:'w2:type',E:[{T:3,text:'COMMON'}]},{T:1,N:'w2:buildDate'},{T:1,N:'w2:MSA'},{T:1,N:'xf:model',E:[{T:1,N:'w2:dataCollection',A:{baseNode:'map'}},{T:1,N:'w2:workflowCollection'}]},{T:1,N:'w2:layoutInfo'},{T:1,N:'w2:publicInfo',A:{method:'scwin.getContextPath,scwin.__preSubmitFunction,scwin.__setActionParam,scwin.__callbackSubmitFunction,scwin.__submitErrorHandler,scwin.execute,scwin.executeDynamic,scwin.executeWorkflow,scwin.create,scwin.getResultCode,scwin.getStatusMessage,scwin.resultMsg,scwin.setAction,scwin.getServiceURL,scwin.getMessageCode'}},{T:1,N:'script',A:{lazy:'false',type:'text/javascript'},E:[{T:4,cdata:function(scopeObj){with(scopeObj){// 서버 통신 서비스 호출을 위한 Context Path
-scwin.CONTEXT_PATH = "";
+scwin.CONTEXT_PATH = "http://10.50.241.179:8081/";
 
 // 서버 통신 서비스 호출을 위한 Service Url (Context Path 이하 경로)
 scwin.SERVICE_URL = "";
