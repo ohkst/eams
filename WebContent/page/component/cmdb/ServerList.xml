@@ -23,504 +23,504 @@
         			</w2:data>
         		</w2:dataMap>
         		<w2:dataMap id="pageInfo">
-					<w2:keyInfo>
-						<w2:key id="offset" name="offset" dataType="text"></w2:key>
-						<w2:key id="limit" name="limit" dataType="text"></w2:key>
-						<w2:key id="type" name="type" dataType="text"></w2:key>
-						<w2:key id="sortMethod" name="sortMethod" dataType="text"></w2:key>
-						<w2:key id="total" name="total" dataType="text"></w2:key>
-					</w2:keyInfo>
-					<w2:data xmlns="">
-						<offset><![CDATA[0]]></offset>
-						<limit><![CDATA[10]]></limit>
-						<type><![CDATA[PAGE]]></type>
-						<sortMethod><![CDATA[NO]]></sortMethod>
-						<total><![CDATA[20]]></total>
-					</w2:data>
-				</w2:dataMap>
-				<w2:dataList id="svrImgs">
-					<w2:columnInfo>
-						<w2:column id="svrImgAdmnId" name="서버이미지관리ID" dataType="text"></w2:column>
-						<w2:column id="svrImgAdmnSqno" name="서버이미지관리일련번호" dataType="text"></w2:column>
-						<w2:column id="hwId" name="HWID" dataType="text"></w2:column>
-						<w2:column id="hostName" name="호스트명" dataType="text"></w2:column>
-						<w2:column id="stat" name="stat" dataType="상태"></w2:column>
-						<w2:column id="pssnDvsn" name="소유구분" dataType="text"></w2:column>
-						<w2:column id="taDomn" name="TA도메인" dataType="text"></w2:column>
-						<w2:column id="taSvcGrp" name="TA서비스그룹" dataType="text" ignoreStatus=""></w2:column>
-						<w2:column id="taSvc" name="TA서비스" dataType="text"></w2:column>
-						<w2:column id="taArfs" name="TA업무" dataType="text"></w2:column>
-						<w2:column id="svcIptd" name="서비스중요도" dataType="text"></w2:column>
-						<w2:column id="svcOffrObjt" name="서비스제공대상" dataType="text"></w2:column>
-						<w2:column id="svcHour" name="서비스시간" dataType="text"></w2:column>
-						<w2:column id="prmAdmnDep" name="주관리부서" dataType="text"></w2:column>
-						<w2:column id="apChhr" name="AP담당자" dataType="text"></w2:column>
-						<w2:column id="osDvsn" name="OS구분" dataType="text"></w2:column>
-						<w2:column id="usgeDvsn" name="용도구분" dataType="text"></w2:column>
-						<w2:column id="svrDvsn" name="서버용도" dataType="text"></w2:column>
-						<w2:column id="imgDvsn" name="이미지구분" dataType="text"></w2:column>
-						<w2:column id="haCpstYn" name="HA구성여부" dataType="text"></w2:column>
-						<w2:column id="haSoltn" name="HA솔루션" dataType="text"></w2:column>
-						<w2:column id="haVer" name="HA버전" dataType="text"></w2:column>
-						<w2:column id="svcOpngDt" name="서비스개시일자" dataType="text"></w2:column>
-						<w2:column id="svcEndDt" name="서비스종료일자" dataType="text"></w2:column>
-						<w2:column id="bilObjtYn" name="과금대상여부" dataType="text"></w2:column>
-						<w2:column id="asmtCoreTnum" name="할당Core수" dataType="text"></w2:column>
-						<w2:column id="asmtMmutSize" name="할당메모리사이즈" dataType="text"></w2:column>
-						<w2:column id="asmtItnlDiskSize" name="할당내장디스크사이즈" dataType="text"></w2:column>
-						<w2:column id="asmtExtnDiskSize" name="할단외장디스크사이즈" dataType="text"></w2:column>
-						<w2:column id="ipArr1" name="IP_주소1" dataType="text"></w2:column>
-						<w2:column id="ipArr2" name="IP_주소2" dataType="text"></w2:column>
-						<w2:column id="ipArr3" name="IP_주소3" dataType="text"></w2:column>
-						<w2:column id="ipArr4" name="IP_주소4" dataType="text"></w2:column>
-						<w2:column id="ipArr5" name="IP_주소5" dataType="text"></w2:column>
-						<w2:column id="ipArr6" name="IP_주소6" dataType="text"></w2:column>
-						<w2:column id="ipArr7" name="IP_주소7" dataType="text"></w2:column>
-						<w2:column id="ipArr8" name="IP_주소8" dataType="text"></w2:column>
-						<w2:column id="ipArr9" name="IP_주소9" dataType="text"></w2:column>
-						<w2:column id="asstNo" name="자산번호" dataType="text"></w2:column>
-						<w2:column id="dsusObjtYn" name="파기대상여부" dataType="text"></w2:column>
-						<w2:column id="rmks" name="비고" dataType="text" ignoreStatus=""></w2:column>
-					</w2:columnInfo>
-					<w2:data xmlns="">
-						<w2:row>
-							<svrImgAdmnId><![CDATA[1]]></svrImgAdmnId>
-							<svrImgAdmnSqno><![CDATA[string]]></svrImgAdmnSqno>
-							<hwId><![CDATA[1]]></hwId>
-							<hostName><![CDATA[string]]></hostName>
-							<stat><![CDATA[정상]]></stat>
-							<pssnDvsn><![CDATA[string]]></pssnDvsn>
-							<taDomn><![CDATA[네트워크]]></taDomn>
-							<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-							<taSvc><![CDATA[라우팅테이블]]></taSvc>
-							<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-							<svcIptd><![CDATA[s]]></svcIptd>
-							<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
-							<svcHour><![CDATA[string]]></svcHour>
-							<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
-							<apChhr><![CDATA[string]]></apChhr>
-							<osDvsn><![CDATA[string]]></osDvsn>
-							<usgeDvsn><![CDATA[string]]></usgeDvsn>
-							<svrDvsn><![CDATA[string]]></svrDvsn>
-							<imgDvsn><![CDATA[string]]></imgDvsn>
-							<haCpstYn><![CDATA[s]]></haCpstYn>
-							<haSoltn><![CDATA[string]]></haSoltn>
-							<haVer><![CDATA[string]]></haVer>
-							<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-							<svcEndDt><![CDATA[stringst]]></svcEndDt>
-							<bilObjtYn><![CDATA[s]]></bilObjtYn>
-							<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-							<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-							<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-							<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-							<ipArr1><![CDATA[string]]></ipArr1>
-							<ipArr2><![CDATA[string]]></ipArr2>
-							<ipArr3><![CDATA[string]]></ipArr3>
-							<ipArr4><![CDATA[string]]></ipArr4>
-							<ipArr5><![CDATA[string]]></ipArr5>
-							<ipArr6><![CDATA[string]]></ipArr6>
-							<ipArr7><![CDATA[string]]></ipArr7>
-							<ipArr8><![CDATA[string]]></ipArr8>
-							<ipArr9><![CDATA[string]]></ipArr9>
-							<asstNo><![CDATA[string]]></asstNo>
-							<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-							<rmks><![CDATA[string]]></rmks>
-						</w2:row>
-						<w2:row>
-							<svrImgAdmnId><![CDATA[2]]></svrImgAdmnId>
-							<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0001]]></svrImgAdmnSqno>
-							<hwId><![CDATA[1]]></hwId>
-							<hostName><![CDATA[hst01]]></hostName>
-							<stat><![CDATA[정상]]></stat>
-							<pssnDvsn><![CDATA[string]]></pssnDvsn>
-							<taDomn><![CDATA[네트워크]]></taDomn>
-							<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-							<taSvc><![CDATA[라우팅테이블]]></taSvc>
-							<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-							<svcIptd><![CDATA[s]]></svcIptd>
-							<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
-							<svcHour><![CDATA[string]]></svcHour>
-							<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
-							<apChhr><![CDATA[string]]></apChhr>
-							<osDvsn><![CDATA[string]]></osDvsn>
-							<usgeDvsn><![CDATA[string]]></usgeDvsn>
-							<svrDvsn><![CDATA[string]]></svrDvsn>
-							<imgDvsn><![CDATA[string]]></imgDvsn>
-							<haCpstYn><![CDATA[s]]></haCpstYn>
-							<haSoltn><![CDATA[string]]></haSoltn>
-							<haVer><![CDATA[string]]></haVer>
-							<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-							<svcEndDt><![CDATA[stringst]]></svcEndDt>
-							<bilObjtYn><![CDATA[s]]></bilObjtYn>
-							<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-							<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-							<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-							<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-							<ipArr1><![CDATA[string]]></ipArr1>
-							<ipArr2><![CDATA[string]]></ipArr2>
-							<ipArr3><![CDATA[string]]></ipArr3>
-							<ipArr4><![CDATA[string]]></ipArr4>
-							<ipArr5><![CDATA[string]]></ipArr5>
-							<ipArr6><![CDATA[string]]></ipArr6>
-							<ipArr7><![CDATA[string]]></ipArr7>
-							<ipArr8><![CDATA[string]]></ipArr8>
-							<ipArr9><![CDATA[string]]></ipArr9>
-							<asstNo><![CDATA[string]]></asstNo>
-							<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-							<rmks><![CDATA[string]]></rmks>
-						</w2:row>
-						<w2:row>
-							<svrImgAdmnId><![CDATA[3]]></svrImgAdmnId>
-							<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0002]]></svrImgAdmnSqno>
-							<hwId><![CDATA[1]]></hwId>
-							<hostName><![CDATA[hst02]]></hostName>
-							<stat><![CDATA[정상]]></stat>
-							<pssnDvsn><![CDATA[string]]></pssnDvsn>
-							<taDomn><![CDATA[네트워크]]></taDomn>
-							<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-							<taSvc><![CDATA[라우팅테이블]]></taSvc>
-							<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-							<svcIptd><![CDATA[s]]></svcIptd>
-							<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
-							<svcHour><![CDATA[string]]></svcHour>
-							<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
-							<apChhr><![CDATA[string]]></apChhr>
-							<osDvsn><![CDATA[string]]></osDvsn>
-							<usgeDvsn><![CDATA[string]]></usgeDvsn>
-							<svrDvsn><![CDATA[string]]></svrDvsn>
-							<imgDvsn><![CDATA[string]]></imgDvsn>
-							<haCpstYn><![CDATA[s]]></haCpstYn>
-							<haSoltn><![CDATA[string]]></haSoltn>
-							<haVer><![CDATA[string]]></haVer>
-							<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-							<svcEndDt><![CDATA[stringst]]></svcEndDt>
-							<bilObjtYn><![CDATA[s]]></bilObjtYn>
-							<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-							<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-							<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-							<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-							<ipArr1><![CDATA[string]]></ipArr1>
-							<ipArr2><![CDATA[string]]></ipArr2>
-							<ipArr3><![CDATA[string]]></ipArr3>
-							<ipArr4><![CDATA[string]]></ipArr4>
-							<ipArr5><![CDATA[string]]></ipArr5>
-							<ipArr6><![CDATA[string]]></ipArr6>
-							<ipArr7><![CDATA[string]]></ipArr7>
-							<ipArr8><![CDATA[string]]></ipArr8>
-							<ipArr9><![CDATA[string]]></ipArr9>
-							<asstNo><![CDATA[string]]></asstNo>
-							<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-							<rmks><![CDATA[string]]></rmks>
-						</w2:row>
-						<w2:row>
-							<svrImgAdmnId><![CDATA[4]]></svrImgAdmnId>
-							<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0003]]></svrImgAdmnSqno>
-							<hwId><![CDATA[1]]></hwId>
-							<hostName><![CDATA[hst03]]></hostName>
-							<stat><![CDATA[정상]]></stat>
-							<pssnDvsn><![CDATA[string]]></pssnDvsn>
-							<taDomn><![CDATA[네트워크]]></taDomn>
-							<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-							<taSvc><![CDATA[라우팅테이블]]></taSvc>
-							<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-							<svcIptd><![CDATA[s]]></svcIptd>
-							<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
-							<svcHour><![CDATA[string]]></svcHour>
-							<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
-							<apChhr><![CDATA[string]]></apChhr>
-							<osDvsn><![CDATA[string]]></osDvsn>
-							<usgeDvsn><![CDATA[string]]></usgeDvsn>
-							<svrDvsn><![CDATA[string]]></svrDvsn>
-							<imgDvsn><![CDATA[string]]></imgDvsn>
-							<haCpstYn><![CDATA[s]]></haCpstYn>
-							<haSoltn><![CDATA[string]]></haSoltn>
-							<haVer><![CDATA[string]]></haVer>
-							<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-							<svcEndDt><![CDATA[stringst]]></svcEndDt>
-							<bilObjtYn><![CDATA[s]]></bilObjtYn>
-							<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-							<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-							<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-							<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-							<ipArr1><![CDATA[string]]></ipArr1>
-							<ipArr2><![CDATA[string]]></ipArr2>
-							<ipArr3><![CDATA[string]]></ipArr3>
-							<ipArr4><![CDATA[string]]></ipArr4>
-							<ipArr5><![CDATA[string]]></ipArr5>
-							<ipArr6><![CDATA[string]]></ipArr6>
-							<ipArr7><![CDATA[string]]></ipArr7>
-							<ipArr8><![CDATA[string]]></ipArr8>
-							<ipArr9><![CDATA[string]]></ipArr9>
-							<asstNo><![CDATA[string]]></asstNo>
-							<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-							<rmks><![CDATA[string]]></rmks>
-						</w2:row>
-						<w2:row>
-							<svrImgAdmnId><![CDATA[5]]></svrImgAdmnId>
-							<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0004]]></svrImgAdmnSqno>
-							<hwId><![CDATA[1]]></hwId>
-							<hostName><![CDATA[hst04]]></hostName>
-							<stat><![CDATA[정상]]></stat>
-							<pssnDvsn><![CDATA[string]]></pssnDvsn>
-							<taDomn><![CDATA[네트워크]]></taDomn>
-							<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-							<taSvc><![CDATA[라우팅테이블]]></taSvc>
-							<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-							<svcIptd><![CDATA[s]]></svcIptd>
-							<svcOffrObjt><![CDATA[A1]]></svcOffrObjt>
-							<svcHour><![CDATA[string]]></svcHour>
-							<prmAdmnDep><![CDATA[SK]]></prmAdmnDep>
-							<apChhr><![CDATA[홍길동]]></apChhr>
-							<osDvsn><![CDATA[string]]></osDvsn>
-							<usgeDvsn><![CDATA[string]]></usgeDvsn>
-							<svrDvsn><![CDATA[string]]></svrDvsn>
-							<imgDvsn><![CDATA[string]]></imgDvsn>
-							<haCpstYn><![CDATA[s]]></haCpstYn>
-							<haSoltn><![CDATA[string]]></haSoltn>
-							<haVer><![CDATA[string]]></haVer>
-							<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-							<svcEndDt><![CDATA[stringst]]></svcEndDt>
-							<bilObjtYn><![CDATA[s]]></bilObjtYn>
-							<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-							<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-							<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-							<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-							<ipArr1><![CDATA[string]]></ipArr1>
-							<ipArr2><![CDATA[string]]></ipArr2>
-							<ipArr3><![CDATA[string]]></ipArr3>
-							<ipArr4><![CDATA[string]]></ipArr4>
-							<ipArr5><![CDATA[string]]></ipArr5>
-							<ipArr6><![CDATA[string]]></ipArr6>
-							<ipArr7><![CDATA[string]]></ipArr7>
-							<ipArr8><![CDATA[string]]></ipArr8>
-							<ipArr9><![CDATA[string]]></ipArr9>
-							<asstNo><![CDATA[string]]></asstNo>
-							<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-							<rmks><![CDATA[string]]></rmks>
-						</w2:row>
-						<w2:row>
-							<svrImgAdmnId><![CDATA[6]]></svrImgAdmnId>
-							<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0005]]></svrImgAdmnSqno>
-							<hwId><![CDATA[1]]></hwId>
-							<hostName><![CDATA[hst05]]></hostName>
-							<stat><![CDATA[정상]]></stat>
-							<pssnDvsn><![CDATA[string]]></pssnDvsn>
-							<taDomn><![CDATA[네트워크]]></taDomn>
-							<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-							<taSvc><![CDATA[라우팅테이블]]></taSvc>
-							<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-							<svcIptd><![CDATA[s]]></svcIptd>
-							<svcOffrObjt><![CDATA[A5]]></svcOffrObjt>
-							<svcHour><![CDATA[string]]></svcHour>
-							<prmAdmnDep><![CDATA[SK]]></prmAdmnDep>
-							<apChhr><![CDATA[홍길동5]]></apChhr>
-							<osDvsn><![CDATA[string]]></osDvsn>
-							<usgeDvsn><![CDATA[string]]></usgeDvsn>
-							<svrDvsn><![CDATA[string]]></svrDvsn>
-							<imgDvsn><![CDATA[string]]></imgDvsn>
-							<haCpstYn><![CDATA[s]]></haCpstYn>
-							<haSoltn><![CDATA[string]]></haSoltn>
-							<haVer><![CDATA[string]]></haVer>
-							<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-							<svcEndDt><![CDATA[stringst]]></svcEndDt>
-							<bilObjtYn><![CDATA[s]]></bilObjtYn>
-							<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-							<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-							<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-							<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-							<ipArr1><![CDATA[string]]></ipArr1>
-							<ipArr2><![CDATA[string]]></ipArr2>
-							<ipArr3><![CDATA[string]]></ipArr3>
-							<ipArr4><![CDATA[string]]></ipArr4>
-							<ipArr5><![CDATA[string]]></ipArr5>
-							<ipArr6><![CDATA[string]]></ipArr6>
-							<ipArr7><![CDATA[string]]></ipArr7>
-							<ipArr8><![CDATA[string]]></ipArr8>
-							<ipArr9><![CDATA[string]]></ipArr9>
-							<asstNo><![CDATA[string]]></asstNo>
-							<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-							<rmks><![CDATA[string]]></rmks>
-						</w2:row>
-						<w2:row>
-							<svrImgAdmnId><![CDATA[7]]></svrImgAdmnId>
-							<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0006]]></svrImgAdmnSqno>
-							<hwId><![CDATA[1]]></hwId>
-							<hostName><![CDATA[hst06]]></hostName>
-							<stat><![CDATA[정상]]></stat>
-							<pssnDvsn><![CDATA[string]]></pssnDvsn>
-							<taDomn><![CDATA[네트워크]]></taDomn>
-							<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-							<taSvc><![CDATA[라우팅테이블]]></taSvc>
-							<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-							<svcIptd><![CDATA[s]]></svcIptd>
-							<svcOffrObjt><![CDATA[A5]]></svcOffrObjt>
-							<svcHour><![CDATA[string]]></svcHour>
-							<prmAdmnDep><![CDATA[KIS]]></prmAdmnDep>
-							<apChhr><![CDATA[홍길동6]]></apChhr>
-							<osDvsn><![CDATA[string]]></osDvsn>
-							<usgeDvsn><![CDATA[string]]></usgeDvsn>
-							<svrDvsn><![CDATA[string]]></svrDvsn>
-							<imgDvsn><![CDATA[string]]></imgDvsn>
-							<haCpstYn><![CDATA[s]]></haCpstYn>
-							<haSoltn><![CDATA[string]]></haSoltn>
-							<haVer><![CDATA[string]]></haVer>
-							<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-							<svcEndDt><![CDATA[stringst]]></svcEndDt>
-							<bilObjtYn><![CDATA[s]]></bilObjtYn>
-							<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-							<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-							<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-							<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-							<ipArr1><![CDATA[string]]></ipArr1>
-							<ipArr2><![CDATA[string]]></ipArr2>
-							<ipArr3><![CDATA[string]]></ipArr3>
-							<ipArr4><![CDATA[string]]></ipArr4>
-							<ipArr5><![CDATA[string]]></ipArr5>
-							<ipArr6><![CDATA[string]]></ipArr6>
-							<ipArr7><![CDATA[string]]></ipArr7>
-							<ipArr8><![CDATA[string]]></ipArr8>
-							<ipArr9><![CDATA[string]]></ipArr9>
-							<asstNo><![CDATA[string]]></asstNo>
-							<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-							<rmks><![CDATA[string]]></rmks>
-						</w2:row>
-						<w2:row>
-							<svrImgAdmnId><![CDATA[8]]></svrImgAdmnId>
-							<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0007]]></svrImgAdmnSqno>
-							<hwId><![CDATA[1]]></hwId>
-							<hostName><![CDATA[hst07]]></hostName>
-							<stat><![CDATA[정상]]></stat>
-							<pssnDvsn><![CDATA[string]]></pssnDvsn>
-							<taDomn><![CDATA[네트워크]]></taDomn>
-							<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-							<taSvc><![CDATA[라우팅테이블]]></taSvc>
-							<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-							<svcIptd><![CDATA[s]]></svcIptd>
-							<svcOffrObjt><![CDATA[A7]]></svcOffrObjt>
-							<svcHour><![CDATA[string]]></svcHour>
-							<prmAdmnDep><![CDATA[KIS]]></prmAdmnDep>
-							<apChhr><![CDATA[홍길동7]]></apChhr>
-							<osDvsn><![CDATA[string]]></osDvsn>
-							<usgeDvsn><![CDATA[string]]></usgeDvsn>
-							<svrDvsn><![CDATA[string]]></svrDvsn>
-							<imgDvsn><![CDATA[string]]></imgDvsn>
-							<haCpstYn><![CDATA[s]]></haCpstYn>
-							<haSoltn><![CDATA[string]]></haSoltn>
-							<haVer><![CDATA[string]]></haVer>
-							<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-							<svcEndDt><![CDATA[stringst]]></svcEndDt>
-							<bilObjtYn><![CDATA[s]]></bilObjtYn>
-							<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-							<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-							<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-							<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-							<ipArr1><![CDATA[string]]></ipArr1>
-							<ipArr2><![CDATA[string]]></ipArr2>
-							<ipArr3><![CDATA[string]]></ipArr3>
-							<ipArr4><![CDATA[string]]></ipArr4>
-							<ipArr5><![CDATA[string]]></ipArr5>
-							<ipArr6><![CDATA[string]]></ipArr6>
-							<ipArr7><![CDATA[string]]></ipArr7>
-							<ipArr8><![CDATA[string]]></ipArr8>
-							<ipArr9><![CDATA[string]]></ipArr9>
-							<asstNo><![CDATA[string]]></asstNo>
-							<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-							<rmks><![CDATA[string]]></rmks>
-						</w2:row>
-						<w2:row>
-							<svrImgAdmnId><![CDATA[9]]></svrImgAdmnId>
-							<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0008]]></svrImgAdmnSqno>
-							<hwId><![CDATA[1]]></hwId>
-							<hostName><![CDATA[hst08]]></hostName>
-							<stat><![CDATA[정상]]></stat>
-							<pssnDvsn><![CDATA[string]]></pssnDvsn>
-							<taDomn><![CDATA[네트워크]]></taDomn>
-							<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-							<taSvc><![CDATA[라우팅테이블]]></taSvc>
-							<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-							<svcIptd><![CDATA[s]]></svcIptd>
-							<svcOffrObjt><![CDATA[A8]]></svcOffrObjt>
-							<svcHour><![CDATA[string]]></svcHour>
-							<prmAdmnDep><![CDATA[KIS]]></prmAdmnDep>
-							<apChhr><![CDATA[홍길순]]></apChhr>
-							<osDvsn><![CDATA[string]]></osDvsn>
-							<usgeDvsn><![CDATA[string]]></usgeDvsn>
-							<svrDvsn><![CDATA[string]]></svrDvsn>
-							<imgDvsn><![CDATA[string]]></imgDvsn>
-							<haCpstYn><![CDATA[s]]></haCpstYn>
-							<haSoltn><![CDATA[string]]></haSoltn>
-							<haVer><![CDATA[string]]></haVer>
-							<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-							<svcEndDt><![CDATA[stringst]]></svcEndDt>
-							<bilObjtYn><![CDATA[s]]></bilObjtYn>
-							<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-							<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-							<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-							<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-							<ipArr1><![CDATA[string]]></ipArr1>
-							<ipArr2><![CDATA[string]]></ipArr2>
-							<ipArr3><![CDATA[string]]></ipArr3>
-							<ipArr4><![CDATA[string]]></ipArr4>
-							<ipArr5><![CDATA[string]]></ipArr5>
-							<ipArr6><![CDATA[string]]></ipArr6>
-							<ipArr7><![CDATA[string]]></ipArr7>
-							<ipArr8><![CDATA[string]]></ipArr8>
-							<ipArr9><![CDATA[string]]></ipArr9>
-							<asstNo><![CDATA[string]]></asstNo>
-							<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-							<rmks><![CDATA[string]]></rmks>
-						</w2:row>
-						<w2:row>
-							<svrImgAdmnId><![CDATA[10]]></svrImgAdmnId>
-							<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0009]]></svrImgAdmnSqno>
-							<hwId><![CDATA[1]]></hwId>
-							<hostName><![CDATA[hst09]]></hostName>
-							<stat><![CDATA[정상]]></stat>
-							<pssnDvsn><![CDATA[string]]></pssnDvsn>
-							<taDomn><![CDATA[네트워크]]></taDomn>
-							<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-							<taSvc><![CDATA[라우팅테이블]]></taSvc>
-							<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-							<svcIptd><![CDATA[s]]></svcIptd>
-							<svcOffrObjt><![CDATA[A9]]></svcOffrObjt>
-							<svcHour><![CDATA[string]]></svcHour>
-							<prmAdmnDep><![CDATA[KIS]]></prmAdmnDep>
-							<apChhr><![CDATA[홍길영]]></apChhr>
-							<osDvsn><![CDATA[string]]></osDvsn>
-							<usgeDvsn><![CDATA[string]]></usgeDvsn>
-							<svrDvsn><![CDATA[string]]></svrDvsn>
-							<imgDvsn><![CDATA[string]]></imgDvsn>
-							<haCpstYn><![CDATA[s]]></haCpstYn>
-							<haSoltn><![CDATA[string]]></haSoltn>
-							<haVer><![CDATA[string]]></haVer>
-							<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-							<svcEndDt><![CDATA[stringst]]></svcEndDt>
-							<bilObjtYn><![CDATA[s]]></bilObjtYn>
-							<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-							<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-							<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-							<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-							<ipArr1><![CDATA[string]]></ipArr1>
-							<ipArr2><![CDATA[string]]></ipArr2>
-							<ipArr3><![CDATA[string]]></ipArr3>
-							<ipArr4><![CDATA[string]]></ipArr4>
-							<ipArr5><![CDATA[string]]></ipArr5>
-							<ipArr6><![CDATA[string]]></ipArr6>
-							<ipArr7><![CDATA[string]]></ipArr7>
-							<ipArr8><![CDATA[string]]></ipArr8>
-							<ipArr9><![CDATA[string]]></ipArr9>
-							<asstNo><![CDATA[string]]></asstNo>
-							<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-							<rmks><![CDATA[string]]></rmks>
-						</w2:row>
-					</w2:data>
-				</w2:dataList>
-			</w2:dataCollection>
+        			<w2:keyInfo>
+        				<w2:key id="offset" name="offset" dataType="text"></w2:key>
+        				<w2:key id="limit" name="limit" dataType="text"></w2:key>
+        				<w2:key id="type" name="type" dataType="text"></w2:key>
+        				<w2:key id="sortMethod" name="sortMethod" dataType="text"></w2:key>
+        				<w2:key id="total" name="total" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<offset><![CDATA[0]]></offset>
+        				<limit><![CDATA[10]]></limit>
+        				<type><![CDATA[PAGE]]></type>
+        				<sortMethod><![CDATA[NO]]></sortMethod>
+        				<total><![CDATA[20]]></total>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataList id="svrImgs">
+        			<w2:columnInfo>
+        				<w2:column id="svrImgAdmnId" name="서버이미지관리ID" dataType="text"></w2:column>
+        				<w2:column id="svrImgAdmnSqno" name="서버이미지관리일련번호" dataType="text"></w2:column>
+        				<w2:column id="hwId" name="HWID" dataType="text"></w2:column>
+        				<w2:column id="hostName" name="호스트명" dataType="text"></w2:column>
+        				<w2:column id="stat" name="stat" dataType="상태"></w2:column>
+        				<w2:column id="pssnDvsn" name="소유구분" dataType="text"></w2:column>
+        				<w2:column id="taDomn" name="TA도메인" dataType="text"></w2:column>
+        				<w2:column id="taSvcGrp" name="TA서비스그룹" dataType="text" ignoreStatus=""></w2:column>
+        				<w2:column id="taSvc" name="TA서비스" dataType="text"></w2:column>
+        				<w2:column id="taArfs" name="TA업무" dataType="text"></w2:column>
+        				<w2:column id="svcIptd" name="서비스중요도" dataType="text"></w2:column>
+        				<w2:column id="svcOffrObjt" name="서비스제공대상" dataType="text"></w2:column>
+        				<w2:column id="svcHour" name="서비스시간" dataType="text"></w2:column>
+        				<w2:column id="prmAdmnDep" name="주관리부서" dataType="text"></w2:column>
+        				<w2:column id="apChhr" name="AP담당자" dataType="text"></w2:column>
+        				<w2:column id="osDvsn" name="OS구분" dataType="text"></w2:column>
+        				<w2:column id="usgeDvsn" name="용도구분" dataType="text"></w2:column>
+        				<w2:column id="svrDvsn" name="서버용도" dataType="text"></w2:column>
+        				<w2:column id="imgDvsn" name="이미지구분" dataType="text"></w2:column>
+        				<w2:column id="haCpstYn" name="HA구성여부" dataType="text"></w2:column>
+        				<w2:column id="haSoltn" name="HA솔루션" dataType="text"></w2:column>
+        				<w2:column id="haVer" name="HA버전" dataType="text"></w2:column>
+        				<w2:column id="svcOpngDt" name="서비스개시일자" dataType="text"></w2:column>
+        				<w2:column id="svcEndDt" name="서비스종료일자" dataType="text"></w2:column>
+        				<w2:column id="bilObjtYn" name="과금대상여부" dataType="text"></w2:column>
+        				<w2:column id="asmtCoreTnum" name="할당Core수" dataType="text"></w2:column>
+        				<w2:column id="asmtMmutSize" name="할당메모리사이즈" dataType="text"></w2:column>
+        				<w2:column id="asmtItnlDiskSize" name="할당내장디스크사이즈" dataType="text"></w2:column>
+        				<w2:column id="asmtExtnDiskSize" name="할단외장디스크사이즈" dataType="text"></w2:column>
+        				<w2:column id="ipArr1" name="IP_주소1" dataType="text"></w2:column>
+        				<w2:column id="ipArr2" name="IP_주소2" dataType="text"></w2:column>
+        				<w2:column id="ipArr3" name="IP_주소3" dataType="text"></w2:column>
+        				<w2:column id="ipArr4" name="IP_주소4" dataType="text"></w2:column>
+        				<w2:column id="ipArr5" name="IP_주소5" dataType="text"></w2:column>
+        				<w2:column id="ipArr6" name="IP_주소6" dataType="text"></w2:column>
+        				<w2:column id="ipArr7" name="IP_주소7" dataType="text"></w2:column>
+        				<w2:column id="ipArr8" name="IP_주소8" dataType="text"></w2:column>
+        				<w2:column id="ipArr9" name="IP_주소9" dataType="text"></w2:column>
+        				<w2:column id="asstNo" name="자산번호" dataType="text"></w2:column>
+        				<w2:column id="dsusObjtYn" name="파기대상여부" dataType="text"></w2:column>
+        				<w2:column id="rmks" name="비고" dataType="text" ignoreStatus=""></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<svrImgAdmnId><![CDATA[1]]></svrImgAdmnId>
+        					<svrImgAdmnSqno><![CDATA[string]]></svrImgAdmnSqno>
+        					<hwId><![CDATA[1]]></hwId>
+        					<hostName><![CDATA[string]]></hostName>
+        					<stat><![CDATA[정상]]></stat>
+        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
+        					<taDomn><![CDATA[네트워크]]></taDomn>
+        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
+        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
+        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
+        					<svcIptd><![CDATA[s]]></svcIptd>
+        					<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
+        					<svcHour><![CDATA[string]]></svcHour>
+        					<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
+        					<apChhr><![CDATA[string]]></apChhr>
+        					<osDvsn><![CDATA[string]]></osDvsn>
+        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
+        					<svrDvsn><![CDATA[string]]></svrDvsn>
+        					<imgDvsn><![CDATA[string]]></imgDvsn>
+        					<haCpstYn><![CDATA[s]]></haCpstYn>
+        					<haSoltn><![CDATA[string]]></haSoltn>
+        					<haVer><![CDATA[string]]></haVer>
+        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
+        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
+        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
+        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
+        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
+        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
+        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
+        					<ipArr1><![CDATA[string]]></ipArr1>
+        					<ipArr2><![CDATA[string]]></ipArr2>
+        					<ipArr3><![CDATA[string]]></ipArr3>
+        					<ipArr4><![CDATA[string]]></ipArr4>
+        					<ipArr5><![CDATA[string]]></ipArr5>
+        					<ipArr6><![CDATA[string]]></ipArr6>
+        					<ipArr7><![CDATA[string]]></ipArr7>
+        					<ipArr8><![CDATA[string]]></ipArr8>
+        					<ipArr9><![CDATA[string]]></ipArr9>
+        					<asstNo><![CDATA[string]]></asstNo>
+        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
+        					<rmks><![CDATA[string]]></rmks>
+        				</w2:row>
+        				<w2:row>
+        					<svrImgAdmnId><![CDATA[2]]></svrImgAdmnId>
+        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0001]]></svrImgAdmnSqno>
+        					<hwId><![CDATA[1]]></hwId>
+        					<hostName><![CDATA[hst01]]></hostName>
+        					<stat><![CDATA[정상]]></stat>
+        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
+        					<taDomn><![CDATA[네트워크]]></taDomn>
+        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
+        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
+        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
+        					<svcIptd><![CDATA[s]]></svcIptd>
+        					<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
+        					<svcHour><![CDATA[string]]></svcHour>
+        					<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
+        					<apChhr><![CDATA[string]]></apChhr>
+        					<osDvsn><![CDATA[string]]></osDvsn>
+        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
+        					<svrDvsn><![CDATA[string]]></svrDvsn>
+        					<imgDvsn><![CDATA[string]]></imgDvsn>
+        					<haCpstYn><![CDATA[s]]></haCpstYn>
+        					<haSoltn><![CDATA[string]]></haSoltn>
+        					<haVer><![CDATA[string]]></haVer>
+        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
+        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
+        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
+        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
+        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
+        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
+        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
+        					<ipArr1><![CDATA[string]]></ipArr1>
+        					<ipArr2><![CDATA[string]]></ipArr2>
+        					<ipArr3><![CDATA[string]]></ipArr3>
+        					<ipArr4><![CDATA[string]]></ipArr4>
+        					<ipArr5><![CDATA[string]]></ipArr5>
+        					<ipArr6><![CDATA[string]]></ipArr6>
+        					<ipArr7><![CDATA[string]]></ipArr7>
+        					<ipArr8><![CDATA[string]]></ipArr8>
+        					<ipArr9><![CDATA[string]]></ipArr9>
+        					<asstNo><![CDATA[string]]></asstNo>
+        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
+        					<rmks><![CDATA[string]]></rmks>
+        				</w2:row>
+        				<w2:row>
+        					<svrImgAdmnId><![CDATA[3]]></svrImgAdmnId>
+        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0002]]></svrImgAdmnSqno>
+        					<hwId><![CDATA[1]]></hwId>
+        					<hostName><![CDATA[hst02]]></hostName>
+        					<stat><![CDATA[정상]]></stat>
+        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
+        					<taDomn><![CDATA[네트워크]]></taDomn>
+        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
+        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
+        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
+        					<svcIptd><![CDATA[s]]></svcIptd>
+        					<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
+        					<svcHour><![CDATA[string]]></svcHour>
+        					<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
+        					<apChhr><![CDATA[string]]></apChhr>
+        					<osDvsn><![CDATA[string]]></osDvsn>
+        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
+        					<svrDvsn><![CDATA[string]]></svrDvsn>
+        					<imgDvsn><![CDATA[string]]></imgDvsn>
+        					<haCpstYn><![CDATA[s]]></haCpstYn>
+        					<haSoltn><![CDATA[string]]></haSoltn>
+        					<haVer><![CDATA[string]]></haVer>
+        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
+        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
+        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
+        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
+        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
+        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
+        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
+        					<ipArr1><![CDATA[string]]></ipArr1>
+        					<ipArr2><![CDATA[string]]></ipArr2>
+        					<ipArr3><![CDATA[string]]></ipArr3>
+        					<ipArr4><![CDATA[string]]></ipArr4>
+        					<ipArr5><![CDATA[string]]></ipArr5>
+        					<ipArr6><![CDATA[string]]></ipArr6>
+        					<ipArr7><![CDATA[string]]></ipArr7>
+        					<ipArr8><![CDATA[string]]></ipArr8>
+        					<ipArr9><![CDATA[string]]></ipArr9>
+        					<asstNo><![CDATA[string]]></asstNo>
+        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
+        					<rmks><![CDATA[string]]></rmks>
+        				</w2:row>
+        				<w2:row>
+        					<svrImgAdmnId><![CDATA[4]]></svrImgAdmnId>
+        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0003]]></svrImgAdmnSqno>
+        					<hwId><![CDATA[1]]></hwId>
+        					<hostName><![CDATA[hst03]]></hostName>
+        					<stat><![CDATA[정상]]></stat>
+        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
+        					<taDomn><![CDATA[네트워크]]></taDomn>
+        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
+        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
+        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
+        					<svcIptd><![CDATA[s]]></svcIptd>
+        					<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
+        					<svcHour><![CDATA[string]]></svcHour>
+        					<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
+        					<apChhr><![CDATA[string]]></apChhr>
+        					<osDvsn><![CDATA[string]]></osDvsn>
+        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
+        					<svrDvsn><![CDATA[string]]></svrDvsn>
+        					<imgDvsn><![CDATA[string]]></imgDvsn>
+        					<haCpstYn><![CDATA[s]]></haCpstYn>
+        					<haSoltn><![CDATA[string]]></haSoltn>
+        					<haVer><![CDATA[string]]></haVer>
+        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
+        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
+        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
+        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
+        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
+        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
+        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
+        					<ipArr1><![CDATA[string]]></ipArr1>
+        					<ipArr2><![CDATA[string]]></ipArr2>
+        					<ipArr3><![CDATA[string]]></ipArr3>
+        					<ipArr4><![CDATA[string]]></ipArr4>
+        					<ipArr5><![CDATA[string]]></ipArr5>
+        					<ipArr6><![CDATA[string]]></ipArr6>
+        					<ipArr7><![CDATA[string]]></ipArr7>
+        					<ipArr8><![CDATA[string]]></ipArr8>
+        					<ipArr9><![CDATA[string]]></ipArr9>
+        					<asstNo><![CDATA[string]]></asstNo>
+        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
+        					<rmks><![CDATA[string]]></rmks>
+        				</w2:row>
+        				<w2:row>
+        					<svrImgAdmnId><![CDATA[5]]></svrImgAdmnId>
+        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0004]]></svrImgAdmnSqno>
+        					<hwId><![CDATA[1]]></hwId>
+        					<hostName><![CDATA[hst04]]></hostName>
+        					<stat><![CDATA[정상]]></stat>
+        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
+        					<taDomn><![CDATA[네트워크]]></taDomn>
+        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
+        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
+        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
+        					<svcIptd><![CDATA[s]]></svcIptd>
+        					<svcOffrObjt><![CDATA[A1]]></svcOffrObjt>
+        					<svcHour><![CDATA[string]]></svcHour>
+        					<prmAdmnDep><![CDATA[SK]]></prmAdmnDep>
+        					<apChhr><![CDATA[홍길동]]></apChhr>
+        					<osDvsn><![CDATA[string]]></osDvsn>
+        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
+        					<svrDvsn><![CDATA[string]]></svrDvsn>
+        					<imgDvsn><![CDATA[string]]></imgDvsn>
+        					<haCpstYn><![CDATA[s]]></haCpstYn>
+        					<haSoltn><![CDATA[string]]></haSoltn>
+        					<haVer><![CDATA[string]]></haVer>
+        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
+        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
+        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
+        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
+        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
+        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
+        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
+        					<ipArr1><![CDATA[string]]></ipArr1>
+        					<ipArr2><![CDATA[string]]></ipArr2>
+        					<ipArr3><![CDATA[string]]></ipArr3>
+        					<ipArr4><![CDATA[string]]></ipArr4>
+        					<ipArr5><![CDATA[string]]></ipArr5>
+        					<ipArr6><![CDATA[string]]></ipArr6>
+        					<ipArr7><![CDATA[string]]></ipArr7>
+        					<ipArr8><![CDATA[string]]></ipArr8>
+        					<ipArr9><![CDATA[string]]></ipArr9>
+        					<asstNo><![CDATA[string]]></asstNo>
+        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
+        					<rmks><![CDATA[string]]></rmks>
+        				</w2:row>
+        				<w2:row>
+        					<svrImgAdmnId><![CDATA[6]]></svrImgAdmnId>
+        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0005]]></svrImgAdmnSqno>
+        					<hwId><![CDATA[1]]></hwId>
+        					<hostName><![CDATA[hst05]]></hostName>
+        					<stat><![CDATA[정상]]></stat>
+        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
+        					<taDomn><![CDATA[네트워크]]></taDomn>
+        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
+        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
+        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
+        					<svcIptd><![CDATA[s]]></svcIptd>
+        					<svcOffrObjt><![CDATA[A5]]></svcOffrObjt>
+        					<svcHour><![CDATA[string]]></svcHour>
+        					<prmAdmnDep><![CDATA[SK]]></prmAdmnDep>
+        					<apChhr><![CDATA[홍길동5]]></apChhr>
+        					<osDvsn><![CDATA[string]]></osDvsn>
+        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
+        					<svrDvsn><![CDATA[string]]></svrDvsn>
+        					<imgDvsn><![CDATA[string]]></imgDvsn>
+        					<haCpstYn><![CDATA[s]]></haCpstYn>
+        					<haSoltn><![CDATA[string]]></haSoltn>
+        					<haVer><![CDATA[string]]></haVer>
+        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
+        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
+        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
+        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
+        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
+        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
+        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
+        					<ipArr1><![CDATA[string]]></ipArr1>
+        					<ipArr2><![CDATA[string]]></ipArr2>
+        					<ipArr3><![CDATA[string]]></ipArr3>
+        					<ipArr4><![CDATA[string]]></ipArr4>
+        					<ipArr5><![CDATA[string]]></ipArr5>
+        					<ipArr6><![CDATA[string]]></ipArr6>
+        					<ipArr7><![CDATA[string]]></ipArr7>
+        					<ipArr8><![CDATA[string]]></ipArr8>
+        					<ipArr9><![CDATA[string]]></ipArr9>
+        					<asstNo><![CDATA[string]]></asstNo>
+        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
+        					<rmks><![CDATA[string]]></rmks>
+        				</w2:row>
+        				<w2:row>
+        					<svrImgAdmnId><![CDATA[7]]></svrImgAdmnId>
+        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0006]]></svrImgAdmnSqno>
+        					<hwId><![CDATA[1]]></hwId>
+        					<hostName><![CDATA[hst06]]></hostName>
+        					<stat><![CDATA[정상]]></stat>
+        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
+        					<taDomn><![CDATA[네트워크]]></taDomn>
+        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
+        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
+        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
+        					<svcIptd><![CDATA[s]]></svcIptd>
+        					<svcOffrObjt><![CDATA[A5]]></svcOffrObjt>
+        					<svcHour><![CDATA[string]]></svcHour>
+        					<prmAdmnDep><![CDATA[KIS]]></prmAdmnDep>
+        					<apChhr><![CDATA[홍길동6]]></apChhr>
+        					<osDvsn><![CDATA[string]]></osDvsn>
+        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
+        					<svrDvsn><![CDATA[string]]></svrDvsn>
+        					<imgDvsn><![CDATA[string]]></imgDvsn>
+        					<haCpstYn><![CDATA[s]]></haCpstYn>
+        					<haSoltn><![CDATA[string]]></haSoltn>
+        					<haVer><![CDATA[string]]></haVer>
+        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
+        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
+        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
+        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
+        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
+        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
+        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
+        					<ipArr1><![CDATA[string]]></ipArr1>
+        					<ipArr2><![CDATA[string]]></ipArr2>
+        					<ipArr3><![CDATA[string]]></ipArr3>
+        					<ipArr4><![CDATA[string]]></ipArr4>
+        					<ipArr5><![CDATA[string]]></ipArr5>
+        					<ipArr6><![CDATA[string]]></ipArr6>
+        					<ipArr7><![CDATA[string]]></ipArr7>
+        					<ipArr8><![CDATA[string]]></ipArr8>
+        					<ipArr9><![CDATA[string]]></ipArr9>
+        					<asstNo><![CDATA[string]]></asstNo>
+        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
+        					<rmks><![CDATA[string]]></rmks>
+        				</w2:row>
+        				<w2:row>
+        					<svrImgAdmnId><![CDATA[8]]></svrImgAdmnId>
+        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0007]]></svrImgAdmnSqno>
+        					<hwId><![CDATA[1]]></hwId>
+        					<hostName><![CDATA[hst07]]></hostName>
+        					<stat><![CDATA[정상]]></stat>
+        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
+        					<taDomn><![CDATA[네트워크]]></taDomn>
+        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
+        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
+        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
+        					<svcIptd><![CDATA[s]]></svcIptd>
+        					<svcOffrObjt><![CDATA[A7]]></svcOffrObjt>
+        					<svcHour><![CDATA[string]]></svcHour>
+        					<prmAdmnDep><![CDATA[KIS]]></prmAdmnDep>
+        					<apChhr><![CDATA[홍길동7]]></apChhr>
+        					<osDvsn><![CDATA[string]]></osDvsn>
+        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
+        					<svrDvsn><![CDATA[string]]></svrDvsn>
+        					<imgDvsn><![CDATA[string]]></imgDvsn>
+        					<haCpstYn><![CDATA[s]]></haCpstYn>
+        					<haSoltn><![CDATA[string]]></haSoltn>
+        					<haVer><![CDATA[string]]></haVer>
+        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
+        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
+        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
+        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
+        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
+        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
+        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
+        					<ipArr1><![CDATA[string]]></ipArr1>
+        					<ipArr2><![CDATA[string]]></ipArr2>
+        					<ipArr3><![CDATA[string]]></ipArr3>
+        					<ipArr4><![CDATA[string]]></ipArr4>
+        					<ipArr5><![CDATA[string]]></ipArr5>
+        					<ipArr6><![CDATA[string]]></ipArr6>
+        					<ipArr7><![CDATA[string]]></ipArr7>
+        					<ipArr8><![CDATA[string]]></ipArr8>
+        					<ipArr9><![CDATA[string]]></ipArr9>
+        					<asstNo><![CDATA[string]]></asstNo>
+        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
+        					<rmks><![CDATA[string]]></rmks>
+        				</w2:row>
+        				<w2:row>
+        					<svrImgAdmnId><![CDATA[9]]></svrImgAdmnId>
+        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0008]]></svrImgAdmnSqno>
+        					<hwId><![CDATA[1]]></hwId>
+        					<hostName><![CDATA[hst08]]></hostName>
+        					<stat><![CDATA[정상]]></stat>
+        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
+        					<taDomn><![CDATA[네트워크]]></taDomn>
+        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
+        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
+        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
+        					<svcIptd><![CDATA[s]]></svcIptd>
+        					<svcOffrObjt><![CDATA[A8]]></svcOffrObjt>
+        					<svcHour><![CDATA[string]]></svcHour>
+        					<prmAdmnDep><![CDATA[KIS]]></prmAdmnDep>
+        					<apChhr><![CDATA[홍길순]]></apChhr>
+        					<osDvsn><![CDATA[string]]></osDvsn>
+        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
+        					<svrDvsn><![CDATA[string]]></svrDvsn>
+        					<imgDvsn><![CDATA[string]]></imgDvsn>
+        					<haCpstYn><![CDATA[s]]></haCpstYn>
+        					<haSoltn><![CDATA[string]]></haSoltn>
+        					<haVer><![CDATA[string]]></haVer>
+        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
+        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
+        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
+        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
+        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
+        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
+        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
+        					<ipArr1><![CDATA[string]]></ipArr1>
+        					<ipArr2><![CDATA[string]]></ipArr2>
+        					<ipArr3><![CDATA[string]]></ipArr3>
+        					<ipArr4><![CDATA[string]]></ipArr4>
+        					<ipArr5><![CDATA[string]]></ipArr5>
+        					<ipArr6><![CDATA[string]]></ipArr6>
+        					<ipArr7><![CDATA[string]]></ipArr7>
+        					<ipArr8><![CDATA[string]]></ipArr8>
+        					<ipArr9><![CDATA[string]]></ipArr9>
+        					<asstNo><![CDATA[string]]></asstNo>
+        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
+        					<rmks><![CDATA[string]]></rmks>
+        				</w2:row>
+        				<w2:row>
+        					<svrImgAdmnId><![CDATA[10]]></svrImgAdmnId>
+        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0009]]></svrImgAdmnSqno>
+        					<hwId><![CDATA[1]]></hwId>
+        					<hostName><![CDATA[hst09]]></hostName>
+        					<stat><![CDATA[정상]]></stat>
+        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
+        					<taDomn><![CDATA[네트워크]]></taDomn>
+        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
+        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
+        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
+        					<svcIptd><![CDATA[s]]></svcIptd>
+        					<svcOffrObjt><![CDATA[A9]]></svcOffrObjt>
+        					<svcHour><![CDATA[string]]></svcHour>
+        					<prmAdmnDep><![CDATA[KIS]]></prmAdmnDep>
+        					<apChhr><![CDATA[홍길영]]></apChhr>
+        					<osDvsn><![CDATA[string]]></osDvsn>
+        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
+        					<svrDvsn><![CDATA[string]]></svrDvsn>
+        					<imgDvsn><![CDATA[string]]></imgDvsn>
+        					<haCpstYn><![CDATA[s]]></haCpstYn>
+        					<haSoltn><![CDATA[string]]></haSoltn>
+        					<haVer><![CDATA[string]]></haVer>
+        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
+        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
+        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
+        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
+        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
+        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
+        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
+        					<ipArr1><![CDATA[string]]></ipArr1>
+        					<ipArr2><![CDATA[string]]></ipArr2>
+        					<ipArr3><![CDATA[string]]></ipArr3>
+        					<ipArr4><![CDATA[string]]></ipArr4>
+        					<ipArr5><![CDATA[string]]></ipArr5>
+        					<ipArr6><![CDATA[string]]></ipArr6>
+        					<ipArr7><![CDATA[string]]></ipArr7>
+        					<ipArr8><![CDATA[string]]></ipArr8>
+        					<ipArr9><![CDATA[string]]></ipArr9>
+        					<asstNo><![CDATA[string]]></asstNo>
+        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
+        					<rmks><![CDATA[string]]></rmks>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        	</w2:dataCollection>
         	<w2:workflowCollection />
         	<xf:submission id="sbmServerImageList" action="ta/query/api/v1/server-image-list" method="get" mediatype="application/json"
-        		ref="" target='data:json,["common","pageInfo","svrImgs"]' encoding="UTF-8" instance="" replace="" errorHandler=""
-        		customHandler="" mode="asynchronous" processMsg="" ev:submit="scwin.sbmServerImageList_submit"
-        		ev:submitdone="scwin.sbmServerImageList_submitdone" ev:submiterror="scwin.sbmServerImageList_submiterror" abortTrigger="">
+        		ref="" target='data:json,["common","pageInfo","svrImgs"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="scwin.sbmServerImageList_submit" ev:submitdone="scwin.sbmServerImageList_submitdone"
+        		ev:submiterror="scwin.sbmServerImageList_submiterror" abortTrigger="">
         	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
