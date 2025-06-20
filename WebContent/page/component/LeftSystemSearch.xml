@@ -465,11 +465,12 @@ scwin.searchboxOK_onkeypress = function (e) {
 
     const param = {
         offset: 0,
-        limit: 113,
+        limit: 13,
         type: "PAGE",
-        sortMethod: "ASC",
-        // sortFields: ["depName"],
-        searchField: searchboxOK.getValue()
+        sortMethod: "NO",
+        sortFields: ["depName"],
+        searchField: "empName",
+        searchContent: searchboxOK.getValue()
     };
 
     $c.sbm.execute(sbmEmpSearchList, param);
