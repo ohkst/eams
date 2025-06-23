@@ -144,14 +144,16 @@ scwin.onpageload = function () {
 
 scwin.btnLoginClick_onclick = function (e) {
 
-    const param = {
-        // empNo: "113565",
-        // pwd: "cdk200022"
-        empNo: loginID.getValue(),
-        pwd: loginPW.getValue()
-    };
+    // const param = {
+    //     // empNo: "113565",
+    //     // pwd: "cdk200022"
+    //     empNo: loginID.getValue(),
+    //     pwd: loginPW.getValue()
+    // };
 
-    $c.sbm.execute(sbmLogin, param);
+    // $c.sbm.execute(sbmLogin, param);
+
+    $p.url("/page/layout/TopNavigationBottomContents.xml");
 };
 
 scwin.submission3_submit = function (e) {
