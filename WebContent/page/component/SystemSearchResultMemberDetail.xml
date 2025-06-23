@@ -7,83 +7,122 @@
         <w2:buildDate/>
         <w2:MSA/>
         <xf:model>
-            <w2:dataCollection baseNode="map">
-            	<w2:dataMap baseNode="map" id="dataMap1">
-            		<w2:keyInfo>
-            			<w2:key id="key1" name="부서" dataType="text" defaultValue="차세대시스템부"></w2:key>
-            			<w2:key id="key2" name="담당자" dataType="text" defaultValue="김성태"></w2:key>
-            			<w2:key id="key3" name="연락처" dataType="text" defaultValue="010-4814-0386"></w2:key>
-            			<w2:key id="key4" name="연락처2" dataType="text" defaultValue="02-3276-5742"></w2:key>
-            			<w2:key id="key5" name="Email" dataType="text" defaultValue="112251@koreainvestment.com"></w2:key>
-            			<w2:key id="key6" name="역량그룹" dataType="text" defaultValue="경영관리/지원그룹"></w2:key>
-            			<w2:key id="key7" name="영문명" dataType="text" defaultValue="Operation Management"></w2:key>
-            			<w2:key id="key8" name="Level1" dataType="text" defaultValue="OP"></w2:key>
-            			<w2:key id="key9" name="Level2" dataType="text" defaultValue="AR"></w2:key>
-            			<w2:key id="key10" name="비즈니스 컴포넌트" dataType="text" defaultValue="계좌/대사"></w2:key>
-            			<w2:key id="key11" name="영문명" dataType="text" defaultValue="OP-Account Balancing &amp; Reconciliation(AR)"></w2:key>
-            			<w2:key id="key12" name="매뉴얼 관리자" dataType="text" defaultValue="홍길동"></w2:key>
-            			<w2:key id="key13" name="매뉴얼 작성일" dataType="date" defaultValue="2024.01.18"></w2:key>
-            			<w2:key id="key14" name="용어정리" dataType="text" defaultValue="커뮤니케이션 전략, 공지화면"></w2:key>
-            			<w2:key id="key15" name="관련자료" dataType="text" defaultValue="본사여업 위탁상품 업무 리스트.xlsx"></w2:key>
-            		</w2:keyInfo>
-            		<w2:data use="false">
-            			<key1><![CDATA[프론트개발부]]></key1>
-            		</w2:data>
-            	</w2:dataMap>
-            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
-            		<w2:columnInfo>
-            			<w2:column id="col1" name="화면번호" dataType="text" defaultValue="1"></w2:column>
-            			<w2:column id="col2" name="화면이름" dataType="text" defaultValue="2"></w2:column>
-            			<w2:column id="col3" name="설명" dataType="text" defaultValue="3"></w2:column>
-            			<w2:column id="col4" name="담당자" dataType="text" defaultValue="4"></w2:column>
-            		</w2:columnInfo>
-            		<w2:data use="true">
-            			<w2:row>
-            				<col1><![CDATA[W1234]]></col1>
-            				<col2><![CDATA[상담 공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            			<w2:row>
-            				<col1><![CDATA[W1234]]></col1>
-            				<col2><![CDATA[상담  공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            			<w2:row>
-            				<col1><![CDATA[W1234]]></col1>
-            				<col2><![CDATA[상담  공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            			<w2:row>
-            				<col1><![CDATA[W1234]]></col1>
-            				<col2><![CDATA[상담  공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            			<w2:row>
-            				<col1><![CDATA[W1234]]></col1>
-            				<col2><![CDATA[상담  공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            			<w2:row>
-            				<col1><![CDATA[W1234]]></col1>
-            				<col2><![CDATA[상담  공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            			<w2:row>
-            				<col1><![CDATA[W1234]]></col1>
-            				<col2><![CDATA[상담  공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            		</w2:data>
-            	</w2:dataList>
-            </w2:dataCollection>
-            <w2:workflowCollection/>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataMap baseNode="map" id="dataMap1">
+        			<w2:keyInfo>
+        				<w2:key id="key1" name="부서" dataType="text" defaultValue="차세대시스템부"></w2:key>
+        				<w2:key id="key2" name="담당자" dataType="text" defaultValue="김성태"></w2:key>
+        				<w2:key id="key3" name="연락처" dataType="text" defaultValue="010-4814-0386"></w2:key>
+        				<w2:key id="key4" name="연락처2" dataType="text" defaultValue="02-3276-5742"></w2:key>
+        				<w2:key id="key5" name="Email" dataType="text" defaultValue="112251@koreainvestment.com"></w2:key>
+        				<w2:key id="key6" name="역량그룹" dataType="text" defaultValue="경영관리/지원그룹"></w2:key>
+        				<w2:key id="key7" name="영문명" dataType="text" defaultValue="Operation Management"></w2:key>
+        				<w2:key id="key8" name="Level1" dataType="text" defaultValue="OP"></w2:key>
+        				<w2:key id="key9" name="Level2" dataType="text" defaultValue="AR"></w2:key>
+        				<w2:key id="key10" name="비즈니스 컴포넌트" dataType="text" defaultValue="계좌/대사"></w2:key>
+        				<w2:key id="key11" name="영문명" dataType="text" defaultValue="OP-Account Balancing &amp; Reconciliation(AR)"></w2:key>
+        				<w2:key id="key12" name="매뉴얼 관리자" dataType="text" defaultValue="홍길동"></w2:key>
+        				<w2:key id="key13" name="매뉴얼 작성일" dataType="date" defaultValue="2024.01.18"></w2:key>
+        				<w2:key id="key14" name="용어정리" dataType="text" defaultValue="커뮤니케이션 전략, 공지화면"></w2:key>
+        				<w2:key id="key15" name="관련자료" dataType="text" defaultValue="본사여업 위탁상품 업무 리스트.xlsx"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data use="false">
+        				<key1><![CDATA[프론트개발부]]></key1>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="col1" name="화면번호" dataType="text" defaultValue="1"></w2:column>
+        				<w2:column id="col2" name="화면이름" dataType="text" defaultValue="2"></w2:column>
+        				<w2:column id="col3" name="설명" dataType="text" defaultValue="3"></w2:column>
+        				<w2:column id="col4" name="담당자" dataType="text" defaultValue="4"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data use="true">
+        				<w2:row>
+        					<col1><![CDATA[W1234]]></col1>
+        					<col2><![CDATA[상담 공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        				<w2:row>
+        					<col1><![CDATA[W1234]]></col1>
+        					<col2><![CDATA[상담  공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        				<w2:row>
+        					<col1><![CDATA[W1234]]></col1>
+        					<col2><![CDATA[상담  공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        				<w2:row>
+        					<col1><![CDATA[W1234]]></col1>
+        					<col2><![CDATA[상담  공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        				<w2:row>
+        					<col1><![CDATA[W1234]]></col1>
+        					<col2><![CDATA[상담  공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        				<w2:row>
+        					<col1><![CDATA[W1234]]></col1>
+        					<col2><![CDATA[상담  공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        				<w2:row>
+        					<col1><![CDATA[W1234]]></col1>
+        					<col2><![CDATA[상담  공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataMap id="common">
+        			<w2:keyInfo>
+        				<w2:key id="guid" name="guid" dataType="text"></w2:key>
+        				<w2:key id="code" name="code" dataType="text"></w2:key>
+        				<w2:key id="message" name="message" dataType="text"></w2:key>
+        				<w2:key id="detailMessage" name="detailMessage" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<guid><![CDATA[4fe99cd354b14fd8aec5ce7ca0f1c513]]></guid>
+        				<code><![CDATA[N000]]></code>
+        				<message><![CDATA[정상처리]]></message>
+        				<detailMessage><![CDATA[]]></detailMessage>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataMap id="emp">
+        			<w2:keyInfo>
+        				<w2:key id="empId" name="empId" dataType="text"></w2:key>
+        				<w2:key id="empNo" name="empNo" dataType="text"></w2:key>
+        				<w2:key id="empName" name="empName" dataType="text"></w2:key>
+        				<w2:key id="osdtCd" name="osdtCd" dataType="text"></w2:key>
+        				<w2:key id="emal" name="emal" dataType="text"></w2:key>
+        				<w2:key id="ctcp1" name="ctcp1" dataType="text"></w2:key>
+        				<w2:key id="ctcp2" name="ctcp2" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<empId><![CDATA[1]]></empId>
+        				<empNo><![CDATA[113565]]></empNo>
+        				<empName><![CDATA[최동규]]></empName>
+        				<osdtCd><![CDATA[00001]]></osdtCd>
+        				<emal><![CDATA[dk@koreainvestment.com]]></emal>
+        				<ctcp1><![CDATA[02-1234-1234]]></ctcp1>
+        				<ctcp2><![CDATA[010-1234-1234]]></ctcp2>
+        			</w2:data>
+        		</w2:dataMap>
+        	</w2:dataCollection>
+        	<w2:workflowCollection />
+        	<xf:submission id="sbmEmpInfo" action="org/query/api/v1/emp-info/id/{id}" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","emp"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+        		processMsg="" ev:submit="scwin.sbmEmpInfo_submit" ev:submitdone="scwin.sbmEmpInfo_submitdone"
+        		ev:submiterror="scwin.sbmEmpInfo_submiterror" abortTrigger="">
+        	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
@@ -93,6 +132,24 @@ scwin.onpageload = function() {
     // var data = JSON.stringify(paramData);
     // alert(data);
     mainTitle.setValue(paramData.name);
+
+    const param = {
+        id: 1
+    };
+
+    $c.sbm.execute(sbmEmpInfo, param);
+};
+
+scwin.sbmEmpInfo_submit = function (e) {
+
+};
+
+scwin.sbmEmpInfo_submitdone = function (e) {
+
+};
+
+scwin.sbmEmpInfo_submiterror = function (e) {
+
 };
 ]]></script>
     </head>
@@ -127,7 +184,7 @@ scwin.onpageload = function() {
     					</w2:attributes>
     				</xf:group>
     				<xf:group tagname="td" style="" class="w2tb_td">
-    					<w2:textbox ref="data:dataMap1.key2" style="" id="" label=""></w2:textbox>
+    					<w2:textbox ref="data:emp.empName" style="" id="" label=""></w2:textbox>
     				</xf:group>
     			</xf:group>
     			<xf:group tagname="tr" style="">
@@ -138,7 +195,7 @@ scwin.onpageload = function() {
     					</w2:attributes>
     				</xf:group>
     				<xf:group tagname="td" style="" class="w2tb_td">
-    					<w2:textbox ref="data:dataMap1.key3" style="" id="" label=""></w2:textbox>
+    					<w2:textbox ref="data:emp.ctcp1" style="" id="" label=""></w2:textbox>
     				</xf:group>
     				<xf:group tagname="th" style="" class="w2tb_th">
     					연락처2
@@ -147,7 +204,7 @@ scwin.onpageload = function() {
     					</w2:attributes>
     				</xf:group>
     				<xf:group tagname="td" style="" class="w2tb_td">
-    					<w2:textbox ref="data:dataMap1.key4" style="" id="" label=""></w2:textbox>
+    					<w2:textbox ref="data:emp.ctcp2" style="" id="" label=""></w2:textbox>
     				</xf:group>
     			</xf:group>
     			<xf:group tagname="tr" style="">
@@ -158,7 +215,7 @@ scwin.onpageload = function() {
     					</w2:attributes>
     				</xf:group>
     				<xf:group tagname="td" style="" class="w2tb_td">
-    					<w2:textbox ref="data:dataMap1.key5" style="" id="" label=""></w2:textbox>
+    					<w2:textbox ref="data:emp.emal" style="" id="" label=""></w2:textbox>
     				</xf:group>
     				<xf:group tagname="th" style="" class="w2tb_th">
     					<w2:attributes>
