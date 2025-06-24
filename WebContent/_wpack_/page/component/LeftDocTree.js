@@ -1,4 +1,4 @@
-/*amd /page/component/LeftDocTree.xml 6027 bb67ccef9d5ba8e479dbb132879093612b5854fed78c519ad2d041dff6d0c392 */
+/*amd /page/component/LeftDocTree.xml 6062 20627918494a050ea60e615abf123dfe4ca4593166ac40265395974cfd75ad4e */
 define({declaration:{A:{version:'1.0',encoding:'UTF-8'}},E:[{T:1,N:'html',A:{xmlns:'http://www.w3.org/1999/xhtml','xmlns:ev':'http://www.w3.org/2001/xml-events','xmlns:w2':'http://www.inswave.com/websquare','xmlns:xf':'http://www.w3.org/2002/xforms'},E:[{T:1,N:'head',A:{},E:[{T:1,N:'w2:type',E:[{T:3,text:'COMPONENT'}]},{T:1,N:'w2:buildDate'},{T:1,N:'w2:MSA'},{T:1,N:'xf:model',E:[{T:1,N:'w2:dataCollection',A:{baseNode:'map'},E:[{T:1,N:'w2:dataList',A:{baseNode:'list',repeatNode:'map',id:'dataList8',saveRemovedData:'true'},E:[{T:1,N:'w2:columnInfo',E:[{T:1,N:'w2:column',A:{id:'col1',name:'폴더',dataType:'text'}}]},{T:1,N:'w2:data',A:{use:'true'},E:[{T:1,N:'w2:row',E:[{T:1,N:'col1',E:[{T:4,cdata:'BA'}]}]},{T:1,N:'w2:row',E:[{T:1,N:'col1',E:[{T:4,cdata:'AA'}]}]},{T:1,N:'w2:row',E:[{T:1,N:'col1',E:[{T:4,cdata:'DA'}]}]},{T:1,N:'w2:row',E:[{T:1,N:'col1',E:[{T:4,cdata:'TA'}]}]}]}]}]},{T:1,N:'w2:workflowCollection'}]},{T:1,N:'w2:layoutInfo'},{T:1,N:'w2:publicInfo',A:{method:''}},{T:1,N:'script',A:{lazy:'false',type:'text/javascript'},E:[{T:4,cdata:function(scopeObj){with(scopeObj){scwin.onpageload = function () {};
 scwin.searchboxOK_onkeypress = function (e) {
   // 엔터치면 코드 적용
@@ -76,15 +76,15 @@ scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
 };
 scwin.setContentsSrc = async function (type, obj) {
   if (type === 0) {
-    await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultBizDetail.xml", obj);
+    await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultBizDetail.xml", obj);
   } else if (type === 1) {
-    await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultScreenDetail.xml", obj);
+    await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultScreenDetail.xml", obj);
   } else if (type === 2) {
-    await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultTRDetail.xml", obj);
+    await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultTRDetail.xml", obj);
   } else if (type === 3) {
-    await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultDBDetail.xml", obj);
+    await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultDBDetail.xml", obj);
   } else if (type === 4) {
-    await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultMemberDetail.xml", obj);
+    await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultMemberDetail.xml", obj);
   }
 };
 

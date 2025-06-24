@@ -164,6 +164,9 @@ export default {
       },
       "makeGlobalObject": {
         "@value": "true"
+      },
+      "devPath": {
+        "@value": "http://..."
       }
     },
     "visibleHelper": {
@@ -557,6 +560,9 @@ export default {
     "anchor": {
       "preventMultipleClick": {
         "@value": "true"
+      },
+      "class": {
+        "@value": ""
       }
     },
     "wframe": {

@@ -119,15 +119,15 @@ scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
 
 scwin.setContentsSrc = async function (type, obj) {
     if (type === 0) {
-        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultBizDetail.xml", obj);
+        await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultBizDetail.xml", obj);
     } else if (type === 1){
-        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultScreenDetail.xml", obj);
+        await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultScreenDetail.xml", obj);
     } else if (type === 2){
-        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultTRDetail.xml", obj);
+        await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultTRDetail.xml", obj);
     } else if (type === 3){
-        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultDBDetail.xml", obj);
+        await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultDBDetail.xml", obj);
     } else if (type === 4){
-        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultMemberDetail.xml", obj);
+        await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultMemberDetail.xml", obj);
     }
 }
 

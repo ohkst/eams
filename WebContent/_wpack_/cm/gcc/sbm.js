@@ -1,4 +1,4 @@
-/*amd /cm/gcc/sbm.xml 22971 024e0940a01c58c07ae7831086a5176a539035c46f70f6a2792b1f9c3bd6f0c4 */
+/*amd /cm/gcc/sbm.xml 22974 f4af11b1ddd3f6b820075a60627c80c478cb2492729310655d551db2d981da5e */
 define({declaration:{A:{version:'1.0',encoding:'UTF-8'}},E:[{T:1,N:'html',A:{xmlns:'http://www.w3.org/1999/xhtml','xmlns:ev':'http://www.w3.org/2001/xml-events','xmlns:w2':'http://www.inswave.com/websquare','xmlns:xf':'http://www.w3.org/2002/xforms'},E:[{T:1,N:'head',A:{},E:[{T:1,N:'w2:type',E:[{T:3,text:'COMMON'}]},{T:1,N:'w2:buildDate'},{T:1,N:'w2:MSA'},{T:1,N:'xf:model',E:[{T:1,N:'w2:dataCollection',A:{baseNode:'map'}},{T:1,N:'w2:workflowCollection'}]},{T:1,N:'w2:layoutInfo'},{T:1,N:'w2:publicInfo',A:{method:'scwin.getContextPath,scwin.__preSubmitFunction,scwin.__setActionParam,scwin.__callbackSubmitFunction,scwin.__submitErrorHandler,scwin.execute,scwin.executeDynamic,scwin.executeWorkflow,scwin.create,scwin.getResultCode,scwin.getStatusMessage,scwin.resultMsg,scwin.setAction,scwin.getServiceURL,scwin.getMessageCode'}},{T:1,N:'script',A:{lazy:'false',type:'text/javascript'},E:[{T:4,cdata:function(scopeObj){with(scopeObj){// 서버 통신 서비스 호출을 위한 Context Path
 scwin.CONTEXT_PATH = "http://10.50.241.179:8081/";
 
@@ -181,7 +181,7 @@ scwin.__callbackSubmitFunction = function (resObj, sbmObj) {
   let $p = $c.win.__getScope(sbmObj).scwin.$w;
 
   // server와 연결을 할 수 없을 경우 responseStatusCode가 0으로 발생.
-  if (resObj.responseStatusCode < 100 || resObj.responseStatusCode > 599) {
+  if (resObj.responseStatusCode < 100 || resObj.responseStatusCodssse > 599) {
     let detailStr = "HTTP STATUS INFO";
     detailStr += resObj.responseStatusCode;
     detailStr += " - URI:";

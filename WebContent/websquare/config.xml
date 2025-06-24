@@ -61,6 +61,7 @@
         <callbackSubmitFunction value=""/>
         <requestID value=""/>
         <makeGlobalObject value="true"/>
+        <devPath value="http://..."/>
     </submission>
     <visibleHelper>
         <targetHandler value=""/>
@@ -209,6 +210,7 @@
     </trigger>
     <anchor>
         <preventMultipleClick value="true"/>
+        <class value="" />
     </anchor>
     <wframe>
         <mode value="async"/>

@@ -131,7 +131,7 @@ scwin.sbmUnitTaskDetail_submit = function (e) {
 };
 
 scwin.sbmUnitTaskDetail_submitdone = function (e) {
-	
+	alert(e);
 };
 
 scwin.sbmUnitTaskDetail_submiterror = function (e) {
