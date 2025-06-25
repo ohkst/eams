@@ -107,11 +107,7 @@ scwin.onpageload = function () {
     btnFilterALL.setStyle("border-bottom-width", "2px");
 };
 
-scwin.searchboxOK_onkeypress = function (e) {
-    scwin.requestSearch();
-};
-
-scwin.searchboxOK_onchange = function () {
+scwin.searchboxOK_onkeyup = function (e) {
     scwin.requestSearch();
 };
 
@@ -494,14 +490,18 @@ scwin.sbmUnitTaskSearchList_submitdone = function (e) {
 
 scwin.sbmUnitTaskSearchList_submiterror = function (e) {
     alert("error" + e.responseBody);
-};]]></script>
+};
+scwin.searchboxOK_onviewchange = function (info) {
+    $p.log("SEARCHBOXOK : " + info.oldValue);
+    $p.log(	"SEARCHBOXOK : " + info.newValue);
+};
+]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style=";max-width:100%;min-width:100%;">
     	<xf:group
     		style="width:100%;height: 100vh;background-color:#EFF0F4;padding: 12px;display: flex;flex-direction: column;overflow-y: auto;scrollbar-width: none;gap: 12px;box-sizing: border-box;"
     		id="">
-    		<w2:searchbox style="width: 100%;height: 48px;display: flex;flex-shrink: 0;" id="searchboxOK"
-    			ev:onkeypress="scwin.searchboxOK_onkeypress" ev:onchange="scwin.searchboxOK_onchange">
+    		<w2:searchbox style="width: 100%;height: 48px;display: flex;flex-shrink: 0;" id="searchboxOK" ev:onkeyup="scwin.searchboxOK_onkeyup" ev:onviewchange="scwin.searchboxOK_onviewchange">
     		</w2:searchbox>
     		<xf:group style="width:100%;height:20px;display: flex;justify-content: center;flex-shrink: 0;border-bottom-width:1px;border-bottom-color: #CBD1DE;border-color:;" id="">
     			<w2:button ev:onclick="scwin.btnFilterALL_onclick"
