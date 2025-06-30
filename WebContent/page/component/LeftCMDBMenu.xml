@@ -497,6 +497,10 @@ scwin.btnSecurity_onclick = function (e) {
 scwin.btnBizSystem_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/cmdb/BizSystemList.xml");
 };
+
+scwin.btnTRM_onclick = function (e) {
+    $p.parent().wfmRightContents.setSrc("/page/component/cmdb/TrmList.xml");
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style=";max-width:100%;min-width:100%;">
@@ -506,11 +510,24 @@ scwin.btnBizSystem_onclick = function (e) {
     		<w2:searchbox ev:onchange="scwin.searchboxOK_onchange" style="width: 100%;height: 48px;display: flex;flex-shrink: 0;"
     			id="searchboxOK" ev:onkeypress="scwin.searchboxOK_onkeypress">
     		</w2:searchbox>
-    		<w2:button style="width:100%;height:48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" id="btnServer" label="Server" ev:onclick="scwin.btnServer_onclick"></w2:button>
-    		<w2:button id="btnDB" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" label="DB" ev:onclick="scwin.btnDB_onclick"></w2:button>
-    		<w2:button id="btnNetwork" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" label="네트워크" ev:onclick="scwin.btnNetwork_onclick"></w2:button>
-    		<w2:button id="btnSecurity" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" label="보안장비" ev:onclick="scwin.btnSecurity_onclick"></w2:button>
-    		<w2:button id="btnBizSystem" style="width: 100%;height: 48px;font-weight:bold;font-size:18px;text-align:left;border-width:0px;" label="업무시스템" ev:onclick="scwin.btnBizSystem_onclick"></w2:button>
+    		<w2:button style="width:100%;height:48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" id="btnServer"
+    			label="Server" ev:onclick="scwin.btnServer_onclick">
+    		</w2:button>
+    		<w2:button id="btnDB" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;"
+    			label="DB" ev:onclick="scwin.btnDB_onclick">
+    		</w2:button>
+    		<w2:button id="btnNetwork" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;"
+    			label="네트워크" ev:onclick="scwin.btnNetwork_onclick">
+    		</w2:button>
+    		<w2:button id="btnSecurity" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;"
+    			label="보안장비" ev:onclick="scwin.btnSecurity_onclick">
+    		</w2:button>
+    		<w2:button id="btnBizSystem" style="width: 100%;height: 48px;font-weight:bold;font-size:18px;text-align:left;border-width:0px;"
+    			label="업무시스템" ev:onclick="scwin.btnBizSystem_onclick">
+    		</w2:button>
+    		<w2:button id="btnTRM" label="TRM"
+    			style="width: 100%;height: 48px;font-weight:bold;font-size:18px;text-align:left;border-width:0px;" ev:onclick="scwin.btnTRM_onclick">
+    		</w2:button>
     	</xf:group>
     </body>
 </html>

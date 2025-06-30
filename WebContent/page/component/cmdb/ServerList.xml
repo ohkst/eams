@@ -515,6 +515,80 @@
         				</w2:row>
         			</w2:data>
         		</w2:dataList>
+        		<w2:dataList id="hws">
+        			<w2:columnInfo>
+        				<w2:column id="hwId" name="hwId" dataType="text"></w2:column>
+        				<w2:column id="hwSqno" name="hwSqno" dataType="text"></w2:column>
+        				<w2:column id="eqpaDvsn" name="eqpaDvsn" dataType="text"></w2:column>
+        				<w2:column id="asstNo" name="asstNo" dataType="text"></w2:column>
+        				<w2:column id="stat" name="stat" dataType="text"></w2:column>
+        				<w2:column id="pssnDvsn" name="pssnDvsn" dataType="text"></w2:column>
+        				<w2:column id="mainAdmr" name="mainAdmr" dataType="text"></w2:column>
+        				<w2:column id="subAdmr" name="subAdmr" dataType="text"></w2:column>
+        				<w2:column id="mainUsge" name="mainUsge" dataType="text"></w2:column>
+        				<w2:column id="eqpaMnfComp" name="eqpaMnfComp" dataType="text"></w2:column>
+        				<w2:column id="eqpaModl" name="eqpaModl" dataType="text"></w2:column>
+        				<w2:column id="sqno" name="sqno" dataType="text"></w2:column>
+        				<w2:column id="eqpaTm" name="eqpaTm" dataType="text"></w2:column>
+        				<w2:column id="cpuTypp" name="cpuTypp" dataType="text"></w2:column>
+        				<w2:column id="cpuSpeed" name="cpuSpeed" dataType="text"></w2:column>
+        				<w2:column id="cpuCoreTnum" name="cpuCoreTnum" dataType="text"></w2:column>
+        				<w2:column id="mmutSize" name="mmutSize" dataType="text"></w2:column>
+        				<w2:column id="itnlDiskSize" name="itnlDiskSize" dataType="text"></w2:column>
+        				<w2:column id="extnLinkYn" name="extnLinkYn" dataType="text"></w2:column>
+        				<w2:column id="extnDiskSqno1" name="extnDiskSqno1" dataType="text"></w2:column>
+        				<w2:column id="extnDiskSqno2" name="extnDiskSqno2" dataType="text"></w2:column>
+        				<w2:column id="extnDiskSqno3" name="extnDiskSqno3" dataType="text"></w2:column>
+        				<w2:column id="extnDiskSqno4" name="extnDiskSqno4" dataType="text"></w2:column>
+        				<w2:column id="istlDt" name="istlDt" dataType="text"></w2:column>
+        				<w2:column id="svcOpngDt" name="svcOpngDt" dataType="text"></w2:column>
+        				<w2:column id="svcEndDt" name="svcEndDt" dataType="text"></w2:column>
+        				<w2:column id="bilObjtYn" name="bilObjtYn" dataType="text"></w2:column>
+        				<w2:column id="istlPlac" name="istlPlac" dataType="text"></w2:column>
+        				<w2:column id="rackNo" name="rackNo" dataType="text"></w2:column>
+        				<w2:column id="rackItnlLoc" name="rackItnlLoc" dataType="text"></w2:column>
+        				<w2:column id="dsusYn" name="dsusYn" dataType="text"></w2:column>
+        				<w2:column id="dsusDt" name="dsusDt" dataType="text"></w2:column>
+        				<w2:column id="rmks" name="rmks" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<hwId><![CDATA[1]]></hwId>
+        					<hwSqno><![CDATA[string]]></hwSqno>
+        					<eqpaDvsn><![CDATA[하드웨어]]></eqpaDvsn>
+        					<asstNo><![CDATA[string]]></asstNo>
+        					<stat><![CDATA[정상]]></stat>
+        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
+        					<mainAdmr><![CDATA[string]]></mainAdmr>
+        					<subAdmr><![CDATA[string]]></subAdmr>
+        					<mainUsge><![CDATA[string]]></mainUsge>
+        					<eqpaMnfComp><![CDATA[string]]></eqpaMnfComp>
+        					<eqpaModl><![CDATA[string]]></eqpaModl>
+        					<sqno><![CDATA[string]]></sqno>
+        					<eqpaTm><![CDATA[string]]></eqpaTm>
+        					<cpuTypp><![CDATA[string]]></cpuTypp>
+        					<cpuSpeed><![CDATA[strin]]></cpuSpeed>
+        					<cpuCoreTnum><![CDATA[str]]></cpuCoreTnum>
+        					<mmutSize><![CDATA[string]]></mmutSize>
+        					<itnlDiskSize><![CDATA[string]]></itnlDiskSize>
+        					<extnLinkYn><![CDATA[s]]></extnLinkYn>
+        					<extnDiskSqno1><![CDATA[string]]></extnDiskSqno1>
+        					<extnDiskSqno2><![CDATA[string]]></extnDiskSqno2>
+        					<extnDiskSqno3><![CDATA[string]]></extnDiskSqno3>
+        					<extnDiskSqno4><![CDATA[string]]></extnDiskSqno4>
+        					<istlDt><![CDATA[stringst]]></istlDt>
+        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
+        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
+        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
+        					<istlPlac><![CDATA[string]]></istlPlac>
+        					<rackNo><![CDATA[string]]></rackNo>
+        					<rackItnlLoc><![CDATA[string]]></rackItnlLoc>
+        					<dsusYn><![CDATA[s]]></dsusYn>
+        					<dsusDt><![CDATA[stringst]]></dsusDt>
+        					<rmks><![CDATA[string]]></rmks>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
         	</w2:dataCollection>
         	<w2:workflowCollection />
         	<xf:submission id="sbmServerImageList" action="ta/query/api/v1/server-image-list" method="get" mediatype="application/json"
@@ -522,12 +596,17 @@
         		mode="asynchronous" processMsg="" ev:submit="scwin.sbmServerImageList_submit" ev:submitdone="scwin.sbmServerImageList_submitdone"
         		ev:submiterror="scwin.sbmServerImageList_submiterror" abortTrigger="">
         	</xf:submission>
+        	<xf:submission id="sbmServerHardware" action="ta/query/api/v1/hardware-list" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","pageInfo","hws"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="scwin.sbmServerHardware_submit" ev:submitdone="scwin.sbmServerHardware_submitdone"
+        		ev:submiterror="scwin.sbmServerHardware_submiterror" abortTrigger="">
+        	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
-scwin.onpageload = function() {
-   	$c.sbm.execute(sbmServerImageList);
+scwin.onpageload = function () {
+    $c.sbm.execute(sbmServerImageList);
 };
 
 scwin.sbmServerImageList_submit = function (e) {
@@ -535,11 +614,33 @@ scwin.sbmServerImageList_submit = function (e) {
 };
 
 scwin.sbmServerImageList_submitdone = function (e) {
-
+    alert("image");
 };
 
 scwin.sbmServerImageList_submiterror = function (e) {
 
+};
+
+scwin.sbmServerHardware_submit = function (e) {
+
+};
+
+scwin.sbmServerHardware_submitdone = function (e) {
+    alert("hardware");
+};
+
+scwin.sbmServerHardware_submiterror = function (e) {
+
+};
+
+scwin.toggle_ontogglechange = function () {
+    alert(toggle.getValue());
+    if (toggle.getValue() === "On") {
+        // grdServerList.setData
+        $c.sbm.execute(sbmServerImageList);
+    } else {
+        $c.sbm.execute(sbmServerHardware);
+    }
 };
 ]]></script>
     </head>
@@ -551,8 +652,12 @@ scwin.sbmServerImageList_submiterror = function (e) {
     			<w2:button style="width: 100px;height:24px;" id="" label="UNIX"></w2:button>
     			<w2:button style="width: 100px;height:24px;" id="" label="LINUX"></w2:button>
     			<w2:button style="width: 100px;height:24px;" id="" label="WINDOWS"></w2:button>
+    			<w2:fliptoggle style="position: relative;width: 80px;height: 30px;" id="toggle" ev:ontogglechange="scwin.toggle_ontogglechange">
+    				<w2:on label="논리" value="On"></w2:on>
+    				<w2:off label="물리" value="Off"></w2:off>
+    			</w2:fliptoggle>
     		</xf:group>
-    		<w2:gridView checkAllType="false" defaultCellHeight="20" id="" style="width: 100%;height: 150px;flex: 1;"
+    		<w2:gridView checkAllType="false" defaultCellHeight="20" id="grdServerList" style="width: 100%;height: 150px;flex: 1;"
     			dataList="data:svrImgs" autoFit="allColumn" useFilterList="true" useFilterSearch="true">
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     			<w2:header style="" id="header1">
