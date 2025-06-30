@@ -23,10 +23,23 @@ scwin.homeSearchBox_onviewchange = function (info) {
 
 scwin.homeSearchBox_onkeydown = function (e) {
     if ((e.charCode || e.keyCode) === 13) {
-        $p.parent().wfmLayoutContents.setSrc("/page/subpage/SystemSearch.xml");
+
+        var rowJSON = {
+            "name": homeSearchBox.getValue()
+        };
+
+        // 새로 열릴 화면에 데이터를 전달 (dataObject를 통해 전달 가능)
+        var obj = {
+            "dataObject": {
+                "type": "json",
+                "name": "HomeSearch",
+                "data": rowJSON
+            }
+        };
+    
+        $p.parent().wfmLayoutContents.setSrc("/page/subpage/SystemSearch.xml", obj);
     }
-};
-]]></script>
+};]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="background:#f8fafc;max-width:100vw;min-width:100vw;font-family:'Pretendard','SUIT','Noto Sans KR','Spoqa Han Sans Neo','Apple SD Gothic Neo','Malgun Gothic',sans-serif;">
     	<xf:group style="width:100%;height:100%;padding:24px 128px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px;">

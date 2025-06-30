@@ -13,8 +13,22 @@
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
-scwin.onpageload = function() {
-	wfmLeftContents.setSrc("/page/component/LeftSystemSearch.xml");
+scwin.onpageload = function () {
+    var paramData = $p.getParameter("HomeSearch");
+    var rowJSON = {
+        "name": paramData.name
+    };
+
+    // 새로 열릴 화면에 데이터를 전달 (dataObject를 통해 전달 가능)
+    var obj = {
+        "dataObject": {
+            "type": "json",
+            "name": "HomeSearch",
+            "data": rowJSON
+        }
+    };
+
+    wfmLeftContents.setSrc("/page/component/LeftSystemSearch.xml", obj);
     wfmRightContents.setSrc("/page/component/SystemSearchDashboard.xml");
 };
 ]]></script>

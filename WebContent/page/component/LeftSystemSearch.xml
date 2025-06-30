@@ -97,14 +97,20 @@
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function () {
-    grpBA.hide();
-    grpAAScreen.hide();
-    grpAATR.hide();
-    grpDA.hide();
-    grpMember.hide();
+    var paramData = $p.getParameter("HomeSearch");
+    if (paramData.name != "") {
+        searchboxOK.setValue(paramData.name)
+        scwin.requestSearch();
+    } else {
+        grpBA.hide();
+        grpAAScreen.hide();
+        grpAATR.hide();
+        grpDA.hide();
+        grpMember.hide();
 
-    btnFilterALL.setStyle("font-weight", "bold");
-    btnFilterALL.setStyle("border-bottom-width", "2px");
+        btnFilterALL.setStyle("font-weight", "bold");
+        btnFilterALL.setStyle("border-bottom-width", "2px");
+    }
 };
 
 scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
