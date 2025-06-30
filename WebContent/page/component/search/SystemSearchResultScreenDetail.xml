@@ -103,16 +103,21 @@ scwin.gridTRList_oncellclick = function (rowIndex, columnIndex, columnId) {
     //     name: "rowObj"
     // };
 
+    var popupWidth = 1000;
+    var popupHeight = 500;
+    var screenWidth = screen.availWidth;
+    var screenHeight = screen.availHeight;
+
     var options = {
         id: "popup1",
         //popupUrl : "popup.html",
         type: "wframePopup",
 
-        width: 1000,
-        height: 500,
+        width: popupWidth,
+        height: popupHeight,
 
-        top: 130,
-        left: 250,
+        top: Math.floor((screenHeight - popupHeight)),
+        left: Math.floor((screenWidth - popupWidth)),
 
         popupName: "openPopup",
         modal: true,

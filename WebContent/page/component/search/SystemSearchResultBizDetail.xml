@@ -10,12 +10,12 @@
         	<w2:dataCollection baseNode="map">
         		<w2:dataList id="scrns">
 					<w2:columnInfo>
-						<w2:column id="afrsScrnId" name="afrsScrnId" dataType="text"></w2:column>
-						<w2:column id="scrnNo" name="scrnNo" dataType="text"></w2:column>
-						<w2:column id="scrnName" name="scrnName" dataType="text"></w2:column>
-						<w2:column id="dvlpChrr" name="dvlpChrr" dataType="text"></w2:column>
-						<w2:column id="dvlpChrrNo" name="dvlpChrrNo" dataType="text"></w2:column>
-						<w2:column id="dvlpChrrName" name="dvlpChrrName" dataType="text"></w2:column>
+						<w2:column id="afrsScrnId" name="업무화면ID" dataType="text"></w2:column>
+						<w2:column id="scrnNo" name="화면번호" dataType="text"></w2:column>
+						<w2:column id="scrnName" name="화면명" dataType="text"></w2:column>
+						<w2:column id="dvlpChrr" name="개발담당자" dataType="text"></w2:column>
+						<w2:column id="dvlpChrrNo" name="개발담당자사번" dataType="text"></w2:column>
+						<w2:column id="dvlpChrrName" name="개발담당자명" dataType="text"></w2:column>
 					</w2:columnInfo>
 					<w2:data xmlns="">
 						<w2:row>
@@ -113,8 +113,8 @@
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
-scwin.onpageload = function() {
-	var paramData = $p.getParameter("LeftSearch");
+scwin.onpageload = function () {
+    var paramData = $p.getParameter("LeftSearch");
     // var data = JSON.stringify(paramData);
     // alert(data);
     mainTitle.setValue(paramData.name);
@@ -127,15 +127,40 @@ scwin.onpageload = function() {
 };
 
 scwin.sbmUnitTaskDetail_submit = function (e) {
-    
+
 };
 
 scwin.sbmUnitTaskDetail_submitdone = function (e) {
-	alert(e);
+
 };
 
 scwin.sbmUnitTaskDetail_submiterror = function (e) {
-	
+
+};
+
+scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
+    // var dataObj = {
+    //     type: "json",
+    //     data: rowJSON,
+    //     name: "rowObj"
+    // };
+
+    var options = {
+        id: "popup1",
+        type: "wframePopup",
+
+        popupName: "화면상세",
+        modal: true,
+        useIFrame: false,
+
+        resizable: true,
+        status: true,
+        menubar: false,
+        scrollbars: false,
+        title: false,
+    };
+
+    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", options);
 };
 ]]></script>
     </head>
@@ -339,25 +364,25 @@ scwin.sbmUnitTaskDetail_submiterror = function (e) {
     			</xf:group></xf:group>
     		<xf:group id="">
     			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="연관 화면 리스트"></w2:textbox>
-    			<w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" id="" autoFit="allColumn"
-    				defaultCellHeight="43">
+    			<w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" id="grdScreenList"
+    				autoFit="allColumn" defaultCellHeight="43" ev:oncellclick="scwin.grdScreenList_oncellclick">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column width="70" inputType="text" style="" id="column6" value="afrsScrnId" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column5" value="scrnNo" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column4" value="scrnName" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column3" value="dvlpChrr" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column2" value="dvlpChrrNo" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column1" value="dvlpChrrName" displayMode="label"></w2:column>
+    						<w2:column width="20" inputType="text" style="" id="column6" value="업무화면ID" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column5" value="화면번호" displayMode="label"></w2:column>
+    						<w2:column width="393" inputType="text" style="" id="column4" value="화면명" displayMode="label"></w2:column>
+    						<w2:column width="20" inputType="text" style="" id="column3" value="개발담당자" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column2" value="개발담당자사번" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column1" value="개발담당자명" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="" id="afrsScrnId" value="" displayMode="label"></w2:column>
+    						<w2:column width="20" inputType="text" style="" id="afrsScrnId" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="scrnNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="scrnName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dvlpChrr" value="" displayMode="label"></w2:column>
+    						<w2:column width="393" inputType="text" style="" id="scrnName" value="" displayMode="label"></w2:column>
+    						<w2:column width="20" inputType="text" style="" id="dvlpChrr" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="dvlpChrrNo" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="dvlpChrrName" value="" displayMode="label"></w2:column>
     					</w2:row>

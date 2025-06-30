@@ -1,5 +1,5 @@
-/*amd /cm/gcc/util.xml 30016 4422c6d3973d80d6ebdf643cb22e7739d33284aaf5dad038a793950999c8120a */
-define({declaration:{A:{version:'1.0',encoding:'UTF-8'}},E:[{T:1,N:'html',A:{xmlns:'http://www.w3.org/1999/xhtml','xmlns:ev':'http://www.w3.org/2001/xml-events','xmlns:w2':'http://www.inswave.com/websquare','xmlns:xf':'http://www.w3.org/2002/xforms'},E:[{T:1,N:'head',A:{},E:[{T:1,N:'w2:type',E:[{T:3,text:'COMMON'}]},{T:1,N:'w2:buildDate'},{T:1,N:'w2:MSA'},{T:1,N:'xf:model',E:[{T:1,N:'w2:dataCollection',A:{baseNode:'map'}},{T:1,N:'w2:workflowCollection'}]},{T:1,N:'w2:layoutInfo'},{T:1,N:'w2:publicInfo',A:{method:'scwin.getUserAgent,scwin.getParameter,scwin.getObject,scwin.getFunction,scwin.getCallBackFunction,scwin.getJSON,scwin.isJSON,scwin.isArray,scwin.isEmpty,scwin.getObjectType,scwin.isPlainObject,scwin.isMobile,scwin.isXmlDoc,scwin.setGridViewDelCheckBox,scwin.getChildren,scwin.getGridViewDataList,scwin.getComponent,scwin.createComponent,scwin.setInterval,scwin.clearInterval,scwin.setTimeout,scwin.clearTimeout,scwin.copyClipboard'}},{T:1,N:'script',A:{lazy:'false',type:'text/javascript'},E:[{T:4,cdata:function(scopeObj){with(scopeObj){// =============================================================================
+/*amd /cm/gcc/util.xml 31494 e540d857fc15423c4ad90462a885fd4439a3669b0fa9ee637d777ab283e6d72d */
+define({declaration:{A:{version:'1.0',encoding:'UTF-8'}},E:[{T:1,N:'html',A:{xmlns:'http://www.w3.org/1999/xhtml','xmlns:ev':'http://www.w3.org/2001/xml-events','xmlns:w2':'http://www.inswave.com/websquare','xmlns:xf':'http://www.w3.org/2002/xforms'},E:[{T:1,N:'head',A:{},E:[{T:1,N:'w2:type',E:[{T:3,text:'COMMON'}]},{T:1,N:'w2:buildDate'},{T:1,N:'w2:MSA'},{T:1,N:'xf:model',E:[{T:1,N:'w2:dataCollection',A:{baseNode:'map'}},{T:1,N:'w2:workflowCollection'}]},{T:1,N:'w2:layoutInfo'},{T:1,N:'w2:publicInfo',A:{method:'scwin.getUserAgent,scwin.getParameter,scwin.getObject,scwin.getFunction,scwin.getCallBackFunction,scwin.getJSON,scwin.isJSON,scwin.isArray,scwin.isEmpty,scwin.getObjectType,scwin.isPlainObject,scwin.isMobile,scwin.isXmlDoc,scwin.setGridViewDelCheckBox,scwin.getChildren,scwin.getGridViewDataList,scwin.getComponent,scwin.createComponent,scwin.setInterval,scwin.clearInterval,scwin.setTimeout,scwin.clearTimeout,scwin.copyClipboard,scwin.openEamsPopup'}},{T:1,N:'script',A:{lazy:'false',type:'text/javascript'},E:[{T:4,cdata:function(scopeObj){with(scopeObj){// =============================================================================
 /**
  * 웹스퀘어 컴포넌트 제어, 엑셀 파일 업로드/다운로드, 파일 업로드/다운로드, 기타 유틸리티 함수를 작성한다.
  *
@@ -849,5 +849,59 @@ scwin.copyClipboard = async function ($p, comObj) {
       console.error('클립보드 복사 중 오류가 발생했습니다:', err);
     }
   }
+};
+
+/**
+ * @method 
+ * @name openEamsPopup
+ * @description 
+ * eams 팝업
+ * @param {Object} comObj 컴포넌트 컴포넌트 객체
+ * @hidden N
+ * @exception 
+ */
+/**
+ * @method
+ * @name openEamsPopup
+ * @description desc
+ * @param {string} path desc
+ * @param {string} info desc
+ * @hidden N
+ * @exception 
+ * @example ${example}
+ */
+scwin.openEamsPopup = function ($p, path, info) {
+  var defaultPopupWidth = 1000;
+  var defaultPopupHeight = 1000;
+
+  // 최소 여백
+  var minMarginX = 24;
+  var minMarginY = 48;
+
+  // 브라우저 창 사이즈
+  var windowWidth = window.innerWidth;
+  var windowHeight = window.innerHeight;
+
+  // 최대 가능한 팝업 크기
+  var maxPopupWidth = windowWidth - minMarginX * 2;
+  var maxPopupHeight = windowHeight - minMarginY * 2;
+
+  // 화면보다 크면 비율 유지하며 축소
+  var widthRatio = maxPopupWidth / defaultPopupWidth;
+  var heightRatio = maxPopupHeight / defaultPopupHeight;
+  var scaleRatio = Math.min(widthRatio, heightRatio, 1); // 1 이상이면 축소 안함
+
+  var popupWidth = Math.floor(defaultPopupWidth * scaleRatio);
+  var popupHeight = Math.floor(defaultPopupHeight * scaleRatio);
+
+  // 중앙 위치 계산
+  var left = Math.floor((windowWidth - popupWidth) / 2);
+  var top = Math.floor((windowHeight - popupHeight) / 2);
+  var options = info;
+  options.width = popupWidth;
+  options.height = popupHeight;
+  options.top = top;
+  options.left = left;
+  $p.openPopup(path, options);
 };
 }}}]}]},{T:1,N:'body',A:{'ev:onpageload':'scwin.onpageload'}}]}]})

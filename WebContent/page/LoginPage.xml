@@ -224,9 +224,9 @@ scwin.sbmLogin_submitdone = function (e) {
     }
 
     // 결과 확인
-    Object.entries(headers).forEach(([key, value]) => {
-        alert(`${key}: ${value}`);
-    });
+    // Object.entries(headers).forEach(([key, value]) => {
+    //     alert(`${key}: ${value}`);
+    // });
 
     $p.url("/page/layout/TopNavigationBottomContents.xml");
 };
