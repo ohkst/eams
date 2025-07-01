@@ -614,7 +614,7 @@ scwin.sbmServerImageList_submit = function (e) {
 };
 
 scwin.sbmServerImageList_submitdone = function (e) {
-    alert("image");
+    
 };
 
 scwin.sbmServerImageList_submiterror = function (e) {
@@ -626,7 +626,7 @@ scwin.sbmServerHardware_submit = function (e) {
 };
 
 scwin.sbmServerHardware_submitdone = function (e) {
-    alert("hardware");
+    
 };
 
 scwin.sbmServerHardware_submiterror = function (e) {
@@ -636,7 +636,6 @@ scwin.sbmServerHardware_submiterror = function (e) {
 scwin.toggle_ontogglechange = function () {
     alert(toggle.getValue());
     if (toggle.getValue() === "On") {
-        // grdServerList.setData
         $c.sbm.execute(sbmServerImageList);
     } else {
         $c.sbm.execute(sbmServerHardware);
