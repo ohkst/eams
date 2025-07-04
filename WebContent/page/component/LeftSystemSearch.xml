@@ -55,28 +55,68 @@
         			</w2:data>
         		</w2:dataList>
         		<w2:dataList id="unitTasks">
-					<w2:columnInfo>
-						<w2:column id="unitAfrsId" name="unitAfrsId" dataType="text"></w2:column>
-						<w2:column id="unitAfrsCd" name="unitAfrsCd" dataType="text"></w2:column>
-						<w2:column id="depName" name="depName" dataType="text"></w2:column>
-						<w2:column id="unitAfrsName" name="unitAfrsName" dataType="text"></w2:column>
-						<w2:column id="chrrNo" name="chrrNo" dataType="text"></w2:column>
-						<w2:column id="chrrName" name="chrrName" dataType="text"></w2:column>
-						<w2:column id="manlName" name="manlName" dataType="text"></w2:column>
-					</w2:columnInfo>
-					<w2:data xmlns="">
-						<w2:row>
-							<unitAfrsId><![CDATA[1]]></unitAfrsId>
-							<unitAfrsCd><![CDATA[u0QKh71yTpm3PIhv7V]]></unitAfrsCd>
-							<depName><![CDATA[인사부]]></depName>
-							<unitAfrsName><![CDATA[string]]></unitAfrsName>
-							<chrrNo><![CDATA[113565]]></chrrNo>
-							<chrrName><![CDATA[최동규]]></chrrName>
-							<manlName><![CDATA[계좌계설가이드]]></manlName>
-						</w2:row>
-					</w2:data>
-				</w2:dataList>
-			</w2:dataCollection>
+        			<w2:columnInfo>
+        				<w2:column id="unitAfrsId" name="unitAfrsId" dataType="text"></w2:column>
+        				<w2:column id="unitAfrsCd" name="unitAfrsCd" dataType="text"></w2:column>
+        				<w2:column id="depName" name="depName" dataType="text"></w2:column>
+        				<w2:column id="unitAfrsName" name="unitAfrsName" dataType="text"></w2:column>
+        				<w2:column id="chrrNo" name="chrrNo" dataType="text"></w2:column>
+        				<w2:column id="chrrName" name="chrrName" dataType="text"></w2:column>
+        				<w2:column id="manlName" name="manlName" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<unitAfrsId><![CDATA[1]]></unitAfrsId>
+        					<unitAfrsCd><![CDATA[u0QKh71yTpm3PIhv7V]]></unitAfrsCd>
+        					<depName><![CDATA[인사부]]></depName>
+        					<unitAfrsName><![CDATA[string]]></unitAfrsName>
+        					<chrrNo><![CDATA[113565]]></chrrNo>
+        					<chrrName><![CDATA[최동규]]></chrrName>
+        					<manlName><![CDATA[계좌계설가이드]]></manlName>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList id="tables">
+        			<w2:columnInfo>
+        				<w2:column id="tlbId" name="tlbId" dataType="text"></w2:column>
+        				<w2:column id="afrsDvsn" name="afrsDvsn" dataType="text"></w2:column>
+        				<w2:column id="msjtSphr" name="msjtSphr" dataType="text"></w2:column>
+        				<w2:column id="tblEngName" name="tblEngName" dataType="text"></w2:column>
+        				<w2:column id="tblKorName" name="tblKorName" dataType="text"></w2:column>
+        				<w2:column id="tblDscr" name="tblDscr" dataType="text"></w2:column>
+        				<w2:column id="witfChrgDep" name="witfChrgDep" dataType="text"></w2:column>
+        				<w2:column id="witfChrgDepName" name="witfChrgDepName" dataType="text"></w2:column>
+        				<w2:column id="witfChrr" name="witfChrr" dataType="text"></w2:column>
+        				<w2:column id="witfChrrName" name="witfChrrName" dataType="text"></w2:column>
+        				<w2:column id="itChrgDept" name="itChrgDept" dataType="text"></w2:column>
+        				<w2:column id="itChrgDeptName" name="itChrgDeptName" dataType="text"></w2:column>
+        				<w2:column id="itChrr" name="itChrr" dataType="text"></w2:column>
+        				<w2:column id="itChrrName" name="itChrrName" dataType="text"></w2:column>
+        				<w2:column id="frstErlmDt" name="frstErlmDt" dataType="text"></w2:column>
+        				<w2:column id="rcenChngDt" name="rcenChngDt" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<tlbId><![CDATA[1]]></tlbId>
+        					<afrsDvsn><![CDATA[TA]]></afrsDvsn>
+        					<msjtSphr><![CDATA[string]]></msjtSphr>
+        					<tblEngName><![CDATA[TA0001]]></tblEngName>
+        					<tblKorName><![CDATA[서버이미지]]></tblKorName>
+        					<tblDscr><![CDATA[서버이미지]]></tblDscr>
+        					<witfChrgDep><![CDATA[2]]></witfChrgDep>
+        					<witfChrgDepName><![CDATA[인사팀]]></witfChrgDepName>
+        					<witfChrr><![CDATA[1]]></witfChrr>
+        					<witfChrrName><![CDATA[홍길동]]></witfChrrName>
+        					<itChrgDept><![CDATA[2]]></itChrgDept>
+        					<itChrgDeptName><![CDATA[인사팀]]></itChrgDeptName>
+        					<itChrr><![CDATA[2]]></itChrr>
+        					<itChrrName><![CDATA[홍길순]]></itChrrName>
+        					<frstErlmDt><![CDATA[20240101]]></frstErlmDt>
+        					<rcenChngDt><![CDATA[20240101]]></rcenChngDt>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        	</w2:dataCollection>
         	<w2:workflowCollection />
         	<xf:submission id="sbmEmpIdInfo" action="org/query/api/v1/emp-info/id/1" method="get" mediatype="application/json" ref=""
         		target="" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg=""
@@ -89,8 +129,14 @@
         		ev:submiterror="scwin.sbmEmpSearchList_submiterror" abortTrigger="">
         	</xf:submission>
         	<xf:submission id="sbmUnitTaskSearchList" action="ba/query/api/v1/unit-task-list" method="get" mediatype="application/json"
-        		ref="" target='data:json,["common","pageInfo","unitTasks"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
-        		mode="asynchronous" processMsg="" abortTrigger="" ev:submit="scwin.sbmUnitTaskSearchList_submit" ev:submitdone="scwin.sbmUnitTaskSearchList_submitdone" ev:submiterror="scwin.sbmUnitTaskSearchList_submiterror">
+        		ref="" target='data:json,["common","pageInfo","unitTasks"]' encoding="UTF-8" instance="" replace="" errorHandler=""
+        		customHandler="" mode="asynchronous" processMsg="" abortTrigger="" ev:submit="scwin.sbmUnitTaskSearchList_submit"
+        		ev:submitdone="scwin.sbmUnitTaskSearchList_submitdone" ev:submiterror="scwin.sbmUnitTaskSearchList_submiterror">
+        	</xf:submission>
+        	<xf:submission id="sbmTableList" action="da/query/api/v1/table-list" method="get" mediatype="application/json" ref=""
+        		target="data:json,tables" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+        		processMsg="" ev:submit="scwin.sbmTableList_submit" ev:submitdone="scwin.sbmTableList_submitdone"
+        		ev:submiterror="scwin.sbmTableList_submiterror" abortTrigger="">
         	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
@@ -117,6 +163,7 @@ scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
     // $p.log(rowIndex + columnId + columnId);
 
     var cellData = "";
+    var id = "";
     if (type === 0) {
         cellData = unitTasks.getCellData(rowIndex, columnId);
     } else if (type === 1) {
@@ -124,7 +171,8 @@ scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
     } else if (type === 2) {
         cellData = dataList4.getCellData(rowIndex, columnId);
     } else if (type === 3) {
-        cellData = dataList5.getCellData(rowIndex, columnId);
+        cellData = tables.getCellData(rowIndex, columnId);
+        id = tables.getCellData(rowIndex, "tlbId");
     } else if (type === 4) {
         cellData = emps.getCellData(rowIndex, columnId);
     }
@@ -135,7 +183,8 @@ scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
         "Personal Info": { "Name": "Lee", "Age": 50, "Married": false },
         "Region": "Seoul",
         "Carrier": true,
-        "name": cellData
+        "name": cellData,
+        "id": id
     };
 
     // 새로 열릴 화면에 데이터를 전달 (dataObject를 통해 전달 가능)
@@ -205,17 +254,17 @@ scwin.requestSearch = function () {
     // $c.sbm.execute(sbmEmpSearchList, trParam);
 
 
-    // const dbParam = {
-    //     offset: 0,
-    //     limit: 13,
-    //     type: "PAGE",
-    //     sortMethod: "NO",
-    //     sortFields: ["depName"],
-    //     searchField: "empName",
-    //     searchContent: searchboxOK.getValue()
-    // };
+    const tablesParam = {
+        offset: 0,
+        limit: 13,
+        type: "PAGE",
+        sortMethod: "NO",
+        sortFields: ["tblEngName"],
+        searchField: "tblEngName",
+        searchContent: searchboxOK.getValue()
+    };
 
-    // $c.sbm.execute(sbmEmpSearchList, dbParam);
+    $c.sbm.execute(sbmTableList, tablesParam);
 
 
     const memberParam = {
@@ -230,6 +279,7 @@ scwin.requestSearch = function () {
 
     $c.sbm.execute(sbmEmpSearchList, memberParam);
 
+
     // 엔터치면 코드 적용
     if (searchboxOK.getValue() == "") {
         grpBA.hide();
@@ -240,40 +290,10 @@ scwin.requestSearch = function () {
     } else if ((e.charCode || e.keyCode) === 13) {
         // $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultDetail.xml");
         unitTasks.clearFilter();
-        dataList3.clearFilter();
-        dataList4.clearFilter();
-        dataList5.clearFilter();
+
+        tables.clearFilter();
         emps.clearFilter();
 
-        let jsonFilterOptions = {};
-
-        jsonFilterOptions.type = "row";
-        jsonFilterOptions.colIndex = "name";
-        jsonFilterOptions.key = searchboxOK.getValue();
-        jsonFilterOptions.exactMatch = false;
-        jsonFilterOptions.condition = "and";
-
-        dataList3.setColumnFilter(jsonFilterOptions);
-        dataList4.setColumnFilter(jsonFilterOptions);
-        dataList5.setColumnFilter(jsonFilterOptions);
-
-        if (dataList3.getRowCount() <= 0) {
-            grpAAScreen.hide();
-        } else {
-            grpAAScreen.show("");
-        }
-
-        if (dataList4.getRowCount() <= 0) {
-            grpAATR.hide();
-        } else {
-            grpAATR.show("");
-        }
-
-        if (dataList5.getRowCount() <= 0) {
-            grpDA.hide();
-        } else {
-            grpDA.show("");
-        }
     } else {
         // $p.log("SEARCH!!!!");
 
@@ -365,7 +385,7 @@ scwin.btnFilterALL_onclick = function (e) {
             grpAATR.hide();
         }
 
-        if (dataList5.getRowCount() > 0) {
+        if (tables.getRowCount() > 0) {
             grpDA.show("");
         } else {
             grpDA.hide();
@@ -440,6 +460,12 @@ scwin.btnFilterMember_onclick = function (e) {
     grpMember.show("");
 };
 
+scwin.searchboxOK_onkeyup = function (e) {
+    scwin.requestSearch();
+    $p.log(searchboxOK.getValue());
+};
+
+
 scwin.sbmEmpIdInfo_submit = function (e) {
 
 };
@@ -452,15 +478,16 @@ scwin.sbmEmpIdInfo_submiterror = function (e) {
 
 };
 
+
 scwin.sbmEmpSearchList_submit = function (e) {
 
 };
 
 scwin.sbmEmpSearchList_submitdone = function (e) {
-    var jsoninfo1 = JSON.stringify(common.getJSON());
-    var jsoninfo2 = JSON.stringify(pageInfo.getJSON());
-    var jsoninfo3 = JSON.stringify(emps.getAllArray());
-    // alert("done" + jsoninfo1 + jsoninfo2 + jsoninfo3);
+    // var jsoninfo1 = JSON.stringify(common.getJSON());
+    // var jsoninfo2 = JSON.stringify(pageInfo.getJSON());
+    // var jsoninfo3 = JSON.stringify(emps.getAllArray());
+    // alert("done" + jsoninfo3);
 
     if (emps.getRowCount() <= 0) {
         grpMember.hide();
@@ -473,15 +500,14 @@ scwin.sbmEmpSearchList_submiterror = function (e) {
     alert("error" + e.responseBody);
 };
 
+
 scwin.sbmUnitTaskSearchList_submit = function (e) {
 
 };
 
 scwin.sbmUnitTaskSearchList_submitdone = function (e) {
-    var jsoninfo1 = JSON.stringify(common.getJSON());
-    var jsoninfo2 = JSON.stringify(pageInfo.getJSON());
-    var jsoninfo3 = JSON.stringify(unitTasks.getAllArray());
-    // alert("done" + jsoninfo1 + jsoninfo2 + jsoninfo3);
+    // var jsoninfo3 = JSON.stringify(unitTasks.getAllArray());
+    // alert("done" + jsoninfo3);
 
     if (unitTasks.getRowCount() <= 0) {
         grpBA.hide();
@@ -494,9 +520,24 @@ scwin.sbmUnitTaskSearchList_submiterror = function (e) {
     alert("error" + e.responseBody);
 };
 
-scwin.searchboxOK_onkeyup = function (e) {
-    scwin.requestSearch();
-    $p.log(searchboxOK.getValue());
+
+scwin.sbmTableList_submit = function (e) {
+
+};
+
+scwin.sbmTableList_submitdone = function (e) {
+    // var jsoninfo3 = JSON.stringify(tables.getAllArray());
+    // alert("done" + jsoninfo3);
+
+    if (tables.getRowCount() <= 0) {
+        grpDA.hide();
+    } else {
+        grpDA.show("");
+    }
+};
+
+scwin.sbmTableList_submiterror = function (e) {
+
 };
 ]]></script>
     </head>
@@ -615,23 +656,75 @@ scwin.searchboxOK_onkeyup = function (e) {
     		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="grpDA">
     			<w2:textbox style="width: 100%;height: 23px;" id="" label="DB"></w2:textbox>
     			<w2:gridView ev:oncellclick="scwin.gridDADBSearchResult_oncellclick" hideHeader="true" checkAllType="false"
-    				dataList="data:dataList5" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridDADBSearchResult"
+    				dataList="data:tables" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridDADBSearchResult"
     				defaultCellHeight="20">
-    				<w2:caption style="" id="caption4" value="this is a grid caption."></w2:caption>
+    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column width="70" inputType="text" id="column4" value="이름" displayMode="label"></w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" id="column3" value="카테고리" displayMode="label"></w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" id="column2" value="값" displayMode="label"></w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" id="column1" value="메타" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column16" value="tlbId" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column15" value="afrsDvsn" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column14" value="msjtSphr" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column13" value="tblEngName" displayMode="label"
+    							hidden="false">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column12" value="tblKorName" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column11" value="tblDscr" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column10" value="witfChrgDep" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column9" value="witfChrgDepName" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column8" value="witfChrr" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column7" value="witfChrrName" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column6" value="itChrgDept" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column5" value="itChrgDeptName" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column4" value="itChrr" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column3" value="itChrrName" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column2" value="frstErlmDt" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column1" value="rcenChngDt" displayMode="label"
+    							hidden="true">
+    						</w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" id="name" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" id="category" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" id="value" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" id="meta" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="tlbId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="afrsDvsn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="msjtSphr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="tblEngName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="tblKorName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="tblDscr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="witfChrgDep" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="witfChrgDepName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="witfChrr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="witfChrrName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="itChrgDept" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="itChrgDeptName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="frstErlmDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="rcenChngDt" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView>

@@ -39,574 +39,211 @@
         			</w2:data>
         		</w2:dataMap>
         		<w2:dataList id="svrImgs">
-        			<w2:columnInfo>
-        				<w2:column id="svrImgAdmnId" name="서버이미지관리ID" dataType="text"></w2:column>
-        				<w2:column id="svrImgAdmnSqno" name="서버이미지관리일련번호" dataType="text"></w2:column>
-        				<w2:column id="hwId" name="HWID" dataType="text"></w2:column>
-        				<w2:column id="hostName" name="호스트명" dataType="text"></w2:column>
-        				<w2:column id="stat" name="stat" dataType="상태"></w2:column>
-        				<w2:column id="pssnDvsn" name="소유구분" dataType="text"></w2:column>
-        				<w2:column id="taDomn" name="TA도메인" dataType="text"></w2:column>
-        				<w2:column id="taSvcGrp" name="TA서비스그룹" dataType="text" ignoreStatus=""></w2:column>
-        				<w2:column id="taSvc" name="TA서비스" dataType="text"></w2:column>
-        				<w2:column id="taArfs" name="TA업무" dataType="text"></w2:column>
-        				<w2:column id="svcIptd" name="서비스중요도" dataType="text"></w2:column>
-        				<w2:column id="svcOffrObjt" name="서비스제공대상" dataType="text"></w2:column>
-        				<w2:column id="svcHour" name="서비스시간" dataType="text"></w2:column>
-        				<w2:column id="prmAdmnDep" name="주관리부서" dataType="text"></w2:column>
-        				<w2:column id="apChhr" name="AP담당자" dataType="text"></w2:column>
-        				<w2:column id="osDvsn" name="OS구분" dataType="text"></w2:column>
-        				<w2:column id="usgeDvsn" name="용도구분" dataType="text"></w2:column>
-        				<w2:column id="svrDvsn" name="서버용도" dataType="text"></w2:column>
-        				<w2:column id="imgDvsn" name="이미지구분" dataType="text"></w2:column>
-        				<w2:column id="haCpstYn" name="HA구성여부" dataType="text"></w2:column>
-        				<w2:column id="haSoltn" name="HA솔루션" dataType="text"></w2:column>
-        				<w2:column id="haVer" name="HA버전" dataType="text"></w2:column>
-        				<w2:column id="svcOpngDt" name="서비스개시일자" dataType="text"></w2:column>
-        				<w2:column id="svcEndDt" name="서비스종료일자" dataType="text"></w2:column>
-        				<w2:column id="bilObjtYn" name="과금대상여부" dataType="text"></w2:column>
-        				<w2:column id="asmtCoreTnum" name="할당Core수" dataType="text"></w2:column>
-        				<w2:column id="asmtMmutSize" name="할당메모리사이즈" dataType="text"></w2:column>
-        				<w2:column id="asmtItnlDiskSize" name="할당내장디스크사이즈" dataType="text"></w2:column>
-        				<w2:column id="asmtExtnDiskSize" name="할단외장디스크사이즈" dataType="text"></w2:column>
-        				<w2:column id="ipArr1" name="IP_주소1" dataType="text"></w2:column>
-        				<w2:column id="ipArr2" name="IP_주소2" dataType="text"></w2:column>
-        				<w2:column id="ipArr3" name="IP_주소3" dataType="text"></w2:column>
-        				<w2:column id="ipArr4" name="IP_주소4" dataType="text"></w2:column>
-        				<w2:column id="ipArr5" name="IP_주소5" dataType="text"></w2:column>
-        				<w2:column id="ipArr6" name="IP_주소6" dataType="text"></w2:column>
-        				<w2:column id="ipArr7" name="IP_주소7" dataType="text"></w2:column>
-        				<w2:column id="ipArr8" name="IP_주소8" dataType="text"></w2:column>
-        				<w2:column id="ipArr9" name="IP_주소9" dataType="text"></w2:column>
-        				<w2:column id="asstNo" name="자산번호" dataType="text"></w2:column>
-        				<w2:column id="dsusObjtYn" name="파기대상여부" dataType="text"></w2:column>
-        				<w2:column id="rmks" name="비고" dataType="text" ignoreStatus=""></w2:column>
-        			</w2:columnInfo>
-        			<w2:data xmlns="">
-        				<w2:row>
-        					<svrImgAdmnId><![CDATA[1]]></svrImgAdmnId>
-        					<svrImgAdmnSqno><![CDATA[string]]></svrImgAdmnSqno>
-        					<hwId><![CDATA[1]]></hwId>
-        					<hostName><![CDATA[string]]></hostName>
-        					<stat><![CDATA[정상]]></stat>
-        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
-        					<taDomn><![CDATA[네트워크]]></taDomn>
-        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
-        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-        					<svcIptd><![CDATA[s]]></svcIptd>
-        					<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
-        					<svcHour><![CDATA[string]]></svcHour>
-        					<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
-        					<apChhr><![CDATA[string]]></apChhr>
-        					<osDvsn><![CDATA[string]]></osDvsn>
-        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
-        					<svrDvsn><![CDATA[string]]></svrDvsn>
-        					<imgDvsn><![CDATA[string]]></imgDvsn>
-        					<haCpstYn><![CDATA[s]]></haCpstYn>
-        					<haSoltn><![CDATA[string]]></haSoltn>
-        					<haVer><![CDATA[string]]></haVer>
-        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
-        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
-        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-        					<ipArr1><![CDATA[string]]></ipArr1>
-        					<ipArr2><![CDATA[string]]></ipArr2>
-        					<ipArr3><![CDATA[string]]></ipArr3>
-        					<ipArr4><![CDATA[string]]></ipArr4>
-        					<ipArr5><![CDATA[string]]></ipArr5>
-        					<ipArr6><![CDATA[string]]></ipArr6>
-        					<ipArr7><![CDATA[string]]></ipArr7>
-        					<ipArr8><![CDATA[string]]></ipArr8>
-        					<ipArr9><![CDATA[string]]></ipArr9>
-        					<asstNo><![CDATA[string]]></asstNo>
-        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-        					<rmks><![CDATA[string]]></rmks>
-        				</w2:row>
-        				<w2:row>
-        					<svrImgAdmnId><![CDATA[2]]></svrImgAdmnId>
-        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0001]]></svrImgAdmnSqno>
-        					<hwId><![CDATA[1]]></hwId>
-        					<hostName><![CDATA[hst01]]></hostName>
-        					<stat><![CDATA[정상]]></stat>
-        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
-        					<taDomn><![CDATA[네트워크]]></taDomn>
-        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
-        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-        					<svcIptd><![CDATA[s]]></svcIptd>
-        					<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
-        					<svcHour><![CDATA[string]]></svcHour>
-        					<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
-        					<apChhr><![CDATA[string]]></apChhr>
-        					<osDvsn><![CDATA[string]]></osDvsn>
-        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
-        					<svrDvsn><![CDATA[string]]></svrDvsn>
-        					<imgDvsn><![CDATA[string]]></imgDvsn>
-        					<haCpstYn><![CDATA[s]]></haCpstYn>
-        					<haSoltn><![CDATA[string]]></haSoltn>
-        					<haVer><![CDATA[string]]></haVer>
-        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
-        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
-        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-        					<ipArr1><![CDATA[string]]></ipArr1>
-        					<ipArr2><![CDATA[string]]></ipArr2>
-        					<ipArr3><![CDATA[string]]></ipArr3>
-        					<ipArr4><![CDATA[string]]></ipArr4>
-        					<ipArr5><![CDATA[string]]></ipArr5>
-        					<ipArr6><![CDATA[string]]></ipArr6>
-        					<ipArr7><![CDATA[string]]></ipArr7>
-        					<ipArr8><![CDATA[string]]></ipArr8>
-        					<ipArr9><![CDATA[string]]></ipArr9>
-        					<asstNo><![CDATA[string]]></asstNo>
-        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-        					<rmks><![CDATA[string]]></rmks>
-        				</w2:row>
-        				<w2:row>
-        					<svrImgAdmnId><![CDATA[3]]></svrImgAdmnId>
-        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0002]]></svrImgAdmnSqno>
-        					<hwId><![CDATA[1]]></hwId>
-        					<hostName><![CDATA[hst02]]></hostName>
-        					<stat><![CDATA[정상]]></stat>
-        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
-        					<taDomn><![CDATA[네트워크]]></taDomn>
-        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
-        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-        					<svcIptd><![CDATA[s]]></svcIptd>
-        					<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
-        					<svcHour><![CDATA[string]]></svcHour>
-        					<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
-        					<apChhr><![CDATA[string]]></apChhr>
-        					<osDvsn><![CDATA[string]]></osDvsn>
-        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
-        					<svrDvsn><![CDATA[string]]></svrDvsn>
-        					<imgDvsn><![CDATA[string]]></imgDvsn>
-        					<haCpstYn><![CDATA[s]]></haCpstYn>
-        					<haSoltn><![CDATA[string]]></haSoltn>
-        					<haVer><![CDATA[string]]></haVer>
-        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
-        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
-        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-        					<ipArr1><![CDATA[string]]></ipArr1>
-        					<ipArr2><![CDATA[string]]></ipArr2>
-        					<ipArr3><![CDATA[string]]></ipArr3>
-        					<ipArr4><![CDATA[string]]></ipArr4>
-        					<ipArr5><![CDATA[string]]></ipArr5>
-        					<ipArr6><![CDATA[string]]></ipArr6>
-        					<ipArr7><![CDATA[string]]></ipArr7>
-        					<ipArr8><![CDATA[string]]></ipArr8>
-        					<ipArr9><![CDATA[string]]></ipArr9>
-        					<asstNo><![CDATA[string]]></asstNo>
-        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-        					<rmks><![CDATA[string]]></rmks>
-        				</w2:row>
-        				<w2:row>
-        					<svrImgAdmnId><![CDATA[4]]></svrImgAdmnId>
-        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0003]]></svrImgAdmnSqno>
-        					<hwId><![CDATA[1]]></hwId>
-        					<hostName><![CDATA[hst03]]></hostName>
-        					<stat><![CDATA[정상]]></stat>
-        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
-        					<taDomn><![CDATA[네트워크]]></taDomn>
-        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
-        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-        					<svcIptd><![CDATA[s]]></svcIptd>
-        					<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
-        					<svcHour><![CDATA[string]]></svcHour>
-        					<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
-        					<apChhr><![CDATA[string]]></apChhr>
-        					<osDvsn><![CDATA[string]]></osDvsn>
-        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
-        					<svrDvsn><![CDATA[string]]></svrDvsn>
-        					<imgDvsn><![CDATA[string]]></imgDvsn>
-        					<haCpstYn><![CDATA[s]]></haCpstYn>
-        					<haSoltn><![CDATA[string]]></haSoltn>
-        					<haVer><![CDATA[string]]></haVer>
-        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
-        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
-        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-        					<ipArr1><![CDATA[string]]></ipArr1>
-        					<ipArr2><![CDATA[string]]></ipArr2>
-        					<ipArr3><![CDATA[string]]></ipArr3>
-        					<ipArr4><![CDATA[string]]></ipArr4>
-        					<ipArr5><![CDATA[string]]></ipArr5>
-        					<ipArr6><![CDATA[string]]></ipArr6>
-        					<ipArr7><![CDATA[string]]></ipArr7>
-        					<ipArr8><![CDATA[string]]></ipArr8>
-        					<ipArr9><![CDATA[string]]></ipArr9>
-        					<asstNo><![CDATA[string]]></asstNo>
-        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-        					<rmks><![CDATA[string]]></rmks>
-        				</w2:row>
-        				<w2:row>
-        					<svrImgAdmnId><![CDATA[5]]></svrImgAdmnId>
-        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0004]]></svrImgAdmnSqno>
-        					<hwId><![CDATA[1]]></hwId>
-        					<hostName><![CDATA[hst04]]></hostName>
-        					<stat><![CDATA[정상]]></stat>
-        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
-        					<taDomn><![CDATA[네트워크]]></taDomn>
-        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
-        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-        					<svcIptd><![CDATA[s]]></svcIptd>
-        					<svcOffrObjt><![CDATA[A1]]></svcOffrObjt>
-        					<svcHour><![CDATA[string]]></svcHour>
-        					<prmAdmnDep><![CDATA[SK]]></prmAdmnDep>
-        					<apChhr><![CDATA[홍길동]]></apChhr>
-        					<osDvsn><![CDATA[string]]></osDvsn>
-        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
-        					<svrDvsn><![CDATA[string]]></svrDvsn>
-        					<imgDvsn><![CDATA[string]]></imgDvsn>
-        					<haCpstYn><![CDATA[s]]></haCpstYn>
-        					<haSoltn><![CDATA[string]]></haSoltn>
-        					<haVer><![CDATA[string]]></haVer>
-        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
-        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
-        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-        					<ipArr1><![CDATA[string]]></ipArr1>
-        					<ipArr2><![CDATA[string]]></ipArr2>
-        					<ipArr3><![CDATA[string]]></ipArr3>
-        					<ipArr4><![CDATA[string]]></ipArr4>
-        					<ipArr5><![CDATA[string]]></ipArr5>
-        					<ipArr6><![CDATA[string]]></ipArr6>
-        					<ipArr7><![CDATA[string]]></ipArr7>
-        					<ipArr8><![CDATA[string]]></ipArr8>
-        					<ipArr9><![CDATA[string]]></ipArr9>
-        					<asstNo><![CDATA[string]]></asstNo>
-        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-        					<rmks><![CDATA[string]]></rmks>
-        				</w2:row>
-        				<w2:row>
-        					<svrImgAdmnId><![CDATA[6]]></svrImgAdmnId>
-        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0005]]></svrImgAdmnSqno>
-        					<hwId><![CDATA[1]]></hwId>
-        					<hostName><![CDATA[hst05]]></hostName>
-        					<stat><![CDATA[정상]]></stat>
-        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
-        					<taDomn><![CDATA[네트워크]]></taDomn>
-        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
-        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-        					<svcIptd><![CDATA[s]]></svcIptd>
-        					<svcOffrObjt><![CDATA[A5]]></svcOffrObjt>
-        					<svcHour><![CDATA[string]]></svcHour>
-        					<prmAdmnDep><![CDATA[SK]]></prmAdmnDep>
-        					<apChhr><![CDATA[홍길동5]]></apChhr>
-        					<osDvsn><![CDATA[string]]></osDvsn>
-        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
-        					<svrDvsn><![CDATA[string]]></svrDvsn>
-        					<imgDvsn><![CDATA[string]]></imgDvsn>
-        					<haCpstYn><![CDATA[s]]></haCpstYn>
-        					<haSoltn><![CDATA[string]]></haSoltn>
-        					<haVer><![CDATA[string]]></haVer>
-        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
-        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
-        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-        					<ipArr1><![CDATA[string]]></ipArr1>
-        					<ipArr2><![CDATA[string]]></ipArr2>
-        					<ipArr3><![CDATA[string]]></ipArr3>
-        					<ipArr4><![CDATA[string]]></ipArr4>
-        					<ipArr5><![CDATA[string]]></ipArr5>
-        					<ipArr6><![CDATA[string]]></ipArr6>
-        					<ipArr7><![CDATA[string]]></ipArr7>
-        					<ipArr8><![CDATA[string]]></ipArr8>
-        					<ipArr9><![CDATA[string]]></ipArr9>
-        					<asstNo><![CDATA[string]]></asstNo>
-        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-        					<rmks><![CDATA[string]]></rmks>
-        				</w2:row>
-        				<w2:row>
-        					<svrImgAdmnId><![CDATA[7]]></svrImgAdmnId>
-        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0006]]></svrImgAdmnSqno>
-        					<hwId><![CDATA[1]]></hwId>
-        					<hostName><![CDATA[hst06]]></hostName>
-        					<stat><![CDATA[정상]]></stat>
-        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
-        					<taDomn><![CDATA[네트워크]]></taDomn>
-        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
-        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-        					<svcIptd><![CDATA[s]]></svcIptd>
-        					<svcOffrObjt><![CDATA[A5]]></svcOffrObjt>
-        					<svcHour><![CDATA[string]]></svcHour>
-        					<prmAdmnDep><![CDATA[KIS]]></prmAdmnDep>
-        					<apChhr><![CDATA[홍길동6]]></apChhr>
-        					<osDvsn><![CDATA[string]]></osDvsn>
-        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
-        					<svrDvsn><![CDATA[string]]></svrDvsn>
-        					<imgDvsn><![CDATA[string]]></imgDvsn>
-        					<haCpstYn><![CDATA[s]]></haCpstYn>
-        					<haSoltn><![CDATA[string]]></haSoltn>
-        					<haVer><![CDATA[string]]></haVer>
-        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
-        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
-        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-        					<ipArr1><![CDATA[string]]></ipArr1>
-        					<ipArr2><![CDATA[string]]></ipArr2>
-        					<ipArr3><![CDATA[string]]></ipArr3>
-        					<ipArr4><![CDATA[string]]></ipArr4>
-        					<ipArr5><![CDATA[string]]></ipArr5>
-        					<ipArr6><![CDATA[string]]></ipArr6>
-        					<ipArr7><![CDATA[string]]></ipArr7>
-        					<ipArr8><![CDATA[string]]></ipArr8>
-        					<ipArr9><![CDATA[string]]></ipArr9>
-        					<asstNo><![CDATA[string]]></asstNo>
-        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-        					<rmks><![CDATA[string]]></rmks>
-        				</w2:row>
-        				<w2:row>
-        					<svrImgAdmnId><![CDATA[8]]></svrImgAdmnId>
-        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0007]]></svrImgAdmnSqno>
-        					<hwId><![CDATA[1]]></hwId>
-        					<hostName><![CDATA[hst07]]></hostName>
-        					<stat><![CDATA[정상]]></stat>
-        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
-        					<taDomn><![CDATA[네트워크]]></taDomn>
-        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
-        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-        					<svcIptd><![CDATA[s]]></svcIptd>
-        					<svcOffrObjt><![CDATA[A7]]></svcOffrObjt>
-        					<svcHour><![CDATA[string]]></svcHour>
-        					<prmAdmnDep><![CDATA[KIS]]></prmAdmnDep>
-        					<apChhr><![CDATA[홍길동7]]></apChhr>
-        					<osDvsn><![CDATA[string]]></osDvsn>
-        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
-        					<svrDvsn><![CDATA[string]]></svrDvsn>
-        					<imgDvsn><![CDATA[string]]></imgDvsn>
-        					<haCpstYn><![CDATA[s]]></haCpstYn>
-        					<haSoltn><![CDATA[string]]></haSoltn>
-        					<haVer><![CDATA[string]]></haVer>
-        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
-        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
-        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-        					<ipArr1><![CDATA[string]]></ipArr1>
-        					<ipArr2><![CDATA[string]]></ipArr2>
-        					<ipArr3><![CDATA[string]]></ipArr3>
-        					<ipArr4><![CDATA[string]]></ipArr4>
-        					<ipArr5><![CDATA[string]]></ipArr5>
-        					<ipArr6><![CDATA[string]]></ipArr6>
-        					<ipArr7><![CDATA[string]]></ipArr7>
-        					<ipArr8><![CDATA[string]]></ipArr8>
-        					<ipArr9><![CDATA[string]]></ipArr9>
-        					<asstNo><![CDATA[string]]></asstNo>
-        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-        					<rmks><![CDATA[string]]></rmks>
-        				</w2:row>
-        				<w2:row>
-        					<svrImgAdmnId><![CDATA[9]]></svrImgAdmnId>
-        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0008]]></svrImgAdmnSqno>
-        					<hwId><![CDATA[1]]></hwId>
-        					<hostName><![CDATA[hst08]]></hostName>
-        					<stat><![CDATA[정상]]></stat>
-        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
-        					<taDomn><![CDATA[네트워크]]></taDomn>
-        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
-        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-        					<svcIptd><![CDATA[s]]></svcIptd>
-        					<svcOffrObjt><![CDATA[A8]]></svcOffrObjt>
-        					<svcHour><![CDATA[string]]></svcHour>
-        					<prmAdmnDep><![CDATA[KIS]]></prmAdmnDep>
-        					<apChhr><![CDATA[홍길순]]></apChhr>
-        					<osDvsn><![CDATA[string]]></osDvsn>
-        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
-        					<svrDvsn><![CDATA[string]]></svrDvsn>
-        					<imgDvsn><![CDATA[string]]></imgDvsn>
-        					<haCpstYn><![CDATA[s]]></haCpstYn>
-        					<haSoltn><![CDATA[string]]></haSoltn>
-        					<haVer><![CDATA[string]]></haVer>
-        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
-        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
-        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-        					<ipArr1><![CDATA[string]]></ipArr1>
-        					<ipArr2><![CDATA[string]]></ipArr2>
-        					<ipArr3><![CDATA[string]]></ipArr3>
-        					<ipArr4><![CDATA[string]]></ipArr4>
-        					<ipArr5><![CDATA[string]]></ipArr5>
-        					<ipArr6><![CDATA[string]]></ipArr6>
-        					<ipArr7><![CDATA[string]]></ipArr7>
-        					<ipArr8><![CDATA[string]]></ipArr8>
-        					<ipArr9><![CDATA[string]]></ipArr9>
-        					<asstNo><![CDATA[string]]></asstNo>
-        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-        					<rmks><![CDATA[string]]></rmks>
-        				</w2:row>
-        				<w2:row>
-        					<svrImgAdmnId><![CDATA[10]]></svrImgAdmnId>
-        					<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0009]]></svrImgAdmnSqno>
-        					<hwId><![CDATA[1]]></hwId>
-        					<hostName><![CDATA[hst09]]></hostName>
-        					<stat><![CDATA[정상]]></stat>
-        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
-        					<taDomn><![CDATA[네트워크]]></taDomn>
-        					<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
-        					<taSvc><![CDATA[라우팅테이블]]></taSvc>
-        					<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
-        					<svcIptd><![CDATA[s]]></svcIptd>
-        					<svcOffrObjt><![CDATA[A9]]></svcOffrObjt>
-        					<svcHour><![CDATA[string]]></svcHour>
-        					<prmAdmnDep><![CDATA[KIS]]></prmAdmnDep>
-        					<apChhr><![CDATA[홍길영]]></apChhr>
-        					<osDvsn><![CDATA[string]]></osDvsn>
-        					<usgeDvsn><![CDATA[string]]></usgeDvsn>
-        					<svrDvsn><![CDATA[string]]></svrDvsn>
-        					<imgDvsn><![CDATA[string]]></imgDvsn>
-        					<haCpstYn><![CDATA[s]]></haCpstYn>
-        					<haSoltn><![CDATA[string]]></haSoltn>
-        					<haVer><![CDATA[string]]></haVer>
-        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
-        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
-        					<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
-        					<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
-        					<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
-        					<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
-        					<ipArr1><![CDATA[string]]></ipArr1>
-        					<ipArr2><![CDATA[string]]></ipArr2>
-        					<ipArr3><![CDATA[string]]></ipArr3>
-        					<ipArr4><![CDATA[string]]></ipArr4>
-        					<ipArr5><![CDATA[string]]></ipArr5>
-        					<ipArr6><![CDATA[string]]></ipArr6>
-        					<ipArr7><![CDATA[string]]></ipArr7>
-        					<ipArr8><![CDATA[string]]></ipArr8>
-        					<ipArr9><![CDATA[string]]></ipArr9>
-        					<asstNo><![CDATA[string]]></asstNo>
-        					<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
-        					<rmks><![CDATA[string]]></rmks>
-        				</w2:row>
-        			</w2:data>
-        		</w2:dataList>
-        		<w2:dataList id="hws">
-        			<w2:columnInfo>
-        				<w2:column id="hwId" name="hwId" dataType="text"></w2:column>
-        				<w2:column id="hwSqno" name="hwSqno" dataType="text"></w2:column>
-        				<w2:column id="eqpaDvsn" name="eqpaDvsn" dataType="text"></w2:column>
-        				<w2:column id="asstNo" name="asstNo" dataType="text"></w2:column>
-        				<w2:column id="stat" name="stat" dataType="text"></w2:column>
-        				<w2:column id="pssnDvsn" name="pssnDvsn" dataType="text"></w2:column>
-        				<w2:column id="mainAdmr" name="mainAdmr" dataType="text"></w2:column>
-        				<w2:column id="subAdmr" name="subAdmr" dataType="text"></w2:column>
-        				<w2:column id="mainUsge" name="mainUsge" dataType="text"></w2:column>
-        				<w2:column id="eqpaMnfComp" name="eqpaMnfComp" dataType="text"></w2:column>
-        				<w2:column id="eqpaModl" name="eqpaModl" dataType="text"></w2:column>
-        				<w2:column id="sqno" name="sqno" dataType="text"></w2:column>
-        				<w2:column id="eqpaTm" name="eqpaTm" dataType="text"></w2:column>
-        				<w2:column id="cpuTypp" name="cpuTypp" dataType="text"></w2:column>
-        				<w2:column id="cpuSpeed" name="cpuSpeed" dataType="text"></w2:column>
-        				<w2:column id="cpuCoreTnum" name="cpuCoreTnum" dataType="text"></w2:column>
-        				<w2:column id="mmutSize" name="mmutSize" dataType="text"></w2:column>
-        				<w2:column id="itnlDiskSize" name="itnlDiskSize" dataType="text"></w2:column>
-        				<w2:column id="extnLinkYn" name="extnLinkYn" dataType="text"></w2:column>
-        				<w2:column id="extnDiskSqno1" name="extnDiskSqno1" dataType="text"></w2:column>
-        				<w2:column id="extnDiskSqno2" name="extnDiskSqno2" dataType="text"></w2:column>
-        				<w2:column id="extnDiskSqno3" name="extnDiskSqno3" dataType="text"></w2:column>
-        				<w2:column id="extnDiskSqno4" name="extnDiskSqno4" dataType="text"></w2:column>
-        				<w2:column id="istlDt" name="istlDt" dataType="text"></w2:column>
-        				<w2:column id="svcOpngDt" name="svcOpngDt" dataType="text"></w2:column>
-        				<w2:column id="svcEndDt" name="svcEndDt" dataType="text"></w2:column>
-        				<w2:column id="bilObjtYn" name="bilObjtYn" dataType="text"></w2:column>
-        				<w2:column id="istlPlac" name="istlPlac" dataType="text"></w2:column>
-        				<w2:column id="rackNo" name="rackNo" dataType="text"></w2:column>
-        				<w2:column id="rackItnlLoc" name="rackItnlLoc" dataType="text"></w2:column>
-        				<w2:column id="dsusYn" name="dsusYn" dataType="text"></w2:column>
-        				<w2:column id="dsusDt" name="dsusDt" dataType="text"></w2:column>
-        				<w2:column id="rmks" name="rmks" dataType="text"></w2:column>
-        			</w2:columnInfo>
-        			<w2:data xmlns="">
-        				<w2:row>
-        					<hwId><![CDATA[1]]></hwId>
-        					<hwSqno><![CDATA[string]]></hwSqno>
-        					<eqpaDvsn><![CDATA[하드웨어]]></eqpaDvsn>
-        					<asstNo><![CDATA[string]]></asstNo>
-        					<stat><![CDATA[정상]]></stat>
-        					<pssnDvsn><![CDATA[string]]></pssnDvsn>
-        					<mainAdmr><![CDATA[string]]></mainAdmr>
-        					<subAdmr><![CDATA[string]]></subAdmr>
-        					<mainUsge><![CDATA[string]]></mainUsge>
-        					<eqpaMnfComp><![CDATA[string]]></eqpaMnfComp>
-        					<eqpaModl><![CDATA[string]]></eqpaModl>
-        					<sqno><![CDATA[string]]></sqno>
-        					<eqpaTm><![CDATA[string]]></eqpaTm>
-        					<cpuTypp><![CDATA[string]]></cpuTypp>
-        					<cpuSpeed><![CDATA[strin]]></cpuSpeed>
-        					<cpuCoreTnum><![CDATA[str]]></cpuCoreTnum>
-        					<mmutSize><![CDATA[string]]></mmutSize>
-        					<itnlDiskSize><![CDATA[string]]></itnlDiskSize>
-        					<extnLinkYn><![CDATA[s]]></extnLinkYn>
-        					<extnDiskSqno1><![CDATA[string]]></extnDiskSqno1>
-        					<extnDiskSqno2><![CDATA[string]]></extnDiskSqno2>
-        					<extnDiskSqno3><![CDATA[string]]></extnDiskSqno3>
-        					<extnDiskSqno4><![CDATA[string]]></extnDiskSqno4>
-        					<istlDt><![CDATA[stringst]]></istlDt>
-        					<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
-        					<svcEndDt><![CDATA[stringst]]></svcEndDt>
-        					<bilObjtYn><![CDATA[s]]></bilObjtYn>
-        					<istlPlac><![CDATA[string]]></istlPlac>
-        					<rackNo><![CDATA[string]]></rackNo>
-        					<rackItnlLoc><![CDATA[string]]></rackItnlLoc>
-        					<dsusYn><![CDATA[s]]></dsusYn>
-        					<dsusDt><![CDATA[stringst]]></dsusDt>
-        					<rmks><![CDATA[string]]></rmks>
-        				</w2:row>
-        			</w2:data>
-        		</w2:dataList>
-        	</w2:dataCollection>
+					<w2:columnInfo>
+						<w2:column id="svrImgAdmnId" name="서버이미지관리ID" dataType="text"></w2:column>
+						<w2:column id="svrImgAdmnSqno" name="서버이미지관리일련번호" dataType="text"></w2:column>
+						<w2:column id="hostName" name="호스트명" dataType="text"></w2:column>
+						<w2:column id="stat" name="상태" dataType="text"></w2:column>
+						<w2:column id="pssnDvsn" name="소유구분" dataType="text"></w2:column>
+						<w2:column id="taDomn" name="TA도메인" dataType="text"></w2:column>
+						<w2:column id="taSvcGrp" name="TA서비스그룹" dataType="text"></w2:column>
+						<w2:column id="taSvc" name="TA서비스" dataType="text"></w2:column>
+						<w2:column id="taArfs" name="TA업무" dataType="text"></w2:column>
+						<w2:column id="svcIptd" name="서비스중요도" dataType="text"></w2:column>
+						<w2:column id="svcOffrObjt" name="서비스제공대상" dataType="text"></w2:column>
+						<w2:column id="svcHour" name="서비스시간" dataType="text"></w2:column>
+						<w2:column id="prmAdmnDep" name="주관리부서" dataType="text"></w2:column>
+						<w2:column id="apChhr" name="AP담당자" dataType="text"></w2:column>
+						<w2:column id="osDvsn" name="OS구분" dataType="text"></w2:column>
+						<w2:column id="usgeDvsn" name="용도구분" dataType="text"></w2:column>
+						<w2:column id="svrDvsn" name="서버용도" dataType="text"></w2:column>
+						<w2:column id="imgDvsn" name="이미지구분" dataType="text"></w2:column>
+						<w2:column id="haCpstYn" name="HA구성여부" dataType="text"></w2:column>
+						<w2:column id="haSoltn" name="HA솔루션" dataType="text"></w2:column>
+						<w2:column id="haVer" name="HA버전" dataType="text"></w2:column>
+						<w2:column id="svcOpngDt" name="서비스개시일자" dataType="text"></w2:column>
+						<w2:column id="svcEndDt" name="서비스종료일자" dataType="text"></w2:column>
+						<w2:column id="bilObjtYn" name="과금대상여부" dataType="text"></w2:column>
+						<w2:column id="asmtCoreTnum" name="할당Core수" dataType="text"></w2:column>
+						<w2:column id="asmtMmutSize" name="할당메모리사이즈" dataType="text"></w2:column>
+						<w2:column id="asmtItnlDiskSize" name="할당내장디스크사이즈" dataType="text"></w2:column>
+						<w2:column id="asmtExtnDiskSize" name="할단외장디스크사이즈" dataType="text"></w2:column>
+						<w2:column id="ipArr1" name="IP_주소1" dataType="text"></w2:column>
+						<w2:column id="ipArr2" name="IP_주소2" dataType="text"></w2:column>
+						<w2:column id="ipArr3" name="IP_주소3" dataType="text"></w2:column>
+						<w2:column id="ipArr4" name="IP_주소4" dataType="text"></w2:column>
+						<w2:column id="ipArr5" name="IP_주소5" dataType="text"></w2:column>
+						<w2:column id="ipArr6" name="IP_주소6" dataType="text"></w2:column>
+						<w2:column id="ipArr7" name="IP_주소7" dataType="text"></w2:column>
+						<w2:column id="ipArr8" name="IP_주소8" dataType="text"></w2:column>
+						<w2:column id="ipArr9" name="IP_주소9" dataType="text"></w2:column>
+						<w2:column id="asstNo" name="자산번호" dataType="text"></w2:column>
+						<w2:column id="dsusObjtYn" name="파기대상여부" dataType="text"></w2:column>
+						<w2:column id="rmks" name="비고" dataType="text"></w2:column>
+						<w2:column id="hwId" name="하드웨어 ID" dataType="text"></w2:column>
+						<w2:column id="hwSqno" name="하드웨어 일련번호" dataType="text"></w2:column>
+						<w2:column id="hwEqpaDvsn" name="하드웨어 장비구분" dataType="text"></w2:column>
+						<w2:column id="hwAsstNo" name="하드웨어 자산번호" dataType="text"></w2:column>
+						<w2:column id="hwStat" name="하드웨어 하드웨어상태" dataType="text"></w2:column>
+						<w2:column id="hwPssnDvsn" name="하드웨어 소유구분" dataType="text"></w2:column>
+						<w2:column id="hwMainAdmr" name="하드웨어 정관리자" dataType="text"></w2:column>
+						<w2:column id="hwSubAdmr" name="하드웨어 부관리자" dataType="text"></w2:column>
+						<w2:column id="hwMainUsge" name="하드웨어 주요용도" dataType="text"></w2:column>
+						<w2:column id="hwEqpaMnfComp" name="하드웨어 장비제조사" dataType="text"></w2:column>
+						<w2:column id="hwEqpaModl" name="하드웨어 장비모형" dataType="text"></w2:column>
+						<w2:column id="hwEqpaTm" name="하드웨어 머신타임" dataType="text"></w2:column>
+						<w2:column id="hwCpuTypp" name="하드웨어 CPU타입" dataType="text"></w2:column>
+						<w2:column id="hwCpuSpeed" name="하드웨어 CPU속도" dataType="text"></w2:column>
+						<w2:column id="hwCpuCoreTnum" name="하드웨어 CPU코어수" dataType="text"></w2:column>
+						<w2:column id="hwMmutSize" name="하드웨어 메모리사이즈" dataType="text"></w2:column>
+						<w2:column id="hwItnlDiskSize" name="하드웨어 내장디스크사이즈" dataType="text"></w2:column>
+						<w2:column id="hwExtnLinkYn" name="하드웨어 외장디스크연결여부" dataType="text"></w2:column>
+						<w2:column id="hwExtnDiskSqno1" name="하드웨어 외장디스크일련번호1" dataType="text"></w2:column>
+						<w2:column id="hwExtnDiskSqno2" name="하드웨어 외장디스크일련번호2" dataType="text"></w2:column>
+						<w2:column id="hwExtnDiskSqno3" name="하드웨어 외장디스크일련번호3" dataType="text"></w2:column>
+						<w2:column id="hwExtnDiskSqno4" name="하드웨어 외장디스크일련번호4" dataType="text"></w2:column>
+						<w2:column id="hwIstlDt" name="하드웨어 설치일자" dataType="text"></w2:column>
+						<w2:column id="hwSvcOpngDt" name="하드웨어 서비스개시일자" dataType="text"></w2:column>
+						<w2:column id="hwSvcEndDt" name="하드웨어 시비스종료일자" dataType="text"></w2:column>
+						<w2:column id="hwBilObjtYn" name="하드웨어 과금대상여부" dataType="text"></w2:column>
+						<w2:column id="hwIstlPlac" name="하드웨어 설치장소" dataType="text"></w2:column>
+						<w2:column id="hwRackNo" name="하드웨어 랙번호" dataType="text"></w2:column>
+						<w2:column id="hwRackItnlLoc" name="하드웨어 랙내부위치" dataType="text"></w2:column>
+						<w2:column id="hwDsusYn" name="하드웨어 폐기여부" dataType="text"></w2:column>
+						<w2:column id="hwDsusDt" name="하드웨어 폐기일자" dataType="text"></w2:column>
+						<w2:column id="hwRmks" name="하드웨어 비고" dataType="text"></w2:column>
+						<w2:column id="moreFrmwVer" name="부가정보_펌웨어버전" dataType="text"></w2:column>
+						<w2:column id="moreCachSize" name="부가정보_캐시사이즈" dataType="text"></w2:column>
+						<w2:column id="moreFcSped" name="부가정보_FCSpeed" dataType="text"></w2:column>
+						<w2:column id="moreFcPort" name="부가정보_FCPort" dataType="text"></w2:column>
+						<w2:column id="moreDiskCapa" name="부가정보_디스크용량" dataType="text"></w2:column>
+						<w2:column id="moreRaid" name="부가정보_RAID" dataType="text"></w2:column>
+						<w2:column id="moreIpArr1" name="부가정보IP주소1" dataType="text"></w2:column>
+						<w2:column id="moreIpArr2" name="부가정보IP주소2" dataType="text"></w2:column>
+						<w2:column id="moreIpArr3" name="부가정보IP주소3" dataType="text"></w2:column>
+						<w2:column id="moreIpArr4" name="부가정보IP주소4" dataType="text"></w2:column>
+						<w2:column id="moreIpArr5" name="부가정보IP주소5" dataType="text"></w2:column>
+						<w2:column id="moreIpArr6" name="부가정보IP주소6" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data xmlns="">
+						<w2:row>
+							<svrImgAdmnId><![CDATA[1]]></svrImgAdmnId>
+							<svrImgAdmnSqno><![CDATA[CMDB-SVR-IMG-0000]]></svrImgAdmnSqno>
+							<hostName><![CDATA[hst00]]></hostName>
+							<stat><![CDATA[정상]]></stat>
+							<pssnDvsn><![CDATA[string]]></pssnDvsn>
+							<taDomn><![CDATA[네트워크]]></taDomn>
+							<taSvcGrp><![CDATA[라우팅]]></taSvcGrp>
+							<taSvc><![CDATA[라우팅테이블]]></taSvc>
+							<taArfs><![CDATA[라우팅테이블등록]]></taArfs>
+							<svcIptd><![CDATA[s]]></svcIptd>
+							<svcOffrObjt><![CDATA[string]]></svcOffrObjt>
+							<svcHour><![CDATA[string]]></svcHour>
+							<prmAdmnDep><![CDATA[string]]></prmAdmnDep>
+							<apChhr><![CDATA[string]]></apChhr>
+							<osDvsn><![CDATA[string]]></osDvsn>
+							<usgeDvsn><![CDATA[string]]></usgeDvsn>
+							<svrDvsn><![CDATA[string]]></svrDvsn>
+							<imgDvsn><![CDATA[string]]></imgDvsn>
+							<haCpstYn><![CDATA[s]]></haCpstYn>
+							<haSoltn><![CDATA[string]]></haSoltn>
+							<haVer><![CDATA[string]]></haVer>
+							<svcOpngDt><![CDATA[stringst]]></svcOpngDt>
+							<svcEndDt><![CDATA[stringst]]></svcEndDt>
+							<bilObjtYn><![CDATA[s]]></bilObjtYn>
+							<asmtCoreTnum><![CDATA[str]]></asmtCoreTnum>
+							<asmtMmutSize><![CDATA[string]]></asmtMmutSize>
+							<asmtItnlDiskSize><![CDATA[string]]></asmtItnlDiskSize>
+							<asmtExtnDiskSize><![CDATA[string]]></asmtExtnDiskSize>
+							<ipArr1><![CDATA[string]]></ipArr1>
+							<ipArr2><![CDATA[string]]></ipArr2>
+							<ipArr3><![CDATA[string]]></ipArr3>
+							<ipArr4><![CDATA[string]]></ipArr4>
+							<ipArr5><![CDATA[string]]></ipArr5>
+							<ipArr6><![CDATA[string]]></ipArr6>
+							<ipArr7><![CDATA[string]]></ipArr7>
+							<ipArr8><![CDATA[string]]></ipArr8>
+							<ipArr9><![CDATA[string]]></ipArr9>
+							<asstNo><![CDATA[string]]></asstNo>
+							<dsusObjtYn><![CDATA[s]]></dsusObjtYn>
+							<rmks><![CDATA[string]]></rmks>
+							<hwId><![CDATA[1]]></hwId>
+							<hwSqno><![CDATA[string]]></hwSqno>
+							<hwEqpaDvsn><![CDATA[하드웨어]]></hwEqpaDvsn>
+							<hwAsstNo><![CDATA[H0000001]]></hwAsstNo>
+							<hwStat><![CDATA[정상]]></hwStat>
+							<hwPssnDvsn><![CDATA[string]]></hwPssnDvsn>
+							<hwMainAdmr><![CDATA[string]]></hwMainAdmr>
+							<hwSubAdmr><![CDATA[string]]></hwSubAdmr>
+							<hwMainUsge><![CDATA[string]]></hwMainUsge>
+							<hwEqpaMnfComp><![CDATA[string]]></hwEqpaMnfComp>
+							<hwEqpaModl><![CDATA[string]]></hwEqpaModl>
+							<hwEqpaTm><![CDATA[string]]></hwEqpaTm>
+							<hwCpuTypp><![CDATA[string]]></hwCpuTypp>
+							<hwCpuSpeed><![CDATA[strin]]></hwCpuSpeed>
+							<hwCpuCoreTnum><![CDATA[str]]></hwCpuCoreTnum>
+							<hwMmutSize><![CDATA[string]]></hwMmutSize>
+							<hwItnlDiskSize><![CDATA[string]]></hwItnlDiskSize>
+							<hwExtnLinkYn><![CDATA[Y]]></hwExtnLinkYn>
+							<hwExtnDiskSqno1><![CDATA[string]]></hwExtnDiskSqno1>
+							<hwExtnDiskSqno2><![CDATA[string]]></hwExtnDiskSqno2>
+							<hwExtnDiskSqno3><![CDATA[string]]></hwExtnDiskSqno3>
+							<hwExtnDiskSqno4><![CDATA[string]]></hwExtnDiskSqno4>
+							<hwIstlDt><![CDATA[20210101]]></hwIstlDt>
+							<hwSvcOpngDt><![CDATA[20221012]]></hwSvcOpngDt>
+							<hwSvcEndDt><![CDATA[99991231]]></hwSvcEndDt>
+							<hwBilObjtYn><![CDATA[Y]]></hwBilObjtYn>
+							<hwIstlPlac><![CDATA[string]]></hwIstlPlac>
+							<hwRackNo><![CDATA[1]]></hwRackNo>
+							<hwRackItnlLoc><![CDATA[string]]></hwRackItnlLoc>
+							<hwDsusYn><![CDATA[N]]></hwDsusYn>
+							<hwDsusDt><![CDATA[]]></hwDsusDt>
+							<hwRmks><![CDATA[string]]></hwRmks>
+							<moreFrmwVer><![CDATA[string]]></moreFrmwVer>
+							<moreCachSize><![CDATA[string]]></moreCachSize>
+							<moreFcSped><![CDATA[string]]></moreFcSped>
+							<moreFcPort><![CDATA[string]]></moreFcPort>
+							<moreDiskCapa><![CDATA[string]]></moreDiskCapa>
+							<moreRaid><![CDATA[s]]></moreRaid>
+							<moreIpArr1><![CDATA[string]]></moreIpArr1>
+							<moreIpArr2><![CDATA[string]]></moreIpArr2>
+							<moreIpArr3><![CDATA[string]]></moreIpArr3>
+							<moreIpArr4><![CDATA[string]]></moreIpArr4>
+							<moreIpArr5><![CDATA[string]]></moreIpArr5>
+							<moreIpArr6><![CDATA[string]]></moreIpArr6>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
         	<w2:workflowCollection />
         	<xf:submission id="sbmServerImageList" action="ta/query/api/v1/server-image-list" method="get" mediatype="application/json"
         		ref="" target='data:json,["common","pageInfo","svrImgs"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
         		mode="asynchronous" processMsg="" ev:submit="scwin.sbmServerImageList_submit" ev:submitdone="scwin.sbmServerImageList_submitdone"
         		ev:submiterror="scwin.sbmServerImageList_submiterror" abortTrigger="">
         	</xf:submission>
-        	<xf:submission id="sbmServerHardware" action="ta/query/api/v1/hardware-list" method="get" mediatype="application/json" ref=""
-        		target='data:json,["common","pageInfo","hws"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
-        		mode="asynchronous" processMsg="" ev:submit="scwin.sbmServerHardware_submit" ev:submitdone="scwin.sbmServerHardware_submitdone"
-        		ev:submiterror="scwin.sbmServerHardware_submiterror" abortTrigger="">
-        	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function () {
-    $c.sbm.execute(sbmServerImageList);
+    scwin.requestSbmServerImageList();
+};
+
+scwin.requestSbmServerImageList = function () {
+
+    const queryData = {
+        eqpaDvsn: "3"
+    };
+
+    const param = {
+        offset: 0,
+        limit: 100,
+        type: "PAGE",
+        queryData: JSON.stringify(queryData)
+    };
+
+    $c.sbm.execute(sbmServerImageList, param);
+
 };
 
 scwin.sbmServerImageList_submit = function (e) {
@@ -614,32 +251,67 @@ scwin.sbmServerImageList_submit = function (e) {
 };
 
 scwin.sbmServerImageList_submitdone = function (e) {
-    
 };
 
 scwin.sbmServerImageList_submiterror = function (e) {
 
 };
 
-scwin.sbmServerHardware_submit = function (e) {
-
-};
-
-scwin.sbmServerHardware_submitdone = function (e) {
-    
-};
-
-scwin.sbmServerHardware_submiterror = function (e) {
-
-};
-
 scwin.toggle_ontogglechange = function () {
-    alert(toggle.getValue());
+
     if (toggle.getValue() === "On") {
-        $c.sbm.execute(sbmServerImageList);
+
+        grdServerList.setColumnVisible("stat", false);
+        grdServerList.setColumnVisible("svrDvsn", false);
+        grdServerList.setColumnVisible("haCpstYn", false);
+        grdServerList.setColumnVisible("haSoltn", false);
+        grdServerList.setColumnVisible("haVer", false);
+        grdServerList.setColumnVisible("svcOpngDt", false);
+        grdServerList.setColumnVisible("svcEndDt", false);
+        grdServerList.setColumnVisible("asmtCoreTnum", false);
+        grdServerList.setColumnVisible("asmtMmutSize", false);
+        grdServerList.setColumnVisible("asmtItnlDiskSize", false);
+        grdServerList.setColumnVisible("asmtExtnDiskSize", false);
+        grdServerList.setColumnVisible("hwSqno", false);
+
+        grdServerList.setColumnVisible("hwEqpaMnfComp", true);
+        grdServerList.setColumnVisible("hwEqpaModl", true);
+        grdServerList.setColumnVisible("hwIstlDt", true);
+        grdServerList.setColumnVisible("hwEqpaTm", true);
+        grdServerList.setColumnVisible("hwCpuTypp", true);
+        grdServerList.setColumnVisible("hwCpuSpeed", true);
+        grdServerList.setColumnVisible("hwIstlPlac", true);
+        grdServerList.setColumnVisible("hwRackItnlLoc", true);
+        grdServerList.setColumnVisible("hwAsstNo", true);
+
     } else {
-        $c.sbm.execute(sbmServerHardware);
+
+        grdServerList.setColumnVisible("stat", true);
+        grdServerList.setColumnVisible("svrDvsn", true);
+        grdServerList.setColumnVisible("haCpstYn", true);
+        grdServerList.setColumnVisible("haSoltn", true);
+        grdServerList.setColumnVisible("haVer", true);
+        grdServerList.setColumnVisible("svcOpngDt", true);
+        grdServerList.setColumnVisible("svcEndDt", true);
+        grdServerList.setColumnVisible("asmtCoreTnum", true);
+        grdServerList.setColumnVisible("asmtMmutSize", true);
+        grdServerList.setColumnVisible("asmtItnlDiskSize", true);
+        grdServerList.setColumnVisible("asmtExtnDiskSize", true);
+        grdServerList.setColumnVisible("hwSqno", true);
+
+        grdServerList.setColumnVisible("hwEqpaMnfComp", false);
+        grdServerList.setColumnVisible("hwEqpaModl", false);
+        grdServerList.setColumnVisible("hwIstlDt", false);
+        grdServerList.setColumnVisible("hwEqpaTm", false);
+        grdServerList.setColumnVisible("hwCpuTypp", false);
+        grdServerList.setColumnVisible("hwCpuSpeed", false);
+        grdServerList.setColumnVisible("hwIstlPlac", false);
+        grdServerList.setColumnVisible("hwRackItnlLoc", false);
+        grdServerList.setColumnVisible("hwAsstNo", false);
     }
+
+    scwin.requestSbmServerImageList();
+
 };
 ]]></script>
     </head>
@@ -647,175 +319,330 @@ scwin.toggle_ontogglechange = function () {
     	<xf:group style="width:100%;height:100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 16px;"
     		id="">
     		<w2:textbox id="" label="Server" style="width: 150px;height: 43px;font-size:22px;font-weight:bold;"></w2:textbox>
-    		<xf:group id="">
+    		<xf:group id="" style="height: 100%;">
     			<w2:button style="width: 100px;height:24px;" id="" label="UNIX"></w2:button>
     			<w2:button style="width: 100px;height:24px;" id="" label="LINUX"></w2:button>
     			<w2:button style="width: 100px;height:24px;" id="" label="WINDOWS"></w2:button>
-    			<w2:fliptoggle style="position: relative;width: 80px;height: 30px;" id="toggle" ev:ontogglechange="scwin.toggle_ontogglechange">
-    				<w2:on label="논리" value="On"></w2:on>
-    				<w2:off label="물리" value="Off"></w2:off>
+    			<w2:fliptoggle style="position: relative;width: 80px;height: 30px;" id="toggle"
+    				ev:ontogglechange="scwin.toggle_ontogglechange">
+    				<w2:on label="물리" value="On"></w2:on>
+    				<w2:off label="논리" value="Off"></w2:off>
     			</w2:fliptoggle>
+    			<w2:gridView useFilterSearch="true" checkAllType="false" dataList="data:svrImgs" style="width: 100%;height: 100%;flex: 1;"
+    				id="grdServerList" autoFit="allColumn" useFilterList="true" defaultCellHeight="20">
+    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column width="70" inputType="text" style="" id="column84" value="서버이미지관리ID" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column83" value="서버이미지관리일련번호" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column82" value="호스트명" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column81" value="상태" displayMode="label" hidden="false"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column80" value="소유구분" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column79" value="TA도메인" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column78" value="TA서비스그룹" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column77" value="TA서비스" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column76" value="TA업무" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column75" value="서비스중요도" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column74" value="서비스제공대상" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column73" value="서비스시간" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column72" value="주관리부서" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column71" value="AP담당자" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column70" value="OS구분" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column69" value="용도구분" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column68" value="서버용도" displayMode="label" hidden="false"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column67" value="이미지구분" displayMode="label" hidden="false"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column66" value="HA구성여부" displayMode="label"
+    							hidden="false">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column65" value="HA솔루션" displayMode="label" hidden="false"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column64" value="HA버전" displayMode="label" hidden="false"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column63" value="서비스개시일자" displayMode="label"
+    							hidden="false">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column62" value="서비스종료일자" displayMode="label"
+    							hidden="false">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column61" value="과금대상여부" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column60" value="할당Core수" displayMode="label"
+    							hidden="false">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column59" value="할당메모리사이즈" displayMode="label"
+    							hidden="false">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column58" value="할당내장디스크사이즈" displayMode="label"
+    							hidden="false">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column57" value="할단외장디스크사이즈" displayMode="label"
+    							hidden="false">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column56" value="IP_주소1" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column55" value="IP_주소2" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column54" value="IP_주소3" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column53" value="IP_주소4" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column52" value="IP_주소5" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column51" value="IP_주소6" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column50" value="IP_주소7" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column49" value="IP_주소8" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column48" value="IP_주소9" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column47" value="자산번호" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column46" value="파기대상여부" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column45" value="비고" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column44" value="하드웨어 ID" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column43" value="하드웨어 일련번호" displayMode="label"
+    							hidden="false">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column42" value="하드웨어 장비구분" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column41" value="하드웨어 자산번호" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column40" value="하드웨어 하드웨어상태" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column39" value="하드웨어 소유구분" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column38" value="하드웨어 정관리자" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column37" value="하드웨어 부관리자" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column36" value="하드웨어 주요용도" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column35" value="하드웨어 장비제조사" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column34" value="하드웨어 장비모형" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column33" value="하드웨어 머신타임" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column32" value="하드웨어 CPU타입" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column31" value="하드웨어 CPU속도" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column30" value="하드웨어 CPU코어수" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column29" value="하드웨어 메모리사이즈" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column28" value="하드웨어 내장디스크사이즈" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column27" value="하드웨어 외장디스크연결여부" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column26" value="하드웨어 외장디스크일련번호1" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column25" value="하드웨어 외장디스크일련번호2" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column24" value="하드웨어 외장디스크일련번호3" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column23" value="하드웨어 외장디스크일련번호4" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column22" value="하드웨어 설치일자" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column21" value="하드웨어 서비스개시일자" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column20" value="하드웨어 시비스종료일자" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column19" value="하드웨어 과금대상여부" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column18" value="하드웨어 설치장소" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column17" value="하드웨어 랙번호" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column16" value="하드웨어 랙내부위치" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column15" value="하드웨어 폐기여부" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column14" value="하드웨어 폐기일자" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column13" value="하드웨어 비고" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column12" value="부가정보_펌웨어버전" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column11" value="부가정보_캐시사이즈" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column10" value="부가정보_FCSpeed" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column9" value="부가정보_FCPort" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column8" value="부가정보_디스크용량" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column7" value="부가정보_RAID" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column6" value="부가정보IP주소1" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column5" value="부가정보IP주소2" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column4" value="부가정보IP주소3" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column3" value="부가정보IP주소4" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column2" value="부가정보IP주소5" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column1" value="부가정보IP주소6" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="text" style="" id="svrImgAdmnId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="svrImgAdmnSqno" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hostName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="stat" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="pssnDvsn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="taDomn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="taSvcGrp" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="taSvc" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="taArfs" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="svcIptd" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="svcOffrObjt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="svcHour" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="prmAdmnDep" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="apChhr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="osDvsn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="usgeDvsn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="svrDvsn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="imgDvsn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="haCpstYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="haSoltn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="haVer" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="svcOpngDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="svcEndDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="bilObjtYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="asmtCoreTnum" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="asmtMmutSize" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="asmtItnlDiskSize" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="asmtExtnDiskSize" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="ipArr1" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="ipArr2" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="ipArr3" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="ipArr4" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="ipArr5" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="ipArr6" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="ipArr7" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="ipArr8" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="ipArr9" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="asstNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dsusObjtYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="rmks" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwSqno" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwEqpaDvsn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwAsstNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwStat" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwPssnDvsn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwMainAdmr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwSubAdmr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwMainUsge" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwEqpaMnfComp" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwEqpaModl" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwEqpaTm" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwCpuTypp" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwCpuSpeed" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwCpuCoreTnum" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwMmutSize" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwItnlDiskSize" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwExtnLinkYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwExtnDiskSqno1" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwExtnDiskSqno2" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwExtnDiskSqno3" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwExtnDiskSqno4" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwIstlDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwSvcOpngDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwSvcEndDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwBilObjtYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwIstlPlac" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwRackNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwRackItnlLoc" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwDsusYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwDsusDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="hwRmks" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="moreFrmwVer" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="moreCachSize" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="moreFcSped" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="moreFcPort" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="moreDiskCapa" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="moreRaid" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="moreIpArr1" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="moreIpArr2" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="moreIpArr3" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="moreIpArr4" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="moreIpArr5" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="moreIpArr6" value="" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
     		</xf:group>
-    		<w2:gridView checkAllType="false" defaultCellHeight="20" id="grdServerList" style="width: 100%;height: 150px;flex: 1;"
-    			dataList="data:svrImgs" autoFit="allColumn" useFilterList="true" useFilterSearch="true">
-    			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
-    			<w2:header style="" id="header1">
-    				<w2:row style="" id="row1">
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column59" value="IP_주소4" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column62" value="IP_주소1" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column61" value="IP_주소2" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column60" value="IP_주소3" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column58" value="IP_주소5" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column57" value="IP_주소6" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column56" value="IP_주소7" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column55" value="IP_주소8" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column54" value="IP_주소9" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column91" value="서버이미지관리ID" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column90" value="서버이미지관리일련번호" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column89" value="HWID" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column87" value="stat" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column88" value="호스트명" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column86" value="소유구분" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column84" value="TA서비스그룹" displayMode="label" useFilter="true"
-    						hidden="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column83" value="TA서비스" displayMode="label" useFilter="true"
-    						hidden="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column82" value="TA업무" displayMode="label" useFilter="true"
-    						hidden="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column81" value="서비스중요도" displayMode="label" useFilter="true"
-    						hidden="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column80" value="서비스제공대상" displayMode="label" useFilter="true"
-    						hidden="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column79" value="서비스시간" displayMode="label" useFilter="true"
-    						hidden="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column78" value="주관리부서" displayMode="label" useFilter="true"
-    						hidden="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column77" value="AP담당자" displayMode="label" useFilter="true"
-    						hidden="true">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column85" value="TA도메인" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column76" value="OS구분" displayMode="label" useFilter="true"
-    						hidden="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column75" value="용도구분" displayMode="label" useFilter="true"
-    						hidden="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column74" value="서버용도" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column73" value="이미지구분" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column72" value="HA구성여부" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column71" value="HA솔루션" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column70" value="HA버전" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column69" value="서비스개시일자" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column68" value="서비스종료일자" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column67" value="과금대상여부" displayMode="label" useFilter="true"
-    						hidden="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column66" value="할당Core수" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column65" value="할당메모리사이즈" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column64" value="할당내장디스크사이즈" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column63" value="할단외장디스크사이즈" displayMode="label"
-    						useFilter="true">
-    					</w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column53" value="자산번호" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column52" value="파기대상여부" displayMode="label" useFilter="true"
-    						hidden="true">
-    					</w2:column>
-    					<w2:column displayType="hidden" width="70" inputType="text" style="" id="column51" value="비고" displayMode="label"
-    						useFilter="true" hidden="true">
-    					</w2:column>
-    				</w2:row>
-    			</w2:header>
-    			<w2:gBody style="" id="gBody1">
-    				<w2:row style="" id="row2">
-    					<w2:column width="70" inputType="text" style="" id="svrImgAdmnId" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svrImgAdmnSqno" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwId" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hostName" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="stat" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="pssnDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="taDomn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="taSvcGrp" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="taSvc" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="taArfs" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svcIptd" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svcOffrObjt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svcHour" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="prmAdmnDep" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="apChhr" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="osDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="usgeDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svrDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="imgDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="haCpstYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="haSoltn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="haVer" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svcOpngDt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svcEndDt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="bilObjtYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="asmtCoreTnum" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="asmtMmutSize" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="asmtItnlDiskSize" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="asmtExtnDiskSize" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr1" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr2" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr3" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr4" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr5" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr6" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr7" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr8" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr9" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="asstNo" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="dsusObjtYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="rmks" value="" displayMode="label"></w2:column>
-    				</w2:row>
-    			</w2:gBody>
-    		</w2:gridView>
     	</xf:group>
     </body>
 </html>
