@@ -522,26 +522,178 @@
         			</w2:data>
         		</w2:dataList>
         		<w2:dataList id="svcs">
-					<w2:columnInfo>
-						<w2:column id="svcId" name="svcId" dataType="text"></w2:column>
-						<w2:column id="svcCd" name="svcCd" dataType="text"></w2:column>
-						<w2:column id="korSvcName" name="korSvcName" dataType="text"></w2:column>
-						<w2:column id="itChrr" name="itChrr" dataType="text"></w2:column>
-						<w2:column id="itChrrNo" name="itChrrNo" dataType="text"></w2:column>
-						<w2:column id="itChrrName" name="itChrrName" dataType="text"></w2:column>
-					</w2:columnInfo>
-					<w2:data xmlns="">
-						<w2:row>
-							<svcId><![CDATA[1]]></svcId>
-							<svcCd><![CDATA[TAC0551R]]></svcCd>
-							<korSvcName><![CDATA[계좌번호조회]]></korSvcName>
-							<itChrr><![CDATA[1]]></itChrr>
-							<itChrrNo><![CDATA[000001]]></itChrrNo>
-							<itChrrName><![CDATA[홍길동]]></itChrrName>
-						</w2:row>
-					</w2:data>
-				</w2:dataList>
-			</w2:dataCollection>
+        			<w2:columnInfo>
+        				<w2:column id="svcId" name="svcId" dataType="text"></w2:column>
+        				<w2:column id="svcCd" name="svcCd" dataType="text"></w2:column>
+        				<w2:column id="korSvcName" name="korSvcName" dataType="text"></w2:column>
+        				<w2:column id="itChrr" name="itChrr" dataType="text"></w2:column>
+        				<w2:column id="itChrrNo" name="itChrrNo" dataType="text"></w2:column>
+        				<w2:column id="itChrrName" name="itChrrName" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<svcId><![CDATA[1]]></svcId>
+        					<svcCd><![CDATA[TAC0551R]]></svcCd>
+        					<korSvcName><![CDATA[계좌번호조회]]></korSvcName>
+        					<itChrr><![CDATA[1]]></itChrr>
+        					<itChrrNo><![CDATA[000001]]></itChrrNo>
+        					<itChrrName><![CDATA[홍길동]]></itChrrName>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList id="docs">
+        			<w2:columnInfo>
+        				<w2:column id="prdtnId" name="prdtnId" dataType="text"></w2:column>
+        				<w2:column id="linkSysId" name="linkSysId" dataType="text"></w2:column>
+        				<w2:column id="dcmtName" name="dcmtName" dataType="text"></w2:column>
+        				<w2:column id="prdtnSysDvsn" name="prdtnSysDvsn" dataType="text"></w2:column>
+        				<w2:column id="prdtnLclsCd" name="prdtnLclsCd" dataType="text"></w2:column>
+        				<w2:column id="prdtnSclsCd" name="prdtnSclsCd" dataType="text"></w2:column>
+        				<w2:column id="prdtnSclsCdName" name="prdtnSclsCdName" dataType="text"></w2:column>
+        				<w2:column id="ver" name="ver" dataType="text"></w2:column>
+        				<w2:column id="dcmtMngtDep" name="dcmtMngtDep" dataType="text"></w2:column>
+        				<w2:column id="dcmtMngtDepName" name="dcmtMngtDepName" dataType="text"></w2:column>
+        				<w2:column id="dcmtChrr" name="dcmtChrr" dataType="text"></w2:column>
+        				<w2:column id="dcmtChrrNo" name="dcmtChrrNo" dataType="text"></w2:column>
+        				<w2:column id="dcmtChrrName" name="dcmtChrrName" dataType="text"></w2:column>
+        				<w2:column id="frstErlmDt" name="frstErlmDt" dataType="text"></w2:column>
+        				<w2:column id="rcenChngDt" name="rcenChngDt" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<prdtnId><![CDATA[1]]></prdtnId>
+        					<linkSysId><![CDATA[1]]></linkSysId>
+        					<dcmtName><![CDATA[홈페이지개발매뉴얼]]></dcmtName>
+        					<prdtnSysDvsn><![CDATA[A]]></prdtnSysDvsn>
+        					<prdtnLclsCd><![CDATA[AMDVL]]></prdtnLclsCd>
+        					<prdtnSclsCd><![CDATA[AMDVL]]></prdtnSclsCd>
+        					<prdtnSclsCdName><![CDATA[개발매뉴얼]]></prdtnSclsCdName>
+        					<ver><![CDATA[0.1]]></ver>
+        					<dcmtMngtDep><![CDATA[2]]></dcmtMngtDep>
+        					<dcmtMngtDepName><![CDATA[인사부]]></dcmtMngtDepName>
+        					<dcmtChrr><![CDATA[1]]></dcmtChrr>
+        					<dcmtChrrNo><![CDATA[000001]]></dcmtChrrNo>
+        					<dcmtChrrName><![CDATA[홍길동]]></dcmtChrrName>
+        					<frstErlmDt><![CDATA[20200101]]></frstErlmDt>
+        					<rcenChngDt><![CDATA[20200101]]></rcenChngDt>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList id="docBA" style="">
+        			<w2:columnInfo>
+        				<w2:column dataType="text" id="prdtnId" name="prdtnId"></w2:column>
+        				<w2:column dataType="text" id="linkSysId" name="linkSysId"></w2:column>
+        				<w2:column dataType="text" id="dcmtName" name="dcmtName"></w2:column>
+        				<w2:column dataType="text" id="prdtnSysDvsn" name="prdtnSysDvsn"></w2:column>
+        				<w2:column dataType="text" id="prdtnLclsCd" name="prdtnLclsCd"></w2:column>
+        				<w2:column dataType="text" id="prdtnSclsCd" name="prdtnSclsCd"></w2:column>
+        				<w2:column dataType="text" id="prdtnSclsCdName" name="prdtnSclsCdName"></w2:column>
+        				<w2:column dataType="text" id="ver" name="ver"></w2:column>
+        				<w2:column dataType="text" id="dcmtMngtDep" name="dcmtMngtDep"></w2:column>
+        				<w2:column dataType="text" id="dcmtMngtDepName" name="dcmtMngtDepName"></w2:column>
+        				<w2:column dataType="text" id="dcmtChrr" name="dcmtChrr"></w2:column>
+        				<w2:column dataType="text" id="dcmtChrrNo" name="dcmtChrrNo"></w2:column>
+        				<w2:column dataType="text" id="dcmtChrrName" name="dcmtChrrName"></w2:column>
+        				<w2:column dataType="text" id="frstErlmDt" name="frstErlmDt"></w2:column>
+        				<w2:column dataType="text" id="rcenChngDt" name="rcenChngDt"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<prdtnId><![CDATA[1]]></prdtnId>
+        					<linkSysId><![CDATA[1]]></linkSysId>
+        					<dcmtName><![CDATA[홈페이지개발매뉴얼]]></dcmtName>
+        					<prdtnSysDvsn><![CDATA[A]]></prdtnSysDvsn>
+        					<prdtnLclsCd><![CDATA[AMDVL]]></prdtnLclsCd>
+        					<prdtnSclsCd><![CDATA[AMDVL]]></prdtnSclsCd>
+        					<prdtnSclsCdName><![CDATA[개발매뉴얼]]></prdtnSclsCdName>
+        					<ver><![CDATA[0.1]]></ver>
+        					<dcmtMngtDep><![CDATA[2]]></dcmtMngtDep>
+        					<dcmtMngtDepName><![CDATA[인사부]]></dcmtMngtDepName>
+        					<dcmtChrr><![CDATA[1]]></dcmtChrr>
+        					<dcmtChrrNo><![CDATA[000001]]></dcmtChrrNo>
+        					<dcmtChrrName><![CDATA[홍길동]]></dcmtChrrName>
+        					<frstErlmDt><![CDATA[20200101]]></frstErlmDt>
+        					<rcenChngDt><![CDATA[20200101]]></rcenChngDt>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList id="docAA" style="">
+        			<w2:columnInfo>
+        				<w2:column dataType="text" id="prdtnId" name="prdtnId"></w2:column>
+        				<w2:column dataType="text" id="linkSysId" name="linkSysId"></w2:column>
+        				<w2:column dataType="text" id="dcmtName" name="dcmtName"></w2:column>
+        				<w2:column dataType="text" id="prdtnSysDvsn" name="prdtnSysDvsn"></w2:column>
+        				<w2:column dataType="text" id="prdtnLclsCd" name="prdtnLclsCd"></w2:column>
+        				<w2:column dataType="text" id="prdtnSclsCd" name="prdtnSclsCd"></w2:column>
+        				<w2:column dataType="text" id="prdtnSclsCdName" name="prdtnSclsCdName"></w2:column>
+        				<w2:column dataType="text" id="ver" name="ver"></w2:column>
+        				<w2:column dataType="text" id="dcmtMngtDep" name="dcmtMngtDep"></w2:column>
+        				<w2:column dataType="text" id="dcmtMngtDepName" name="dcmtMngtDepName"></w2:column>
+        				<w2:column dataType="text" id="dcmtChrr" name="dcmtChrr"></w2:column>
+        				<w2:column dataType="text" id="dcmtChrrNo" name="dcmtChrrNo"></w2:column>
+        				<w2:column dataType="text" id="dcmtChrrName" name="dcmtChrrName"></w2:column>
+        				<w2:column dataType="text" id="frstErlmDt" name="frstErlmDt"></w2:column>
+        				<w2:column dataType="text" id="rcenChngDt" name="rcenChngDt"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<prdtnId><![CDATA[1]]></prdtnId>
+        					<linkSysId><![CDATA[1]]></linkSysId>
+        					<dcmtName><![CDATA[홈페이지개발매뉴얼]]></dcmtName>
+        					<prdtnSysDvsn><![CDATA[A]]></prdtnSysDvsn>
+        					<prdtnLclsCd><![CDATA[AMDVL]]></prdtnLclsCd>
+        					<prdtnSclsCd><![CDATA[AMDVL]]></prdtnSclsCd>
+        					<prdtnSclsCdName><![CDATA[개발매뉴얼]]></prdtnSclsCdName>
+        					<ver><![CDATA[0.1]]></ver>
+        					<dcmtMngtDep><![CDATA[2]]></dcmtMngtDep>
+        					<dcmtMngtDepName><![CDATA[인사부]]></dcmtMngtDepName>
+        					<dcmtChrr><![CDATA[1]]></dcmtChrr>
+        					<dcmtChrrNo><![CDATA[000001]]></dcmtChrrNo>
+        					<dcmtChrrName><![CDATA[홍길동]]></dcmtChrrName>
+        					<frstErlmDt><![CDATA[20200101]]></frstErlmDt>
+        					<rcenChngDt><![CDATA[20200101]]></rcenChngDt>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList id="docDA" style="">
+        			<w2:columnInfo>
+        				<w2:column dataType="text" id="prdtnId" name="prdtnId"></w2:column>
+        				<w2:column dataType="text" id="linkSysId" name="linkSysId"></w2:column>
+        				<w2:column dataType="text" id="dcmtName" name="dcmtName"></w2:column>
+        				<w2:column dataType="text" id="prdtnSysDvsn" name="prdtnSysDvsn"></w2:column>
+        				<w2:column dataType="text" id="prdtnLclsCd" name="prdtnLclsCd"></w2:column>
+        				<w2:column dataType="text" id="prdtnSclsCd" name="prdtnSclsCd"></w2:column>
+        				<w2:column dataType="text" id="prdtnSclsCdName" name="prdtnSclsCdName"></w2:column>
+        				<w2:column dataType="text" id="ver" name="ver"></w2:column>
+        				<w2:column dataType="text" id="dcmtMngtDep" name="dcmtMngtDep"></w2:column>
+        				<w2:column dataType="text" id="dcmtMngtDepName" name="dcmtMngtDepName"></w2:column>
+        				<w2:column dataType="text" id="dcmtChrr" name="dcmtChrr"></w2:column>
+        				<w2:column dataType="text" id="dcmtChrrNo" name="dcmtChrrNo"></w2:column>
+        				<w2:column dataType="text" id="dcmtChrrName" name="dcmtChrrName"></w2:column>
+        				<w2:column dataType="text" id="frstErlmDt" name="frstErlmDt"></w2:column>
+        				<w2:column dataType="text" id="rcenChngDt" name="rcenChngDt"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<prdtnId><![CDATA[1]]></prdtnId>
+        					<linkSysId><![CDATA[1]]></linkSysId>
+        					<dcmtName><![CDATA[홈페이지개발매뉴얼]]></dcmtName>
+        					<prdtnSysDvsn><![CDATA[A]]></prdtnSysDvsn>
+        					<prdtnLclsCd><![CDATA[AMDVL]]></prdtnLclsCd>
+        					<prdtnSclsCd><![CDATA[AMDVL]]></prdtnSclsCd>
+        					<prdtnSclsCdName><![CDATA[개발매뉴얼]]></prdtnSclsCdName>
+        					<ver><![CDATA[0.1]]></ver>
+        					<dcmtMngtDep><![CDATA[2]]></dcmtMngtDep>
+        					<dcmtMngtDepName><![CDATA[인사부]]></dcmtMngtDepName>
+        					<dcmtChrr><![CDATA[1]]></dcmtChrr>
+        					<dcmtChrrNo><![CDATA[000001]]></dcmtChrrNo>
+        					<dcmtChrrName><![CDATA[홍길동]]></dcmtChrrName>
+        					<frstErlmDt><![CDATA[20200101]]></frstErlmDt>
+        					<rcenChngDt><![CDATA[20200101]]></rcenChngDt>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        	</w2:dataCollection>
         	<w2:workflowCollection />
         	<xf:submission id="sbmUnitTaskList" action="ba/query/api/v1/unit-task-list" method="get" mediatype="application/json" ref=""
         		target='data:json,["common","pageInfo","unitTasks"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
@@ -573,6 +725,18 @@
         		mode="asynchronous" processMsg="" ev:submit="scwin.sbmServiceList_submit" ev:submitdone="scwin.sbmServiceList_submitdone"
         		ev:submiterror="scwin.sbmServiceList_submiterror" abortTrigger="">
         	</xf:submission>
+        	<xf:submission id="sbmDocWithBA" action="doc/query/api/v1/document-list" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","pageInfo","docs"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="" ev:submitdone="scwin.sbmDocWithBA_submitdone" ev:submiterror="" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="sbmDocWithAA" action="doc/query/api/v1/document-list" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","pageInfo","docs"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="" ev:submitdone="scwin.sbmDocWithAA_submitdone" ev:submiterror="" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="sbmDocWithDA" action="doc/query/api/v1/document-list" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","pageInfo","docs"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="" ev:submitdone="scwin.sbmDocWithDA_submitdone" ev:submiterror="" abortTrigger="">
+        	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
@@ -585,6 +749,9 @@ scwin.onpageload = function () {
     scwin.requestServiceList();
     scwin.requestNetwork();
     scwin.requestSecurity();
+    scwin.requestDocBA();
+    scwin.requestDocAA();
+    scwin.requestDocDA();
 };
 
 scwin.requestEmp = function () {
@@ -662,6 +829,54 @@ scwin.requestSecurity = function () {
         queryData: JSON.stringify(queryData)
     };
     $c.sbm.execute(sbmHardwareListWithSecurity, param);
+
+};
+
+scwin.requestDocBA = function () {
+
+    const param = {
+        offset: 0,
+        limit: 8,
+        type: "PAGE",
+        sortMethod: "NO",
+        searchMethods: ["CONTAINS"],
+        sortFields: ["prdtnSysDvsn"],
+        searchFields: ["prdtnSysDvsn"],
+        searchContent: "B"
+    };
+    $c.sbm.execute(sbmDocWithBA, param);
+
+};
+
+scwin.requestDocAA = function () {
+
+    const param = {
+        offset: 0,
+        limit: 8,
+        type: "PAGE",
+        sortMethod: "NO",
+        searchMethods: ["CONTAINS"],
+        sortFields: ["prdtnSysDvsn"],
+        searchFields: ["prdtnSysDvsn"],
+        searchContent: "A"
+    };
+    $c.sbm.execute(sbmDocWithAA, param);
+
+};
+
+scwin.requestDocDA = function () {
+
+    const param = {
+        offset: 0,
+        limit: 8,
+        type: "PAGE",
+        sortMethod: "NO",
+        searchMethods: ["CONTAINS"],
+        sortFields: ["prdtnSysDvsn"],
+        searchFields: ["prdtnSysDvsn"],
+        searchContent: "D"
+    };
+    $c.sbm.execute(sbmDocWithDA, param);
 
 };
 
@@ -763,6 +978,19 @@ scwin.sbmServiceList_submitdone = function (e) {
 
 scwin.sbmServiceList_submiterror = function (e) {
 
+};
+
+
+scwin.sbmDocWithBA_submitdone = function (e) {
+    docBA.setArray(docs.getAllArray());
+};
+
+scwin.sbmDocWithAA_submitdone = function (e) {
+	docAA.setArray(docs.getAllArray());
+};
+
+scwin.sbmDocWithDA_submitdone = function (e) {
+	docDA.setArray(docs.getAllArray());
 };
 ]]></script>
     </head>
@@ -982,18 +1210,74 @@ scwin.sbmServiceList_submiterror = function (e) {
     					</xf:group>
     					<xf:group style="flex-grow:1;display:flex;flex-direction:column;gap:8px;min-height:180px;">
     						<w2:gridView checkAllType="false" defaultCellHeight="20" id="operationTableGrid"
-    							style="width: 100%;height: 180px;" dataList="data:dataList1" hideHeader="true" autoFit="allColumn">
-    							<w2:caption style="" id="caption4" value="this is a grid caption."></w2:caption>
-    							<w2:header style="" id="header4">
-    								<w2:row style="" id="row7">
-    									<w2:column width="70" inputType="text" style="" id="column7" value="name1" displayMode="label"></w2:column>
+    							style="width: 100%;height: 180px;" dataList="data:docBA" hideHeader="true" autoFit="allColumn">
+    							<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
+    							<w2:header style="" id="header2">
+    								<w2:row style="" id="row3">
+    									<w2:column width="70" inputType="text" style="" id="column45" value="prdtnId" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column44" value="linkSysId" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column43" value="dcmtName" displayMode="label"
+    										hidden="false">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column42" value="prdtnSysDvsn"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column41" value="prdtnLclsCd"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column40" value="prdtnSclsCd"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column39" value="prdtnSclsCdName"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column38" value="ver" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column37" value="dcmtMngtDep"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column36" value="dcmtMngtDepName"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column35" value="dcmtChrr" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column34" value="dcmtChrrNo" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column33" value="dcmtChrrName"
+    										displayMode="label" hidden="false">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column32" value="frstErlmDt" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column31" value="rcenChngDt" displayMode="label"
+    										hidden="true">
+    									</w2:column>
     								</w2:row>
     							</w2:header>
-    							<w2:gBody style="" id="gBody4">
-    								<w2:row style="" id="row8">
-    									<w2:column width="70" inputType="text" style="" id="col1" value="" displayMode="label"
-    										textAlign="left">
-    									</w2:column>
+    							<w2:gBody style="" id="gBody2">
+    								<w2:row style="" id="row4">
+    									<w2:column width="70" inputType="text" style="" id="prdtnId" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="linkSysId" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="prdtnSysDvsn" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="prdtnLclsCd" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="prdtnSclsCd" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="prdtnSclsCdName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="ver" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtMngtDep" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtMngtDepName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtChrr" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtChrrNo" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtChrrName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="frstErlmDt" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="rcenChngDt" value="" displayMode="label"></w2:column>
     								</w2:row>
     							</w2:gBody>
     						</w2:gridView>
@@ -1011,18 +1295,74 @@ scwin.sbmServiceList_submiterror = function (e) {
     					</xf:group>
     					<xf:group style="flex-grow:1;display:flex;flex-direction:column;gap:8px;min-height:180px;">
     						<w2:gridView checkAllType="false" defaultCellHeight="20" id="designDocGrid" style="width: 100%;height: 180px;"
-    							dataList="data:dataList1" hideHeader="true" autoFit="allColumn">
-    							<w2:caption style="" id="caption5" value="this is a grid caption."></w2:caption>
-    							<w2:header style="" id="header5">
-    								<w2:row style="" id="row9">
-    									<w2:column width="70" inputType="text" style="" id="column9" value="name1" displayMode="label"></w2:column>
+    							dataList="data:docAA" hideHeader="true" autoFit="allColumn">
+    							<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    							<w2:header style="" id="header1">
+    								<w2:row style="" id="row1">
+    									<w2:column width="70" inputType="text" style="" id="column15" value="prdtnId" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column14" value="linkSysId" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column13" value="dcmtName" displayMode="label"
+    										hidden="false">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column12" value="prdtnSysDvsn"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column11" value="prdtnLclsCd"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column10" value="prdtnSclsCd"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column9" value="prdtnSclsCdName"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column8" value="ver" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column7" value="dcmtMngtDep" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column6" value="dcmtMngtDepName"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column5" value="dcmtChrr" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column4" value="dcmtChrrNo" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column3" value="dcmtChrrName"
+    										displayMode="label" hidden="false">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column2" value="frstErlmDt" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column1" value="rcenChngDt" displayMode="label"
+    										hidden="true">
+    									</w2:column>
     								</w2:row>
     							</w2:header>
-    							<w2:gBody style="" id="gBody5">
-    								<w2:row style="" id="row10">
-    									<w2:column width="70" inputType="text" style="" id="col1" value="" displayMode="label"
-    										textAlign="left">
-    									</w2:column>
+    							<w2:gBody style="" id="gBody1">
+    								<w2:row style="" id="row2">
+    									<w2:column width="70" inputType="text" style="" id="prdtnId" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="linkSysId" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="prdtnSysDvsn" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="prdtnLclsCd" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="prdtnSclsCd" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="prdtnSclsCdName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="ver" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtMngtDep" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtMngtDepName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtChrr" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtChrrNo" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtChrrName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="frstErlmDt" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="rcenChngDt" value="" displayMode="label"></w2:column>
     								</w2:row>
     							</w2:gBody>
     						</w2:gridView>
@@ -1040,18 +1380,74 @@ scwin.sbmServiceList_submiterror = function (e) {
     					</xf:group>
     					<xf:group style="flex-grow:1;display:flex;flex-direction:column;gap:8px;min-height:180px;">
     						<w2:gridView checkAllType="false" defaultCellHeight="20" id="testcaseGrid" style="width: 100%;height: 180px;"
-    							dataList="data:dataList1" hideHeader="true" autoFit="allColumn">
-    							<w2:caption style="" id="caption6" value="this is a grid caption."></w2:caption>
-    							<w2:header style="" id="header6">
-    								<w2:row style="" id="row11">
-    									<w2:column width="70" inputType="text" style="" id="column11" value="name1" displayMode="label"></w2:column>
+    							dataList="data:docDA" hideHeader="true" autoFit="allColumn">
+    							<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    							<w2:header style="" id="header1">
+    								<w2:row style="" id="row1">
+    									<w2:column width="70" inputType="text" style="" id="column15" value="prdtnId" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column14" value="linkSysId" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column13" value="dcmtName" displayMode="label"
+    										hidden="false">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column12" value="prdtnSysDvsn"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column11" value="prdtnLclsCd"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column10" value="prdtnSclsCd"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column9" value="prdtnSclsCdName"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column8" value="ver" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column7" value="dcmtMngtDep" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column6" value="dcmtMngtDepName"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column5" value="dcmtChrr" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column4" value="dcmtChrrNo" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column3" value="dcmtChrrName"
+    										displayMode="label" hidden="false">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column2" value="frstErlmDt" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column1" value="rcenChngDt" displayMode="label"
+    										hidden="true">
+    									</w2:column>
     								</w2:row>
     							</w2:header>
-    							<w2:gBody style="" id="gBody6">
-    								<w2:row style="" id="row12">
-    									<w2:column width="70" inputType="text" style="" id="col1" value="" displayMode="label"
-    										textAlign="left">
-    									</w2:column>
+    							<w2:gBody style="" id="gBody1">
+    								<w2:row style="" id="row2">
+    									<w2:column width="70" inputType="text" style="" id="prdtnId" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="linkSysId" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="prdtnSysDvsn" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="prdtnLclsCd" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="prdtnSclsCd" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="prdtnSclsCdName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="ver" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtMngtDep" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtMngtDepName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtChrr" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtChrrNo" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dcmtChrrName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="frstErlmDt" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="rcenChngDt" value="" displayMode="label"></w2:column>
     								</w2:row>
     							</w2:gBody>
     						</w2:gridView>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="업무시스템 세부 리스트">
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+        	<w2:dataCollection baseNode="map">
+        		w2:dataList id="scrns">
+        			<w2:columnInfo>
+        				<w2:column id="afrsScrnId" name="업무화면ID" dataType="text"></w2:column>
+        				<w2:column id="scrnNo" name="화면번호" dataType="text"></w2:column>
+        				<w2:column id="scrnName" name="화면명" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrr" name="개발담당자" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrrNo" name="개발담당자사번" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrrName" name="개발담당자명" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<afrsScrnId><![CDATA[1]]></afrsScrnId>
+        					<scrnNo><![CDATA[00000]]></scrnNo>
+        					<scrnName><![CDATA[계좌계설]]></scrnName>
+        					<dvlpChrr><![CDATA[1]]></dvlpChrr>
+        					<dvlpChrrNo><![CDATA[113565]]></dvlpChrrNo>
+        					<dvlpChrrName><![CDATA[최동규]]></dvlpChrrName>
+        				</w2:row>
+        			</w2:data>
+        		/w2:dataList>
+        		<w2:dataMap id="common">
+        			<w2:keyInfo>
+        				<w2:key id="guid" name="guid" dataType="text"></w2:key>
+        				<w2:key id="code" name="code" dataType="text"></w2:key>
+        				<w2:key id="message" name="message" dataType="text"></w2:key>
+        				<w2:key id="detailMessage" name="detailMessage" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<guid><![CDATA[e7d6185dc8cc4d1780484b9faf8248e6]]></guid>
+        				<code><![CDATA[N000]]></code>
+        				<message><![CDATA[정상처리]]></message>
+        				<detailMessage><![CDATA[]]></detailMessage>
+        			</w2:data>
+        		</w2:dataMap>
+        		w2:dataMap id="unitAfrs">
+        			<w2:keyInfo>
+        				<w2:key id="unitAfrsCd" name="unitAfrsCd" dataType="text"></w2:key>
+        				<w2:key id="depId" name="depId" dataType="text"></w2:key>
+        				<w2:key id="depName" name="depName" dataType="text"></w2:key>
+        				<w2:key id="unitAfrsName" name="unitAfrsName" dataType="text"></w2:key>
+        				<w2:key id="unitAfrsOtln" name="unitAfrsOtln" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv1Id" name="bizDomn1Lv1Id" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv1Cd" name="bizDomn1Lv1Cd" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv1KorName" name="bizDomn1Lv1KorName" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv1EngName" name="bizDomn1Lv1EngName" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv2Id" name="bizDomn1Lv2Id" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv2Cd" name="bizDomn1Lv2Cd" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv2KorName" name="bizDomn1Lv2KorName" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv2EngName" name="bizDomn1Lv2EngName" dataType="text"></w2:key>
+        				<w2:key id="termArgm" name="termArgm" dataType="text"></w2:key>
+        				<w2:key id="chrr" name="chrr" dataType="text"></w2:key>
+        				<w2:key id="chrrNo" name="chrrNo" dataType="text"></w2:key>
+        				<w2:key id="chrrName" name="chrrName" dataType="text"></w2:key>
+        				<w2:key id="manlId" name="manlId" dataType="text"></w2:key>
+        				<w2:key id="manlName" name="manlName" dataType="text"></w2:key>
+        				<w2:key id="manlVer" name="manlVer" dataType="text"></w2:key>
+        				<w2:key id="frstErlmDt" name="frstErlmDt" dataType="text"></w2:key>
+        				<w2:key id="rcenChngDt" name="rcenChngDt" dataType="text"></w2:key>
+        				<w2:key id="manlDept" name="manlDept" dataType="text"></w2:key>
+        				<w2:key id="manlDeptName" name="manlDeptName" dataType="text"></w2:key>
+        				<w2:key id="manlEmp" name="manlEmp" dataType="text"></w2:key>
+        				<w2:key id="manlEmpNo" name="manlEmpNo" dataType="text"></w2:key>
+        				<w2:key id="manlEmpName" name="manlEmpName" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<unitAfrsCd><![CDATA[u0QKh71yTpm3PIhv7V]]></unitAfrsCd>
+        				<depId><![CDATA[1]]></depId>
+        				<depName><![CDATA[인사부]]></depName>
+        				<unitAfrsName><![CDATA[string]]></unitAfrsName>
+        				<unitAfrsOtln><![CDATA[string]]></unitAfrsOtln>
+        				<bizDomn1Lv1Id><![CDATA[1]]></bizDomn1Lv1Id>
+        				<bizDomn1Lv1Cd><![CDATA[CP]]></bizDomn1Lv1Cd>
+        				<bizDomn1Lv1KorName><![CDATA[계좌]]></bizDomn1Lv1KorName>
+        				<bizDomn1Lv1EngName><![CDATA[ACC]]></bizDomn1Lv1EngName>
+        				<bizDomn1Lv2Id><![CDATA[2]]></bizDomn1Lv2Id>
+        				<bizDomn1Lv2Cd><![CDATA[OP]]></bizDomn1Lv2Cd>
+        				<bizDomn1Lv2KorName><![CDATA[계좌상세]]></bizDomn1Lv2KorName>
+        				<bizDomn1Lv2EngName><![CDATA[ACCDESC]]></bizDomn1Lv2EngName>
+        				<termArgm><![CDATA[string]]></termArgm>
+        				<chrr><![CDATA[1]]></chrr>
+        				<chrrNo><![CDATA[113565]]></chrrNo>
+        				<chrrName><![CDATA[최동규]]></chrrName>
+        				<manlId><![CDATA[1]]></manlId>
+        				<manlName><![CDATA[계좌계설가이드]]></manlName>
+        				<manlVer><![CDATA[1]]></manlVer>
+        				<frstErlmDt><![CDATA[20241020]]></frstErlmDt>
+        				<rcenChngDt><![CDATA[20250123]]></rcenChngDt>
+        				<manlDept><![CDATA[1]]></manlDept>
+        				<manlDeptName><![CDATA[인사부]]></manlDeptName>
+        				<manlEmp><![CDATA[1]]></manlEmp>
+        				<manlEmpNo><![CDATA[113565]]></manlEmpNo>
+        				<manlEmpName><![CDATA[최동규]]></manlEmpName>
+        			</w2:data>
+        		/w2:dataMap>
+        		<w2:dataMap id="sysInfo">
+        			<w2:keyInfo>
+        				<w2:key id="sysId" name="sysId" dataType="text"></w2:key>
+        				<w2:key id="sysCd" name="sysCd" dataType="text"></w2:key>
+        				<w2:key id="sysName" name="sysName" dataType="text"></w2:key>
+        				<w2:key id="sysDscr" name="sysDscr" dataType="text"></w2:key>
+        				<w2:key id="svcOpngDt" name="svcOpngDt" dataType="text"></w2:key>
+        				<w2:key id="svcEndDt" name="svcEndDt" dataType="text"></w2:key>
+        				<w2:key id="itChrr" name="itChrr" dataType="text"></w2:key>
+        				<w2:key id="itChrrNo" name="itChrrNo" dataType="text"></w2:key>
+        				<w2:key id="itChrrName" name="itChrrName" dataType="text"></w2:key>
+        				<w2:key id="sysCpstDgrmYn" name="sysCpstDgrmYn" dataType="text"></w2:key>
+        				<w2:key id="devlMnulYn" name="devlMnulYn" dataType="text"></w2:key>
+        				<w2:key id="mgmtMnulYn" name="mgmtMnulYn" dataType="text"></w2:key>
+        				<w2:key id="archtYn" name="archtYn" dataType="text"></w2:key>
+        				<w2:key id="rfpYn" name="rfpYn" dataType="text"></w2:key>
+        				<w2:key id="reqtDefYn" name="reqtDefYn" dataType="text"></w2:key>
+        				<w2:key id="mpiwRptsYn" name="mpiwRptsYn" dataType="text"></w2:key>
+        				<w2:key id="chngDlbrRptsYn" name="chngDlbrRptsYn" dataType="text"></w2:key>
+        				<w2:key id="cpltRptsYn" name="cpltRptsYn" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<sysId><![CDATA[1]]></sysId>
+        				<sysCd><![CDATA[AOM000000000000000]]></sysCd>
+        				<sysName><![CDATA[계정계]]></sysName>
+        				<sysDscr><![CDATA[계정계시스템]]></sysDscr>
+        				<svcOpngDt><![CDATA[20210101]]></svcOpngDt>
+        				<svcEndDt><![CDATA[99991231]]></svcEndDt>
+        				<itChrr><![CDATA[1]]></itChrr>
+        				<itChrrNo><![CDATA[000001]]></itChrrNo>
+        				<itChrrName><![CDATA[홍길동]]></itChrrName>
+        				<sysCpstDgrmYn><![CDATA[Y]]></sysCpstDgrmYn>
+        				<devlMnulYn><![CDATA[Y]]></devlMnulYn>
+        				<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
+        				<archtYn><![CDATA[N]]></archtYn>
+        				<rfpYn><![CDATA[N]]></rfpYn>
+        				<reqtDefYn><![CDATA[Y]]></reqtDefYn>
+        				<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
+        				<chngDlbrRptsYn><![CDATA[Y]]></chngDlbrRptsYn>
+        				<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataList id="svcs">
+        			<w2:columnInfo>
+        				<w2:column id="svcId" name="서비스ID" dataType="text"></w2:column>
+        				<w2:column id="svcCd" name="서비스코드" dataType="text"></w2:column>
+        				<w2:column id="korSvcName" name="한글서비스명" dataType="text"></w2:column>
+        				<w2:column id="itChrr" name="IT담당자" dataType="text"></w2:column>
+        				<w2:column id="itChrrNo" name="IT담당자사번" dataType="text"></w2:column>
+        				<w2:column id="itChrrName" name="IT담당자명" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<svcId><![CDATA[3]]></svcId>
+        					<svcCd><![CDATA[TAC0551C]]></svcCd>
+        					<korSvcName><![CDATA[계좌번호등록]]></korSvcName>
+        					<itChrr><![CDATA[1]]></itChrr>
+        					<itChrrNo><![CDATA[000001]]></itChrrNo>
+        					<itChrrName><![CDATA[홍길동]]></itChrrName>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList id="scrns">
+        			<w2:columnInfo>
+        				<w2:column id="afrsScrnId" name="업무화면ID" dataType="text"></w2:column>
+        				<w2:column id="scrnNo" name="화면번호" dataType="text"></w2:column>
+        				<w2:column id="scrnName" name="화면명" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrr" name="개발담당자" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrrNo" name="개발담당자사번" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrrName" name="개발담당자명" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<afrsScrnId><![CDATA[9007199254740991]]></afrsScrnId>
+        					<scrnNo><![CDATA[string]]></scrnNo>
+        					<scrnName><![CDATA[string]]></scrnName>
+        					<dvlpChrr><![CDATA[9007199254740991]]></dvlpChrr>
+        					<dvlpChrrNo><![CDATA[string]]></dvlpChrrNo>
+        					<dvlpChrrName><![CDATA[string]]></dvlpChrrName>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        	</w2:dataCollection>
+        	<w2:workflowCollection />
+        	<xf:submission id="sbmSystemDetailList" action="aa/query/api/v1/system/id/{id}" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","sysInfo","svcs","scrns"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="scwin.sbmSystemDetailList_submit"
+        		ev:submitdone="scwin.sbmSystemDetailList_submitdone" ev:submiterror="scwin.sbmSystemDetailList_submiterror" abortTrigger="">
+        	</xf:submission>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+    var paramData = $p.getParameter("PopupData");
+
+    const param = {
+        id: paramData.id
+    };
+
+    $c.sbm.execute(sbmSystemDetailList, param);
+};
+
+scwin.sbmSystemDetailList_submit = function (e) {
+
+};
+
+scwin.sbmSystemDetailList_submitdone = function (e) {
+
+};
+
+scwin.sbmSystemDetailList_submiterror = function (e) {
+
+};
+
+scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
+    $p.closePopup();
+};
+
+scwin.grdTRList_oncellclick = function (rowIndex, columnIndex, columnId) {
+    $p.closePopup();
+};]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" style=";background-color:;">
+    	<xf:group style="width: 100%;height: 100%;padding: 24px;display: flex;flex-direction: column;gap: 24px;box-sizing: border-box;"
+    		id="">
+    		<xf:group id="">
+    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="연관 화면 리스트"></w2:textbox>
+    			<w2:gridView ev:oncellclick="scwin.grdScreenList_oncellclick" checkAllType="false" dataList="data:scrns"
+    				style="width:100%;height: 400px;" id="grdScreenList" autoFit="allColumn" defaultCellHeight="43">
+    				<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header2">
+    					<w2:row style="" id="row3">
+    						<w2:column width="70" inputType="text" style="" id="column18" value="업무화면ID" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column17" value="화면번호" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column16" value="화면명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column15" value="개발담당자" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column14" value="개발담당자사번" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column13" value="개발담당자명" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody2">
+    					<w2:row style="" id="row4">
+    						<w2:column width="70" inputType="text" style="" id="afrsScrnId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="scrnNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="scrnName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dvlpChrr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dvlpChrrNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dvlpChrrName" value="" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    		</xf:group>
+    		<xf:group id="" style="">
+    			<w2:textbox id="" label="연관 TR 리스트" style="width: 150px;height: 23px;font-size:16px;font-weight:bold;"></w2:textbox>
+    			<w2:gridView ev:oncellclick="scwin.grdTRList_oncellclick" checkAllType="false" dataList="data:svcs"
+    				style="width:100%;height: 400px;" autoFit="allColumn" id="grdTRList" defaultCellHeight="43">
+    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column width="70" inputType="text" style="" id="column6" value="서비스ID" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column5" value="서비스코드" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column4" value="한글서비스명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column3" value="IT담당자" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column2" value="IT담당자사번" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column1" value="IT담당자명" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="text" style="" id="svcId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="svcCd" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="korSvcName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="itChrrNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>
