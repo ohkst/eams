@@ -161,24 +161,18 @@ scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, colu
     	<xf:group
     		style="width:100%;height: 100vh;background-color:#EFF0F4;padding: 12px;display: flex;flex-direction: column;overflow-y: auto;scrollbar-width: none;gap: 12px;box-sizing: border-box;"
     		id="">
-    		<w2:searchbox ev:onchange="scwin.searchboxOK_onchange" ev:onkeypress="scwin.searchboxOK_onkeypress" id="searchbox1"
-    			style="width: 100%;height: 48px;display: flex;flex-shrink: 0;">
-    		</w2:searchbox>
-    		<w2:treeview id="" dataType="listed" tooltipGroupClass="false" style="width: 100%;height: 100%;flex: 1;">
-    			<w2:itemset nodeset="data:dataList8">
-    				<w2:label ref="col1"></w2:label>
-    				<w2:value ref="col1"></w2:value>
-    				<w2:depth ref="col1"></w2:depth>
-    				<w2:folder ref="col1"></w2:folder>
-    				<w2:checkbox ref=""></w2:checkbox>
-    				<w2:checkboxDisabled ref=""></w2:checkboxDisabled>
-    				<w2:image ref=""></w2:image>
-    				<w2:iconImage ref=""></w2:iconImage>
-    				<w2:selectedImage ref=""></w2:selectedImage>
-    				<w2:expandedImage ref=""></w2:expandedImage>
-    				<w2:leafImage ref=""></w2:leafImage>
-    			</w2:itemset>
-    		</w2:treeview>
+    		<w2:button ev:onclick="scwin.btnNetwork_onclick" id="btnBA" label="BA"
+    			style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;">
+    		</w2:button>
+    		<w2:button ev:onclick="scwin.btnDB_onclick" id="btnAA" label="AA"
+    			style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;">
+    		</w2:button>
+    		<w2:button ev:onclick="scwin.btnServer_onclick" id="btnDA" label="DA"
+    			style="width:100%;height:48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;">
+    		</w2:button>
+    		<w2:button ev:onclick="scwin.btnServer_onclick" id="btnTA" label="TA"
+    			style="width:100%;height:48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;">
+    		</w2:button>
     	</xf:group>
     </body>
 </html>
