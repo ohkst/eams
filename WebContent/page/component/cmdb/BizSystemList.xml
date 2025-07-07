@@ -7,107 +7,94 @@
         <w2:buildDate/>
         <w2:MSA/>
         <xf:model>
-            <w2:dataCollection baseNode="map">
-            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
-            		<w2:columnInfo>
-            			<w2:column id="id" name="AA_SYSTEM_ID" dataType="text"></w2:column>
-            			<w2:column id="name" name="업무명" dataType="text"></w2:column>
-            			<w2:column id="dep" name="담당부서" dataType="text"></w2:column>
-            			<w2:column id="ap" name="담당자" dataType="text"></w2:column>
-            			<w2:column id="date" name="작성일정" dataType="text"></w2:column>
-            			<w2:column id="reason" name="사유" dataType="text"></w2:column>
-            			<w2:column id="comment" name="기타의견" dataType="text"></w2:column>
-            			<w2:column id="systemArchitecture" name="시스템 구성도" dataType="text"></w2:column>
-            			<w2:column id="devManual" name="개발 매뉴얼" dataType="text"></w2:column>
-            			<w2:column id="prodManual" name="운영 매뉴얼" dataType="text"></w2:column>
-            			<w2:column id="applicationArchitecture" name="어플리케이션 아키텍처 정의서" dataType="text"></w2:column>
-            			<w2:column id="rft" name="RFP" dataType="text"></w2:column>
-            			<w2:column id="col13" name="요구사항 정의서" dataType="text"></w2:column>
-            			<w2:column id="col14" name="착수보고" dataType="text"></w2:column>
-            			<w2:column id="col15" name="변경심의보고" dataType="text"></w2:column>
-            			<w2:column id="col16" name="완료보고" dataType="text"></w2:column>
-            		</w2:columnInfo>
-            		<w2:data use="true">
-            			<w2:row>
-            				<id><![CDATA[AA_RMAU_0024]]></id>
-            				<name><![CDATA[AML(자금세탁방지)]]></name>
-            				<dep><![CDATA[Biz개발1부]]></dep>
-            				<ap><![CDATA[박정선]]></ap>
-            				<date><![CDATA[2025/05/25]]></date>
-            				<reason><![CDATA[해당없음]]></reason>
-
-
-
-
-
-
-
-
-            				<comment><![CDATA[빨리 등록하겠습니다.]]></comment>
-            				<col16><![CDATA[O]]></col16>
-            				<rft><![CDATA[O]]></rft>
-            				<col13><![CDATA[O]]></col13>
-            				<col14><![CDATA[O]]></col14>
-            				<col15><![CDATA[O]]></col15>
-            				<systemArchitecture><![CDATA[X]]></systemArchitecture>
-            				<devManual><![CDATA[O]]></devManual>
-            				<prodManual><![CDATA[O]]></prodManual>
-            				<applicationArchitecture><![CDATA[O]]></applicationArchitecture>
-            			</w2:row>
-            			<w2:row>
-            				<id><![CDATA[AA-ISSS-0025]]></id>
-            				<name><![CDATA[FDS]]></name>
-            				<dep><![CDATA[Biz개발1부]]></dep>
-            				<ap><![CDATA[민경욱]]></ap>
-            				<date><![CDATA[2025/05/25]]></date>
-            				<reason><![CDATA[해당없음]]></reason>
-
-
-
-
-
-
-
-
-            				<comment><![CDATA[죄송합니다]]></comment>
-            				<systemArchitecture><![CDATA[X]]></systemArchitecture>
-            				<devManual><![CDATA[O]]></devManual>
-            				<prodManual><![CDATA[X]]></prodManual>
-            				<applicationArchitecture><![CDATA[O]]></applicationArchitecture>
-            				<rft><![CDATA[X]]></rft>
-            				<col13><![CDATA[O]]></col13>
-            				<col14><![CDATA[X]]></col14>
-            				<col15><![CDATA[O]]></col15>
-            				<col16><![CDATA[X]]></col16>
-            			</w2:row>
-            			<w2:row>
-            				<id><![CDATA[AA-MMFA-0056]]></id>
-            				<name><![CDATA[IFRS9 회계]]></name>
-            				<dep><![CDATA[Biz개발1부]]></dep>
-            				<ap><![CDATA[김현돈]]></ap>
-            				<date><![CDATA[2025/05/25]]></date>
-            				<reason><![CDATA[해당없음]]></reason>
-            				<comment><![CDATA[등록예정입니다.]]></comment>
-            				<systemArchitecture><![CDATA[X]]></systemArchitecture>
-            				<devManual><![CDATA[X]]></devManual>
-            				<prodManual><![CDATA[O]]></prodManual>
-            				<applicationArchitecture><![CDATA[O]]></applicationArchitecture>
-            				<rft><![CDATA[X]]></rft>
-            				<col13><![CDATA[O]]></col13>
-            				<col14><![CDATA[X]]></col14>
-            				<col15><![CDATA[O]]></col15>
-            				<col16><![CDATA[O]]></col16>
-            			</w2:row>
-            		</w2:data>
-            	</w2:dataList>
-            </w2:dataCollection>
-            <w2:workflowCollection/>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataMap id="common">
+        			<w2:keyInfo>
+        				<w2:key id="guid" name="guid" dataType="text"></w2:key>
+        				<w2:key id="code" name="code" dataType="text"></w2:key>
+        				<w2:key id="message" name="message" dataType="text"></w2:key>
+        				<w2:key id="detailMessage" name="detailMessage" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<guid><![CDATA[c342cbf886334f33b4f3f16fd78c50e5]]></guid>
+        				<code><![CDATA[N000]]></code>
+        				<message><![CDATA[정상처리]]></message>
+        				<detailMessage><![CDATA[]]></detailMessage>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataMap id="pageInfo">
+        			<w2:keyInfo>
+        				<w2:key id="offset" name="offset" dataType="text"></w2:key>
+        				<w2:key id="limit" name="limit" dataType="text"></w2:key>
+        				<w2:key id="type" name="type" dataType="text"></w2:key>
+        				<w2:key id="sortMethod" name="sortMethod" dataType="text"></w2:key>
+        				<w2:key id="total" name="total" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<offset><![CDATA[0]]></offset>
+        				<limit><![CDATA[10]]></limit>
+        				<type><![CDATA[PAGE]]></type>
+        				<sortMethod><![CDATA[NO]]></sortMethod>
+        				<total><![CDATA[10]]></total>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataList id="syss">
+        			<w2:columnInfo>
+        				<w2:column id="sysId" name="sysId" dataType="text"></w2:column>
+        				<w2:column id="sysCd" name="sysCd" dataType="text"></w2:column>
+        				<w2:column id="sysName" name="sysName" dataType="text"></w2:column>
+        				<w2:column id="sysDscr" name="sysDscr" dataType="text"></w2:column>
+        				<w2:column id="svcOpngDt" name="svcOpngDt" dataType="text"></w2:column>
+        				<w2:column id="svcEndDt" name="svcEndDt" dataType="text"></w2:column>
+        				<w2:column id="itChrr" name="itChrr" dataType="text"></w2:column>
+        				<w2:column id="itChrrNo" name="itChrrNo" dataType="text"></w2:column>
+        				<w2:column id="itChrrName" name="itChrrName" dataType="text"></w2:column>
+        				<w2:column id="sysCpstDgrmYn" name="sysCpstDgrmYn" dataType="text"></w2:column>
+        				<w2:column id="devlMnulYn" name="devlMnulYn" dataType="text"></w2:column>
+        				<w2:column id="mgmtMnulYn" name="mgmtMnulYn" dataType="text"></w2:column>
+        				<w2:column id="archtYn" name="archtYn" dataType="text"></w2:column>
+        				<w2:column id="rfpYn" name="rfpYn" dataType="text"></w2:column>
+        				<w2:column id="reqtDefYn" name="reqtDefYn" dataType="text"></w2:column>
+        				<w2:column id="mpiwRptsYn" name="mpiwRptsYn" dataType="text"></w2:column>
+        				<w2:column id="chngDlbrRptsYn" name="chngDlbrRptsYn" dataType="text"></w2:column>
+        				<w2:column id="cpltRptsYn" name="cpltRptsYn" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<sysId><![CDATA[1]]></sysId>
+        					<sysCd><![CDATA[AOM000000000000000]]></sysCd>
+        					<sysName><![CDATA[계정계]]></sysName>
+        					<sysDscr><![CDATA[계정계시스템]]></sysDscr>
+        					<svcOpngDt><![CDATA[20210101]]></svcOpngDt>
+        					<svcEndDt><![CDATA[99991231]]></svcEndDt>
+        					<itChrr><![CDATA[1]]></itChrr>
+        					<itChrrNo><![CDATA[000001]]></itChrrNo>
+        					<itChrrName><![CDATA[홍길동]]></itChrrName>
+        					<sysCpstDgrmYn><![CDATA[Y]]></sysCpstDgrmYn>
+        					<devlMnulYn><![CDATA[Y]]></devlMnulYn>
+        					<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
+        					<archtYn><![CDATA[N]]></archtYn>
+        					<rfpYn><![CDATA[N]]></rfpYn>
+        					<reqtDefYn><![CDATA[Y]]></reqtDefYn>
+        					<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
+        					<chngDlbrRptsYn><![CDATA[Y]]></chngDlbrRptsYn>
+        					<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        	</w2:dataCollection>
+        	<w2:workflowCollection />
+        	<xf:submission id="sbmSystemList" action="aa/query/api/v1/system-list" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","pageInfo","syss"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="scwin.sbmSystemList_submit" ev:submitdone="scwin.sbmSystemList_submitdone"
+        		ev:submiterror="scwin.sbmSystemList_submiterror" abortTrigger="">
+        	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
-   
+   $c.sbm.execute(sbmSystemList);
 };
 
 scwin.btnSearch_onclick = function (e) {
@@ -149,6 +136,20 @@ scwin.imgBtnCSV_onclick = function (e) {
 
     grdSystemList.saveCSV(jsnOptions);
 };
+
+
+
+scwin.sbmSystemList_submit = function (e) {
+
+};
+
+scwin.sbmSystemList_submitdone = function (e) {
+
+};
+
+scwin.sbmSystemList_submiterror = function (e) {
+
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="">
@@ -179,46 +180,50 @@ scwin.imgBtnCSV_onclick = function (e) {
     			</xf:group>
     		</xf:group>
     		<w2:gridView checkAllType="false" defaultCellHeight="20" id="grdSystemList" style="width: 100%;height: 150px;flex: 1;"
-    			dataList="data:dataList1" autoFit="allColumn" useFilterSearch="false" useFilterList="true" sortable="true">
-    			<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
-    			<w2:header style="" id="header2">
-    				<w2:row style="" id="row3">
-    					<w2:column width="70" inputType="text" style="" id="column36" value="AA_SYSTEM_ID" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column37" value="업무명" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column38" value="담당부서" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column39" value="담당자" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column40" value="작성일정" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column41" value="사유" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column42" value="기타의견" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column8" value="시스템 구성도" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column9" value="개발 매뉴얼" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column10" value="운영 매뉴얼" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column11" value="어플리케이션 아키텍처 정의서" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column47" value="RFP" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column16" value="요구사항 정의서" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column17" value="착수보고" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column18" value="변경심의보고" displayMode="label" useFilter="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column19" value="완료보고" displayMode="label" useFilter="true"></w2:column>
+    			dataList="data:syss" autoFit="allColumn" useFilterSearch="false" useFilterList="true" sortable="true">
+    			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    			<w2:header style="" id="header1">
+    				<w2:row style="" id="row1">
+    					<w2:column width="70" inputType="text" style="" id="column18" value="sysId" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column17" value="sysCd" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column16" value="sysName" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column15" value="sysDscr" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column14" value="svcOpngDt" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column13" value="svcEndDt" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column12" value="itChrr" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column11" value="itChrrNo" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column10" value="itChrrName" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column9" value="sysCpstDgrmYn" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column8" value="devlMnulYn" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column7" value="mgmtMnulYn" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column6" value="archtYn" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column5" value="rfpYn" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column4" value="reqtDefYn" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column3" value="mpiwRptsYn" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column2" value="chngDlbrRptsYn" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column1" value="cpltRptsYn" displayMode="label"></w2:column>
     				</w2:row>
     			</w2:header>
-    			<w2:gBody style="" id="gBody2">
-    				<w2:row style="" id="row4">
-    					<w2:column width="70" inputType="text" style="" id="id" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="name" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="dep" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ap" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="date" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="reason" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="comment" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="systemArchitecture" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="devManual" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="prodManual" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="applicationArchitecture" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="rft" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="col13" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="col14" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="col15" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="col16" value="" displayMode="label"></w2:column>
+    			<w2:gBody style="" id="gBody1">
+    				<w2:row style="" id="row2">
+    					<w2:column width="70" inputType="text" style="" id="sysId" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="sysCd" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="sysName" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="sysDscr" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="svcOpngDt" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="svcEndDt" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="itChrrNo" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="sysCpstDgrmYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="devlMnulYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="mgmtMnulYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="archtYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="rfpYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="reqtDefYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="mpiwRptsYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="chngDlbrRptsYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="cpltRptsYn" value="" displayMode="label"></w2:column>
     				</w2:row>
     			</w2:gBody>
     		</w2:gridView>

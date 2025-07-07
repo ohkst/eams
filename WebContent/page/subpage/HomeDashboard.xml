@@ -483,7 +483,65 @@
         				</w2:row>
         			</w2:data>
         		</w2:dataList>
-        	</w2:dataCollection>
+        		<w2:dataList id="scrns">
+        			<w2:columnInfo>
+        				<w2:column id="arfsScrnId" name="arfsScrnId" dataType="text"></w2:column>
+        				<w2:column id="sysName" name="sysName" dataType="text"></w2:column>
+        				<w2:column id="scrnNo" name="scrnNo" dataType="text"></w2:column>
+        				<w2:column id="scrnName" name="scrnName" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrr" name="dvlpChrr" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrrNo" name="dvlpChrrNo" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrrName" name="dvlpChrrName" dataType="text"></w2:column>
+        				<w2:column id="mgmtChrr" name="mgmtChrr" dataType="text"></w2:column>
+        				<w2:column id="mgmtChrrNo" name="mgmtChrrNo" dataType="text"></w2:column>
+        				<w2:column id="mgmtChrrName" name="mgmtChrrName" dataType="text"></w2:column>
+        				<w2:column id="witfChrgDep" name="witfChrgDep" dataType="text"></w2:column>
+        				<w2:column id="witfChrgDepName" name="witfChrgDepName" dataType="text"></w2:column>
+        				<w2:column id="witfChrr" name="witfChrr" dataType="text"></w2:column>
+        				<w2:column id="witfChrrNo" name="witfChrrNo" dataType="text"></w2:column>
+        				<w2:column id="witfChrrName" name="witfChrrName" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<arfsScrnId><![CDATA[1]]></arfsScrnId>
+        					<sysName><![CDATA[WINK]]></sysName>
+        					<scrnNo><![CDATA[01000]]></scrnNo>
+        					<scrnName><![CDATA[계좌조회]]></scrnName>
+        					<dvlpChrr><![CDATA[2]]></dvlpChrr>
+        					<dvlpChrrNo><![CDATA[000002]]></dvlpChrrNo>
+        					<dvlpChrrName><![CDATA[홍길순]]></dvlpChrrName>
+        					<mgmtChrr><![CDATA[2]]></mgmtChrr>
+        					<mgmtChrrNo><![CDATA[000002]]></mgmtChrrNo>
+        					<mgmtChrrName><![CDATA[홍길순]]></mgmtChrrName>
+        					<witfChrgDep><![CDATA[2]]></witfChrgDep>
+        					<witfChrgDepName><![CDATA[인사팀]]></witfChrgDepName>
+        					<witfChrr><![CDATA[1]]></witfChrr>
+        					<witfChrrNo><![CDATA[000001]]></witfChrrNo>
+        					<witfChrrName><![CDATA[홍길동]]></witfChrrName>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList id="svcs">
+					<w2:columnInfo>
+						<w2:column id="svcId" name="svcId" dataType="text"></w2:column>
+						<w2:column id="svcCd" name="svcCd" dataType="text"></w2:column>
+						<w2:column id="korSvcName" name="korSvcName" dataType="text"></w2:column>
+						<w2:column id="itChrr" name="itChrr" dataType="text"></w2:column>
+						<w2:column id="itChrrNo" name="itChrrNo" dataType="text"></w2:column>
+						<w2:column id="itChrrName" name="itChrrName" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data xmlns="">
+						<w2:row>
+							<svcId><![CDATA[1]]></svcId>
+							<svcCd><![CDATA[TAC0551R]]></svcCd>
+							<korSvcName><![CDATA[계좌번호조회]]></korSvcName>
+							<itChrr><![CDATA[1]]></itChrr>
+							<itChrrNo><![CDATA[000001]]></itChrrNo>
+							<itChrrName><![CDATA[홍길동]]></itChrrName>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
         	<w2:workflowCollection />
         	<xf:submission id="sbmUnitTaskList" action="ba/query/api/v1/unit-task-list" method="get" mediatype="application/json" ref=""
         		target='data:json,["common","pageInfo","unitTasks"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
@@ -501,9 +559,19 @@
         		ev:submiterror="scwin.sbmHardwareList_submiterror" abortTrigger="">
         	</xf:submission>
         	<xf:submission id="sbmHardwareListWithSecurity" action="ta/query/api/v1/hardware-list" method="get" mediatype="application/json"
-        		ref="" target="data:json,hws" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg=""
-        		ev:submit="scwin.sbmHardwareListWithSecurity_submit" ev:submitdone="scwin.sbmHardwareListWithSecurity_submitdone"
+        		ref="" target="data:json,hws" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+        		processMsg="" ev:submit="scwin.sbmHardwareListWithSecurity_submit" ev:submitdone="scwin.sbmHardwareListWithSecurity_submitdone"
         		ev:submiterror="scwin.sbmHardwareListWithSecurity_submiterror" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="sbmTaskScreenList" action="aa/query/api/v1/task-screen-list" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","pageInfo","scrns"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="scwin.sbmTaskScreenList_submit" ev:submitdone="scwin.sbmTaskScreenList_submitdone"
+        		ev:submiterror="scwin.sbmTaskScreenList_submiterror" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="sbmServiceList" action="aa/query/api/v1/service-list" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","pageInfo","svcs"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="scwin.sbmServiceList_submit" ev:submitdone="scwin.sbmServiceList_submitdone"
+        		ev:submiterror="scwin.sbmServiceList_submiterror" abortTrigger="">
         	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
@@ -513,6 +581,8 @@ scwin.onpageload = function () {
 
     scwin.requestEmp();
     scwin.requestServerList();
+    scwin.requestScreenList();
+    scwin.requestServiceList();
     scwin.requestNetwork();
     scwin.requestSecurity();
 };
@@ -526,6 +596,30 @@ scwin.requestEmp = function () {
     };
 
     $c.sbm.execute(sbmUnitTaskList, param);
+};
+
+
+scwin.requestScreenList = function () {
+
+    const param = {
+        offset: 0,
+        limit: 8,
+        type: "PAGE"
+    };
+
+    $c.sbm.execute(sbmTaskScreenList, param);
+};
+
+
+scwin.requestServiceList = function () {
+
+    const param = {
+        offset: 0,
+        limit: 8,
+        type: "PAGE"
+    };
+
+    $c.sbm.execute(sbmServiceList, param);
 };
 
 scwin.requestServerList = function () {
@@ -644,6 +738,32 @@ scwin.sbmHardwareListWithSecurity_submitdone = function (e) {
 scwin.sbmHardwareListWithSecurity_submiterror = function (e) {
 
 };
+
+
+scwin.sbmTaskScreenList_submit = function (e) {
+
+};
+
+scwin.sbmTaskScreenList_submitdone = function (e) {
+
+};
+
+scwin.sbmTaskScreenList_submiterror = function (e) {
+
+};
+
+
+scwin.sbmServiceList_submit = function (e) {
+
+};
+
+scwin.sbmServiceList_submitdone = function (e) {
+
+};
+
+scwin.sbmServiceList_submiterror = function (e) {
+
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload"
@@ -721,18 +841,74 @@ scwin.sbmHardwareListWithSecurity_submiterror = function (e) {
     					</xf:group>
     					<xf:group style="flex-grow:1;display:flex;flex-direction:column;gap:8px;min-height:180px;">
     						<w2:gridView checkAllType="false" defaultCellHeight="20" id="deployScreenGrid"
-    							style="width: 100%;height: 180px;" dataList="data:dataList1" hideHeader="true" autoFit="allColumn">
-    							<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
-    							<w2:header style="" id="header2">
-    								<w2:row style="" id="row3">
-    									<w2:column width="70" inputType="text" style="" id="column3" value="name1" displayMode="label"></w2:column>
+    							style="width: 100%;height: 180px;" dataList="data:scrns" hideHeader="true" autoFit="allColumn">
+    							<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    							<w2:header style="" id="header1">
+    								<w2:row style="" id="row1">
+    									<w2:column width="70" inputType="text" style="" id="column15" value="arfsScrnId" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column14" value="sysName" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column13" value="scrnNo" displayMode="label"
+    										hidden="false">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column12" value="scrnName" displayMode="label"
+    										hidden="false">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column11" value="dvlpChrr" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column10" value="dvlpChrrNo" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column9" value="dvlpChrrName"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column8" value="mgmtChrr" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column7" value="mgmtChrrNo" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column6" value="mgmtChrrName"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column5" value="witfChrgDep" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column4" value="witfChrgDepName"
+    										displayMode="label" hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column3" value="witfChrr" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column2" value="witfChrrNo" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column1" value="witfChrrName"
+    										displayMode="label" hidden="true">
+    									</w2:column>
     								</w2:row>
     							</w2:header>
-    							<w2:gBody style="" id="gBody2">
-    								<w2:row style="" id="row4">
-    									<w2:column width="70" inputType="text" style="" id="col1" value="" displayMode="label"
-    										textAlign="left">
-    									</w2:column>
+    							<w2:gBody style="" id="gBody1">
+    								<w2:row style="" id="row2">
+    									<w2:column width="70" inputType="text" style="" id="arfsScrnId" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="sysName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="scrnNo" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="scrnName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dvlpChrr" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dvlpChrrNo" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="dvlpChrrName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="mgmtChrr" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="mgmtChrrNo" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="mgmtChrrName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="witfChrgDep" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="witfChrgDepName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="witfChrr" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="witfChrrNo" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="witfChrrName" value="" displayMode="label"></w2:column>
     								</w2:row>
     							</w2:gBody>
     						</w2:gridView>
@@ -750,18 +926,38 @@ scwin.sbmHardwareListWithSecurity_submiterror = function (e) {
     					</xf:group>
     					<xf:group style="flex-grow:1;display:flex;flex-direction:column;gap:8px;min-height:180px;">
     						<w2:gridView checkAllType="false" defaultCellHeight="20" id="deployTRGrid" style="width: 100%;height: 180px;"
-    							dataList="data:dataList1" hideHeader="true" autoFit="allColumn">
-    							<w2:caption style="" id="caption3" value="this is a grid caption."></w2:caption>
-    							<w2:header style="" id="header3">
-    								<w2:row style="" id="row5">
-    									<w2:column width="70" inputType="text" style="" id="column5" value="name1" displayMode="label"></w2:column>
+    							dataList="data:svcs" hideHeader="true" autoFit="allColumn">
+    							<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    							<w2:header style="" id="header1">
+    								<w2:row style="" id="row1">
+    									<w2:column width="70" inputType="text" style="" id="column6" value="svcId" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column5" value="svcCd" displayMode="label"
+    										hidden="false">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column4" value="korSvcName" displayMode="label"
+    										hidden="false">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column3" value="itChrr" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column2" value="itChrrNo" displayMode="label"
+    										hidden="true">
+    									</w2:column>
+    									<w2:column width="70" inputType="text" style="" id="column1" value="itChrrName" displayMode="label"
+    										hidden="true">
+    									</w2:column>
     								</w2:row>
     							</w2:header>
-    							<w2:gBody style="" id="gBody3">
-    								<w2:row style="" id="row6">
-    									<w2:column width="70" inputType="text" style="" id="col1" value="" displayMode="label"
-    										textAlign="left">
-    									</w2:column>
+    							<w2:gBody style="" id="gBody1">
+    								<w2:row style="" id="row2">
+    									<w2:column width="70" inputType="text" style="" id="svcId" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="svcCd" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="korSvcName" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="itChrrNo" value="" displayMode="label"></w2:column>
+    									<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
     								</w2:row>
     							</w2:gBody>
     						</w2:gridView>
