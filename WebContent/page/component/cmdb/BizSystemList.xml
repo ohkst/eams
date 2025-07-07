@@ -40,24 +40,24 @@
         		</w2:dataMap>
         		<w2:dataList id="syss">
         			<w2:columnInfo>
-        				<w2:column id="sysId" name="sysId" dataType="text"></w2:column>
-        				<w2:column id="sysCd" name="sysCd" dataType="text"></w2:column>
-        				<w2:column id="sysName" name="sysName" dataType="text"></w2:column>
-        				<w2:column id="sysDscr" name="sysDscr" dataType="text"></w2:column>
-        				<w2:column id="svcOpngDt" name="svcOpngDt" dataType="text"></w2:column>
-        				<w2:column id="svcEndDt" name="svcEndDt" dataType="text"></w2:column>
-        				<w2:column id="itChrr" name="itChrr" dataType="text"></w2:column>
-        				<w2:column id="itChrrNo" name="itChrrNo" dataType="text"></w2:column>
-        				<w2:column id="itChrrName" name="itChrrName" dataType="text"></w2:column>
-        				<w2:column id="sysCpstDgrmYn" name="sysCpstDgrmYn" dataType="text"></w2:column>
-        				<w2:column id="devlMnulYn" name="devlMnulYn" dataType="text"></w2:column>
-        				<w2:column id="mgmtMnulYn" name="mgmtMnulYn" dataType="text"></w2:column>
-        				<w2:column id="archtYn" name="archtYn" dataType="text"></w2:column>
-        				<w2:column id="rfpYn" name="rfpYn" dataType="text"></w2:column>
-        				<w2:column id="reqtDefYn" name="reqtDefYn" dataType="text"></w2:column>
-        				<w2:column id="mpiwRptsYn" name="mpiwRptsYn" dataType="text"></w2:column>
-        				<w2:column id="chngDlbrRptsYn" name="chngDlbrRptsYn" dataType="text"></w2:column>
-        				<w2:column id="cpltRptsYn" name="cpltRptsYn" dataType="text"></w2:column>
+        				<w2:column id="sysId" name="시스템ID" dataType="text"></w2:column>
+        				<w2:column id="sysCd" name="시스템코드" dataType="text"></w2:column>
+        				<w2:column id="sysName" name="시스템명" dataType="text"></w2:column>
+        				<w2:column id="sysDscr" name="시스템설명" dataType="text"></w2:column>
+        				<w2:column id="svcOpngDt" name="서비스개시일" dataType="text"></w2:column>
+        				<w2:column id="svcEndDt" name="서비스종료일" dataType="text"></w2:column>
+        				<w2:column id="itChrr" name="IT담당자" dataType="text"></w2:column>
+        				<w2:column id="itChrrNo" name="IT담당자사번" dataType="text"></w2:column>
+        				<w2:column id="itChrrName" name="IT담당자명" dataType="text"></w2:column>
+        				<w2:column id="sysCpstDgrmYn" name="시스템구성도여부" dataType="text"></w2:column>
+        				<w2:column id="devlMnulYn" name="개발매뉴얼여부" dataType="text"></w2:column>
+        				<w2:column id="mgmtMnulYn" name="운영매뉴얼여부" dataType="text"></w2:column>
+        				<w2:column id="archtYn" name="아키텍처여부" dataType="text"></w2:column>
+        				<w2:column id="rfpYn" name="RFP여부" dataType="text"></w2:column>
+        				<w2:column id="reqtDefYn" name="요구사항정의서여부" dataType="text"></w2:column>
+        				<w2:column id="mpiwRptsYn" name="착수보고서여부" dataType="text"></w2:column>
+        				<w2:column id="chngDlbrRptsYn" name="변경심의보고서여부" dataType="text"></w2:column>
+        				<w2:column id="cpltRptsYn" name="완료보고서여부" dataType="text"></w2:column>
         			</w2:columnInfo>
         			<w2:data xmlns="">
         				<w2:row>
@@ -184,24 +184,24 @@ scwin.sbmSystemList_submiterror = function (e) {
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     			<w2:header style="" id="header1">
     				<w2:row style="" id="row1">
-    					<w2:column width="70" inputType="text" style="" id="column18" value="sysId" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column17" value="sysCd" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column16" value="sysName" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column15" value="sysDscr" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column14" value="svcOpngDt" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column13" value="svcEndDt" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column12" value="itChrr" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column11" value="itChrrNo" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column10" value="itChrrName" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column9" value="sysCpstDgrmYn" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column8" value="devlMnulYn" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column7" value="mgmtMnulYn" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column6" value="archtYn" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column5" value="rfpYn" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column4" value="reqtDefYn" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column3" value="mpiwRptsYn" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column2" value="chngDlbrRptsYn" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column1" value="cpltRptsYn" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column18" value="시스템ID" displayMode="label" hidden="true"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column17" value="시스템코드" displayMode="label" hidden="true"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column16" value="시스템명" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column15" value="시스템설명" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column14" value="서비스개시일" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column13" value="서비스종료일" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column12" value="IT담당자" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column11" value="IT담당자사번" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column10" value="IT담당자명" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column9" value="시스템구성도여부" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column8" value="개발매뉴얼여부" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column7" value="운영매뉴얼여부" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column6" value="아키텍처여부" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column5" value="RFP여부" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column4" value="요구사항정의서여부" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column3" value="착수보고서여부" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column2" value="변경심의보고서여부" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column1" value="완료보고서여부" displayMode="label"></w2:column>
     				</w2:row>
     			</w2:header>
     			<w2:gBody style="" id="gBody1">

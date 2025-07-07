@@ -232,25 +232,25 @@ scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
 
     var cellData = "";
     var id = "";
-    if (type === 0) {
+    if (type === 0) { // 업무
         cellData = unitTasks.getCellData(rowIndex, columnId);
-    } else if (type === 1) {
+    } else if (type === 1) { // 화면
         cellData = scrns.getCellData(rowIndex, columnId);
-    } else if (type === 2) {
+        id = scrns.getCellData(rowIndex, "arfsScrnId");
+    } else if (type === 2) { // TR
         cellData = svcs.getCellData(rowIndex, columnId);
-    } else if (type === 3) {
+        id = svcs.getCellData(rowIndex, "svcId");
+    } else if (type === 3) { // Table
         cellData = tables.getCellData(rowIndex, columnId);
         id = tables.getCellData(rowIndex, "tlbId");
-    } else if (type === 4) {
+    } else if (type === 4) { // 담당자
         cellData = emps.getCellData(rowIndex, columnId);
     }
 
-    $p.log(cellData);
-
     var rowJSON = {
-        "Personal Info": { "Name": "Lee", "Age": 50, "Married": false },
-        "Region": "Seoul",
-        "Carrier": true,
+        // "Personal Info": { "Name": "Lee", "Age": 50, "Married": false },
+        // "Region": "Seoul",
+        // "Carrier": true,
         "name": cellData,
         "id": id
     };

@@ -7,83 +7,162 @@
         <w2:buildDate/>
         <w2:MSA/>
         <xf:model>
-            <w2:dataCollection baseNode="map">
-            	<w2:dataMap baseNode="map" id="dataMap1">
-            		<w2:keyInfo>
-            			<w2:key id="key1" name="부서" dataType="text" defaultValue="차세대시스템부"></w2:key>
-            			<w2:key id="key2" name="담당자" dataType="text" defaultValue="김성태"></w2:key>
-            			<w2:key id="key3" name="연락처" dataType="text" defaultValue="010-4814-0386"></w2:key>
-            			<w2:key id="key4" name="연락처2" dataType="text" defaultValue="02-3276-5742"></w2:key>
-            			<w2:key id="key5" name="Email" dataType="text" defaultValue="112251@koreainvestment.com"></w2:key>
-            			<w2:key id="key6" name="역량그룹" dataType="text" defaultValue="경영관리/지원그룹"></w2:key>
-            			<w2:key id="key7" name="영문명" dataType="text" defaultValue="Operation Management"></w2:key>
-            			<w2:key id="key8" name="Level1" dataType="text" defaultValue="OP"></w2:key>
-            			<w2:key id="key9" name="Level2" dataType="text" defaultValue="AR"></w2:key>
-            			<w2:key id="key10" name="비즈니스 컴포넌트" dataType="text" defaultValue="계좌/대사"></w2:key>
-            			<w2:key id="key11" name="영문명" dataType="text" defaultValue="OP-Account Balancing &amp; Reconciliation(AR)"></w2:key>
-            			<w2:key id="key12" name="매뉴얼 관리자" dataType="text" defaultValue="홍길동"></w2:key>
-            			<w2:key id="key13" name="매뉴얼 작성일" dataType="date" defaultValue="2024.01.18"></w2:key>
-            			<w2:key id="key14" name="용어정리" dataType="text" defaultValue="커뮤니케이션 전략, 공지화면"></w2:key>
-            			<w2:key id="key15" name="관련자료" dataType="text" defaultValue="본사여업 위탁상품 업무 리스트.xlsx"></w2:key>
-            		</w2:keyInfo>
-            		<w2:data use="false">
-            			<key1><![CDATA[프론트개발부]]></key1>
-            		</w2:data>
-            	</w2:dataMap>
-            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
-            		<w2:columnInfo>
-            			<w2:column id="col1" name="TR CODE" dataType="text" defaultValue="1"></w2:column>
-            			<w2:column id="col2" name="TR명" dataType="text" defaultValue="2"></w2:column>
-            			<w2:column id="col3" name="설명" dataType="text" defaultValue="3"></w2:column>
-            			<w2:column id="col4" name="담당자" dataType="text" defaultValue="4"></w2:column>
-            		</w2:columnInfo>
-            		<w2:data use="true">
-            			<w2:row>
-            				<col1><![CDATA[TAC1111R]]></col1>
-            				<col2><![CDATA[상담 공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            			<w2:row>
-            				<col1><![CDATA[TAC1111R]]></col1>
-            				<col2><![CDATA[상담  공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            			<w2:row>
-            				<col1><![CDATA[TAC1111R]]></col1>
-            				<col2><![CDATA[상담  공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            			<w2:row>
-            				<col1><![CDATA[TAC1111R]]></col1>
-            				<col2><![CDATA[상담  공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            			<w2:row>
-            				<col1><![CDATA[TAC1111R]]></col1>
-            				<col2><![CDATA[상담  공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            			<w2:row>
-            				<col1><![CDATA[TAC1111R]]></col1>
-            				<col2><![CDATA[상담  공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            			<w2:row>
-            				<col1><![CDATA[TAC1111R]]></col1>
-            				<col2><![CDATA[상담  공지화면]]></col2>
-            				<col3><![CDATA[상담  공지화면]]></col3>
-            				<col4><![CDATA[홍길동]]></col4>
-            			</w2:row>
-            		</w2:data>
-            	</w2:dataList>
-            </w2:dataCollection>
-            <w2:workflowCollection/>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataMap baseNode="map" id="dataMap1">
+        			<w2:keyInfo>
+        				<w2:key id="key1" name="부서" dataType="text" defaultValue="차세대시스템부"></w2:key>
+        				<w2:key id="key2" name="담당자" dataType="text" defaultValue="김성태"></w2:key>
+        				<w2:key id="key3" name="연락처" dataType="text" defaultValue="010-4814-0386"></w2:key>
+        				<w2:key id="key4" name="연락처2" dataType="text" defaultValue="02-3276-5742"></w2:key>
+        				<w2:key id="key5" name="Email" dataType="text" defaultValue="112251@koreainvestment.com"></w2:key>
+        				<w2:key id="key6" name="역량그룹" dataType="text" defaultValue="경영관리/지원그룹"></w2:key>
+        				<w2:key id="key7" name="영문명" dataType="text" defaultValue="Operation Management"></w2:key>
+        				<w2:key id="key8" name="Level1" dataType="text" defaultValue="OP"></w2:key>
+        				<w2:key id="key9" name="Level2" dataType="text" defaultValue="AR"></w2:key>
+        				<w2:key id="key10" name="비즈니스 컴포넌트" dataType="text" defaultValue="계좌/대사"></w2:key>
+        				<w2:key id="key11" name="영문명" dataType="text" defaultValue="OP-Account Balancing &amp; Reconciliation(AR)"></w2:key>
+        				<w2:key id="key12" name="매뉴얼 관리자" dataType="text" defaultValue="홍길동"></w2:key>
+        				<w2:key id="key13" name="매뉴얼 작성일" dataType="date" defaultValue="2024.01.18"></w2:key>
+        				<w2:key id="key14" name="용어정리" dataType="text" defaultValue="커뮤니케이션 전략, 공지화면"></w2:key>
+        				<w2:key id="key15" name="관련자료" dataType="text" defaultValue="본사여업 위탁상품 업무 리스트.xlsx"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data use="false">
+        				<key1><![CDATA[프론트개발부]]></key1>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="col1" name="TR CODE" dataType="text" defaultValue="1"></w2:column>
+        				<w2:column id="col2" name="TR명" dataType="text" defaultValue="2"></w2:column>
+        				<w2:column id="col3" name="설명" dataType="text" defaultValue="3"></w2:column>
+        				<w2:column id="col4" name="담당자" dataType="text" defaultValue="4"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data use="true">
+        				<w2:row>
+        					<col1><![CDATA[TAC1111R]]></col1>
+        					<col2><![CDATA[상담 공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        				<w2:row>
+        					<col1><![CDATA[TAC1111R]]></col1>
+        					<col2><![CDATA[상담  공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        				<w2:row>
+        					<col1><![CDATA[TAC1111R]]></col1>
+        					<col2><![CDATA[상담  공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        				<w2:row>
+        					<col1><![CDATA[TAC1111R]]></col1>
+        					<col2><![CDATA[상담  공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        				<w2:row>
+        					<col1><![CDATA[TAC1111R]]></col1>
+        					<col2><![CDATA[상담  공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        				<w2:row>
+        					<col1><![CDATA[TAC1111R]]></col1>
+        					<col2><![CDATA[상담  공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        				<w2:row>
+        					<col1><![CDATA[TAC1111R]]></col1>
+        					<col2><![CDATA[상담  공지화면]]></col2>
+        					<col3><![CDATA[상담  공지화면]]></col3>
+        					<col4><![CDATA[홍길동]]></col4>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataMap id="common">
+        			<w2:keyInfo>
+        				<w2:key id="guid" name="guid" dataType="text"></w2:key>
+        				<w2:key id="code" name="code" dataType="text"></w2:key>
+        				<w2:key id="message" name="message" dataType="text"></w2:key>
+        				<w2:key id="detailMessage" name="detailMessage" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<guid><![CDATA[5b68e17b8ff54ce294a3d5fec2a5aeaa]]></guid>
+        				<code><![CDATA[N000]]></code>
+        				<message><![CDATA[정상처리]]></message>
+        				<detailMessage><![CDATA[]]></detailMessage>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataMap id="scrnInfo">
+        			<w2:keyInfo>
+        				<w2:key id="arfsScrnId" name="arfsScrnId" dataType="text"></w2:key>
+        				<w2:key id="sysId" name="sysId" dataType="text"></w2:key>
+        				<w2:key id="sysName" name="sysName" dataType="text"></w2:key>
+        				<w2:key id="scrnNo" name="scrnNo" dataType="text"></w2:key>
+        				<w2:key id="scrnName" name="scrnName" dataType="text"></w2:key>
+        				<w2:key id="dvlpChrr" name="dvlpChrr" dataType="text"></w2:key>
+        				<w2:key id="dvlpChrrNo" name="dvlpChrrNo" dataType="text"></w2:key>
+        				<w2:key id="dvlpChrrName" name="dvlpChrrName" dataType="text"></w2:key>
+        				<w2:key id="mgmtChrr" name="mgmtChrr" dataType="text"></w2:key>
+        				<w2:key id="mgmtChrrNo" name="mgmtChrrNo" dataType="text"></w2:key>
+        				<w2:key id="mgmtChrrName" name="mgmtChrrName" dataType="text"></w2:key>
+        				<w2:key id="witfChrgDep" name="witfChrgDep" dataType="text"></w2:key>
+        				<w2:key id="witfChrgDepName" name="witfChrgDepName" dataType="text"></w2:key>
+        				<w2:key id="witfChrr" name="witfChrr" dataType="text"></w2:key>
+        				<w2:key id="witfChrrNo" name="witfChrrNo" dataType="text"></w2:key>
+        				<w2:key id="witfChrrName" name="witfChrrName" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<arfsScrnId><![CDATA[1]]></arfsScrnId>
+        				<sysId><![CDATA[2]]></sysId>
+        				<sysName><![CDATA[WINK]]></sysName>
+        				<scrnNo><![CDATA[01000]]></scrnNo>
+        				<scrnName><![CDATA[계좌조회]]></scrnName>
+        				<dvlpChrr><![CDATA[2]]></dvlpChrr>
+        				<dvlpChrrNo><![CDATA[000002]]></dvlpChrrNo>
+        				<dvlpChrrName><![CDATA[홍길순]]></dvlpChrrName>
+        				<mgmtChrr><![CDATA[2]]></mgmtChrr>
+        				<mgmtChrrNo><![CDATA[000002]]></mgmtChrrNo>
+        				<mgmtChrrName><![CDATA[홍길순]]></mgmtChrrName>
+        				<witfChrgDep><![CDATA[2]]></witfChrgDep>
+        				<witfChrgDepName><![CDATA[인사팀]]></witfChrgDepName>
+        				<witfChrr><![CDATA[1]]></witfChrr>
+        				<witfChrrNo><![CDATA[000001]]></witfChrrNo>
+        				<witfChrrName><![CDATA[홍길동]]></witfChrrName>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataList id="svcs">
+        			<w2:columnInfo>
+        				<w2:column id="scrnSvcLinkId" name="scrnSvcLinkId" dataType="text"></w2:column>
+        				<w2:column id="svcId" name="svcId" dataType="text"></w2:column>
+        				<w2:column id="svcCd" name="svcCd" dataType="text"></w2:column>
+        				<w2:column id="korSvcName" name="korSvcName" dataType="text"></w2:column>
+        				<w2:column id="itChrr" name="itChrr" dataType="text"></w2:column>
+        				<w2:column id="itChrrNo" name="itChrrNo" dataType="text"></w2:column>
+        				<w2:column id="itChrrName" name="itChrrName" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<scrnSvcLinkId><![CDATA[1]]></scrnSvcLinkId>
+        					<svcId><![CDATA[1]]></svcId>
+        					<svcCd><![CDATA[TAC0551R]]></svcCd>
+        					<korSvcName><![CDATA[계좌번호조회]]></korSvcName>
+        					<itChrr><![CDATA[1]]></itChrr>
+        					<itChrrNo><![CDATA[000001]]></itChrrNo>
+        					<itChrrName><![CDATA[홍길동]]></itChrrName>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        	</w2:dataCollection>
+        	<w2:workflowCollection />
+        	<xf:submission id="sbmTaskScreenDetail" action="aa/query/api/v1/task-screen/id/{id}" method="get" mediatype="application/json"
+        		ref="" target='data:json,["common","scrnInfo","svcs"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="scwin.sbmTaskScreenDetail_submit"
+        		ev:submitdone="scwin.sbmTaskScreenDetail_submitdone" ev:submiterror="scwin.sbmTaskScreenDetail_submiterror" abortTrigger="">
+        	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
@@ -93,6 +172,12 @@ scwin.onpageload = function() {
     // var data = JSON.stringify(paramData);
     // alert(data);
     mainTitle.setValue(paramData.name);
+
+    const param = {
+        id: paramData.id
+    };
+
+    $c.sbm.execute(sbmTaskScreenDetail, param);
 };
 
 scwin.gridTRList_oncellclick = function (rowIndex, columnIndex, columnId) {
@@ -133,6 +218,18 @@ scwin.gridTRList_oncellclick = function (rowIndex, columnIndex, columnId) {
     };
 
     $p.openPopup("/page/component/SystemSearchResultTRDetail.xml", options);
+};
+
+scwin.sbmTaskScreenDetail_submit = function (e) {
+
+};
+
+scwin.sbmTaskScreenDetail_submitdone = function (e) {
+
+};
+
+scwin.sbmTaskScreenDetail_submiterror = function (e) {
+
 };
 ]]></script>
     </head>
@@ -363,23 +460,29 @@ scwin.gridTRList_oncellclick = function (rowIndex, columnIndex, columnId) {
     			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="연관 정보"></w2:textbox>
     			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="TR 리스트"></w2:textbox>
     			<xf:group style="display: flex;gap: 24px;" id="">
-    				<w2:gridView checkAllType="false" dataList="data:dataList1" style="width:100%;height: 400px;" id="gridTRList"
+    				<w2:gridView checkAllType="false" dataList="data:svcs" style="width:100%;height: 400px;" id="gridTRList"
     					autoFit="allColumn" defaultCellHeight="43" ev:oncellclick="scwin.gridTRList_oncellclick">
     					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     					<w2:header style="" id="header1">
     						<w2:row style="" id="row1">
-    							<w2:column width="70" inputType="text" style="" id="column4" value="TR CODE" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="column3" value="TR명" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="column2" value="설명" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="column1" value="담당자" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column7" value="scrnSvcLinkId" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column6" value="svcId" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column5" value="svcCd" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column4" value="korSvcName" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column3" value="itChrr" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column2" value="itChrrNo" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column1" value="itChrrName" displayMode="label"></w2:column>
     						</w2:row>
     					</w2:header>
     					<w2:gBody style="" id="gBody1">
     						<w2:row style="" id="row2">
-    							<w2:column width="70" inputType="text" style="" id="col1" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="col2" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="col3" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="col4" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="scrnSvcLinkId" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="svcId" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="svcCd" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="korSvcName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="itChrrNo" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
     						</w2:row>
     					</w2:gBody>
     				</w2:gridView>
