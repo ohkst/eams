@@ -9,118 +9,142 @@
         <xf:model>
         	<w2:dataCollection baseNode="map">
         		<w2:dataList id="scrns">
-					<w2:columnInfo>
-						<w2:column id="afrsScrnId" name="업무화면ID" dataType="text"></w2:column>
-						<w2:column id="scrnNo" name="화면번호" dataType="text"></w2:column>
-						<w2:column id="scrnName" name="화면명" dataType="text"></w2:column>
-						<w2:column id="dvlpChrr" name="개발담당자" dataType="text"></w2:column>
-						<w2:column id="dvlpChrrNo" name="개발담당자사번" dataType="text"></w2:column>
-						<w2:column id="dvlpChrrName" name="개발담당자명" dataType="text"></w2:column>
-					</w2:columnInfo>
-					<w2:data xmlns="">
-						<w2:row>
-							<afrsScrnId><![CDATA[1]]></afrsScrnId>
-							<scrnNo><![CDATA[00000]]></scrnNo>
-							<scrnName><![CDATA[계좌계설]]></scrnName>
-							<dvlpChrr><![CDATA[1]]></dvlpChrr>
-							<dvlpChrrNo><![CDATA[113565]]></dvlpChrrNo>
-							<dvlpChrrName><![CDATA[최동규]]></dvlpChrrName>
-						</w2:row>
-					</w2:data>
-				</w2:dataList>
-				<w2:dataMap id="common">
-					<w2:keyInfo>
-						<w2:key id="guid" name="guid" dataType="text"></w2:key>
-						<w2:key id="code" name="code" dataType="text"></w2:key>
-						<w2:key id="message" name="message" dataType="text"></w2:key>
-						<w2:key id="detailMessage" name="detailMessage" dataType="text"></w2:key>
-					</w2:keyInfo>
-					<w2:data xmlns="">
-						<guid><![CDATA[e7d6185dc8cc4d1780484b9faf8248e6]]></guid>
-						<code><![CDATA[N000]]></code>
-						<message><![CDATA[정상처리]]></message>
-						<detailMessage><![CDATA[]]></detailMessage>
-					</w2:data>
-				</w2:dataMap>
-				<w2:dataMap id="unitAfrs">
-					<w2:keyInfo>
-						<w2:key id="unitAfrsCd" name="unitAfrsCd" dataType="text"></w2:key>
-						<w2:key id="depId" name="depId" dataType="text"></w2:key>
-						<w2:key id="depName" name="depName" dataType="text"></w2:key>
-						<w2:key id="unitAfrsName" name="unitAfrsName" dataType="text"></w2:key>
-						<w2:key id="unitAfrsOtln" name="unitAfrsOtln" dataType="text"></w2:key>
-						<w2:key id="bizDomn1Lv1Id" name="bizDomn1Lv1Id" dataType="text"></w2:key>
-						<w2:key id="bizDomn1Lv1Cd" name="bizDomn1Lv1Cd" dataType="text"></w2:key>
-						<w2:key id="bizDomn1Lv1KorName" name="bizDomn1Lv1KorName" dataType="text"></w2:key>
-						<w2:key id="bizDomn1Lv1EngName" name="bizDomn1Lv1EngName" dataType="text"></w2:key>
-						<w2:key id="bizDomn1Lv2Id" name="bizDomn1Lv2Id" dataType="text"></w2:key>
-						<w2:key id="bizDomn1Lv2Cd" name="bizDomn1Lv2Cd" dataType="text"></w2:key>
-						<w2:key id="bizDomn1Lv2KorName" name="bizDomn1Lv2KorName" dataType="text"></w2:key>
-						<w2:key id="bizDomn1Lv2EngName" name="bizDomn1Lv2EngName" dataType="text"></w2:key>
-						<w2:key id="termArgm" name="termArgm" dataType="text"></w2:key>
-						<w2:key id="chrr" name="chrr" dataType="text"></w2:key>
-						<w2:key id="chrrNo" name="chrrNo" dataType="text"></w2:key>
-						<w2:key id="chrrName" name="chrrName" dataType="text"></w2:key>
-						<w2:key id="manlId" name="manlId" dataType="text"></w2:key>
-						<w2:key id="manlName" name="manlName" dataType="text"></w2:key>
-						<w2:key id="manlVer" name="manlVer" dataType="text"></w2:key>
-						<w2:key id="frstErlmDt" name="frstErlmDt" dataType="text"></w2:key>
-						<w2:key id="rcenChngDt" name="rcenChngDt" dataType="text"></w2:key>
-						<w2:key id="manlDept" name="manlDept" dataType="text"></w2:key>
-						<w2:key id="manlDeptName" name="manlDeptName" dataType="text"></w2:key>
-						<w2:key id="manlEmp" name="manlEmp" dataType="text"></w2:key>
-						<w2:key id="manlEmpNo" name="manlEmpNo" dataType="text"></w2:key>
-						<w2:key id="manlEmpName" name="manlEmpName" dataType="text"></w2:key>
-					</w2:keyInfo>
-					<w2:data xmlns="">
-						<unitAfrsCd><![CDATA[u0QKh71yTpm3PIhv7V]]></unitAfrsCd>
-						<depId><![CDATA[1]]></depId>
-						<depName><![CDATA[인사부]]></depName>
-						<unitAfrsName><![CDATA[string]]></unitAfrsName>
-						<unitAfrsOtln><![CDATA[string]]></unitAfrsOtln>
-						<bizDomn1Lv1Id><![CDATA[1]]></bizDomn1Lv1Id>
-						<bizDomn1Lv1Cd><![CDATA[CP]]></bizDomn1Lv1Cd>
-						<bizDomn1Lv1KorName><![CDATA[계좌]]></bizDomn1Lv1KorName>
-						<bizDomn1Lv1EngName><![CDATA[ACC]]></bizDomn1Lv1EngName>
-						<bizDomn1Lv2Id><![CDATA[2]]></bizDomn1Lv2Id>
-						<bizDomn1Lv2Cd><![CDATA[OP]]></bizDomn1Lv2Cd>
-						<bizDomn1Lv2KorName><![CDATA[계좌상세]]></bizDomn1Lv2KorName>
-						<bizDomn1Lv2EngName><![CDATA[ACCDESC]]></bizDomn1Lv2EngName>
-						<termArgm><![CDATA[string]]></termArgm>
-						<chrr><![CDATA[1]]></chrr>
-						<chrrNo><![CDATA[113565]]></chrrNo>
-						<chrrName><![CDATA[최동규]]></chrrName>
-						<manlId><![CDATA[1]]></manlId>
-						<manlName><![CDATA[계좌계설가이드]]></manlName>
-						<manlVer><![CDATA[1]]></manlVer>
-						<frstErlmDt><![CDATA[20241020]]></frstErlmDt>
-						<rcenChngDt><![CDATA[20250123]]></rcenChngDt>
-						<manlDept><![CDATA[1]]></manlDept>
-						<manlDeptName><![CDATA[인사부]]></manlDeptName>
-						<manlEmp><![CDATA[1]]></manlEmp>
-						<manlEmpNo><![CDATA[113565]]></manlEmpNo>
-						<manlEmpName><![CDATA[최동규]]></manlEmpName>
-					</w2:data>
-				</w2:dataMap>
-			</w2:dataCollection>
+        			<w2:columnInfo>
+        				<w2:column id="afrsScrnId" name="업무화면ID" dataType="text"></w2:column>
+        				<w2:column id="scrnNo" name="화면번호" dataType="text"></w2:column>
+        				<w2:column id="scrnName" name="화면명" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrr" name="개발담당자" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrrNo" name="개발담당자사번" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrrName" name="개발담당자명" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<afrsScrnId><![CDATA[1]]></afrsScrnId>
+        					<scrnNo><![CDATA[00000]]></scrnNo>
+        					<scrnName><![CDATA[계좌계설]]></scrnName>
+        					<dvlpChrr><![CDATA[1]]></dvlpChrr>
+        					<dvlpChrrNo><![CDATA[113565]]></dvlpChrrNo>
+        					<dvlpChrrName><![CDATA[최동규]]></dvlpChrrName>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataMap id="common">
+        			<w2:keyInfo>
+        				<w2:key id="guid" name="guid" dataType="text"></w2:key>
+        				<w2:key id="code" name="code" dataType="text"></w2:key>
+        				<w2:key id="message" name="message" dataType="text"></w2:key>
+        				<w2:key id="detailMessage" name="detailMessage" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<guid><![CDATA[e7d6185dc8cc4d1780484b9faf8248e6]]></guid>
+        				<code><![CDATA[N000]]></code>
+        				<message><![CDATA[정상처리]]></message>
+        				<detailMessage><![CDATA[]]></detailMessage>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataMap id="unitAfrs">
+        			<w2:keyInfo>
+        				<w2:key id="unitAfrsCd" name="unitAfrsCd" dataType="text"></w2:key>
+        				<w2:key id="depId" name="depId" dataType="text"></w2:key>
+        				<w2:key id="depName" name="depName" dataType="text"></w2:key>
+        				<w2:key id="unitAfrsName" name="unitAfrsName" dataType="text"></w2:key>
+        				<w2:key id="unitAfrsOtln" name="unitAfrsOtln" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv1Id" name="bizDomn1Lv1Id" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv1Cd" name="bizDomn1Lv1Cd" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv1KorName" name="bizDomn1Lv1KorName" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv1EngName" name="bizDomn1Lv1EngName" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv2Id" name="bizDomn1Lv2Id" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv2Cd" name="bizDomn1Lv2Cd" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv2KorName" name="bizDomn1Lv2KorName" dataType="text"></w2:key>
+        				<w2:key id="bizDomn1Lv2EngName" name="bizDomn1Lv2EngName" dataType="text"></w2:key>
+        				<w2:key id="termArgm" name="termArgm" dataType="text"></w2:key>
+        				<w2:key id="chrr" name="chrr" dataType="text"></w2:key>
+        				<w2:key id="chrrNo" name="chrrNo" dataType="text"></w2:key>
+        				<w2:key id="chrrName" name="chrrName" dataType="text"></w2:key>
+        				<w2:key id="manlId" name="manlId" dataType="text"></w2:key>
+        				<w2:key id="manlName" name="manlName" dataType="text"></w2:key>
+        				<w2:key id="manlVer" name="manlVer" dataType="text"></w2:key>
+        				<w2:key id="frstErlmDt" name="frstErlmDt" dataType="text"></w2:key>
+        				<w2:key id="rcenChngDt" name="rcenChngDt" dataType="text"></w2:key>
+        				<w2:key id="manlDept" name="manlDept" dataType="text"></w2:key>
+        				<w2:key id="manlDeptName" name="manlDeptName" dataType="text"></w2:key>
+        				<w2:key id="manlEmp" name="manlEmp" dataType="text"></w2:key>
+        				<w2:key id="manlEmpNo" name="manlEmpNo" dataType="text"></w2:key>
+        				<w2:key id="manlEmpName" name="manlEmpName" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<unitAfrsCd><![CDATA[u0QKh71yTpm3PIhv7V]]></unitAfrsCd>
+        				<depId><![CDATA[1]]></depId>
+        				<depName><![CDATA[인사부]]></depName>
+        				<unitAfrsName><![CDATA[string]]></unitAfrsName>
+        				<unitAfrsOtln><![CDATA[string]]></unitAfrsOtln>
+        				<bizDomn1Lv1Id><![CDATA[1]]></bizDomn1Lv1Id>
+        				<bizDomn1Lv1Cd><![CDATA[CP]]></bizDomn1Lv1Cd>
+        				<bizDomn1Lv1KorName><![CDATA[계좌]]></bizDomn1Lv1KorName>
+        				<bizDomn1Lv1EngName><![CDATA[ACC]]></bizDomn1Lv1EngName>
+        				<bizDomn1Lv2Id><![CDATA[2]]></bizDomn1Lv2Id>
+        				<bizDomn1Lv2Cd><![CDATA[OP]]></bizDomn1Lv2Cd>
+        				<bizDomn1Lv2KorName><![CDATA[계좌상세]]></bizDomn1Lv2KorName>
+        				<bizDomn1Lv2EngName><![CDATA[ACCDESC]]></bizDomn1Lv2EngName>
+        				<termArgm><![CDATA[string]]></termArgm>
+        				<chrr><![CDATA[1]]></chrr>
+        				<chrrNo><![CDATA[113565]]></chrrNo>
+        				<chrrName><![CDATA[최동규]]></chrrName>
+        				<manlId><![CDATA[1]]></manlId>
+        				<manlName><![CDATA[계좌계설가이드]]></manlName>
+        				<manlVer><![CDATA[1]]></manlVer>
+        				<frstErlmDt><![CDATA[20241020]]></frstErlmDt>
+        				<rcenChngDt><![CDATA[20250123]]></rcenChngDt>
+        				<manlDept><![CDATA[1]]></manlDept>
+        				<manlDeptName><![CDATA[인사부]]></manlDeptName>
+        				<manlEmp><![CDATA[1]]></manlEmp>
+        				<manlEmpNo><![CDATA[113565]]></manlEmpNo>
+        				<manlEmpName><![CDATA[최동규]]></manlEmpName>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataMap id="emp">
+        			<w2:keyInfo>
+        				<w2:key id="empId" name="empId" dataType="text"></w2:key>
+        				<w2:key id="empNo" name="empNo" dataType="text"></w2:key>
+        				<w2:key id="empName" name="empName" dataType="text"></w2:key>
+        				<w2:key id="osdtCd" name="osdtCd" dataType="text"></w2:key>
+        				<w2:key id="emal" name="emal" dataType="text"></w2:key>
+        				<w2:key id="ctcp1" name="ctcp1" dataType="text"></w2:key>
+        				<w2:key id="ctcp2" name="ctcp2" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<empId><![CDATA[1]]></empId>
+        				<empNo><![CDATA[113565]]></empNo>
+        				<empName><![CDATA[최동규]]></empName>
+        				<osdtCd><![CDATA[00001]]></osdtCd>
+        				<emal><![CDATA[dk@koreainvestment.com]]></emal>
+        				<ctcp1><![CDATA[02-1234-1234]]></ctcp1>
+        				<ctcp2><![CDATA[010-1234-1234]]></ctcp2>
+        			</w2:data>
+        		</w2:dataMap>
+        	</w2:dataCollection>
         	<w2:workflowCollection />
-        	<xf:submission id="sbmUnitTaskDetail" action="ba/query/api/v1/unit-task/id/{id}" method="get" mediatype="application/json" ref=""
-        		target='data:json,["common","unitAfrs","scrns"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg=""
-        		ev:submit="scwin.sbmUnitTaskDetail_submit" ev:submitdone="scwin.sbmUnitTaskDetail_submitdone"
+        	<xf:submission id="sbmUnitTaskDetail" action="ba/query/api/v1/unit-task/id/{id}" method="get" mediatype="application/json"
+        		ref="" target='data:json,["common","unitAfrs","scrns"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="scwin.sbmUnitTaskDetail_submit" ev:submitdone="scwin.sbmUnitTaskDetail_submitdone"
         		ev:submiterror="scwin.sbmUnitTaskDetail_submiterror" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="sbmEmpInfo" action="org/query/api/v1/emp-info/id/{id}" method="get" mediatype="application/json" ref=""
+        		target="data:json,emp" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg=""
+        		ev:submit="" ev:submitdone="scwin.sbmEmpInfo_submitdone" ev:submiterror="" abortTrigger="">
         	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
-        <script lazy="false" type="text/javascript"><![CDATA[
+        <script lazy="false" type="text/javascript"><![CDATA[var bizId = 0;
 scwin.onpageload = function () {
     var paramData = $p.getParameter("LeftSearch");
     // var data = JSON.stringify(paramData);
     // alert(data);
     mainTitle.setValue(paramData.name);
-
+    bizId = paramData.id;
     const param = {
-        id: 1
+        id: bizId
     };
 
     $c.sbm.execute(sbmUnitTaskDetail, param);
@@ -132,6 +156,11 @@ scwin.sbmUnitTaskDetail_submit = function (e) {
 
 scwin.sbmUnitTaskDetail_submitdone = function (e) {
 
+    const param = {
+        id: bizId
+    };
+
+    $c.sbm.execute(sbmEmpInfo, param);
 };
 
 scwin.sbmUnitTaskDetail_submiterror = function (e) {
@@ -161,6 +190,10 @@ scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
     };
 
     $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", options);
+};
+
+scwin.sbmEmpInfo_submitdone = function (e) {
+
 };
 ]]></script>
     </head>
@@ -195,7 +228,7 @@ scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
     					</w2:attributes>
     				</xf:group>
     				<xf:group tagname="td" style="" class="w2tb_td">
-    					<w2:textbox ref="data:unitAfrs.chrrName" style="" id="" label=""></w2:textbox>
+    					<w2:textbox ref="data:emp.empName" style="" id="" label=""></w2:textbox>
     				</xf:group>
     			</xf:group>
     			<xf:group tagname="tr" style="">
@@ -206,7 +239,7 @@ scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
     					</w2:attributes>
     				</xf:group>
     				<xf:group tagname="td" style="" class="w2tb_td">
-    					<w2:textbox ref="data:dataMap1.key3" style="" id="" label=""></w2:textbox>
+    					<w2:textbox ref="data:emp.ctcp1" style="" id="" label=""></w2:textbox>
     				</xf:group>
     				<xf:group tagname="th" style="" class="w2tb_th">
     					연락처2
@@ -215,7 +248,7 @@ scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
     					</w2:attributes>
     				</xf:group>
     				<xf:group tagname="td" style="" class="w2tb_td">
-    					<w2:textbox ref="data:dataMap1.key4" style="" id="" label=""></w2:textbox>
+    					<w2:textbox ref="data:emp.ctcp2" style="" id="" label=""></w2:textbox>
     				</xf:group>
     			</xf:group>
     			<xf:group tagname="tr" style="">
@@ -226,7 +259,7 @@ scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
     					</w2:attributes>
     				</xf:group>
     				<xf:group tagname="td" style="" class="w2tb_td">
-    					<w2:textbox ref="data:dataMap1.key5" style="" id="" label=""></w2:textbox>
+    					<w2:textbox ref="data:emp.emal" style="" id="" label=""></w2:textbox>
     				</xf:group>
     				<xf:group tagname="th" style="" class="w2tb_th">
     					<w2:attributes>

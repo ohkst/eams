@@ -234,6 +234,7 @@ scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
     var id = "";
     if (type === 0) { // 업무
         cellData = unitTasks.getCellData(rowIndex, columnId);
+        id = unitTasks.getCellData(rowIndex, "unitAfrsId");
     } else if (type === 1) { // 화면
         cellData = scrns.getCellData(rowIndex, columnId);
         id = scrns.getCellData(rowIndex, "arfsScrnId");
