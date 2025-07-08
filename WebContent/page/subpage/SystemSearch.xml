@@ -30,8 +30,7 @@ scwin.onpageload = function () {
 
     wfmLeftContents.setSrc("/page/component/LeftSystemSearch.xml", obj);
     wfmRightContents.setSrc("/page/component/SystemSearchDashboard.xml");
-};
-]]></script>
+};]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload">
     <xf:group id="" style=";display:flex;width:100%;height:100%;">

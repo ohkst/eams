@@ -218,10 +218,14 @@ scwin.sbmSystemDetailList_submiterror = function (e) {
 };
 
 scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
+    const id = scrns.getCellData(rowIndex, "afrsScrnId");
+    const name = scrns.getCellData(rowIndex, "scrnName");
+    $p.parent().scwin.openScreenDetailPopup(id, name);
     $p.closePopup();
 };
 
 scwin.grdTRList_oncellclick = function (rowIndex, columnIndex, columnId) {
+    $p.main().scwin.saveParam(svcs.getCellData(rowIndex, "svcCd"));
     $p.closePopup();
 };]]></script>
     </head>

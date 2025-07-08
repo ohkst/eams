@@ -246,6 +246,7 @@ scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
         id = tables.getCellData(rowIndex, "tlbId");
     } else if (type === 4) { // 담당자
         cellData = emps.getCellData(rowIndex, columnId);
+        id = emps.getCellData(rowIndex, "empId");
     }
 
     var rowJSON = {
@@ -908,7 +909,7 @@ scwin.sbmServiceList_submiterror = function (e) {
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
     						<w2:column width="70" inputType="text" style="" id="column4" value="empId" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column3" value="empNo" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column3" value="empNo" displayMode="label" hidden="false"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="column2" value="empName" displayMode="label"
     							hidden="false">
     						</w2:column>
