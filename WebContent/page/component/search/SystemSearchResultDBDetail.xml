@@ -529,7 +529,45 @@
         				</w2:row>
         			</w2:data>
         		</w2:dataList>
-        	</w2:dataCollection>
+        		<w2:dataList id="scrns">
+					<w2:columnInfo>
+						<w2:column id="arfsScrnId" name="업무화면ID" dataType="text"></w2:column>
+						<w2:column id="sysName" name="시스템명" dataType="text"></w2:column>
+						<w2:column id="scrnNo" name="화면번호" dataType="text"></w2:column>
+						<w2:column id="scrnName" name="화면명" dataType="text"></w2:column>
+						<w2:column id="dvlpChrr" name="개발담당자" dataType="text"></w2:column>
+						<w2:column id="dvlpChrrNo" name="개발담당자사번" dataType="text"></w2:column>
+						<w2:column id="dvlpChrrName" name="개발담당자명" dataType="text"></w2:column>
+						<w2:column id="mgmtChrr" name="운영담당자" dataType="text"></w2:column>
+						<w2:column id="mgmtChrrNo" name="운영담당자사번" dataType="text"></w2:column>
+						<w2:column id="mgmtChrrName" name="운영담당자명" dataType="text"></w2:column>
+						<w2:column id="witfChrgDep" name="현업담당부서" dataType="text"></w2:column>
+						<w2:column id="witfChrgDepName" name="현업담당부서명" dataType="text"></w2:column>
+						<w2:column id="witfChrr" name="현업담당자" dataType="text"></w2:column>
+						<w2:column id="witfChrrNo" name="현업담당자사번" dataType="text"></w2:column>
+						<w2:column id="witfChrrName" name="현업담당자명" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data xmlns="">
+						<w2:row>
+							<arfsScrnId><![CDATA[1]]></arfsScrnId>
+							<sysName><![CDATA[WINK]]></sysName>
+							<scrnNo><![CDATA[01000]]></scrnNo>
+							<scrnName><![CDATA[계좌조회]]></scrnName>
+							<dvlpChrr><![CDATA[2]]></dvlpChrr>
+							<dvlpChrrNo><![CDATA[000002]]></dvlpChrrNo>
+							<dvlpChrrName><![CDATA[홍길순]]></dvlpChrrName>
+							<mgmtChrr><![CDATA[2]]></mgmtChrr>
+							<mgmtChrrNo><![CDATA[000002]]></mgmtChrrNo>
+							<mgmtChrrName><![CDATA[홍길순]]></mgmtChrrName>
+							<witfChrgDep><![CDATA[2]]></witfChrgDep>
+							<witfChrgDepName><![CDATA[인사팀]]></witfChrgDepName>
+							<witfChrr><![CDATA[1]]></witfChrr>
+							<witfChrrNo><![CDATA[000001]]></witfChrrNo>
+							<witfChrrName><![CDATA[홍길동]]></witfChrrName>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
         	<w2:workflowCollection />
         	<xf:submission id="sbmTableDetail" action="da/query/api/v1/table/id/{id}" method="get" mediatype="application/json" ref=""
         		target='data:json,["common","tableInfo","columns","indexes"]' encoding="UTF-8" instance="" replace="" errorHandler=""
@@ -537,7 +575,7 @@
         		ev:submitdone="scwin.sbmTableDetail_submitdone" ev:submiterror="scwin.sbmTableDetail_submiterror" abortTrigger="">
         	</xf:submission>
         	<xf:submission id="sbmTableToServiceList" action="aa/query/api/v1/table-to-service-map/id/{id}" method="get"
-        		mediatype="application/json" ref="" target='data:json,["common","tblInfo","svcs"]' encoding="UTF-8" instance="" replace=""
+        		mediatype="application/json" ref="" target='data:json,["common","tblInfo","svcs","scrns"]' encoding="UTF-8" instance="" replace=""
         		errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit="scwin.sbmTableToServiceList_submit"
         		ev:submitdone="scwin.sbmTableToServiceList_submitdone" ev:submiterror="scwin.sbmTableToServiceList_submiterror" abortTrigger="">
         	</xf:submission>
@@ -806,19 +844,75 @@ scwin.sbmTableToServiceList_submiterror = function (e) {
     						</w2:row>
     					</w2:gBody>
     				</w2:gridView>
-    				<w2:gridView checkAllType="false" dataList="data:dataList1" style="width:100%;height: 400px;" autoFit="allColumn" id=""
+    				<w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" autoFit="allColumn" id=""
     					defaultCellHeight="43">
-    					<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
+    					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     					<w2:header style="" id="header1">
     						<w2:row style="" id="row1">
-    							<w2:column width="70" inputType="text" style="" id="column4" value="화면번호" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="column3" value="화면명" displayMode="label"></w2:column>
+    							<w2:column hidden="false" width="70" inputType="text" style="" id="column15" value="업무화면ID"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="false" width="70" inputType="text" style="" id="column14" value="시스템명"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="화면번호"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="화면명"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="개발담당자"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="개발담당자사번"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="false" width="70" inputType="text" style="" id="column9" value="개발담당자명"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="운영담당자"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="운영담당자사번"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="운영담당자명"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="현업담당부서"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="현업담당부서명"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="현업담당자"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="현업담당자사번"
+    								displayMode="label">
+    							</w2:column>
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="현업담당자명"
+    								displayMode="label">
+    							</w2:column>
     						</w2:row>
     					</w2:header>
     					<w2:gBody style="" id="gBody1">
     						<w2:row style="" id="row2">
-    							<w2:column width="70" inputType="text" style="" id="col1" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="col2" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="arfsScrnId" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="sysName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="scrnNo" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="scrnName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="dvlpChrr" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="dvlpChrrNo" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="dvlpChrrName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="mgmtChrr" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="mgmtChrrNo" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="mgmtChrrName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="witfChrgDep" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="witfChrgDepName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="witfChrr" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="witfChrrNo" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="witfChrrName" value="" displayMode="label"></w2:column>
     						</w2:row>
     					</w2:gBody>
     				</w2:gridView>
