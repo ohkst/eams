@@ -3,6 +3,12 @@ export default {
     "dataPrefix": {
       "@value": "true"
     },
+    "paddingDisplay": {
+      "@value": "false"
+    },
+    "convertPageXML": {
+      "@value": "true"
+    },
     "wpack": {
       "@use": "true",
       "contextRoot": {
@@ -21,11 +27,7 @@ export default {
         "@value": "_wpackbabel_"
       },
       "loadingMode": {
-        "@value": "wpack"
-      },
-      "common": {
-        "@name": "",
-        "@value": ""
+        "@value": "auto"
       },
       "excludePrefix": {
         "@value": "__"
@@ -81,6 +83,12 @@ export default {
     "processMsgWidth": {
       "@value": "295"
     },
+    "processMsgType": {
+      "@value": "wframe"
+    },
+    "processMsgFrameURL": {
+      "@value": "/cm/xml/processMsg.xml"
+    },
     "processMsgBackground": {
       "@backgroundColor": "#112233",
       "@value": "true"
@@ -88,14 +96,78 @@ export default {
     "byteCheckEncoding": {
       "@value": "euc-kr"
     },
+    "executeScript": {
+      "@value": "script"
+    },
     "initScript": {
+      "#cdata": function() { 
+        if (movePage.indexOf("/cm/main/login.xml") === -1) {
+        	$c.hkey.init($p);
+	        $c.hkey.setShortKey($p, $p.main());
+	        $c.win.setLangCode($p, $c.win.getLanguage($p));
+	        $c.win.setHistoryBackEvent();
+	        $c.data.createHolidayDataList($p);        
+	        $c.data.loadHoliday($p);
+        }
+	 
+        },
+      "@value": "true"
+    },
+    "postScript": {
       "@value": "false"
+    },
+    "wframe": {
+      "scope": {
+        "@value": "true"
+      },
+      "mode": {
+        "@value": "async"
+      },
+      "initScript": {
+        "#cdata": function() { 
+            var param = $c.data.getParameter($p, "messageType");
+            if(param !== 'alert' && param !== 'confirm') $c.hkey.setShortKey($p);
+            $c.win.setProgramAuthority($p);
+            $c.data.initChangeCheckedDc($p);
+		 
+        },
+        "@value": "true"
+      },
+      "postScript": {
+        "#cdata": function() { 
+            $c.win.processCommonData($p);
+		 
+        },
+        "@value": "true"
+      },
+      "popupAutoClose": {
+        "@value": "true"
+      }
+    },
+    "pageFrame": {
+      "initScript": {
+        "#cdata": function() { 
+			var param = $c.data.getParameter($p, "messageType");
+            if(param !== 'alert' && param !== 'confirm') $c.hkey.setShortKey($p);
+            $c.win.setProgramAuthority($p);
+            $c.data.initChangeCheckedDc($p);
+		 
+        },
+        "@value": "true"
+      },
+      "postScript": {
+        "#cdata": function() { 
+            $c.win.processCommonData($p);
+		 
+        },
+        "@value": "true"
+      }
     },
     "clearMemory": {
       "@value": "false"
     },
     "stylesheet": {
-      "@earlyImportList": "/cm/css/base.css",
+      "@earlyImportList": "/cm/css/base.css,/cm/css/product.css",
       "@enable": "true",
       "@import": "link",
       "@value": "stylesheet_ext.css"
@@ -124,7 +196,62 @@ export default {
         "@value": "true"
       }
     },
-    "engine": {},
+    "projectCommon": {
+      "module": [
+        {
+          "@name": "$c.data",
+          "@src": "/cm/gcc/data.xml"
+        },
+        {
+          "@name": "$c.sbm",
+          "@src": "/cm/gcc/sbm.xml"
+        },
+        {
+          "@name": "$c.win",
+          "@src": "/cm/gcc/win.xml"
+        },
+        {
+          "@name": "$c.util",
+          "@src": "/cm/gcc/util.xml"
+        },
+        {
+          "@name": "$c.date",
+          "@src": "/cm/gcc/date.xml"
+        },
+        {
+          "@name": "$c.num",
+          "@src": "/cm/gcc/num.xml"
+        },
+        {
+          "@name": "$c.str",
+          "@src": "/cm/gcc/str.xml"
+        },
+        {
+          "@name": "$c.hkey",
+          "@src": "/cm/gcc/hkey.xml"
+        },
+        {
+          "@name": "$c.ext",
+          "@src": "/cm/gcc/ext.xml"
+        }
+      ]
+    },
+    "udc": {
+      "requires": {
+        "require": [
+          {
+            "@as": "udc_fileMultiUpload",
+            "@src": "/cm/udc/fileMultiUpload.xml",
+            "@type": "page"
+          },
+          {
+            "@as": "udc_qrCode",
+            "@src": "/cm/udc/qrCode.xml",
+            "@type": "page"
+          }
+        ]
+      }
+    },
     "ModelUtil": {
       "copyChildrenNodes": {
         "@refresh": "false"
@@ -157,13 +284,16 @@ export default {
         "@value": "$c.sbm.__preSubmitFunction"
       },
       "callbackSubmitFunction": {
-        "@value": ""
+        "@value": "$c.sbm.__callbackSubmitFunction"
       },
       "requestID": {
         "@value": ""
       },
       "makeGlobalObject": {
         "@value": "true"
+      },
+      "submitErrorHandler": {
+        "@value": "$c.sbm.__submitErrorHandler"
       }
     },
     "visibleHelper": {
@@ -199,7 +329,7 @@ export default {
     "engineCache": {
       "@compression": "true",
       "@enable": "true",
-      "@postfix": "month"
+      "@postfix": "day"
     },
     "userAgentPattern": {
       "@XPathParser": "Edge|Trident|MSIE"
@@ -208,7 +338,7 @@ export default {
       "@value": "false"
     },
     "environment": {
-      "@cache": "nocache",
+      "@cache": "cache",
       "@mode": "production",
       "@postfix": "day"
     },
@@ -226,6 +356,9 @@ export default {
       "@moz": "0",
       "@opera": "0",
       "@safari": "0"
+    },
+    "engineChunkNum": {
+      "@value": "1"
     },
     "dataList": {
       "removeDummyRowStatus": {
@@ -268,6 +401,9 @@ export default {
       "rowNumBackgroundColor": {
         "@value": "#e5eff7"
       },
+      "rowNumRowMouseOverColor": {
+        "@value": "true"
+      },
       "selectedRowColor": {
         "@value": "#fcf8e3"
       },
@@ -285,9 +421,6 @@ export default {
       },
       "rowMouseOverColor": {
         "@value": "#edf3fb"
-      },
-      "tooltipStyle": {
-        "@value": "padding:1px 3px 0;line-height:14px;font-size:12px;border:0;background-color:#5c85d4;color:#fff"
       },
       "noResultMessageVisible": {
         "@value": "true"
@@ -353,11 +486,23 @@ export default {
       ]
     },
     "gridView": {
+      "defaultCellHeight": {
+        "@value": "37"
+      },
+      "selectedCellColor": {
+        "@value": "var(--ws-grid-selected-cell-bg)"
+      },
+      "filterListRowHeight": {
+        "@value": "28"
+      },
       "noSelect": {
         "@value": "true"
       },
       "drilldownFooterExpressionAllData": {
         "@value": "true"
+      },
+      "dataTag": {
+        "@value": "span"
       },
       "rowNumStatusUniqueId": {
         "@value": "true"
@@ -383,25 +528,28 @@ export default {
         "@value": "focus"
       },
       "rowNumBackgroundColor": {
-        "@value": "#e5eff7"
+        "@value": "transparent"
+      },
+      "rowNumRowMouseOverColor": {
+        "@value": "true"
       },
       "selectedRowColor": {
-        "@value": "#fcf8e3"
+        "@value": "var(--ws-grid-selected-row-bg)"
       },
       "oddEvenColorDisplay": {
         "@value": "true"
       },
       "evenRowBackgroundColor": {
-        "@value": "#f5f5f5"
+        "@value": "var(--ws-gray-0)"
       },
       "oddRowBackgroundColor": {
-        "@value": "#ffffff"
+        "@value": "var(--ws-gray-0)"
       },
       "rowMouseOver": {
         "@value": "true"
       },
       "rowMouseOverColor": {
-        "@value": "#edf3fb"
+        "@value": "var(--ws-grid-hover-bg)"
       },
       "tooltipStyle": {
         "@value": "padding:1px 3px 0;line-height:14px;font-size:12px;border:0;background-color:#5c85d4;color:#fff"
@@ -475,9 +623,35 @@ export default {
               "@value": "yyyy-MM-dd HH:mm:SS",
               "@valueType": "yearMonthDateTimeSec"
             }
-          ]
+          ],
+          "dateValidCheck": {
+            "@value": "true"
+          },
+          "dateValidSet": {
+            "@value": "true"
+          }
         }
-      ]
+      ],
+      "focusMode": {
+        "@value": "both"
+      }
+    },
+    "input": {
+      "focusStyle": {
+        "@value": ""
+      },
+      "dateMask": {
+        "@value": "yyyy-MM-dd"
+      },
+      "timeMask": {
+        "@value": "HH:mm"
+      },
+      "focusCalcSize": {
+        "@value": "false"
+      },
+      "editFormatParticalMask": {
+        "@value": "true"
+      }
     },
     "inputCalendar": {
       "validCheck": {
@@ -503,20 +677,9 @@ export default {
       },
       "calendarImageOver": {
         "@value": ""
-      }
-    },
-    "input": {
-      "focusStyle": {
-        "@value": ""
       },
-      "dateMask": {
-        "@value": "yyyy-MM-dd"
-      },
-      "timeMask": {
-        "@value": "HH:mm"
-      },
-      "focusCalcSize": {
-        "@value": "false"
+      "displayDayType": {
+        "@value": "text"
       }
     },
     "calendar": {
@@ -525,6 +688,9 @@ export default {
       },
       "maxYear": {
         "@value": "2030"
+      },
+      "displayDayType": {
+        "@value": "text"
       }
     },
     "selectbox": {
@@ -543,7 +709,17 @@ export default {
         "@value": "true"
       }
     },
-    "tabControl": {},
+    "tabControl": {
+      "tabRole": {
+        "@value": "false"
+      },
+      "tabHostRole": {
+        "@value": "false"
+      },
+      "tabLiRole": {
+        "@value": "none"
+      }
+    },
     "treeview": {
       "tooltipGroupClass": {
         "@value": "false"
@@ -556,17 +732,6 @@ export default {
     },
     "anchor": {
       "preventMultipleClick": {
-        "@value": "true"
-      }
-    },
-    "wframe": {
-      "mode": {
-        "@value": "async"
-      },
-      "scope": {
-        "@value": "true"
-      },
-      "popupAutoClose": {
         "@value": "true"
       }
     },
@@ -589,11 +754,22 @@ export default {
     },
     "popup": {
       "popupCenter": {
-        "@value": "false"
+        "@value": "true"
+      }
+    },
+    "autoComplete": {
+      "overrideKey": {}
+    },
+    "enableKey": {
+      "useCtrlD": {
+        "@value": "true"
+      },
+      "useCtrlK": {
+        "@value": "true"
       }
     },
     "body": {
-      "tooltipSec": {
+      "toolTipSec": {
         "@value": "1"
       }
     },
@@ -607,60 +783,21 @@ export default {
         "@value": "3.19"
       }
     },
+    "scheduleCalendar": {
+      "version": {
+        "@value": "6.1.11"
+      }
+    },
     "languagePack": {
-      "@useLanguagePack": "false",
+      "@useLanguagePack": "true",
       "url": [
         {
           "@lang": "ko",
-          "@value": "/langpack/ko.js"
+          "@value": "/message/getLanguagePack/ko"
         },
         {
           "@lang": "en",
-          "@value": "/langpack/en.js"
-        },
-        {
-          "@lang": "ch",
-          "@value": "/langpack/ch.js"
-        }
-      ]
-    },
-    "projectCommon": {
-      "module": [
-        {
-          "@name": "$c.data",
-          "@src": "/cm/gcc/data.xml"
-        },
-        {
-          "@name": "$c.date",
-          "@src": "/cm/gcc/date.xml"
-        },
-        {
-          "@name": "$c.ext",
-          "@src": "/cm/gcc/ext.xml"
-        },
-        {
-          "@name": "$c.hkey",
-          "@src": "/cm/gcc/hkey.xml"
-        },
-        {
-          "@name": "$c.num",
-          "@src": "/cm/gcc/num.xml"
-        },
-        {
-          "@name": "$c.sbm",
-          "@src": "/cm/gcc/sbm.xml"
-        },
-        {
-          "@name": "$c.str",
-          "@src": "/cm/gcc/str.xml"
-        },
-        {
-          "@name": "$c.util",
-          "@src": "/cm/gcc/util.xml"
-        },
-        {
-          "@name": "$c.win",
-          "@src": "/cm/gcc/win.xml"
+          "@value": "/message/getLanguagePack/en"
         }
       ]
     },
@@ -672,6 +809,9 @@ export default {
     },
     "requirejs": {
       "@timeout": "20"
+    },
+    "removeXmlNameSpace": {
+      "@value": "true"
     }
   }
 }

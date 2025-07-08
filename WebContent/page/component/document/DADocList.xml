@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:ev="http://www.w3.org/2001/xml-events"
     xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
-    <head meta_screenName="업무 시스템 목록">
+    <head meta_screenName="DA 산출물 리스트">
         <w2:type>COMPONENT</w2:type>
         <w2:buildDate/>
         <w2:MSA/>
@@ -38,7 +38,7 @@
         				<total><![CDATA[10]]></total>
         			</w2:data>
         		</w2:dataMap>
-        		<w2:dataList id="syss">
+        		w2:dataList id="syss">
         			<w2:columnInfo>
         				<w2:column id="sysId" name="시스템ID" dataType="text"></w2:column>
         				<w2:column id="sysCd" name="시스템코드" dataType="text"></w2:column>
@@ -81,44 +81,93 @@
         					<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
         				</w2:row>
         			</w2:data>
-        		</w2:dataList>
-        	</w2:dataCollection>
+        		/w2:dataList>
+        		<w2:dataList id="docs">
+					<w2:columnInfo>
+						<w2:column id="prdtnId" name="산출물ID" dataType="text"></w2:column>
+						<w2:column id="linkSysId" name="연결시스템ID" dataType="text"></w2:column>
+						<w2:column id="dcmtName" name="문서명" dataType="text"></w2:column>
+						<w2:column id="prdtnSysDvsn" name="산출물시스템구분" dataType="text"></w2:column>
+						<w2:column id="prdtnLclsCd" name="산출물대분류코드" dataType="text"></w2:column>
+						<w2:column id="prdtnSclsCd" name="산출물소분류코드" dataType="text"></w2:column>
+						<w2:column id="prdtnSclsCdName" name="산출물소분류코드명" dataType="text"></w2:column>
+						<w2:column id="ver" name="버전" dataType="text"></w2:column>
+						<w2:column id="dcmtMngtDep" name="문서관리부서" dataType="text"></w2:column>
+						<w2:column id="dcmtMngtDepName" name="문서관리부서명" dataType="text"></w2:column>
+						<w2:column id="dcmtChrr" name="문서담당자" dataType="text"></w2:column>
+						<w2:column id="dcmtChrrNo" name="문서담당자사번" dataType="text"></w2:column>
+						<w2:column id="dcmtChrrName" name="문서담당자명" dataType="text"></w2:column>
+						<w2:column id="frstErlmDt" name="최초등록일" dataType="text"></w2:column>
+						<w2:column id="rcenChngDt" name="최근변경일" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data xmlns="">
+						<w2:row>
+							<prdtnId><![CDATA[1]]></prdtnId>
+							<linkSysId><![CDATA[1]]></linkSysId>
+							<dcmtName><![CDATA[홈페이지개발매뉴얼]]></dcmtName>
+							<prdtnSysDvsn><![CDATA[A]]></prdtnSysDvsn>
+							<prdtnLclsCd><![CDATA[AMDVL]]></prdtnLclsCd>
+							<prdtnSclsCd><![CDATA[AMDVL]]></prdtnSclsCd>
+							<prdtnSclsCdName><![CDATA[개발매뉴얼]]></prdtnSclsCdName>
+							<ver><![CDATA[0.1]]></ver>
+							<dcmtMngtDep><![CDATA[2]]></dcmtMngtDep>
+							<dcmtMngtDepName><![CDATA[인사부]]></dcmtMngtDepName>
+							<dcmtChrr><![CDATA[1]]></dcmtChrr>
+							<dcmtChrrNo><![CDATA[000001]]></dcmtChrrNo>
+							<dcmtChrrName><![CDATA[홍길동]]></dcmtChrrName>
+							<frstErlmDt><![CDATA[20200101]]></frstErlmDt>
+							<rcenChngDt><![CDATA[20200101]]></rcenChngDt>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
         	<w2:workflowCollection />
-        	<xf:submission id="sbmSystemList" action="aa/query/api/v1/system-list" method="get" mediatype="application/json" ref=""
-        		target='data:json,["common","pageInfo","syss"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
-        		mode="asynchronous" processMsg="" ev:submit="scwin.sbmSystemList_submit" ev:submitdone="scwin.sbmSystemList_submitdone"
-        		ev:submiterror="scwin.sbmSystemList_submiterror" abortTrigger="">
+        	<xf:submission id="sbmDADocList" action="doc/query/api/v1/document-list" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","pageInfo","docs"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" abortTrigger="" ev:submitdone="scwin.sbmDADocList_submitdone">
         	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
-scwin.onpageload = function () {
-    $c.sbm.execute(sbmSystemList);
+scwin.onpageload = function() {
+   
+    const param = {
+        offset: 0,
+        limit: 100,
+        type: "PAGE",
+        sortMethod: "NO",
+        searchMethods: ["CONTAINS"],
+        sortFields: ["prdtnSysDvsn"],
+        searchFields: ["prdtnSysDvsn"],
+        searchContent: "D"
+    };
+
+    $c.sbm.execute(sbmDADocList, param);
 };
 
 scwin.btnSearch_onclick = function (e) {
-    syss.clearFilter();
+    docs.clearFilter();
 
     let jsonFilterOptions = {};
 
     jsonFilterOptions.type = "row";
-    jsonFilterOptions.colIndex = "sysName";
+    jsonFilterOptions.colIndex = "dcmtName";
     jsonFilterOptions.key = tfBizName.getValue();
     jsonFilterOptions.exactMatch = false;
     jsonFilterOptions.condition = "and";
 
-    syss.setColumnFilter(jsonFilterOptions);
+    docs.setColumnFilter(jsonFilterOptions);
 
     let jsonFilterOptions2 = {};
 
     jsonFilterOptions2.type = "row";
-    jsonFilterOptions2.colIndex = "itChrrName";
+    jsonFilterOptions2.colIndex = "dcmtChrrName";
     jsonFilterOptions2.key = tfOwnerName.getValue();
     jsonFilterOptions2.exactMatch = false;
     jsonFilterOptions2.condition = "and";
 
-    syss.setColumnFilter(jsonFilterOptions2);
+    docs.setColumnFilter(jsonFilterOptions2);
 };
 
 scwin.btnReset_onclick = function (e) {
@@ -138,31 +187,7 @@ scwin.imgBtnCSV_onclick = function (e) {
 };
 
 
-
-scwin.sbmSystemList_submit = function (e) {
-
-};
-
-scwin.sbmSystemList_submitdone = function (e) {
-
-};
-
-scwin.sbmSystemList_submiterror = function (e) {
-
-};
-
-scwin.openScreenDetailPopup = function (id, name) {
-    setTimeout(function () {
-        scwin.openScreenDetail(id, name);
-    }, 300);
-};
-
 scwin.grdSystemList_oncellclick = function (rowIndex, columnIndex, columnId) {
-    scwin.openDetailSystemListPopup(rowIndex);
-};
-
-scwin.openDetailSystemListPopup = function (rowIndex) {
-
     var rowJSON = {
         "id": syss.getCellData(rowIndex, "sysId")
     };
@@ -188,56 +213,29 @@ scwin.openDetailSystemListPopup = function (rowIndex) {
         title: false,
         dataObject: dataObject,
         closeAction: "scwin.closeAction"
-        // scopeInherit: "all"
     };
 
     $c.util.openEamsPopup("/page/component/cmdb/PopupDetailSystemList.xml", options);
-}
-
-scwin.openScreenDetail = function (id, name) {
-
-    var rowJSON = {
-        "id": id,
-        "name": name
-    };
-
-    var dataObject = {
-        "type": "json",
-        "name": "PopupData",
-        "data": rowJSON
-    };
-
-    var options = {
-        id: "popup1",
-        type: "wframePopup",
-
-        popupName: "화면상세",
-        modal: true,
-        useIFrame: false,
-
-        resizable: true,
-        status: true,
-        menubar: false,
-        scrollbars: false,
-        title: false,
-        dataObject: dataObject
-    };
-
-    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", options);
-}
+};
 
 scwin.closeAction = function (id, info) {
+
     if (!info.isCloseButtonClick) {
         return true;
     }
 
     return true
-};]]></script>
+};
+
+scwin.sbmDADocList_submitdone = function (e) {
+
+};
+]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="">
     	<xf:group style="width:100%;height:100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 16px;"
     		id="">
-    		<w2:textbox id="" label="업무 시스템" style="width: 150px;height: 43px;font-size:22px;font-weight:bold;"></w2:textbox>
+    		<w2:textbox id="" label="DA 산출물 리스트 " style="width:225px;height:43px;font-size:22px;font-weight:bold;"></w2:textbox>
     		<xf:group style="width: 100%;display: flex;justify-content: flex-end;gap: 14px;" id="">
     			<w2:button
     				style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;"
@@ -253,59 +251,61 @@ scwin.closeAction = function (id, info) {
     		</xf:group>
     		<xf:group id="" style="width: 100%;display: flex;">
     			<xf:group id="" style="display: flex;">
-    				<w2:textbox style="position:static; top:65px; left:277px; width:150px; height:23px; " id="" label="시스템"></w2:textbox>
+    				<w2:textbox style="position:static; top:65px; left:277px; width:150px; height:23px; " id="" label="문서명"></w2:textbox>
     				<xf:input style="width: 144px;height: 21px;" id="tfBizName"></xf:input>
     			</xf:group>
     			<xf:group id="" style="display: flex;margin-left: auto;" ev:onclick="scwin.btnSearch_onclick">
-    				<w2:textbox id="" label="IT담당자명" style="position:static; top:65px; left:277px; width:150px; height:23px; "></w2:textbox>
+    				<w2:textbox id="" label="담당자명" style="position:static; top:65px; left:277px; width:150px; height:23px; "></w2:textbox>
     				<xf:input id="tfOwnerName" style="width: 144px;height: 21px;"></xf:input>
     			</xf:group>
     		</xf:group>
     		<w2:gridView checkAllType="false" defaultCellHeight="20" id="grdSystemList" style="width: 100%;height: 150px;flex: 1;"
-    			dataList="data:syss" autoFit="allColumn" useFilterSearch="false" useFilterList="true" sortable="true" ev:oncellclick="scwin.grdSystemList_oncellclick">
+    			dataList="data:docs" autoFit="allColumn" useFilterSearch="false" useFilterList="true" sortable="true"
+    			ev:oncellclick="scwin.grdSystemList_oncellclick">
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     			<w2:header style="" id="header1">
     				<w2:row style="" id="row1">
-    					<w2:column width="70" inputType="text" style="" id="column18" value="시스템ID" displayMode="label" hidden="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column17" value="시스템코드" displayMode="label" hidden="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column16" value="시스템명" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column15" value="시스템설명" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column14" value="서비스개시일" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column13" value="서비스종료일" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column12" value="IT담당자" displayMode="label" hidden="true"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column11" value="IT담당자사번" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column10" value="IT담당자명" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column9" value="시스템구성도여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column8" value="개발매뉴얼여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column7" value="운영매뉴얼여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column6" value="아키텍처여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column5" value="RFP여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column4" value="요구사항정의서여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column3" value="착수보고서여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column2" value="변경심의보고서여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column1" value="완료보고서여부" displayMode="label"></w2:column>
+    					<w2:column hidden="false" width="70" inputType="text" style="" id="column15" value="산출물ID" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="연결시스템ID" displayMode="label"></w2:column>
+    					<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="문서명" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="산출물시스템구분" displayMode="label">
+    					</w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="산출물대분류코드" displayMode="label">
+    					</w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="산출물소분류코드" displayMode="label">
+    					</w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column9" value="산출물소분류코드명" displayMode="label">
+    					</w2:column>
+    					<w2:column hidden="false" width="70" inputType="text" style="" id="column8" value="버전" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="문서관리부서" displayMode="label">
+    					</w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="문서관리부서명" displayMode="label">
+    					</w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="문서담당자" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="문서담당자사번" displayMode="label"></w2:column>
+    					<w2:column hidden="false" width="70" inputType="text" style="" id="column3" value="문서담당자명" displayMode="label">
+    					</w2:column>
+    					<w2:column hidden="false" width="70" inputType="text" style="" id="column2" value="최초등록일" displayMode="label"></w2:column>
+    					<w2:column hidden="false" width="70" inputType="text" style="" id="column1" value="최근변경일" displayMode="label"></w2:column>
     				</w2:row>
     			</w2:header>
     			<w2:gBody style="" id="gBody1">
     				<w2:row style="" id="row2">
-    					<w2:column width="70" inputType="text" style="" id="sysId" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="sysCd" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="sysName" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="sysDscr" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svcOpngDt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svcEndDt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="itChrrNo" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="sysCpstDgrmYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="devlMnulYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="mgmtMnulYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="archtYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="rfpYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="reqtDefYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="mpiwRptsYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="chngDlbrRptsYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="cpltRptsYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="prdtnId" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="linkSysId" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="dcmtName" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="prdtnSysDvsn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="prdtnLclsCd" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="prdtnSclsCd" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="prdtnSclsCdName" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="ver" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="dcmtMngtDep" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="dcmtMngtDepName" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="dcmtChrr" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="dcmtChrrNo" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="dcmtChrrName" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="frstErlmDt" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="rcenChngDt" value="" displayMode="label"></w2:column>
     				</w2:row>
     			</w2:gBody>
     		</w2:gridView>

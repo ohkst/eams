@@ -398,86 +398,6 @@ scwin.onpageload = function() {
 	
 };
 
-scwin.searchboxOK_onkeypress = function (e) {
-
-    // 엔터치면 코드 적용
-    if((e.charCode || e.keyCode) === 13) {
-        // $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultDetail.xml");
-        dataList1.clearFilter();
-        dataList3.clearFilter();
-        dataList4.clearFilter();
-        dataList5.clearFilter();
-        dataList7.clearFilter();
-
-        let jsonFilterOptions = {};
-
-        jsonFilterOptions.type = "row";
-        jsonFilterOptions.colIndex = "name";
-        jsonFilterOptions.key = searchboxOK.getValue();
-        jsonFilterOptions.exactMatch = false;
-        jsonFilterOptions.condition = "and";
-
-        dataList1.setColumnFilter(jsonFilterOptions);
-        dataList3.setColumnFilter(jsonFilterOptions);
-        dataList4.setColumnFilter(jsonFilterOptions);
-        dataList5.setColumnFilter(jsonFilterOptions);
-        dataList7.setColumnFilter(jsonFilterOptions);
-        
-    } else {
-        // $p.log("SEARCH!!!!");
-
-        // 검색을 구현하면 될듯
-        // dataList1.clearFilter();
-
-        // let jsonFilterOptions = {};
-
-        // jsonFilterOptions.type = "row";
-        // jsonFilterOptions.colIndex = "name";
-        // jsonFilterOptions.key = searchboxOK.getValue();
-        // jsonFilterOptions.exactMatch = false;
-        // jsonFilterOptions.condition = "and";
-
-        // dataList1.setColumnFilter(jsonFilterOptions);        
-    }
-};
-
-scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
-    // $p.log(rowIndex + columnId + columnId);
-
-    var cellData = "";
-    if (type === 0) {
-        cellData = dataList1.getCellData(rowIndex, columnId);
-    } else if (type === 1){
-        cellData = dataList3.getCellData(rowIndex, columnId);
-    } else if (type === 2){
-        cellData = dataList4.getCellData(rowIndex, columnId);
-    } else if (type === 3){
-        cellData = dataList5.getCellData(rowIndex, columnId);
-    } else if (type === 4){
-        cellData = dataList7.getCellData(rowIndex, columnId);
-    }
-
-    $p.log(cellData);
-
-    var rowJSON = { 
-        "Personal Info" : { "Name": "Lee", "Age": 50, "Married" : false},
-        "Region": "Seoul",  
-        "Carrier": true,
-        "name": cellData
-     }; 
- 
-     // 새로 열릴 화면에 데이터를 전달 (dataObject를 통해 전달 가능)
-     var obj = { 
-        "dataObject": {
-            "type" : "json",
-            "name" : "LeftSearch",  
-            "data" : rowJSON 
-         }
-     };
-
-    scwin.setContentsSrc(type, obj);
-}
-
 scwin.btnServer_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/cmdb/ServerList.xml");
 };
@@ -497,20 +417,34 @@ scwin.btnSecurity_onclick = function (e) {
 scwin.btnBizSystem_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/cmdb/BizSystemList.xml");
 };
+
+scwin.btnTRM_onclick = function (e) {
+    $p.parent().wfmRightContents.setSrc("/page/component/cmdb/TrmList.xml");
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style=";max-width:100%;min-width:100%;">
     	<xf:group
     		style="width:100%;height: 100vh;background-color:#EFF0F4;padding: 12px;display: flex;flex-direction: column;overflow-y: auto;scrollbar-width: none;gap: 12px;box-sizing: border-box;"
     		id="">
-    		<w2:searchbox ev:onchange="scwin.searchboxOK_onchange" style="width: 100%;height: 48px;display: flex;flex-shrink: 0;"
-    			id="searchboxOK" ev:onkeypress="scwin.searchboxOK_onkeypress">
-    		</w2:searchbox>
-    		<w2:button style="width:100%;height:48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" id="btnServer" label="Server" ev:onclick="scwin.btnServer_onclick"></w2:button>
-    		<w2:button id="btnDB" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" label="DB" ev:onclick="scwin.btnDB_onclick"></w2:button>
-    		<w2:button id="btnNetwork" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" label="네트워크" ev:onclick="scwin.btnNetwork_onclick"></w2:button>
-    		<w2:button id="btnSecurity" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" label="보안장비" ev:onclick="scwin.btnSecurity_onclick"></w2:button>
-    		<w2:button id="btnBizSystem" style="width: 100%;height: 48px;font-weight:bold;font-size:18px;text-align:left;border-width:0px;" label="업무시스템" ev:onclick="scwin.btnBizSystem_onclick"></w2:button>
+    		<w2:button style="width:100%;height:48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" id="btnServer"
+    			label="Server" ev:onclick="scwin.btnServer_onclick">
+    		</w2:button>
+    		<w2:button id="btnDB" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;"
+    			label="DB" ev:onclick="scwin.btnDB_onclick">
+    		</w2:button>
+    		<w2:button id="btnNetwork" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;"
+    			label="네트워크" ev:onclick="scwin.btnNetwork_onclick">
+    		</w2:button>
+    		<w2:button id="btnSecurity" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;"
+    			label="보안장비" ev:onclick="scwin.btnSecurity_onclick">
+    		</w2:button>
+    		<w2:button id="btnBizSystem" style="width: 100%;height: 48px;font-weight:bold;font-size:18px;text-align:left;border-width:0px;"
+    			label="업무시스템" ev:onclick="scwin.btnBizSystem_onclick">
+    		</w2:button>
+    		<w2:button id="btnTRM" label="TRM"
+    			style="width: 100%;height: 48px;font-weight:bold;font-size:18px;text-align:left;border-width:0px;" ev:onclick="scwin.btnTRM_onclick">
+    		</w2:button>
     	</xf:group>
     </body>
 </html>

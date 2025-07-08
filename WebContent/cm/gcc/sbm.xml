@@ -207,7 +207,7 @@ scwin.__callbackSubmitFunction = function (resObj, sbmObj) {
     let $p = $c.win.__getScope(sbmObj).scwin.$w;
 
     // server와 연결을 할 수 없을 경우 responseStatusCode가 0으로 발생.
-    if ((resObj.responseStatusCode < 100) || (resObj.responseStatusCode > 599)) {
+    if ((resObj.responseStatusCode < 100) || (resObj.responseStatusCodssse > 599)) {
         let detailStr = "HTTP STATUS INFO";
         detailStr += resObj.responseStatusCode;
         detailStr += " - URI:";

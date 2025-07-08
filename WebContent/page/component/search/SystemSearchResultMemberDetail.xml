@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="담당자 통합검색 결과">
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataMap id="common">
+        			<w2:keyInfo>
+        				<w2:key id="guid" name="guid" dataType="text"></w2:key>
+        				<w2:key id="code" name="code" dataType="text"></w2:key>
+        				<w2:key id="message" name="message" dataType="text"></w2:key>
+        				<w2:key id="detailMessage" name="detailMessage" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<guid><![CDATA[4fe99cd354b14fd8aec5ce7ca0f1c513]]></guid>
+        				<code><![CDATA[N000]]></code>
+        				<message><![CDATA[정상처리]]></message>
+        				<detailMessage><![CDATA[]]></detailMessage>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataMap id="emp">
+        			<w2:keyInfo>
+        				<w2:key id="empId" name="empId" dataType="text"></w2:key>
+        				<w2:key id="empNo" name="empNo" dataType="text"></w2:key>
+        				<w2:key id="empName" name="empName" dataType="text"></w2:key>
+        				<w2:key id="osdtCd" name="osdtCd" dataType="text"></w2:key>
+        				<w2:key id="emal" name="emal" dataType="text"></w2:key>
+        				<w2:key id="ctcp1" name="ctcp1" dataType="text"></w2:key>
+        				<w2:key id="ctcp2" name="ctcp2" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<empId><![CDATA[1]]></empId>
+        				<empNo><![CDATA[113565]]></empNo>
+        				<empName><![CDATA[최동규]]></empName>
+        				<osdtCd><![CDATA[00001]]></osdtCd>
+        				<emal><![CDATA[dk@koreainvestment.com]]></emal>
+        				<ctcp1><![CDATA[02-1234-1234]]></ctcp1>
+        				<ctcp2><![CDATA[010-1234-1234]]></ctcp2>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataMap id="pageInfo">
+        			<w2:keyInfo>
+        				<w2:key id="offset" name="offset" dataType="text"></w2:key>
+        				<w2:key id="limit" name="limit" dataType="text"></w2:key>
+        				<w2:key id="type" name="type" dataType="text"></w2:key>
+        				<w2:key id="sortMethod" name="sortMethod" dataType="text"></w2:key>
+        				<w2:key id="total" name="total" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<offset><![CDATA[0]]></offset>
+        				<limit><![CDATA[10]]></limit>
+        				<type><![CDATA[PAGE]]></type>
+        				<sortMethod><![CDATA[NO]]></sortMethod>
+        				<total><![CDATA[10]]></total>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataList id="scrns">
+        			<w2:columnInfo>
+        				<w2:column id="arfsScrnId" name="업무화면ID" dataType="text"></w2:column>
+        				<w2:column id="sysName" name="시스템명" dataType="text"></w2:column>
+        				<w2:column id="scrnNo" name="화면번호" dataType="text"></w2:column>
+        				<w2:column id="scrnName" name="화면명" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrr" name="개발담당자" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrrNo" name="개발담당자사번" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrrName" name="개발담당자명" dataType="text"></w2:column>
+        				<w2:column id="mgmtChrr" name="운영담당자" dataType="text"></w2:column>
+        				<w2:column id="mgmtChrrNo" name="운영담당자사번" dataType="text"></w2:column>
+        				<w2:column id="mgmtChrrName" name="운영담당자명" dataType="text"></w2:column>
+        				<w2:column id="witfChrgDep" name="현업담당부서" dataType="text"></w2:column>
+        				<w2:column id="witfChrgDepName" name="현업담당부서명" dataType="text"></w2:column>
+        				<w2:column id="witfChrr" name="현업담당자" dataType="text"></w2:column>
+        				<w2:column id="witfChrrNo" name="현업담당자사번" dataType="text"></w2:column>
+        				<w2:column id="witfChrrName" name="현업담당자명" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<arfsScrnId><![CDATA[1]]></arfsScrnId>
+        					<sysName><![CDATA[WINK]]></sysName>
+        					<scrnNo><![CDATA[01000]]></scrnNo>
+        					<scrnName><![CDATA[계좌조회]]></scrnName>
+        					<dvlpChrr><![CDATA[2]]></dvlpChrr>
+        					<dvlpChrrNo><![CDATA[000002]]></dvlpChrrNo>
+        					<dvlpChrrName><![CDATA[홍길순]]></dvlpChrrName>
+        					<mgmtChrr><![CDATA[2]]></mgmtChrr>
+        					<mgmtChrrNo><![CDATA[000002]]></mgmtChrrNo>
+        					<mgmtChrrName><![CDATA[홍길순]]></mgmtChrrName>
+        					<witfChrgDep><![CDATA[2]]></witfChrgDep>
+        					<witfChrgDepName><![CDATA[인사팀]]></witfChrgDepName>
+        					<witfChrr><![CDATA[1]]></witfChrr>
+        					<witfChrrNo><![CDATA[000001]]></witfChrrNo>
+        					<witfChrrName><![CDATA[홍길동]]></witfChrrName>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList id="svcs">
+        			<w2:columnInfo>
+        				<w2:column id="svcId" name="서비스ID" dataType="text"></w2:column>
+        				<w2:column id="svcCd" name="서비스코드" dataType="text"></w2:column>
+        				<w2:column id="korSvcName" name="한글서비스명" dataType="text"></w2:column>
+        				<w2:column id="itChrr" name="IT담당자" dataType="text"></w2:column>
+        				<w2:column id="itChrrNo" name="IT담당자사번" dataType="text"></w2:column>
+        				<w2:column id="itChrrName" name="IT담당자명" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<svcId><![CDATA[1]]></svcId>
+        					<svcCd><![CDATA[TAC0551R]]></svcCd>
+        					<korSvcName><![CDATA[계좌번호조회]]></korSvcName>
+        					<itChrr><![CDATA[1]]></itChrr>
+        					<itChrrNo><![CDATA[000001]]></itChrrNo>
+        					<itChrrName><![CDATA[홍길동]]></itChrrName>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        	</w2:dataCollection>
+        	<w2:workflowCollection />
+        	<xf:submission id="sbmEmpInfo" action="org/query/api/v1/emp-info/id/{id}" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","emp"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
+        		processMsg="" ev:submit="scwin.sbmEmpInfo_submit" ev:submitdone="scwin.sbmEmpInfo_submitdone"
+        		ev:submiterror="scwin.sbmEmpInfo_submiterror" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="sbmTaskScreenList" action="aa/query/api/v1/task-screen-list" method="get" mediatype="application/json"
+        		ref="" target='data:json,["common","pageInfo","scrns"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="" ev:submiterror=""
+        		abortTrigger="" ev:submitdone="scwin.sbmTaskScreenList_submitdone">
+        	</xf:submission>
+        	<xf:submission id="sbmServiceList" action="aa/query/api/v1/service-list" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","pageInfo","svcs"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="" ev:submiterror="" abortTrigger="" ev:submitdone="scwin.sbmServiceList_submitdone">
+        	</xf:submission>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+    var paramData = $p.getParameter("LeftSearch");
+    // var data = JSON.stringify(paramData);
+    // alert(data);
+    mainTitle.setValue(paramData.name);
+
+    const param = {
+        id: paramData.id
+    };
+
+    $c.sbm.execute(sbmEmpInfo, param);
+};
+
+scwin.sbmEmpInfo_submit = function (e) {
+
+};
+
+scwin.sbmEmpInfo_submitdone = function (e) {
+    const screenParam = {
+        offset: 0,
+        limit: 20,
+        type: "PAGE",
+        sortMethod: "NO",
+        searchMethods: ["CONTAINS"],
+        sortFields: ["scrnNo"],
+        searchFields: ["dvlpChrr"],
+        searchContent: emp.get("empId")
+    };
+    $c.sbm.execute(sbmTaskScreenList, screenParam);
+
+    const trParam = {
+        offset: 0,
+        limit: 20,
+        type: "PAGE",
+        sortMethod: "NO",
+        searchMethods: ["CONTAINS"],
+        sortFields: ["svcCd"],
+        searchFields: ["itChrr"],
+        searchContent: emp.get("empId")
+    };
+    $c.sbm.execute(sbmServiceList, trParam);
+
+};
+
+scwin.sbmEmpInfo_submiterror = function (e) {
+
+};
+
+scwin.sbmServiceList_submitdone = function (e) {
+
+};
+
+scwin.sbmTaskScreenList_submitdone = function (e) {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" style=";background-color:;">
+    	<xf:group style="width: 100%;height: 100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 24px;" id="">
+    		<w2:textbox style="width: 100%;height: 40px;font-size:26px;font-weight:bold;" id="mainTitle" label="검색 타이틀"></w2:textbox>
+    		<xf:group id=""><w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="기본정보"></w2:textbox><xf:group tagname="table" style="width:100%;" id="" class="w2tb">
+    			<w2:attributes>
+    				<w2:summary></w2:summary>
+    			</w2:attributes>
+    			<xf:group tagname="caption"></xf:group>
+    			<xf:group tagname="colgroup">
+    				<xf:group tagname="col" style="width:25.00%;"></xf:group>
+    				<xf:group tagname="col" style="width:25.00%;"></xf:group>
+    				<xf:group tagname="col" style="width:25.00%;"></xf:group>
+    				<xf:group tagname="col" style="width:25.00%"></xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">
+    					부서
+    					<w2:attributes>
+    						<w2:scope>row</w2:scope>
+    					</w2:attributes>
+    				</xf:group>
+    				<xf:group tagname="td" style="" id="" class="w2tb_td">
+    					<w2:textbox ref="data:dataMap1.key1" style="" id="" label=""></w2:textbox>
+    				</xf:group>
+    				<xf:group tagname="th" style="" class="w2tb_th">
+    					담당자
+    					<w2:attributes>
+    						<w2:scope>row</w2:scope>
+    					</w2:attributes>
+    				</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					<w2:textbox ref="data:emp.empName" style="" id="" label=""></w2:textbox>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">
+    					연락처
+    					<w2:attributes>
+    						<w2:scope>row</w2:scope>
+    					</w2:attributes>
+    				</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					<w2:textbox ref="data:emp.ctcp1" style="" id="" label=""></w2:textbox>
+    				</xf:group>
+    				<xf:group tagname="th" style="" class="w2tb_th">
+    					연락처2
+    					<w2:attributes>
+    						<w2:scope>row</w2:scope>
+    					</w2:attributes>
+    				</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					<w2:textbox ref="data:emp.ctcp2" style="" id="" label=""></w2:textbox>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group tagname="tr" style="">
+    				<xf:group tagname="th" style="" class="w2tb_th">
+    					Email
+    					<w2:attributes>
+    						<w2:scope>row</w2:scope>
+    					</w2:attributes>
+    				</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    					<w2:textbox ref="data:emp.emal" style="" id="" label=""></w2:textbox>
+    				</xf:group>
+    				<xf:group tagname="th" style="" class="w2tb_th">
+    					<w2:attributes>
+    						<w2:scope>row</w2:scope>
+    					</w2:attributes>
+    				</xf:group>
+    				<xf:group tagname="td" style="" class="w2tb_td">
+    				</xf:group>
+    			</xf:group>
+    		</xf:group></xf:group>
+    		<xf:group id="" style="display: flex;flex-direction: column;gap: 24px;">
+    			<xf:group id=""><w2:textbox style="width: 50%;height: 23px;font-size:16px;font-weight:bold;" id="" label="담당 TR 리스트"></w2:textbox>
+    				<w2:gridView checkAllType="false" dataList="data:svcs" style="width:100%;height: 400px;" id="" autoFit="allColumn"
+    					defaultCellHeight="43">
+    					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    					<w2:header style="" id="header1">
+    						<w2:row style="" id="row1">
+    							<w2:column width="70" inputType="text" style="" id="column6" value="서비스ID" displayMode="label"
+    								hidden="true">
+    							</w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column5" value="서비스코드" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column4" value="한글서비스명" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column3" value="IT담당자" displayMode="label"
+    								hidden="true">
+    							</w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column2" value="IT담당자사번" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column1" value="IT담당자명" displayMode="label"></w2:column>
+    						</w2:row>
+    					</w2:header>
+    					<w2:gBody style="" id="gBody1">
+    						<w2:row style="" id="row2">
+    							<w2:column width="70" inputType="text" style="" id="svcId" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="svcCd" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="korSvcName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="itChrrNo" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
+    						</w2:row>
+    					</w2:gBody>
+    				</w2:gridView></xf:group>
+    		<xf:group id=""><w2:textbox style="width: 50%;height: 23px;font-size:16px;font-weight:bold;" id="" label="담당 화면 리스트"></w2:textbox>
+    			<w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" autoFit="allColumn" id=""
+    				defaultCellHeight="43">
+    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column width="70" inputType="text" style="" id="column15" value="업무화면ID" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column14" value="시스템명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column13" value="화면번호" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column12" value="화면명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column11" value="개발담당자" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column10" value="개발담당자사번" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column9" value="개발담당자명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column8" value="운영담당자" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column7" value="운영담당자사번" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column6" value="운영담당자명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column5" value="현업담당부서" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column4" value="현업담당부서명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column3" value="현업담당자" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column2" value="현업담당자사번" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column1" value="현업담당자명" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="text" style="" id="arfsScrnId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="sysName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="scrnNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="scrnName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dvlpChrr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dvlpChrrNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dvlpChrrName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="mgmtChrr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="mgmtChrrNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="mgmtChrrName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="witfChrgDep" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="witfChrgDepName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="witfChrr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="witfChrrNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="witfChrrName" value="" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView></xf:group></xf:group></xf:group>
+    </body>
+</html>

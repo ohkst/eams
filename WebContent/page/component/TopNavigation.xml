@@ -14,23 +14,50 @@
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
-	
+	scwin.setMediumWeight();
 };
 
 scwin.btnSearch_onclick = function (e) {
-    $p.parent().wfmLayoutContents.setSrc("/page/subpage/SystemSearch.xml");
+    scwin.setMediumWeight();
+    btnSystemSearch.setStyle("font-weight", "bold");
+    
+    var rowJSON = {
+            "name": ""
+        };
+
+        // 새로 열릴 화면에 데이터를 전달 (dataObject를 통해 전달 가능)
+        var obj = {
+            "dataObject": {
+                "type": "json",
+                "name": "HomeSearch",
+                "data": rowJSON
+            }
+        };
+
+    $p.parent().wfmLayoutContents.setSrc("/page/subpage/SystemSearch.xml", obj);
 };
 
 scwin.btnDocSearch_onclick = function (e) {
+    scwin.setMediumWeight();
+    btnDocManagement.setStyle("font-weight", "bold");
     $p.parent().wfmLayoutContents.setSrc("/page/subpage/DocManagement.xml");
 };
 
 scwin.btnCMDBSearch_onclick = function (e) {
+    scwin.setMediumWeight();
+    btnCMDBManagement.setStyle("font-weight", "bold");
     $p.parent().wfmLayoutContents.setSrc("/page/subpage/CMDBManagement.xml");
 };
 
 scwin.imgLogo_onclick = function (e) {
+    scwin.setMediumWeight();
     $p.parent().wfmLayoutContents.setSrc("/page/subpage/HomeDashboard.xml");
+};
+
+scwin.setMediumWeight = function () {
+    btnSystemSearch.setStyle("font-weight", "300");
+    btnDocManagement.setStyle("font-weight", "300");
+    btnCMDBManagement.setStyle("font-weight", "300");
 };
 
 scwin.imgLogout_onclick = function (e) {
@@ -38,7 +65,7 @@ scwin.imgLogout_onclick = function (e) {
 };
 ]]></script>
     </head>
-    <body ev:onpageload="scwin.onpageload" style=";max-width:100%;min-width:100%;">
+    <body ev:onpageload="scwin.onpageload" style="max-width:100%;min-width:100%;font-family:'Pretendard',sans-serif;">
     	<xf:group id="" style="background-color: #0E2147;height:100%;width:100%;display: flex;align-items: center;">
     		<xf:group style="width:100%;height:100%;direction:ltr;display:flex;" id="">
     			<xf:group style="width: 24px;height: 100%;" id=""></xf:group>
@@ -47,15 +74,15 @@ scwin.imgLogout_onclick = function (e) {
     			</xf:image>
     			<xf:group style="left:160px;position:relative;display: flex;align-items: flex-end;gap: 32px;" id="">
     				<w2:button ev:onclick="scwin.btnSearch_onclick"
-    					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:bold;width:120 px;font-size:20px;border-color: ;border-width:0px;position:static;height:48px;"
+    					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:400;width:120 px;font-size:20px;border-color: ;border-width:0px;position:static;height:48px;font-family:'Pretendard',sans-serif;"
     					id="btnSystemSearch" label="통합검색">
     				</w2:button>
     				<w2:button ev:onclick="scwin.btnDocSearch_onclick"
-    					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:bold;width:120 px;font-size:20px;border-width:0px;border-color: ;position:static;height:48px;"
+    					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:400;width:120 px;font-size:20px;border-width:0px;border-color: ;position:static;height:48px;font-family:'Pretendard',sans-serif;"
     					id="btnDocManagement" label="문서관리">
     				</w2:button>
     				<w2:button ev:onclick="scwin.btnCMDBSearch_onclick"
-    					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:bold;width:120 px;font-size:20px;border-width:0px;border-color: ;position:static;height:48px;"
+    					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:400;width:120 px;font-size:20px;border-width:0px;border-color: ;position:static;height:48px;font-family:'Pretendard',sans-serif;"
     					id="btnCMDBManagement" label="CMDB관리">
     				</w2:button>
     			</xf:group>

@@ -37,123 +37,20 @@ scwin.onpageload = function() {
 	
 };
 
-scwin.searchboxOK_onkeypress = function (e) {
-
-    // 엔터치면 코드 적용
-    if((e.charCode || e.keyCode) === 13) {
-        // $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultDetail.xml");
-        dataList1.clearFilter();
-        dataList3.clearFilter();
-        dataList4.clearFilter();
-        dataList5.clearFilter();
-        dataList7.clearFilter();
-
-        let jsonFilterOptions = {};
-
-        jsonFilterOptions.type = "row";
-        jsonFilterOptions.colIndex = "name";
-        jsonFilterOptions.key = searchboxOK.getValue();
-        jsonFilterOptions.exactMatch = false;
-        jsonFilterOptions.condition = "and";
-
-        dataList1.setColumnFilter(jsonFilterOptions);
-        dataList3.setColumnFilter(jsonFilterOptions);
-        dataList4.setColumnFilter(jsonFilterOptions);
-        dataList5.setColumnFilter(jsonFilterOptions);
-        dataList7.setColumnFilter(jsonFilterOptions);
-        
-    } else {
-        // $p.log("SEARCH!!!!");
-
-        // 검색을 구현하면 될듯
-        // dataList1.clearFilter();
-
-        // let jsonFilterOptions = {};
-
-        // jsonFilterOptions.type = "row";
-        // jsonFilterOptions.colIndex = "name";
-        // jsonFilterOptions.key = searchboxOK.getValue();
-        // jsonFilterOptions.exactMatch = false;
-        // jsonFilterOptions.condition = "and";
-
-        // dataList1.setColumnFilter(jsonFilterOptions);        
-    }
+scwin.btnBA_onclick = function (e) {
+    $p.parent().wfmRightContents.setSrc("/page/component/document/BADocList.xml");
 };
 
-scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
-    // $p.log(rowIndex + columnId + columnId);
-
-    var cellData = "";
-    if (type === 0) {
-        cellData = dataList1.getCellData(rowIndex, columnId);
-    } else if (type === 1){
-        cellData = dataList3.getCellData(rowIndex, columnId);
-    } else if (type === 2){
-        cellData = dataList4.getCellData(rowIndex, columnId);
-    } else if (type === 3){
-        cellData = dataList5.getCellData(rowIndex, columnId);
-    } else if (type === 4){
-        cellData = dataList7.getCellData(rowIndex, columnId);
-    }
-
-    $p.log(cellData);
-
-    var rowJSON = { 
-        "Personal Info" : { "Name": "Lee", "Age": 50, "Married" : false},
-        "Region": "Seoul",  
-        "Carrier": true,
-        "name": cellData
-     }; 
- 
-     // 새로 열릴 화면에 데이터를 전달 (dataObject를 통해 전달 가능)
-     var obj = { 
-        "dataObject": {
-            "type" : "json",
-            "name" : "LeftSearch",  
-            "data" : rowJSON 
-         }
-     };
-
-    scwin.setContentsSrc(type, obj);
-}
-
-scwin.setContentsSrc = async function (type, obj) {
-    if (type === 0) {
-        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultBizDetail.xml", obj);
-    } else if (type === 1){
-        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultScreenDetail.xml", obj);
-    } else if (type === 2){
-        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultTRDetail.xml", obj);
-    } else if (type === 3){
-        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultDBDetail.xml", obj);
-    } else if (type === 4){
-        await $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultMemberDetail.xml", obj);
-    }
-}
-
-// 업무 검색
-scwin.gridBASearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
-    scwin.searchDetail(rowIndex, columnIndex, columnId, 0);
+scwin.btnAA_onclick = function (e) {
+    $p.parent().wfmRightContents.setSrc("/page/component/document/AADocList.xml");
 };
 
-// 화면 검색
-scwin.gridAAScreenSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
-    scwin.searchDetail(rowIndex, columnIndex, columnId, 1);
+scwin.btnDA_onclick = function (e) {
+    $p.parent().wfmRightContents.setSrc("/page/component/document/DADocList.xml");
 };
 
-// TR 검색
-scwin.gridAATRSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
-    scwin.searchDetail(rowIndex, columnIndex, columnId, 2);
-};
-
-// DB 검색
-scwin.gridDADBSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
-    scwin.searchDetail(rowIndex, columnIndex, columnId, 3);
-};
-
-// 담당자 검색
-scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
-    scwin.searchDetail(rowIndex, columnIndex, columnId, 4);
+scwin.btnTA_onclick = function (e) {
+    $p.parent().wfmRightContents.setSrc("/page/component/document/TADocList.xml");
 };
 ]]></script>
     </head>
@@ -161,24 +58,18 @@ scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, colu
     	<xf:group
     		style="width:100%;height: 100vh;background-color:#EFF0F4;padding: 12px;display: flex;flex-direction: column;overflow-y: auto;scrollbar-width: none;gap: 12px;box-sizing: border-box;"
     		id="">
-    		<w2:searchbox ev:onchange="scwin.searchboxOK_onchange" ev:onkeypress="scwin.searchboxOK_onkeypress" id="searchbox1"
-    			style="width: 100%;height: 48px;display: flex;flex-shrink: 0;">
-    		</w2:searchbox>
-    		<w2:treeview id="" dataType="listed" tooltipGroupClass="false" style="width: 100%;height: 100%;flex: 1;">
-    			<w2:itemset nodeset="data:dataList8">
-    				<w2:label ref="col1"></w2:label>
-    				<w2:value ref="col1"></w2:value>
-    				<w2:depth ref="col1"></w2:depth>
-    				<w2:folder ref="col1"></w2:folder>
-    				<w2:checkbox ref=""></w2:checkbox>
-    				<w2:checkboxDisabled ref=""></w2:checkboxDisabled>
-    				<w2:image ref=""></w2:image>
-    				<w2:iconImage ref=""></w2:iconImage>
-    				<w2:selectedImage ref=""></w2:selectedImage>
-    				<w2:expandedImage ref=""></w2:expandedImage>
-    				<w2:leafImage ref=""></w2:leafImage>
-    			</w2:itemset>
-    		</w2:treeview>
+    		<w2:button id="btnBA" label="BA"
+    			style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" ev:onclick="scwin.btnBA_onclick">
+    		</w2:button>
+    		<w2:button id="btnAA" label="AA"
+    			style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" ev:onclick="scwin.btnAA_onclick">
+    		</w2:button>
+    		<w2:button id="btnDA" label="DA"
+    			style="width:100%;height:48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" ev:onclick="scwin.btnDA_onclick">
+    		</w2:button>
+    		<w2:button id="btnTA" label="TA"
+    			style="width:100%;height:48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" ev:onclick="scwin.btnTA_onclick">
+    		</w2:button>
     	</xf:group>
     </body>
 </html>

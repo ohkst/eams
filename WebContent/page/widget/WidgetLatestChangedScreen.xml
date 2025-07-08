@@ -44,18 +44,18 @@ scwin.onpageload = function() {
 };
 ]]></script>
     </head>
-    <body ev:onpageload="scwin.onpageload">
-    	<w2:gridView checkAllType="false" defaultCellHeight="20" id="" style="width: 100%;height: 100%;" dataList="data:dataList2"
+    <body ev:onpageload="scwin.onpageload" style="font-family: 'Pretendard', 'SUIT', 'Noto Sans KR', 'Spoqa Han Sans Neo', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif';">
+    	<w2:gridView checkAllType="false" defaultCellHeight="20" id="" style="width: 100%;height: 100%;font-family: 'Pretendard', 'SUIT', 'Noto Sans KR', 'Spoqa Han Sans Neo', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif';" dataList="data:dataList2"
     		autoFit="allColumn" hideHeader="true">
-    		<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
-    		<w2:header style="" id="header2">
-    			<w2:row style="" id="row3">
+    		<w2:caption style="font-family: 'Pretendard', 'SUIT', 'Noto Sans KR', 'Spoqa Han Sans Neo', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif';" id="caption2" value="this is a grid caption."></w2:caption>
+    		<w2:header style="font-family: 'Pretendard', 'SUIT', 'Noto Sans KR', 'Spoqa Han Sans Neo', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif';" id="header2">
+    			<w2:row style="font-family: 'Pretendard', 'SUIT', 'Noto Sans KR', 'Spoqa Han Sans Neo', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif';" id="row3">
     				<w2:column width="70" inputType="text" id="column3" value="이름" displayMode="label"></w2:column>
     			</w2:row>
     		</w2:header>
-    		<w2:gBody style="" id="gBody2">
-    			<w2:row style="" id="row4">
-    				<w2:column width="70" inputType="text" id="col1" displayMode="label"></w2:column>
+    		<w2:gBody style="font-family: 'Pretendard', 'SUIT', 'Noto Sans KR', 'Spoqa Han Sans Neo', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif';" id="gBody2">
+    			<w2:row style="font-family: 'Pretendard', 'SUIT', 'Noto Sans KR', 'Spoqa Han Sans Neo', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif';" id="row4">
+    				<w2:column width="70" inputType="text" id="col1" displayMode="label" textAlign="left" style="font-family: 'Pretendard', 'SUIT', 'Noto Sans KR', 'Spoqa Han Sans Neo', 'Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif'; padding-left: 12px;"></w2:column>
     			</w2:row>
     		</w2:gBody>
     	</w2:gridView>

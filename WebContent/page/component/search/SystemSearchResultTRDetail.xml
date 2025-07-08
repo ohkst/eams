@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="TR 통합검색 결과">
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataMap id="common">
+        			<w2:keyInfo>
+        				<w2:key id="guid" name="guid" dataType="text"></w2:key>
+        				<w2:key id="code" name="code" dataType="text"></w2:key>
+        				<w2:key id="message" name="message" dataType="text"></w2:key>
+        				<w2:key id="detailMessage" name="detailMessage" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<guid><![CDATA[551c77e8f582498c8024ae20315fbf48]]></guid>
+        				<code><![CDATA[N000]]></code>
+        				<message><![CDATA[정상처리]]></message>
+        				<detailMessage><![CDATA[]]></detailMessage>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataMap id="svcInfo">
+        			<w2:keyInfo>
+        				<w2:key id="svcId" name="서비스ID" dataType="text"></w2:key>
+        				<w2:key id="sysName" name="시스템명" dataType="text"></w2:key>
+        				<w2:key id="svcCd" name="서비스코드" dataType="text"></w2:key>
+        				<w2:key id="korSvcName" name="한글서비스명" dataType="text"></w2:key>
+        				<w2:key id="attrUseYn" name="속성사용여부" dataType="text"></w2:key>
+        				<w2:key id="enptYn" name="암호화여부" dataType="text"></w2:key>
+        				<w2:key id="zipYn" name="압축여부" dataType="text"></w2:key>
+        				<w2:key id="itChrr" name="IT담당자" dataType="text"></w2:key>
+        				<w2:key id="itChrrNo" name="IT담당자사번" dataType="text"></w2:key>
+        				<w2:key id="itChrrName" name="IT담당자명" dataType="text"></w2:key>
+        				<w2:key id="crtnDt" name="생성일자" dataType="text"></w2:key>
+        				<w2:key id="crctDt" name="수정일자" dataType="text"></w2:key>
+        				<w2:key id="svcAnlsFailRson" name="서비스분석실패사유" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<svcId><![CDATA[1]]></svcId>
+        				<sysName><![CDATA[계정계]]></sysName>
+        				<svcCd><![CDATA[TAC0551R]]></svcCd>
+        				<korSvcName><![CDATA[계좌번호조회]]></korSvcName>
+        				<attrUseYn><![CDATA[Y]]></attrUseYn>
+        				<enptYn><![CDATA[Y]]></enptYn>
+        				<zipYn><![CDATA[Y]]></zipYn>
+        				<itChrr><![CDATA[1]]></itChrr>
+        				<itChrrNo><![CDATA[000001]]></itChrrNo>
+        				<itChrrName><![CDATA[홍길동]]></itChrrName>
+        				<crtnDt><![CDATA[20241201]]></crtnDt>
+        				<crctDt><![CDATA[99991231]]></crctDt>
+        				<svcAnlsFailRson><![CDATA[string]]></svcAnlsFailRson>
+        			</w2:data>
+        		</w2:dataMap>
+        		<w2:dataList id="inps">
+        			<w2:columnInfo>
+        				<w2:column id="svcIoId" name="서비스IOID" dataType="text"></w2:column>
+        				<w2:column id="engFieldName" name="영문명" dataType="text"></w2:column>
+        				<w2:column id="korFieldName" name="한글명" dataType="text"></w2:column>
+        				<w2:column id="dataTypp" name="데이터타입" dataType="text"></w2:column>
+        				<w2:column id="lgth" name="길이" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<svcIoId><![CDATA[1]]></svcIoId>
+        					<engFieldName><![CDATA[A1]]></engFieldName>
+        					<korFieldName><![CDATA[A1]]></korFieldName>
+        					<dataTypp><![CDATA[String]]></dataTypp>
+        					<lgth><![CDATA[30]]></lgth>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList id="outs">
+        			<w2:columnInfo>
+        				<w2:column id="svcIoId" name="서비스IOID" dataType="text"></w2:column>
+        				<w2:column id="engFieldName" name="영문명" dataType="text"></w2:column>
+        				<w2:column id="korFieldName" name="한글명" dataType="text"></w2:column>
+        				<w2:column id="dataTypp" name="데이터타입" dataType="text"></w2:column>
+        				<w2:column id="lgth" name="길이" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<svcIoId><![CDATA[3]]></svcIoId>
+        					<engFieldName><![CDATA[B1]]></engFieldName>
+        					<korFieldName><![CDATA[B1]]></korFieldName>
+        					<dataTypp><![CDATA[Integer]]></dataTypp>
+        					<lgth><![CDATA[10]]></lgth>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList id="tbls">
+        			<w2:columnInfo>
+        				<w2:column id="svcTblLinkId" name="서비스테이블연결ID" dataType="text"></w2:column>
+        				<w2:column id="tblId" name="테이블ID" dataType="text"></w2:column>
+        				<w2:column id="tblEngName" name="테이블영문명" dataType="text"></w2:column>
+        				<w2:column id="tblKorName" name="테이블한글명" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<svcTblLinkId><![CDATA[1]]></svcTblLinkId>
+        					<tblId><![CDATA[1]]></tblId>
+        					<tblEngName><![CDATA[TA0001]]></tblEngName>
+        					<tblKorName><![CDATA[서버이미지]]></tblKorName>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataList id="scrns">
+					<w2:columnInfo>
+						<w2:column id="afrsScrnId" name="업무화면ID" dataType="text"></w2:column>
+						<w2:column id="scrnNo" name="화면번호" dataType="text"></w2:column>
+						<w2:column id="scrnName" name="화면명" dataType="text"></w2:column>
+						<w2:column id="dvlpChrr" name="개발담당자" dataType="text"></w2:column>
+						<w2:column id="dvlpChrrNo" name="개발담당자사번" dataType="text"></w2:column>
+						<w2:column id="dvlpChrrName" name="개발담당자명" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data xmlns="">
+						<w2:row>
+							<afrsScrnId><![CDATA[1]]></afrsScrnId>
+							<scrnNo><![CDATA[01000]]></scrnNo>
+							<scrnName><![CDATA[계좌조회]]></scrnName>
+							<dvlpChrr><![CDATA[2]]></dvlpChrr>
+							<dvlpChrrNo><![CDATA[000002]]></dvlpChrrNo>
+							<dvlpChrrName><![CDATA[홍길순]]></dvlpChrrName>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+        	<w2:workflowCollection />
+        	<xf:submission id="sbmServiceDetail" action="aa/query/api/v1/service/id/{id}" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","svcInfo","inps","outs","tbls","scrns"]' encoding="UTF-8" instance="" replace="" errorHandler=""
+        		customHandler="" mode="asynchronous" processMsg="" ev:submit="scwin.sbmServiceDetail_submit"
+        		ev:submitdone="scwin.sbmServiceDetail_submitdone" ev:submiterror="scwin.sbmServiceDetail_submiterror" abortTrigger="">
+        	</xf:submission>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	var paramData = $p.getParameter("LeftSearch");
+    // var data = JSON.stringify(paramData);
+    // alert(data);
+    mainTitle.setValue(paramData.name);
+
+    const param = {
+        id: paramData.id
+    };
+
+    $c.sbm.execute(sbmServiceDetail, param);
+};
+
+scwin.gridTRIO_oncellclick = function (rowIndex, columnIndex, columnId) {
+    
+};
+
+scwin.sbmServiceDetail_submit = function (e) {
+
+};
+
+scwin.sbmServiceDetail_submitdone = function (e) {
+
+};
+
+scwin.sbmServiceDetail_submiterror = function (e) {
+
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" style=";background-color:;">
+    	<xf:group style="width: 100%;height: 100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 24px;"
+    		id="">
+    		<w2:textbox style="width: 100%;height: 40px;font-size:26px;font-weight:bold;" id="mainTitle" label="검색 타이틀"></w2:textbox>
+    		<xf:group id="">
+    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="기본정보"></w2:textbox>
+    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb">
+    				<w2:attributes>
+    					<w2:summary></w2:summary>
+    				</w2:attributes>
+    				<xf:group tagname="caption"></xf:group>
+    				<xf:group tagname="colgroup">
+    					<xf:group tagname="col" style="width:25.00%;"></xf:group>
+    					<xf:group tagname="col" style="width:25.00%;"></xf:group>
+    					<xf:group tagname="col" style="width:25.00%;"></xf:group>
+    					<xf:group tagname="col" style="width:25.00%"></xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						현업&amp;nbsp;담당&amp;nbsp;부서
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" style="" id="" class="w2tb_td">
+    						<w2:textbox ref="data:dataMap1.key1" style="" id="" label=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						현업&amp;nbsp;담당자
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox ref="data:dataMap1.key2" style="" id="" label=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						IT&amp;nbsp;담당&amp;nbsp;부서
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox ref="data:dataMap1.key3" style="" id="" label=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						IT&amp;nbsp;담당자
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox ref="data:svcInfo.itChrrName" style="" id="" label=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						최초&amp;nbsp;등록일
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox ref="data:svcInfo.crtnDt" style="" id="" label=""></w2:textbox>
+    					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						최근&amp;nbsp;변경일
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox ref="data:svcInfo.crctDt" style="" id="" label=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">
+    						유형
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">
+    						<w2:textbox id="" label="" ref="data:dataMap1.key7" style=""></w2:textbox>
+    					</xf:group>
+    					<xf:group class="w2tb_th" style="" tagname="th">
+    						하위&amp;nbsp;유형
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">
+    						<w2:textbox id="" label="" ref="data:dataMap1.key8" style=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">
+    						분류
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">
+    						<w2:textbox id="" label="" ref="data:dataMap1.key9" style=""></w2:textbox>
+    					</xf:group>
+    					<xf:group class="w2tb_th" style="" tagname="th">
+    						하위&amp;nbsp;분류
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">
+    						<w2:textbox id="" label="" ref="data:dataMap1.key10" style=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">
+    						암호화&amp;nbsp;여부
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">
+    						<w2:textbox id="" label="" ref="data:svcInfo.enptYn" style=""></w2:textbox>
+    					</xf:group>
+    					<xf:group class="w2tb_th" style="" tagname="th">
+    						압축여부
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">
+    						<w2:textbox id="" label="" ref="data:svcInfo.zipYn" style=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="" tagname="th">
+    						버전
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">
+    						<w2:textbox id="" label="" ref="data:svcInfo." style=""></w2:textbox>
+    					</xf:group>
+    					<xf:group class="w2tb_th" style="" tagname="th"><w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes></xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">
+    					</xf:group>
+    				</xf:group>
+    				<xf:group style="" tagname="tr">
+    					<xf:group class="w2tb_th" style="vertical-align: top;padding: 12px" tagname="th">
+    						설명
+    						<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes>
+    					</xf:group>
+    					<xf:group class="w2tb_td" style="" tagname="td">
+    						<w2:attributes>
+    							<w2:colspan>3</w2:colspan>
+    							<w2:rowspan>1</w2:rowspan>
+    						</w2:attributes>
+    						<w2:textbox id="" label="" ref="data:dataMap1.key14" style=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group id="">
+    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="TR Input"></w2:textbox>
+    			<w2:gridView scrollByColumnAdaptive="false" focusMode="row" dataList="data:inps" readOnly="true" scrollByColumn="false"
+    				style="width: 100%;height: 400px;" autoFit="allColumn" id="" class="gridTROutputList" defaultCellHeight="43"
+    				checkReadOnlyOnPasteEnable="">
+    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column width="70" inputType="text" style="" id="column5" value="서비스IOID" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column4" value="영문명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column3" value="한글명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column2" value="데이터타입" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column1" value="길이" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="text" style="" id="svcIoId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="engFieldName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="korFieldName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dataTypp" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="lgth" value="" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="TR Output"></w2:textbox>
+    			<w2:gridView autoFit="allColumn" checkReadOnlyOnPasteEnable="" class="gridTRInputList" dataList="data:outs" focusMode="row"
+    				id="" readOnly="true" scrollByColumn="false" scrollByColumnAdaptive="false" style="width: 100%;height: 400px;"
+    				defaultCellHeight="43">
+    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column width="70" inputType="text" style="" id="column5" value="서비스IOID" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column4" value="영문명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column3" value="한글명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column2" value="데이터타입" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column1" value="길이" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="text" style="" id="svcIoId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="engFieldName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="korFieldName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dataTypp" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="lgth" value="" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    		</xf:group>
+    		<xf:group id="">
+    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="연관 정보"></w2:textbox>
+    			<xf:group id="" style="display: flex;">
+    				<w2:textbox style="width: 50%;height: 23px;font-size:16px;font-weight:bold;" id="" label="화면 리스트"></w2:textbox>
+    				<w2:textbox style="width: 50%;height: 23px;font-size:16px;font-weight:bold;" id="" label="DB 테이블 리스트"></w2:textbox>
+    			</xf:group>
+    			<xf:group style="display: flex;gap: 24px;" id="">
+    				<w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" id="" autoFit="allColumn"
+    					defaultCellHeight="43">
+    					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    					<w2:header style="" id="header1">
+    						<w2:row style="" id="row1">
+    							<w2:column width="70" inputType="text" style="" id="column6" value="업무화면ID" displayMode="label"
+    								hidden="true">
+    							</w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column5" value="화면번호" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column4" value="화면명" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column3" value="개발담당자" displayMode="label"
+    								hidden="true">
+    							</w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column2" value="개발담당자사번" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column1" value="개발담당자명" displayMode="label"></w2:column>
+    						</w2:row>
+    					</w2:header>
+    					<w2:gBody style="" id="gBody1">
+    						<w2:row style="" id="row2">
+    							<w2:column width="70" inputType="text" style="" id="afrsScrnId" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="scrnNo" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="scrnName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="dvlpChrr" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="dvlpChrrNo" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="dvlpChrrName" value="" displayMode="label"></w2:column>
+    						</w2:row>
+    					</w2:gBody>
+    				</w2:gridView>
+    				<w2:gridView checkAllType="false" dataList="data:tbls" style="width:100%;height: 400px;" autoFit="allColumn" id=""
+    					defaultCellHeight="43">
+    					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    					<w2:header style="" id="header1">
+    						<w2:row style="" id="row1">
+    							<w2:column width="70" inputType="text" style="" id="column4" value="서비스테이블연결ID" displayMode="label"
+    								hidden="true">
+    							</w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column3" value="테이블ID" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column2" value="테이블영문명" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="column1" value="테이블한글명" displayMode="label"></w2:column>
+    						</w2:row>
+    					</w2:header>
+    					<w2:gBody style="" id="gBody1">
+    						<w2:row style="" id="row2">
+    							<w2:column width="70" inputType="text" style="" id="svcTblLinkId" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="tblId" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="tblEngName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="" id="tblKorName" value="" displayMode="label"></w2:column>
+    						</w2:row>
+    					</w2:gBody>
+    				</w2:gridView>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>

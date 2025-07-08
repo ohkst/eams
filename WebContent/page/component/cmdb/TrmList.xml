@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_screenName="TRM 목록">
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+        	<w2:dataCollection baseNode="map">
+        		<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
+        			<w2:columnInfo>
+        				<w2:column id="id" name="AA_SYSTEM_ID" dataType="text"></w2:column>
+        				<w2:column id="name" name="업무명" dataType="text"></w2:column>
+        				<w2:column id="dep" name="담당부서" dataType="text"></w2:column>
+        				<w2:column id="ap" name="담당자" dataType="text"></w2:column>
+        				<w2:column id="date" name="작성일정" dataType="text"></w2:column>
+        				<w2:column id="reason" name="사유" dataType="text"></w2:column>
+        				<w2:column id="comment" name="기타의견" dataType="text"></w2:column>
+        				<w2:column id="systemArchitecture" name="시스템 구성도" dataType="text"></w2:column>
+        				<w2:column id="devManual" name="개발 매뉴얼" dataType="text"></w2:column>
+        				<w2:column id="prodManual" name="운영 매뉴얼" dataType="text"></w2:column>
+        				<w2:column id="applicationArchitecture" name="어플리케이션 아키텍처 정의서" dataType="text"></w2:column>
+        				<w2:column id="rft" name="RFP" dataType="text"></w2:column>
+        				<w2:column id="col13" name="요구사항 정의서" dataType="text"></w2:column>
+        				<w2:column id="col14" name="착수보고" dataType="text"></w2:column>
+        				<w2:column id="col15" name="변경심의보고" dataType="text"></w2:column>
+        				<w2:column id="col16" name="완료보고" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data use="true">
+        				<w2:row>
+        					<id><![CDATA[AA_RMAU_0024]]></id>
+        					<name><![CDATA[AML(자금세탁방지)]]></name>
+        					<dep><![CDATA[Biz개발1부]]></dep>
+        					<ap><![CDATA[박정선]]></ap>
+        					<date><![CDATA[2025/05/25]]></date>
+        					<reason><![CDATA[해당없음]]></reason>
+
+
+
+
+
+
+
+
+        					<comment><![CDATA[빨리 등록하겠습니다.]]></comment>
+        					<col16><![CDATA[O]]></col16>
+        					<rft><![CDATA[O]]></rft>
+        					<col13><![CDATA[O]]></col13>
+        					<col14><![CDATA[O]]></col14>
+        					<col15><![CDATA[O]]></col15>
+        					<systemArchitecture><![CDATA[X]]></systemArchitecture>
+        					<devManual><![CDATA[O]]></devManual>
+        					<prodManual><![CDATA[O]]></prodManual>
+        					<applicationArchitecture><![CDATA[O]]></applicationArchitecture>
+        				</w2:row>
+        				<w2:row>
+        					<id><![CDATA[AA-ISSS-0025]]></id>
+        					<name><![CDATA[FDS]]></name>
+        					<dep><![CDATA[Biz개발1부]]></dep>
+        					<ap><![CDATA[민경욱]]></ap>
+        					<date><![CDATA[2025/05/25]]></date>
+        					<reason><![CDATA[해당없음]]></reason>
+
+
+
+
+
+
+
+
+        					<comment><![CDATA[죄송합니다]]></comment>
+        					<systemArchitecture><![CDATA[X]]></systemArchitecture>
+        					<devManual><![CDATA[O]]></devManual>
+        					<prodManual><![CDATA[X]]></prodManual>
+        					<applicationArchitecture><![CDATA[O]]></applicationArchitecture>
+        					<rft><![CDATA[X]]></rft>
+        					<col13><![CDATA[O]]></col13>
+        					<col14><![CDATA[X]]></col14>
+        					<col15><![CDATA[O]]></col15>
+        					<col16><![CDATA[X]]></col16>
+        				</w2:row>
+        				<w2:row>
+        					<id><![CDATA[AA-MMFA-0056]]></id>
+        					<name><![CDATA[IFRS9 회계]]></name>
+        					<dep><![CDATA[Biz개발1부]]></dep>
+        					<ap><![CDATA[김현돈]]></ap>
+        					<date><![CDATA[2025/05/25]]></date>
+        					<reason><![CDATA[해당없음]]></reason>
+        					<comment><![CDATA[등록예정입니다.]]></comment>
+        					<systemArchitecture><![CDATA[X]]></systemArchitecture>
+        					<devManual><![CDATA[X]]></devManual>
+        					<prodManual><![CDATA[O]]></prodManual>
+        					<applicationArchitecture><![CDATA[O]]></applicationArchitecture>
+        					<rft><![CDATA[X]]></rft>
+        					<col13><![CDATA[O]]></col13>
+        					<col14><![CDATA[X]]></col14>
+        					<col15><![CDATA[O]]></col15>
+        					<col16><![CDATA[O]]></col16>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataMap id="common">
+					<w2:keyInfo>
+						<w2:key id="guid" name="guid" dataType="text"></w2:key>
+						<w2:key id="code" name="code" dataType="text"></w2:key>
+						<w2:key id="message" name="message" dataType="text"></w2:key>
+						<w2:key id="detailMessage" name="detailMessage" dataType="text"></w2:key>
+					</w2:keyInfo>
+					<w2:data xmlns="">
+						<guid><![CDATA[b350dc158b274650becd9d5f9a6eb6e2]]></guid>
+						<code><![CDATA[N000]]></code>
+						<message><![CDATA[정상처리]]></message>
+						<detailMessage><![CDATA[]]></detailMessage>
+					</w2:data>
+				</w2:dataMap>
+				<w2:dataMap id="pageInfo">
+					<w2:keyInfo>
+						<w2:key id="offset" name="offset" dataType="text"></w2:key>
+						<w2:key id="limit" name="limit" dataType="text"></w2:key>
+						<w2:key id="type" name="type" dataType="text"></w2:key>
+						<w2:key id="sortMethod" name="sortMethod" dataType="text"></w2:key>
+						<w2:key id="total" name="total" dataType="text"></w2:key>
+					</w2:keyInfo>
+					<w2:data xmlns="">
+						<offset><![CDATA[0]]></offset>
+						<limit><![CDATA[10]]></limit>
+						<type><![CDATA[PAGE]]></type>
+						<sortMethod><![CDATA[NO]]></sortMethod>
+						<total><![CDATA[10]]></total>
+					</w2:data>
+				</w2:dataMap>
+				<w2:dataList id="trms">
+					<w2:columnInfo>
+						<w2:column id="trmId" name="TRMID" dataType="text"></w2:column>
+						<w2:column id="trmCd" name="TRM코드" dataType="text"></w2:column>
+						<w2:column id="techFctrDvsn" name="기술요소구분" dataType="text"></w2:column>
+						<w2:column id="techFctrName" name="기술요소명" dataType="text"></w2:column>
+						<w2:column id="techDomn" name="기술도메인" dataType="text"></w2:column>
+						<w2:column id="techClsf" name="기술분류" dataType="text"></w2:column>
+						<w2:column id="mnftName" name="제품명" dataType="text"></w2:column>
+						<w2:column id="splyComp" name="공급사" dataType="text"></w2:column>
+						<w2:column id="stdYn" name="표준여부" dataType="text"></w2:column>
+						<w2:column id="ver" name="버전" dataType="text"></w2:column>
+					</w2:columnInfo>
+					<w2:data xmlns="">
+						<w2:row>
+							<trmId><![CDATA[1]]></trmId>
+							<trmCd><![CDATA[11111]]></trmCd>
+							<techFctrDvsn><![CDATA[string]]></techFctrDvsn>
+							<techFctrName><![CDATA[string]]></techFctrName>
+							<techDomn><![CDATA[string]]></techDomn>
+							<techClsf><![CDATA[string]]></techClsf>
+							<mnftName><![CDATA[string]]></mnftName>
+							<splyComp><![CDATA[string]]></splyComp>
+							<stdYn><![CDATA[s]]></stdYn>
+							<ver><![CDATA[string]]></ver>
+						</w2:row>
+					</w2:data>
+				</w2:dataList>
+			</w2:dataCollection>
+        	<w2:workflowCollection />
+        	<xf:submission id="sbmTrmList" action="ta/query/api/v1/trm-list" method="get" mediatype="application/json" ref="" target='data:json,["common","pageInfo","trms"]'
+        		encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg=""
+        		ev:submit="scwin.sbmTrmList_submit" ev:submitdone="scwin.sbmTrmList_submitdone" ev:submiterror="scwin.sbmTrmList_submiterror"
+        		abortTrigger="">
+        	</xf:submission>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+   $c.sbm.execute(sbmTrmList);
+};
+
+scwin.btnSearch_onclick = function (e) {
+    dataList1.clearFilter();
+
+    let jsonFilterOptions = {};
+
+    jsonFilterOptions.type = "row";
+    jsonFilterOptions.colIndex = "name";
+    jsonFilterOptions.key = tfBizName.getValue();
+    jsonFilterOptions.exactMatch = false;
+    jsonFilterOptions.condition = "and";
+
+    dataList1.setColumnFilter(jsonFilterOptions);
+
+    let jsonFilterOptions2 = {};
+
+    jsonFilterOptions2.type = "row";
+    jsonFilterOptions2.colIndex = "ap";
+    jsonFilterOptions2.key = tfOwnerName.getValue();
+    jsonFilterOptions2.exactMatch = false;
+    jsonFilterOptions2.condition = "and";
+
+    dataList1.setColumnFilter(jsonFilterOptions2);
+};
+
+scwin.btnReset_onclick = function (e) {
+    tfBizName.setValue("");
+    tfOwnerName.setValue("");
+    dataList1.clearFilter();
+};
+
+scwin.imgBtnCSV_onclick = function (e) {
+    var jsnOptions;
+    var today = $c.date.getServerDateTime("yyyyMMddHHmmss");
+    jsnOptions = {
+        fileName: "TestCSV" + today + ".csv"
+    };
+
+    grdSystemList.saveCSV(jsnOptions);
+};
+
+scwin.sbmTrmList_submit = function (e) {
+
+};
+
+scwin.sbmTrmList_submitdone = function (e) {
+
+};
+
+scwin.sbmTrmList_submiterror = function (e) {
+
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" style="">
+    	<xf:group style="width:100%;height:100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 16px;"
+    		id="">
+    		<w2:textbox id="" label="TRM" style="width: 150px;height: 43px;font-size:22px;font-weight:bold;"></w2:textbox>
+    		<xf:group style="width: 100%;display: flex;justify-content: flex-end;gap: 14px;" id="">
+    			<w2:button
+    				style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;"
+    				id="btnSearch" label="조회" ev:onclick="scwin.btnSearch_onclick">
+    			</w2:button>
+    			<w2:button
+    				style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;"
+    				id="btnReset" label="초기화" ev:onclick="scwin.btnReset_onclick">
+    			</w2:button>
+    			<xf:image src="/img/downloadCSV.svg"
+    				style="top:103px;left:260px;width:24px;height:24px;position:static;border-width:0px;border-radius: 6px;" id="imgBtnCSV" ev:onclick="scwin.imgBtnCSV_onclick">
+    			</xf:image>
+    		</xf:group>
+    		<xf:group id="" style="width: 100%;display: flex;">
+    			<xf:group id="" style="display: flex;">
+    				<w2:textbox style="position:static; top:65px; left:277px; width:150px; height:23px; " id="" label="업무명"></w2:textbox>
+    				<xf:input style="width: 144px;height: 21px;" id="tfBizName"></xf:input>
+    			</xf:group>
+    			<xf:group id="" style="display: flex;margin-left: auto;" ev:onclick="scwin.btnSearch_onclick">
+    				<w2:textbox id="" label="담당자" style="position:static; top:65px; left:277px; width:150px; height:23px; "></w2:textbox>
+    				<xf:input id="tfOwnerName" style="width: 144px;height: 21px;"></xf:input>
+    			</xf:group>
+    		</xf:group>
+    		<w2:gridView checkAllType="false" defaultCellHeight="20" id="grdSystemList" style="width: 100%;height: 150px;flex: 1;"
+    			dataList="data:trms" autoFit="allColumn" useFilterSearch="false" useFilterList="true" sortable="true">
+    			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    			<w2:header style="" id="header1">
+    				<w2:row style="" id="row1">
+    					<w2:column width="70" inputType="text" style="" id="column10" value="TRMID" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column9" value="TRM코드" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column8" value="기술요소구분" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column7" value="기술요소명" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column6" value="기술도메인" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column5" value="기술분류" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column4" value="제품명" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column3" value="공급사" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column2" value="표준여부" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column1" value="버전" displayMode="label"></w2:column>
+    				</w2:row>
+    			</w2:header>
+    			<w2:gBody style="" id="gBody1">
+    				<w2:row style="" id="row2">
+    					<w2:column width="70" inputType="text" style="" id="trmId" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="trmCd" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="techFctrDvsn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="techFctrName" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="techDomn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="techClsf" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="mnftName" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="splyComp" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="stdYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="ver" value="" displayMode="label"></w2:column>
+    				</w2:row>
+    			</w2:gBody>
+    		</w2:gridView>
+    	</xf:group>
+    </body>
+</html>
