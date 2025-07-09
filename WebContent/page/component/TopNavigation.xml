@@ -14,12 +14,19 @@
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
-	scwin.setMediumWeight();
+
+    /* header 상단 좌측 메뉴 클릭시 */
+    scwin.btnToggleMenu_onclick = function (e) {
+        $(".wrap").toggleClass("show_menu");
+        $(".btn_toggle_menu").toggleClass("on");
+    };
 };
 
 scwin.btnSearch_onclick = function (e) {
-    scwin.setMediumWeight();
-    btnSystemSearch.setStyle("font-weight", "bold");
+    $p.parent().wrap.removeClass("home");
+    grpDocManagement.removeClass("on");
+    grpCMDBManagement.removeClass("on");
+    grpSystemSearch.addClass("on");
     
     var rowJSON = {
             "name": ""
@@ -33,32 +40,39 @@ scwin.btnSearch_onclick = function (e) {
                 "data": rowJSON
             }
         };
-
-    $p.parent().wfmLayoutContents.setSrc("/page/subpage/SystemSearch.xml", obj);
+    $p.parent().wfmLeftContents.setSrc("/page/component/LeftSystemSearch.xml", obj);
+    $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchDashboard.xml");    
+    //$p.parent().wfmLayoutContents.setSrc("/page/subpage/SystemSearch.xml", obj);
 };
 
 scwin.btnDocSearch_onclick = function (e) {
-    scwin.setMediumWeight();
-    btnDocManagement.setStyle("font-weight", "bold");
-    $p.parent().wfmLayoutContents.setSrc("/page/subpage/DocManagement.xml");
+    $p.parent().wrap.removeClass("home");
+    grpSystemSearch.removeClass("on");
+    grpCMDBManagement.removeClass("on");
+    grpDocManagement.addClass("on");
+    $p.parent().wfmLeftContents.setSrc("/page/component/LeftDocTree.xml");
+    $p.parent().wfmRightContents.setSrc("/page/component/DocManagementDashboard.xml");
+    //$p.parent().wfmLayoutContents.setSrc("/page/subpage/DocManagement.xml");
 };
 
 scwin.btnCMDBSearch_onclick = function (e) {
-    scwin.setMediumWeight();
-    btnCMDBManagement.setStyle("font-weight", "bold");
-    $p.parent().wfmLayoutContents.setSrc("/page/subpage/CMDBManagement.xml");
+    $p.parent().wrap.removeClass("home");
+    grpDocManagement.removeClass("on");
+    grpSystemSearch.removeClass("on");
+    grpCMDBManagement.addClass("on");
+    $p.parent().wfmLeftContents.setSrc("/page/component/LeftCMDBMenu.xml");
+    $p.parent().wfmRightContents.setSrc("/page/component/CMDBManagementDashboard.xml");
+    //$p.parent().wfmLayoutContents.setSrc("/page/subpage/CMDBManagement.xml");
 };
 
 scwin.imgLogo_onclick = function (e) {
-    scwin.setMediumWeight();
-    $p.parent().wfmLayoutContents.setSrc("/page/subpage/HomeDashboard.xml");
+    $p.parent().wrap.addClass("home");
+    grpDocManagement.removeClass("on");
+    grpSystemSearch.removeClass("on");
+    grpCMDBManagement.removeClass("on");
+    $p.parent().wfmRightContents.setSrc("/page/subpage/HomeDashboard.xml");
 };
 
-scwin.setMediumWeight = function () {
-    btnSystemSearch.setStyle("font-weight", "300");
-    btnDocManagement.setStyle("font-weight", "300");
-    btnCMDBManagement.setStyle("font-weight", "300");
-};
 
 scwin.imgLogout_onclick = function (e) {
     $p.url("/page/LoginPage.xml");
@@ -66,29 +80,50 @@ scwin.imgLogout_onclick = function (e) {
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="max-width:100%;min-width:100%;font-family:'Pretendard',sans-serif;">
-    	<xf:group id="" style="background-color: #0E2147;height:100%;width:100%;display: flex;align-items: center;">
-    		<xf:group style="width:100%;height:100%;direction:ltr;display:flex;" id="">
-    			<xf:group style="width: 24px;height: 100%;" id=""></xf:group>
-    			<xf:image src="/img/logo.svg" ev:onclick="scwin.imgLogo_onclick" style="position:static;top:35px;width:132px;height:100%;"
-    				id="imgLogo">
-    			</xf:image>
-    			<xf:group style="left:160px;position:relative;display: flex;align-items: flex-end;gap: 32px;" id="">
-    				<w2:button ev:onclick="scwin.btnSearch_onclick"
-    					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:400;width:120 px;font-size:20px;border-color: ;border-width:0px;position:static;height:48px;font-family:'Pretendard',sans-serif;"
-    					id="btnSystemSearch" label="통합검색">
-    				</w2:button>
-    				<w2:button ev:onclick="scwin.btnDocSearch_onclick"
-    					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:400;width:120 px;font-size:20px;border-width:0px;border-color: ;position:static;height:48px;font-family:'Pretendard',sans-serif;"
-    					id="btnDocManagement" label="문서관리">
-    				</w2:button>
-    				<w2:button ev:onclick="scwin.btnCMDBSearch_onclick"
-    					style="background-color:#0E2147;top:14px;color:#FFFFFF;left:117px;font-weight:400;width:120 px;font-size:20px;border-width:0px;border-color: ;position:static;height:48px;font-family:'Pretendard',sans-serif;"
-    					id="btnCMDBManagement" label="CMDB관리">
-    				</w2:button>
+    	<xf:group class="header_inner" id="" style="">
+    		<xf:group class="header_lt" id="" style="">
+    			<xf:group class="logobox" id="">
+    				<xf:group class="btn_toggle_menu" ev:onclick="scwin.btnToggleMenu_onclick" id="" style="" tagname="a">
+    					<w2:attributes>
+    						<w2:href>javascript:void(null);</w2:href>
+    					</w2:attributes>
+    					<w2:span id="" label="menu" style=""></w2:span>
+    				</xf:group>
+    				<xf:group id="" style="" tagname="h1">
+    					<xf:group class="logo" ev:onclick="scwin.imgLogo_onclick" id="imgLogo" tagname="a"></xf:group>
+    				</xf:group>
+    			</xf:group>
+    			<xf:group class="gnb_menu" id="" style="" tagname="ul">
+    				<xf:group id="grpSystemSearch" tagname="li">
+    					<xf:group id="" tagname="h2">
+    						<w2:anchor class="" ev:onclick="scwin.btnSearch_onclick" id="btnSystemSearch" outerDiv="false" style="">
+    							<xf:label><![CDATA[통합검색]]></xf:label>
+    						</w2:anchor>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group id="grpDocManagement" style="" tagname="li">
+    					<xf:group id="" tagname="h2">
+    						<w2:anchor class="" ev:onclick="scwin.btnDocSearch_onclick" id="btnDocManagement" outerDiv="false" style="">
+    							<xf:label><![CDATA[문서관리]]></xf:label>
+    						</w2:anchor>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group id="grpCMDBManagement" style="" tagname="li">
+    					<xf:group id="" tagname="h2">
+    						<w2:anchor class="" ev:onclick="scwin.btnCMDBSearch_onclick" id="btnCMDBManagement" outerDiv="false" style="">
+    							<xf:label><![CDATA[CMDB관리]]></xf:label>
+    						</w2:anchor>
+    					</xf:group>
+    				</xf:group>
     			</xf:group>
     		</xf:group>
-    		<xf:image src="/img/logout.svg" style="width: 24px;height: 24px;" id="imgLogout" ev:onclick="scwin.imgLogout_onclick"></xf:image>
-    		<xf:group style="width: 24px;height: 100%;" id=""></xf:group>
+    		<xf:group class="header_rt" id="" style="">
+    			<xf:group class="logoutbox" id="" style="">
+    				<w2:anchor class="btn_icon logout" ev:onclick="scwin.imgLogout_onclick" id="imgLogout" outerDiv="false" style="">
+    					<xf:label><![CDATA[설정]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
     	</xf:group>
     </body>
 </html>

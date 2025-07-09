@@ -125,11 +125,10 @@ scwin.sbmDatabaseList_submiterror = function (e) {
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="">
-    	<xf:group style="width:100%;height:100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 16px;"
-    		id="">
-    		<w2:textbox id="" label="DB" style="width: 150px;height: 43px;font-size:22px;font-weight:bold;"></w2:textbox>
-    		<w2:gridView checkAllType="false" defaultCellHeight="20" id="" style="width: 100%;height: 150px;flex: 1;" dataList="data:dbs"
-    			autoFit="allColumn">
+    	<xf:group style=""
+    		id="" class="sub_contents flex_cont">
+    		<xf:group id="" class="pgtbox"><w2:textbox style="" id="" label="DB" class="pgt_tit"></w2:textbox></xf:group>
+    	<xf:group id="" class="gvwbox grp_flex"><w2:gridView checkAllType="false" dataList="data:dbs" style="width: 100%;height: 150px;" id="" autoFit="allColumn" class="gvw">
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     			<w2:header style="" id="header1">
     				<w2:row style="" id="row1">
@@ -171,7 +170,6 @@ scwin.sbmDatabaseList_submiterror = function (e) {
     					<w2:column width="70" inputType="text" style="" id="crtnDt" value="" displayMode="label"></w2:column>
     				</w2:row>
     			</w2:gBody>
-    		</w2:gridView>
-    	</xf:group>
+    		</w2:gridView></xf:group></xf:group>
     </body>
 </html>

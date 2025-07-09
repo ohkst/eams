@@ -151,11 +151,10 @@ scwin.smbHardwarList_submiterror = function (e) {
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="">
-    	<xf:group style="width:100%;height:100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 16px;"
-    		id="">
-    		<w2:textbox id="" label="보안장비" style="width: 150px;height: 43px;font-size:22px;font-weight:bold;"></w2:textbox>
-    		<w2:gridView checkAllType="false" defaultCellHeight="20" id="" style="width: 100%;height: 150px;flex: 1;" dataList="data:hws"
-    			autoFit="allColumn">
+    	<xf:group style=""
+    		id="" class="sub_contents flex_cont">
+    		<xf:group id="" class="pgtbox"><w2:textbox style="" id="" label="보안장비" class="pgt_tit"></w2:textbox></xf:group>
+    	<xf:group id="" class="gvwbox grp_flex"><w2:gridView checkAllType="false" dataList="data:hws" style="width: 100%;height: 150px;" id="" autoFit="allColumn" class="gvw">
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     			<w2:header style="" id="header1">
     				<w2:row style="" id="row1">
@@ -177,17 +176,13 @@ scwin.smbHardwarList_submiterror = function (e) {
     					<w2:column hidden="true" width="70" inputType="text" style="" id="column17" value="메모리사이즈" displayMode="label"></w2:column>
     					<w2:column hidden="true" width="70" inputType="text" style="" id="column16" value="내장디스크사이즈" displayMode="label"></w2:column>
     					<w2:column hidden="true" width="70" inputType="text" style="" id="column15" value="외장디스크연결여부" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="외장디스크일련번호1"
-    						displayMode="label">
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="외장디스크일련번호1" displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column13" value="외장디스크일련번호2"
-    						displayMode="label">
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column13" value="외장디스크일련번호2" displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="외장디스크일련번호3"
-    						displayMode="label">
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="외장디스크일련번호3" displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="외장디스크일련번호4"
-    						displayMode="label">
+    					<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="외장디스크일련번호4" displayMode="label">
     					</w2:column>
     					<w2:column hidden="false" width="70" inputType="text" style="" id="column10" value="설치일자" displayMode="label"></w2:column>
     					<w2:column hidden="true" width="70" inputType="text" style="" id="column9" value="서비스개시일자" displayMode="label"></w2:column>
@@ -239,7 +234,6 @@ scwin.smbHardwarList_submiterror = function (e) {
     					<w2:column width="70" inputType="text" style="" id="mainAdmr" value="" displayMode="label"></w2:column>
     				</w2:row>
     			</w2:gBody>
-    		</w2:gridView>
-    	</xf:group>
+    		</w2:gridView></xf:group></xf:group>
     </body>
 </html>

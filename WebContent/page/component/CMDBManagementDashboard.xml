@@ -19,8 +19,8 @@ scwin.onpageload = function() {
     widgetOptions1.id = "wg_widget1";
     widgetOptions1.src = "/page/widget/WidgetLatestSearchKeyword.xml"
     widgetOptions1.scope = true;
-    widgetOptions1.unitWidth = 5;
-    widgetOptions1.unitHeight = 10;
+    widgetOptions1.unitWidth = 1;
+    widgetOptions1.unitHeight = 1;
     widgetOptions1.title = "Server";
     widgetOptions1.x = 0;
     widgetOptions1.y = 0;
@@ -31,10 +31,10 @@ scwin.onpageload = function() {
     widgetOptions2.id = "wg_widget2";
     widgetOptions2.src = "/page/widget/WidgetLatestVisited.xml"
     widgetOptions2.scope = true;
-    widgetOptions2.unitWidth = 5;
-    widgetOptions2.unitHeight = 10;
+    widgetOptions2.unitWidth = 1;
+    widgetOptions2.unitHeight = 1;
     widgetOptions2.title = "Storage";
-    widgetOptions2.x = 5;
+    widgetOptions2.x = 1;
     widgetOptions2.y = 0;
     wgc_contain.addWidgets(widgetOptions2);
 
@@ -43,11 +43,11 @@ scwin.onpageload = function() {
     widgetOptions3.id = "wg_widget3";
     widgetOptions3.src = "/page/widget/WidgetLatestChangedTR.xml"
     widgetOptions3.scope = true;
-    widgetOptions3.unitWidth = 5;
-    widgetOptions3.unitHeight = 10;
+    widgetOptions3.unitWidth = 1;
+    widgetOptions3.unitHeight = 1;
     widgetOptions3.title = "Network";
     widgetOptions3.x = 0;
-    widgetOptions3.y = 5;
+    widgetOptions3.y = 1;
     wgc_contain.addWidgets(widgetOptions3);
 
     let widgetOptions4 = {};
@@ -55,11 +55,11 @@ scwin.onpageload = function() {
     widgetOptions4.id = "wg_widget4";
     widgetOptions4.src = "/page/widget/WidgetLatestChangedScreen.xml"
     widgetOptions4.scope = true;
-    widgetOptions4.unitWidth = 5;
-    widgetOptions4.unitHeight = 10
+    widgetOptions4.unitWidth = 1;
+    widgetOptions4.unitHeight = 1;
     widgetOptions4.title = "Middleware";
-    widgetOptions4.x = 5;
-    widgetOptions4.y = 5;
+    widgetOptions4.x = 1;
+    widgetOptions4.y = 1;
     wgc_contain.addWidgets(widgetOptions4);
 
     let widgetOptions5 = {};
@@ -67,11 +67,11 @@ scwin.onpageload = function() {
     widgetOptions5.id = "wg_widget5";
     widgetOptions5.src = "/page/widget/WidgetLatestChangedTR.xml"
     widgetOptions5.scope = true;
-    widgetOptions5.unitWidth = 5;
-    widgetOptions5.unitHeight = 10;
+    widgetOptions5.unitWidth = 1;
+    widgetOptions5.unitHeight = 1;
     widgetOptions5.title = "보안 장비";
-    // widgetOptions5.x = 0;
-    // widgetOptions5.y = 5;
+    widgetOptions5.x = 0;
+    widgetOptions5.y = 2;
     wgc_contain.addWidgets(widgetOptions5);
 
     let widgetOptions6 = {};
@@ -79,19 +79,19 @@ scwin.onpageload = function() {
     widgetOptions6.id = "wg_widget6";
     widgetOptions6.src = "/page/widget/WidgetLatestChangedScreen.xml"
     widgetOptions6.scope = true;
-    widgetOptions6.unitWidth = 5;
-    widgetOptions6.unitHeight = 10;
+    widgetOptions6.unitWidth = 1;
+    widgetOptions6.unitHeight = 1;
     widgetOptions6.title = "업무 시스템";
-    widgetOptions6.x = 5;
-    // widgetOptions6.y = 5;
+    widgetOptions6.x = 1;
+    widgetOptions6.y = 2;
     wgc_contain.addWidgets(widgetOptions6);
 };
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style=";background-color:;">
     	<xf:group id="" style="width:100%;height:100%;background-color:;padding: 24px;box-sizing: border-box;">
-    		<w2:widgetContainer cols="10" horizontalMargin="10" id="wgc_contain" mode="" params="false"
-    			style="width: 100%;height: 100%;">
+    		<w2:widgetContainer cols="2" horizontalMargin="20" id="wgc_contain" mode="switch" params="false"
+    			style="width: 100%;height: 100%;" unitHeightPixel="300" verticalMargin="20">
     		</w2:widgetContainer>
     	</xf:group>
     </body>

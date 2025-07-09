@@ -152,7 +152,24 @@ scwin.grdSystemList_oncellclick = function (rowIndex, columnIndex, columnId) {
         "data": rowJSON
     };
 
-    $c.util.openEamsPopup("/page/component/cmdb/PopupDetailSystemList.xml", "업무 시스템 세부 리스트", dataObject);
+    var options = {
+        id: "popuptest",
+        type: "wframePopup",
+
+        popupName: "업무 시스템 세부 리스트",
+        modal: true,
+        useIFrame: false,
+
+        resizable: true,
+        status: true,
+        menubar: false,
+        scrollbars: false,
+        title: false,
+        dataObject: dataObject,
+        closeAction: "scwin.closeAction"
+    };
+
+    $c.util.openEamsPopup("/page/component/cmdb/PopupDetailSystemList.xml", options);
 };
 
 scwin.closeAction = function (id, info) {
@@ -170,82 +187,115 @@ scwin.sbmAADocList_submitdone = function (e) {
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="">
-    	<xf:group style="width:100%;height:100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 16px;"
-    		id="">
-    		<w2:textbox id="" label="AA 산출물 리스트" style="width:197px;height:43px;font-size:22px;font-weight:bold;"></w2:textbox>
-    		<xf:group style="width: 100%;display: flex;justify-content: flex-end;gap: 14px;" id="">
-    			<w2:button
-    				style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;"
-    				id="btnSearch" label="조회" ev:onclick="scwin.btnSearch_onclick">
-    			</w2:button>
-    			<w2:button
-    				style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;"
-    				id="btnReset" label="초기화" ev:onclick="scwin.btnReset_onclick">
-    			</w2:button>
-    			<xf:image src="/img/downloadCSV.svg"
-    				style="top:103px;left:260px;width:24px;height:24px;position:static;border-width:0px;border-radius: 6px;" id="imgBtnCSV" ev:onclick="scwin.imgBtnCSV_onclick">
-    			</xf:image>
+    	<xf:group style="" id="" class="sub_contents flex_cont">
+    		<xf:group id="" class="pgtbox">
+    			<w2:textbox style="" id="" label="AA 산출물 리스트" class="pgt_tit"></w2:textbox>
     		</xf:group>
-    		<xf:group id="" style="width: 100%;display: flex;">
-    			<xf:group id="" style="display: flex;">
-    				<w2:textbox style="position:static; top:65px; left:277px; width:150px; height:23px; " id="" label="문서명"></w2:textbox>
-    				<xf:input style="width: 144px;height: 21px;" id="tfBizName"></xf:input>
+    		<xf:group class="schbox" id="" meta_snippetCategory="03_조회영역" meta_snippetKeyComponent="true" meta_snippetName="3_01 조회조건1행"
+    			style="">
+    			<xf:group class="schbox_inner" id="" style="">
+    				<xf:group adaptive="layout" adaptiveThreshold="768" class="w2tb tbl " id="" style="" tagname="table">
+    					<w2:attributes>
+    						<w2:summary></w2:summary>
+    					</w2:attributes>
+    					<xf:group tagname="colgroup">
+    						<xf:group style="width:100px;" tagname="col"></xf:group>
+    						<xf:group style="" tagname="col"></xf:group>
+    						<xf:group style="width:100px;" tagname="col"></xf:group>
+    						<xf:group style="" tagname="col"></xf:group>
+    					</xf:group>
+    					<xf:group class="" id="" style="" tagname="tr">
+    						<xf:group class="w2tb_th" style="" tagname="th">
+    							<w2:textbox id="" label="문서명" style=""></w2:textbox>
+    						</xf:group>
+    						<xf:group class="w2tb_td" style="" tagname="td">
+    							<xf:input id="tfBizName" style="width:100%;"></xf:input>
+    						</xf:group>
+    						<xf:group class="w2tb_th" style="" tagname="th">
+    							<w2:textbox id="" label="담당자명" style=""></w2:textbox>
+    						</xf:group>
+    						<xf:group class="w2tb_td" id="" style="" tagname="td">
+    							<xf:input id="tfOwnerName" style="width:100%;"></xf:input>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
     			</xf:group>
-    			<xf:group id="" style="display: flex;margin-left: auto;" ev:onclick="scwin.btnSearch_onclick">
-    				<w2:textbox id="" label="담당자명" style="position:static; top:65px; left:277px; width:150px; height:23px; "></w2:textbox>
-    				<xf:input id="tfOwnerName" style="width: 144px;height: 21px;"></xf:input>
+    			<xf:group class="btn_schbox" id="" style="">
+    				<w2:button ev:onclick="scwin.btnSearch_onclick" id="btnSearch" label="조회"
+    					style="" class="btn_cm sch">
+    				</w2:button>
+    				<w2:button ev:onclick="scwin.btnReset_onclick" id="btnReset" label="초기화"
+    					style="" class="btn_cm refresh">
+    				</w2:button>
     			</xf:group>
     		</xf:group>
-    		<w2:gridView checkAllType="false" defaultCellHeight="20" id="grdSystemList" style="width: 100%;height: 150px;flex: 1;"
-    			dataList="data:docs" autoFit="allColumn" useFilterSearch="false" useFilterList="true" sortable="true"
-    			ev:oncellclick="scwin.grdSystemList_oncellclick">
-    			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
-    			<w2:header style="" id="header1">
-    				<w2:row style="" id="row1">
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column15" value="산출물ID" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="연결시스템ID" displayMode="label"></w2:column>
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="문서명" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="산출물시스템구분" displayMode="label">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="산출물대분류코드" displayMode="label">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="산출물소분류코드" displayMode="label">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column9" value="산출물소분류코드명" displayMode="label">
-    					</w2:column>
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column8" value="버전" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="문서관리부서" displayMode="label">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="문서관리부서명" displayMode="label">
-    					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="문서담당자" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="문서담당자사번" displayMode="label"></w2:column>
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column3" value="문서담당자명" displayMode="label">
-    					</w2:column>
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column2" value="최초등록일" displayMode="label"></w2:column>
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column1" value="최근변경일" displayMode="label"></w2:column>
-    				</w2:row>
-    			</w2:header>
-    			<w2:gBody style="" id="gBody1">
-    				<w2:row style="" id="row2">
-    					<w2:column width="70" inputType="text" style="" id="prdtnId" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="linkSysId" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="dcmtName" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="prdtnSysDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="prdtnLclsCd" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="prdtnSclsCd" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="prdtnSclsCdName" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ver" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="dcmtMngtDep" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="dcmtMngtDepName" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="dcmtChrr" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="dcmtChrrNo" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="dcmtChrrName" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="frstErlmDt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="rcenChngDt" value="" displayMode="label"></w2:column>
-    				</w2:row>
-    			</w2:gBody>
-    		</w2:gridView>
+    		<xf:group id="" class="titbox"><xf:group style="" id="" class="rt">
+    			<w2:button ev:onclick="scwin.imgBtnCSV_onclick" style="" id="imgBtnCSV" label="CSV 다운로드" class="btn_cm download"></w2:button>
+    		</xf:group></xf:group>
+    		<xf:group id="" class="gvwbox grp_flex">
+    			<w2:gridView useFilterSearch="false" ev:oncellclick="scwin.grdSystemList_oncellclick" checkAllType="false"
+    				dataList="data:docs" style="width: 100%;height: 150px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true"
+    				class="gvw">
+    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    				<w2:header style="" id="header1">
+    					<w2:row style="" id="row1">
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column15" value="산출물ID"
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="연결시스템ID"
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="문서명" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="산출물시스템구분"
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="산출물대분류코드"
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="산출물소분류코드"
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column9" value="산출물소분류코드명"
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column8" value="버전" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="문서관리부서" displayMode="label">
+    						</w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="문서관리부서명"
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="문서담당자" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="문서담당자사번"
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column3" value="문서담당자명"
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column2" value="최초등록일" displayMode="label"></w2:column>
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column1" value="최근변경일" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody style="" id="gBody1">
+    					<w2:row style="" id="row2">
+    						<w2:column width="70" inputType="text" style="" id="prdtnId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="linkSysId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dcmtName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="prdtnSysDvsn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="prdtnLclsCd" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="prdtnSclsCd" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="prdtnSclsCdName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="ver" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dcmtMngtDep" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dcmtMngtDepName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dcmtChrr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dcmtChrrNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="dcmtChrrName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="frstErlmDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="rcenChngDt" value="" displayMode="label"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
+    		</xf:group>
     	</xf:group>
     </body>
 </html>

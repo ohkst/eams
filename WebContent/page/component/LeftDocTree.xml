@@ -39,37 +39,45 @@ scwin.onpageload = function() {
 
 scwin.btnBA_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/document/BADocList.xml");
+    btnBA.addClass("on");
+    btnAA.removeClass("on");
+    btnDA.removeClass("on");
+    btnTA.removeClass("on");
 };
 
 scwin.btnAA_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/document/AADocList.xml");
+    btnBA.removeClass("on");
+    btnAA.addClass("on");
+    btnDA.removeClass("on");
+    btnTA.removeClass("on");
 };
 
 scwin.btnDA_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/document/DADocList.xml");
+    btnBA.removeClass("on");
+    btnAA.removeClass("on");
+    btnDA.addClass("on");
+    btnTA.removeClass("on");
 };
 
 scwin.btnTA_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/document/TADocList.xml");
+    btnBA.removeClass("on");
+    btnAA.removeClass("on");
+    btnDA.removeClass("on");
+    btnTA.addClass("on");
 };
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style=";max-width:100%;min-width:100%;">
     	<xf:group
-    		style="width:100%;height: 100vh;background-color:#EFF0F4;padding: 12px;display: flex;flex-direction: column;overflow-y: auto;scrollbar-width: none;gap: 12px;box-sizing: border-box;"
-    		id="">
-    		<w2:button id="btnBA" label="BA"
-    			style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" ev:onclick="scwin.btnBA_onclick">
-    		</w2:button>
-    		<w2:button id="btnAA" label="AA"
-    			style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" ev:onclick="scwin.btnAA_onclick">
-    		</w2:button>
-    		<w2:button id="btnDA" label="DA"
-    			style="width:100%;height:48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" ev:onclick="scwin.btnDA_onclick">
-    		</w2:button>
-    		<w2:button id="btnTA" label="TA"
-    			style="width:100%;height:48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" ev:onclick="scwin.btnTA_onclick">
-    		</w2:button>
-    	</xf:group>
+    		style=""
+    		id="" class="eams_sidebox">
+    	<xf:group id="" class="eams_side_list"><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnBA_onclick" style="" id="btnBA" label="BA" class="btn_menu_cmdb">
+    		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnAA_onclick" style="" id="btnAA" label="AA" class="btn_menu_cmdb">
+    		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnDA_onclick" style="" id="btnDA" label="DA" class="btn_menu_cmdb">
+    		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnTA_onclick" style="" id="btnTA" label="TA" class="btn_menu_cmdb">
+    		</w2:button></xf:group></xf:group></xf:group>
     </body>
 </html>

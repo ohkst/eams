@@ -227,34 +227,52 @@ scwin.sbmTrmList_submiterror = function (e) {
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="">
-    	<xf:group style="width:100%;height:100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 16px;"
-    		id="">
-    		<w2:textbox id="" label="TRM" style="width: 150px;height: 43px;font-size:22px;font-weight:bold;"></w2:textbox>
-    		<xf:group style="width: 100%;display: flex;justify-content: flex-end;gap: 14px;" id="">
-    			<w2:button
-    				style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;"
-    				id="btnSearch" label="조회" ev:onclick="scwin.btnSearch_onclick">
-    			</w2:button>
-    			<w2:button
-    				style="top:103px;left:260px;width:100px;height:28px;position:static;background-color:#3772E0;color:#FFFFFF;font-size:14px;font-weight:bold;border-width:0px;border-radius: 6px;"
-    				id="btnReset" label="초기화" ev:onclick="scwin.btnReset_onclick">
-    			</w2:button>
-    			<xf:image src="/img/downloadCSV.svg"
-    				style="top:103px;left:260px;width:24px;height:24px;position:static;border-width:0px;border-radius: 6px;" id="imgBtnCSV" ev:onclick="scwin.imgBtnCSV_onclick">
-    			</xf:image>
+    	<xf:group style="" id="" class="sub_contents flex_cont">
+    		<xf:group id="" class="pgtbox">
+    			<w2:textbox style="" id="" label="TRM" class="pgt_tit"></w2:textbox>
     		</xf:group>
-    		<xf:group id="" style="width: 100%;display: flex;">
-    			<xf:group id="" style="display: flex;">
-    				<w2:textbox style="position:static; top:65px; left:277px; width:150px; height:23px; " id="" label="업무명"></w2:textbox>
-    				<xf:input style="width: 144px;height: 21px;" id="tfBizName"></xf:input>
+    		<xf:group class="schbox" id="" meta_snippetCategory="03_조회영역" meta_snippetKeyComponent="true" meta_snippetName="3_01 조회조건1행"
+    			style="">
+    			<xf:group class="schbox_inner" id="" style="">
+    				<xf:group adaptive="layout" adaptiveThreshold="768" class="w2tb tbl " id="" style="" tagname="table">
+    					<w2:attributes>
+    						<w2:summary></w2:summary>
+    					</w2:attributes>
+    					<xf:group tagname="colgroup">
+    						<xf:group style="width:100px;" tagname="col"></xf:group>
+    						<xf:group style="" tagname="col"></xf:group>
+    						<xf:group style="width:100px;" tagname="col"></xf:group>
+    						<xf:group style="" tagname="col"></xf:group>
+    					</xf:group>
+    					<xf:group class="" id="" style="" tagname="tr">
+    						<xf:group class="w2tb_th" style="" tagname="th">
+    							<w2:textbox id="" label="업무명" style=""></w2:textbox>
+    						</xf:group>
+    						<xf:group class="w2tb_td" style="" tagname="td">
+    							<xf:input id="tfBizName" style="width:100%;"></xf:input>
+    						</xf:group>
+    						<xf:group class="w2tb_th" style="" tagname="th">
+    							<w2:textbox id="" label="담당자" style=""></w2:textbox>
+    						</xf:group>
+    						<xf:group class="w2tb_td" id="" style="" tagname="td">
+    							<xf:input id="tfOwnerName" style="width:100%;"></xf:input>
+    						</xf:group>
+    					</xf:group>
+    				</xf:group>
     			</xf:group>
-    			<xf:group id="" style="display: flex;margin-left: auto;" ev:onclick="scwin.btnSearch_onclick">
-    				<w2:textbox id="" label="담당자" style="position:static; top:65px; left:277px; width:150px; height:23px; "></w2:textbox>
-    				<xf:input id="tfOwnerName" style="width: 144px;height: 21px;"></xf:input>
+    			<xf:group class="btn_schbox" id="" style="">
+    				<w2:button ev:onclick="scwin.btnSearch_onclick" id="btnSearch" label="조회"
+    					style="" class="btn_cm sch">
+    				</w2:button>
+    				<w2:button ev:onclick="scwin.btnReset_onclick" id="btnReset" label="초기화"
+    					style="" class="btn_cm refresh">
+    				</w2:button>
     			</xf:group>
     		</xf:group>
-    		<w2:gridView checkAllType="false" defaultCellHeight="20" id="grdSystemList" style="width: 100%;height: 150px;flex: 1;"
-    			dataList="data:trms" autoFit="allColumn" useFilterSearch="false" useFilterList="true" sortable="true">
+    		<xf:group id="" class="titbox"><xf:group style="" id="" class="rt">
+    			<w2:button ev:onclick="scwin.btnReset_onclick" style="" id="imgBtnCSV" label="CSV다운로드" class="btn_cm download"></w2:button>
+    		</xf:group></xf:group>
+    	<xf:group id="" class="gvwbox grp_flex"><w2:gridView useFilterSearch="false" checkAllType="false" dataList="data:trms" style="width: 100%;height: 250px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true" class="gvw">
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     			<w2:header style="" id="header1">
     				<w2:row style="" id="row1">
@@ -284,7 +302,6 @@ scwin.sbmTrmList_submiterror = function (e) {
     					<w2:column width="70" inputType="text" style="" id="ver" value="" displayMode="label"></w2:column>
     				</w2:row>
     			</w2:gBody>
-    		</w2:gridView>
-    	</xf:group>
+    		</w2:gridView></xf:group></xf:group>
     </body>
 </html>

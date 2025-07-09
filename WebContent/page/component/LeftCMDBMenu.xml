@@ -400,51 +400,74 @@ scwin.onpageload = function() {
 
 scwin.btnServer_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/cmdb/ServerList.xml");
+    btnServer.addClass("on");
+    btnDB.removeClass("on");
+    btnNetwork.removeClass("on");
+    btnSecurity.removeClass("on");
+    btnBizSystem.removeClass("on");
+    btnTRM.removeClass("on");
 };
 
 scwin.btnDB_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/cmdb/DBList.xml");
+    btnServer.removeClass("on");
+    btnDB.addClass("on");
+    btnNetwork.removeClass("on");
+    btnSecurity.removeClass("on");
+    btnBizSystem.removeClass("on");
+    btnTRM.removeClass("on");
 };
 
 scwin.btnNetwork_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/cmdb/NetworkList.xml");
+    btnServer.removeClass("on");
+    btnDB.removeClass("on");
+    btnNetwork.addClass("on");
+    btnSecurity.removeClass("on");
+    btnBizSystem.removeClass("on");
+    btnTRM.removeClass("on");
 };
 
 scwin.btnSecurity_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/cmdb/SecurityHWList.xml");
+    btnServer.removeClass("on");
+    btnDB.removeClass("on");
+    btnNetwork.removeClass("on");
+    btnSecurity.addClass("on");
+    btnBizSystem.removeClass("on");
+    btnTRM.removeClass("on");
 };
 
 scwin.btnBizSystem_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/cmdb/BizSystemList.xml");
+    btnServer.removeClass("on");
+    btnDB.removeClass("on");
+    btnNetwork.removeClass("on");
+    btnSecurity.removeClass("on");
+    btnBizSystem.addClass("on");
+    btnTRM.removeClass("on");
 };
 
 scwin.btnTRM_onclick = function (e) {
     $p.parent().wfmRightContents.setSrc("/page/component/cmdb/TrmList.xml");
+    btnServer.removeClass("on");
+    btnDB.removeClass("on");
+    btnNetwork.removeClass("on");
+    btnSecurity.removeClass("on");
+    btnBizSystem.removeClass("on");
+    btnTRM.addClass("on");
 };
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style=";max-width:100%;min-width:100%;">
     	<xf:group
-    		style="width:100%;height: 100vh;background-color:#EFF0F4;padding: 12px;display: flex;flex-direction: column;overflow-y: auto;scrollbar-width: none;gap: 12px;box-sizing: border-box;"
-    		id="">
-    		<w2:button style="width:100%;height:48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;" id="btnServer"
-    			label="Server" ev:onclick="scwin.btnServer_onclick">
-    		</w2:button>
-    		<w2:button id="btnDB" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;"
-    			label="DB" ev:onclick="scwin.btnDB_onclick">
-    		</w2:button>
-    		<w2:button id="btnNetwork" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;"
-    			label="네트워크" ev:onclick="scwin.btnNetwork_onclick">
-    		</w2:button>
-    		<w2:button id="btnSecurity" style="width: 100%;height: 48px;font-size:18px;font-weight:bold;text-align:left;border-width:0px;"
-    			label="보안장비" ev:onclick="scwin.btnSecurity_onclick">
-    		</w2:button>
-    		<w2:button id="btnBizSystem" style="width: 100%;height: 48px;font-weight:bold;font-size:18px;text-align:left;border-width:0px;"
-    			label="업무시스템" ev:onclick="scwin.btnBizSystem_onclick">
-    		</w2:button>
-    		<w2:button id="btnTRM" label="TRM"
-    			style="width: 100%;height: 48px;font-weight:bold;font-size:18px;text-align:left;border-width:0px;" ev:onclick="scwin.btnTRM_onclick">
-    		</w2:button>
-    	</xf:group>
+    		style=""
+    		id="" class="eams_sidebox"><xf:group id="" class="eams_side_list"><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnServer_onclick" style="" id="btnServer" label="Server" class="btn_menu_cmdb">
+    		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnDB_onclick" style="" id="btnDB" label="DB" class="btn_menu_cmdb">
+    		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnNetwork_onclick" style="" id="btnNetwork" label="네트워크" class="btn_menu_cmdb">
+    		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnSecurity_onclick" style="" id="btnSecurity" label="보안장비" class="btn_menu_cmdb">
+    		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnBizSystem_onclick" style="" id="btnBizSystem" label="업무시스템" class="btn_menu_cmdb">
+    		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnTRM_onclick" style="" id="btnTRM" label="TRM" class="btn_menu_cmdb">
+    		</w2:button></xf:group></xf:group></xf:group>
     </body>
 </html>

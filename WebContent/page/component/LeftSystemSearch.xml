@@ -222,8 +222,7 @@ scwin.onpageload = function () {
         grpDA.hide();
         grpMember.hide();
 
-        btnFilterALL.setStyle("font-weight", "bold");
-        btnFilterALL.setStyle("border-bottom-width", "2px");
+        btnFilterALL.addClass("on");
     }
 };
 
@@ -408,25 +407,18 @@ scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, colu
 };
 
 scwin.resetBtnFontWeight = function () {
-    btnFilterALL.setStyle("font-weight", "");
-    btnFilterBA.setStyle("font-weight", "");
-    btnFilterAAScreen.setStyle("font-weight", "");
-    btnFilterAATR.setStyle("font-weight", "");
-    btnFilterDA.setStyle("font-weight", "");
-    btnFilterMember.setStyle("font-weight", "");
+    btnFilterALL.removeClass("on");
+    btnFilterBA.removeClass("on");
+    btnFilterAAScreen.removeClass("on");
+    btnFilterAATR.removeClass("on");
+    btnFilterDA.removeClass("on");
+    btnFilterMember.removeClass("on");
 
-    btnFilterALL.setStyle("border-bottom-width", "0px");
-    btnFilterBA.setStyle("border-bottom-width", "0px");
-    btnFilterAAScreen.setStyle("border-bottom-width", "0px");
-    btnFilterAATR.setStyle("border-bottom-width", "0px");
-    btnFilterDA.setStyle("border-bottom-width", "0px");
-    btnFilterMember.setStyle("border-bottom-width", "0px");
 }
 
 scwin.btnFilterALL_onclick = function (e) {
     scwin.resetBtnFontWeight();
-    btnFilterALL.setStyle("font-weight", "bold");
-    btnFilterALL.setStyle("border-bottom-width", "2px");
+    btnFilterALL.addClass("on");
 
     if (searchboxOK.getValue() == "") {
         grpBA.hide();
@@ -471,8 +463,7 @@ scwin.btnFilterALL_onclick = function (e) {
 
 scwin.btnFilterBA_onclick = function (e) {
     scwin.resetBtnFontWeight();
-    btnFilterBA.setStyle("font-weight", "bold");
-    btnFilterBA.setStyle("border-bottom-width", "2px");
+    btnFilterBA.addClass("on");
 
     grpBA.show("");
     grpAAScreen.hide();
@@ -483,8 +474,7 @@ scwin.btnFilterBA_onclick = function (e) {
 
 scwin.btnFilterAAScreen_onclick = function (e) {
     scwin.resetBtnFontWeight();
-    btnFilterAAScreen.setStyle("font-weight", "bold");
-    btnFilterAAScreen.setStyle("border-bottom-width", "2px");
+    btnFilterAAScreen.addClass("on");
 
     grpBA.hide();
     grpAAScreen.show("");
@@ -495,8 +485,7 @@ scwin.btnFilterAAScreen_onclick = function (e) {
 
 scwin.btnFilterAATR_onclick = function (e) {
     scwin.resetBtnFontWeight();
-    btnFilterAATR.setStyle("font-weight", "bold");
-    btnFilterAATR.setStyle("border-bottom-width", "2px");
+    btnFilterAATR.addClass("on");
 
     grpBA.hide();
     grpAAScreen.hide();
@@ -507,8 +496,7 @@ scwin.btnFilterAATR_onclick = function (e) {
 
 scwin.btnFilterDA_onclick = function (e) {
     scwin.resetBtnFontWeight();
-    btnFilterDA.setStyle("font-weight", "bold");
-    btnFilterDA.setStyle("border-bottom-width", "2px");
+    btnFilterDA.addClass("on");
 
     grpBA.hide();
     grpAAScreen.hide();
@@ -519,8 +507,7 @@ scwin.btnFilterDA_onclick = function (e) {
 
 scwin.btnFilterMember_onclick = function (e) {
     scwin.resetBtnFontWeight();
-    btnFilterMember.setStyle("font-weight", "bold");
-    btnFilterMember.setStyle("border-bottom-width", "2px");
+    btnFilterMember.addClass("on");
 
     grpBA.hide();
     grpAAScreen.hide();
@@ -649,51 +636,40 @@ scwin.sbmServiceList_submiterror = function (e) {
     </head>
     <body ev:onpageload="scwin.onpageload" style=";max-width:100%;min-width:100%;">
     	<xf:group
-    		style="width:100%;height: 100vh;background-color:#EFF0F4;padding: 12px;display: flex;flex-direction: column;overflow-y: auto;scrollbar-width: none;gap: 12px;box-sizing: border-box;"
-    		id="">
-    		<w2:searchbox style="width: 100%;height: 48px;display: flex;flex-shrink: 0;" id="searchboxOK" ev:onkeyup="scwin.searchboxOK_onkeyup">
-    		</w2:searchbox>
-    		<xf:group style="width:100%;height:20px;display: flex;justify-content: center;flex-shrink: 0;border-bottom-width:1px;border-bottom-color: #CBD1DE;border-color:;" id="">
-    			<w2:button ev:onclick="scwin.btnFilterALL_onclick"
-    				style="background-color:#EFF0F4;border-bottom-color:#000000;width:40px;border-bottom-width:2px;font-size:14px;border-width:0px;border-bottom: ;height: 100%;" id="btnFilterALL" label="전체">
+    		style=""
+    		id="" class="eams_sidebox">
+    		<xf:group id="" class="eams_side_search"><w2:searchbox ev:onkeyup="scwin.searchboxOK_onkeyup" style="" id="searchboxOK" class="">
+    		</w2:searchbox></xf:group><xf:group style="" id="" class="eams_side_menu">
+    			<w2:button ev:onclick="scwin.btnFilterALL_onclick" style="" id="btnFilterALL" label="전체">
     			</w2:button>
-    			<w2:button ev:onclick="scwin.btnFilterBA_onclick" style="background-color:#EFF0F4;border-bottom-color:#000000;width:40px;font-size:14px;border-width:0px;border-bottom: ;height: 100%;" id="btnFilterBA" label="업무"></w2:button>
-    			<w2:button ev:onclick="scwin.btnFilterAAScreen_onclick" style="background-color:#EFF0F4;border-bottom-color:#000000;width:40px;font-size:14px;border-width:0px;border-bottom: ;height: 100%;" id="btnFilterAAScreen" label="화면"></w2:button>
-    			<w2:button ev:onclick="scwin.btnFilterAATR_onclick" style="background-color:#EFF0F4;border-bottom-color:#000000;width:40px;font-size:14px;border-width:0px;border-bottom: ;height: 100%;" id="btnFilterAATR" label="TR"></w2:button>
-    			<w2:button ev:onclick="scwin.btnFilterDA_onclick" style="background-color:#EFF0F4;border-bottom-color:#000000;width:40px;font-size:14px;border-width:0px;border-bottom: ;height: 100%;" id="btnFilterDA" label="DB">
+    			<w2:button ev:onclick="scwin.btnFilterBA_onclick" style="" id="btnFilterBA" label="업무"></w2:button>
+    			<w2:button ev:onclick="scwin.btnFilterAAScreen_onclick" style="" id="btnFilterAAScreen" label="화면"></w2:button>
+    			<w2:button ev:onclick="scwin.btnFilterAATR_onclick" style="" id="btnFilterAATR" label="TR"></w2:button>
+    			<w2:button ev:onclick="scwin.btnFilterDA_onclick" style="" id="btnFilterDA" label="DB">
     			</w2:button>
     			<w2:button ev:onclick="scwin.btnFilterMember_onclick"
-    				style="background-color:#EFF0F4;border-bottom-color:#000000;width:40px;font-size:14px;border-width:0px;border-bottom: ;height: 100%;" id="btnFilterMember" label="담당자">
+    				style="" id="btnFilterMember" label="담당자">
     			</w2:button>
     		</xf:group>
-    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;"
-    			id="grpBA">
-    			<w2:textbox style="width: 100%;height: 23px;" id="" label="업무"></w2:textbox>
-    			<w2:gridView ev:oncellclick="scwin.gridBASearchResult_oncellclick" hideHeader="true" checkAllType="false"
-    				dataList="data:unitTasks" style="width:100%;height:100%;flex: 1;" id="gridBASearchResult" autoFit="allColumn"
-    				defaultCellHeight="20">
+    	<xf:group id="" class="eams_side_list"><xf:group style="" id="grpBA" class="side_menu_grid">
+    			<w2:textbox style="" id="" label="업무" class="link_depth1"></w2:textbox>
+    		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridBASearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:unitTasks" style="width:100%;min-height:200px;" id="gridBASearchResult" autoFit="allColumn" defaultCellHeight="30">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column width="70" inputType="text" style="" id="column7" value="unitAfrsId" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="unitAfrsId" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column6" value="unitAfrsCd" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="unitAfrsCd" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column5" value="depName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="depName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column4" value="unitAfrsName" displayMode="label"
-    							hidden="false">
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column4" value="unitAfrsName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column3" value="chrrNo" displayMode="label" hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="chrrNo" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column2" value="chrrName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="chrrName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column1" value="manlName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="manlName" displayMode="label">
     						</w2:column>
     					</w2:row>
     				</w2:header>
@@ -708,61 +684,41 @@ scwin.sbmServiceList_submiterror = function (e) {
     						<w2:column width="70" inputType="text" style="" id="manlName" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
-    			</w2:gridView>
-    		</xf:group>
-    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;"
-    			id="grpAAScreen">
-    			<w2:textbox style="width: 100%;height: 23px;" id="" label="화면"></w2:textbox>
-    			<w2:gridView ev:oncellclick="scwin.gridAAScreenSearchResult_oncellclick" hideHeader="true" checkAllType="false"
-    				dataList="data:scrns" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridAAScreenSearchResult"
-    				defaultCellHeight="20">
+    			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpAAScreen" class="side_menu_grid">
+    			<w2:textbox style="" id="" label="화면" class="link_depth1"></w2:textbox>
+    		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridAAScreenSearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:scrns" style="width:100%;min-height:200px;" autoFit="allColumn" id="gridAAScreenSearchResult" defaultCellHeight="30" class="">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column width="70" inputType="text" style="" id="column15" value="arfsScrnId" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column15" value="arfsScrnId" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column14" value="sysName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="sysName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column13" value="scrnNo" displayMode="label"
-    							hidden="false">
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="scrnNo" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column12" value="scrnName" displayMode="label"
-    							hidden="false">
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column12" value="scrnName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column11" value="dvlpChrr" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="dvlpChrr" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column10" value="dvlpChrrNo" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="dvlpChrrNo" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column9" value="dvlpChrrName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column9" value="dvlpChrrName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column8" value="mgmtChrr" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="mgmtChrr" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column7" value="mgmtChrrNo" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="mgmtChrrNo" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column6" value="mgmtChrrName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="mgmtChrrName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column5" value="witfChrgDep" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="witfChrgDep" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column4" value="witfChrgDepName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="witfChrgDepName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column3" value="witfChrr" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="witfChrr" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column2" value="witfChrrNo" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="witfChrrNo" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column1" value="witfChrrName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="witfChrrName" displayMode="label">
     						</w2:column>
     					</w2:row>
     				</w2:header>
@@ -785,30 +741,22 @@ scwin.sbmServiceList_submiterror = function (e) {
     						<w2:column width="70" inputType="text" style="" id="witfChrrName" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
-    			</w2:gridView>
-    		</xf:group>
-    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="grpAATR">
-    			<w2:textbox style="width: 100%;height: 23px;" id="" label="TR"></w2:textbox>
-    			<w2:gridView ev:oncellclick="scwin.gridAATRSearchResult_oncellclick" hideHeader="true" checkAllType="false"
-    				dataList="data:svcs" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridAATRSearchResult" defaultCellHeight="20">
+    			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpAATR" class="side_menu_grid">
+    			<w2:textbox style="" id="" label="TR" class="link_depth1"></w2:textbox>
+    		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridAATRSearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:svcs" style="width:100%;min-height:200px;" autoFit="allColumn" id="gridAATRSearchResult" defaultCellHeight="30">
     				<w2:caption style="" id="caption3" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header3">
     					<w2:row style="" id="row5">
-    						<w2:column width="70" inputType="text" style="" id="column48" value="svcId" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column47" value="svcCd" displayMode="label"
-    							hidden="false">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column48" value="svcId" displayMode="label"></w2:column>
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column47" value="svcCd" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column46" value="korSvcName" displayMode="label"
-    							hidden="false">
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column46" value="korSvcName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column45" value="itChrr" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column45" value="itChrr" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column44" value="itChrrNo" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column44" value="itChrrNo" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column43" value="itChrrName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column43" value="itChrrName" displayMode="label">
     						</w2:column>
     					</w2:row>
     				</w2:header>
@@ -822,59 +770,41 @@ scwin.sbmServiceList_submiterror = function (e) {
     						<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
-    			</w2:gridView>
-    		</xf:group>
-    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="grpDA">
-    			<w2:textbox style="width: 100%;height: 23px;" id="" label="DB"></w2:textbox>
-    			<w2:gridView ev:oncellclick="scwin.gridDADBSearchResult_oncellclick" hideHeader="true" checkAllType="false"
-    				dataList="data:tables" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridDADBSearchResult"
-    				defaultCellHeight="20">
+    			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpDA" class="side_menu_grid">
+    			<w2:textbox style="" id="" label="DB" class="link_depth1"></w2:textbox>
+    		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridDADBSearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:tables" style="width:100%;min-height:200px;" autoFit="allColumn" id="gridDADBSearchResult" defaultCellHeight="30">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column width="70" inputType="text" style="" id="column16" value="tlbId" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column15" value="afrsDvsn" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column16" value="tlbId" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column15" value="afrsDvsn" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column14" value="msjtSphr" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="msjtSphr" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column13" value="tblEngName" displayMode="label"
-    							hidden="false">
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="tblEngName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column12" value="tblKorName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="tblKorName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column11" value="tblDscr" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="tblDscr" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column10" value="witfChrgDep" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="witfChrgDep" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column9" value="witfChrgDepName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column9" value="witfChrgDepName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column8" value="witfChrr" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="witfChrr" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column7" value="witfChrrName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="witfChrrName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column6" value="itChrgDept" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="itChrgDept" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column5" value="itChrgDeptName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="itChrgDeptName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column4" value="itChrr" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column3" value="itChrrName" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="itChrr" displayMode="label"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="itChrrName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column2" value="frstErlmDt" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="frstErlmDt" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column1" value="rcenChngDt" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="rcenChngDt" displayMode="label">
     						</w2:column>
     					</w2:row>
     				</w2:header>
@@ -898,22 +828,17 @@ scwin.sbmServiceList_submiterror = function (e) {
     						<w2:column width="70" inputType="text" style="" id="rcenChngDt" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
-    			</w2:gridView>
-    		</xf:group>
-    		<xf:group style="width: 100%;height: 320px;display: flex;flex-direction: column;box-sizing: border-box;flex-shrink: 0;" id="grpMember">
-    			<w2:textbox style="width: 100%;height: 23px;" id="" label="담당자"></w2:textbox>
-    			<w2:gridView ev:oncellclick="scwin.gridMemberSearchResult_oncellclick" hideHeader="true" checkAllType="false"
-    				dataList="data:emps" style="width:100%;height:100%;flex: 1;" autoFit="allColumn" id="gridMemberSearchResult"
-    				defaultCellHeight="20">
+    			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpMember" class="side_menu_grid">
+    			<w2:textbox style="" id="" label="담당자" class="link_depth1"></w2:textbox>
+    		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridMemberSearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:emps" style="width:100%;min-height:200px;" autoFit="allColumn" id="gridMemberSearchResult" defaultCellHeight="30">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column width="70" inputType="text" style="" id="column4" value="empId" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column3" value="empNo" displayMode="label" hidden="false"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column2" value="empName" displayMode="label"
-    							hidden="false">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="empId" displayMode="label"></w2:column>
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column3" value="empNo" displayMode="label"></w2:column>
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column2" value="empName" displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column1" value="osdtCd" displayMode="label" hidden="true"></w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="osdtCd" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
@@ -924,8 +849,6 @@ scwin.sbmServiceList_submiterror = function (e) {
     						<w2:column width="70" inputType="text" style="" id="osdtCd" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
-    			</w2:gridView>
-    		</xf:group>
-    	</xf:group>
+    			</w2:gridView></xf:group></xf:group></xf:group></xf:group>
     </body>
 </html>

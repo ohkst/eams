@@ -316,329 +316,332 @@ scwin.toggle_ontogglechange = function () {
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="">
-    	<xf:group style="width:100%;height:100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 16px;"
-    		id="">
-    		<w2:textbox id="" label="Server" style="width: 150px;height: 43px;font-size:22px;font-weight:bold;"></w2:textbox>
-    		<xf:group id="" style="height: 100%;">
-    			<w2:button style="width: 100px;height:24px;" id="" label="UNIX"></w2:button>
-    			<w2:button style="width: 100px;height:24px;" id="" label="LINUX"></w2:button>
-    			<w2:button style="width: 100px;height:24px;" id="" label="WINDOWS"></w2:button>
-    			<w2:fliptoggle style="position: relative;width: 80px;height: 30px;" id="toggle"
-    				ev:ontogglechange="scwin.toggle_ontogglechange">
+    	<xf:group style="" id="" class="sub_contents flex_cont">
+    		<xf:group id="" class="pgtbox">
+    			<w2:textbox style="" id="" label="Server" class="pgt_tit"></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" style="" class="titbox">
+    			<xf:group id="" class="lt"><w2:button style="" id="" label="UNIX" class='btn_cm'></w2:button><w2:button style="" id="" label="LINUX" class="btn_cm"></w2:button><w2:button style="" id="" label="WINDOWS" class="btn_cm"></w2:button></xf:group>
+    		<xf:group id="" class="rt"><w2:fliptoggle style="width:80px;" id="toggle" ev:ontogglechange="scwin.toggle_ontogglechange">
     				<w2:on label="물리" value="On"></w2:on>
     				<w2:off label="논리" value="Off"></w2:off>
-    			</w2:fliptoggle>
-    			<w2:gridView useFilterSearch="true" checkAllType="false" dataList="data:svrImgs" style="width: 100%;height: 100%;flex: 1;"
-    				id="grdServerList" autoFit="allColumn" useFilterList="true" defaultCellHeight="20">
-    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
-    				<w2:header style="" id="header1">
-    					<w2:row style="" id="row1">
-    						<w2:column width="70" inputType="text" style="" id="column84" value="서버이미지관리ID" displayMode="label"
-    							hidden="true">
+    			</w2:fliptoggle></xf:group></xf:group>
+    		<xf:group class="gvwbox grp_flex" id="" style="">
+    			<w2:gridView autoFit="allColumn" checkAllType="false" class="gvw" dataList="data:svrImgs" id="grdServerList"
+    				style="width: 100%;height:200px;" useFilterList="true" useFilterSearch="true">
+    				<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
+    				<w2:header id="header1" style="">
+    					<w2:row id="row1" style="">
+    						<w2:column displayMode="label" hidden="true" id="column84" inputType="text" style="" value="서버이미지관리ID"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column83" value="서버이미지관리일련번호" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column83" inputType="text" style="" value="서버이미지관리일련번호"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column82" value="호스트명" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column81" value="상태" displayMode="label" hidden="false"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column80" value="소유구분" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column79" value="TA도메인" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column78" value="TA서비스그룹" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column82" inputType="text" style="" value="호스트명" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="false" id="column81" inputType="text" style="" value="상태" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column80" inputType="text" style="" value="소유구분" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column79" inputType="text" style="" value="TA도메인" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column78" inputType="text" style="" value="TA서비스그룹"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column77" value="TA서비스" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column76" value="TA업무" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column75" value="서비스중요도" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column77" inputType="text" style="" value="TA서비스" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column76" inputType="text" style="" value="TA업무" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column75" inputType="text" style="" value="서비스중요도"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column74" value="서비스제공대상" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column74" inputType="text" style="" value="서비스제공대상"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column73" value="서비스시간" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column72" value="주관리부서" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column71" value="AP담당자" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column70" value="OS구분" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column69" value="용도구분" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column68" value="서버용도" displayMode="label" hidden="false"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column67" value="이미지구분" displayMode="label" hidden="false"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column66" value="HA구성여부" displayMode="label"
-    							hidden="false">
+    						<w2:column displayMode="label" hidden="true" id="column73" inputType="text" style="" value="서비스시간" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column72" inputType="text" style="" value="주관리부서" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column71" inputType="text" style="" value="AP담당자" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column70" inputType="text" style="" value="OS구분" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column69" inputType="text" style="" value="용도구분" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="false" id="column68" inputType="text" style="" value="서버용도" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="false" id="column67" inputType="text" style="" value="이미지구분"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column65" value="HA솔루션" displayMode="label" hidden="false"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column64" value="HA버전" displayMode="label" hidden="false"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column63" value="서비스개시일자" displayMode="label"
-    							hidden="false">
+    						<w2:column displayMode="label" hidden="false" id="column66" inputType="text" style="" value="HA구성여부"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column62" value="서비스종료일자" displayMode="label"
-    							hidden="false">
+    						<w2:column displayMode="label" hidden="false" id="column65" inputType="text" style="" value="HA솔루션"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column61" value="과금대상여부" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="false" id="column64" inputType="text" style="" value="HA버전" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="false" id="column63" inputType="text" style="" value="서비스개시일자"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column60" value="할당Core수" displayMode="label"
-    							hidden="false">
+    						<w2:column displayMode="label" hidden="false" id="column62" inputType="text" style="" value="서비스종료일자"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column59" value="할당메모리사이즈" displayMode="label"
-    							hidden="false">
+    						<w2:column displayMode="label" hidden="true" id="column61" inputType="text" style="" value="과금대상여부"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column58" value="할당내장디스크사이즈" displayMode="label"
-    							hidden="false">
+    						<w2:column displayMode="label" hidden="false" id="column60" inputType="text" style="" value="할당Core수"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column57" value="할단외장디스크사이즈" displayMode="label"
-    							hidden="false">
+    						<w2:column displayMode="label" hidden="false" id="column59" inputType="text" style="" value="할당메모리사이즈"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column56" value="IP_주소1" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="false" id="column58" inputType="text" style="" value="할당내장디스크사이즈"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column55" value="IP_주소2" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="false" id="column57" inputType="text" style="" value="할단외장디스크사이즈"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column54" value="IP_주소3" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column56" inputType="text" style="" value="IP_주소1"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column53" value="IP_주소4" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column55" inputType="text" style="" value="IP_주소2"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column52" value="IP_주소5" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column54" inputType="text" style="" value="IP_주소3"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column51" value="IP_주소6" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column53" inputType="text" style="" value="IP_주소4"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column50" value="IP_주소7" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column52" inputType="text" style="" value="IP_주소5"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column49" value="IP_주소8" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column51" inputType="text" style="" value="IP_주소6"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column48" value="IP_주소9" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column50" inputType="text" style="" value="IP_주소7"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column47" value="자산번호" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column46" value="파기대상여부" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column49" inputType="text" style="" value="IP_주소8"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column45" value="비고" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column44" value="하드웨어 ID" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column48" inputType="text" style="" value="IP_주소9"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column43" value="하드웨어 일련번호" displayMode="label"
-    							hidden="false">
+    						<w2:column displayMode="label" hidden="true" id="column47" inputType="text" style="" value="자산번호" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column46" inputType="text" style="" value="파기대상여부"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column42" value="하드웨어 장비구분" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column45" inputType="text" style="" value="비고" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column44" inputType="text" style="" value="하드웨어 ID"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column41" value="하드웨어 자산번호" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="false" id="column43" inputType="text" style="" value="하드웨어 일련번호"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column40" value="하드웨어 하드웨어상태" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column42" inputType="text" style="" value="하드웨어 장비구분"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column39" value="하드웨어 소유구분" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column41" inputType="text" style="" value="하드웨어 자산번호"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column38" value="하드웨어 정관리자" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column40" inputType="text" style="" value="하드웨어 하드웨어상태"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column37" value="하드웨어 부관리자" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column39" inputType="text" style="" value="하드웨어 소유구분"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column36" value="하드웨어 주요용도" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column38" inputType="text" style="" value="하드웨어 정관리자"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column35" value="하드웨어 장비제조사" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column37" inputType="text" style="" value="하드웨어 부관리자"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column34" value="하드웨어 장비모형" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column36" inputType="text" style="" value="하드웨어 주요용도"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column33" value="하드웨어 머신타임" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column35" inputType="text" style="" value="하드웨어 장비제조사"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column32" value="하드웨어 CPU타입" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column34" inputType="text" style="" value="하드웨어 장비모형"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column31" value="하드웨어 CPU속도" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column33" inputType="text" style="" value="하드웨어 머신타임"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column30" value="하드웨어 CPU코어수" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column32" inputType="text" style="" value="하드웨어 CPU타입"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column29" value="하드웨어 메모리사이즈" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column31" inputType="text" style="" value="하드웨어 CPU속도"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column28" value="하드웨어 내장디스크사이즈" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column30" inputType="text" style="" value="하드웨어 CPU코어수"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column27" value="하드웨어 외장디스크연결여부" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column29" inputType="text" style="" value="하드웨어 메모리사이즈"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column26" value="하드웨어 외장디스크일련번호1" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column28" inputType="text" style="" value="하드웨어 내장디스크사이즈"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column25" value="하드웨어 외장디스크일련번호2" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column27" inputType="text" style="" value="하드웨어 외장디스크연결여부"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column24" value="하드웨어 외장디스크일련번호3" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column26" inputType="text" style="" value="하드웨어 외장디스크일련번호1"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column23" value="하드웨어 외장디스크일련번호4" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column25" inputType="text" style="" value="하드웨어 외장디스크일련번호2"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column22" value="하드웨어 설치일자" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column24" inputType="text" style="" value="하드웨어 외장디스크일련번호3"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column21" value="하드웨어 서비스개시일자" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column23" inputType="text" style="" value="하드웨어 외장디스크일련번호4"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column20" value="하드웨어 시비스종료일자" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column22" inputType="text" style="" value="하드웨어 설치일자"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column19" value="하드웨어 과금대상여부" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column21" inputType="text" style="" value="하드웨어 서비스개시일자"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column18" value="하드웨어 설치장소" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column20" inputType="text" style="" value="하드웨어 시비스종료일자"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column17" value="하드웨어 랙번호" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column19" inputType="text" style="" value="하드웨어 과금대상여부"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column16" value="하드웨어 랙내부위치" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column18" inputType="text" style="" value="하드웨어 설치장소"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column15" value="하드웨어 폐기여부" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column17" inputType="text" style="" value="하드웨어 랙번호"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column14" value="하드웨어 폐기일자" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column16" inputType="text" style="" value="하드웨어 랙내부위치"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column13" value="하드웨어 비고" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column15" inputType="text" style="" value="하드웨어 폐기여부"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column12" value="부가정보_펌웨어버전" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column14" inputType="text" style="" value="하드웨어 폐기일자"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column11" value="부가정보_캐시사이즈" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column13" inputType="text" style="" value="하드웨어 비고"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column10" value="부가정보_FCSpeed" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column12" inputType="text" style="" value="부가정보_펌웨어버전"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column9" value="부가정보_FCPort" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column11" inputType="text" style="" value="부가정보_캐시사이즈"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column8" value="부가정보_디스크용량" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column10" inputType="text" style="" value="부가정보_FCSpeed"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column7" value="부가정보_RAID" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column9" inputType="text" style="" value="부가정보_FCPort"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column6" value="부가정보IP주소1" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column8" inputType="text" style="" value="부가정보_디스크용량"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column5" value="부가정보IP주소2" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column7" inputType="text" style="" value="부가정보_RAID"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column4" value="부가정보IP주소3" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column6" inputType="text" style="" value="부가정보IP주소1"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column3" value="부가정보IP주소4" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column5" inputType="text" style="" value="부가정보IP주소2"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column2" value="부가정보IP주소5" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column4" inputType="text" style="" value="부가정보IP주소3"
+    							width="70">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column1" value="부가정보IP주소6" displayMode="label"
-    							hidden="true">
+    						<w2:column displayMode="label" hidden="true" id="column3" inputType="text" style="" value="부가정보IP주소4"
+    							width="70">
+    						</w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column2" inputType="text" style="" value="부가정보IP주소5"
+    							width="70">
+    						</w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column1" inputType="text" style="" value="부가정보IP주소6"
+    							width="70">
     						</w2:column>
     					</w2:row>
     				</w2:header>
-    				<w2:gBody style="" id="gBody1">
-    					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="" id="svrImgAdmnId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="svrImgAdmnSqno" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hostName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="stat" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="pssnDvsn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="taDomn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="taSvcGrp" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="taSvc" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="taArfs" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="svcIptd" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="svcOffrObjt" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="svcHour" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="prmAdmnDep" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="apChhr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="osDvsn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="usgeDvsn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="svrDvsn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="imgDvsn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="haCpstYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="haSoltn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="haVer" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="svcOpngDt" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="svcEndDt" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="bilObjtYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="asmtCoreTnum" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="asmtMmutSize" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="asmtItnlDiskSize" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="asmtExtnDiskSize" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="ipArr1" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="ipArr2" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="ipArr3" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="ipArr4" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="ipArr5" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="ipArr6" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="ipArr7" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="ipArr8" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="ipArr9" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="asstNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dsusObjtYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="rmks" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwSqno" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwEqpaDvsn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwAsstNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwStat" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwPssnDvsn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwMainAdmr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwSubAdmr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwMainUsge" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwEqpaMnfComp" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwEqpaModl" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwEqpaTm" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwCpuTypp" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwCpuSpeed" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwCpuCoreTnum" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwMmutSize" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwItnlDiskSize" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwExtnLinkYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwExtnDiskSqno1" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwExtnDiskSqno2" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwExtnDiskSqno3" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwExtnDiskSqno4" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwIstlDt" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwSvcOpngDt" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwSvcEndDt" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwBilObjtYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwIstlPlac" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwRackNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwRackItnlLoc" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwDsusYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwDsusDt" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="hwRmks" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="moreFrmwVer" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="moreCachSize" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="moreFcSped" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="moreFcPort" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="moreDiskCapa" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="moreRaid" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="moreIpArr1" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="moreIpArr2" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="moreIpArr3" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="moreIpArr4" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="moreIpArr5" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="moreIpArr6" value="" displayMode="label"></w2:column>
+    				<w2:gBody id="gBody1" style="">
+    					<w2:row id="row2" style="">
+    						<w2:column displayMode="label" id="svrImgAdmnId" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="svrImgAdmnSqno" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hostName" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="stat" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="pssnDvsn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="taDomn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="taSvcGrp" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="taSvc" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="taArfs" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="svcIptd" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="svcOffrObjt" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="svcHour" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="prmAdmnDep" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="apChhr" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="osDvsn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="usgeDvsn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="svrDvsn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="imgDvsn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="haCpstYn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="haSoltn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="haVer" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="svcOpngDt" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="svcEndDt" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="bilObjtYn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="asmtCoreTnum" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="asmtMmutSize" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="asmtItnlDiskSize" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="asmtExtnDiskSize" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="ipArr1" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="ipArr2" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="ipArr3" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="ipArr4" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="ipArr5" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="ipArr6" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="ipArr7" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="ipArr8" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="ipArr9" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="asstNo" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="dsusObjtYn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="rmks" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwId" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwSqno" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwEqpaDvsn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwAsstNo" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwStat" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwPssnDvsn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwMainAdmr" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwSubAdmr" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwMainUsge" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwEqpaMnfComp" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwEqpaModl" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwEqpaTm" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwCpuTypp" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwCpuSpeed" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwCpuCoreTnum" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwMmutSize" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwItnlDiskSize" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwExtnLinkYn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwExtnDiskSqno1" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwExtnDiskSqno2" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwExtnDiskSqno3" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwExtnDiskSqno4" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwIstlDt" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwSvcOpngDt" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwSvcEndDt" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwBilObjtYn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwIstlPlac" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwRackNo" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwRackItnlLoc" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwDsusYn" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwDsusDt" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwRmks" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="moreFrmwVer" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="moreCachSize" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="moreFcSped" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="moreFcPort" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="moreDiskCapa" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="moreRaid" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="moreIpArr1" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="moreIpArr2" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="moreIpArr3" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="moreIpArr4" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="moreIpArr5" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="moreIpArr6" inputType="text" style="" value="" width="70"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView>
