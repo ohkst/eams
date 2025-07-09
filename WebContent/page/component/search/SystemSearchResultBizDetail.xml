@@ -168,28 +168,9 @@ scwin.sbmUnitTaskDetail_submiterror = function (e) {
 };
 
 scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
-    // var dataObj = {
-    //     type: "json",
-    //     data: rowJSON,
-    //     name: "rowObj"
-    // };
 
-    var options = {
-        id: "popup1",
-        type: "wframePopup",
 
-        popupName: "화면상세",
-        modal: true,
-        useIFrame: false,
-
-        resizable: true,
-        status: true,
-        menubar: false,
-        scrollbars: false,
-        title: false,
-    };
-
-    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", options);
+    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", "화면상세");
 };
 
 scwin.sbmEmpInfo_submitdone = function (e) {

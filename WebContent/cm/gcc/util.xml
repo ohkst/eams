@@ -938,7 +938,7 @@ scwin.copyClipboard = async function (comObj) {
  * @exception 
  * @example ${example}
  */ 
-scwin.openEamsPopup = function (path, info) {
+scwin.openEamsPopup = function (path, title, object) {
 
     var defaultPopupWidth = 1000;
     var defaultPopupHeight = 1000;
@@ -967,11 +967,28 @@ scwin.openEamsPopup = function (path, info) {
     var left = Math.floor((windowWidth - popupWidth) / 2);
     var top = Math.floor((windowHeight - popupHeight) / 2);
 
-    var options = info;
-    options.width = popupWidth;
-    options.height = popupHeight;
-    options.top = top;
-    options.left = left;
+    var options = {
+        id: "popup1",
+        type: "wframePopup",
+
+        width: popupWidth,
+        height: popupHeight,
+        top: top,
+        left: left,
+
+        popupName: title,
+        modal: true,
+        useIFrame: false,
+
+        resizable: true,
+        status: true,
+        menubar: false,
+        scrollbars: false,
+        title: false,
+        dataObject: object
+        //closeAction: "scwin.closeAction"
+        // scopeInherit: "all"
+    };
 
     $p.openPopup(path, options);
 };]]></script>

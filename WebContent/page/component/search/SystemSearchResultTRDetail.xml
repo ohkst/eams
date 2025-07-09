@@ -138,16 +138,33 @@
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
-	var paramData = $p.getParameter("LeftSearch");
-    // var data = JSON.stringify(paramData);
-    // alert(data);
-    mainTitle.setValue(paramData.name);
+	const leftParam = $p.getParameter("LeftSearch");
+    const popupParam = $p.getParameter("PopupData");
 
-    const param = {
-        id: paramData.id
-    };
+    let paramData = null;
 
-    $c.sbm.execute(sbmServiceDetail, param);
+    // 우선순위 판단: 팝업에서 들어왔을 경우 PopupData를 사용
+    if (popupParam != null) {
+        paramData = popupParam;
+        // alert("PopupData로 진입");
+    } else if (leftParam != null) {
+        paramData = leftParam;
+        // alert("LeftSearch로 진입");
+    }
+
+    if (paramData != null) {
+        if (paramData.name) {
+            mainTitle.setValue(paramData.name);  // name이 있을 때만 세팅
+        }
+
+        const param = {
+            id: paramData.id
+        };
+
+        $c.sbm.execute(sbmServiceDetail, param);
+    } else {
+        // alert("전달된 파라미터가 없습니다.");
+    }
 };
 
 scwin.gridTRIO_oncellclick = function (rowIndex, columnIndex, columnId) {

@@ -176,10 +176,10 @@ scwin.onpageload = function () {
     // 우선순위 판단: 팝업에서 들어왔을 경우 PopupData를 사용
     if (popupParam != null) {
         paramData = popupParam;
-        <!-- alert("PopupData로 진입"); -->
+        // alert("PopupData로 진입");
     } else if (leftParam != null) {
         paramData = leftParam;
-        <!-- alert("LeftSearch로 진입"); -->
+        // alert("LeftSearch로 진입");
     }
 
     if (paramData != null) {
@@ -193,48 +193,26 @@ scwin.onpageload = function () {
 
         $c.sbm.execute(sbmTaskScreenDetail, param);
     } else {
-        <!-- alert("전달된 파라미터가 없습니다."); -->
+        // alert("전달된 파라미터가 없습니다.");
     }
 };
 
 scwin.gridTRList_oncellclick = function (rowIndex, columnIndex, columnId) {
+    const id = svcs.getCellData(rowIndex, "svcId");
+    const name = svcs.getCellData(rowIndex, "korSvcName");
 
-    // var dataObj = {
-    //     type: "json",
-    //     data: rowJSON,
-    //     name: "rowObj"
-    // };
-
-    var popupWidth = 1000;
-    var popupHeight = 500;
-    var screenWidth = screen.availWidth;
-    var screenHeight = screen.availHeight;
-
-    var options = {
-        id: "popup1",
-        //popupUrl : "popup.html",
-        type: "wframePopup",
-
-        width: popupWidth,
-        height: popupHeight,
-
-        top: Math.floor((screenHeight - popupHeight)),
-        left: Math.floor((screenWidth - popupWidth)),
-
-        popupName: "openPopup",
-        modal: true,
-        useIFrame: false,
-
-        resizable: true,
-        status: true,
-        menubar: false,
-        scrollbars: false,
-        title: false,
-
-        // dataObject: dataObj
+    var rowJSON = {
+        "id": id,
+        "name": name
     };
 
-    $p.openPopup("/page/component/SystemSearchResultTRDetail.xml", options);
+    var dataObject = {
+        "type": "json",
+        "name": "PopupData",
+        "data": rowJSON
+    };
+
+    $c.util.openEamsPopup("/page/component/search/SystemSearchResultTRDetail.xml", "TR 상세", dataObject);
 };
 
 scwin.sbmTaskScreenDetail_submit = function (e) {

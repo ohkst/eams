@@ -153,7 +153,38 @@ scwin.sbmSystemList_submiterror = function (e) {
 
 scwin.openScreenDetailPopup = function (id, name) {
     setTimeout(function () {
-        scwin.openScreenDetail(id, name);
+
+        var rowJSON = {
+            "id": id,
+            "name": name
+        };
+
+        var dataObject = {
+            "type": "json",
+            "name": "PopupData",
+            "data": rowJSON
+        };
+
+        $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", "화면상세", dataObject);
+
+    }, 300);
+};
+
+
+scwin.openTRDetailPopup = function (id, name) {
+    setTimeout(function () {
+        var rowJSON = {
+            "id": id,
+            "name": name
+        };
+
+        var dataObject = {
+            "type": "json",
+            "name": "PopupData",
+            "data": rowJSON
+        };
+
+        $c.util.openEamsPopup("/page/component/search/SystemSearchResultTRDetail.xml", "TR 상세", dataObject);
     }, 300);
 };
 
@@ -173,57 +204,7 @@ scwin.openDetailSystemListPopup = function (rowIndex) {
         "data": rowJSON
     };
 
-    var options = {
-        id: "popuptest",
-        type: "wframePopup",
-
-        popupName: "업무 시스템 세부 리스트",
-        modal: true,
-        useIFrame: false,
-
-        resizable: true,
-        status: true,
-        menubar: false,
-        scrollbars: false,
-        title: false,
-        dataObject: dataObject,
-        closeAction: "scwin.closeAction"
-        // scopeInherit: "all"
-    };
-
-    $c.util.openEamsPopup("/page/component/cmdb/PopupDetailSystemList.xml", options);
-}
-
-scwin.openScreenDetail = function (id, name) {
-
-    var rowJSON = {
-        "id": id,
-        "name": name
-    };
-
-    var dataObject = {
-        "type": "json",
-        "name": "PopupData",
-        "data": rowJSON
-    };
-
-    var options = {
-        id: "popup1",
-        type: "wframePopup",
-
-        popupName: "화면상세",
-        modal: true,
-        useIFrame: false,
-
-        resizable: true,
-        status: true,
-        menubar: false,
-        scrollbars: false,
-        title: false,
-        dataObject: dataObject
-    };
-
-    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", options);
+    $c.util.openEamsPopup("/page/component/cmdb/PopupDetailSystemList.xml", "업무 시스템 세부 리스트", dataObject);
 }
 
 scwin.closeAction = function (id, info) {

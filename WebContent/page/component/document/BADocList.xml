@@ -152,24 +152,7 @@ scwin.grdSystemList_oncellclick = function (rowIndex, columnIndex, columnId) {
         "data": rowJSON
     };
 
-    var options = {
-        id: "popuptest",
-        type: "wframePopup",
-
-        popupName: "업무 시스템 세부 리스트",
-        modal: true,
-        useIFrame: false,
-
-        resizable: true,
-        status: true,
-        menubar: false,
-        scrollbars: false,
-        title: false,
-        dataObject: dataObject,
-        closeAction: "scwin.closeAction"
-    };
-
-    $c.util.openEamsPopup("/page/component/cmdb/PopupDetailSystemList.xml", options);
+    $c.util.openEamsPopup("/page/component/cmdb/PopupDetailSystemList.xml", "업무 시스템 세부 리스트", dataObject);
 };
 
 scwin.closeAction = function (id, info) {
