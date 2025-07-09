@@ -884,25 +884,6 @@ scwin.homeSearchBox_onviewchange = function (info) {
 
 };
 
-scwin.homeSearchBox_onkeydown = function (e) {
-    if ((e.charCode || e.keyCode) === 13) {
-
-        var rowJSON = {
-            "name": homeSearchBox.getValue()
-        };
-
-        // 새로 열릴 화면에 데이터를 전달 (dataObject를 통해 전달 가능)
-        var obj = {
-            "dataObject": {
-                "type": "json",
-                "name": "HomeSearch",
-                "data": rowJSON
-            }
-        };
-
-        $p.parent().wfmLayoutContents.setSrc("/page/subpage/SystemSearch.xml", obj);
-    }
-};
 scwin.sbmUnitTaskList_submit = function (e) {
 
 };
@@ -992,6 +973,26 @@ scwin.sbmDocWithAA_submitdone = function (e) {
 scwin.sbmDocWithDA_submitdone = function (e) {
 	docDA.setArray(docs.getAllArray());
 };
+
+scwin.homeSearchBox_onkeydown = function (e) {
+    if ((e.charCode || e.keyCode) === 13) {
+        
+        var rowJSON = {
+            "name": homeSearchBox.getValue()
+        };
+
+        // 새로 열릴 화면에 데이터를 전달 (dataObject를 통해 전달 가능)
+        var obj = {
+            "dataObject": {
+                "type": "json",
+                "name": "HomeSearch",
+                "data": rowJSON
+            }
+        };
+	
+        $p.parent().wfmRightContents.setSrc("/page/subpage/SystemSearch.xml", obj);
+    }
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload"
@@ -999,8 +1000,7 @@ scwin.sbmDocWithDA_submitdone = function (e) {
     	<xf:group style="" class="eams_main">
     		<!-- 검색창 -->
     		<xf:group style="" class="main_searchbox">
-    			<w2:searchbox style="width:320px;" placeholder="담당자, TR, 화면번호, 업무..." id="homeSearchBox"
-    				ev:onkeydown="scwin.homeSearchBox_onkeydown" />
+    			<w2:searchbox style="width:320px;" placeholder="담당자, TR, 화면번호, 업무..." id="homeSearchBox" ev:onkeydown="scwin.homeSearchBox_onkeydown"/>
     		</xf:group>
 
     		<!-- 최근 업무 이력 -->
@@ -1021,7 +1021,7 @@ scwin.sbmDocWithDA_submitdone = function (e) {
     				</xf:group>
     				<xf:group style="" class="data_cnt">
     					<w2:gridView checkAllType="false" id="" style="width: 100%;height: 180px;"
-    						dataList="data:unitTasks" hideHeader="true" autoFit="allColumn">
+    						dataList="data:unitTasks" hideHeader="true" autoFit="allColumn" defaultCellHeight="20">
     						<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     						<w2:header style="" id="header1">
     							<w2:row style="" id="row1">
@@ -1072,7 +1072,7 @@ scwin.sbmDocWithDA_submitdone = function (e) {
     				</xf:group>
     				<xf:group style="" class="data_cnt">
     					<w2:gridView checkAllType="false" id="deployScreenGrid" style="width: 100%;height: 180px;"
-    						dataList="data:scrns" hideHeader="true" autoFit="allColumn">
+    						dataList="data:scrns" hideHeader="true" autoFit="allColumn" defaultCellHeight="20">
     						<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     						<w2:header style="" id="header1">
     							<w2:row style="" id="row1">
@@ -1155,7 +1155,7 @@ scwin.sbmDocWithDA_submitdone = function (e) {
     				</xf:group>
     				<xf:group style="" class="data_cnt">
     					<w2:gridView checkAllType="false" id="deployTRGrid" style="width: 100%;height: 180px;"
-    						dataList="data:svcs" hideHeader="true" autoFit="allColumn">
+    						dataList="data:svcs" hideHeader="true" autoFit="allColumn" defaultCellHeight="20">
     						<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     						<w2:header style="" id="header1">
     							<w2:row style="" id="row1">
@@ -1206,7 +1206,7 @@ scwin.sbmDocWithDA_submitdone = function (e) {
     				</xf:group>
     				<xf:group style="" class="data_cnt">
     					<w2:gridView autoFit="allColumn" checkAllType="false" dataList="data:docBA" hideHeader="true"
-    						id="operationTableGrid" style="width: 100%;height: 180px;">
+    						id="operationTableGrid" style="width: 100%;height: 180px;" defaultCellHeight="20">
     						<w2:caption id="caption2" style="" value="this is a grid caption."></w2:caption>
     						<w2:header id="header2" style="">
     							<w2:row id="row3" style="">
@@ -1289,7 +1289,7 @@ scwin.sbmDocWithDA_submitdone = function (e) {
     				</xf:group>
     				<xf:group style="" class="data_cnt">
     					<w2:gridView autoFit="allColumn" checkAllType="false" dataList="data:docAA" hideHeader="true"
-    						id="designDocGrid" style="width: 100%;height: 180px;">
+    						id="designDocGrid" style="width: 100%;height: 180px;" defaultCellHeight="20">
     						<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
     						<w2:header id="header1" style="">
     							<w2:row id="row1" style="">
@@ -1372,7 +1372,7 @@ scwin.sbmDocWithDA_submitdone = function (e) {
     				</xf:group>
     				<xf:group style="" class="data_cnt">
     					<w2:gridView autoFit="allColumn" checkAllType="false" dataList="data:docDA" hideHeader="true"
-    						id="testcaseGrid" style="width: 100%;height: 180px;">
+    						id="testcaseGrid" style="width: 100%;height: 180px;" defaultCellHeight="20">
     						<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
     						<w2:header id="header1" style="">
     							<w2:row id="row1" style="">
@@ -1461,7 +1461,7 @@ scwin.sbmDocWithDA_submitdone = function (e) {
     				</xf:group>
     				<xf:group style="" class="data_cnt">
     					<w2:gridView checkAllType="false" id="recentSearchGrid" style="width: 100%;height: 180px;"
-    						dataList="data:svrImgs" hideHeader="true" autoFit="allColumn">
+    						dataList="data:svrImgs" hideHeader="true" autoFit="allColumn" defaultCellHeight="20">
     						<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     						<w2:header style="" id="header1">
     							<w2:row style="" id="row1">
@@ -1822,7 +1822,7 @@ scwin.sbmDocWithDA_submitdone = function (e) {
     				</xf:group>
     				<xf:group style="" class="data_cnt">
     					<w2:gridView checkAllType="false" id="recentVisitGrid" style="width: 100%;height: 180px;"
-    						dataList="data:hwsNetwork" hideHeader="true" autoFit="allColumn">
+    						dataList="data:hwsNetwork" hideHeader="true" autoFit="allColumn" defaultCellHeight="20" class="no_line">
     						<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     						<w2:header style="" id="header1">
     							<w2:row style="" id="row1">
@@ -1977,7 +1977,7 @@ scwin.sbmDocWithDA_submitdone = function (e) {
     				</xf:group>
     				<xf:group style="" class="data_cnt">
     					<w2:gridView checkAllType="false" id="recentTRGrid" style="width: 100%;height: 180px;"
-    						dataList="data:hwsSecurity" hideHeader="true" autoFit="allColumn">
+    						dataList="data:hwsSecurity" hideHeader="true" autoFit="allColumn" defaultCellHeight="20">
     						<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     						<w2:header style="" id="header1">
     							<w2:row style="" id="row1">

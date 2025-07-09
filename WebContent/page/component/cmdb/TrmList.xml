@@ -270,7 +270,7 @@ scwin.sbmTrmList_submiterror = function (e) {
     			</xf:group>
     		</xf:group>
     		<xf:group id="" class="titbox"><xf:group style="" id="" class="rt">
-    			<w2:button ev:onclick="scwin.btnReset_onclick" style="" id="imgBtnCSV" label="CSV다운로드" class="btn_cm download"></w2:button>
+    			<w2:button style="" id="imgBtnCSV" label="CSV다운로드" class="btn_cm download" ev:onclick="scwin.imgBtnCSV_onclick"></w2:button>
     		</xf:group></xf:group>
     	<xf:group id="" class="gvwbox grp_flex"><w2:gridView useFilterSearch="false" checkAllType="false" dataList="data:trms" style="width: 100%;height: 250px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true" class="gvw">
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>

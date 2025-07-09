@@ -151,12 +151,6 @@ scwin.sbmSystemList_submiterror = function (e) {
 
 };
 
-scwin.openScreenDetailPopup = function (id, name) {
-    setTimeout(function () {
-        scwin.openScreenDetail(id, name);
-    }, 300);
-};
-
 scwin.grdSystemList_oncellclick = function (rowIndex, columnIndex, columnId) {
     scwin.openDetailSystemListPopup(rowIndex);
 };
@@ -173,29 +167,11 @@ scwin.openDetailSystemListPopup = function (rowIndex) {
         "data": rowJSON
     };
 
-    var options = {
-        id: "popuptest",
-        type: "wframePopup",
-
-        popupName: "업무 시스템 세부 리스트",
-        modal: true,
-        useIFrame: false,
-
-        resizable: true,
-        status: true,
-        menubar: false,
-        scrollbars: false,
-        title: false,
-        dataObject: dataObject,
-        closeAction: "scwin.closeAction"
-        // scopeInherit: "all"
-    };
-
-    $c.util.openEamsPopup("/page/component/cmdb/PopupDetailSystemList.xml", options);
+    $c.util.openEamsPopup("/page/component/cmdb/PopupDetailSystemList.xml", "업무 시스템 세부 리스트", dataObject);
 }
 
-scwin.openScreenDetail = function (id, name) {
-
+scwin.openScreenDetailPopup = function (id, name) {
+setTimeout(function () {
     var rowJSON = {
         "id": id,
         "name": name
@@ -207,23 +183,25 @@ scwin.openScreenDetail = function (id, name) {
         "data": rowJSON
     };
 
-    var options = {
-        id: "popup1",
-        type: "wframePopup",
+    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", "화면상세", dataObject);
+    }, 300);
+}
 
-        popupName: "화면상세",
-        modal: true,
-        useIFrame: false,
-
-        resizable: true,
-        status: true,
-        menubar: false,
-        scrollbars: false,
-        title: false,
-        dataObject: dataObject
+scwin.openTRDetailPopup = function (id, name) {
+setTimeout(function () {
+    var rowJSON = {
+        "id": id,
+        "name": name
     };
 
-    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", options);
+    var dataObject = {
+        "type": "json",
+        "name": "PopupData",
+        "data": rowJSON
+    };
+
+    $c.util.openEamsPopup("/page/component/search/SystemSearchResultTRDetail.xml", "TR상세", dataObject);
+    }, 300);
 }
 
 scwin.closeAction = function (id, info) {
@@ -278,7 +256,7 @@ scwin.closeAction = function (id, info) {
     			</xf:group>
     		</xf:group>
     		<xf:group style="width: 100%;display: flex;justify-content: flex-end;gap: 14px;" id="" class="titbox">
-    		<xf:group id="" class="rt"><w2:button ev:onclick="scwin.btnReset_onclick" style="" id="imgBtnCSV" label="CSV다운로드" class="btn_cm download"></w2:button></xf:group></xf:group>
+    		<xf:group id="" class="rt"><w2:button style="" id="imgBtnCSV" label="CSV다운로드" class="btn_cm download" ev:onclick="scwin.imgBtnCSV_onclick"></w2:button></xf:group></xf:group>
     	<xf:group id="" class="gvwbox grp_flex"><w2:gridView useFilterSearch="false" ev:oncellclick="scwin.grdSystemList_oncellclick" checkAllType="false" dataList="data:syss" style="width: 100%;height: 250px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true" class="gvw">
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     			<w2:header style="" id="header1">

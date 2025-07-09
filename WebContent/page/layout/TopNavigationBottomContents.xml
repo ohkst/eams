@@ -16,39 +16,6 @@
 scwin.onpageload = function () {
     //wfmLayoutTop.setSrc("/page/component/TopNavigation.xml");
     //wfmLayoutContents.setSrc("/page/subpage/HomeDashboard.xml");
-};
-
-var savedParam = ""
-scwin.saveParam = function (param) {
-    savedParam = param
-};
-
-scwin.moveSystemSearch = function () {
-
-    if (savedParam == "") {
-        return;
-    }
-
-    setTimeout(function () {
-
-        var rowJSON = {
-            "name": savedParam
-        };
-
-        // 새로 열릴 화면에 데이터를 전달 (dataObject를 통해 전달 가능)
-        var obj = {
-            "dataObject": {
-                "type": "json",
-                "name": "HomeSearch",
-                "data": rowJSON
-            }
-        };
-
-        wfmRightContents.setSrc("/page/subpage/SystemSearch.xml", obj);
-
-        savedParam = "";
-
-    }, 300);
 };]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload">
