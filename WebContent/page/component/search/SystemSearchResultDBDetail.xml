@@ -629,12 +629,10 @@ scwin.sbmTableToServiceList_submiterror = function (e) {
     </head>
     <body ev:onpageload="scwin.onpageload" style=";background-color:;">
     	<xf:group
-    		style="width: 100%;height: 100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 24px;overflow-y: auto;scrollbar-width: none;"
-    		id="">
-    		<w2:textbox style="width: 100%;height: 40px;font-size:26px;font-weight:bold;" id="mainTitle" label="검색 타이틀"></w2:textbox>
-    		<xf:group id="">
-    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="기본정보"></w2:textbox>
-    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb">
+    		style=""
+    		id="" class="sub_contents">
+    		<xf:group id="" class="pgtbox"><w2:textbox style="" id="mainTitle" label="검색 타이틀" class="pgt_tit"></w2:textbox></xf:group><xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="기본정보"></w2:textbox></xf:group><xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb tbl">
     				<w2:attributes>
     					<w2:summary></w2:summary>
     				</w2:attributes>
@@ -745,10 +743,8 @@ scwin.sbmTableToServiceList_submiterror = function (e) {
     				</xf:group>
     			</xf:group>
     		</xf:group>
-    		<xf:group id="">
-    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="Index 정보"></w2:textbox>
-    			<w2:gridView checkAllType="false" dataList="data:indexes" style="width: 100%;height: 150px;" id="" defaultCellHeight="43"
-    				autoFit="allColumn">
+    		<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="Index 정보"></w2:textbox></xf:group><xf:group id="" class="gvwbox">
+    			<w2:gridView checkAllType="false" dataList="data:indexes" style="width: 100%;height: 150px;" id="" autoFit="allColumn" class="gvw">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
@@ -770,10 +766,8 @@ scwin.sbmTableToServiceList_submiterror = function (e) {
     				</w2:gBody>
     			</w2:gridView>
     		</xf:group>
-    		<xf:group style="width: 100%" id="">
-    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="Column 정보"></w2:textbox>
-    			<w2:gridView checkAllType="false" dataList="data:columns" style="width: 100%;height: 400px;" id="" defaultCellHeight="43"
-    				autoFit="allColumn">
+    		<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="Column 정보"></w2:textbox></xf:group><xf:group style="width: 100%" id="" class="gvwbox">
+    			<w2:gridView checkAllType="false" dataList="data:columns" style="width: 100%;height: 400px;" id="" autoFit="allColumn" class="gvw">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
@@ -799,34 +793,24 @@ scwin.sbmTableToServiceList_submiterror = function (e) {
     				</w2:gBody>
     			</w2:gridView>
     		</xf:group>
-    		<xf:group id="" style="flex: 1;height: 100%">
-    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="연관 정보"></w2:textbox>
-    			<xf:group id="" style="display: flex;">
-    				<w2:textbox style="width: 50%;height: 23px;font-size:16px;font-weight:bold;" id="" label="TR 리스트"></w2:textbox>
-    				<w2:textbox style="width: 50%;height: 23px;font-size:16px;font-weight:bold;" id="" label="화면 리스트"></w2:textbox>
-    			</xf:group>
-    			<xf:group style="display: flex;gap: 24px;" id="">
-    				<w2:gridView checkAllType="false" dataList="data:svcs" style="width:100%;height: 400px;" id="" autoFit="allColumn"
-    					defaultCellHeight="43">
+    		<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="연관 정보"></w2:textbox></xf:group><xf:group id="" style="" class="lybox">
+    			<xf:group id="" style="">
+    				<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="TR 리스트"></w2:textbox></xf:group>
+    			<xf:group id="" class="gvwbox"><w2:gridView checkAllType="false" dataList="data:svcs" style="width:100%;height: 400px;" autoFit="allColumn" id="" class="gvw">
     					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     					<w2:header style="" id="header1">
     						<w2:row style="" id="row1">
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="서비스ID"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="서비스ID" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="시스템ID"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="시스템ID" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="시스템명"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="시스템명" displayMode="label">
     							</w2:column>
     							<w2:column width="70" inputType="text" style="" id="column5" value="서비스코드" displayMode="label"></w2:column>
     							<w2:column width="70" inputType="text" style="" id="column4" value="한글서비스명" displayMode="label"></w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="IT담당자"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="IT담당자" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="IT담당자사번"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="IT담당자사번" displayMode="label">
     							</w2:column>
     							<w2:column width="70" inputType="text" style="" id="column1" value="IT담당자명" displayMode="label"></w2:column>
     						</w2:row>
@@ -843,56 +827,42 @@ scwin.sbmTableToServiceList_submiterror = function (e) {
     							<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
     						</w2:row>
     					</w2:gBody>
-    				</w2:gridView>
-    				<w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" autoFit="allColumn" id=""
-    					defaultCellHeight="43">
+    				</w2:gridView></xf:group></xf:group>
+    			<xf:group style="" id="">
+    				<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="화면 리스트"></w2:textbox></xf:group>
+    			<xf:group id="" class="gvwbox"><w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" autoFit="allColumn" id="" class="gvw">
     					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     					<w2:header style="" id="header1">
     						<w2:row style="" id="row1">
-    							<w2:column hidden="false" width="70" inputType="text" style="" id="column15" value="업무화면ID"
-    								displayMode="label">
+    							<w2:column hidden="false" width="70" inputType="text" style="" id="column15" value="업무화면ID" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="false" width="70" inputType="text" style="" id="column14" value="시스템명"
-    								displayMode="label">
+    							<w2:column hidden="false" width="70" inputType="text" style="" id="column14" value="시스템명" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="화면번호"
-    								displayMode="label">
+    							<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="화면번호" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="화면명"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="화면명" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="개발담당자"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="개발담당자" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="개발담당자사번"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="개발담당자사번" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="false" width="70" inputType="text" style="" id="column9" value="개발담당자명"
-    								displayMode="label">
+    							<w2:column hidden="false" width="70" inputType="text" style="" id="column9" value="개발담당자명" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="운영담당자"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="운영담당자" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="운영담당자사번"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="운영담당자사번" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="운영담당자명"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="운영담당자명" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="현업담당부서"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="현업담당부서" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="현업담당부서명"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="현업담당부서명" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="현업담당자"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="현업담당자" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="현업담당자사번"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="현업담당자사번" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="현업담당자명"
-    								displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="현업담당자명" displayMode="label">
     							</w2:column>
     						</w2:row>
     					</w2:header>
@@ -915,9 +885,8 @@ scwin.sbmTableToServiceList_submiterror = function (e) {
     							<w2:column width="70" inputType="text" style="" id="witfChrrName" value="" displayMode="label"></w2:column>
     						</w2:row>
     					</w2:gBody>
-    				</w2:gridView>
-    			</xf:group>
-    		</xf:group>
+    				</w2:gridView></xf:group></xf:group>
+</xf:group>
     	</xf:group>
     </body>
 </html>

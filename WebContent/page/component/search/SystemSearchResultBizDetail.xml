@@ -179,9 +179,8 @@ scwin.sbmEmpInfo_submitdone = function (e) {
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style=";background-color:;">
-    	<xf:group style="width: 100%;height: 100%;padding: 24px;display: flex;flex-direction: column;gap: 24px;box-sizing: border-box;" id="">
-    		<w2:textbox style="width: 100%;height: 40px;font-size:26px;font-weight:bold;" id="mainTitle" label="검색 타이틀"></w2:textbox>
-    		<xf:group id=""><w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="기본정보"></w2:textbox><xf:group tagname="table" style="width:100%;" id="" class="w2tb">
+    	<xf:group style="" id="" class="sub_contents">
+    		<xf:group id="" class="pgtbox"><w2:textbox style="" id="mainTitle" label="검색 타이틀" class="pgt_tit"></w2:textbox></xf:group><xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="기본정보"></w2:textbox></xf:group><xf:group id="" class="tblbox"><xf:group tagname="table" style="width:100%;" id="" class="w2tb tbl">
     			<w2:attributes>
     				<w2:summary></w2:summary>
     			</w2:attributes>
@@ -240,19 +239,12 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     					</w2:attributes>
     				</xf:group>
     				<xf:group tagname="td" style="" class="w2tb_td">
-    					<w2:textbox ref="data:emp.emal" style="" id="" label=""></w2:textbox>
-    				</xf:group>
-    				<xf:group tagname="th" style="" class="w2tb_th">
-    					<w2:attributes>
-    						<w2:scope>row</w2:scope>
-    					</w2:attributes>
-    				</xf:group>
-    				<xf:group tagname="td" style="" class="w2tb_td">
+    					<w2:attributes><w2:colspan>3</w2:colspan><w2:rowspan>1</w2:rowspan></w2:attributes><w2:textbox ref="data:emp.emal" style="" id="" label=""></w2:textbox>
     				</xf:group>
     			</xf:group>
     		</xf:group></xf:group>
-    		<xf:group id=""><w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="업무 매뉴얼"></w2:textbox>
-    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb">
+    		<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="업무 매뉴얼"></w2:textbox></xf:group><xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb tbl">
     				<w2:attributes>
     					<w2:summary></w2:summary>
     				</w2:attributes>
@@ -364,7 +356,7 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     					</xf:group>
     				</xf:group>
     				<xf:group style="" tagname="tr">
-    					<xf:group class="w2tb_th" style="vertical-align: top;padding: 12px" tagname="th">정의<w2:attributes>
+    					<xf:group class="w2tb_th" style="" tagname="th">정의<w2:attributes>
     							<w2:scope>row</w2:scope>
     						</w2:attributes></xf:group>
     					<xf:group class="w2tb_td" style="" tagname="td">
@@ -376,10 +368,9 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     					</xf:group>
     				</xf:group>
     			</xf:group></xf:group>
-    		<xf:group id="">
-    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="연관 화면 리스트"></w2:textbox>
+    		<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="연관 화면 리스트"></w2:textbox></xf:group><xf:group id="" class="gvwbox">
     			<w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" id="grdScreenList"
-    				autoFit="allColumn" defaultCellHeight="43" ev:oncellclick="scwin.grdScreenList_oncellclick">
+    				autoFit="allColumn" ev:oncellclick="scwin.grdScreenList_oncellclick" class="gvw">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">

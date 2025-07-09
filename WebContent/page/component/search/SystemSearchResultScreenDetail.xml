@@ -229,12 +229,15 @@ scwin.sbmTaskScreenDetail_submiterror = function (e) {
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style=";background-color:;">
-    	<xf:group style="width: 100%;height: 100%;padding: 24px;box-sizing: border-box;display: flex;flex-direction: column;gap: 24px;"
-    		id="">
-    		<w2:textbox style="width: 100%;height: 40px;font-size:26px;font-weight:bold;" id="mainTitle" label="검색 타이틀"></w2:textbox>
-    		<xf:group id="">
-    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="기본정보"></w2:textbox>
-    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb">
+    	<xf:group style="" id="" class="sub_contents">
+    		<xf:group id="" class="pgtbox">
+    			<w2:textbox style="" id="mainTitle" label="검색 타이틀" class="pgt_tit"></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="기본정보"></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb tbl">
     				<w2:attributes>
     					<w2:summary></w2:summary>
     				</w2:attributes>
@@ -246,43 +249,61 @@ scwin.sbmTaskScreenDetail_submiterror = function (e) {
     					<xf:group tagname="col" style="width:25.00%"></xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">
-    					<xf:group tagname="th" style="" class="w2tb_th">현업&amp;nbsp;담당부서<w2:attributes>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						현업&amp;nbsp;담당부서
+    						<w2:attributes>
     							<w2:scope>row</w2:scope>
-    						</w2:attributes></xf:group>
+    						</w2:attributes>
+    					</xf:group>
     					<xf:group tagname="td" style="" id="" class="w2tb_td">
     						<w2:textbox ref="data:scrnInfo.witfChrgDepName" style="" id="" label=""></w2:textbox>
     					</xf:group>
-    					<xf:group tagname="th" style="" class="w2tb_th">현업&amp;nbsp;담당자<w2:attributes>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						현업&amp;nbsp;담당자
+    						<w2:attributes>
     							<w2:scope>row</w2:scope>
-    						</w2:attributes></xf:group>
+    						</w2:attributes>
+    					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
     						<w2:textbox ref="data:scrnInfo.witfChrrName" style="" id="" label=""></w2:textbox>
     					</xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">
-    					<xf:group tagname="th" style="" class="w2tb_th">IT&amp;nbsp;담당부서<w2:attributes>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						IT&amp;nbsp;담당부서
+    						<w2:attributes>
     							<w2:scope>row</w2:scope>
-    						</w2:attributes></xf:group>
+    						</w2:attributes>
+    					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
     						<w2:textbox ref="" style="" id="" label=""></w2:textbox>
     					</xf:group>
-    					<xf:group tagname="th" style="" class="w2tb_th">IT&amp;nbsp;개발/운영&amp;nbsp;담당자<w2:attributes>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						IT&amp;nbsp;개발/운영&amp;nbsp;담당자
+    						<w2:attributes>
     							<w2:scope>row</w2:scope>
-    						</w2:attributes></xf:group>
+    						</w2:attributes>
+    					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
     						<w2:textbox ref="data:scrnInfo.dvlpChrrName" style="" id="" label=""></w2:textbox>
     					</xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">
-    					<xf:group tagname="th" style="" class="w2tb_th">최초&amp;nbsp;등록일<w2:attributes>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						최초&amp;nbsp;등록일
+    						<w2:attributes>
     							<w2:scope>row</w2:scope>
-    						</w2:attributes></xf:group>
+    						</w2:attributes>
+    					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
     						<w2:textbox ref="" style="" id="" label=""></w2:textbox>
     					</xf:group>
-    					<xf:group tagname="th" style="" class="w2tb_th">최종&amp;nbsp;변경일<w2:attributes>
+    					<xf:group tagname="th" style="" class="w2tb_th">
+    						최종&amp;nbsp;변경일
+    						<w2:attributes>
     							<w2:scope>row</w2:scope>
-    						</w2:attributes></xf:group>
+    						</w2:attributes>
+    					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
     						<w2:textbox ref="" style="" id="" label=""></w2:textbox>
     					</xf:group>
@@ -308,7 +329,7 @@ scwin.sbmTaskScreenDetail_submiterror = function (e) {
     					</xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">
-    					<xf:group tagname="th" style="vertical-align: top;padding: 12px" class="w2tb_th">
+    					<xf:group tagname="th" style="" class="w2tb_th">
     						설명
     						<w2:attributes>
     							<w2:scope>row</w2:scope>
@@ -324,9 +345,11 @@ scwin.sbmTaskScreenDetail_submiterror = function (e) {
     				</xf:group>
     			</xf:group>
     		</xf:group>
-    		<xf:group id="">
-    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="업무 매뉴얼"></w2:textbox>
-    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb">
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="업무 매뉴얼"></w2:textbox>
+    		</xf:group>
+    		<xf:group id="" class="tblbox">
+    			<xf:group tagname="table" style="width:100%;" id="" class="w2tb tbl">
     				<w2:attributes>
     					<w2:summary></w2:summary>
     				</w2:attributes>
@@ -438,9 +461,12 @@ scwin.sbmTaskScreenDetail_submiterror = function (e) {
     					</xf:group>
     				</xf:group>
     				<xf:group style="" tagname="tr">
-    					<xf:group class="w2tb_th" style="vertical-align: top;padding: 12px" tagname="th">정의<w2:attributes>
+    					<xf:group class="w2tb_th" style="" tagname="th">
+    						정의
+    						<w2:attributes>
     							<w2:scope>row</w2:scope>
-    						</w2:attributes></xf:group>
+    						</w2:attributes>
+    					</xf:group>
     					<xf:group class="w2tb_td" style="" tagname="td">
     						<w2:attributes>
     							<w2:colspan>3</w2:colspan>
@@ -451,43 +477,38 @@ scwin.sbmTaskScreenDetail_submiterror = function (e) {
     				</xf:group>
     			</xf:group>
     		</xf:group>
-    		<xf:group id="">
-    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="연관 정보"></w2:textbox>
-    			<w2:textbox style="width: 150px;height: 23px;font-size:16px;font-weight:bold;" id="" label="TR 리스트"></w2:textbox>
-    			<xf:group style="display: flex;gap: 24px;" id="">
-    				<w2:gridView checkAllType="false" dataList="data:svcs" style="width:100%;height: 400px;" id="gridTRList"
-    					autoFit="allColumn" defaultCellHeight="43" ev:oncellclick="scwin.gridTRList_oncellclick">
-    					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
-    					<w2:header style="" id="header1">
-    						<w2:row style="" id="row1">
-    							<w2:column width="70" inputType="text" style="" id="column7" value="화면서비스연결ID" displayMode="label"
-    								hidden="true">
-    							</w2:column>
-    							<w2:column width="70" inputType="text" style="" id="column6" value="서비스ID" displayMode="label"
-    								hidden="true">
-    							</w2:column>
-    							<w2:column width="70" inputType="text" style="" id="column5" value="서비스코드" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="column4" value="한글서비스명" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="column3" value="IT담당자" displayMode="label"
-    								hidden="true">
-    							</w2:column>
-    							<w2:column width="70" inputType="text" style="" id="column2" value="IT담당자사번" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="column1" value="IT담당자명" displayMode="label"></w2:column>
-    						</w2:row>
-    					</w2:header>
-    					<w2:gBody style="" id="gBody1">
-    						<w2:row style="" id="row2">
-    							<w2:column width="70" inputType="text" style="" id="scrnSvcLinkId" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="svcId" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="svcCd" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="korSvcName" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="itChrrNo" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
-    						</w2:row>
-    					</w2:gBody>
-    				</w2:gridView>
-    			</xf:group>
+    		<xf:group id="" class="titbox">
+    			<w2:textbox tagname="h3" style="" id="" label="연관 정보 - TR 리스트"></w2:textbox>
+    		</xf:group>
+    		<xf:group class="gvwbox" id="" style="">
+    			<w2:gridView autoFit="allColumn" checkAllType="false" class="gvw" dataList="data:svcs"
+    				ev:oncellclick="scwin.gridTRList_oncellclick" id="gridTRList" style="width:100%;height: 400px;">
+    				<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
+    				<w2:header id="header1" style="">
+    					<w2:row id="row1" style="">
+    						<w2:column displayMode="label" hidden="true" id="column7" inputType="text" style="" value="화면서비스연결ID"
+    							width="70">
+    						</w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column6" inputType="text" style="" value="서비스ID" width="70"></w2:column>
+    						<w2:column displayMode="label" id="column5" inputType="text" style="" value="서비스코드" width="70"></w2:column>
+    						<w2:column displayMode="label" id="column4" inputType="text" style="" value="한글서비스명" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column3" inputType="text" style="" value="IT담당자" width="70"></w2:column>
+    						<w2:column displayMode="label" id="column2" inputType="text" style="" value="IT담당자사번" width="70"></w2:column>
+    						<w2:column displayMode="label" id="column1" inputType="text" style="" value="IT담당자명" width="70"></w2:column>
+    					</w2:row>
+    				</w2:header>
+    				<w2:gBody id="gBody1" style="">
+    					<w2:row id="row2" style="">
+    						<w2:column displayMode="label" id="scrnSvcLinkId" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="svcId" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="svcCd" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="korSvcName" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="itChrr" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="itChrrNo" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="itChrrName" inputType="text" style="" value="" width="70"></w2:column>
+    					</w2:row>
+    				</w2:gBody>
+    			</w2:gridView>
     		</xf:group>
     	</xf:group>
     </body>

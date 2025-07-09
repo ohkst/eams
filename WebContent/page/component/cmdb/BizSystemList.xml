@@ -257,7 +257,9 @@ scwin.closeAction = function (id, info) {
     		</xf:group>
     		<xf:group style="width: 100%;display: flex;justify-content: flex-end;gap: 14px;" id="" class="titbox">
     		<xf:group id="" class="rt"><w2:button style="" id="imgBtnCSV" label="CSV다운로드" class="btn_cm download" ev:onclick="scwin.imgBtnCSV_onclick"></w2:button></xf:group></xf:group>
-    	<xf:group id="" class="gvwbox grp_flex"><w2:gridView useFilterSearch="false" ev:oncellclick="scwin.grdSystemList_oncellclick" checkAllType="false" dataList="data:syss" style="width: 100%;height: 250px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true" class="gvw">
+    	<xf:group id="" class="gvwbox grp_flex">
+    		<w2:gridView useFilterSearch="false" ev:oncellclick="scwin.grdSystemList_oncellclick" checkAllType="false" dataList="data:syss"
+    			style="width: 100%;height: 250px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true" class="gvw">
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     			<w2:header style="" id="header1">
     				<w2:row style="" id="row1">
@@ -270,15 +272,15 @@ scwin.closeAction = function (id, info) {
     					<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="IT담당자" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="" id="column11" value="IT담당자사번" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="" id="column10" value="IT담당자명" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column9" value="시스템구성도여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column8" value="개발매뉴얼여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column7" value="운영매뉴얼여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column6" value="아키텍처여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column5" value="RFP여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column4" value="요구사항정의서여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column3" value="착수보고서여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column2" value="변경심의보고서여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column1" value="완료보고서여부" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column9" value="시스템구성도여부" displayMode="label" hidden="true"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column8" value="개발매뉴얼여부" displayMode="label" hidden="true"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column7" value="운영매뉴얼여부" displayMode="label" hidden="true"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column6" value="아키텍처여부" displayMode="label" hidden="true"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column5" value="RFP여부" displayMode="label" hidden="true"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column4" value="요구사항정의서여부" displayMode="label" hidden="true"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column3" value="착수보고서여부" displayMode="label" hidden="true"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column2" value="변경심의보고서여부" displayMode="label" hidden="true"></w2:column>
+    					<w2:column width="70" inputType="text" style="" id="column1" value="완료보고서여부" displayMode="label" hidden="true"></w2:column>
     				</w2:row>
     			</w2:header>
     			<w2:gBody style="" id="gBody1">

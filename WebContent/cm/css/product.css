@@ -1250,6 +1250,7 @@ div[id*=processbar2_i] iframe {height:220px !important}
 .eams_main .databox .data_title .tit {color:var(--ws-primary-800);font-size:16px;font-weight:700}
 .eams_main .databox .data_cnt {padding:12px 16px 20px 16px;box-sizing:border-box}
 .eams_main .databox .data_cnt.server {padding-top:20px}
+.eams_main .databox .data_cn .w2grid td.gridBodyDefault {border-left:0;border-right:0}
 .eams_main .databox .data_list > li {border-bottom:1px solid var(--ws-gray-200)}
 .eams_main .databox .data_list > li a {display:flex;align-items:center;height:36px;cursor:pointer}
 .eams_main .txt_server_state {display:inline-flex;align-items:center;gap:2px;color:var(--ws-green-500);font-weight:700}
@@ -1308,6 +1309,6 @@ div[id*=processbar2_i] iframe {height:220px !important}
 .eams_side_list .side_menu_grid .link_depth1 .num {height:18px;padding:0 6px;border:1px solid #5986E2;border-radius:10px;background:#E2E5EB;color:#5986E2;font-size:12px;font-weight:700}
 .eams_side_list .side_menu_grid .side_gvw {flex:1;margin-top:4px}
 .eams_side_list .side_menu_grid .side_gvw .w2grid {height:100%;background:transparent}
-
+.eams_side_list .side_menu_grid .side_gvw .w2grid td.gridBodyDefault {border-left:0;border-right:0}
 
 .w2grid .txt_word span {padding-left:34px;background:url(../images/product/ico_grid_word.svg) no-repeat 2px center}
