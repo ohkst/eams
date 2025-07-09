@@ -98,22 +98,22 @@
         		</w2:dataMap>
         		<w2:dataMap id="scrnInfo">
         			<w2:keyInfo>
-        				<w2:key id="arfsScrnId" name="arfsScrnId" dataType="text"></w2:key>
-        				<w2:key id="sysId" name="sysId" dataType="text"></w2:key>
-        				<w2:key id="sysName" name="sysName" dataType="text"></w2:key>
-        				<w2:key id="scrnNo" name="scrnNo" dataType="text"></w2:key>
-        				<w2:key id="scrnName" name="scrnName" dataType="text"></w2:key>
-        				<w2:key id="dvlpChrr" name="dvlpChrr" dataType="text"></w2:key>
-        				<w2:key id="dvlpChrrNo" name="dvlpChrrNo" dataType="text"></w2:key>
-        				<w2:key id="dvlpChrrName" name="dvlpChrrName" dataType="text"></w2:key>
-        				<w2:key id="mgmtChrr" name="mgmtChrr" dataType="text"></w2:key>
-        				<w2:key id="mgmtChrrNo" name="mgmtChrrNo" dataType="text"></w2:key>
-        				<w2:key id="mgmtChrrName" name="mgmtChrrName" dataType="text"></w2:key>
-        				<w2:key id="witfChrgDep" name="witfChrgDep" dataType="text"></w2:key>
-        				<w2:key id="witfChrgDepName" name="witfChrgDepName" dataType="text"></w2:key>
-        				<w2:key id="witfChrr" name="witfChrr" dataType="text"></w2:key>
-        				<w2:key id="witfChrrNo" name="witfChrrNo" dataType="text"></w2:key>
-        				<w2:key id="witfChrrName" name="witfChrrName" dataType="text"></w2:key>
+        				<w2:key id="arfsScrnId" name="업무화면ID" dataType="text"></w2:key>
+        				<w2:key id="sysId" name="시스템ID" dataType="text"></w2:key>
+        				<w2:key id="sysName" name="시스템명" dataType="text"></w2:key>
+        				<w2:key id="scrnNo" name="화면번호" dataType="text"></w2:key>
+        				<w2:key id="scrnName" name="화면명" dataType="text"></w2:key>
+        				<w2:key id="dvlpChrr" name="개발담당자" dataType="text"></w2:key>
+        				<w2:key id="dvlpChrrNo" name="개발담당자사번" dataType="text"></w2:key>
+        				<w2:key id="dvlpChrrName" name="개발담당자명" dataType="text"></w2:key>
+        				<w2:key id="mgmtChrr" name="운영담당자" dataType="text"></w2:key>
+        				<w2:key id="mgmtChrrNo" name="운영담당자사번" dataType="text"></w2:key>
+        				<w2:key id="mgmtChrrName" name="운영담당자명" dataType="text"></w2:key>
+        				<w2:key id="witfChrgDep" name="현업담당부서" dataType="text"></w2:key>
+        				<w2:key id="witfChrgDepName" name="현업담당부서명" dataType="text"></w2:key>
+        				<w2:key id="witfChrr" name="현업담당자" dataType="text"></w2:key>
+        				<w2:key id="witfChrrNo" name="현업담당자사번" dataType="text"></w2:key>
+        				<w2:key id="witfChrrName" name="현업담당자명" dataType="text"></w2:key>
         			</w2:keyInfo>
         			<w2:data xmlns="">
         				<arfsScrnId><![CDATA[1]]></arfsScrnId>
@@ -250,13 +250,13 @@ scwin.sbmTaskScreenDetail_submiterror = function (e) {
     							<w2:scope>row</w2:scope>
     						</w2:attributes></xf:group>
     					<xf:group tagname="td" style="" id="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key1" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="data:scrnInfo.witfChrgDepName" style="" id="" label=""></w2:textbox>
     					</xf:group>
     					<xf:group tagname="th" style="" class="w2tb_th">현업&amp;nbsp;담당자<w2:attributes>
     							<w2:scope>row</w2:scope>
     						</w2:attributes></xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key2" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="data:scrnInfo.witfChrrName" style="" id="" label=""></w2:textbox>
     					</xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">
@@ -264,13 +264,13 @@ scwin.sbmTaskScreenDetail_submiterror = function (e) {
     							<w2:scope>row</w2:scope>
     						</w2:attributes></xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key3" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="" style="" id="" label=""></w2:textbox>
     					</xf:group>
     					<xf:group tagname="th" style="" class="w2tb_th">IT&amp;nbsp;개발/운영&amp;nbsp;담당자<w2:attributes>
     							<w2:scope>row</w2:scope>
     						</w2:attributes></xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key4" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="data:scrnInfo.dvlpChrrName" style="" id="" label=""></w2:textbox>
     					</xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">
@@ -278,7 +278,7 @@ scwin.sbmTaskScreenDetail_submiterror = function (e) {
     							<w2:scope>row</w2:scope>
     						</w2:attributes></xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key5" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="" style="" id="" label=""></w2:textbox>
     					</xf:group>
     					<xf:group tagname="th" style="" class="w2tb_th">최종&amp;nbsp;변경일<w2:attributes>
     							<w2:scope>row</w2:scope>
@@ -295,7 +295,7 @@ scwin.sbmTaskScreenDetail_submiterror = function (e) {
     						</w2:attributes>
     					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key5" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="" style="" id="" label=""></w2:textbox>
     					</xf:group>
     					<xf:group tagname="th" style="" class="w2tb_th">
     						파일&amp;nbsp;리스트
