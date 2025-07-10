@@ -137,6 +137,45 @@ scwin.grdDBList_oncellclick = function (rowIndex, columnIndex, columnId) {
     $c.util.openEamsPopup("/page/component/cmdb/PopupSchemaList.xml", "스키마 리스트", dataObject);
 
 };
+
+scwin.openTableListPopup = function (id, name) {
+    
+    setTimeout(function () {
+        var rowJSON = {
+            "id": id,
+            "name": name,
+            "type": "AA"
+        };
+
+        var dataObject = {
+            "type": "json",
+            "name": "PopupData",
+            "data": rowJSON
+        };
+
+        $c.util.openEamsPopup("/page/component/cmdb/PopupTableList.xml", "테이블 리스트", dataObject);
+    }, 300);
+};
+
+scwin.openTableDetailPopup = function (id, name) {
+    
+    setTimeout(function () {
+        var rowJSON = {
+            "id": id,
+            "name": name,
+            "type": "AA"
+        };
+
+        var dataObject = {
+            "type": "json",
+            "name": "PopupData",
+            "data": rowJSON
+        };
+
+        $c.util.openEamsPopup("/page/component/search/SystemSearchResultDBDetail.xml", "테이블 상세", dataObject);
+    }, 300);
+};
+
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="">

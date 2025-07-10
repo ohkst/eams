@@ -162,20 +162,12 @@ scwin.onpageload = function () {
 
 };
 
-scwin.sbmAADocList_submitdone = function (e) {
-
-};
-
 scwin.grdDocList_oncellclick = function (rowIndex, columnIndex, columnId) {
-	const id = docs.getCellData(rowIndex, "linkSysId");
-    const name = docs.getCellData(rowIndex, "dcmtName");
-    $p.parent().scwin.openDocDetailPopup(id, name);
+	const id = schemas.getCellData(rowIndex, "ownrId");
+    const name = schemas.getCellData(rowIndex, "ownr");
+    $p.parent().scwin.openTableListPopup(id, name);
 	
     $p.closePopup();
-};
-
-scwin.sbmDocList_submitdone = function (e) {
-
 };
 
 scwin.sbmSchemaList_submitdone = function (e) {

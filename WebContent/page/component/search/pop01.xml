@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+        <w2:type>COMPONENT</w2:type>
+        <w2:buildDate/>
+        <w2:MSA/>
+        <xf:model>
+            <w2:dataCollection baseNode="map"/>
+            <w2:workflowCollection/>
+        </xf:model>
+        <w2:layoutInfo/>
+        <w2:publicInfo method=""/>
+        <script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function() {
+	
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<xf:group style="" id="" class="pop_contents flex_cont"><xf:group id="" class="grp_poptxt" style="display:flex;align-items:center;justify-content:center;"><xf:group id="" class="temp_hanbtn" style=""><w2:button style="" id="" label="신규등록" class="btn_cm pt"></w2:button><w2:button style="margin-top:8px;" id="" label="기존 시스템에 등록" class="btn_cm pt"></w2:button></xf:group></xf:group><xf:group id="" class="btnbox"><xf:group id="" class="rt"><w2:button style="" id="" label="닫기" class="btn_cm"></w2:button></xf:group></xf:group></xf:group>
+    </body>
+</html>
