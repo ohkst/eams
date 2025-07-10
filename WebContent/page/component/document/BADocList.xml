@@ -38,97 +38,84 @@
         				<total><![CDATA[10]]></total>
         			</w2:data>
         		</w2:dataMap>
-        		<w2:dataList id="docs">
-					<w2:columnInfo>
-						<w2:column id="prdtnId" name="산출물ID" dataType="text"></w2:column>
-						<w2:column id="linkSysId" name="연결시스템ID" dataType="text"></w2:column>
-						<w2:column id="dcmtName" name="문서명" dataType="text"></w2:column>
-						<w2:column id="prdtnSysDvsn" name="산출물시스템구분" dataType="text"></w2:column>
-						<w2:column id="prdtnLclsCd" name="산출물대분류코드" dataType="text"></w2:column>
-						<w2:column id="prdtnSclsCd" name="산출물소분류코드" dataType="text"></w2:column>
-						<w2:column id="prdtnSclsCdName" name="산출물소분류코드명" dataType="text"></w2:column>
-						<w2:column id="ver" name="버전" dataType="text"></w2:column>
-						<w2:column id="dcmtMngtDep" name="문서관리부서" dataType="text"></w2:column>
-						<w2:column id="dcmtMngtDepName" name="문서관리부서명" dataType="text"></w2:column>
-						<w2:column id="dcmtChrr" name="문서담당자" dataType="text"></w2:column>
-						<w2:column id="dcmtChrrNo" name="문서담당자사번" dataType="text"></w2:column>
-						<w2:column id="dcmtChrrName" name="문서담당자명" dataType="text"></w2:column>
-						<w2:column id="frstErlmDt" name="최초등록일" dataType="text"></w2:column>
-						<w2:column id="rcenChngDt" name="최근변경일" dataType="text"></w2:column>
-					</w2:columnInfo>
-					<w2:data xmlns="">
-						<w2:row>
-							<prdtnId><![CDATA[1]]></prdtnId>
-							<linkSysId><![CDATA[1]]></linkSysId>
-							<dcmtName><![CDATA[홈페이지개발매뉴얼]]></dcmtName>
-							<prdtnSysDvsn><![CDATA[A]]></prdtnSysDvsn>
-							<prdtnLclsCd><![CDATA[AMDVL]]></prdtnLclsCd>
-							<prdtnSclsCd><![CDATA[AMDVL]]></prdtnSclsCd>
-							<prdtnSclsCdName><![CDATA[개발매뉴얼]]></prdtnSclsCdName>
-							<ver><![CDATA[0.1]]></ver>
-							<dcmtMngtDep><![CDATA[2]]></dcmtMngtDep>
-							<dcmtMngtDepName><![CDATA[인사부]]></dcmtMngtDepName>
-							<dcmtChrr><![CDATA[1]]></dcmtChrr>
-							<dcmtChrrNo><![CDATA[000001]]></dcmtChrrNo>
-							<dcmtChrrName><![CDATA[홍길동]]></dcmtChrrName>
-							<frstErlmDt><![CDATA[20200101]]></frstErlmDt>
-							<rcenChngDt><![CDATA[20200101]]></rcenChngDt>
-						</w2:row>
-					</w2:data>
-				</w2:dataList>
-			</w2:dataCollection>
+        		<w2:dataList id="unitTasks">
+        			<w2:columnInfo>
+                        <w2:column id="manlName" name="매뉴얼명" dataType="text"></w2:column>
+        				<w2:column id="unitAfrsId" name="단위업무ID" dataType="text"></w2:column>
+        				<w2:column id="unitAfrsCd" name="단위업무코드" dataType="text"></w2:column>
+        				<w2:column id="depName" name="부서명" dataType="text"></w2:column>
+        				<w2:column id="unitAfrsName" name="단위업무명" dataType="text"></w2:column>
+        				<w2:column id="chrrNo" name="담당자사번" dataType="text"></w2:column>
+        				<w2:column id="chrrName" name="담당자명" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<unitAfrsId><![CDATA[1]]></unitAfrsId>
+        					<unitAfrsCd><![CDATA[u0QKh71yTpm3PIhv7V]]></unitAfrsCd>
+        					<depName><![CDATA[인사부]]></depName>
+        					<unitAfrsName><![CDATA[string]]></unitAfrsName>
+        					<chrrNo><![CDATA[113565]]></chrrNo>
+        					<chrrName><![CDATA[최동규]]></chrrName>
+        					<manlName><![CDATA[계좌계설가이드]]></manlName>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        	</w2:dataCollection>
         	<w2:workflowCollection />
-        	<xf:submission id="sbmBADocList" action="doc/query/api/v1/document-list" method="get" mediatype="application/json" ref=""
-        		target='data:json,["common","pageInfo","docs"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
-        		mode="asynchronous" processMsg="" abortTrigger="" ev:submitdone="scwin.sbmBADocList_submitdone">
+        	<xf:submission id="sbmUnitTaskList" action="ba/query/api/v1/unit-task-list" method="get" mediatype="application/json" ref=""
+        		target='data:json,["common","pageInfo","unitTasks"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
+        		mode="asynchronous" processMsg="" ev:submit="" ev:submitdone="scwin.sbmUnitTaskList_submitdone" ev:submiterror=""
+        		abortTrigger="">
         	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
-    const param = {
-        offset: 0,
-        limit: 100,
-        type: "PAGE",
-        sortMethod: "NO",
-        searchMethods: ["CONTAINS"],
-        sortFields: ["prdtnSysDvsn"],
-        searchFields: ["prdtnSysDvsn"],
-        searchContent: "B"
-    };
+    // const param = {
+    //     offset: 0,
+    //     limit: 100,
+    //     type: "PAGE",
+    //     sortMethod: "NO",
+    //     searchMethods: ["CONTAINS"],
+    //     sortFields: ["prdtnSysDvsn"],
+    //     searchFields: ["prdtnSysDvsn"],
+    //     searchContent: "B"
+    // };
 
-    $c.sbm.execute(sbmBADocList, param);
+    // $c.sbm.execute(sbmBADocList, param);
+
+    $c.sbm.execute(sbmUnitTaskList);
 };
 
 scwin.btnSearch_onclick = function (e) {
-    docs.clearFilter();
+    unitTasks.clearFilter();
 
     let jsonFilterOptions = {};
 
     jsonFilterOptions.type = "row";
-    jsonFilterOptions.colIndex = "dcmtName";
+    jsonFilterOptions.colIndex = "manlName";
     jsonFilterOptions.key = tfBizName.getValue();
     jsonFilterOptions.exactMatch = false;
     jsonFilterOptions.condition = "and";
 
-    docs.setColumnFilter(jsonFilterOptions);
+    unitTasks.setColumnFilter(jsonFilterOptions);
 
     let jsonFilterOptions2 = {};
 
     jsonFilterOptions2.type = "row";
-    jsonFilterOptions2.colIndex = "dcmtChrrName";
+    jsonFilterOptions2.colIndex = "chrrName";
     jsonFilterOptions2.key = tfOwnerName.getValue();
     jsonFilterOptions2.exactMatch = false;
     jsonFilterOptions2.condition = "and";
 
-    docs.setColumnFilter(jsonFilterOptions2);
+    unitTasks.setColumnFilter(jsonFilterOptions2);
 };
 
 scwin.btnReset_onclick = function (e) {
     tfBizName.setValue("");
     tfOwnerName.setValue("");
-    syss.clearFilter();
+    unitTasks.clearFilter();
 };
 
 scwin.imgBtnCSV_onclick = function (e) {
@@ -143,7 +130,8 @@ scwin.imgBtnCSV_onclick = function (e) {
 
 scwin.grdSystemList_oncellclick = function (rowIndex, columnIndex, columnId) {
     var rowJSON = {
-        "id": syss.getCellData(rowIndex, "sysId")
+        "id": unitTasks.getCellData(rowIndex, "unitAfrsId"),
+        "type": "BA"
     };
 
     var dataObject = {
@@ -152,24 +140,7 @@ scwin.grdSystemList_oncellclick = function (rowIndex, columnIndex, columnId) {
         "data": rowJSON
     };
 
-    var options = {
-        id: "popuptest",
-        type: "wframePopup",
-
-        popupName: "업무 시스템 세부 리스트",
-        modal: true,
-        useIFrame: false,
-
-        resizable: true,
-        status: true,
-        menubar: false,
-        scrollbars: false,
-        title: false,
-        dataObject: dataObject,
-        closeAction: "scwin.closeAction"
-    };
-
-    $c.util.openEamsPopup("/page/component/cmdb/PopupDetailSystemList.xml", options);
+    $c.util.openEamsPopup("/page/component/document/PopupDetailDocList.xml", "문서 리스트", dataObject);
 };
 
 scwin.closeAction = function (id, info) {
@@ -180,9 +151,8 @@ scwin.closeAction = function (id, info) {
 
     return true
 };
-
-scwin.sbmBADocList_submitdone = function (e) {
-
+scwin.sbmUnitTaskList_submitdone = function (e) {
+    
 };
 ]]></script>
     </head>
@@ -206,7 +176,7 @@ scwin.sbmBADocList_submitdone = function (e) {
     					</xf:group>
     					<xf:group class="" id="" style="" tagname="tr">
     						<xf:group class="w2tb_th" style="" tagname="th">
-    							<w2:textbox id="" label="문서명" style=""></w2:textbox>
+    							<w2:textbox id="" label="매뉴얼명" style=""></w2:textbox>
     						</xf:group>
     						<xf:group class="w2tb_td" style="" tagname="td">
     							<xf:input id="tfBizName" style="width:100%;"></xf:input>
@@ -232,64 +202,38 @@ scwin.sbmBADocList_submitdone = function (e) {
     		</xf:group></xf:group>
     		<xf:group id="" class="gvwbox grp_flex">
     			<w2:gridView useFilterSearch="false" ev:oncellclick="scwin.grdSystemList_oncellclick" checkAllType="false"
-    				dataList="data:docs" style="width: 100%;height: 150px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true"
-    				class="gvw">
+    				dataList="data:unitTasks" style="width: 100%;height: 150px;" id="grdSystemList" autoFit="allColumn" useFilterList="true"
+    				sortable="true" class="gvw">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column15" value="산출물ID"
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column1" value="매뉴얼명" displayMode="label">
+    						</w2:column>
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column7" value="단위업무ID"
     							displayMode="label">
     						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="연결시스템ID"
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column6" value="단위업무코드"
     							displayMode="label">
     						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="문서명" displayMode="label"></w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="산출물시스템구분"
-    							displayMode="label">
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column5" value="부서명" displayMode="label">
     						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="산출물대분류코드"
-    							displayMode="label">
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column4" value="단위업무명" displayMode="label">
     						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="산출물소분류코드"
-    							displayMode="label">
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column3" value="담당자사번" displayMode="label">
     						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column9" value="산출물소분류코드명"
-    							displayMode="label">
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column2" value="담당자명" displayMode="label">
     						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column8" value="버전" displayMode="label"></w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="문서관리부서" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="문서관리부서명"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="문서담당자" displayMode="label"></w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="문서담당자사번"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column3" value="문서담당자명"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column2" value="최초등록일" displayMode="label"></w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column1" value="최근변경일" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="" id="prdtnId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="linkSysId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dcmtName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="prdtnSysDvsn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="prdtnLclsCd" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="prdtnSclsCd" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="prdtnSclsCdName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="ver" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dcmtMngtDep" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dcmtMngtDepName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dcmtChrr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dcmtChrrNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dcmtChrrName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="frstErlmDt" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="rcenChngDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="manlName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="unitAfrsId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="unitAfrsCd" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="depName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="unitAfrsName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="chrrNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="chrrName" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView>

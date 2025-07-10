@@ -993,6 +993,60 @@ scwin.homeSearchBox_onkeydown = function (e) {
         $p.parent().wfmRightContents.setSrc("/page/subpage/SystemSearch.xml", obj);
     }
 };
+
+scwin.grdUnitTasks_oncellclick = function (rowIndex, columnIndex, columnId) {
+    const id = unitTasks.getCellData(rowIndex, "unitAfrsId");
+    const name = unitTasks.getCellData(rowIndex, "manlName");
+
+    var rowJSON = {
+        "id": id,
+        "name": name
+    };
+
+    var dataObject = {
+        "type": "json",
+        "name": "PopupData",
+        "data": rowJSON
+    };
+
+    $c.util.openEamsPopup("/page/component/search/SystemSearchResultBizDetail.xml", "업무 상세", dataObject);
+};
+
+scwin.deployScreenGrid_oncellclick = function (rowIndex, columnIndex, columnId) {
+    const id = scrns.getCellData(rowIndex, "arfsScrnId");
+    const name = scrns.getCellData(rowIndex, "scrnName");
+
+    var rowJSON = {
+        "id": id,
+        "name": name
+    };
+
+    var dataObject = {
+        "type": "json",
+        "name": "PopupData",
+        "data": rowJSON
+    };
+
+    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", "화면 상세", dataObject);
+};
+
+scwin.deployTRGrid_oncellclick = function (rowIndex, columnIndex, columnId) {
+    const id = svcs.getCellData(rowIndex, "svcId");
+    const name = svcs.getCellData(rowIndex, "korSvcName");
+
+    var rowJSON = {
+        "id": id,
+        "name": name
+    };
+
+    var dataObject = {
+        "type": "json",
+        "name": "PopupData",
+        "data": rowJSON
+    };
+
+    $c.util.openEamsPopup("/page/component/search/SystemSearchResultTRDetail.xml", "TR 상세", dataObject);
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload"
@@ -1020,8 +1074,8 @@ scwin.homeSearchBox_onkeydown = function (e) {
     					</xf:group>
     				</xf:group>
     				<xf:group style="" class="data_cnt">
-    					<w2:gridView checkAllType="false" id="" style="width: 100%;height: 180px;"
-    						dataList="data:unitTasks" hideHeader="true" autoFit="allColumn" defaultCellHeight="20">
+    					<w2:gridView checkAllType="false" id="grdUnitTasks" style="width: 100%;height: 180px;" dataList="data:unitTasks"
+    						hideHeader="true" autoFit="allColumn" defaultCellHeight="20" ev:oncellclick="scwin.grdUnitTasks_oncellclick">
     						<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     						<w2:header style="" id="header1">
     							<w2:row style="" id="row1">
@@ -1072,7 +1126,7 @@ scwin.homeSearchBox_onkeydown = function (e) {
     				</xf:group>
     				<xf:group style="" class="data_cnt">
     					<w2:gridView checkAllType="false" id="deployScreenGrid" style="width: 100%;height: 180px;"
-    						dataList="data:scrns" hideHeader="true" autoFit="allColumn" defaultCellHeight="20">
+    						dataList="data:scrns" hideHeader="true" autoFit="allColumn" defaultCellHeight="20" ev:oncellclick="scwin.deployScreenGrid_oncellclick">
     						<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     						<w2:header style="" id="header1">
     							<w2:row style="" id="row1">
@@ -1155,7 +1209,7 @@ scwin.homeSearchBox_onkeydown = function (e) {
     				</xf:group>
     				<xf:group style="" class="data_cnt">
     					<w2:gridView checkAllType="false" id="deployTRGrid" style="width: 100%;height: 180px;"
-    						dataList="data:svcs" hideHeader="true" autoFit="allColumn" defaultCellHeight="20">
+    						dataList="data:svcs" hideHeader="true" autoFit="allColumn" defaultCellHeight="20" ev:oncellclick="scwin.deployTRGrid_oncellclick">
     						<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     						<w2:header style="" id="header1">
     							<w2:row style="" id="row1">

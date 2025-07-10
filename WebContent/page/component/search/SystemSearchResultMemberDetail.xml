@@ -22,26 +22,6 @@
         				<detailMessage><![CDATA[]]></detailMessage>
         			</w2:data>
         		</w2:dataMap>
-        		<w2:dataMap id="emp">
-        			<w2:keyInfo>
-        				<w2:key id="empId" name="empId" dataType="text"></w2:key>
-        				<w2:key id="empNo" name="empNo" dataType="text"></w2:key>
-        				<w2:key id="empName" name="empName" dataType="text"></w2:key>
-        				<w2:key id="osdtCd" name="osdtCd" dataType="text"></w2:key>
-        				<w2:key id="emal" name="emal" dataType="text"></w2:key>
-        				<w2:key id="ctcp1" name="ctcp1" dataType="text"></w2:key>
-        				<w2:key id="ctcp2" name="ctcp2" dataType="text"></w2:key>
-        			</w2:keyInfo>
-        			<w2:data xmlns="">
-        				<empId><![CDATA[1]]></empId>
-        				<empNo><![CDATA[113565]]></empNo>
-        				<empName><![CDATA[최동규]]></empName>
-        				<osdtCd><![CDATA[00001]]></osdtCd>
-        				<emal><![CDATA[dk@koreainvestment.com]]></emal>
-        				<ctcp1><![CDATA[02-1234-1234]]></ctcp1>
-        				<ctcp2><![CDATA[010-1234-1234]]></ctcp2>
-        			</w2:data>
-        		</w2:dataMap>
         		<w2:dataMap id="pageInfo">
         			<w2:keyInfo>
         				<w2:key id="offset" name="offset" dataType="text"></w2:key>
@@ -116,7 +96,29 @@
         				</w2:row>
         			</w2:data>
         		</w2:dataList>
-        	</w2:dataCollection>
+        		<w2:dataMap id="emp">
+					<w2:keyInfo>
+						<w2:key id="empId" name="empId" dataType="text"></w2:key>
+						<w2:key id="empNo" name="empNo" dataType="text"></w2:key>
+						<w2:key id="empName" name="empName" dataType="text"></w2:key>
+						<w2:key id="osdtCd" name="osdtCd" dataType="text"></w2:key>
+						<w2:key id="emal" name="emal" dataType="text"></w2:key>
+						<w2:key id="ctcp1" name="ctcp1" dataType="text"></w2:key>
+						<w2:key id="ctcp2" name="ctcp2" dataType="text"></w2:key>
+						<w2:key id="depName" name="depName" dataType="text"></w2:key>
+					</w2:keyInfo>
+					<w2:data xmlns="">
+						<empId><![CDATA[1]]></empId>
+						<empNo><![CDATA[113565]]></empNo>
+						<empName><![CDATA[최동규]]></empName>
+						<osdtCd><![CDATA[00001]]></osdtCd>
+						<emal><![CDATA[dk@koreainvestment.com]]></emal>
+						<ctcp1><![CDATA[02-3276-1233]]></ctcp1>
+						<ctcp2><![CDATA[010-1234-1234]]></ctcp2>
+						<depName><![CDATA[인사부,인사팀]]></depName>
+					</w2:data>
+				</w2:dataMap>
+			</w2:dataCollection>
         	<w2:workflowCollection />
         	<xf:submission id="sbmEmpInfo" action="org/query/api/v1/emp-info/id/{id}" method="get" mediatype="application/json" ref=""
         		target='data:json,["common","emp"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous"
@@ -214,7 +216,7 @@ scwin.sbmTaskScreenList_submitdone = function (e) {
     					</w2:attributes>
     				</xf:group>
     				<xf:group tagname="td" style="" id="" class="w2tb_td">
-    					<w2:textbox ref="data:dataMap1.key1" style="" id="" label=""></w2:textbox>
+    					<w2:textbox ref="data:emp.depName" style="" id="" label=""></w2:textbox>
     				</xf:group>
     				<xf:group tagname="th" style="" class="w2tb_th">
     					담당자

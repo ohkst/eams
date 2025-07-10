@@ -136,18 +136,36 @@
         </xf:model>
         <w2:layoutInfo/>
         <w2:publicInfo method=""/>
-        <script lazy="false" type="text/javascript"><![CDATA[var bizId = 0;
+        <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function () {
-    var paramData = $p.getParameter("LeftSearch");
-    // var data = JSON.stringify(paramData);
-    // alert(data);
-    mainTitle.setValue(paramData.name);
-    bizId = paramData.id;
-    const param = {
-        id: bizId
-    };
+    const leftParam = $p.getParameter("LeftSearch");
+    const popupParam = $p.getParameter("PopupData");
 
-    $c.sbm.execute(sbmUnitTaskDetail, param);
+    let paramData = null;
+
+    // 우선순위 판단: 팝업에서 들어왔을 경우 PopupData를 사용
+    if (popupParam != null) {
+        paramData = popupParam;
+        // alert("PopupData로 진입");
+    } else if (leftParam != null) {
+        paramData = leftParam;
+        // alert("LeftSearch로 진입");
+    }
+
+    if (paramData != null) {
+        if (paramData.name) {
+            mainTitle.setValue(paramData.name);  // name이 있을 때만 세팅
+        }
+
+        const param = {
+            id: paramData.id
+        };
+
+        $c.sbm.execute(sbmUnitTaskDetail, param);
+    } else {
+        // alert("전달된 파라미터가 없습니다.");
+    }
+
 };
 
 scwin.sbmUnitTaskDetail_submit = function (e) {
@@ -157,7 +175,7 @@ scwin.sbmUnitTaskDetail_submit = function (e) {
 scwin.sbmUnitTaskDetail_submitdone = function (e) {
 
     const param = {
-        id: bizId
+        id: unitAfrs.get("chrr")
     };
 
     $c.sbm.execute(sbmEmpInfo, param);
@@ -208,7 +226,7 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     					</w2:attributes>
     				</xf:group>
     				<xf:group tagname="td" style="" class="w2tb_td">
-    					<w2:textbox ref="data:emp.empName" style="" id="" label=""></w2:textbox>
+    					<w2:textbox ref="data:unitAfrs.chrrName" style="" id="" label=""></w2:textbox>
     				</xf:group>
     			</xf:group>
     			<xf:group tagname="tr" style="">
@@ -256,63 +274,45 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     					<xf:group tagname="col" style="width:25.00%"></xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">
-    					<xf:group tagname="th" style="" class="w2tb_th">
-    						역량&amp;nbsp;그룹
-    						<w2:attributes>
+    					<xf:group tagname="th" style="" class="w2tb_th">Level1<w2:attributes>
     							<w2:scope>row</w2:scope>
-    						</w2:attributes>
-    					</xf:group>
+    						</w2:attributes></xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key6" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="data:unitAfrs.bizDomn1Lv1Cd" style="" id="" label=""></w2:textbox>
     					</xf:group>
-    					<xf:group tagname="th" style="" class="w2tb_th">
-    						영문명
-    						<w2:attributes>
+    					<xf:group tagname="th" style="" class="w2tb_th">Level2<w2:attributes>
     							<w2:scope>row</w2:scope>
-    						</w2:attributes>
-    					</xf:group>
+    						</w2:attributes></xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key7" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="data:unitAfrs.bizDomn1Lv2Cd" style="" id="" label=""></w2:textbox>
     					</xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">
-    					<xf:group tagname="th" style="" class="w2tb_th">
-    						Level1
-    						<w2:attributes>
+    					<xf:group tagname="th" style="" class="w2tb_th">Level1&amp;nbsp;한글명<w2:attributes>
     							<w2:scope>row</w2:scope>
-    						</w2:attributes>
+    						</w2:attributes></xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox ref="data:unitAfrs.bizDomn1Lv1KorName" style="" id="" label=""></w2:textbox>
     					</xf:group>
+    					<xf:group tagname="th" style="" class="w2tb_th">Level2&amp;nbsp;한글명<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes></xf:group>
+    					<xf:group tagname="td" style="" class="w2tb_td">
+    						<w2:textbox ref="data:unitAfrs.bizDomn1Lv1KorName" style="" id="" label=""></w2:textbox>
+    					</xf:group>
+    				</xf:group>
+    				<xf:group tagname="tr" style="">
+    					<xf:group tagname="th" style="" class="w2tb_th">Level1&amp;nbsp;영문명<w2:attributes>
+    							<w2:scope>row</w2:scope>
+    						</w2:attributes></xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
     						<w2:textbox ref="data:unitAfrs.bizDomn1Lv1EngName" style="" id="" label=""></w2:textbox>
     					</xf:group>
-    					<xf:group tagname="th" style="" class="w2tb_th">
-    						Level2
-    						<w2:attributes>
+    					<xf:group tagname="th" style="" class="w2tb_th">Level2&amp;nbsp;영문명<w2:attributes>
     							<w2:scope>row</w2:scope>
-    						</w2:attributes>
-    					</xf:group>
+    						</w2:attributes></xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
     						<w2:textbox ref="data:unitAfrs.bizDomn1Lv2EngName" style="" id="" label=""></w2:textbox>
-    					</xf:group>
-    				</xf:group>
-    				<xf:group tagname="tr" style="">
-    					<xf:group tagname="th" style="" class="w2tb_th">
-    						비즈니스&amp;nbsp;컴포넌트
-    						<w2:attributes>
-    							<w2:scope>row</w2:scope>
-    						</w2:attributes>
-    					</xf:group>
-    					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key10" style="" id="" label=""></w2:textbox>
-    					</xf:group>
-    					<xf:group tagname="th" style="" class="w2tb_th">
-    						영문명
-    						<w2:attributes>
-    							<w2:scope>row</w2:scope>
-    						</w2:attributes>
-    					</xf:group>
-    					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key11" style="" id="" label=""></w2:textbox>
     					</xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">
@@ -332,7 +332,7 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     						</w2:attributes>
     					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key13" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="data:unitAfrs.rcenChngDt" style="" id="" label=""></w2:textbox>
     					</xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">

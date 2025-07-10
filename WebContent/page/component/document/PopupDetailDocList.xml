@@ -205,7 +205,7 @@ scwin.onpageload = function () {
     const param = {
         id: paramData.id
     };
-
+	
     if (paramData.type == "BA") {
         $c.sbm.execute(sbmBADocList, param);
     } else if (paramData.type == "AA") {
