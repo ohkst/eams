@@ -123,9 +123,9 @@ scwin.onpageload = function () {
 };
 
 scwin.grdDocList_oncellclick = function (rowIndex, columnIndex, columnId) {
-	const id = docs.getCellData(rowIndex, "linkSysId");
-    const name = docs.getCellData(rowIndex, "dcmtName");
-    $p.parent().scwin.openTableDetail(id, name);
+	const id = tables.getCellData(rowIndex, "tlbId");
+    const name = tables.getCellData(rowIndex, "tblKorName");
+    $p.parent().scwin.openTableDetailPopup(id, name);
 	
     $p.closePopup();
 };
