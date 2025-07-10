@@ -122,13 +122,28 @@ scwin.sbmDatabaseList_submitdone = function (e) {
 scwin.sbmDatabaseList_submiterror = function (e) {
 
 };
+
+scwin.grdDBList_oncellclick = function (rowIndex, columnIndex, columnId) {
+    var rowJSON = {
+        "id": dbs.getCellData(rowIndex, "dbAdmnId")
+    };
+
+    var dataObject = {
+        "type": "json",
+        "name": "PopupData",
+        "data": rowJSON
+    };
+
+    $c.util.openEamsPopup("/page/component/cmdb/PopupSchemaList.xml", "스키마 리스트", dataObject);
+
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="">
     	<xf:group style=""
     		id="" class="sub_contents flex_cont">
     		<xf:group id="" class="pgtbox"><w2:textbox style="" id="" label="DB" class="pgt_tit"></w2:textbox></xf:group>
-    	<xf:group id="" class="gvwbox grp_flex"><w2:gridView checkAllType="false" dataList="data:dbs" style="width: 100%;height: 150px;" id="" autoFit="allColumn" class="gvw">
+    	<xf:group id="" class="gvwbox grp_flex"><w2:gridView checkAllType="false" dataList="data:dbs" style="width: 100%;height: 150px;" id="grdDBList" autoFit="allColumn" class="gvw" ev:oncellclick="scwin.grdDBList_oncellclick">
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     			<w2:header style="" id="header1">
     				<w2:row style="" id="row1">

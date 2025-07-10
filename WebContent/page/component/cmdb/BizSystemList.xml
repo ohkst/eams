@@ -171,36 +171,36 @@ scwin.openDetailSystemListPopup = function (rowIndex) {
 }
 
 scwin.openScreenDetailPopup = function (id, name) {
-setTimeout(function () {
-    var rowJSON = {
-        "id": id,
-        "name": name
-    };
+    setTimeout(function () {
+        var rowJSON = {
+            "id": id,
+            "name": name
+        };
 
-    var dataObject = {
-        "type": "json",
-        "name": "PopupData",
-        "data": rowJSON
-    };
+        var dataObject = {
+            "type": "json",
+            "name": "PopupData",
+            "data": rowJSON
+        };
 
-    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", "화면상세", dataObject);
+        $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", "화면상세", dataObject);
     }, 300);
 }
 
 scwin.openTRDetailPopup = function (id, name) {
-setTimeout(function () {
-    var rowJSON = {
-        "id": id,
-        "name": name
-    };
+    setTimeout(function () {
+        var rowJSON = {
+            "id": id,
+            "name": name
+        };
 
-    var dataObject = {
-        "type": "json",
-        "name": "PopupData",
-        "data": rowJSON
-    };
+        var dataObject = {
+            "type": "json",
+            "name": "PopupData",
+            "data": rowJSON
+        };
 
-    $c.util.openEamsPopup("/page/component/search/SystemSearchResultTRDetail.xml", "TR상세", dataObject);
+        $c.util.openEamsPopup("/page/component/search/SystemSearchResultTRDetail.xml", "TR상세", dataObject);
     }, 300);
 }
 
