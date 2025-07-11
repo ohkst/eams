@@ -313,6 +313,16 @@ scwin.toggle_ontogglechange = function () {
     scwin.requestSbmServerImageList();
 
 };
+
+scwin.grdServerList_oncellclick = function (rowIndex, columnIndex, columnId) {
+    $c.util.openEamsPopup("/page/component/search/pop01.xml", "등록");
+};
+
+scwin.openRegisterSystemInfoPopup = function () {
+    setTimeout(function () {
+        $c.util.openEamsPopup("/page/component/search/pop02.xml", "정보입력");
+    }, 300);
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="">
@@ -328,7 +338,7 @@ scwin.toggle_ontogglechange = function () {
     			</w2:fliptoggle></xf:group></xf:group>
     		<xf:group class="gvwbox grp_flex" id="" style="">
     			<w2:gridView autoFit="allColumn" checkAllType="false" class="gvw" dataList="data:svrImgs" id="grdServerList"
-    				style="width: 100%;height:200px;" useFilterList="true" useFilterSearch="true">
+    				style="width: 100%;height:200px;" useFilterList="true" useFilterSearch="true" ev:oncellclick="scwin.grdServerList_oncellclick">
     				<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
     				<w2:header id="header1" style="">
     					<w2:row id="row1" style="">

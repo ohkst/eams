@@ -107,31 +107,57 @@
         			</w2:data>
         		</w2:dataList>
         		<w2:dataList id="scrns">
-					<w2:columnInfo>
-						<w2:column id="afrsScrnId" name="업무화면ID" dataType="text"></w2:column>
-						<w2:column id="scrnNo" name="화면번호" dataType="text"></w2:column>
-						<w2:column id="scrnName" name="화면명" dataType="text"></w2:column>
-						<w2:column id="dvlpChrr" name="개발담당자" dataType="text"></w2:column>
-						<w2:column id="dvlpChrrNo" name="개발담당자사번" dataType="text"></w2:column>
-						<w2:column id="dvlpChrrName" name="개발담당자명" dataType="text"></w2:column>
-					</w2:columnInfo>
-					<w2:data xmlns="">
-						<w2:row>
-							<afrsScrnId><![CDATA[1]]></afrsScrnId>
-							<scrnNo><![CDATA[01000]]></scrnNo>
-							<scrnName><![CDATA[계좌조회]]></scrnName>
-							<dvlpChrr><![CDATA[2]]></dvlpChrr>
-							<dvlpChrrNo><![CDATA[000002]]></dvlpChrrNo>
-							<dvlpChrrName><![CDATA[홍길순]]></dvlpChrrName>
-						</w2:row>
-					</w2:data>
-				</w2:dataList>
-			</w2:dataCollection>
+        			<w2:columnInfo>
+        				<w2:column id="afrsScrnId" name="업무화면ID" dataType="text"></w2:column>
+        				<w2:column id="scrnNo" name="화면번호" dataType="text"></w2:column>
+        				<w2:column id="scrnName" name="화면명" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrr" name="개발담당자" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrrNo" name="개발담당자사번" dataType="text"></w2:column>
+        				<w2:column id="dvlpChrrName" name="개발담당자명" dataType="text"></w2:column>
+        			</w2:columnInfo>
+        			<w2:data xmlns="">
+        				<w2:row>
+        					<afrsScrnId><![CDATA[1]]></afrsScrnId>
+        					<scrnNo><![CDATA[01000]]></scrnNo>
+        					<scrnName><![CDATA[계좌조회]]></scrnName>
+        					<dvlpChrr><![CDATA[2]]></dvlpChrr>
+        					<dvlpChrrNo><![CDATA[000002]]></dvlpChrrNo>
+        					<dvlpChrrName><![CDATA[홍길순]]></dvlpChrrName>
+        				</w2:row>
+        			</w2:data>
+        		</w2:dataList>
+        		<w2:dataMap id="emp">
+        			<w2:keyInfo>
+        				<w2:key id="empId" name="empId" dataType="text"></w2:key>
+        				<w2:key id="empNo" name="empNo" dataType="text"></w2:key>
+        				<w2:key id="empName" name="empName" dataType="text"></w2:key>
+        				<w2:key id="osdtCd" name="osdtCd" dataType="text"></w2:key>
+        				<w2:key id="emal" name="emal" dataType="text"></w2:key>
+        				<w2:key id="ctcp1" name="ctcp1" dataType="text"></w2:key>
+        				<w2:key id="ctcp2" name="ctcp2" dataType="text"></w2:key>
+        				<w2:key id="depName" name="depName" dataType="text"></w2:key>
+        			</w2:keyInfo>
+        			<w2:data xmlns="">
+        				<empId><![CDATA[1]]></empId>
+        				<empNo><![CDATA[113565]]></empNo>
+        				<empName><![CDATA[최동규]]></empName>
+        				<osdtCd><![CDATA[00001]]></osdtCd>
+        				<emal><![CDATA[dk@koreainvestment.com]]></emal>
+        				<ctcp1><![CDATA[02-3276-1233]]></ctcp1>
+        				<ctcp2><![CDATA[010-1234-1234]]></ctcp2>
+        				<depName><![CDATA[인사부,인사팀]]></depName>
+        			</w2:data>
+        		</w2:dataMap>
+        	</w2:dataCollection>
         	<w2:workflowCollection />
         	<xf:submission id="sbmServiceDetail" action="aa/query/api/v1/service/id/{id}" method="get" mediatype="application/json" ref=""
         		target='data:json,["common","svcInfo","inps","outs","tbls","scrns"]' encoding="UTF-8" instance="" replace="" errorHandler=""
         		customHandler="" mode="asynchronous" processMsg="" ev:submit="scwin.sbmServiceDetail_submit"
         		ev:submitdone="scwin.sbmServiceDetail_submitdone" ev:submiterror="scwin.sbmServiceDetail_submiterror" abortTrigger="">
+        	</xf:submission>
+        	<xf:submission id="sbmEmpInfo" action="org/query/api/v1/emp-info/id/{id}" method="get" mediatype="application/json" ref=""
+        		target="data:json,emp" encoding="UTF-8" instance="" replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg=""
+        		ev:submit="" ev:submitdone="scwin.sbmEmpInfo_submitdone" ev:submiterror="" abortTrigger="">
         	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
@@ -176,10 +202,18 @@ scwin.sbmServiceDetail_submit = function (e) {
 };
 
 scwin.sbmServiceDetail_submitdone = function (e) {
+    const param = {
+            id: svcInfo.get("itChrr")
+        };
 
+        $c.sbm.execute(sbmEmpInfo, param);
 };
 
 scwin.sbmServiceDetail_submiterror = function (e) {
+
+};
+
+scwin.sbmEmpInfo_submitdone = function (e) {
 
 };
 ]]></script>
@@ -206,7 +240,7 @@ scwin.sbmServiceDetail_submiterror = function (e) {
     						</w2:attributes>
     					</xf:group>
     					<xf:group tagname="td" style="" id="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key1" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="data:emp.depName" style="" id="" label=""></w2:textbox>
     					</xf:group>
     					<xf:group tagname="th" style="" class="w2tb_th">
     						현업&amp;nbsp;담당자
@@ -215,7 +249,7 @@ scwin.sbmServiceDetail_submiterror = function (e) {
     						</w2:attributes>
     					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key2" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="data:svcInfo.itChrrName" style="" id="" label=""></w2:textbox>
     					</xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">
@@ -226,7 +260,7 @@ scwin.sbmServiceDetail_submiterror = function (e) {
     						</w2:attributes>
     					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key3" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="data:emp.depName" style="" id="" label=""></w2:textbox>
     					</xf:group>
     					<xf:group tagname="th" style="" class="w2tb_th">
     						IT&amp;nbsp;담당자
@@ -266,7 +300,7 @@ scwin.sbmServiceDetail_submiterror = function (e) {
     						</w2:attributes>
     					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key7" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="" style="" id="" label=""></w2:textbox>
     					</xf:group>
     					<xf:group tagname="th" style="" class="w2tb_th">
     						하위&amp;nbsp;유형
@@ -275,7 +309,7 @@ scwin.sbmServiceDetail_submiterror = function (e) {
     						</w2:attributes>
     					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key8" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="" style="" id="" label=""></w2:textbox>
     					</xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">
@@ -286,7 +320,7 @@ scwin.sbmServiceDetail_submiterror = function (e) {
     						</w2:attributes>
     					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key9" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="" style="" id="" label=""></w2:textbox>
     					</xf:group>
     					<xf:group tagname="th" style="" class="w2tb_th">
     						하위&amp;nbsp;분류
@@ -295,7 +329,7 @@ scwin.sbmServiceDetail_submiterror = function (e) {
     						</w2:attributes>
     					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key10" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="" style="" id="" label=""></w2:textbox>
     					</xf:group>
     				</xf:group>
     				<xf:group tagname="tr" style="">
@@ -326,7 +360,7 @@ scwin.sbmServiceDetail_submiterror = function (e) {
     						</w2:attributes>
     					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:svcInfo." style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="" style="" id="" label=""></w2:textbox>
     					</xf:group>
     					<xf:group tagname="th" style="" class="w2tb_th"><w2:attributes>
     							<w2:scope>row</w2:scope>
@@ -346,7 +380,7 @@ scwin.sbmServiceDetail_submiterror = function (e) {
     							<w2:colspan>3</w2:colspan>
     							<w2:rowspan>1</w2:rowspan>
     						</w2:attributes>
-    						<w2:textbox ref="data:dataMap1.key14" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="" style="" id="" label=""></w2:textbox>
     					</xf:group>
     				</xf:group>
     			</xf:group></xf:group>

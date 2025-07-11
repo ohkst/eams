@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:ev="http://www.w3.org/2001/xml-events"
     xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
-    <head>
+    <head meta_screenName="서버 시스템 등록 팝업 시작">
         <w2:type>COMPONENT</w2:type>
         <w2:buildDate/>
         <w2:MSA/>
@@ -16,9 +16,23 @@
 scwin.onpageload = function() {
 	
 };
+
+scwin.btnRegister_onclick = function (e) {
+    $p.parent().scwin.openRegisterSystemInfoPopup();
+    $p.closePopup();
+};
+
+scwin.btnAddSystem_onclick = function (e) {
+    $p.parent().scwin.openRegisterSystemInfoPopup();
+    $p.closePopup();
+};
+
+scwin.btnClose_onclick = function (e) {
+    $p.closePopup();
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload">
-    	<xf:group style="" id="" class="pop_contents flex_cont"><xf:group id="" class="grp_poptxt" style="display:flex;align-items:center;justify-content:center;"><xf:group id="" class="temp_hanbtn" style=""><w2:button style="" id="" label="신규등록" class="btn_cm pt"></w2:button><w2:button style="margin-top:8px;" id="" label="기존 시스템에 등록" class="btn_cm pt"></w2:button></xf:group></xf:group><xf:group id="" class="btnbox"><xf:group id="" class="rt"><w2:button style="" id="" label="닫기" class="btn_cm"></w2:button></xf:group></xf:group></xf:group>
+    	<xf:group style="" id="" class="pop_contents flex_cont"><xf:group id="" class="grp_poptxt" style="display:flex;align-items:center;justify-content:center;"><xf:group id="" class="temp_hanbtn" style=""><w2:button style="" id="btnRegister" label="신규등록" class="btn_cm pt" ev:onclick="scwin.btnRegister_onclick"></w2:button><w2:button style="margin-top:8px;" id="btnAddSystem" label="기존 시스템에 등록" class="btn_cm pt" ev:onclick="scwin.btnAddSystem_onclick"></w2:button></xf:group></xf:group><xf:group id="" class="btnbox"><xf:group id="" class="rt"><w2:button style="" id="btnClose" label="닫기" class="btn_cm" ev:onclick="scwin.btnClose_onclick"></w2:button></xf:group></xf:group></xf:group>
     </body>
 </html>

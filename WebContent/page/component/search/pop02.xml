@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
     xmlns:ev="http://www.w3.org/2001/xml-events"
     xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
-    <head>
+    <head meta_screenName="서버 시스템 정보 입력 팝업">
         <w2:type>COMPONENT</w2:type>
         <w2:buildDate/>
         <w2:MSA/>
@@ -15,6 +15,14 @@
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
 	
+};
+
+scwin.btnRegister_onclick = function (e) {
+    $p.closePopup();
+};
+
+scwin.btnClose_onclick = function (e) {
+	$p.closePopup();
 };
 ]]></script>
     </head>
@@ -228,8 +236,8 @@ scwin.onpageload = function() {
     		</xf:group>
     		<xf:group id="" class="btnbox">
 	<xf:group id="" class="rt">
-		<w2:button style="" id="" label="등록" class="btn_cm pt"></w2:button>
-		<w2:button class="btn_cm" id="" label="취소" style=""></w2:button>
+		<w2:button style="" id="btnRegister" label="등록" class="btn_cm pt" ev:onclick="scwin.btnRegister_onclick"></w2:button>
+		<w2:button class="btn_cm" id="btnClose" label="취소" style="" ev:onclick="scwin.btnClose_onclick"></w2:button>
 	</xf:group></xf:group></xf:group>
     </body>
 </html>

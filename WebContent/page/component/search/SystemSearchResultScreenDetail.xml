@@ -292,7 +292,7 @@ scwin.sbmTaskScreenInfo_submitdone = function (e) {
     if (unitAfrss.getRowCount() > 0) {
         unitAfrs.setJSON(unitAfrss.getRowJSON(0));
     } else {
-        alert("zero")
+        // alert("zero")
     }
 };
 ]]></script>
