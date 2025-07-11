@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ico_success" transform="translate(-389 -253)">
+    <circle id="타원_1" data-name="타원 1" cx="12" cy="12" r="12" transform="translate(389 253)" fill="#48bdb6"/>
+    <rect id="boundary" width="12" height="12" transform="translate(395 259)" opacity="0"/>
+    <path id="check_24dp_E8EAED_FILL0_wght500_GRAD0_opsz24" d="M169.245-703.858l6.381-6.381a.837.837,0,0,1,.611-.261.838.838,0,0,1,.611.261.846.846,0,0,1,.261.619.846.846,0,0,1-.261.619l-6.993,7.007a.837.837,0,0,1-.611.261.838.838,0,0,1-.611-.261l-3.27-3.27a.821.821,0,0,1-.253-.619.872.872,0,0,1,.268-.619.846.846,0,0,1,.619-.261.846.846,0,0,1,.619.261Z" transform="translate(229.89 971.5)" fill="#fff"/>
+  </g>
+</svg>

@@ -144,16 +144,14 @@ scwin.onpageload = function () {
 
 scwin.btnLoginClick_onclick = function (e) {
 
-    // const param = {
-    //     // empNo: "113565",
-    //     // pwd: "cdk200022"
-    //     empNo: loginID.getValue(),
-    //     pwd: loginPW.getValue()
-    // };
+    const param = {
+        // empNo: "113565",
+        // pwd: "cdk200022"
+        empNo: loginID.getValue(),
+        pwd: loginPW.getValue()
+    };
 
-    // $c.sbm.execute(sbmLogin, param);
-
-    $p.url("/page/layout/TopNavigationBottomContents.xml");
+    $c.sbm.execute(sbmLogin, param);
 };
 
 scwin.submission3_submit = function (e) {
@@ -196,6 +194,7 @@ scwin.submission5_submitdone = function (e) {
     var jsoninfo2 = JSON.stringify(dep.getJSON());
     var jsoninfo3 = JSON.stringify(emps.getAllFilteredJSON());
     alert("done" + jsoninfo1 + jsoninfo2 + jsoninfo3);
+    alert(e.responseHeaders);
 };
 
 scwin.submission5_submiterror = function (e) {
@@ -207,6 +206,28 @@ scwin.sbmLogin_submit = function (e) {
 };
 
 scwin.sbmLogin_submitdone = function (e) {
+    const container = document.createElement('div');
+    container.innerHTML = e.responseHeaders;
+
+    const names = container.querySelectorAll('name');
+    const values = container.querySelectorAll('value');
+
+    const headers = {};
+    const count = Math.min(names.length, values.length);
+
+    for (let i = 0; i < count; i++) {
+        const key = names[i]?.textContent?.trim();
+        const value = values[i]?.textContent?.trim();
+        if (key && value !== undefined) {
+            headers[key] = value;
+        }
+    }
+
+    // 결과 확인
+    // Object.entries(headers).forEach(([key, value]) => {
+    //     alert(`${key}: ${value}`);
+    // });
+
     $p.url("/page/layout/TopNavigationBottomContents.xml");
 };
 
