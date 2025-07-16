@@ -207,7 +207,7 @@ scwin.__callbackSubmitFunction = function (resObj, sbmObj) {
     let $p = $c.win.__getScope(sbmObj).scwin.$w;
 
     // server와 연결을 할 수 없을 경우 responseStatusCode가 0으로 발생.
-    if ((resObj.responseStatusCode < 100) || (resObj.responseStatusCodssse > 599)) {
+    if ((resObj.responseStatusCode < 100) || (resObj.responseStatusCode > 599)) {
         let detailStr = "HTTP STATUS INFO";
         detailStr += resObj.responseStatusCode;
         detailStr += " - URI:";
@@ -222,6 +222,21 @@ scwin.__callbackSubmitFunction = function (resObj, sbmObj) {
 
         $c.sbm.resultMsg(msgObj);
         return false;
+    } else if (resObj.responseStatusCode == 400) {
+        
+        // alert(JSON.stringify(resObj, null, 2));
+
+        let displayMessage = "";
+        const responseBody = JSON.parse(resObj.responseBody || '{}');
+        if (responseBody.common && responseBody.common.message) {
+            displayMessage = responseBody.common.message;
+        } else if (responseBody.common && responseBody.common.detailMessage) {
+            displayMessage = responseBody.common.detailMessage;
+        } else {
+            displayMessage =  "서버와 연결할 수 없습니다. 자세한 내용은 관리자에게 문의하시기 바랍니다.";
+        }
+
+        alert(displayMessage); // 추출된 메시지 출력
     }
 
     if ($c.util.isEmpty(resObj.errorType) && typeof sbmObj._promise_submitDoneHandler === "function") {
