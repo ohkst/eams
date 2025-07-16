@@ -142,7 +142,7 @@ scwin.onpageload = function () {
     // $c.sbm.execute(submission4, param);
 };
 
-scwin.btnLoginClick_onclick = function (e) {
+scwin.processLogin = function () {
 
     const param = {
         // empNo: "113565",
@@ -152,6 +152,11 @@ scwin.btnLoginClick_onclick = function (e) {
     };
 
     $c.sbm.execute(sbmLogin, param);
+
+};
+
+scwin.btnLoginClick_onclick = function (e) {
+    scwin.processLogin();
 };
 
 scwin.submission3_submit = function (e) {
@@ -233,7 +238,14 @@ scwin.sbmLogin_submitdone = function (e) {
 
 scwin.sbmLogin_submiterror = function (e) {
     alert(JSON.parse(e.responseBody).common.detailMessage);
-};]]></script>
+};
+
+scwin.loginPW_onkeydown = function (e) {
+    if ((e.charCode || e.keyCode) === 13) {
+        scwin.processLogin();
+    }
+};
+]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="background-color:#0E2147;display:flex;justify-content: center;align-items: center;">
     	<xf:group style="width:314px;height:266px;display: flex;flex-direction: column;gap: 12px;" id="">
@@ -244,7 +256,7 @@ scwin.sbmLogin_submiterror = function (e) {
     			style="top:242px;left:423px;width:100%;display: flex;gap: 8px;flex-direction: column;justify-content: center;align-items: center;"
     			id="">
     			<xf:input style="position:static;top:152px;left:272px;width:314px;height:40px;" id="loginID" placeholder="사번"></xf:input>
-    			<xf:secret id="loginPW" style="position:static;top:152px;left:272px;width:314px;height:40px;" placeholder="패스워드"></xf:secret>
+    			<xf:secret id="loginPW" style="position:static;top:152px;left:272px;width:314px;height:40px;" placeholder="패스워드" ev:onkeydown="scwin.loginPW_onkeydown"></xf:secret>
     		</xf:group>
     		<xf:group style="position:static;top:242px;left:423px;width:100%;height:48px;display: flex;justify-content: center;align-items: center;" id="">
     			<w2:button ev:onclick="scwin.btnLoginClick_onclick" style="position:static;top:318px;left:153px;width:314px;height:48px;background-color:#3761BB;color:#FFFFFF;font-size:18px;font-weight:bold;border-width:0px;border-radius: 8px;"

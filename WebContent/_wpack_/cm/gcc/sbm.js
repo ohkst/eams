@@ -1,6 +1,6 @@
-/*amd /cm/gcc/sbm.xml 22977 d838362fd3395c41ccbd39cd526bb413e64265d2006ec9ace964cf5038c18a48 */
+/*amd /cm/gcc/sbm.xml 23616 9ca22e5d5d4c0f3f9992ff39b0bef15d0e15fa957eb807f2b318cf7fbd0849c6 */
 define({declaration:{A:{version:'1.0',encoding:'UTF-8'}},E:[{T:1,N:'html',A:{xmlns:'http://www.w3.org/1999/xhtml','xmlns:ev':'http://www.w3.org/2001/xml-events','xmlns:w2':'http://www.inswave.com/websquare','xmlns:xf':'http://www.w3.org/2002/xforms'},E:[{T:1,N:'head',A:{},E:[{T:1,N:'w2:type',E:[{T:3,text:'COMMON'}]},{T:1,N:'w2:buildDate'},{T:1,N:'w2:MSA'},{T:1,N:'xf:model',E:[{T:1,N:'w2:dataCollection',A:{baseNode:'map'}},{T:1,N:'w2:workflowCollection'}]},{T:1,N:'w2:layoutInfo'},{T:1,N:'w2:publicInfo',A:{method:'scwin.getContextPath,scwin.__preSubmitFunction,scwin.__setActionParam,scwin.__callbackSubmitFunction,scwin.__submitErrorHandler,scwin.execute,scwin.executeDynamic,scwin.executeWorkflow,scwin.create,scwin.getResultCode,scwin.getStatusMessage,scwin.resultMsg,scwin.setAction,scwin.getServiceURL,scwin.getMessageCode'}},{T:1,N:'script',A:{lazy:'false',type:'text/javascript'},E:[{T:4,cdata:function(scopeObj){with(scopeObj){// 서버 통신 서비스 호출을 위한 Context Path
-scwin.CONTEXT_PATH = "http://190.190.158.148:30100/";
+scwin.CONTEXT_PATH = "http://10.50.241.179:8081/";
 
 // 서버 통신 서비스 호출을 위한 Service Url (Context Path 이하 경로)
 scwin.SERVICE_URL = "";
@@ -181,7 +181,7 @@ scwin.__callbackSubmitFunction = function (resObj, sbmObj) {
   let $p = $c.win.__getScope(sbmObj).scwin.$w;
 
   // server와 연결을 할 수 없을 경우 responseStatusCode가 0으로 발생.
-  if (resObj.responseStatusCode < 100 || resObj.responseStatusCodssse > 599) {
+  if (resObj.responseStatusCode < 100 || resObj.responseStatusCode > 599) {
     let detailStr = "HTTP STATUS INFO";
     detailStr += resObj.responseStatusCode;
     detailStr += " - URI:";
@@ -194,6 +194,19 @@ scwin.__callbackSubmitFunction = function (resObj, sbmObj) {
     };
     $c.sbm.resultMsg($p, msgObj);
     return false;
+  } else if (resObj.responseStatusCode == 400) {
+    // alert(JSON.stringify(resObj, null, 2));
+
+    let displayMessage = "";
+    const responseBody = JSON.parse(resObj.responseBody || '{}');
+    if (responseBody.common && responseBody.common.message) {
+      displayMessage = responseBody.common.message;
+    } else if (responseBody.common && responseBody.common.detailMessage) {
+      displayMessage = responseBody.common.detailMessage;
+    } else {
+      displayMessage = "서버와 연결할 수 없습니다. 자세한 내용은 관리자에게 문의하시기 바랍니다.";
+    }
+    alert(displayMessage); // 추출된 메시지 출력
   }
   if ($c.util.isEmpty($p, resObj.errorType) && typeof sbmObj._promise_submitDoneHandler === "function") {
     sbmObj._promise_submitDoneHandler(resObj);

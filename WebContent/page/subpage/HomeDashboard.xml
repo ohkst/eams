@@ -1047,6 +1047,10 @@ scwin.deployTRGrid_oncellclick = function (rowIndex, columnIndex, columnId) {
 
     $c.util.openEamsPopup("/page/component/search/SystemSearchResultTRDetail.xml", "TR 상세", dataObject);
 };
+
+scwin.btnMoreBiz_onclick = function (e) {
+
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload"
@@ -1070,7 +1074,7 @@ scwin.deployTRGrid_oncellclick = function (rowIndex, columnIndex, columnId) {
     				<xf:group style="" class="data_title">
     					<w2:textbox class="tit" id="" label="최근 수정된 업무" style=""></w2:textbox>
     					<xf:group id="" class="rt">
-    						<w2:button style="" id="" label="더보기" class="btn_cm row_add icon"></w2:button>
+    						<w2:button style="" id="btnMoreBiz" label="더보기" class="btn_cm row_add icon" ev:onclick="scwin.btnMoreBiz_onclick"></w2:button>
     					</xf:group>
     				</xf:group>
     				<xf:group style="" class="data_cnt">
