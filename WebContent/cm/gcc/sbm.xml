@@ -15,7 +15,7 @@ xmlns:xf="http://www.w3.org/2002/xforms">
 		<w2:publicInfo method="scwin.getContextPath,scwin.__preSubmitFunction,scwin.__setActionParam,scwin.__callbackSubmitFunction,scwin.__submitErrorHandler,scwin.execute,scwin.executeDynamic,scwin.executeWorkflow,scwin.create,scwin.getResultCode,scwin.getStatusMessage,scwin.resultMsg,scwin.setAction,scwin.getServiceURL,scwin.getMessageCode"/>
 		<script lazy="false" type="text/javascript"><![CDATA[
 // 서버 통신 서비스 호출을 위한 Context Path
-scwin.CONTEXT_PATH = "http://10.50.241.179:8081/";
+scwin.CONTEXT_PATH = "http://190.190.158.148:30100/";
 
 // 서버 통신 서비스 호출을 위한 Service Url (Context Path 이하 경로)
 scwin.SERVICE_URL = "";
@@ -207,7 +207,7 @@ scwin.__callbackSubmitFunction = function (resObj, sbmObj) {
     let $p = $c.win.__getScope(sbmObj).scwin.$w;
 
     // server와 연결을 할 수 없을 경우 responseStatusCode가 0으로 발생.
-    if ((resObj.responseStatusCode < 100) || (resObj.responseStatusCodssse > 599)) {
+    if ((resObj.responseStatusCode < 100) || (resObj.responseStatusCode > 599)) {
         let detailStr = "HTTP STATUS INFO";
         detailStr += resObj.responseStatusCode;
         detailStr += " - URI:";
@@ -222,6 +222,21 @@ scwin.__callbackSubmitFunction = function (resObj, sbmObj) {
 
         $c.sbm.resultMsg(msgObj);
         return false;
+    } else if (resObj.responseStatusCode == 400) {
+        
+        // alert(JSON.stringify(resObj, null, 2));
+
+        let displayMessage = "";
+        const responseBody = JSON.parse(resObj.responseBody || '{}');
+        if (responseBody.common && responseBody.common.message) {
+            displayMessage = responseBody.common.message;
+        } else if (responseBody.common && responseBody.common.detailMessage) {
+            displayMessage = responseBody.common.detailMessage;
+        } else {
+            displayMessage =  "서버와 연결할 수 없습니다. 자세한 내용은 관리자에게 문의하시기 바랍니다.";
+        }
+
+        alert(displayMessage); // 추출된 메시지 출력
     }
 
     if ($c.util.isEmpty(resObj.errorType) && typeof sbmObj._promise_submitDoneHandler === "function") {

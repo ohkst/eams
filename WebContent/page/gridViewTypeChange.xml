@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head meta_vertical_guides="" meta_horizontal_guides="" meta_screenName="테스트">
+    	<w2:type>COMPONENT</w2:type>
+    	<w2:buildDate />
+    	<w2:MSA />
+    	<xf:model>
+    		<w2:dataCollection baseNode="map">
+    			<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true" ev:ondataload="scwin.dataList1_ondataload">
+    				<w2:columnInfo>
+    					<w2:column id="col1" name="id" dataType="text"></w2:column>
+    					<w2:column id="col2" name="name" dataType="text"></w2:column>
+    					<w2:column id="col3" name="value" dataType="text"></w2:column>
+    					<w2:column id="col4" name="name4" dataType="text"></w2:column>
+    				</w2:columnInfo>
+    				<w2:data use="true">
+    					<w2:row>
+    						<col1><![CDATA[1]]></col1>
+    						<col2><![CDATA[N]]></col2>
+    						<col3><![CDATA[aaa]]></col3>
+    						<col4><![CDATA[10]]></col4>
+    					</w2:row>
+    					<w2:row>
+    						<col1><![CDATA[2]]></col1>
+    						<col2><![CDATA[N]]></col2>
+    						<col3><![CDATA[bbb]]></col3>
+    						<col4><![CDATA[20]]></col4>
+    					</w2:row>
+    					<w2:row>
+    						<col1><![CDATA[3]]></col1>
+    						<col2><![CDATA[Y]]></col2>
+    						<col3><![CDATA[ccc]]></col3>
+    						<col4><![CDATA[30]]></col4>
+    					</w2:row>
+    					<w2:row>
+    						<col1><![CDATA[4]]></col1>
+    						<col2><![CDATA[Y]]></col2>
+    						<col3><![CDATA[ddd]]></col3>
+    						<col4><![CDATA[40]]></col4>
+    					</w2:row>
+    				</w2:data>
+    			</w2:dataList>
+    		</w2:dataCollection>
+    		<w2:workflowCollection />
+    	</xf:model>
+    	<w2:layoutInfo />
+    	<w2:publicInfo method="" />
+    	<script lazy="false" type="text/javascript"><![CDATA[
+scwin.onpageload = function () {
+
+    var length = gridView1.getDataLength();
+    for (var i = 0; i < length; i++) {
+        if (gridView1.getCellDisplayData(i, 1) === 'N') { //특정 열의 값이 N일경우
+            var info1 = {
+                inputType: "text",
+                value: ""
+            }
+            gridView1.setCellInputType(i, "col3", info1); // rowIndex, colID에 해당하는 셀의 타입 변경
+            gridView1.setDisabled("cell",i,"col3",true);  
+
+        } else {
+            var info2 = {
+                inputType: "button"
+            }
+            gridView1.setCellInputType(i, "col3", info2);
+        }
+    }
+    dataList1.setJSON(dataList1.getAllJSON());
+};
+
+scwin.dataList1_ondataload = function () {
+    for (let idx = 0; idx <= dataList1.getRowCount(); idx++){
+        alert(dataList1.getCellData(idx, 'col2'));
+        if (!(dataList1.getCellData(idx, 'col2') == 'N')) {      
+            continue;
+        }
+        gridView1.setCellBackgroundColor(idx, "col2", "#FF0000")
+    }
+};
+]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload">
+    	<w2:gridView checkAllType="false" scrollByColumn="false" defaultCellHeight="20" scrollByColumnAdaptive="false" id="gridView1"
+    		style="width: 500px;height: 150px;" dataList="data:dataList1" setCellInputTypeCustom="true">
+    		<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
+    		<w2:header style="" id="header1">
+    			<w2:row style="" id="row1">
+    				<w2:column width="70" inputType="text" id="column4" value="id" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" id="column3" value="name" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" id="column2" value="value" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" id="column1" value="name4" displayMode="label"></w2:column>
+    			</w2:row>
+    		</w2:header>
+    		<w2:gBody style="" id="gBody1">
+    			<w2:row style="" id="row2">
+    				<w2:column width="70" inputType="text" id="col1" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" id="col2" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="custom" id="col3" displayMode="label"></w2:column>
+    				<w2:column width="70" inputType="text" id="col4" displayMode="label"></w2:column>
+    			</w2:row>
+    		</w2:gBody>
+    	</w2:gridView>
+    </body>
+</html>

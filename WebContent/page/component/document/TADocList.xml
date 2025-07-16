@@ -38,7 +38,7 @@
         				<total><![CDATA[10]]></total>
         			</w2:data>
         		</w2:dataMap>
-        		<w2:dataList id="svrImgs">
+        		<w2:dataList id="svrImgs" ev:ondataload="scwin.svrImgs_ondataload">
 					<w2:columnInfo>
 						<w2:column id="svrImgAdmnId" name="svrImgAdmnId" dataType="text"></w2:column>
 						<w2:column id="svrImgAdmnSqno" name="svrImgAdmnSqno" dataType="text"></w2:column>
@@ -332,6 +332,40 @@ scwin.sbmTADocList_submitdone = function (e) {
 
 scwin.sbmServerImageList_submitdone = function (e) {
 
+};
+
+scwin.svrImgs_ondataload = function () {
+    const cellColor = "#fab2b2";
+
+    for (let idx = 0; idx <= svrImgs.getRowCount(); idx++){
+        if ((svrImgs.getCellData(idx, 'sysCpstDgrmYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "sysCpstDgrmYn", cellColor);                 
+        }
+        if ((svrImgs.getCellData(idx, 'devlMnulYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "devlMnulYn", cellColor);                 
+        }
+        if ((svrImgs.getCellData(idx, 'mgmtMnulYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "mgmtMnulYn", cellColor);                  
+        }
+        if ((svrImgs.getCellData(idx, 'archtYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "archtYn", cellColor);                  
+        }
+        if ((svrImgs.getCellData(idx, 'rfpYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "rfpYn", cellColor);                  
+        }
+        if ((svrImgs.getCellData(idx, 'reqtDefYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "reqtDefYn", cellColor);                  
+        }
+        if ((svrImgs.getCellData(idx, 'mpiwRptsYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "mpiwRptsYn", cellColor);                 
+        }
+        if ((svrImgs.getCellData(idx, 'chngDlbrRptsYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "chngDlbrRptsYn", cellColor);                  
+        }
+        if ((svrImgs.getCellData(idx, 'cpltRptsYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "cpltRptsYn", cellColor);                  
+        }
+    }
 };
 ]]></script>
     </head>
