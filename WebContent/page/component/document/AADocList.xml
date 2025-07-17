@@ -366,8 +366,8 @@ scwin.syss_ondataload = function () {
     						<w2:column width="70" inputType="text" style="" id="sysCd" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="sysName" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="sysDscr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="svcOpngDt" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="svcEndDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="calendar" style="" id="svcOpngDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="calendar" style="" id="svcEndDt" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="itChrrNo" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>

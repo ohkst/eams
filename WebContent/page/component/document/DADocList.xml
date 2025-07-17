@@ -237,7 +237,7 @@ scwin.btnSearch_onclick = function (e) {
 scwin.btnReset_onclick = function (e) {
     tfBizName.setValue("");
     tfOwnerName.setValue("");
-    syss.clearFilter();
+    dbs.clearFilter();
 };
 
 scwin.imgBtnCSV_onclick = function (e) {
@@ -442,7 +442,7 @@ scwin.sbmDatabaseList_submitdone = function (e) {
     						<w2:column width="70" inputType="text" style="" id="dvlpChrrName" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="mgmtChrr" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="mgmtChrrName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="crtnDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="calendar" style="" id="crtnDt" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="sysCpstDgrmYn" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="devlMnulYn" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="mgmtMnulYn" value="" displayMode="label"></w2:column>
