@@ -1,2 +1,7 @@
 .settings/
+<<<<<<< .gitignore
+.DS_Store
+=======
 WebContent/_wpack_/
+.DS_Store
+>>>>>>> .gitignore
