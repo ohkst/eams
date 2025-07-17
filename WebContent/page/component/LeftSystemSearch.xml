@@ -675,13 +675,13 @@ scwin.sbmServiceList_submiterror = function (e) {
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="" id="unitAfrsId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="unitAfrsCd" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="depName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="unitAfrsName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="chrrNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="chrrName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="manlName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style=";padding-left:24;" id="unitAfrsId" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="unitAfrsCd" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="depName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="unitAfrsName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="chrrNo" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="chrrName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="manlName" value="" displayMode="label" textAlign="left"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpAAScreen" class="side_menu_grid">
@@ -724,21 +724,21 @@ scwin.sbmServiceList_submiterror = function (e) {
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="" id="arfsScrnId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="sysName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="scrnNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="scrnName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dvlpChrr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dvlpChrrNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dvlpChrrName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="mgmtChrr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="mgmtChrrNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="mgmtChrrName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="witfChrgDep" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="witfChrgDepName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="witfChrr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="witfChrrNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="witfChrrName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="arfsScrnId" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="sysName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="scrnNo" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="scrnName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="dvlpChrr" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="dvlpChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="dvlpChrrName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="mgmtChrr" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="mgmtChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="mgmtChrrName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrgDep" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrgDepName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrr" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrrName" value="" displayMode="label" textAlign="left"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpAATR" class="side_menu_grid">
@@ -762,12 +762,12 @@ scwin.sbmServiceList_submiterror = function (e) {
     				</w2:header>
     				<w2:gBody style="" id="gBody3">
     					<w2:row style="" id="row6">
-    						<w2:column width="70" inputType="text" style="" id="svcId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="svcCd" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="korSvcName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="itChrrNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcId" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcCd" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="korSvcName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="itChrr" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="itChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="itChrrName" value="" displayMode="label" textAlign="left"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpDA" class="side_menu_grid">
@@ -826,22 +826,22 @@ scwin.sbmServiceList_submiterror = function (e) {
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="" id="tlbId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="afrsDvsn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="msjtSphr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="tblEngName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="tblKorName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="tblDscr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="witfChrgDep" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="witfChrgDepName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="witfChrr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="witfChrrName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="itChrgDept" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="itChrgDeptName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="frstErlmDt" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="rcenChngDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="tlbId" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="afrsDvsn" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="msjtSphr" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="tblEngName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="tblKorName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="tblDscr" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrgDep" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrgDepName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrr" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrrName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="itChrgDept" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="itChrgDeptName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="itChrr" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="itChrrName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="frstErlmDt" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="rcenChngDt" value="" displayMode="label" textAlign="left"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpMember" class="side_menu_grid">
@@ -859,10 +859,10 @@ scwin.sbmServiceList_submiterror = function (e) {
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="" id="empId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="empNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="empName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="osdtCd" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="empId" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="empNo" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="empName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:24px;" id="osdtCd" value="" displayMode="label" textAlign="left"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView></xf:group></xf:group></xf:group></xf:group>
