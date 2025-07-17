@@ -16,7 +16,6 @@ stages:
   - connection-tet
   - ssh-command
 
-
 connection-test:
   stage: connection-test
   <<: *global_cache
