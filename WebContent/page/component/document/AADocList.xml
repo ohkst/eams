@@ -76,7 +76,7 @@
         				</w2:row>
         			</w2:data>
         		</w2:dataList>
-        		<w2:dataList id="syss" style="">
+        		<w2:dataList id="syss" style="" ev:ondataload="scwin.syss_ondataload">
         			<w2:columnInfo>
         				<w2:column dataType="text" id="sysId" name="시스템ID"></w2:column>
         				<w2:column dataType="text" id="sysCd" name="시스템코드"></w2:column>
@@ -221,6 +221,42 @@ scwin.closeAction = function (id, info) {
 scwin.sbmAADocList_submitdone = function (e) {
 
 };
+
+scwin.syss_ondataload = function () {
+
+    const cellColor = "#fab2b2";
+
+    for (let idx = 0; idx <= syss.getRowCount(); idx++){
+        if ((syss.getCellData(idx, 'sysCpstDgrmYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "sysCpstDgrmYn", cellColor);                 
+        }
+        if ((syss.getCellData(idx, 'devlMnulYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "devlMnulYn", cellColor);                 
+        }
+        if ((syss.getCellData(idx, 'mgmtMnulYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "mgmtMnulYn", cellColor);                  
+        }
+        if ((syss.getCellData(idx, 'archtYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "archtYn", cellColor);                  
+        }
+        if ((syss.getCellData(idx, 'rfpYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "rfpYn", cellColor);                  
+        }
+        if ((syss.getCellData(idx, 'reqtDefYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "reqtDefYn", cellColor);                  
+        }
+        if ((syss.getCellData(idx, 'mpiwRptsYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "mpiwRptsYn", cellColor);                 
+        }
+        if ((syss.getCellData(idx, 'chngDlbrRptsYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "chngDlbrRptsYn", cellColor);                  
+        }
+        if ((syss.getCellData(idx, 'cpltRptsYn') == 'N')) {
+            grdSystemList.setCellBackgroundColor(idx, "cpltRptsYn", cellColor);                  
+        }
+    }
+};
+
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style="">
