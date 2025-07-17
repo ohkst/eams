@@ -694,9 +694,9 @@ scwin.sbmServiceList_submiterror = function (e) {
     						</w2:column>
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="sysName" displayMode="label">
     						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="scrnNo" displayMode="label">
+    						<w2:column hidden="false" width="30" inputType="text" style="" id="column13" value="scrnNo" displayMode="label">
     						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column12" value="scrnName" displayMode="label">
+    						<w2:column hidden="false" width="100" inputType="text" style="" id="column12" value="scrnName" displayMode="label">
     						</w2:column>
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="dvlpChrr" displayMode="label">
     						</w2:column>
@@ -748,9 +748,9 @@ scwin.sbmServiceList_submiterror = function (e) {
     				<w2:header style="" id="header3">
     					<w2:row style="" id="row5">
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column48" value="svcId" displayMode="label"></w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column47" value="svcCd" displayMode="label">
+    						<w2:column hidden="false" width="30" inputType="text" style="" id="column47" value="svcCd" displayMode="label">
     						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column46" value="korSvcName" displayMode="label">
+    						<w2:column hidden="false" width="100" inputType="text" style="" id="column46" value="korSvcName" displayMode="label">
     						</w2:column>
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column45" value="itChrr" displayMode="label">
     						</w2:column>
