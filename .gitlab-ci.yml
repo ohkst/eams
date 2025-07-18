@@ -21,6 +21,7 @@ connection-test:
   script:
     - export PATH="$PATH:/next_generation"
     - env
+    - /next_generation/scp
     - /bin/sh -c "ls -l /"
     - /bin/sh -c "ls -l /next_generation"
     - /bin/sh -c "chown root.root /next_generation/standalone_wpack"
