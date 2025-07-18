@@ -160,7 +160,7 @@ scwin.onpageload = function () {
         const param = {
             id: paramData.id
         };
-
+        
         $c.sbm.execute(sbmUnitTaskDetail, param);
     } else {
         // alert("전달된 파라미터가 없습니다.");
@@ -186,9 +186,21 @@ scwin.sbmUnitTaskDetail_submiterror = function (e) {
 };
 
 scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
+    const id = scrns.getCellData(rowIndex, "afrsScrnId");
+    const name = scrns.getCellData(rowIndex, "scrnName");
 
+    var rowJSON = {
+        "id": id,
+        "name": name
+    };
 
-    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", "화면상세");
+    var dataObject = {
+        "type": "json",
+        "name": "PopupData",
+        "data": rowJSON
+    };
+    
+    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", "화면 상세", dataObject);
 };
 
 scwin.sbmEmpInfo_submitdone = function (e) {
