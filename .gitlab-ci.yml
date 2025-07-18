@@ -20,8 +20,7 @@ connection-test:
   stage: connection-test
   <<: *global_cache
   script:
-    - export PATH=$PATH:/next_generation
-    - ssh -i k113201 $TLEAMS4 "pwd"
+    - file /bin/sh
   only:
     refs:
       - main
