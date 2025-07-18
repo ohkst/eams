@@ -18,8 +18,6 @@ stages:
 
 connection-test:
   stage: connection-test
-  before_script:
-    - export PATH=$PATH:/next_generation
   script:
     - ssh k113201@190.190.158.150 pwd
   only:
