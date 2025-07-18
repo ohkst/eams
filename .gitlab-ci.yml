@@ -20,8 +20,7 @@ connection-test:
   stage: connection-test
   <<: *global_cache
   script:
-    - which ssh sftp scp
-    - whereis ssh sftp scp
+    - which ssh
   only:
     refs:
       - main
