@@ -239,6 +239,7 @@
         				<w2:key id="dcmtChrrName" name="dcmtChrrName" dataType="text"></w2:key>
         				<w2:key id="frstErlmDt" name="frstErlmDt" dataType="text"></w2:key>
         				<w2:key id="rcenChngDt" name="rcenChngDt" dataType="text"></w2:key>
+        				<w2:key id="dcmtUrl" name="name16" dataType="text"></w2:key>
         			</w2:keyInfo>
         			<w2:data xmlns="">
         				<prdtnId><![CDATA[1]]></prdtnId>
@@ -297,6 +298,11 @@ scwin.onpageload = function () {
 scwin.sbmDocDetail_submitdone = function (e) {
 
 };
+
+scwin.txtLinkDoc_onclick = function (e) {
+    const link = docInfo.get("dcmtUrl");
+    window.open(link, "_blank");
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style=";background-color:;">
@@ -319,33 +325,13 @@ scwin.sbmDocDetail_submitdone = function (e) {
     				</xf:group>
     				<xf:group style="" tagname="tr">
     					<xf:group class="w2tb_th" style="" tagname="th">
-    						산출물ID
-    						<w2:attributes>
-    							<w2:scope>row</w2:scope>
-    						</w2:attributes>
-    					</xf:group>
-    					<xf:group class="w2tb_td" id="" style="" tagname="td">
-    						<w2:textbox id="" label="" ref="data:docInfo.prdtnId" style=""></w2:textbox>
-    					</xf:group>
-    					<xf:group class="w2tb_th" style="" tagname="th">
-    						연결시스템ID
-    						<w2:attributes>
-    							<w2:scope>row</w2:scope>
-    						</w2:attributes>
-    					</xf:group>
-    					<xf:group class="w2tb_td" style="" tagname="td">
-    						<w2:textbox id="" label="" ref="data:docInfo.linkSysId" style=""></w2:textbox>
-    					</xf:group>
-    				</xf:group>
-    				<xf:group style="" tagname="tr">
-    					<xf:group class="w2tb_th" style="" tagname="th">
     						문서명
     						<w2:attributes>
     							<w2:scope>row</w2:scope>
     						</w2:attributes>
     					</xf:group>
     					<xf:group class="w2tb_td" style="" tagname="td">
-    						<w2:textbox id="" label="" ref="data:docInfo.dcmtName" style=""></w2:textbox>
+    						<w2:textbox id="txtLinkDoc" label="" ref="data:docInfo.dcmtName" style="" ev:onclick="scwin.txtLinkDoc_onclick"></w2:textbox>
     					</xf:group>
     					<xf:group class="w2tb_th" style="" tagname="th">
     						산출물시스템구분
@@ -387,14 +373,11 @@ scwin.sbmDocDetail_submitdone = function (e) {
     					<xf:group class="w2tb_td" style="" tagname="td">
     						<w2:textbox id="" label="" ref="data:docInfo.prdtnSclsCdName" style=""></w2:textbox>
     					</xf:group>
-    					<xf:group class="w2tb_th" style="" tagname="th">
-    						문서URL
-    						<w2:attributes>
+    					<xf:group class="w2tb_th" style="" tagname="th"><w2:attributes>
     							<w2:scope>row</w2:scope>
-    						</w2:attributes>
-    					</xf:group>
+    						</w2:attributes></xf:group>
     					<xf:group class="w2tb_td" style="" tagname="td">
-    						<w2:textbox id="" label="" ref="data:docInfo.dcmtUrl" style=""></w2:textbox>
+    						<w2:textbox id="" label="" ref="" style=""></w2:textbox>
     					</xf:group>
     				</xf:group>
                     <xf:group style="" tagname="tr">
@@ -509,7 +492,7 @@ scwin.sbmDocDetail_submitdone = function (e) {
     					</xf:group>
     				</xf:group>
     				<xf:group style="" tagname="tr">
-    					<xf:group class="w2tb_th" style="" tagname="th">CPLT_PRAR_DT<w2:attributes>
+    					<xf:group class="w2tb_th" style="" tagname="th">완료&amp;nbsp;예정일<w2:attributes>
     							<w2:scope>row</w2:scope>
     						</w2:attributes></xf:group>
     					<xf:group class="w2tb_td" style="" tagname="td">

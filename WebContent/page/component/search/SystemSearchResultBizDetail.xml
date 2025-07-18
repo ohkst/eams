@@ -71,6 +71,7 @@
         				<w2:key id="manlEmp" name="manlEmp" dataType="text"></w2:key>
         				<w2:key id="manlEmpNo" name="manlEmpNo" dataType="text"></w2:key>
         				<w2:key id="manlEmpName" name="manlEmpName" dataType="text"></w2:key>
+        				<w2:key id="dcmtUrl" name="dcmtUrl" dataType="text"></w2:key>
         			</w2:keyInfo>
         			<w2:data xmlns="">
         				<unitAfrsCd><![CDATA[u0QKh71yTpm3PIhv7V]]></unitAfrsCd>
@@ -205,6 +206,11 @@ scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
 
 scwin.sbmEmpInfo_submitdone = function (e) {
 
+};
+
+scwin.txtLinkData_onclick = function (e) {
+    const link = unitAfrs.get("dcmtUrl");
+    window.open(link, "_blank");
 };
 ]]></script>
     </head>
@@ -364,7 +370,7 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     						</w2:attributes>
     					</xf:group>
     					<xf:group tagname="td" style="" class="w2tb_td">
-    						<w2:textbox ref="data:dataMap1.key15" style="" id="" label=""></w2:textbox>
+    						<w2:textbox ref="" style=";color:#124BFF;" id="txtLinkData" label="관련자료" ev:onclick="scwin.txtLinkData_onclick"></w2:textbox>
     					</xf:group>
     				</xf:group>
     				<xf:group style="" tagname="tr">
