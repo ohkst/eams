@@ -19,8 +19,7 @@ stages:
 connection-test:
   stage: connection-test
   script:
-    - apk add bash
-    - /next_generation/standalone_wpack-linux --help
+    - /bin/sh -c "/next_generation/standalone_wpack-linux --help"
   only:
     refs:
       - main
