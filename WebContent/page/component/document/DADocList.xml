@@ -350,7 +350,7 @@ scwin.sbmDatabaseList_submitdone = function (e) {
     		<xf:group id="" class="gvwbox grp_flex">
     			<w2:gridView useFilterSearch="false" ev:oncellclick="scwin.grdSystemList_oncellclick" checkAllType="false"
     				dataList="data:dbs" style="width: 100%;height: 150px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true"
-    				class="gvw">
+    				class="gvw" autoFitMinWidth="1024">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
@@ -388,15 +388,15 @@ scwin.sbmDatabaseList_submitdone = function (e) {
     						</w2:column>
     						<w2:column width="70" inputType="text" style="" id="column14" value="개발담당자" displayMode="label" hidden="true">
     						</w2:column>
-    						<w2:column width="30" inputType="text" style="" id="column13" value="개발담당자명" displayMode="label"
-    							hidden="false">
+    						<w2:column width="70" inputType="text" style="" id="column13" value="개발담당자명" displayMode="label"
+    							hidden="false" fixColumnWidth="true">
     						</w2:column>
     						<w2:column width="70" inputType="text" style="" id="column12" value="운영담당자" displayMode="label" hidden="true">
     						</w2:column>
-    						<w2:column width="30" inputType="text" style="" id="column11" value="운영담당자명" displayMode="label"
-    							hidden="false">
+    						<w2:column width="70" inputType="text" style="" id="column11" value="운영담당자명" displayMode="label"
+    							hidden="false" fixColumnWidth="true">
     						</w2:column>
-    						<w2:column width="30" inputType="text" style="" id="column10" value="생성일자" displayMode="label" hidden="false">
+    						<w2:column width="70" inputType="text" style="" id="column10" value="생성일자" displayMode="label" hidden="false" fixColumnWidth="true">
     						</w2:column>
     						<w2:column width="30" inputType="text" style="" id="column9" value="시스템구성도여부" displayMode="label"
     							hidden="false">

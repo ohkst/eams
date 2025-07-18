@@ -1305,7 +1305,7 @@ scwin.btnMoreBiz_onclick = function (e) {
     									width="70">
     								</w2:column>
     								<w2:column displayMode="label" hidden="false" id="column33" inputType="text" style=""
-    									value="dcmtChrrName" width="40" fixColumnWidth="true">
+    									value="dcmtChrrName" width="70" fixColumnWidth="true">
     								</w2:column>
     								<w2:column displayMode="label" hidden="true" id="column32" inputType="text" style="" value="frstErlmDt"
     									width="70">
@@ -1388,7 +1388,7 @@ scwin.btnMoreBiz_onclick = function (e) {
     									width="70">
     								</w2:column>
     								<w2:column displayMode="label" hidden="false" id="column3" inputType="text" style=""
-    									value="dcmtChrrName" width="40" fixColumnWidth="true">
+    									value="dcmtChrrName" width="70" fixColumnWidth="true">
     								</w2:column>
     								<w2:column displayMode="label" hidden="true" id="column2" inputType="text" style="" value="frstErlmDt"
     									width="70">
@@ -1471,7 +1471,7 @@ scwin.btnMoreBiz_onclick = function (e) {
     									width="70">
     								</w2:column>
     								<w2:column displayMode="label" hidden="false" id="column3" inputType="text" style=""
-    									value="dcmtChrrName" width="30">
+    									value="dcmtChrrName" width="70" fixColumnWidth="true">
     								</w2:column>
     								<w2:column displayMode="label" hidden="true" id="column2" inputType="text" style="" value="frstErlmDt"
     									width="70">
@@ -2057,8 +2057,8 @@ scwin.btnMoreBiz_onclick = function (e) {
     								<w2:column width="70" inputType="text" style="" id="column28" value="pssnDvsn" displayMode="label"
     									hidden="true">
     								</w2:column>
-    								<w2:column width="30" inputType="text" style="" id="column27" value="mainAdmr" displayMode="label"
-    									hidden="false">
+    								<w2:column width="70" inputType="text" style="" id="column27" value="mainAdmr" displayMode="label"
+    									hidden="false" fixColumnWidth="true">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column26" value="subAdmr" displayMode="label"
     									hidden="true">

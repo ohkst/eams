@@ -447,8 +447,8 @@ scwin.svrImgs_ondataload = function () {
     					<w2:column hidden="true" width="70" inputType="text" style="" id="column75" value="haCpstYn" displayMode="label"></w2:column>
     					<w2:column hidden="true" width="70" inputType="text" style="" id="column74" value="haSoltn" displayMode="label"></w2:column>
     					<w2:column hidden="true" width="70" inputType="text" style="" id="column73" value="haVer" displayMode="label"></w2:column>
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column72" value="서비스개시일자" displayMode="label"></w2:column>
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column71" value="서비스종료일자" displayMode="label"></w2:column>
+    					<w2:column hidden="false" width="70" inputType="text" style="" id="column72" value="서비스개시일자" displayMode="label" fixColumnWidth="true"></w2:column>
+    					<w2:column hidden="false" width="70" inputType="text" style="" id="column71" value="서비스종료일자" displayMode="label" fixColumnWidth="true"></w2:column>
     					<w2:column hidden="true" width="70" inputType="text" style="" id="column70" value="bilObjtYn" displayMode="label"></w2:column>
     					<w2:column hidden="true" width="70" inputType="text" style="" id="column69" value="asmtCoreTnum"
     						displayMode="label">
