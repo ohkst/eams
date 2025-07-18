@@ -652,7 +652,7 @@ scwin.sbmServiceList_submiterror = function (e) {
     			</w2:button>
     		</xf:group>
     	<xf:group id="" class="eams_side_list"><xf:group style="" id="grpBA" class="side_menu_grid">
-    			<w2:textbox style="" id="" label="업무" class="link_depth1"></w2:textbox>
+    			<w2:textbox style="font-size:16px;" id="" label="업무" class="link_depth1"></w2:textbox>
     		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridBASearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:unitTasks" style="width:100%;min-height:200px;" id="gridBASearchResult" autoFit="allColumn" defaultCellHeight="30">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
@@ -663,7 +663,7 @@ scwin.sbmServiceList_submiterror = function (e) {
     						</w2:column>
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="depName" displayMode="label">
     						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column4" value="unitAfrsName" displayMode="label">
+    						<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column4" value="unitAfrsName" displayMode="label">
     						</w2:column>
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="chrrNo" displayMode="label">
     						</w2:column>
@@ -678,14 +678,14 @@ scwin.sbmServiceList_submiterror = function (e) {
     						<w2:column width="70" inputType="text" style="padding-left:12;" id="unitAfrsId" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12;" id="unitAfrsCd" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12;" id="depName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12;" id="unitAfrsName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:12;font-size:12px;" id="unitAfrsName" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12;" id="chrrNo" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12;" id="chrrName" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12;" id="manlName" value="" displayMode="label" textAlign="left"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpAAScreen" class="side_menu_grid">
-    			<w2:textbox style="" id="" label="화면" class="link_depth1"></w2:textbox>
+    			<w2:textbox style="font-size:16px;" id="" label="화면" class="link_depth1"></w2:textbox>
     		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridAAScreenSearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:scrns" style="width:100%;min-height:200px;" autoFit="allColumn" id="gridAAScreenSearchResult" defaultCellHeight="30" class="">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
@@ -694,9 +694,9 @@ scwin.sbmServiceList_submiterror = function (e) {
     						</w2:column>
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="sysName" displayMode="label">
     						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="scrnNo" displayMode="label" fixColumnWidth="true">
+    						<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column13" value="scrnNo" displayMode="label" fixColumnWidth="true">
     						</w2:column>
-    						<w2:column hidden="false" width="100" inputType="text" style="" id="column12" value="scrnName" displayMode="label">
+    						<w2:column hidden="false" width="100" inputType="text" style="font-size:12px;" id="column12" value="scrnName" displayMode="label">
     						</w2:column>
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="dvlpChrr" displayMode="label">
     						</w2:column>
@@ -726,8 +726,8 @@ scwin.sbmServiceList_submiterror = function (e) {
     					<w2:row style="" id="row2">
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="arfsScrnId" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="sysName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="scrnNo" value="" displayMode="label" textAlign="left" fixColumnWidth="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="scrnName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="scrnNo" value="" displayMode="label" textAlign="left" fixColumnWidth="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="scrnName" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="dvlpChrr" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="dvlpChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="dvlpChrrName" value="" displayMode="label" textAlign="left"></w2:column>
@@ -742,15 +742,15 @@ scwin.sbmServiceList_submiterror = function (e) {
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpAATR" class="side_menu_grid">
-    			<w2:textbox style="" id="" label="TR" class="link_depth1"></w2:textbox>
+    			<w2:textbox style="font-size:16px;" id="" label="TR" class="link_depth1"></w2:textbox>
     		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridAATRSearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:svcs" style="width:100%;min-height:200px;" autoFit="allColumn" id="gridAATRSearchResult" defaultCellHeight="30">
     				<w2:caption style="" id="caption3" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header3">
     					<w2:row style="" id="row5">
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column48" value="svcId" displayMode="label"></w2:column>
-    						<w2:column hidden="false" width="110" inputType="text" style="" id="column47" value="svcCd" displayMode="label" fixColumnWidth="true">
+    						<w2:column hidden="false" width="110" inputType="text" style="font-size:12px;" id="column47" value="svcCd" displayMode="label" fixColumnWidth="true">
     						</w2:column>
-    						<w2:column hidden="false" width="100" inputType="text" style="" id="column46" value="korSvcName" displayMode="label">
+    						<w2:column hidden="false" width="100" inputType="text" style="font-size:12px;" id="column46" value="korSvcName" displayMode="label">
     						</w2:column>
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column45" value="itChrr" displayMode="label">
     						</w2:column>
@@ -763,15 +763,15 @@ scwin.sbmServiceList_submiterror = function (e) {
     				<w2:gBody style="" id="gBody3">
     					<w2:row style="" id="row6">
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcId" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcCd" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="korSvcName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="svcCd" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="korSvcName" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrr" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrrName" value="" displayMode="label" textAlign="left"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpDA" class="side_menu_grid">
-    			<w2:textbox style="" id="" label="DB" class="link_depth1"></w2:textbox>
+    			<w2:textbox style="font-size:16px;" id="" label="DB" class="link_depth1"></w2:textbox>
     		<xf:group id="" class="side_gvw">
     			<w2:gridView ev:oncellclick="scwin.gridDADBSearchResult_oncellclick" hideHeader="true" checkAllType="false"
     				dataList="data:tables" style="width:100%;min-height:200px;" autoFit="allColumn" id="gridDADBSearchResult" defaultCellHeight="30">
@@ -785,10 +785,10 @@ scwin.sbmServiceList_submiterror = function (e) {
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="msjtSphr"
     							displayMode="label">
     						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="tblEngName"
+    						<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column13" value="tblEngName"
     							displayMode="label">
     						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column12" value="tblKorName"
+    						<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column12" value="tblKorName"
     							displayMode="label">
     						</w2:column>
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="tblDscr"
@@ -829,8 +829,8 @@ scwin.sbmServiceList_submiterror = function (e) {
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="tlbId" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="afrsDvsn" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="msjtSphr" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="tblEngName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="tblKorName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="tblEngName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="tblKorName" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="tblDscr" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrgDep" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrgDepName" value="" displayMode="label" textAlign="left"></w2:column>
@@ -845,14 +845,14 @@ scwin.sbmServiceList_submiterror = function (e) {
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpMember" class="side_menu_grid">
-    			<w2:textbox style="" id="" label="담당자" class="link_depth1"></w2:textbox>
+    			<w2:textbox style="font-size:16px;" id="" label="담당자" class="link_depth1"></w2:textbox>
     		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridMemberSearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:emps" style="width:100%;min-height:200px;" autoFit="allColumn" id="gridMemberSearchResult" defaultCellHeight="30">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="empId" displayMode="label"></w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column3" value="empNo" displayMode="label" fixColumnWidth="true"></w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column2" value="empName" displayMode="label">
+    						<w2:column hidden="false" width="70" inputType="text" style="font-size: 12px;" id="column3" value="empNo" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column2" value="empName" displayMode="label">
     						</w2:column>
     						<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="osdtCd" displayMode="label"></w2:column>
     					</w2:row>
@@ -860,8 +860,8 @@ scwin.sbmServiceList_submiterror = function (e) {
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="empId" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="empNo" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="empName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="empNo" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="empName" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12px;" id="osdtCd" value="" displayMode="label" textAlign="left"></w2:column>
     					</w2:row>
     				</w2:gBody>
