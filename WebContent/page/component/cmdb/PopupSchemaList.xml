@@ -184,7 +184,7 @@ scwin.sbmSchemaList_submitdone = function (e) {
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column4" value="관리ID" displayMode="label">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="관리ID" displayMode="label">
     						</w2:column>
     						<w2:column hidden="false" width="70" inputType="text" style="" id="column3" value="DB관리ID"
     							displayMode="label">
