@@ -20,7 +20,8 @@ connection-test:
   stage: connection-test
   <<: *global_cache
   script:
-    - ssh k113201@$TLEAMS4 "id k113201"
+    - which ssh sftp scp
+    - whereis ssh sftp scp
   only:
     refs:
       - main
