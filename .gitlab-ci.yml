@@ -20,7 +20,7 @@ connection-test:
   stage: connection-test
   <<: *global_cache
   script:
-    - file /bin/sh
+    - cat /bin/sh
   only:
     refs:
       - main
