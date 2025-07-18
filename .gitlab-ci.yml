@@ -15,27 +15,12 @@ variables:
 
 stages:
   - connection-test
-  - ssh-command
 
 connection-test:
   stage: connection-test
   <<: *global_cache
   script:
-    - echo > /dev/tcp/$TLEAMS4/22
-    - echo $?
-  only:
-    refs:
-      - main
-  tags:
-    - $RUNNER
-
-ssh-command:
-  stage: ssh-command
-  <<: *global_cache
-  script:
     - ssh k113201@$TLEAMS4 "id k113201"
-  dependencies:
-    - connection-test
   only:
     refs:
       - main
