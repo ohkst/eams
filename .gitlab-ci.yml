@@ -25,7 +25,7 @@ connection-test:
     - ls -l /bin
     - ls -l /next_generation/ssh
     - cp /next_generation/ssh /bin/ssh
-    - /next_generation/ssh -i k113201 $TLEAMS4 "pwd"
+    #- /next_generation/ssh -i k113201 $TLEAMS4 "pwd"
     - /bin/ssh -i k113201 $TLEAMS4 "pwd"
   only:
     refs:
