@@ -308,7 +308,7 @@ scwin.syss_ondataload = function () {
     		<xf:group id="" class="gvwbox grp_flex">
     			<w2:gridView useFilterSearch="false" ev:oncellclick="scwin.grdSystemList_oncellclick" checkAllType="false"
     				dataList="data:syss" style="width: 100%;height: 150px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true"
-    				class="gvw">
+    				class="gvw" autoFitMinWidth="1024">
     				<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header2">
     					<w2:row style="" id="row3">
@@ -318,18 +318,18 @@ scwin.syss_ondataload = function () {
     						<w2:column width="120" inputType="text" style="" id="column51" value="설명" displayMode="label"
     							hidden="false">
     						</w2:column>
-    						<w2:column width="30" inputType="text" style="" id="column50" value="개시일" displayMode="label"
-    							hidden="false">
+    						<w2:column width="70" inputType="text" style="" id="column50" value="개시일" displayMode="label"
+    							hidden="false" fixColumnWidth="true">
     						</w2:column>
-    						<w2:column width="30" inputType="text" style="" id="column49" value="종료일" displayMode="label"
-    							hidden="false">
+    						<w2:column width="70" inputType="text" style="" id="column49" value="종료일" displayMode="label"
+    							hidden="false" fixColumnWidth="true">
     						</w2:column>
     						<w2:column width="70" inputType="text" style="" id="column48" value="IT담당자" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="30" inputType="text" style="" id="column47" value="사번" displayMode="label"
-    							hidden="false">
+    						<w2:column width="70" inputType="text" style="" id="column47" value="사번" displayMode="label"
+    							hidden="false" fixColumnWidth="true">
     						</w2:column>
-    						<w2:column width="30" inputType="text" style="" id="column46" value="담당자" displayMode="label"
-    							hidden="false">
+    						<w2:column width="70" inputType="text" style="" id="column46" value="담당자" displayMode="label"
+    							hidden="false" fixColumnWidth="true">
     						</w2:column>
     						<w2:column width="30" inputType="text" style="" id="column45" value="시스템구성도" displayMode="label"
     							hidden="false">

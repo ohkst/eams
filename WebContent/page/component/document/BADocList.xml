@@ -209,8 +209,7 @@ scwin.sbmUnitTaskList_submitdone = function (e) {
     					<w2:row style="" id="row1">
     						<w2:column hidden="false" width="70" inputType="text" style="" id="column1" value="매뉴얼명" displayMode="label">
     						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column7" value="단위업무ID"
-    							displayMode="label">
+    						<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="단위업무ID" displayMode="label">
     						</w2:column>
     						<w2:column hidden="false" width="70" inputType="text" style="" id="column6" value="단위업무코드"
     							displayMode="label">
@@ -219,9 +218,9 @@ scwin.sbmUnitTaskList_submitdone = function (e) {
     						</w2:column>
     						<w2:column hidden="false" width="70" inputType="text" style="" id="column4" value="단위업무명" displayMode="label">
     						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column3" value="담당자사번" displayMode="label">
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column3" value="담당자사번" displayMode="label" fixColumnWidth="true">
     						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="" id="column2" value="담당자명" displayMode="label">
+    						<w2:column hidden="false" width="70" inputType="text" style="" id="column2" value="담당자명" displayMode="label" fixColumnWidth="true">
     						</w2:column>
     					</w2:row>
     				</w2:header>
