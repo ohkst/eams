@@ -18,13 +18,10 @@ stages:
 
 connection-test:
   stage: connection-test
+  before_script:
+    - export PATH=$PATH:/next_generation
   script:
-    - /next_generation/standalone_wpack-linux
-    - /next_generation/scp
-    - /bin/sh -c "ls -l /"
-    - /bin/sh -c "ls -l /next_generation"
-    - /bin/sh -c "chown root.root /next_generation/standalone_wpack"
-    - /bin/sh -c "/next_generation/standalone_wpack-linux --help"
+    - ssh k113201@190.190.158.150 pwd
   only:
     refs:
       - main
