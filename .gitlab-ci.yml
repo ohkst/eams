@@ -19,7 +19,7 @@ stages:
 connection-test:
   stage: connection-test
   script:
-    - ssh k113201@190.190.158.150 pwd
+    - rpm -qa
   only:
     refs:
       - main
