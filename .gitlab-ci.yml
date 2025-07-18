@@ -19,6 +19,7 @@ stages:
 connection-test:
   stage: connection-test
   script:
+    - cat ~/.bashrc
     - /next_generation/scp
     - /bin/sh -c "ls -l /"
     - /bin/sh -c "ls -l /next_generation"
