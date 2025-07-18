@@ -19,8 +19,6 @@ stages:
 connection-test:
   stage: connection-test
   script:
-    - export PATH="$PATH:/next_generation"
-    - env
     - /next_generation/scp
     - /bin/sh -c "ls -l /"
     - /bin/sh -c "ls -l /next_generation"
