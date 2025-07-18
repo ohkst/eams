@@ -21,6 +21,7 @@ connection-test:
   <<: *global_cache
   script:
     - pwd
+    - id
     - ls -l /next_generation/ssh
     - /next_generation/ssh -i k113201 $TLEAMS4 "pwd"
   only:
