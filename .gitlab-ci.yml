@@ -20,7 +20,7 @@ connection-test:
   stage: connection-test
   <<: *global_cache
   script:
-    - which ssh
+    - ls -l /next_generation
   only:
     refs:
       - main
