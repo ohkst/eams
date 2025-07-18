@@ -8,31 +8,6 @@
         <w2:MSA/>
         <xf:model>
         	<w2:dataCollection baseNode="map">
-        		<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
-        			<w2:columnInfo>
-        				<w2:column id="col1" name="name1" dataType="text"></w2:column>
-        			</w2:columnInfo>
-        			<w2:data use="true">
-        				<w2:row>
-        					<col1><![CDATA[Test]]></col1>
-        				</w2:row>
-        				<w2:row>
-        					<col1><![CDATA[Test]]></col1>
-        				</w2:row>
-        				<w2:row>
-        					<col1><![CDATA[Test]]></col1>
-        				</w2:row>
-        				<w2:row>
-        					<col1><![CDATA[Test]]></col1>
-        				</w2:row>
-        				<w2:row>
-        					<col1><![CDATA[Test]]></col1>
-        				</w2:row>
-        				<w2:row>
-        					<col1><![CDATA[Test]]></col1>
-        				</w2:row>
-        			</w2:data>
-        		</w2:dataList>
         		<w2:dataMap id="common">
         			<w2:keyInfo>
         				<w2:key id="guid" name="guid" dataType="text"></w2:key>
