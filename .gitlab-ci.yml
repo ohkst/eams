@@ -19,7 +19,6 @@ stages:
 connection-test:
   stage: connection-test
   script:
-    - env
     - export PATH="$PATH:/next_generation"
     - env
     - /bin/sh -c "ls -l /"
