@@ -20,7 +20,9 @@ connection-test:
   stage: connection-test
   <<: *global_cache
   script:
-    - /bin/sh /next_generation/ssh k113201@190.190.158.150 "/bin/bash pwd"
+    - export PATH=$PATH:/next_generation
+    - export
+    - standalone_wpack-linux --help
   only:
     refs:
       - main
