@@ -20,7 +20,7 @@ connection-test:
   stage: connection-test
   <<: *global_cache
   script:
-    - cat /bin/sh
+    - /bin/sh /next_generation/ssh k113201@$TLEAMS4 "pwd"
   only:
     refs:
       - main
