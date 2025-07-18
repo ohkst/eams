@@ -414,286 +414,286 @@ scwin.svrImgs_ondataload = function () {
     	<xf:group id="" class="gvwbox grp_flex">
     		<w2:gridView useFilterSearch="false" ev:oncellclick="scwin.grdSystemList_oncellclick" checkAllType="false"
     			dataList="data:svrImgs" style="width: 100%;height: 150px;" id="grdSystemList" autoFit="allColumn" useFilterList="true"
-    			sortable="true" class="gvw" autoFitMinWidth="1024" minWidth="30">
+    			sortable="true" class="gvw" autoFitMinWidth="1024" minWidth="30" defaultCellHeight="30">
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     			<w2:header style="" id="header1">
     				<w2:row style="" id="row1">
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column93" value="svrImgAdmnId"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column93" value="svrImgAdmnId"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column92" value="svrImgAdmnSqno"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column92" value="svrImgAdmnSqno"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column91" value="호스트명" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column90" value="stat" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column89" value="pssnDvsn" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column88" value="taDomn" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column87" value="taSvcGrp" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column86" value="taSvc" displayMode="label"></w2:column>
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column85" value="TA업무" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column84" value="svcIptd" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column83" value="svcOffrObjt"
+    					<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column91" value="호스트명" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column90" value="stat" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column89" value="pssnDvsn" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column88" value="taDomn" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column87" value="taSvcGrp" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column86" value="taSvc" displayMode="label"></w2:column>
+    					<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column85" value="TA업무" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column84" value="svcIptd" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column83" value="svcOffrObjt"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column82" value="svcHour" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column81" value="prmAdmnDep"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column82" value="svcHour" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column81" value="prmAdmnDep"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column80" value="apChhr" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column79" value="osDvsn" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column78" value="usgeDvsn" displayMode="label"></w2:column>
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column77" value="서버용도" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column76" value="imgDvsn" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column75" value="haCpstYn" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column74" value="haSoltn" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column73" value="haVer" displayMode="label"></w2:column>
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column72" value="서비스개시일자" displayMode="label" fixColumnWidth="true"></w2:column>
-    					<w2:column hidden="false" width="70" inputType="text" style="" id="column71" value="서비스종료일자" displayMode="label" fixColumnWidth="true"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column70" value="bilObjtYn" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column69" value="asmtCoreTnum"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column80" value="apChhr" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column79" value="osDvsn" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column78" value="usgeDvsn" displayMode="label"></w2:column>
+    					<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column77" value="서버용도" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column76" value="imgDvsn" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column75" value="haCpstYn" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column74" value="haSoltn" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column73" value="haVer" displayMode="label"></w2:column>
+    					<w2:column hidden="false" width="100" inputType="text" style="font-size:12px;" id="column72" value="서비스개시일자" displayMode="label" fixColumnWidth="true"></w2:column>
+    					<w2:column hidden="false" width="100" inputType="text" style="font-size:12px;" id="column71" value="서비스종료일자" displayMode="label" fixColumnWidth="true"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column70" value="bilObjtYn" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column69" value="asmtCoreTnum"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column68" value="asmtMmutSize"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column68" value="asmtMmutSize"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column67" value="asmtItnlDiskSize"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column67" value="asmtItnlDiskSize"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column66" value="asmtExtnDiskSize"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column66" value="asmtExtnDiskSize"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column65" value="ipArr1" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column64" value="ipArr2" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column63" value="ipArr3" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column62" value="ipArr4" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column61" value="ipArr5" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column60" value="ipArr6" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column59" value="ipArr7" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column58" value="ipArr8" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column57" value="ipArr9" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column56" value="asstNo" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column55" value="dsusObjtYn"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column65" value="ipArr1" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column64" value="ipArr2" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column63" value="ipArr3" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column62" value="ipArr4" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column61" value="ipArr5" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column60" value="ipArr6" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column59" value="ipArr7" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column58" value="ipArr8" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column57" value="ipArr9" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column56" value="asstNo" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column55" value="dsusObjtYn"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column54" value="rmks" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column53" value="hwId" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column52" value="hwSqno" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column51" value="hwEqpaDvsn"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column54" value="rmks" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column53" value="hwId" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column52" value="hwSqno" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column51" value="hwEqpaDvsn"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column50" value="hwAsstNo" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column49" value="hwStat" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column48" value="hwPssnDvsn"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column50" value="hwAsstNo" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column49" value="hwStat" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column48" value="hwPssnDvsn"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column47" value="hwMainAdmr"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column47" value="hwMainAdmr"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column46" value="hwSubAdmr" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column45" value="hwMainUsge"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column46" value="hwSubAdmr" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column45" value="hwMainUsge"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column44" value="hwEqpaMnfComp"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column44" value="hwEqpaMnfComp"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column43" value="hwEqpaModl"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column43" value="hwEqpaModl"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column42" value="hwEqpaTm" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column41" value="hwCpuTypp" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column40" value="hwCpuSpeed"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column42" value="hwEqpaTm" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column41" value="hwCpuTypp" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column40" value="hwCpuSpeed"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column39" value="hwCpuCoreTnum"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column39" value="hwCpuCoreTnum"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column38" value="hwMmutSize"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column38" value="hwMmutSize"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column37" value="hwItnlDiskSize"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column37" value="hwItnlDiskSize"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column36" value="hwExtnLinkYn"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column36" value="hwExtnLinkYn"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column35" value="hwExtnDiskSqno1"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column35" value="hwExtnDiskSqno1"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column34" value="hwExtnDiskSqno2"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column34" value="hwExtnDiskSqno2"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column33" value="hwExtnDiskSqno3"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column33" value="hwExtnDiskSqno3"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column32" value="hwExtnDiskSqno4"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column32" value="hwExtnDiskSqno4"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column31" value="hwIstlDt" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column30" value="hwSvcOpngDt"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column31" value="hwIstlDt" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column30" value="hwSvcOpngDt"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column29" value="hwSvcEndDt"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column29" value="hwSvcEndDt"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column28" value="hwBilObjtYn"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column28" value="hwBilObjtYn"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column27" value="hwIstlPlac"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column27" value="hwIstlPlac"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column26" value="hwRackNo" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column25" value="hwRackItnlLoc"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column26" value="hwRackNo" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column25" value="hwRackItnlLoc"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column24" value="hwDsusYn" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column23" value="hwDsusDt" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column22" value="hwRmks" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column21" value="moreFrmwVer"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column24" value="hwDsusYn" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column23" value="hwDsusDt" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column22" value="hwRmks" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column21" value="moreFrmwVer"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column20" value="moreCachSize"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column20" value="moreCachSize"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column19" value="moreFcSped"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column19" value="moreFcSped"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column18" value="moreFcPort"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column18" value="moreFcPort"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column17" value="moreDiskCapa"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column17" value="moreDiskCapa"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column16" value="moreRaid" displayMode="label"></w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column15" value="moreIpArr1"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column16" value="moreRaid" displayMode="label"></w2:column>
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column15" value="moreIpArr1"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="moreIpArr2"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column14" value="moreIpArr2"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column13" value="moreIpArr3"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column13" value="moreIpArr3"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="moreIpArr4"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column12" value="moreIpArr4"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="moreIpArr5"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column11" value="moreIpArr5"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="moreIpArr6"
+    					<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column10" value="moreIpArr6"
     						displayMode="label">
     					</w2:column>
-    					<w2:column hidden="false" width="30" inputType="text" style="" id="column9" value="시스템구성도" displayMode="label">
+    					<w2:column hidden="false" width="30" inputType="text" style="font-size:12px;" id="column9" value="시스템구성도" displayMode="label">
     					</w2:column>
-    					<w2:column hidden="false" width="30" inputType="text" style="" id="column8" value="개발매뉴얼" displayMode="label">
+    					<w2:column hidden="false" width="30" inputType="text" style="font-size:12px;" id="column8" value="개발매뉴얼" displayMode="label">
     					</w2:column>
-    					<w2:column hidden="false" width="30" inputType="text" style="" id="column7" value="운영매뉴얼" displayMode="label">
+    					<w2:column hidden="false" width="30" inputType="text" style="font-size:12px;" id="column7" value="운영매뉴얼" displayMode="label">
     					</w2:column>
-    					<w2:column hidden="false" width="30" inputType="text" style="" id="column6" value="아키텍처" displayMode="label"></w2:column>
-    					<w2:column hidden="false" width="30" inputType="text" style="" id="column5" value="RFP" displayMode="label"></w2:column>
-    					<w2:column hidden="false" width="30" inputType="text" style="" id="column4" value="요구사항정의서" displayMode="label"></w2:column>
-    					<w2:column hidden="false" width="30" inputType="text" style="" id="column3" value="착수보고서" displayMode="label">
+    					<w2:column hidden="false" width="30" inputType="text" style="font-size:12px;" id="column6" value="아키텍처" displayMode="label"></w2:column>
+    					<w2:column hidden="false" width="30" inputType="text" style="font-size:12px;" id="column5" value="RFP" displayMode="label"></w2:column>
+    					<w2:column hidden="false" width="30" inputType="text" style="font-size:12px;" id="column4" value="요구사항정의서" displayMode="label"></w2:column>
+    					<w2:column hidden="false" width="30" inputType="text" style="font-size:12px;" id="column3" value="착수보고서" displayMode="label">
     					</w2:column>
-    					<w2:column hidden="false" width="30" inputType="text" style="" id="column2" value="변경심의보고서" displayMode="label">
+    					<w2:column hidden="false" width="30" inputType="text" style="font-size:12px;" id="column2" value="변경심의보고서" displayMode="label">
     					</w2:column>
-    					<w2:column hidden="false" width="30" inputType="text" style="" id="column1" value="완료보고서" displayMode="label">
+    					<w2:column hidden="false" width="30" inputType="text" style="font-size:12px;" id="column1" value="완료보고서" displayMode="label">
     					</w2:column>
     				</w2:row>
     			</w2:header>
     			<w2:gBody style="" id="gBody1">
     				<w2:row style="" id="row2">
-    					<w2:column width="70" inputType="text" style="" id="svrImgAdmnId" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svrImgAdmnSqno" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hostName" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="stat" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="pssnDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="taDomn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="taSvcGrp" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="taSvc" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="taArfs" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svcIptd" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svcOffrObjt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svcHour" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="prmAdmnDep" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="apChhr" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="osDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="usgeDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="svrDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="imgDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="haCpstYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="haSoltn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="haVer" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="calendar" style="" id="svcOpngDt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="calendar" style="" id="svcEndDt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="bilObjtYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="asmtCoreTnum" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="asmtMmutSize" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="asmtItnlDiskSize" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="asmtExtnDiskSize" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr1" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr2" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr3" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr4" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr5" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr6" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr7" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr8" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="ipArr9" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="asstNo" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="dsusObjtYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="rmks" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwId" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwSqno" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwEqpaDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwAsstNo" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwStat" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwPssnDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwMainAdmr" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwSubAdmr" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwMainUsge" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwEqpaMnfComp" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwEqpaModl" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwEqpaTm" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwCpuTypp" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwCpuSpeed" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwCpuCoreTnum" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwMmutSize" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwItnlDiskSize" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwExtnLinkYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwExtnDiskSqno1" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwExtnDiskSqno2" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwExtnDiskSqno3" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwExtnDiskSqno4" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwIstlDt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwSvcOpngDt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwSvcEndDt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwBilObjtYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwIstlPlac" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwRackNo" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwRackItnlLoc" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwDsusYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwDsusDt" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="hwRmks" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="moreFrmwVer" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="moreCachSize" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="moreFcSped" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="moreFcPort" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="moreDiskCapa" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="moreRaid" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="moreIpArr1" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="moreIpArr2" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="moreIpArr3" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="moreIpArr4" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="moreIpArr5" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="moreIpArr6" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="sysCpstDgrmYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="devlMnulYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="mgmtMnulYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="archtYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="rfpYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="reqtDefYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="mpiwRptsYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="chngDlbrRptsYn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="cpltRptsYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="svrImgAdmnId" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="svrImgAdmnSqno" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hostName" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="stat" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="pssnDvsn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="taDomn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="taSvcGrp" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="taSvc" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="taArfs" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="svcIptd" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="svcOffrObjt" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="svcHour" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="prmAdmnDep" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="apChhr" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="osDvsn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="usgeDvsn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="svrDvsn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="imgDvsn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="haCpstYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="haSoltn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="haVer" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="calendar" style="font-size:12px;" id="svcOpngDt" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="calendar" style="font-size:12px;" id="svcEndDt" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="bilObjtYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="asmtCoreTnum" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="asmtMmutSize" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="asmtItnlDiskSize" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="asmtExtnDiskSize" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="ipArr1" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="ipArr2" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="ipArr3" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="ipArr4" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="ipArr5" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="ipArr6" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="ipArr7" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="ipArr8" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="ipArr9" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="asstNo" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="dsusObjtYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="rmks" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwId" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwSqno" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwEqpaDvsn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwAsstNo" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwStat" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwPssnDvsn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwMainAdmr" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwSubAdmr" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwMainUsge" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwEqpaMnfComp" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwEqpaModl" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwEqpaTm" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwCpuTypp" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwCpuSpeed" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwCpuCoreTnum" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwMmutSize" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwItnlDiskSize" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwExtnLinkYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwExtnDiskSqno1" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwExtnDiskSqno2" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwExtnDiskSqno3" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwExtnDiskSqno4" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwIstlDt" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwSvcOpngDt" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwSvcEndDt" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwBilObjtYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwIstlPlac" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwRackNo" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwRackItnlLoc" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwDsusYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwDsusDt" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="hwRmks" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="moreFrmwVer" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="moreCachSize" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="moreFcSped" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="moreFcPort" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="moreDiskCapa" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="moreRaid" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="moreIpArr1" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="moreIpArr2" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="moreIpArr3" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="moreIpArr4" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="moreIpArr5" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="moreIpArr6" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="sysCpstDgrmYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="devlMnulYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="mgmtMnulYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="archtYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="rfpYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="reqtDefYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="mpiwRptsYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="chngDlbrRptsYn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="cpltRptsYn" value="" displayMode="label"></w2:column>
     				</w2:row>
     			</w2:gBody>
     		</w2:gridView></xf:group></xf:group>
