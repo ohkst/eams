@@ -597,7 +597,7 @@ scwin.onpageload = function() {
         paramData = leftParam;
         // alert("LeftSearch로 진입");
     }
-
+dud
     if (paramData != null) {
         if (paramData.name) {
             mainTitle.setValue(paramData.name);  // name이 있을 때만 세팅
@@ -763,71 +763,72 @@ scwin.sbmTableToServiceList_submiterror = function (e) {
     			</xf:group>
     		</xf:group>
     		<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="Index 정보"></w2:textbox></xf:group><xf:group id="" class="gvwbox">
-    			<w2:gridView checkAllType="false" dataList="data:indexes" style="width: 100%;height: 150px;" id="" autoFit="allColumn" class="gvw">
+    			<w2:gridView checkAllType="false" dataList="data:indexes" style="width: 100%;height: 150px;" id="" autoFit="allColumn" class="gvw" defaultCellHeight="30">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column width="70" inputType="text" style="" id="column5" value="인덱스ID" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column4" value="인덱스명" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column3" value="인덱스종류" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column2" value="인덱스구성" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column1" value="최종변경일시" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column5" value="인덱스ID" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column4" value="인덱스명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column3" value="인덱스종류" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column2" value="인덱스구성" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column1" value="최종변경일시" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="" id="indxId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="indxName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="indxKind" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="indxCpst" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="lastChngDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="indxId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="indxName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="indxKind" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="indxCpst" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="lastChngDt" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView>
     		</xf:group>
     		<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="Column 정보"></w2:textbox></xf:group><xf:group style="width: 100%" id="" class="gvwbox">
-    			<w2:gridView checkAllType="false" dataList="data:columns" style="width: 100%;height: 400px;" id="" autoFit="allColumn" class="gvw">
+    			<w2:gridView checkAllType="false" dataList="data:columns" style="width: 100%;height: 400px;" id="" autoFit="allColumn"
+    				class="gvw" defaultCellHeight="30">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column width="70" inputType="text" style="" id="column7" value="컬럼ID" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column6" value="컬럼영문명" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column5" value="컬럼한글명" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column4" value="데이터타입" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column3" value="PK여부" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column2" value="FK여부" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column1" value="NOTNULL여부" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column7" value="컬럼ID" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column6" value="컬럼영문명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column5" value="컬럼한글명" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column4" value="데이터타입" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column3" value="PK여부" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column2" value="FK여부" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column1" value="NOTNULL여부" displayMode="label" fixColumnWidth="true"></w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="" id="colId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="colEngName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="colKorName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dtTypp" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="pkYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="fkYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="nnullYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="colId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="colEngName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="colKorName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="dtTypp" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="pkYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="fkYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="nnullYn" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView>
-    		</xf:group>
+</xf:group>
     		<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="연관 정보"></w2:textbox></xf:group><xf:group id="" style="" class="lybox">
     			<xf:group id="" style="">
     				<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="TR 리스트"></w2:textbox></xf:group>
-    			<xf:group id="" class="gvwbox"><w2:gridView checkAllType="false" dataList="data:svcs" style="width:100%;height: 400px;" autoFit="allColumn" id="" class="gvw">
+    			<xf:group id="" class="gvwbox"><w2:gridView checkAllType="false" dataList="data:svcs" style="width:100%;height: 400px;" autoFit="allColumn" id="" class="gvw" defaultCellHeight="30">
     					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     					<w2:header style="" id="header1">
     						<w2:row style="" id="row1">
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="서비스ID" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column8" value="서비스ID" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="시스템ID" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column7" value="시스템ID" displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="시스템명" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column6" value="시스템명" displayMode="label">
     							</w2:column>
-    							<w2:column width="70" inputType="text" style="" id="column5" value="서비스코드" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="column4" value="한글서비스명" displayMode="label"></w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="IT담당자" displayMode="label">
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="column5" value="서비스코드" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="column4" value="한글서비스명" displayMode="label"></w2:column>
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column3" value="IT담당자" displayMode="label">
     							</w2:column>
     							<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="IT담당자사번" displayMode="label">
     							</w2:column>
@@ -836,12 +837,12 @@ scwin.sbmTableToServiceList_submiterror = function (e) {
     					</w2:header>
     					<w2:gBody style="" id="gBody1">
     						<w2:row style="" id="row2">
-    							<w2:column width="70" inputType="text" style="" id="svcId" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="sysId" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="sysName" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="svcCd" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="korSvcName" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="svcId" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="sysId" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="sysName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="svcCd" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="korSvcName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="itChrr" value="" displayMode="label"></w2:column>
     							<w2:column width="70" inputType="text" style="" id="itChrrNo" value="" displayMode="label"></w2:column>
     							<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
     						</w2:row>
@@ -851,74 +852,74 @@ scwin.sbmTableToServiceList_submiterror = function (e) {
     				<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="화면 리스트"></w2:textbox></xf:group>
     			<xf:group id="" class="gvwbox">
     				<w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" autoFit="allColumn" id=""
-    					class="gvw">
+    					class="gvw" defaultCellHeight="30">
     					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     					<w2:header style="" id="header1">
     						<w2:row style="" id="row1">
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column15" value="업무화면ID"
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column15" value="업무화면ID"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="false" width="70" inputType="text" style="" id="column14" value="시스템명"
+    							<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column14" value="시스템명"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="화면번호"
+    							<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column13" value="화면번호"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="화면명"
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column12" value="화면명"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="개발담당자"
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column11" value="개발담당자"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="개발담당자사번"
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column10" value="개발담당자사번"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="false" width="70" inputType="text" style="" id="column9" value="개발담당자명"
+    							<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column9" value="개발담당자명"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="운영담당자"
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column8" value="운영담당자"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="운영담당자사번"
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column7" value="운영담당자사번"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="운영담당자명"
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column6" value="운영담당자명"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="현업담당부서"
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column5" value="현업담당부서"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="현업담당부서명"
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column4" value="현업담당부서명"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="현업담당자"
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column3" value="현업담당자"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="현업담당자사번"
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column2" value="현업담당자사번"
     								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="현업담당자명"
+    							<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column1" value="현업담당자명"
     								displayMode="label">
     							</w2:column>
     						</w2:row>
     					</w2:header>
     					<w2:gBody style="" id="gBody1">
     						<w2:row style="" id="row2">
-    							<w2:column width="70" inputType="text" style="" id="arfsScrnId" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="sysName" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="scrnNo" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="scrnName" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="dvlpChrr" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="dvlpChrrNo" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="dvlpChrrName" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="mgmtChrr" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="mgmtChrrNo" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="mgmtChrrName" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="witfChrgDep" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="witfChrgDepName" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="witfChrr" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="witfChrrNo" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="witfChrrName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="arfsScrnId" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="sysName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="scrnNo" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="scrnName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="dvlpChrr" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="dvlpChrrNo" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="dvlpChrrName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="mgmtChrr" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="mgmtChrrNo" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="mgmtChrrName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="witfChrgDep" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="witfChrgDepName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="witfChrr" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="witfChrrNo" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="font-size:12px;" id="witfChrrName" value="" displayMode="label"></w2:column>
     						</w2:row>
     					</w2:gBody>
     				</w2:gridView></xf:group></xf:group>
