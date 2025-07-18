@@ -18,12 +18,9 @@ stages:
 
 connection-test:
   stage: connection-test
-  before_script:
-    - export PATH=$PATH:/next_generation
-    - export SHELL=/bin/bash
   script:
-    - cd /next_generation
-    - standalone_wpack-linux --help
+    - apk add bash
+    - /next_generation/standalone_wpack-linux --help
   only:
     refs:
       - main
