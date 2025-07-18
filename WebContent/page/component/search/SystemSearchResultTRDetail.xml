@@ -216,6 +216,42 @@ scwin.sbmServiceDetail_submiterror = function (e) {
 scwin.sbmEmpInfo_submitdone = function (e) {
 
 };
+
+scwin.grdTableList_oncellclick = function (rowIndex, columnIndex, columnId) {
+    const id = tbls.getCellData(rowIndex, "tblId");
+    const name = tbls.getCellData(rowIndex, "tblKorName");
+
+    var rowJSON = {
+        "id": id,
+        "name": name
+    };
+
+    var dataObject = {
+        "type": "json",
+        "name": "PopupData",
+        "data": rowJSON
+    };
+
+    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", "테이블 상세", dataObject);
+};
+
+scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
+    const id = scrns.getCellData(rowIndex, "afrsScrnId");
+    const name = scrns.getCellData(rowIndex, "scrnName");
+
+    var rowJSON = {
+        "id": id,
+        "name": name
+    };
+
+    var dataObject = {
+        "type": "json",
+        "name": "PopupData",
+        "data": rowJSON
+    };
+
+    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", "화면 상세", dataObject);
+};
 ]]></script>
     </head>
     <body ev:onpageload="scwin.onpageload" style=";background-color:;">
@@ -430,7 +466,7 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     		<xf:group id="" class="titbox"><w2:textbox tagname="h3" style="" id="" label="연관 정보"></w2:textbox></xf:group><xf:group id="" class="lybox">
     			<xf:group id="" style="">
     				<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="화면 리스트"></w2:textbox></xf:group>
-    			<xf:group id="" class="gvwbox"><w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" id="" autoFit="allColumn" class="gvw">
+    			<xf:group id="" class="gvwbox"><w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" id="grdScreenList" autoFit="allColumn" class="gvw" ev:oncellclick="scwin.grdScreenList_oncellclick">
     					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     					<w2:header style="" id="header1">
     						<w2:row style="" id="row1">
@@ -458,7 +494,7 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     			<xf:group style="" id="">
     				
     			<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="DB 테이블 리스트"></w2:textbox></xf:group><xf:group id="" class="gvwbox">
-	<w2:gridView checkAllType="false" dataList="data:tbls" style="width:100%;height: 400px;" autoFit="allColumn" id="" class="gvw">
+	<w2:gridView checkAllType="false" dataList="data:tbls" style="width:100%;height: 400px;" autoFit="allColumn" id="grdTableList" class="gvw" ev:oncellclick="scwin.grdTableList_oncellclick">
 		<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
 		<w2:header style="" id="header1">
 			<w2:row style="" id="row1">

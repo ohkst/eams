@@ -182,7 +182,9 @@ scwin.openTableDetailPopup = function (id, name) {
     	<xf:group style=""
     		id="" class="sub_contents flex_cont">
     		<xf:group id="" class="pgtbox"><w2:textbox style="" id="" label="DB" class="pgt_tit"></w2:textbox></xf:group>
-    	<xf:group id="" class="gvwbox grp_flex"><w2:gridView checkAllType="false" dataList="data:dbs" style="width: 100%;height: 150px;" id="grdDBList" autoFit="allColumn" class="gvw" ev:oncellclick="scwin.grdDBList_oncellclick" defaultCellHeight="30">
+    	<xf:group id="" class="gvwbox grp_flex">
+    		<w2:gridView checkAllType="false" dataList="data:dbs" style="width: 100%;height: 150px;" id="grdDBList" autoFit="allColumn"
+    			class="gvw" ev:oncellclick="scwin.grdDBList_oncellclick" defaultCellHeight="30">
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     			<w2:header style="" id="header1">
     				<w2:row style="" id="row1">
@@ -190,12 +192,22 @@ scwin.openTableDetailPopup = function (id, name) {
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="column15" value="DB관리일련번호" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="column14" value="개발운영구분" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="column13" value="인스턴스명" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column12" value="서버이미지관리ID" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column12" value="서버이미지관리ID" displayMode="label"
+    						hidden="true">
+    					</w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="column11" value="호스트명" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column10" value="PUBLIC_IP1" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column9" value="PUBLIC_IP2" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column8" value="VIRTUAL_IP1" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column7" value="VIRTUAL_IP2" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column10" value="PUBLIC_IP1"
+    						displayMode="label">
+    					</w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column9" value="PUBLIC_IP2"
+    						displayMode="label">
+    					</w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column8" value="VIRTUAL_IP1"
+    						displayMode="label">
+    					</w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column7" value="VIRTUAL_IP2"
+    						displayMode="label">
+    					</w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="column6" value="서비스PORT" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="column5" value="개발담당자" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="column4" value="개발담당자명" displayMode="label"></w2:column>
