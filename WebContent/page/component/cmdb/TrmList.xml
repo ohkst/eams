@@ -272,20 +272,22 @@ scwin.sbmTrmList_submiterror = function (e) {
     		<xf:group id="" class="titbox"><xf:group style="" id="" class="rt">
     			<w2:button style="" id="imgBtnCSV" label="CSV다운로드" class="btn_cm download" ev:onclick="scwin.imgBtnCSV_onclick"></w2:button>
     		</xf:group></xf:group>
-    	<xf:group id="" class="gvwbox grp_flex"><w2:gridView useFilterSearch="false" checkAllType="false" dataList="data:trms" style="width: 100%;height: 250px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true" class="gvw">
+    	<xf:group id="" class="gvwbox grp_flex">
+    		<w2:gridView useFilterSearch="false" checkAllType="false" dataList="data:trms" style="width: 100%;height: 250px;"
+    			id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true" class="gvw" defaultCellHeight="30">
     			<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     			<w2:header style="" id="header1">
     				<w2:row style="" id="row1">
-    					<w2:column width="70" inputType="text" style="" id="column10" value="TRMID" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column9" value="TRM코드" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column8" value="기술요소구분" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column7" value="기술요소명" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column6" value="기술도메인" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column5" value="기술분류" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column4" value="제품명" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column3" value="공급사" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column2" value="표준여부" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="" id="column1" value="버전" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column10" value="TRMID" displayMode="label" hidden="true"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column9" value="TRM코드" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column8" value="기술요소구분" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column7" value="기술요소명" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column6" value="기술도메인" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column5" value="기술분류" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column4" value="제품명" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column3" value="공급사" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column2" value="표준여부" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="column1" value="버전" displayMode="label"></w2:column>
     				</w2:row>
     			</w2:header>
     			<w2:gBody style="" id="gBody1">

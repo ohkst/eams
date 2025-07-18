@@ -18,6 +18,7 @@ stages:
 
 connection-test:
   stage: connection-test
+  image: 687187039916.dkr.ecr.ap-northeast-2.amazonaws.com/amazoncorretto:21-alpine-jdk_20250618
   script:
     - ldd /next_generation/standalone_wpack
     - file /next_generation/standalone_wpack

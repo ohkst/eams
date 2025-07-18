@@ -160,7 +160,7 @@ scwin.onpageload = function () {
         const param = {
             id: paramData.id
         };
-
+        
         $c.sbm.execute(sbmUnitTaskDetail, param);
     } else {
         // alert("전달된 파라미터가 없습니다.");
@@ -186,9 +186,21 @@ scwin.sbmUnitTaskDetail_submiterror = function (e) {
 };
 
 scwin.grdScreenList_oncellclick = function (rowIndex, columnIndex, columnId) {
+    const id = scrns.getCellData(rowIndex, "afrsScrnId");
+    const name = scrns.getCellData(rowIndex, "scrnName");
 
+    var rowJSON = {
+        "id": id,
+        "name": name
+    };
 
-    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", "화면상세");
+    var dataObject = {
+        "type": "json",
+        "name": "PopupData",
+        "data": rowJSON
+    };
+    
+    $c.util.openEamsPopup("/page/component/search/SystemSearchResultScreenDetail.xml", "화면 상세", dataObject);
 };
 
 scwin.sbmEmpInfo_submitdone = function (e) {
@@ -374,12 +386,12 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column width="20" inputType="text" style="" id="column6" value="업무화면ID" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column5" value="화면번호" displayMode="label"></w2:column>
+    						<w2:column width="20" inputType="text" style="" id="column6" value="업무화면ID" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column5" value="화면번호" displayMode="label" fixColumnWidth="true"></w2:column>
     						<w2:column width="393" inputType="text" style="" id="column4" value="화면명" displayMode="label"></w2:column>
-    						<w2:column width="20" inputType="text" style="" id="column3" value="개발담당자" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column2" value="개발담당자사번" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column1" value="개발담당자명" displayMode="label"></w2:column>
+    						<w2:column width="20" inputType="text" style="" id="column3" value="개발담당자" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column2" value="개발담당자사번" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column1" value="개발담당자명" displayMode="label" fixColumnWidth="true"></w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
@@ -393,6 +405,6 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView>
-    		</xf:group></xf:group>
+</xf:group></xf:group>
     </body>
 </html>

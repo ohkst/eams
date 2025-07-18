@@ -8,31 +8,6 @@
         <w2:MSA/>
         <xf:model>
         	<w2:dataCollection baseNode="map">
-        		<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true">
-        			<w2:columnInfo>
-        				<w2:column id="col1" name="name1" dataType="text"></w2:column>
-        			</w2:columnInfo>
-        			<w2:data use="true">
-        				<w2:row>
-        					<col1><![CDATA[Test]]></col1>
-        				</w2:row>
-        				<w2:row>
-        					<col1><![CDATA[Test]]></col1>
-        				</w2:row>
-        				<w2:row>
-        					<col1><![CDATA[Test]]></col1>
-        				</w2:row>
-        				<w2:row>
-        					<col1><![CDATA[Test]]></col1>
-        				</w2:row>
-        				<w2:row>
-        					<col1><![CDATA[Test]]></col1>
-        				</w2:row>
-        				<w2:row>
-        					<col1><![CDATA[Test]]></col1>
-        				</w2:row>
-        			</w2:data>
-        		</w2:dataList>
         		<w2:dataMap id="common">
         			<w2:keyInfo>
         				<w2:key id="guid" name="guid" dataType="text"></w2:key>
@@ -1092,13 +1067,13 @@ scwin.btnMoreBiz_onclick = function (e) {
     								<w2:column width="70" inputType="text" style="" id="column5" value="depName" displayMode="label"
     									hidden="true">
     								</w2:column>
-    								<w2:column width="70" inputType="text" style="" id="column4" value="unitAfrsName" displayMode="label"
+    								<w2:column width="100" inputType="text" style="font-size:12px;" id="column4" value="unitAfrsName" displayMode="label"
     									hidden="false">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column3" value="chrrNo" displayMode="label"
     									hidden="true">
     								</w2:column>
-    								<w2:column width="70" inputType="text" style="" id="column2" value="chrrName" displayMode="label"
+    								<w2:column width="30" inputType="text" style="" id="column2" value="chrrName" displayMode="label"
     									hidden="false">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column1" value="manlName" displayMode="label"
@@ -1108,13 +1083,13 @@ scwin.btnMoreBiz_onclick = function (e) {
     						</w2:header>
     						<w2:gBody style="" id="gBody1">
     							<w2:row style="" id="row2">
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="unitAfrsId" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="unitAfrsCd" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="depName" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="unitAfrsName" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="chrrNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="chrrName" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="manlName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="unitAfrsId" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="unitAfrsCd" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="depName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="unitAfrsName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="chrrNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="chrrName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="manlName" value="" displayMode="label" textAlign="left"></w2:column>
     							</w2:row>
     						</w2:gBody>
     					</w2:gridView>
@@ -1141,9 +1116,9 @@ scwin.btnMoreBiz_onclick = function (e) {
     									hidden="true">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column13" value="scrnNo" displayMode="label"
-    									hidden="false">
+    									hidden="false" fixColumnWidth="true">
     								</w2:column>
-    								<w2:column width="70" inputType="text" style="" id="column12" value="scrnName" displayMode="label"
+    								<w2:column width="100" inputType="text" style="" id="column12" value="scrnName" displayMode="label"
     									hidden="false">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column11" value="dvlpChrr" displayMode="label"
@@ -1183,21 +1158,21 @@ scwin.btnMoreBiz_onclick = function (e) {
     						</w2:header>
     						<w2:gBody style="" id="gBody1">
     							<w2:row style="" id="row2">
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="arfsScrnId" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="sysName" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="scrnNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="scrnName" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="dvlpChrr" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="dvlpChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="dvlpChrrName" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="mgmtChrr" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="mgmtChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="mgmtChrrName" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrgDep" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrgDepName" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrr" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="witfChrrName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="arfsScrnId" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="sysName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="scrnNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="font-size:12px;" id="scrnName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="dvlpChrr" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="dvlpChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="dvlpChrrName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="mgmtChrr" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="mgmtChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="mgmtChrrName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrgDep" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrgDepName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrr" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrrName" value="" displayMode="label" textAlign="left"></w2:column>
     							</w2:row>
     						</w2:gBody>
     					</w2:gridView>
@@ -1220,10 +1195,10 @@ scwin.btnMoreBiz_onclick = function (e) {
     								<w2:column width="70" inputType="text" style="" id="column6" value="svcId" displayMode="label"
     									hidden="true">
     								</w2:column>
-    								<w2:column width="70" inputType="text" style="" id="column5" value="svcCd" displayMode="label"
-    									hidden="false">
+    								<w2:column width="110" inputType="text" style="" id="column5" value="svcCd" displayMode="label"
+    									hidden="false" fixColumnWidth="true">
     								</w2:column>
-    								<w2:column width="70" inputType="text" style="" id="column4" value="korSvcName" displayMode="label"
+    								<w2:column width="100" inputType="text" style="" id="column4" value="korSvcName" displayMode="label"
     									hidden="false">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column3" value="itChrr" displayMode="label"
@@ -1239,12 +1214,12 @@ scwin.btnMoreBiz_onclick = function (e) {
     						</w2:header>
     						<w2:gBody style="" id="gBody1">
     							<w2:row style="" id="row2">
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcId" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcCd" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="korSvcName" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="itChrr" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="itChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="itChrrName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcId" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="svcCd" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="font-size:12px;" id="korSvcName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrr" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrrName" value="" displayMode="label" textAlign="left"></w2:column>
     							</w2:row>
     						</w2:gBody>
     					</w2:gridView>
@@ -1275,7 +1250,7 @@ scwin.btnMoreBiz_onclick = function (e) {
     									width="70">
     								</w2:column>
     								<w2:column displayMode="label" hidden="false" id="column43" inputType="text" style="" value="dcmtName"
-    									width="70">
+    									width="100">
     								</w2:column>
     								<w2:column displayMode="label" hidden="true" id="column42" inputType="text" style=""
     									value="prdtnSysDvsn" width="70">
@@ -1305,7 +1280,7 @@ scwin.btnMoreBiz_onclick = function (e) {
     									width="70">
     								</w2:column>
     								<w2:column displayMode="label" hidden="false" id="column33" inputType="text" style=""
-    									value="dcmtChrrName" width="70">
+    									value="dcmtChrrName" width="70" fixColumnWidth="true">
     								</w2:column>
     								<w2:column displayMode="label" hidden="true" id="column32" inputType="text" style="" value="frstErlmDt"
     									width="70">
@@ -1317,21 +1292,21 @@ scwin.btnMoreBiz_onclick = function (e) {
     						</w2:header>
     						<w2:gBody id="gBody2" style="">
     							<w2:row id="row4" style="">
-    								<w2:column displayMode="label" id="prdtnId" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="linkSysId" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtName" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="prdtnSysDvsn" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="prdtnLclsCd" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="prdtnSclsCd" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="prdtnSclsCdName" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="ver" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtMngtDep" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtMngtDepName" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtChrr" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtChrrNo" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtChrrName" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="frstErlmDt" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="rcenChngDt" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnId" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="linkSysId" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtName" inputType="text" style="padding-left:12px;font-size:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnSysDvsn" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnLclsCd" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnSclsCd" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnSclsCdName" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="ver" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtMngtDep" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtMngtDepName" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtChrr" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtChrrNo" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtChrrName" inputType="text" style="padding-left:12px;font-size:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="frstErlmDt" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="rcenChngDt" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
     							</w2:row>
     						</w2:gBody>
     					</w2:gridView>
@@ -1358,7 +1333,7 @@ scwin.btnMoreBiz_onclick = function (e) {
     									width="70">
     								</w2:column>
     								<w2:column displayMode="label" hidden="false" id="column13" inputType="text" style="" value="dcmtName"
-    									width="70">
+    									width="100">
     								</w2:column>
     								<w2:column displayMode="label" hidden="true" id="column12" inputType="text" style=""
     									value="prdtnSysDvsn" width="70">
@@ -1388,7 +1363,7 @@ scwin.btnMoreBiz_onclick = function (e) {
     									width="70">
     								</w2:column>
     								<w2:column displayMode="label" hidden="false" id="column3" inputType="text" style=""
-    									value="dcmtChrrName" width="70">
+    									value="dcmtChrrName" width="70" fixColumnWidth="true">
     								</w2:column>
     								<w2:column displayMode="label" hidden="true" id="column2" inputType="text" style="" value="frstErlmDt"
     									width="70">
@@ -1400,21 +1375,21 @@ scwin.btnMoreBiz_onclick = function (e) {
     						</w2:header>
     						<w2:gBody id="gBody1" style="">
     							<w2:row id="row2" style="">
-    								<w2:column displayMode="label" id="prdtnId" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="linkSysId" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtName" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="prdtnSysDvsn" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="prdtnLclsCd" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="prdtnSclsCd" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="prdtnSclsCdName" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="ver" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtMngtDep" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtMngtDepName" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtChrr" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtChrrNo" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtChrrName" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="frstErlmDt" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="rcenChngDt" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnId" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="linkSysId" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtName" inputType="text" style="padding-left:12px;font-size:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnSysDvsn" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnLclsCd" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnSclsCd" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnSclsCdName" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="ver" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtMngtDep" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtMngtDepName" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtChrr" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtChrrNo" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtChrrName" inputType="text" style="padding-left:12px;font-size:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="frstErlmDt" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="rcenChngDt" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
     							</w2:row>
     						</w2:gBody>
     					</w2:gridView>
@@ -1441,7 +1416,7 @@ scwin.btnMoreBiz_onclick = function (e) {
     									width="70">
     								</w2:column>
     								<w2:column displayMode="label" hidden="false" id="column13" inputType="text" style="" value="dcmtName"
-    									width="70">
+    									width="100">
     								</w2:column>
     								<w2:column displayMode="label" hidden="true" id="column12" inputType="text" style=""
     									value="prdtnSysDvsn" width="70">
@@ -1471,7 +1446,7 @@ scwin.btnMoreBiz_onclick = function (e) {
     									width="70">
     								</w2:column>
     								<w2:column displayMode="label" hidden="false" id="column3" inputType="text" style=""
-    									value="dcmtChrrName" width="70">
+    									value="dcmtChrrName" width="70" fixColumnWidth="true">
     								</w2:column>
     								<w2:column displayMode="label" hidden="true" id="column2" inputType="text" style="" value="frstErlmDt"
     									width="70">
@@ -1483,21 +1458,21 @@ scwin.btnMoreBiz_onclick = function (e) {
     						</w2:header>
     						<w2:gBody id="gBody1" style="">
     							<w2:row id="row2" style="">
-    								<w2:column displayMode="label" id="prdtnId" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="linkSysId" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtName" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="prdtnSysDvsn" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="prdtnLclsCd" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="prdtnSclsCd" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="prdtnSclsCdName" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="ver" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtMngtDep" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtMngtDepName" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtChrr" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtChrrNo" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="dcmtChrrName" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="frstErlmDt" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
-    								<w2:column displayMode="label" id="rcenChngDt" inputType="text" style="padding-left:24px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnId" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="linkSysId" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtName" inputType="text" style="padding-left:12px;font-size:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnSysDvsn" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnLclsCd" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnSclsCd" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="prdtnSclsCdName" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="ver" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtMngtDep" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtMngtDepName" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtChrr" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtChrrNo" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="dcmtChrrName" inputType="text" style="padding-left:12px;font-size:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="frstErlmDt" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
+    								<w2:column displayMode="label" id="rcenChngDt" inputType="text" style="padding-left:12px;" value="" width="70" textAlign="left"></w2:column>
     							</w2:row>
     						</w2:gBody>
     					</w2:gridView>
@@ -1563,7 +1538,7 @@ scwin.btnMoreBiz_onclick = function (e) {
     									hidden="true">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column71" value="apChhr" displayMode="label"
-    									hidden="false">
+    									hidden="false" fixColumnWidth="true">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column70" value="osDvsn" displayMode="label"
     									hidden="true">
@@ -1571,7 +1546,7 @@ scwin.btnMoreBiz_onclick = function (e) {
     								<w2:column width="70" inputType="text" style="" id="column69" value="usgeDvsn" displayMode="label"
     									hidden="true">
     								</w2:column>
-    								<w2:column width="70" inputType="text" style="" id="column68" value="svrDvsn" displayMode="label"
+    								<w2:column width="100" inputType="text" style="" id="column68" value="svrDvsn" displayMode="label"
     									hidden="false">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column67" value="imgDvsn" displayMode="label"
@@ -1779,92 +1754,92 @@ scwin.btnMoreBiz_onclick = function (e) {
     						</w2:header>
     						<w2:gBody style="" id="gBody1">
     							<w2:row style="" id="row2">
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svrImgAdmnId" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svrImgAdmnSqno" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hostName" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="stat" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="pssnDvsn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="taDomn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="taSvcGrp" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="taSvc" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="taArfs" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcIptd" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcOffrObjt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcHour" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="prmAdmnDep" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="apChhr" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="osDvsn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="usgeDvsn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svrDvsn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="imgDvsn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="haCpstYn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="haSoltn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="haVer" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcOpngDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcEndDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="bilObjtYn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="asmtCoreTnum" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="asmtMmutSize" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="asmtItnlDiskSize" value="" displayMode="label" textAlign="left">
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="svrImgAdmnId" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="svrImgAdmnSqno" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hostName" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="stat" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="pssnDvsn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="taDomn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="taSvcGrp" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="taSvc" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="taArfs" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcIptd" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcOffrObjt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcHour" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="prmAdmnDep" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="apChhr" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="osDvsn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="usgeDvsn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="svrDvsn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="imgDvsn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="haCpstYn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="haSoltn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="haVer" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcOpngDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcEndDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="bilObjtYn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="asmtCoreTnum" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="asmtMmutSize" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="asmtItnlDiskSize" value="" displayMode="label" textAlign="left">
     								</w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="asmtExtnDiskSize" value="" displayMode="label" textAlign="left">
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="asmtExtnDiskSize" value="" displayMode="label" textAlign="left">
     								</w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="ipArr1" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="ipArr2" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="ipArr3" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="ipArr4" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="ipArr5" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="ipArr6" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="ipArr7" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="ipArr8" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="ipArr9" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="asstNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="dsusObjtYn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="rmks" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwId" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwSqno" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwEqpaDvsn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwAsstNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwStat" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwPssnDvsn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwMainAdmr" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwSubAdmr" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwMainUsge" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwEqpaMnfComp" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwEqpaModl" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwEqpaTm" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwCpuTypp" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwCpuSpeed" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwCpuCoreTnum" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwMmutSize" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwItnlDiskSize" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwExtnLinkYn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwExtnDiskSqno1" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwExtnDiskSqno2" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwExtnDiskSqno3" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwExtnDiskSqno4" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwIstlDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwSvcOpngDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwSvcEndDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwBilObjtYn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwIstlPlac" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwRackNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwRackItnlLoc" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwDsusYn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwDsusDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwRmks" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="moreFrmwVer" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="moreCachSize" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="moreFcSped" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="moreFcPort" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="moreDiskCapa" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="moreRaid" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="moreIpArr1" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="moreIpArr2" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="moreIpArr3" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="moreIpArr4" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="moreIpArr5" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="moreIpArr6" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="ipArr1" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="ipArr2" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="ipArr3" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="ipArr4" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="ipArr5" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="ipArr6" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="ipArr7" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="ipArr8" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="ipArr9" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="asstNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="dsusObjtYn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="rmks" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwId" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwSqno" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwEqpaDvsn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwAsstNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwStat" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwPssnDvsn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwMainAdmr" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwSubAdmr" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwMainUsge" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwEqpaMnfComp" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwEqpaModl" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwEqpaTm" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwCpuTypp" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwCpuSpeed" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwCpuCoreTnum" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwMmutSize" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwItnlDiskSize" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwExtnLinkYn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwExtnDiskSqno1" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwExtnDiskSqno2" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwExtnDiskSqno3" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwExtnDiskSqno4" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwIstlDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwSvcOpngDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwSvcEndDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwBilObjtYn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwIstlPlac" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwRackNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwRackItnlLoc" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwDsusYn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwDsusDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwRmks" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="moreFrmwVer" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="moreCachSize" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="moreFcSped" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="moreFcPort" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="moreDiskCapa" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="moreRaid" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="moreIpArr1" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="moreIpArr2" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="moreIpArr3" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="moreIpArr4" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="moreIpArr5" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="moreIpArr6" value="" displayMode="label" textAlign="left"></w2:column>
     							</w2:row>
     						</w2:gBody>
     					</w2:gridView>
@@ -1903,12 +1878,12 @@ scwin.btnMoreBiz_onclick = function (e) {
     									hidden="true">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column27" value="mainAdmr" displayMode="label"
-    									hidden="false">
+    									hidden="false" fixColumnWidth="true">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column26" value="subAdmr" displayMode="label"
     									hidden="true">
     								</w2:column>
-    								<w2:column width="70" inputType="text" style="" id="column25" value="mainUsge" displayMode="label"
+    								<w2:column width="100" inputType="text" style="" id="column25" value="mainUsge" displayMode="label"
     									hidden="false">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column24" value="eqpaMnfComp" displayMode="label"
@@ -1987,39 +1962,39 @@ scwin.btnMoreBiz_onclick = function (e) {
     						</w2:header>
     						<w2:gBody style="" id="gBody1">
     							<w2:row style="" id="row2">
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwId" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwSqno" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="eqpaDvsn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="asstNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="stat" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="pssnDvsn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="mainAdmr" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="subAdmr" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="mainUsge" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="eqpaMnfComp" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="eqpaModl" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="sqno" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="eqpaTm" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="cpuTypp" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="cpuSpeed" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="cpuCoreTnum" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="mmutSize" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="itnlDiskSize" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="extnLinkYn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="extnDiskSqno1" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="extnDiskSqno2" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="extnDiskSqno3" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="extnDiskSqno4" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="istlDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcOpngDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcEndDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="bilObjtYn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="istlPlac" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="rackNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="rackItnlLoc" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="dsusYn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="dsusDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="rmks" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwId" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwSqno" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="eqpaDvsn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="asstNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="stat" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="pssnDvsn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="mainAdmr" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="subAdmr" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="mainUsge" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="eqpaMnfComp" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="eqpaModl" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="sqno" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="eqpaTm" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="cpuTypp" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="cpuSpeed" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="cpuCoreTnum" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="mmutSize" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="itnlDiskSize" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="extnLinkYn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="extnDiskSqno1" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="extnDiskSqno2" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="extnDiskSqno3" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="extnDiskSqno4" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="istlDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcOpngDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcEndDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="bilObjtYn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="istlPlac" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="rackNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="rackItnlLoc" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="dsusYn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="dsusDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="rmks" value="" displayMode="label" textAlign="left"></w2:column>
     							</w2:row>
     						</w2:gBody>
     					</w2:gridView>
@@ -2058,12 +2033,12 @@ scwin.btnMoreBiz_onclick = function (e) {
     									hidden="true">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column27" value="mainAdmr" displayMode="label"
-    									hidden="false">
+    									hidden="false" fixColumnWidth="true">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column26" value="subAdmr" displayMode="label"
     									hidden="true">
     								</w2:column>
-    								<w2:column width="70" inputType="text" style="" id="column25" value="mainUsge" displayMode="label"
+    								<w2:column width="100" inputType="text" style="" id="column25" value="mainUsge" displayMode="label"
     									hidden="false">
     								</w2:column>
     								<w2:column width="70" inputType="text" style="" id="column24" value="eqpaMnfComp" displayMode="label"
@@ -2142,39 +2117,39 @@ scwin.btnMoreBiz_onclick = function (e) {
     						</w2:header>
     						<w2:gBody style="" id="gBody1">
     							<w2:row style="" id="row2">
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwId" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="hwSqno" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="eqpaDvsn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="asstNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="stat" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="pssnDvsn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="mainAdmr" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="subAdmr" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="mainUsge" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="eqpaMnfComp" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="eqpaModl" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="sqno" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="eqpaTm" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="cpuTypp" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="cpuSpeed" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="cpuCoreTnum" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="mmutSize" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="itnlDiskSize" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="extnLinkYn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="extnDiskSqno1" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="extnDiskSqno2" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="extnDiskSqno3" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="extnDiskSqno4" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="istlDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcOpngDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="svcEndDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="bilObjtYn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="istlPlac" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="rackNo" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="rackItnlLoc" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="dsusYn" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="dsusDt" value="" displayMode="label" textAlign="left"></w2:column>
-    								<w2:column width="70" inputType="text" style="padding-left:24px;" id="rmks" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwId" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="hwSqno" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="eqpaDvsn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="asstNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="stat" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="pssnDvsn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="mainAdmr" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="subAdmr" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="mainUsge" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="eqpaMnfComp" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="eqpaModl" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="sqno" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="eqpaTm" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="cpuTypp" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="cpuSpeed" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="cpuCoreTnum" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="mmutSize" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="itnlDiskSize" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="extnLinkYn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="extnDiskSqno1" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="extnDiskSqno2" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="extnDiskSqno3" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="extnDiskSqno4" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="istlDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcOpngDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcEndDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="bilObjtYn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="istlPlac" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="rackNo" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="rackItnlLoc" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="dsusYn" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="dsusDt" value="" displayMode="label" textAlign="left"></w2:column>
+    								<w2:column width="70" inputType="text" style="padding-left:12px;" id="rmks" value="" displayMode="label" textAlign="left"></w2:column>
     							</w2:row>
     						</w2:gBody>
     					</w2:gridView>
