@@ -18,10 +18,9 @@ stages:
 
 connection-test:
   stage: connection-test
-  <<: *global_cache
-  script:
+  before_script:
     - export PATH=$PATH:/next_generation
-    - export
+  script:
     - standalone_wpack-linux --help
   only:
     refs:
