@@ -392,15 +392,15 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     						</w2:column>
     						<w2:column width="70" inputType="text" style="" id="column4" value="영문명" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="column3" value="한글명" displayMode="label"></w2:column>
-    						<w2:column width="40" inputType="text" style="" id="column2" value="데이터타입" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column2" value="데이터타입" displayMode="label" fixColumnWidth="true"></w2:column>
     						<w2:column width="40" inputType="text" style="" id="column1" value="길이" displayMode="label" fixColumnWidth="true"></w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
     						<w2:column width="70" inputType="text" style="" id="svcIoId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="engFieldName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="korFieldName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="engFieldName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="korFieldName" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="dataTypp" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="lgth" value="" displayMode="label"></w2:column>
     					</w2:row>
@@ -413,15 +413,15 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     						</w2:column>
     						<w2:column width="70" inputType="text" style="" id="column4" value="영문명" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="column3" value="한글명" displayMode="label"></w2:column>
-    						<w2:column width="40" inputType="text" style="" id="column2" value="데이터타입" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column2" value="데이터타입" displayMode="label" fixColumnWidth="true"></w2:column>
     						<w2:column width="40" inputType="text" style="" id="column1" value="길이" displayMode="label" fixColumnWidth="true"></w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
     						<w2:column width="70" inputType="text" style="" id="svcIoId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="engFieldName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="korFieldName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="engFieldName" value="" displayMode="label" textAlign="left"></w2:column>
+    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="korFieldName" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="dataTypp" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="" id="lgth" value="" displayMode="label"></w2:column>
     					</w2:row>
@@ -448,7 +448,7 @@ scwin.sbmEmpInfo_submitdone = function (e) {
     						<w2:row style="" id="row2">
     							<w2:column width="70" inputType="text" style="" id="afrsScrnId" value="" displayMode="label"></w2:column>
     							<w2:column width="70" inputType="text" style="" id="scrnNo" value="" displayMode="label"></w2:column>
-    							<w2:column width="70" inputType="text" style="" id="scrnName" value="" displayMode="label"></w2:column>
+    							<w2:column width="70" inputType="text" style="padding-left: 12px;" id="scrnName" value="" displayMode="label" textAlign="left"></w2:column>
     							<w2:column width="70" inputType="text" style="" id="dvlpChrr" value="" displayMode="label"></w2:column>
     							<w2:column width="70" inputType="text" style="" id="dvlpChrrNo" value="" displayMode="label"></w2:column>
     							<w2:column width="70" inputType="text" style="" id="dvlpChrrName" value="" displayMode="label"></w2:column>
