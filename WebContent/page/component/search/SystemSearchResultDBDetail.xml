@@ -849,39 +849,56 @@ scwin.sbmTableToServiceList_submiterror = function (e) {
     				</w2:gridView></xf:group></xf:group>
     			<xf:group style="" id="">
     				<xf:group id="" class="titbox"><w2:textbox tagname="h4" style="" id="" label="화면 리스트"></w2:textbox></xf:group>
-    			<xf:group id="" class="gvwbox"><w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" autoFit="allColumn" id="" class="gvw">
+    			<xf:group id="" class="gvwbox">
+    				<w2:gridView checkAllType="false" dataList="data:scrns" style="width:100%;height: 400px;" autoFit="allColumn" id=""
+    					class="gvw">
     					<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     					<w2:header style="" id="header1">
     						<w2:row style="" id="row1">
-    							<w2:column hidden="false" width="70" inputType="text" style="" id="column15" value="업무화면ID" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column15" value="업무화면ID"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="false" width="70" inputType="text" style="" id="column14" value="시스템명" displayMode="label">
+    							<w2:column hidden="false" width="70" inputType="text" style="" id="column14" value="시스템명"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="화면번호" displayMode="label">
+    							<w2:column hidden="false" width="70" inputType="text" style="" id="column13" value="화면번호"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="화면명" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column12" value="화면명"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="개발담당자" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="개발담당자"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="개발담당자사번" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="개발담당자사번"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="false" width="70" inputType="text" style="" id="column9" value="개발담당자명" displayMode="label">
+    							<w2:column hidden="false" width="70" inputType="text" style="" id="column9" value="개발담당자명"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="운영담당자" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="운영담당자"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="운영담당자사번" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="운영담당자사번"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="운영담당자명" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="운영담당자명"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="현업담당부서" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="현업담당부서"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="현업담당부서명" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="현업담당부서명"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="현업담당자" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="현업담당자"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="현업담당자사번" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="현업담당자사번"
+    								displayMode="label">
     							</w2:column>
-    							<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="현업담당자명" displayMode="label">
+    							<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="현업담당자명"
+    								displayMode="label">
     							</w2:column>
     						</w2:row>
     					</w2:header>
