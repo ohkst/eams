@@ -218,7 +218,7 @@ scwin.onpageload = function () {
 };
 
 scwin.grdDocList_oncellclick = function (rowIndex, columnIndex, columnId) {
-    const id = docs.getCellData(rowIndex, "linkSysId");
+    const id = docs.getCellData(rowIndex, "prdtnId");
     const name = docs.getCellData(rowIndex, "dcmtName");
     $p.parent().scwin.openDocDetailPopup(id, name);
 

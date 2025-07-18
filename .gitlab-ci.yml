@@ -1,0 +1,43 @@
+variables:
+  RUNNER: "next-generation"
+  TLEAMS4: "190.190.158.150"
+  HOME_DIR: "/home/k113201"
+  BASE_DIR: "WebContent"
+  SRC_DIR: "WebContent" 
+  DEST_DIR: "/data/opt/local-path-provisioner/pvc-43d9c0f2-a83a-4359-91b4-57d262d4dcd8_eams_www-nginx-0" 
+
+.use_cache: &global_cache
+  cache:
+    - key: websquare
+      paths: 
+        - .cache/websquare
+      policy: pull-push
+
+stages:
+  - connection-test
+  - ssh-command
+
+connection-test:
+  stage: connection-test
+  <<: *global_cache
+  script:
+    - echo > /dev/tcp/$TLEAMS4/22
+    - echo $?
+  only:
+    refs:
+      - main
+  tags:
+    - $RUNNER
+
+ssh-command:
+  stage: ssh-command
+  <<: *global_cache
+  script:
+    - ssh k113201@$TLEAMS4 "id k113201"
+  dependencies:
+    - connection-test
+  only:
+    refs:
+      - main
+  tags:
+    - $RUNNER
