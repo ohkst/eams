@@ -20,6 +20,8 @@ connection-test:
   stage: connection-test
   script:
     - rpm -qa
+    - ssh --help
+    - scp --help
   only:
     refs:
       - main
