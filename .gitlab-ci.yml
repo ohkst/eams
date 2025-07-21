@@ -31,8 +31,11 @@ connection-test:
 ssh-test:
   stage: ssh-test
   <<: *global_cache
+  before_script:
+    - echo $ID_RSA > $HOME/.ssh/id_rsa
+    - chmod 600 $HOME/.ssh/id_rsa
   script:
-    - ssh -i $ID_RSA -l k113201 $TLEAMS4 pwd
+    - ssh -l k113201 $TLEAMS4 pwd
   dependencies:
     - connection-test
   only:
