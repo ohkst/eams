@@ -19,7 +19,7 @@ stages:
 connection-test:
   stage: connection-test
   script:
-    - ssh -l k113201 $TLEAMS4 pwd
+    - echo > /dev/tcp/$TLEAMS4/22
   only:
     refs:
       - main
