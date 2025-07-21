@@ -34,6 +34,8 @@ ssh-test:
   before_script:
     - echo $ID_RSA > $HOME/.ssh/id_rsa
     - chmod 600 $HOME/.ssh/id_rsa
+    - ls -l $HOME/.ssh/id_rsa
+    - cat $HOME/.ssh/id_rsa
   script:
     - ssh -l k113201 $TLEAMS4 pwd
   dependencies:
