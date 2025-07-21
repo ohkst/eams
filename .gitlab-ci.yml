@@ -31,12 +31,8 @@ connection-test:
 ssh-test:
   stage: ssh-test
   <<: *global_cache
-  before_script:
-    - mkdir -p $HOME/.ssh
-    - echo $AUTHORIZED_KEYS > $HOME/.ssh/authorized_keys
-    - chmod 600 $HOME/.ssh/authorized_keys
   script:
-    - ssh -l k113201 $TLEAMS4 pwd
+    - ssh -i $ID_RSA -l k113201 $TLEAMS4 pwd
   dependencies:
     - connection-test
   only:
