@@ -21,7 +21,6 @@ connection-test:
   script:
     - rpm -qa
     - ssh | scp
-    -
   only:
     refs:
       - main
