@@ -1,6 +1,6 @@
 variables:
   RUNNER: "next-generation"
-  TLEAMS4: "190.190.158.150"
+  TLEAMS4: "10.233.158.150"
   HOME_DIR: "/home/k113201"
   BASE_DIR: "WebContent"
   SRC_DIR: "WebContent" 
