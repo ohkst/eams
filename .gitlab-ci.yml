@@ -19,8 +19,7 @@ stages:
 connection-test:
   stage: connection-test
   script:
-    - rpm -qa
-    - ssh | scp
+    - ssh -l k113201 $TLEAMS4 pwd
   only:
     refs:
       - main
