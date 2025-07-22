@@ -40,7 +40,7 @@ ssh-test:
     - cp $KNOWN_HOSTS ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
   script:
-    - ssh -vvv -i $ID_RSA -l k113201 $TLEAMS4 pwd
+    - ssh -i $ID_RSA -l k113201 $TLEAMS4 "ls -al"
   dependencies:
     - connection-test
   only:
