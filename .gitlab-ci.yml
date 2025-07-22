@@ -39,7 +39,7 @@ ssh-test:
     - chmod 700 ~/.ssh
     - cp -a $ID_RSA ~/.ssh/id_rsa
   script:
-    - ssh -l k113201 $TLEAMS4 pwd
+    - ssh -vvv -l k113201 $TLEAMS4 pwd
   dependencies:
     - connection-test
   only:
