@@ -44,7 +44,7 @@ web-contents-deploy:
       - main
   rules:
     - changes:
-        paths:
-          - WebContent/*
+        - WebContent/**/*
+  when: manual
   tags:
     - $RUNNER
