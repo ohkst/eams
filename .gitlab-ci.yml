@@ -35,11 +35,8 @@ ssh-test:
     - eval $(ssh-agent -s)
     - chmod 400 $ID_RSA
     - ssh-add $ID_RSA
-    - mkdir -p ~/.ssh
-    - chmod 700 ~/.ssh
-    - cp -a $ID_RSA ~/.ssh/id_rsa
   script:
-    - ssh -vvv -l k113201 $TLEAMS4 pwd
+    - ssh -vvv -i $ID_RSA -l k113201 $TLEAMS4 pwd
   dependencies:
     - connection-test
   only:
