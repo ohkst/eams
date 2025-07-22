@@ -35,6 +35,10 @@ ssh-test:
     - eval $(ssh-agent -s)
     - chmod 400 $ID_RSA
     - ssh-add $ID_RSA
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - cp $KNOWN_HOSTS ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
   script:
     - ssh -vvv -i $ID_RSA -l k113201 $TLEAMS4 pwd
   dependencies:
