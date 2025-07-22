@@ -1,6 +1,7 @@
 variables:
   RUNNER: "next-generation"
   TLEAMS4: "10.233.158.150"
+  USER: "k113201"
   HOME_DIR: "/home/k113201"
   BASE_DIR: "WebContent"
   SRC_DIR: "WebContent" 
@@ -29,7 +30,7 @@ connection-test:
     - $RUNNER
 
 web-contents-deploy:
-  stage: ssh-test
+  stage: web-contents-deploy
   <<: *global_cache
   before_script:
     - eval $(ssh-agent -s)
@@ -40,10 +41,10 @@ web-contents-deploy:
     - cp $KNOWN_HOSTS ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
   script:
-    - ssh -i $ID_RSA -l k113201 $TLEAMS4 "mv WebContent{,.old}"
-    - ssh -i $ID_RSA -l k113201 $TLEAMS4 "rm -rf WebContent.old"
-    - scp -i $ID_RSA WebContent k113201@$TLEAMS4:$HOME_DIR/WebContent
-    - ssh -i $ID_RSA -l k113201 $TLEAMS4 "bash wpack-buils.sh"
+    - ssh -i $ID_RSA -l $USER $TLEAMS4 "mv WebContent{,.old}"
+    - ssh -i $ID_RSA -l $USER $TLEAMS4 "rm -rf WebContent.old"
+    - scp -i $ID_RSA WebContent $USER@$TLEAMS4:$HOME_DIR/WebContent
+    - ssh -i $ID_RSA -l $USER $TLEAMS4 "bash wpack-buils.sh"
   dependencies:
     - connection-test
   only:
