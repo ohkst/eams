@@ -15,8 +15,7 @@ variables:
 
 stages:
   - connection-test
-  - ssh-test
-  - local-test
+  - web-contents-deploy
 
 connection-test:
   stage: connection-test
@@ -29,7 +28,7 @@ connection-test:
   tags:
     - $RUNNER
 
-ssh-test:
+web-contents-deploy:
   stage: ssh-test
   <<: *global_cache
   before_script:
@@ -41,23 +40,12 @@ ssh-test:
     - cp $KNOWN_HOSTS ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
   script:
-    - ssh -i $ID_RSA -l k113201 $TLEAMS4 "id"
+    - ssh -i $ID_RSA -l k113201 $TLEAMS4 "mv WebContent{,.old}"
+    - ssh -i $ID_RSA -l k113201 $TLEAMS4 "rm -rf WebContent.old"
+    - scp -i $ID_RSA WebContent k113201@$TLEAMS4:$HOME_DIR/WebContent
+    - ssh -i $ID_RSA -l k113201 $TLEAMS4 "bash wpack-buils.sh"
   dependencies:
     - connection-test
-  only:
-    refs:
-      - main
-  tags:
-    - $RUNNER
-
-local-test:
-  stage: local-test
-  <<: *global_cache
-  script:
-    - pwd
-    - ls -al WebContent
-  dependencies:
-    - ssh-test
   only:
     refs:
       - main
