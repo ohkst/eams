@@ -41,7 +41,7 @@ ssh-test:
     - cp $KNOWN_HOSTS ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
   script:
-    - ssh -i $ID_RSA -l k113201 $TLEAMS4 "ls -al"
+    - ssh -i $ID_RSA -l k113201 $TLEAMS4 "id"
   dependencies:
     - connection-test
   only:
@@ -55,7 +55,7 @@ local-test:
   <<: *global_cache
   script:
     - pwd
-    - ls -al
+    - ls -al WebContent
   dependencies:
     - ssh-test
   only:
