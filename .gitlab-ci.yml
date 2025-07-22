@@ -16,6 +16,7 @@ variables:
 stages:
   - connection-test
   - ssh-test
+  - local-test
 
 connection-test:
   stage: connection-test
@@ -43,6 +44,20 @@ ssh-test:
     - ssh -i $ID_RSA -l k113201 $TLEAMS4 "ls -al"
   dependencies:
     - connection-test
+  only:
+    refs:
+      - main
+  tags:
+    - $RUNNER
+
+local-test:
+  stage: local-test
+  <<: *global_cache
+  script:
+    - pwd
+    - ls -al
+  dependencies:
+    - ssh-test
   only:
     refs:
       - main
