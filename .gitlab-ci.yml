@@ -7,20 +7,12 @@ variables:
   SRC_DIR: "WebContent" 
   DEST_DIR: "/data/opt/local-path-provisioner/pvc-43d9c0f2-a83a-4359-91b4-57d262d4dcd8_eams_www-nginx-0" 
 
-.use_cache: &global_cache
-  cache:
-    - key: websquare
-      paths: 
-        - .cache/websquare
-      policy: pull-push
-
 stages:
   - connection-test
   - web-contents-deploy
 
 connection-test:
   stage: connection-test
-  <<: *global_cache
   script:
     - echo > /dev/tcp/$TLEAMS4/22
   only:
@@ -31,7 +23,6 @@ connection-test:
 
 web-contents-deploy:
   stage: web-contents-deploy
-  <<: *global_cache
   before_script:
     - eval $(ssh-agent -s)
     - chmod 400 $ID_RSA
@@ -51,5 +42,9 @@ web-contents-deploy:
   only:
     refs:
       - main
+  rules:
+    - changes:
+        paths:
+          - WebContent/*
   tags:
     - $RUNNER
