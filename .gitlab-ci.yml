@@ -36,11 +36,9 @@ web-contents-deploy:
     - ssh -i $ID_RSA -l $USER $TLEAMS4 "bash $HOME_DIR/wpack-build.sh"
   dependencies:
     - connection-test
-  only:
-    refs:
-      - main
   rules:
-    - changes:
+    - if: $CI_COMMIT_REF_NAME == "main" && $CI_COMMIT_TAG
+      changes:
         - WebContent/**/*
   when: manual
   tags:
