@@ -12,9 +12,10 @@ connection-test:
   stage: connection-test
   script:
     - echo > /dev/tcp/$TLEAMS4/22
-  only:
-    refs:
-      - main
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "main" && $CI_COMMIT_TAG
+      changes:
+        - WebContent/**/*
   tags:
     - $RUNNER
 
