@@ -37,8 +37,7 @@ ssh-test:
     - ssh-add $ID_RSA
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
-    - ls -al ~/.ssh
-    - ls -l $ID_RSA
+    - cp -a $ID_RSA ~/.ssh/id_rsa
   script:
     - ssh -l k113201 $TLEAMS4 pwd
   dependencies:
