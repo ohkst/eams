@@ -3,9 +3,6 @@ variables:
   TLEAMS4: "10.233.158.150"
   USER: "k113201"
   HOME_DIR: "/home/k113201"
-  BASE_DIR: "WebContent"
-  SRC_DIR: "WebContent" 
-  DEST_DIR: "/data/opt/local-path-provisioner/pvc-43d9c0f2-a83a-4359-91b4-57d262d4dcd8_eams_www-nginx-0" 
 
 stages:
   - connection-test
