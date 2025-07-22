@@ -44,6 +44,7 @@ web-contents-deploy:
     - ssh -i $ID_RSA -l $USER $TLEAMS4 "if [ -d WebContent ];then mv WebContent{,.old}; fi"
     - ssh -i $ID_RSA -l $USER $TLEAMS4 "if [ -d WebContent.old ];then rm -rf WebContent.old; fi"
     - scp -i $ID_RSA -r WebContent $USER@$TLEAMS4:$HOME_DIR/WebContent
+    - ssh -i $ID_RSA -l $USER $TLEAMS4 "if [ -d WebContent ];then chmod -R 755 WebContent; fi"
     - ssh -i $ID_RSA -l $USER $TLEAMS4 "bash wpack-buils.sh"
   dependencies:
     - connection-test
