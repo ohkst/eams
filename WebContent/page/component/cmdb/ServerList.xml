@@ -619,7 +619,7 @@ scwin.openRegisterSystemInfoPopup = function () {
     						<w2:column displayMode="label" id="hwExtnDiskSqno2" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
     						<w2:column displayMode="label" id="hwExtnDiskSqno3" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
     						<w2:column displayMode="label" id="hwExtnDiskSqno4" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
-    						<w2:column displayMode="label" id="hwIstlDt" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="hwIstlDt" inputType="text" style="font-size:12px;" value="" width="70" dataType="date"></w2:column>
     						<w2:column displayMode="label" id="hwSvcOpngDt" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
     						<w2:column displayMode="label" id="hwSvcEndDt" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
     						<w2:column displayMode="label" id="hwBilObjtYn" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>

@@ -392,22 +392,22 @@ scwin.txtLinkData_onclick = function (e) {
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column width="20" inputType="text" style="" id="column6" value="업무화면ID" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column5" value="화면번호" displayMode="label" fixColumnWidth="true"></w2:column>
-    						<w2:column width="393" inputType="text" style="" id="column4" value="화면명" displayMode="label"></w2:column>
-    						<w2:column width="20" inputType="text" style="" id="column3" value="개발담당자" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column2" value="개발담당자사번" displayMode="label" fixColumnWidth="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column1" value="개발담당자명" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="20" inputType="text" style="font-size:12px;" id="column6" value="업무화면ID" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column5" value="화면번호" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="393" inputType="text" style="font-size:12px;" id="column4" value="화면명" displayMode="label"></w2:column>
+    						<w2:column width="20" inputType="text" style="font-size:12px;" id="column3" value="개발담당자" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column2" value="개발담당자사번" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column1" value="개발담당자명" displayMode="label" fixColumnWidth="true"></w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
-    						<w2:column width="20" inputType="text" style="" id="afrsScrnId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="scrnNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="393" inputType="text" style="" id="scrnName" value="" displayMode="label"></w2:column>
-    						<w2:column width="20" inputType="text" style="" id="dvlpChrr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dvlpChrrNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="dvlpChrrName" value="" displayMode="label"></w2:column>
+    						<w2:column width="20" inputType="text" style="font-size:12px;" id="afrsScrnId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="scrnNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="393" inputType="text" style="font-size:12px;" id="scrnName" value="" displayMode="label"></w2:column>
+    						<w2:column width="20" inputType="text" style="font-size:12px;" id="dvlpChrr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="dvlpChrrNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="dvlpChrrName" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView>

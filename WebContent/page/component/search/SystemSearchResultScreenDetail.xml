@@ -555,26 +555,26 @@ scwin.sbmTaskScreenInfo_submitdone = function (e) {
     				<w2:caption id="caption1" style="" value="this is a grid caption."></w2:caption>
     				<w2:header id="header1" style="">
     					<w2:row id="row1" style="">
-    						<w2:column displayMode="label" hidden="true" id="column7" inputType="text" style="" value="화면서비스연결ID"
+    						<w2:column displayMode="label" hidden="true" id="column7" inputType="text" style="font-size:12px;" value="화면서비스연결ID"
     							width="70">
     						</w2:column>
-    						<w2:column displayMode="label" hidden="true" id="column6" inputType="text" style="" value="서비스ID" width="70"></w2:column>
-    						<w2:column displayMode="label" id="column5" inputType="text" style="" value="서비스코드" width="70"></w2:column>
-    						<w2:column displayMode="label" id="column4" inputType="text" style="" value="한글서비스명" width="70"></w2:column>
-    						<w2:column displayMode="label" hidden="true" id="column3" inputType="text" style="" value="IT담당자" width="70"></w2:column>
-    						<w2:column displayMode="label" id="column2" inputType="text" style="" value="IT담당자사번" width="70"></w2:column>
-    						<w2:column displayMode="label" id="column1" inputType="text" style="" value="IT담당자명" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column6" inputType="text" style="font-size:12px;" value="서비스ID" width="70"></w2:column>
+    						<w2:column displayMode="label" id="column5" inputType="text" style="font-size:12px;" value="서비스코드" width="70"></w2:column>
+    						<w2:column displayMode="label" id="column4" inputType="text" style="font-size:12px;" value="한글서비스명" width="70"></w2:column>
+    						<w2:column displayMode="label" hidden="true" id="column3" inputType="text" style="font-size:12px;" value="IT담당자" width="70"></w2:column>
+    						<w2:column displayMode="label" id="column2" inputType="text" style="font-size:12px;" value="IT담당자사번" width="70"></w2:column>
+    						<w2:column displayMode="label" id="column1" inputType="text" style="font-size:12px;" value="IT담당자명" width="70"></w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody id="gBody1" style="">
     					<w2:row id="row2" style="">
-    						<w2:column displayMode="label" id="scrnSvcLinkId" inputType="text" style="" value="" width="70"></w2:column>
-    						<w2:column displayMode="label" id="svcId" inputType="text" style="" value="" width="70"></w2:column>
-    						<w2:column displayMode="label" id="svcCd" inputType="text" style="" value="" width="70"></w2:column>
-    						<w2:column displayMode="label" id="korSvcName" inputType="text" style="" value="" width="70"></w2:column>
-    						<w2:column displayMode="label" id="itChrr" inputType="text" style="" value="" width="70"></w2:column>
-    						<w2:column displayMode="label" id="itChrrNo" inputType="text" style="" value="" width="70"></w2:column>
-    						<w2:column displayMode="label" id="itChrrName" inputType="text" style="" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="scrnSvcLinkId" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="svcId" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="svcCd" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="korSvcName" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="itChrr" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="itChrrNo" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
+    						<w2:column displayMode="label" id="itChrrName" inputType="text" style="font-size:12px;" value="" width="70"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView>
