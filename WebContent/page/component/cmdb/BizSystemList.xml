@@ -288,7 +288,7 @@ scwin.closeAction = function (id, info) {
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="sysId" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="sysCd" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="sysName" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="font-size:12px;" id="sysDscr" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="sysDscr" value="" displayMode="label" textAlign="left"></w2:column>
     					<w2:column width="70" inputType="calendar" style="font-size:12px;" id="svcOpngDt" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="calendar" style="font-size:12px;" id="svcEndDt" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="itChrr" value="" displayMode="label"></w2:column>

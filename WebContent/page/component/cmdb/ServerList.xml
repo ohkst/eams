@@ -231,30 +231,17 @@ scwin.onpageload = function () {
 
 scwin.requestSbmServerImageList = function () {
 
-    const queryData = {
-        eqpaDvsn: "3"
-    };
-
-    const param = {
-        offset: 0,
-        limit: 100,
-        type: "PAGE",
-        queryData: JSON.stringify(queryData)
-    };
-
-    $c.sbm.execute(sbmServerImageList, param);
+    $c.sbm.execute(sbmServerImageList);
 
 };
 
 scwin.sbmServerImageList_submit = function (e) {
-
 };
 
 scwin.sbmServerImageList_submitdone = function (e) {
 };
 
 scwin.sbmServerImageList_submiterror = function (e) {
-
 };
 
 scwin.toggle_ontogglechange = function () {
