@@ -8,27 +8,28 @@
         <w2:MSA/>
         <xf:model>
         	<w2:dataCollection baseNode="map">
-        		<w2:dataMap id="common">
+
+        		<w2:dataMap id="common" style="">
         			<w2:keyInfo>
-        				<w2:key id="guid" name="guid" dataType="text"></w2:key>
-        				<w2:key id="code" name="code" dataType="text"></w2:key>
-        				<w2:key id="message" name="message" dataType="text"></w2:key>
-        				<w2:key id="detailMessage" name="detailMessage" dataType="text"></w2:key>
+        				<w2:key dataType="text" id="key1" name="guid"></w2:key>
+        				<w2:key dataType="text" id="key2" name="code"></w2:key>
+        				<w2:key dataType="text" id="key3" name="message"></w2:key>
+        				<w2:key dataType="text" id="key4" name="detailMessage"></w2:key>
         			</w2:keyInfo>
         			<w2:data xmlns="">
-        				<guid><![CDATA[c342cbf886334f33b4f3f16fd78c50e5]]></guid>
+        				<guid><![CDATA[1ba3c6a91b794d1caa3947ec12e3513c]]></guid>
         				<code><![CDATA[N000]]></code>
         				<message><![CDATA[정상처리]]></message>
         				<detailMessage><![CDATA[]]></detailMessage>
         			</w2:data>
         		</w2:dataMap>
-        		<w2:dataMap id="pageInfo">
+        		<w2:dataMap id="pageInfo" style="">
         			<w2:keyInfo>
-        				<w2:key id="offset" name="offset" dataType="text"></w2:key>
-        				<w2:key id="limit" name="limit" dataType="text"></w2:key>
-        				<w2:key id="type" name="type" dataType="text"></w2:key>
-        				<w2:key id="sortMethod" name="sortMethod" dataType="text"></w2:key>
-        				<w2:key id="total" name="total" dataType="text"></w2:key>
+        				<w2:key dataType="text" id="key5" name="offset"></w2:key>
+        				<w2:key dataType="text" id="key6" name="limit"></w2:key>
+        				<w2:key dataType="text" id="key7" name="type"></w2:key>
+        				<w2:key dataType="text" id="key8" name="sortMethod"></w2:key>
+        				<w2:key dataType="text" id="key9" name="total"></w2:key>
         			</w2:keyInfo>
         			<w2:data xmlns="">
         				<offset><![CDATA[0]]></offset>
@@ -38,155 +39,191 @@
         				<total><![CDATA[10]]></total>
         			</w2:data>
         		</w2:dataMap>
-        		w2:dataList id="syss">
-        		<w2:columnInfo>
-        			<w2:column id="sysId" name="시스템ID" dataType="text"></w2:column>
-        			<w2:column id="sysCd" name="시스템코드" dataType="text"></w2:column>
-        			<w2:column id="sysName" name="시스템명" dataType="text"></w2:column>
-        			<w2:column id="sysDscr" name="시스템설명" dataType="text"></w2:column>
-        			<w2:column id="svcOpngDt" name="서비스개시일" dataType="text"></w2:column>
-        			<w2:column id="svcEndDt" name="서비스종료일" dataType="text"></w2:column>
-        			<w2:column id="itChrr" name="IT담당자" dataType="text"></w2:column>
-        			<w2:column id="itChrrNo" name="IT담당자사번" dataType="text"></w2:column>
-        			<w2:column id="itChrrName" name="IT담당자명" dataType="text"></w2:column>
-        			<w2:column id="sysCpstDgrmYn" name="시스템구성도여부" dataType="text"></w2:column>
-        			<w2:column id="devlMnulYn" name="개발매뉴얼여부" dataType="text"></w2:column>
-        			<w2:column id="mgmtMnulYn" name="운영매뉴얼여부" dataType="text"></w2:column>
-        			<w2:column id="archtYn" name="아키텍처여부" dataType="text"></w2:column>
-        			<w2:column id="rfpYn" name="RFP여부" dataType="text"></w2:column>
-        			<w2:column id="reqtDefYn" name="요구사항정의서여부" dataType="text"></w2:column>
-        			<w2:column id="mpiwRptsYn" name="착수보고서여부" dataType="text"></w2:column>
-        			<w2:column id="chngDlbrRptsYn" name="변경심의보고서여부" dataType="text"></w2:column>
-        			<w2:column id="cpltRptsYn" name="완료보고서여부" dataType="text"></w2:column>
-        		</w2:columnInfo>
-        		<w2:data xmlns="">
-        			<w2:row>
-        				<sysId><![CDATA[1]]></sysId>
-        				<sysCd><![CDATA[AOM000000000000000]]></sysCd>
-        				<sysName><![CDATA[계정계]]></sysName>
-        				<sysDscr><![CDATA[계정계시스템]]></sysDscr>
-        				<svcOpngDt><![CDATA[20210101]]></svcOpngDt>
-        				<svcEndDt><![CDATA[99991231]]></svcEndDt>
-        				<itChrr><![CDATA[1]]></itChrr>
-        				<itChrrNo><![CDATA[000001]]></itChrrNo>
-        				<itChrrName><![CDATA[홍길동]]></itChrrName>
-        				<sysCpstDgrmYn><![CDATA[Y]]></sysCpstDgrmYn>
-        				<devlMnulYn><![CDATA[Y]]></devlMnulYn>
-        				<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
-        				<archtYn><![CDATA[N]]></archtYn>
-        				<rfpYn><![CDATA[N]]></rfpYn>
-        				<reqtDefYn><![CDATA[Y]]></reqtDefYn>
-        				<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
-        				<chngDlbrRptsYn><![CDATA[Y]]></chngDlbrRptsYn>
-        				<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
-        			</w2:row>
-        		</w2:data>
-        		/w2:dataList>
-        		<w2:dataList id="docs">
+        		<w2:dataList id="syss" style="">
         			<w2:columnInfo>
-        				<w2:column id="prdtnId" name="산출물ID" dataType="text"></w2:column>
-        				<w2:column id="linkSysId" name="연결시스템ID" dataType="text"></w2:column>
-        				<w2:column id="dcmtName" name="문서명" dataType="text"></w2:column>
-        				<w2:column id="prdtnSysDvsn" name="산출물시스템구분" dataType="text"></w2:column>
-        				<w2:column id="prdtnLclsCd" name="산출물대분류코드" dataType="text"></w2:column>
-        				<w2:column id="prdtnSclsCd" name="산출물소분류코드" dataType="text"></w2:column>
-        				<w2:column id="prdtnSclsCdName" name="산출물소분류코드명" dataType="text"></w2:column>
-        				<w2:column id="ver" name="버전" dataType="text"></w2:column>
-        				<w2:column id="dcmtMngtDep" name="문서관리부서" dataType="text"></w2:column>
-        				<w2:column id="dcmtMngtDepName" name="문서관리부서명" dataType="text"></w2:column>
-        				<w2:column id="dcmtChrr" name="문서담당자" dataType="text"></w2:column>
-        				<w2:column id="dcmtChrrNo" name="문서담당자사번" dataType="text"></w2:column>
-        				<w2:column id="dcmtChrrName" name="문서담당자명" dataType="text"></w2:column>
-        				<w2:column id="frstErlmDt" name="최초등록일" dataType="text"></w2:column>
-        				<w2:column id="rcenChngDt" name="최근변경일" dataType="text"></w2:column>
+        				<w2:column dataType="text" id="sysId" name="시스템ID"></w2:column>
+        				<w2:column dataType="text" id="daDomn" name="도메인"></w2:column>
+        				<w2:column dataType="text" id="daSvcGrp" name="서비스그룹"></w2:column>
+        				<w2:column dataType="text" id="daSvc" name="서비스"></w2:column>
+        				<w2:column dataType="text" id="sysName" name="시스템명"></w2:column>
+        				<w2:column dataType="text" id="sysCpstDgrmYn" name="시스템구성도"></w2:column>
+        				<w2:column dataType="text" id="devlMnulYn" name="개발매뉴얼"></w2:column>
+        				<w2:column dataType="text" id="mgmtMnulYn" name="운영매뉴얼"></w2:column>
+        				<w2:column dataType="text" id="archtYn" name="아키텍처"></w2:column>
+        				<w2:column dataType="text" id="rfpYn" name="RFP"></w2:column>
+        				<w2:column dataType="text" id="reqtDefYn" name="요구사항정의서"></w2:column>
+        				<w2:column dataType="text" id="mpiwRptsYn" name="착수보고서"></w2:column>
+        				<w2:column dataType="text" id="chngDlbrRptsYn" name="변경심의보고서"></w2:column>
+        				<w2:column dataType="text" id="cpltRptsYn" name="완료보고서"></w2:column>
         			</w2:columnInfo>
         			<w2:data xmlns="">
         				<w2:row>
-        					<prdtnId><![CDATA[1]]></prdtnId>
-        					<linkSysId><![CDATA[1]]></linkSysId>
-        					<dcmtName><![CDATA[홈페이지개발매뉴얼]]></dcmtName>
-        					<prdtnSysDvsn><![CDATA[A]]></prdtnSysDvsn>
-        					<prdtnLclsCd><![CDATA[AMDVL]]></prdtnLclsCd>
-        					<prdtnSclsCd><![CDATA[AMDVL]]></prdtnSclsCd>
-        					<prdtnSclsCdName><![CDATA[개발매뉴얼]]></prdtnSclsCdName>
-        					<ver><![CDATA[0.1]]></ver>
-        					<dcmtMngtDep><![CDATA[2]]></dcmtMngtDep>
-        					<dcmtMngtDepName><![CDATA[인사부]]></dcmtMngtDepName>
-        					<dcmtChrr><![CDATA[1]]></dcmtChrr>
-        					<dcmtChrrNo><![CDATA[000001]]></dcmtChrrNo>
-        					<dcmtChrrName><![CDATA[홍길동]]></dcmtChrrName>
-        					<frstErlmDt><![CDATA[20200101]]></frstErlmDt>
-        					<rcenChngDt><![CDATA[20200101]]></rcenChngDt>
+        					<sysId><![CDATA[DA-0101]]></sysId>
+        					<daDomn><![CDATA[관리]]></daDomn>
+        					<daSvcGrp><![CDATA[01]]></daSvcGrp>
+        					<daSvc><![CDATA[0101]]></daSvc>
+        					<sysName><![CDATA[개인 정보 유출 방지(DLP)]]></sysName>
+        					<sysCpstDgrmYn><![CDATA[N]]></sysCpstDgrmYn>
+        					<devlMnulYn><![CDATA[N]]></devlMnulYn>
+        					<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
+        					<archtYn><![CDATA[N]]></archtYn>
+        					<rfpYn><![CDATA[N]]></rfpYn>
+        					<reqtDefYn><![CDATA[N]]></reqtDefYn>
+        					<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
+        					<chngDlbrRptsYn><![CDATA[N]]></chngDlbrRptsYn>
+        					<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
+        				</w2:row>
+        				<w2:row>
+        					<sysId><![CDATA[DA-0102]]></sysId>
+        					<daDomn><![CDATA[관리]]></daDomn>
+        					<daSvcGrp><![CDATA[01]]></daSvcGrp>
+        					<daSvc><![CDATA[0102]]></daSvc>
+        					<sysName><![CDATA[계정관리솔루션]]></sysName>
+        					<sysCpstDgrmYn><![CDATA[N]]></sysCpstDgrmYn>
+        					<devlMnulYn><![CDATA[N]]></devlMnulYn>
+        					<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
+        					<archtYn><![CDATA[N]]></archtYn>
+        					<rfpYn><![CDATA[N]]></rfpYn>
+        					<reqtDefYn><![CDATA[N]]></reqtDefYn>
+        					<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
+        					<chngDlbrRptsYn><![CDATA[N]]></chngDlbrRptsYn>
+        					<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
+        				</w2:row>
+        				<w2:row>
+        					<sysId><![CDATA[DA-0103]]></sysId>
+        					<daDomn><![CDATA[관리]]></daDomn>
+        					<daSvcGrp><![CDATA[01]]></daSvcGrp>
+        					<daSvc><![CDATA[0103]]></daSvc>
+        					<sysName><![CDATA[금융지주 망분리 DLP]]></sysName>
+        					<sysCpstDgrmYn><![CDATA[N]]></sysCpstDgrmYn>
+        					<devlMnulYn><![CDATA[N]]></devlMnulYn>
+        					<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
+        					<archtYn><![CDATA[N]]></archtYn>
+        					<rfpYn><![CDATA[N]]></rfpYn>
+        					<reqtDefYn><![CDATA[N]]></reqtDefYn>
+        					<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
+        					<chngDlbrRptsYn><![CDATA[N]]></chngDlbrRptsYn>
+        					<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
+        				</w2:row>
+        				<w2:row>
+        					<sysId><![CDATA[DA-0104]]></sysId>
+        					<daDomn><![CDATA[관리]]></daDomn>
+        					<daSvcGrp><![CDATA[01]]></daSvcGrp>
+        					<daSvc><![CDATA[0104]]></daSvc>
+        					<sysName><![CDATA[금융지주 망분리 PC 권한 관리]]></sysName>
+        					<sysCpstDgrmYn><![CDATA[N]]></sysCpstDgrmYn>
+        					<devlMnulYn><![CDATA[N]]></devlMnulYn>
+        					<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
+        					<archtYn><![CDATA[N]]></archtYn>
+        					<rfpYn><![CDATA[N]]></rfpYn>
+        					<reqtDefYn><![CDATA[N]]></reqtDefYn>
+        					<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
+        					<chngDlbrRptsYn><![CDATA[N]]></chngDlbrRptsYn>
+        					<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
+        				</w2:row>
+        				<w2:row>
+        					<sysId><![CDATA[DA-0105]]></sysId>
+        					<daDomn><![CDATA[관리]]></daDomn>
+        					<daSvcGrp><![CDATA[01]]></daSvcGrp>
+        					<daSvc><![CDATA[0105]]></daSvc>
+        					<sysName><![CDATA[내부망문서반출]]></sysName>
+        					<sysCpstDgrmYn><![CDATA[N]]></sysCpstDgrmYn>
+        					<devlMnulYn><![CDATA[N]]></devlMnulYn>
+        					<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
+        					<archtYn><![CDATA[N]]></archtYn>
+        					<rfpYn><![CDATA[N]]></rfpYn>
+        					<reqtDefYn><![CDATA[N]]></reqtDefYn>
+        					<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
+        					<chngDlbrRptsYn><![CDATA[N]]></chngDlbrRptsYn>
+        					<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
+        				</w2:row>
+        				<w2:row>
+        					<sysId><![CDATA[DA-0106]]></sysId>
+        					<daDomn><![CDATA[관리]]></daDomn>
+        					<daSvcGrp><![CDATA[01]]></daSvcGrp>
+        					<daSvc><![CDATA[0106]]></daSvc>
+        					<sysName><![CDATA[리눅스 백신관리]]></sysName>
+        					<sysCpstDgrmYn><![CDATA[N]]></sysCpstDgrmYn>
+        					<devlMnulYn><![CDATA[N]]></devlMnulYn>
+        					<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
+        					<archtYn><![CDATA[N]]></archtYn>
+        					<rfpYn><![CDATA[N]]></rfpYn>
+        					<reqtDefYn><![CDATA[N]]></reqtDefYn>
+        					<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
+        					<chngDlbrRptsYn><![CDATA[N]]></chngDlbrRptsYn>
+        					<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
+        				</w2:row>
+        				<w2:row>
+        					<sysId><![CDATA[DA-0107]]></sysId>
+        					<daDomn><![CDATA[관리]]></daDomn>
+        					<daSvcGrp><![CDATA[01]]></daSvcGrp>
+        					<daSvc><![CDATA[0107]]></daSvc>
+        					<sysName><![CDATA[메타]]></sysName>
+        					<sysCpstDgrmYn><![CDATA[N]]></sysCpstDgrmYn>
+        					<devlMnulYn><![CDATA[N]]></devlMnulYn>
+        					<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
+        					<archtYn><![CDATA[N]]></archtYn>
+        					<rfpYn><![CDATA[N]]></rfpYn>
+        					<reqtDefYn><![CDATA[N]]></reqtDefYn>
+        					<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
+        					<chngDlbrRptsYn><![CDATA[N]]></chngDlbrRptsYn>
+        					<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
+        				</w2:row>
+        				<w2:row>
+        					<sysId><![CDATA[DA-0108]]></sysId>
+        					<daDomn><![CDATA[관리]]></daDomn>
+        					<daSvcGrp><![CDATA[01]]></daSvcGrp>
+        					<daSvc><![CDATA[0108]]></daSvc>
+        					<sysName><![CDATA[모바일OTP]]></sysName>
+        					<sysCpstDgrmYn><![CDATA[N]]></sysCpstDgrmYn>
+        					<devlMnulYn><![CDATA[N]]></devlMnulYn>
+        					<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
+        					<archtYn><![CDATA[N]]></archtYn>
+        					<rfpYn><![CDATA[N]]></rfpYn>
+        					<reqtDefYn><![CDATA[N]]></reqtDefYn>
+        					<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
+        					<chngDlbrRptsYn><![CDATA[N]]></chngDlbrRptsYn>
+        					<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
+        				</w2:row>
+        				<w2:row>
+        					<sysId><![CDATA[DA-0109]]></sysId>
+        					<daDomn><![CDATA[관리]]></daDomn>
+        					<daSvcGrp><![CDATA[01]]></daSvcGrp>
+        					<daSvc><![CDATA[0109]]></daSvc>
+        					<sysName><![CDATA[문서보안(DRM)]]></sysName>
+        					<sysCpstDgrmYn><![CDATA[N]]></sysCpstDgrmYn>
+        					<devlMnulYn><![CDATA[N]]></devlMnulYn>
+        					<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
+        					<archtYn><![CDATA[N]]></archtYn>
+        					<rfpYn><![CDATA[N]]></rfpYn>
+        					<reqtDefYn><![CDATA[N]]></reqtDefYn>
+        					<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
+        					<chngDlbrRptsYn><![CDATA[N]]></chngDlbrRptsYn>
+        					<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
+        				</w2:row>
+        				<w2:row>
+        					<sysId><![CDATA[DA-0110]]></sysId>
+        					<daDomn><![CDATA[관리]]></daDomn>
+        					<daSvcGrp><![CDATA[01]]></daSvcGrp>
+        					<daSvc><![CDATA[0110]]></daSvc>
+        					<sysName><![CDATA[서비스레벨관리]]></sysName>
+        					<sysCpstDgrmYn><![CDATA[N]]></sysCpstDgrmYn>
+        					<devlMnulYn><![CDATA[N]]></devlMnulYn>
+        					<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
+        					<archtYn><![CDATA[N]]></archtYn>
+        					<rfpYn><![CDATA[N]]></rfpYn>
+        					<reqtDefYn><![CDATA[N]]></reqtDefYn>
+        					<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
+        					<chngDlbrRptsYn><![CDATA[N]]></chngDlbrRptsYn>
+        					<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
         				</w2:row>
         			</w2:data>
         		</w2:dataList>
-        		<w2:dataList id="dbs">
-					<w2:columnInfo>
-						<w2:column id="dbAdmnId" name="DB관리ID" dataType="text"></w2:column>
-						<w2:column id="dbAdmnSqno" name="DB관리일련번호" dataType="text"></w2:column>
-						<w2:column id="dvlpMgmtDvsn" name="개발운영구분" dataType="text"></w2:column>
-						<w2:column id="istcName" name="인스턴스명" dataType="text"></w2:column>
-						<w2:column id="svrImgAdmnId" name="서버이미지관리ID" dataType="text"></w2:column>
-						<w2:column id="hostName" name="호스트명" dataType="text"></w2:column>
-						<w2:column id="pblcIp1" name="PUBLIC_IP1" dataType="text"></w2:column>
-						<w2:column id="pblcIp2" name="PUBLIC_IP2" dataType="text"></w2:column>
-						<w2:column id="vtulIp1" name="VIRTUAL_IP1" dataType="text"></w2:column>
-						<w2:column id="vtulIp2" name="VIRTUAL_IP2" dataType="text"></w2:column>
-						<w2:column id="svcPort" name="서비스PORT" dataType="text"></w2:column>
-						<w2:column id="dvlpChrr" name="개발담당자" dataType="text"></w2:column>
-						<w2:column id="dvlpChrrName" name="개발담당자명" dataType="text"></w2:column>
-						<w2:column id="mgmtChrr" name="운영담당자" dataType="text"></w2:column>
-						<w2:column id="mgmtChrrName" name="운영담당자명" dataType="text"></w2:column>
-						<w2:column id="crtnDt" name="생성일자" dataType="text"></w2:column>
-						<w2:column id="sysCpstDgrmYn" name="시스템구성도여부" dataType="text"></w2:column>
-						<w2:column id="devlMnulYn" name="개발매뉴얼여부" dataType="text"></w2:column>
-						<w2:column id="mgmtMnulYn" name="운영매뉴얼여부" dataType="text"></w2:column>
-						<w2:column id="archtYn" name="아키텍처여부" dataType="text"></w2:column>
-						<w2:column id="rfpYn" name="RFP여부" dataType="text"></w2:column>
-						<w2:column id="reqtDefYn" name="요구사항정의서여부" dataType="text"></w2:column>
-						<w2:column id="mpiwRptsYn" name="착수보고서여부" dataType="text"></w2:column>
-						<w2:column id="chngDlbrRptsYn" name="변경심의보고서여부" dataType="text"></w2:column>
-						<w2:column id="cpltRptsYn" name="완료보고서여부" dataType="text"></w2:column>
-					</w2:columnInfo>
-					<w2:data xmlns="">
-						<w2:row>
-							<dbAdmnId><![CDATA[1]]></dbAdmnId>
-							<dbAdmnSqno><![CDATA[1]]></dbAdmnSqno>
-							<dvlpMgmtDvsn><![CDATA[DEV]]></dvlpMgmtDvsn>
-							<istcName><![CDATA[ACCOUNT]]></istcName>
-							<svrImgAdmnId><![CDATA[1]]></svrImgAdmnId>
-							<hostName><![CDATA[host1]]></hostName>
-							<pblcIp1><![CDATA[190.190.190.1]]></pblcIp1>
-							<pblcIp2><![CDATA[190.190.190.2]]></pblcIp2>
-							<vtulIp1><![CDATA[10.0.0.1]]></vtulIp1>
-							<vtulIp2><![CDATA[10.0.0.2]]></vtulIp2>
-							<svcPort><![CDATA[5432]]></svcPort>
-							<dvlpChrr><![CDATA[1]]></dvlpChrr>
-							<dvlpChrrName><![CDATA[홍길동]]></dvlpChrrName>
-							<mgmtChrr><![CDATA[2]]></mgmtChrr>
-							<mgmtChrrName><![CDATA[홍길순]]></mgmtChrrName>
-							<crtnDt><![CDATA[20241024]]></crtnDt>
-							<sysCpstDgrmYn><![CDATA[N]]></sysCpstDgrmYn>
-							<devlMnulYn><![CDATA[N]]></devlMnulYn>
-							<mgmtMnulYn><![CDATA[N]]></mgmtMnulYn>
-							<archtYn><![CDATA[N]]></archtYn>
-							<rfpYn><![CDATA[N]]></rfpYn>
-							<reqtDefYn><![CDATA[N]]></reqtDefYn>
-							<mpiwRptsYn><![CDATA[N]]></mpiwRptsYn>
-							<chngDlbrRptsYn><![CDATA[N]]></chngDlbrRptsYn>
-							<cpltRptsYn><![CDATA[N]]></cpltRptsYn>
-						</w2:row>
-					</w2:data>
-				</w2:dataList>
-			</w2:dataCollection>
+        	</w2:dataCollection>
         	<w2:workflowCollection />
-        	<xf:submission id="sbmDADocList" action="doc/query/api/v1/document-list" method="get" mediatype="application/json" ref=""
-        		target='data:json,["common","pageInfo","docs"]' encoding="UTF-8" instance="" replace="" errorHandler="" customHandler=""
-        		mode="asynchronous" processMsg="" abortTrigger="" ev:submitdone="scwin.sbmDADocList_submitdone">
-        	</xf:submission>
-        	<xf:submission abortTrigger="" action="da/query/api/v1/database-list" customHandler="" encoding="UTF-8" errorHandler=""
-        		id="sbmDatabaseList" instance="" mediatype="application/json" method="get"
-        		mode="asynchronous" processMsg="" ref="" replace="" target='data:json,["common","pageInfo","dbs"]' style="" ev:submitdone="scwin.sbmDatabaseList_submitdone">
+        	<xf:submission id="sbmDASystemList" action="da/query/api/v1/system-list" method="get" mediatype="application/json" ref="" target='data:json,["common","syss","pageInfo"]' encoding="UTF-8" instance=""
+        		replace="" errorHandler="" customHandler="" mode="asynchronous" processMsg="" ev:submit="" ev:submitdone="scwin.sbmDASystemList_submitdone" ev:submiterror=""
+        		abortTrigger="">
         	</xf:submission>
         </xf:model>
         <w2:layoutInfo/>
@@ -194,20 +231,13 @@
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
    
-    // const param = {
-    //     offset: 0,
-    //     limit: 100,
-    //     type: "PAGE",
-    //     sortMethod: "NO",
-    //     searchMethods: ["CONTAINS"],
-    //     sortFields: ["prdtnSysDvsn"],
-    //     searchFields: ["prdtnSysDvsn"],
-    //     searchContent: "D"
-    // };
+    const param = {
+        offset: 0,
+        limit: 1000,
+        type: "PAGE"
+    }
 
-    // $c.sbm.execute(sbmDADocList, param);
-
-    $c.sbm.execute(sbmDatabaseList);
+    $c.sbm.execute(sbmDASystemList, param);
 };
 
 scwin.btnSearch_onclick = function (e) {
@@ -294,11 +324,7 @@ scwin.closeAction = function (id, info) {
     return true
 };
 
-scwin.sbmDADocList_submitdone = function (e) {
-
-};
-
-scwin.sbmDatabaseList_submitdone = function (e) {
+scwin.sbmDASystemList_submitdone = function (e) {
 
 };
 ]]></script>
@@ -349,100 +375,34 @@ scwin.sbmDatabaseList_submitdone = function (e) {
     		</xf:group></xf:group>
     		<xf:group id="" class="gvwbox grp_flex">
     			<w2:gridView useFilterSearch="false" ev:oncellclick="scwin.grdSystemList_oncellclick" checkAllType="false"
-    				dataList="data:dbs" style="width: 100%;height: 150px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true"
+    				dataList="data:syss" style="width: 100%;height: 150px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true"
     				class="gvw" autoFitMinWidth="1024" defaultCellHeight="30">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
     					<w2:row style="" id="row1">
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column25" value="DB관리ID" displayMode="label"
-    							hidden="true">
-    						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column24" value="DB관리일련번호" displayMode="label"
-    							hidden="true">
-    						</w2:column>
-    						<w2:column width="30" inputType="text" style="font-size:12px;" id="column23" value="개발운영구분" displayMode="label"
-    							hidden="false">
-    						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column22" value="인스턴스명" displayMode="label"
-    							hidden="false">
-    						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column21" value="서버이미지관리ID" displayMode="label"
-    							hidden="true">
-    						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column20" value="호스트명" displayMode="label" hidden="true">
-    						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column19" value="PUBLIC_IP1" displayMode="label"
-    							hidden="true">
-    						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column18" value="PUBLIC_IP2" displayMode="label"
-    							hidden="true">
-    						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column17" value="VIRTUAL_IP1" displayMode="label"
-    							hidden="true">
-    						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column16" value="VIRTUAL_IP2" displayMode="label"
-    							hidden="true">
-    						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column15" value="서비스PORT" displayMode="label"
-    							hidden="true">
-    						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column14" value="개발담당자" displayMode="label" hidden="true">
-    						</w2:column>
-    						<w2:column width="100" inputType="text" style="font-size:12px;" id="column13" value="개발담당자명" displayMode="label"
-    							hidden="false" fixColumnWidth="true">
-    						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column12" value="운영담당자" displayMode="label" hidden="true">
-    						</w2:column>
-    						<w2:column width="100" inputType="text" style="font-size:12px;" id="column11" value="운영담당자명" displayMode="label"
-    							hidden="false" fixColumnWidth="true">
-    						</w2:column>
-    						<w2:column width="100" inputType="text" style="font-size:12px;" id="column10" value="생성일자" displayMode="label" hidden="false" fixColumnWidth="true">
-    						</w2:column>
-    						<w2:column width="30" inputType="text" style="font-size:12px;" id="column9" value="시스템구성도여부" displayMode="label"
-    							hidden="false">
-    						</w2:column>
-    						<w2:column width="30" inputType="text" style="font-size:12px;" id="column8" value="개발매뉴얼여부" displayMode="label"
-    							hidden="false">
-    						</w2:column>
-    						<w2:column width="30" inputType="text" style="font-size:12px;" id="column7" value="운영매뉴얼여부" displayMode="label"
-    							hidden="false">
-    						</w2:column>
-    						<w2:column width="30" inputType="text" style="font-size:12px;" id="column6" value="아키텍처여부" displayMode="label"
-    							hidden="false">
-    						</w2:column>
-    						<w2:column width="30" inputType="text" style="font-size:12px;" id="column5" value="RFP여부" displayMode="label" hidden="false"></w2:column>
-    						<w2:column width="30" inputType="text" style="font-size:12px;" id="column4" value="요구사항정의서여부" displayMode="label"
-    							hidden="false">
-    						</w2:column>
-    						<w2:column width="30" inputType="text" style="font-size:12px;" id="column3" value="착수보고서여부" displayMode="label"
-    							hidden="false">
-    						</w2:column>
-    						<w2:column width="30" inputType="text" style="font-size:12px;" id="column2" value="변경심의보고서여부" displayMode="label"
-    							hidden="false">
-    						</w2:column>
-    						<w2:column width="30" inputType="text" style="font-size:12px;" id="column1" value="완료보고서여부" displayMode="label"
-    							hidden="false">
-    						</w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column14" value="시스템ID" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column13" value="도메인" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column12" value="서비스그룹" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column11" value="서비스" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column10" value="시스템명" displayMode="label"></w2:column>
+    						<w2:column width="100" inputType="text" style="font-size:12px;" id="column9" value="시스템구성도" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="100" inputType="text" style="font-size:12px;" id="column8" value="개발매뉴얼" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="100" inputType="text" style="font-size:12px;" id="column7" value="운영매뉴얼" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="100" inputType="text" style="font-size:12px;" id="column6" value="아키텍처" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="100" inputType="text" style="font-size:12px;" id="column5" value="RFP" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="100" inputType="text" style="font-size:12px;" id="column4" value="요구사항정의서" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="100" inputType="text" style="font-size:12px;" id="column3" value="착수보고서" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="100" inputType="text" style="font-size:12px;" id="column2" value="변경심의보고서" displayMode="label" fixColumnWidth="true"></w2:column>
+    						<w2:column width="100" inputType="text" style="font-size:12px;" id="column1" value="완료보고서" displayMode="label" fixColumnWidth="true"></w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody1">
     					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="dbAdmnId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="dbAdmnSqno" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="dvlpMgmtDvsn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="istcName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="svrImgAdmnId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="hostName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="pblcIp1" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="pblcIp2" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="vtulIp1" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="vtulIp2" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="svcPort" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="dvlpChrr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="dvlpChrrName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="mgmtChrr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="mgmtChrrName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="calendar" style="font-size:12px;" id="crtnDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="sysId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="daDomn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="daSvcGrp" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="daSvc" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="sysName" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="sysCpstDgrmYn" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="devlMnulYn" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="mgmtMnulYn" value="" displayMode="label"></w2:column>

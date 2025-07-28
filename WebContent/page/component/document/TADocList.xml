@@ -244,20 +244,13 @@
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
    
-    // const param = {
-    //     offset: 0,
-    //     limit: 100,
-    //     type: "PAGE",
-    //     sortMethod: "NO",
-    //     searchMethods: ["CONTAINS"],
-    //     sortFields: ["prdtnSysDvsn"],
-    //     searchFields: ["prdtnSysDvsn"],
-    //     searchContent: "T"
-    // };
+    const param = {
+        offset: 0,
+        limit: 1000,
+        type: "PAGE"
+    }
 
-    // $c.sbm.execute(sbmTADocList, param);
-    
-    $c.sbm.execute(sbmServerImageList);
+    $c.sbm.execute(sbmServerImageList, param);
 };
 
 scwin.btnSearch_onclick = function (e) {
@@ -609,7 +602,7 @@ scwin.svrImgs_ondataload = function () {
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="taDomn" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="taSvcGrp" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="taSvc" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="font-size:12px;" id="taArfs" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="taArfs" value="" displayMode="label" textAlign="left"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="svcIptd" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="svcOffrObjt" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="svcHour" value="" displayMode="label"></w2:column>
@@ -617,7 +610,7 @@ scwin.svrImgs_ondataload = function () {
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="apChhr" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="osDvsn" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="usgeDvsn" value="" displayMode="label"></w2:column>
-    					<w2:column width="70" inputType="text" style="font-size:12px;" id="svrDvsn" value="" displayMode="label"></w2:column>
+    					<w2:column width="70" inputType="text" style="font-size:12px;" id="svrDvsn" value="" displayMode="label" textAlign="left"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="imgDvsn" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="haCpstYn" value="" displayMode="label"></w2:column>
     					<w2:column width="70" inputType="text" style="font-size:12px;" id="haSoltn" value="" displayMode="label"></w2:column>

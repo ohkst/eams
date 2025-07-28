@@ -464,8 +464,6 @@ scwin.btnTRM_onclick = function (e) {
     		style=""
     		id="" class="eams_sidebox"><xf:group id="" class="eams_side_list"><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnServer_onclick" style="" id="btnServer" label="Server" class="btn_menu_cmdb">
     		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnDB_onclick" style="" id="btnDB" label="DB" class="btn_menu_cmdb">
-    		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnNetwork_onclick" style="" id="btnNetwork" label="네트워크" class="btn_menu_cmdb">
-    		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnSecurity_onclick" style="" id="btnSecurity" label="보안장비" class="btn_menu_cmdb">
     		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnBizSystem_onclick" style="" id="btnBizSystem" label="업무시스템" class="btn_menu_cmdb">
     		</w2:button></xf:group><xf:group id="" class="side_menu_list2"><w2:button ev:onclick="scwin.btnTRM_onclick" style="" id="btnTRM" label="TRM" class="btn_menu_cmdb">
     		</w2:button></xf:group></xf:group></xf:group>
