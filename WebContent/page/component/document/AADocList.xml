@@ -132,7 +132,14 @@
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
-    $c.sbm.execute(sbmSystemList);
+
+    const param = {
+        offset: 0,
+        limit: 1000,
+        type: "PAGE"
+    };
+
+    $c.sbm.execute(sbmSystemList, param);
 };
 
 scwin.btnSearch_onclick = function (e) {
@@ -307,14 +314,20 @@ scwin.syss_ondataload = function () {
     		</xf:group></xf:group>
     		<xf:group id="" class="gvwbox grp_flex">
     			<w2:gridView useFilterSearch="false" ev:oncellclick="scwin.grdSystemList_oncellclick" checkAllType="false"
-    				dataList="data:syss" style="width: 100%;height: 150px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true"
-    				class="gvw" autoFitMinWidth="1024" defaultCellHeight="30" initFixedHeightByRowNum="10" groupbyZoneHeight="50">
+    				dataList="data:syss" style="width: 100%;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true" class="gvw"
+    				autoFitMinWidth="1024" defaultCellHeight="30" initFixedHeightByRowNum="10" groupbyZoneHeight="50">
     				<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header2">
     					<w2:row style="" id="row3">
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column54" value="시스템ID" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column53" value="시스템코드" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column52" value="시스템명" displayMode="label" hidden="false"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column54" value="시스템ID" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column53" value="시스템코드" displayMode="label"
+    							hidden="true">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column52" value="시스템명" displayMode="label"
+    							hidden="false">
+    						</w2:column>
     						<w2:column width="120" inputType="text" style="font-size:12px;" id="column51" value="설명" displayMode="label"
     							hidden="false">
     						</w2:column>
@@ -324,7 +337,9 @@ scwin.syss_ondataload = function () {
     						<w2:column width="100" inputType="text" style="font-size:12px;" id="column49" value="종료일" displayMode="label"
     							hidden="false" fixColumnWidth="true">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column48" value="IT담당자" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column48" value="IT담당자" displayMode="label"
+    							hidden="true">
+    						</w2:column>
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="column47" value="사번" displayMode="label"
     							hidden="false" fixColumnWidth="true">
     						</w2:column>
@@ -362,24 +377,34 @@ scwin.syss_ondataload = function () {
     				</w2:header>
     				<w2:gBody style="" id="gBody2">
     					<w2:row style="" id="row4">
-    						<w2:column width="70" inputType="text" style="" id="sysId" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="sysCd" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="sysName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="sysDscr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="calendar" style="font-size:12px;" id="svcOpngDt" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="sysId" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="sysCd" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="sysName" value="" displayMode="label"
+    							textAlign="left">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="sysDscr" value="" displayMode="label"
+    							textAlign="left">
+    						</w2:column>
+    						<w2:column width="70" inputType="calendar" style="font-size:12px;" id="svcOpngDt" value=""
+    							displayMode="label">
+    						</w2:column>
     						<w2:column width="70" inputType="calendar" style="font-size:12px;" id="svcEndDt" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="itChrr" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="itChrrNo" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="itChrrName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="sysCpstDgrmYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="devlMnulYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="mgmtMnulYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="archtYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="rfpYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="reqtDefYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="mpiwRptsYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="chngDlbrRptsYn" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="cpltRptsYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="itChrr" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="itChrrNo" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="itChrrName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="sysCpstDgrmYn" value=""
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="devlMnulYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="mgmtMnulYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="archtYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="rfpYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="reqtDefYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="mpiwRptsYn" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="chngDlbrRptsYn" value=""
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="cpltRptsYn" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView>

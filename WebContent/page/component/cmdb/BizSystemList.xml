@@ -94,7 +94,14 @@
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function () {
-    $c.sbm.execute(sbmSystemList);
+
+    const param = {
+        offset: 0,
+        limit: 1000,
+        type: "PAGE"
+    };
+
+    $c.sbm.execute(sbmSystemList, param);
 };
 
 scwin.btnSearch_onclick = function (e) {

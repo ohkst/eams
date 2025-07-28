@@ -72,20 +72,13 @@
         <w2:publicInfo method=""/>
         <script lazy="false" type="text/javascript"><![CDATA[
 scwin.onpageload = function() {
-    // const param = {
-    //     offset: 0,
-    //     limit: 100,
-    //     type: "PAGE",
-    //     sortMethod: "NO",
-    //     searchMethods: ["CONTAINS"],
-    //     sortFields: ["prdtnSysDvsn"],
-    //     searchFields: ["prdtnSysDvsn"],
-    //     searchContent: "B"
-    // };
+    const param = {
+        offset: 0,
+        limit: 1000,
+        type: "PAGE"
+    }
 
-    // $c.sbm.execute(sbmBADocList, param);
-
-    $c.sbm.execute(sbmUnitTaskList);
+    $c.sbm.execute(sbmUnitTaskList, param);
 };
 
 scwin.btnSearch_onclick = function (e) {
@@ -230,7 +223,7 @@ scwin.sbmUnitTaskList_submitdone = function (e) {
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="unitAfrsId" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="unitAfrsCd" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="depName" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="unitAfrsName" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="unitAfrsName" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="chrrNo" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="chrrName" value="" displayMode="label"></w2:column>
     					</w2:row>
