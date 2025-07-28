@@ -314,8 +314,8 @@ scwin.syss_ondataload = function () {
     		</xf:group></xf:group>
     		<xf:group id="" class="gvwbox grp_flex">
     			<w2:gridView useFilterSearch="false" ev:oncellclick="scwin.grdSystemList_oncellclick" checkAllType="false"
-    				dataList="data:syss" style="width: 100%;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true" class="gvw"
-    				autoFitMinWidth="1024" defaultCellHeight="30" initFixedHeightByRowNum="10" groupbyZoneHeight="50">
+    				dataList="data:syss" style="width: 100%;height: 150px;" id="grdSystemList" autoFit="allColumn" useFilterList="true" sortable="true" class="gvw"
+    				autoFitMinWidth="1024" defaultCellHeight="30" groupbyZoneHeight="50">
     				<w2:caption style="" id="caption2" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header2">
     					<w2:row style="" id="row3">
