@@ -16,7 +16,8 @@ xmlns:xf="http://www.w3.org/2002/xforms">
 		<script lazy="false" type="text/javascript"><![CDATA[
 // 서버 통신 서비스 호출을 위한 Context Path
 // scwin.CONTEXT_PATH = "http://190.190.158.148:30100/";
-scwin.CONTEXT_PATH = "_KIS_CONTEXT_PATH_";
+scwin.CONTEXT_PATH = "http://10.50.241.179:8081/";
+// scwin.CONTEXT_PATH = "_KIS_CONTEXT_PATH_";
 
 // 서버 통신 서비스 호출을 위한 Service Url (Context Path 이하 경로)
 scwin.SERVICE_URL = "";

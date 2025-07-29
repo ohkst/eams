@@ -216,12 +216,6 @@ scwin.onpageload = function () {
         searchboxOK.setValue(paramData.name)
         scwin.requestSearch();
     } else {
-        grpBA.hide();
-        grpAAScreen.hide();
-        grpAATR.hide();
-        grpDA.hide();
-        grpMember.hide();
-
         btnFilterALL.addClass("on");
     }
 };
@@ -288,12 +282,6 @@ scwin.requestSearch = function () {
     svcs.removeAll();
     tables.removeAll();
     emps.removeAll();
-
-    grpBA.hide();
-    grpAAScreen.hide();
-    grpAATR.hide();
-    grpDA.hide();
-    grpMember.hide();
 
     if (searchboxOK.getValue() != "") {
 
@@ -366,19 +354,6 @@ scwin.requestSearch = function () {
 
         $c.sbm.execute(sbmEmpSearchList, memberParam);
     }
-
-    // 엔터치면 코드 적용
-    // if (searchboxOK.getValue() == "") {
-    //     grpBA.hide();
-    //     grpAAScreen.hide();
-    //     grpAATR.hide();
-    //     grpDA.hide();
-    //     grpMember.hide();
-    // } else if ((e.charCode || e.keyCode) === 13) {
-    //     // $p.parent().wfmRightContents.setSrc("/page/component/SystemSearchResultDetail.xml");
-    // } else {
-    // }
-
 };
 
 // 업무 검색
@@ -419,101 +394,35 @@ scwin.resetBtnFontWeight = function () {
 scwin.btnFilterALL_onclick = function (e) {
     scwin.resetBtnFontWeight();
     btnFilterALL.addClass("on");
-
-    if (searchboxOK.getValue() == "") {
-        grpBA.hide();
-        grpAAScreen.hide();
-        grpAATR.hide();
-        grpDA.hide();
-        grpMember.hide();
-    } else {
-
-        if (unitTasks.getRowCount() > 0) {
-            grpBA.show("");
-        } else {
-            grpBA.hide();
-        }
-
-        if (scrns.getRowCount() > 0) {
-            grpAAScreen.show("");
-        } else {
-            grpAAScreen.hide();
-        }
-
-        if (svcs.getRowCount() > 0) {
-            grpAATR.show("");
-        } else {
-            grpAATR.hide();
-        }
-
-        if (tables.getRowCount() > 0) {
-            grpDA.show("");
-        } else {
-            grpDA.hide();
-        }
-
-        if (emps.getRowCount() > 0) {
-            grpMember.show("");
-        } else {
-            grpMember.hide();
-        }
-
-    }
 };
 
 scwin.btnFilterBA_onclick = function (e) {
     scwin.resetBtnFontWeight();
     btnFilterBA.addClass("on");
-
-    grpBA.show("");
-    grpAAScreen.hide();
-    grpAATR.hide();
-    grpDA.hide();
-    grpMember.hide();
 };
 
 scwin.btnFilterAAScreen_onclick = function (e) {
     scwin.resetBtnFontWeight();
     btnFilterAAScreen.addClass("on");
 
-    grpBA.hide();
-    grpAAScreen.show("");
-    grpAATR.hide();
-    grpDA.hide();
-    grpMember.hide();
 };
 
 scwin.btnFilterAATR_onclick = function (e) {
     scwin.resetBtnFontWeight();
     btnFilterAATR.addClass("on");
 
-    grpBA.hide();
-    grpAAScreen.hide();
-    grpAATR.show("");
-    grpDA.hide();
-    grpMember.hide();
 };
 
 scwin.btnFilterDA_onclick = function (e) {
     scwin.resetBtnFontWeight();
     btnFilterDA.addClass("on");
 
-    grpBA.hide();
-    grpAAScreen.hide();
-    grpAATR.hide();
-    grpDA.show("");
-    grpMember.hide();
 };
 
 scwin.btnFilterMember_onclick = function (e) {
     scwin.resetBtnFontWeight();
     btnFilterMember.addClass("on");
 
-    grpBA.hide();
-    grpAAScreen.hide();
-    grpAATR.hide();
-    grpDA.hide();
-    grpMember.show("");
 };
 
 scwin.searchboxOK_onkeyup = function (e) {
@@ -544,12 +453,6 @@ scwin.sbmEmpSearchList_submitdone = function (e) {
     // var jsoninfo2 = JSON.stringify(pageInfo.getJSON());
     // var jsoninfo3 = JSON.stringify(emps.getAllArray());
     // alert("done" + jsoninfo3);
-
-    if (emps.getRowCount() <= 0) {
-        grpMember.hide();
-    } else {
-        grpMember.show("");
-    }
 };
 
 scwin.sbmEmpSearchList_submiterror = function (e) {
@@ -565,12 +468,6 @@ scwin.sbmUnitTaskSearchList_submit = function (e) {
 scwin.sbmUnitTaskSearchList_submitdone = function (e) {
     // var jsoninfo3 = JSON.stringify(unitTasks.getAllArray());
     // alert("done" + jsoninfo3);
-
-    if (unitTasks.getRowCount() <= 0) {
-        grpBA.hide();
-    } else {
-        grpBA.show("");
-    }
 };
 
 scwin.sbmUnitTaskSearchList_submiterror = function (e) {
@@ -586,11 +483,6 @@ scwin.sbmTableList_submitdone = function (e) {
     // var jsoninfo3 = JSON.stringify(tables.getAllArray());
     // alert("done" + jsoninfo3);
 
-    if (tables.getRowCount() <= 0) {
-        grpDA.hide();
-    } else {
-        grpDA.show("");
-    }
 };
 
 scwin.sbmTableList_submiterror = function (e) {
@@ -604,11 +496,6 @@ scwin.sbmTaskScreenList_submit = function (e) {
 
 scwin.sbmTaskScreenList_submitdone = function (e) {
 
-    if (scrns.getRowCount() <= 0) {
-        grpAAScreen.hide();
-    } else {
-        grpAAScreen.show("");
-    }
 };
 
 scwin.sbmTaskScreenList_submiterror = function (e) {
@@ -622,11 +509,6 @@ scwin.sbmServiceList_submit = function (e) {
 
 scwin.sbmServiceList_submitdone = function (e) {
 
-    if (svcs.getRowCount() <= 0) {
-        grpAATR.hide();
-    } else {
-        grpAATR.show("");
-    }
 };
 
 scwin.sbmServiceList_submiterror = function (e) {
@@ -652,7 +534,6 @@ scwin.sbmServiceList_submiterror = function (e) {
     			</w2:button>
     		</xf:group>
     	<xf:group id="" class="eams_side_list"><xf:group style="" id="grpBA" class="side_menu_grid">
-    			<w2:textbox style="font-size:16px;" id="" label="업무" class="link_depth1"></w2:textbox>
     		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridBASearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:unitTasks" style="width:100%;min-height:200px;" id="gridBASearchResult" autoFit="allColumn" defaultCellHeight="30">
     				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header1">
@@ -682,187 +563,6 @@ scwin.sbmServiceList_submiterror = function (e) {
     						<w2:column width="70" inputType="text" style="padding-left:12;" id="chrrNo" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12;" id="chrrName" value="" displayMode="label" textAlign="left"></w2:column>
     						<w2:column width="70" inputType="text" style="padding-left:12;" id="manlName" value="" displayMode="label" textAlign="left"></w2:column>
-    					</w2:row>
-    				</w2:gBody>
-    			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpAAScreen" class="side_menu_grid">
-    			<w2:textbox style="font-size:16px;" id="" label="화면" class="link_depth1"></w2:textbox>
-    		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridAAScreenSearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:scrns" style="width:100%;min-height:200px;" autoFit="allColumn" id="gridAAScreenSearchResult" defaultCellHeight="30" class="">
-    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
-    				<w2:header style="" id="header1">
-    					<w2:row style="" id="row1">
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column15" value="arfsScrnId" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="sysName" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column13" value="scrnNo" displayMode="label" fixColumnWidth="true">
-    						</w2:column>
-    						<w2:column hidden="false" width="100" inputType="text" style="font-size:12px;" id="column12" value="scrnName" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="dvlpChrr" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="dvlpChrrNo" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column9" value="dvlpChrrName" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="mgmtChrr" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="mgmtChrrNo" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="mgmtChrrName" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="witfChrgDep" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="witfChrgDepName" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="witfChrr" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="witfChrrNo" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="witfChrrName" displayMode="label">
-    						</w2:column>
-    					</w2:row>
-    				</w2:header>
-    				<w2:gBody style="" id="gBody1">
-    					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="arfsScrnId" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="sysName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="scrnNo" value="" displayMode="label" textAlign="left" fixColumnWidth="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="scrnName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="dvlpChrr" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="dvlpChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="dvlpChrrName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="mgmtChrr" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="mgmtChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="mgmtChrrName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrgDep" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrgDepName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrr" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrrName" value="" displayMode="label" textAlign="left"></w2:column>
-    					</w2:row>
-    				</w2:gBody>
-    			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpAATR" class="side_menu_grid">
-    			<w2:textbox style="font-size:16px;" id="" label="TR" class="link_depth1"></w2:textbox>
-    		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridAATRSearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:svcs" style="width:100%;min-height:200px;" autoFit="allColumn" id="gridAATRSearchResult" defaultCellHeight="30">
-    				<w2:caption style="" id="caption3" value="this is a grid caption."></w2:caption>
-    				<w2:header style="" id="header3">
-    					<w2:row style="" id="row5">
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column48" value="svcId" displayMode="label"></w2:column>
-    						<w2:column hidden="false" width="110" inputType="text" style="font-size:12px;" id="column47" value="svcCd" displayMode="label" fixColumnWidth="true">
-    						</w2:column>
-    						<w2:column hidden="false" width="100" inputType="text" style="font-size:12px;" id="column46" value="korSvcName" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column45" value="itChrr" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column44" value="itChrrNo" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column43" value="itChrrName" displayMode="label">
-    						</w2:column>
-    					</w2:row>
-    				</w2:header>
-    				<w2:gBody style="" id="gBody3">
-    					<w2:row style="" id="row6">
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="svcId" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="svcCd" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="korSvcName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrr" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrrNo" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrrName" value="" displayMode="label" textAlign="left"></w2:column>
-    					</w2:row>
-    				</w2:gBody>
-    			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpDA" class="side_menu_grid">
-    			<w2:textbox style="font-size:16px;" id="" label="DB" class="link_depth1"></w2:textbox>
-    		<xf:group id="" class="side_gvw">
-    			<w2:gridView ev:oncellclick="scwin.gridDADBSearchResult_oncellclick" hideHeader="true" checkAllType="false"
-    				dataList="data:tables" style="width:100%;min-height:200px;" autoFit="allColumn" id="gridDADBSearchResult" defaultCellHeight="30">
-    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
-    				<w2:header style="" id="header1">
-    					<w2:row style="" id="row1">
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column16" value="tlbId" displayMode="label"></w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column15" value="afrsDvsn"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column14" value="msjtSphr"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column13" value="tblEngName"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column12" value="tblKorName"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column11" value="tblDscr"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column10" value="witfChrgDep"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column9" value="witfChrgDepName"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column8" value="witfChrr"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column7" value="witfChrrName"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column6" value="itChrgDept"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column5" value="itChrgDeptName"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="itChrr" displayMode="label"></w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column3" value="itChrrName"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column2" value="frstErlmDt"
-    							displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="rcenChngDt"
-    							displayMode="label">
-    						</w2:column>
-    					</w2:row>
-    				</w2:header>
-    				<w2:gBody style="" id="gBody1">
-    					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="tlbId" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="afrsDvsn" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="msjtSphr" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="tblEngName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="tblKorName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="tblDscr" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrgDep" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrgDepName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrr" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="witfChrrName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrgDept" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrgDeptName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrr" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="itChrrName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="frstErlmDt" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="rcenChngDt" value="" displayMode="label" textAlign="left"></w2:column>
-    					</w2:row>
-    				</w2:gBody>
-    			</w2:gridView></xf:group></xf:group><xf:group style="" id="grpMember" class="side_menu_grid">
-    			<w2:textbox style="font-size:16px;" id="" label="담당자" class="link_depth1"></w2:textbox>
-    		<xf:group id="" class="side_gvw"><w2:gridView ev:oncellclick="scwin.gridMemberSearchResult_oncellclick" hideHeader="true" checkAllType="false" dataList="data:emps" style="width:100%;min-height:200px;" autoFit="allColumn" id="gridMemberSearchResult" defaultCellHeight="30">
-    				<w2:caption style="" id="caption1" value="this is a grid caption."></w2:caption>
-    				<w2:header style="" id="header1">
-    					<w2:row style="" id="row1">
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column4" value="empId" displayMode="label"></w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="font-size: 12px;" id="column3" value="empNo" displayMode="label" fixColumnWidth="true"></w2:column>
-    						<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column2" value="empName" displayMode="label">
-    						</w2:column>
-    						<w2:column hidden="true" width="70" inputType="text" style="" id="column1" value="osdtCd" displayMode="label"></w2:column>
-    					</w2:row>
-    				</w2:header>
-    				<w2:gBody style="" id="gBody1">
-    					<w2:row style="" id="row2">
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="empId" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="empNo" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;font-size:12px;" id="empName" value="" displayMode="label" textAlign="left"></w2:column>
-    						<w2:column width="70" inputType="text" style="padding-left:12px;" id="osdtCd" value="" displayMode="label" textAlign="left"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView></xf:group></xf:group></xf:group></xf:group>
