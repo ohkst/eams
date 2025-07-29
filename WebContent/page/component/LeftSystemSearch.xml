@@ -325,12 +325,14 @@ scwin.requestSearch = function () {
     svcs.removeAll();
     tables.removeAll();
     emps.removeAll();
+    
+    const maxCount = 30;
 
     if (searchboxOK.getValue() != "") {
 
         const baParam = {
             offset: 0,
-            limit: 20,
+            limit: maxCount,
             type: "PAGE",
             sortMethod: "NO",
             searchMethods: ["CONTAINS"],
@@ -344,7 +346,7 @@ scwin.requestSearch = function () {
 
         const screenParam = {
             offset: 0,
-            limit: 20,
+            limit: maxCount,
             type: "PAGE",
             sortMethod: "NO",
             searchMethods: ["CONTAINS"],
@@ -358,7 +360,7 @@ scwin.requestSearch = function () {
 
         const trParam = {
             offset: 0,
-            limit: 20,
+            limit: maxCount,
             type: "PAGE",
             sortMethod: "NO",
             searchMethods: ["CONTAINS"],
@@ -372,7 +374,7 @@ scwin.requestSearch = function () {
 
         const tablesParam = {
             offset: 0,
-            limit: 20,
+            limit: maxCount,
             type: "PAGE",
             sortMethod: "NO",
             searchMethods: ["CONTAINS"],
@@ -386,7 +388,7 @@ scwin.requestSearch = function () {
 
         const memberParam = {
             offset: 0,
-            limit: 13,
+            limit: maxCount,
             type: "PAGE",
             sortMethod: "NO",
             searchMethods: ["CONTAINS"],
@@ -679,27 +681,27 @@ scwin.mergeResult = function () {
     				<w2:caption style="" id="caption3" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header3">
     					<w2:row style="" id="row5">
-    						<w2:column width="70" inputType="text" style="" id="column48" value="depth" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column47" value="label" displayMode="label"
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column48" value="depth" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column47" value="label" displayMode="label"
     							hidden="false">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column46" value="value" displayMode="label" hidden="true">
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column46" value="value" displayMode="label" hidden="true">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column45" value="path" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="column44" value="rowStatus" displayMode="label"
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column45" value="path" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column44" value="rowStatus" displayMode="label"
     							hidden="true">
     						</w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody3">
     					<w2:row style="" id="row6">
-    						<w2:column width="70" inputType="text" style="" id="depth" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="drilldown" style="" id="label" value="" displayMode="label" depthColumn="depth"
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="depth" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="drilldown" style="font-size:12px;" id="label" value="" displayMode="label" depthColumn="depth"
     							showDepth="2" textAlign="left">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="" id="value" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="path" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="text" style="" id="rowStatus" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="value" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="path" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="font-size:12px;" id="rowStatus" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView></xf:group></xf:group></xf:group></xf:group>
