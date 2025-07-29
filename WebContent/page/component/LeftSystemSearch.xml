@@ -325,7 +325,7 @@ scwin.requestSearch = function () {
     svcs.removeAll();
     tables.removeAll();
     emps.removeAll();
-    
+
     const maxCount = 30;
 
     if (searchboxOK.getValue() != "") {
@@ -401,29 +401,14 @@ scwin.requestSearch = function () {
     }
 };
 
-// 업무 검색
+// 검색 결과 선택
 scwin.gridBASearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
-    scwin.searchDetail(rowIndex, columnIndex, columnId, 0);
-};
-
-// 화면 검색
-scwin.gridAAScreenSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
-    scwin.searchDetail(rowIndex, columnIndex, columnId, 1);
-};
-
-// TR 검색
-scwin.gridAATRSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
-    scwin.searchDetail(rowIndex, columnIndex, columnId, 2);
-};
-
-// DB 검색
-scwin.gridDADBSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
-    scwin.searchDetail(rowIndex, columnIndex, columnId, 3);
-};
-
-// 담당자 검색
-scwin.gridMemberSearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
-    scwin.searchDetail(rowIndex, columnIndex, columnId, 4);
+    const status = searchResult.getCellData(rowIndex, "rowStatus");
+    const value = searchResult.getCellData(rowIndex, "value");
+    
+    if (status != "section" && value != "") {
+        scwin.searchDetail(rowIndex, columnIndex, columnId, 0);
+    }
 };
 
 scwin.resetBtnFontWeight = function () {
@@ -531,21 +516,21 @@ scwin.sbmTaskScreenList_submitdone = function (e) {
 
 scwin.mergeResult = function () {
     searchResult.removeAll();
-    
+
     var obj = [
         {
             "depth": 1,
             "label": "업무",
             "value": "",
             "path": "pathpath",
-            "rowStatus": "R"
+            "rowStatus": "section"
         }
     ];
 
     // 전체 row 수 가져오기
     for (let i = 0; i < unitTasks.getRowCount(); i++) {
         const unitAfrsName = unitTasks.getCellData(i, "unitAfrsName");
-        
+
         obj.push({
             depth: 2,  // 첫 번째만 depth 1
             label: unitAfrsName || "",  // unitAfrsName null이면 빈 문자열
@@ -561,7 +546,7 @@ scwin.mergeResult = function () {
             "label": "화면",
             "value": "",
             "path": "pathpath",
-            "rowStatus": "R"
+            "rowStatus": "section"
         }
     );
 
@@ -569,7 +554,7 @@ scwin.mergeResult = function () {
     for (let i = 0; i < scrns.getRowCount(); i++) {
         const scrnNo = scrns.getCellData(i, "scrnNo");
         const scrnName = scrns.getCellData(i, "scrnName");
-        
+
         obj.push({
             depth: 2,  // 첫 번째만 depth 1
             label: scrnNo + " - " + scrnName || "",  // scrnName null이면 빈 문자열
@@ -585,7 +570,7 @@ scwin.mergeResult = function () {
             "label": "TR",
             "value": "",
             "path": "pathpath",
-            "rowStatus": "R"
+            "rowStatus": "section"
         }
     );
 
@@ -609,7 +594,7 @@ scwin.mergeResult = function () {
             "label": "DB",
             "value": "",
             "path": "pathpath",
-            "rowStatus": "R"
+            "rowStatus": "section"
         }
     );
 
@@ -617,7 +602,7 @@ scwin.mergeResult = function () {
     for (let i = 0; i < tables.getRowCount(); i++) {
         const tblEngName = tables.getCellData(i, "tblEngName");
         const tblKorName = tables.getCellData(i, "tblKorName");
-        
+
         obj.push({
             depth: 2,  // 첫 번째만 depth 1
             label: tblEngName + " - " + tblKorName || "",  // tblKorName null이면 빈 문자열
@@ -633,7 +618,7 @@ scwin.mergeResult = function () {
             "label": "담당자",
             "value": "",
             "path": "pathpath",
-            "rowStatus": "R"
+            "rowStatus": "section"
         }
     );
 
@@ -641,10 +626,10 @@ scwin.mergeResult = function () {
     for (let i = 0; i < emps.getRowCount(); i++) {
         const empNo = emps.getCellData(i, "empNo");
         const empName = emps.getCellData(i, "empName");
-        
+
         obj.push({
             depth: 2,  // 첫 번째만 depth 1
-            label: 	empNo + " - " + empName || "",  // empName null이면 빈 문자열
+            label: empNo + " - " + empName || "",  // empName null이면 빈 문자열
             value: "",  // 예시 그대로 유지
             path: "",
             rowStatus: "R"
