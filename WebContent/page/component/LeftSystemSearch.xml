@@ -184,6 +184,8 @@
         				<w2:column id="value" name="value" dataType="text"></w2:column>
         				<w2:column id="path" name="path" dataType="text"></w2:column>
         				<w2:column id="rowStatus" name="rowStatus" dataType="text"></w2:column>
+        				<w2:column id="type" name="type" dataType="text"></w2:column>
+        				<w2:column id="id" name="id" dataType="text"></w2:column>
         			</w2:columnInfo>
         			<w2:data xmlns="" use="false">
         				<w2:row>
@@ -263,33 +265,18 @@ scwin.onpageload = function () {
     }
 };
 
-scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
+scwin.searchDetail = function (realIndex) {
     // $p.log(rowIndex + columnId + columnId);
-
-    var cellData = "";
-    var id = "";
-    if (type === 0) { // 업무
-        cellData = unitTasks.getCellData(rowIndex, columnId);
-        id = unitTasks.getCellData(rowIndex, "unitAfrsId");
-    } else if (type === 1) { // 화면
-        cellData = scrns.getCellData(rowIndex, columnId);
-        id = scrns.getCellData(rowIndex, "arfsScrnId");
-    } else if (type === 2) { // TR
-        cellData = svcs.getCellData(rowIndex, columnId);
-        id = svcs.getCellData(rowIndex, "svcId");
-    } else if (type === 3) { // Table
-        cellData = tables.getCellData(rowIndex, columnId);
-        id = tables.getCellData(rowIndex, "tlbId");
-    } else if (type === 4) { // 담당자
-        cellData = emps.getCellData(rowIndex, columnId);
-        id = emps.getCellData(rowIndex, "empId");
-    }
+	const type = searchResult.getCellData(realIndex, "type");
+    if (type == "section") { return}
+    const title = searchResult.getCellData(realIndex, "label");
+    const id = searchResult.getCellData(realIndex, "id");
 
     var rowJSON = {
         // "Personal Info": { "Name": "Lee", "Age": 50, "Married": false },
         // "Region": "Seoul",
         // "Carrier": true,
-        "name": cellData,
+        "name": title,
         "id": id
     };
 
@@ -306,15 +293,15 @@ scwin.searchDetail = function (rowIndex, columnIndex, columnId, type) {
 };
 
 scwin.setContentsSrc = async function (type, obj) {
-    if (type === 0) {
+    if (type === "biz") {
         await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultBizDetail.xml", obj);
-    } else if (type === 1) {
+    } else if (type === "scrn") {
         await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultScreenDetail.xml", obj);
-    } else if (type === 2) {
+    } else if (type === "tr") {
         await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultTRDetail.xml", obj);
-    } else if (type === 3) {
+    } else if (type === "db") {
         await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultDBDetail.xml", obj);
-    } else if (type === 4) {
+    } else if (type === "emp") {
         await $p.parent().wfmRightContents.setSrc("/page/component/search/SystemSearchResultMemberDetail.xml", obj);
     }
 };
@@ -403,12 +390,8 @@ scwin.requestSearch = function () {
 
 // 검색 결과 선택
 scwin.gridBASearchResult_oncellclick = function (rowIndex, columnIndex, columnId) {
-    const status = searchResult.getCellData(rowIndex, "rowStatus");
-    const value = searchResult.getCellData(rowIndex, "value");
-    
-    if (status != "section" && value != "") {
-        scwin.searchDetail(rowIndex, columnIndex, columnId, 0);
-    }
+    const realIndex = gridBASearchResult.getRealRowIndex(rowIndex);
+    scwin.searchDetail(realIndex);
 };
 
 scwin.resetBtnFontWeight = function () {
@@ -523,20 +506,24 @@ scwin.mergeResult = function () {
             "label": "업무",
             "value": "",
             "path": "pathpath",
-            "rowStatus": "section"
+            "type": "section",
+            "rowStatus": "",
+            "id": ""
         }
     ];
 
     // 전체 row 수 가져오기
     for (let i = 0; i < unitTasks.getRowCount(); i++) {
         const unitAfrsName = unitTasks.getCellData(i, "unitAfrsName");
-
+        const id = unitTasks.getCellData(i, "unitAfrsId");
         obj.push({
             depth: 2,  // 첫 번째만 depth 1
             label: unitAfrsName || "",  // unitAfrsName null이면 빈 문자열
             value: unitAfrsName + unitAfrsName,  // 예시 그대로 유지
             path: "",
-            rowStatus: "R"
+            rowStatus: "",
+            type: "biz",
+            id: id
         });
     }
 
@@ -546,7 +533,9 @@ scwin.mergeResult = function () {
             "label": "화면",
             "value": "",
             "path": "pathpath",
-            "rowStatus": "section"
+            "rowStatus": "",
+            "type": "section",
+            "id": ""
         }
     );
 
@@ -554,13 +543,16 @@ scwin.mergeResult = function () {
     for (let i = 0; i < scrns.getRowCount(); i++) {
         const scrnNo = scrns.getCellData(i, "scrnNo");
         const scrnName = scrns.getCellData(i, "scrnName");
+        const id = scrns.getCellData(i, "arfsScrnId");
 
         obj.push({
             depth: 2,  // 첫 번째만 depth 1
             label: scrnNo + " - " + scrnName || "",  // scrnName null이면 빈 문자열
             value: "",
             path: "",
-            rowStatus: "R"
+            rowStatus: "",
+            type: "scrn",
+            id: id
         });
     }
 
@@ -570,7 +562,9 @@ scwin.mergeResult = function () {
             "label": "TR",
             "value": "",
             "path": "pathpath",
-            "rowStatus": "section"
+            "type": "section",
+            "rowStatus": "",
+            "id": ""
         }
     );
 
@@ -578,13 +572,16 @@ scwin.mergeResult = function () {
     for (let i = 0; i < svcs.getRowCount(); i++) {
         const svcCd = svcs.getCellData(i, "svcCd");
         const korSvcName = svcs.getCellData(i, "korSvcName");
+        const id = svcs.getCellData(i, "svcId");
 
         obj.push({
             depth: 2,  // 첫 번째만 depth 1
             label: svcCd + " - " + korSvcName || "",  // sysName null이면 빈 문자열
             value: "",  // 예시 그대로 유지
             path: "",
-            rowStatus: "R"
+            rowStatus: "",
+            type: "tr",
+            id: id
         });
     }
 
@@ -594,7 +591,9 @@ scwin.mergeResult = function () {
             "label": "DB",
             "value": "",
             "path": "pathpath",
-            "rowStatus": "section"
+            "type": "section",
+            "rowStatus": "",
+            "id": ""
         }
     );
 
@@ -602,13 +601,16 @@ scwin.mergeResult = function () {
     for (let i = 0; i < tables.getRowCount(); i++) {
         const tblEngName = tables.getCellData(i, "tblEngName");
         const tblKorName = tables.getCellData(i, "tblKorName");
+        const id = tables.getCellData(i, "tlbId");
 
         obj.push({
             depth: 2,  // 첫 번째만 depth 1
             label: tblEngName + " - " + tblKorName || "",  // tblKorName null이면 빈 문자열
             value: "",  // 예시 그대로 유지
             path: "",
-            rowStatus: "R"
+            rowStatus: "",
+            type: "db",
+            id: id
         });
     }
 
@@ -618,7 +620,9 @@ scwin.mergeResult = function () {
             "label": "담당자",
             "value": "",
             "path": "pathpath",
-            "rowStatus": "section"
+            "type": "section",
+            "rowStatus": "",
+            "id": ""
         }
     );
 
@@ -626,13 +630,15 @@ scwin.mergeResult = function () {
     for (let i = 0; i < emps.getRowCount(); i++) {
         const empNo = emps.getCellData(i, "empNo");
         const empName = emps.getCellData(i, "empName");
-
+        const id = emps.getCellData(i, "empId");
         obj.push({
             depth: 2,  // 첫 번째만 depth 1
             label: empNo + " - " + empName || "",  // empName null이면 빈 문자열
             value: "",  // 예시 그대로 유지
             path: "",
-            rowStatus: "R"
+            rowStatus: "",
+            type: "emp",
+            id: id
         });
     }
 
@@ -666,27 +672,36 @@ scwin.mergeResult = function () {
     				<w2:caption style="" id="caption3" value="this is a grid caption."></w2:caption>
     				<w2:header style="" id="header3">
     					<w2:row style="" id="row5">
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column48" value="depth" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column47" value="label" displayMode="label"
-    							hidden="false">
+    						<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column48" value="depth"
+    							displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column46" value="value" displayMode="label" hidden="true">
+    						<w2:column hidden="false" width="70" inputType="text" style="font-size:12px;" id="column47" value="label"
+    							displayMode="label">
     						</w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column45" value="path" displayMode="label" hidden="true"></w2:column>
-    						<w2:column width="70" inputType="text" style="font-size:12px;" id="column44" value="rowStatus" displayMode="label"
-    							hidden="true">
+    						<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column46" value="value"
+    							displayMode="label">
     						</w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column45" value="path"
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column hidden="true" width="70" inputType="text" style="font-size:12px;" id="column44" value="rowStatus"
+    							displayMode="label">
+    						</w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column59" value="type" displayMode="label" hidden="true"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="column60" value="id" displayMode="label" hidden="true"></w2:column>
     					</w2:row>
     				</w2:header>
     				<w2:gBody style="" id="gBody3">
     					<w2:row style="" id="row6">
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="depth" value="" displayMode="label"></w2:column>
-    						<w2:column width="70" inputType="drilldown" style="font-size:12px;" id="label" value="" displayMode="label" depthColumn="depth"
-    							showDepth="2" textAlign="left">
+    						<w2:column textAlign="left" width="70" inputType="drilldown" style="font-size:12px;" id="label" showDepth="2"
+    							value="" depthColumn="depth" displayMode="label">
     						</w2:column>
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="value" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="path" value="" displayMode="label"></w2:column>
     						<w2:column width="70" inputType="text" style="font-size:12px;" id="rowStatus" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="type" value="" displayMode="label"></w2:column>
+    						<w2:column width="70" inputType="text" style="" id="id" value="" displayMode="label"></w2:column>
     					</w2:row>
     				</w2:gBody>
     			</w2:gridView></xf:group></xf:group></xf:group></xf:group>
